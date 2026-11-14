@@ -57,6 +57,7 @@ Tư tưởng triết học   +   Mỹ học Old Masters & Bảo tàng
 | **Đường dẫn dữ liệu** | **Cross-Platform Relative Resolution** | Dùng `import.meta.url` và `path.resolve`, bảo đảm tính di động tuyệt đối giữa Windows và Linux hosting. |
 | **Hạ tầng hình ảnh** | **Astro `<Image />` / `<Picture />` Pipeline** | Tự động sinh WebP/AVIF, responsive `srcset`, chống layout shift (CLS), placeholder màu pigment. |
 | **Tìm kiếm nội dung** | **Pagefind Static Search** | Chỉ mục tìm kiếm tĩnh tốc độ cao sau build, hỗ trợ tiếng Việt có dấu, tìm kiếm toàn văn không cần server. |
+| **Đa thiết bị & Màn hình** | **Mobile-First & Fluid Editorial Matrix** | Viewport từ 320px đến 1920px+; touch targets $\ge 44\times 44\text{px}$; safe-area insets (`env(safe-area-inset-*)`) cho tai thỏ/dynamic island; giới hạn `max-w-6xl` cho màn hình siêu rộng chống kéo dãn dòng chữ. |
 
 ---
 

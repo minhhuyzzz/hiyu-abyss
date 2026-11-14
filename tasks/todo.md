@@ -87,8 +87,8 @@
   - **Mô tả:** Hoàn thiện `Header.astro` (Logo + Menu + Theme Toggle) và `Footer.astro` (Tuyên ngôn triết học, xuất xứ và liên kết mạng xã hội).
   - **Tiêu chí nghiệm thu:**
     - Menu điều hướng tối giản: *Library · Mirror · Themes · Search*.
-    - Co giãn hoàn hảo trên thiết bị di động (320px, 375px) và desktop.
-  - **Xác minh:** Kiểm tra hiển thị header/footer trên các viewport.
+    - Co giãn hoàn hảo trên mọi thiết bị: Touch targets $\ge 44\times 44\text{px}$; safe-area insets (`env(safe-area-inset-*)`) cho màn hình tai thỏ/dynamic island; tuyệt đối không có thanh cuộn ngang (horizontal scroll).
+  - **Xác minh:** Kiểm tra hiển thị header/footer trên các viewport 320px, 375px, 768px và 1280px.
   - **Files:** `website/src/layouts/BaseLayout.astro`, `website/src/components/Header.astro`, `website/src/components/Footer.astro`
   - **Scope:** Small (3 files)
 
@@ -178,10 +178,11 @@
   - **Files:** `website/src/pages/search.astro`, `website/package.json`
   - **Scope:** Small (1–2 files)
 
-- [ ] **Task 16: Bộ Kiểm Thử E2E, Kiểm Định WCAG AA & Production Build**
-  - **Mô tả:** Xây dựng script kiểm thử tự động kiểm tra tương phản màu WCAG AA trên cả 2 theme, kiểm tra tính toàn vẹn của tất cả URL, và chạy production build hoàn chỉnh.
+- [ ] **Task 16: Bộ Kiểm Thử E2E, Kiểm Định WCAG AA & Production Build Đa Thiết Bị**
+  - **Mô tả:** Xây dựng script kiểm thử tự động kiểm tra tương phản màu WCAG AA trên cả 2 theme, kiểm tra tính toàn vẹn của tất cả URL, kiểm định hiển thị trên 5 mốc viewport (320px, 375px/390px, 768px, 1280px, 1920px+), và chạy production build hoàn chỉnh.
   - **Tiêu chí nghiệm thu:**
     - Tỷ lệ tương phản màu chữ đạt chuẩn WCAG AA ($\ge 4.5:1$ chữ thường, $\ge 3:1$ chữ lớn) trên CẢ 2 THEME.
+    - Hiển thị hoàn hảo trên 5 mốc viewport: 320px không vỡ chữ, tablet 768px bố cục tạp chí 2 cột, desktop ultrawide 1920px+ giới hạn `max-w-6xl` căn giữa độ dài dòng lý tưởng (60–75 ký tự).
     - Lệnh `npm run build` tạo thành công thư mục tĩnh `website/dist/` không có liên kết hỏng.
     - Tài liệu hướng dẫn deploy lên Cloudflare Pages / Vercel tại `website/README.md`.
   - **Xác minh:** `cd website && npm run build && node test/verify-build.js`

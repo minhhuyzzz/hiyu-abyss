@@ -1,0 +1,123 @@
+{
+  "requests": [
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 0,
+          "startRowIndex": 0,
+          "endRowIndex": 1,
+          "startColumnIndex": 0,
+          "endColumnIndex": 16
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "backgroundColor": {
+              "red": 0.058823529411764705,
+              "green": 0.09019607843137255,
+              "blue": 0.16470588235294117
+            },
+            "horizontalAlignment": "CENTER",
+            "verticalAlignment": "MIDDLE",
+            "wrapStrategy": "WRAP",
+            "textFormat": {
+              "foregroundColor": {
+                "red": 1.0,
+                "green": 1.0,
+                "blue": 1.0
+              },
+              "bold": true,
+              "fontSize": 10
+            }
+          }
+        },
+        "fields": "userEnteredFormat(backgroundColor,horizontalAlignment,verticalAlignment,wrapStrategy,textFormat)"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 0,
+          "startRowIndex": 1,
+          "endRowIndex": 102,
+          "startColumnIndex": 0,
+          "endColumnIndex": 16
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "verticalAlignment": "MIDDLE",
+            "wrapStrategy": "WRAP"
+          }
+        },
+        "fields": "userEnteredFormat(verticalAlignment,wrapStrategy)"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 0,
+          "startRowIndex": 1,
+          "endRowIndex": 102,
+          "startColumnIndex": 0,
+          "endColumnIndex": 2
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "horizontalAlignment": "CENTER"
+          }
+        },
+        "fields": "userEnteredFormat.horizontalAlignment"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 0,
+          "startRowIndex": 1,
+          "endRowIndex": 102,
+          "startColumnIndex": 4,
+          "endColumnIndex": 5
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "horizontalAlignment": "CENTER"
+          }
+        },
+        "fields": "userEnteredFormat.horizontalAlignment"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 0,
+          "startRowIndex": 1,
+          "endRowIndex": 102,
+          "startColumnIndex": 6,
+          "endColumnIndex": 7
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "horizontalAlignment": "CENTER"
+          }
+        },
+        "fields": "userEnteredFormat.horizontalAlignment"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 0,
+          "startRowIndex": 1,
+          "endRowIndex": 102,
+          "startColumnIndex": 12,
+          "endColumnIndex": 16
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "horizontalAlignment": "CENTER"
+          }
+        },
+        "fields": "userEnteredFormat.horizontalAlignment"
+      }
+    }
+  ]
+}

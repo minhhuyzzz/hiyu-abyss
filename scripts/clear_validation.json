@@ -1,0 +1,15 @@
+{
+  "requests": [
+    {
+      "setDataValidation": {
+        "range": {
+          "sheetId": 0,
+          "startRowIndex": 1,
+          "endRowIndex": 105,
+          "startColumnIndex": 0,
+          "endColumnIndex": 15
+        }
+      }
+    }
+  ]
+}

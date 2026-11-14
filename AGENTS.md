@@ -44,6 +44,7 @@ Tránh tuyệt đối bẫy rập khuôn công nghiệp. Khi sản xuất nội 
    - **Single-Punch (1 trang duy nhất):** Dành cho những câu đúc kết đanh thép, nén chặt. Không mào đầu, không dài dòng. Đọc 3 giây là đánh thẳng vào tâm lý người xem.
    - **Carousel 2 trang (Tension $\rightarrow$ Twist):** Trang 1 đưa ra hiện tượng quen thuộc/câu hỏi $\rightarrow$ Trang 2 lật ngược vấn đề bóc trần động cơ.
    - **Carousel 3 trang (Diễn tiến chiều sâu):** Chỉ áp dụng khi chủ đề phức tạp, cần đủ 3 nhịp: Hiện tượng $\rightarrow$ Căn nguyên $\rightarrow$ Chiếc gương tự soi chiếu.
+   - **Carousel 4+ trang (Đúc kết triết học & Phản tư sâu):** Bổ sung Trang 4 làm chiếc gương soi chiếu cuối cùng hoặc câu hỏi tự vấn thức tỉnh. Bảng dữ liệu luôn duy trì sẵn cột `Trang 4` (để trống hoặc điền nội dung) nhằm tối đa hóa sự linh hoạt trong khâu sản xuất nội dung.
 2. **Quy tắc viết Hook ngắn & Dấu lửng (`...`):**
    - **Chỉ dùng Hook khi có trang sau:** Single-Punch không dùng Hook.
    - **Độ dài Hook cực ngắn:** Dưới 10 từ. Tuyệt đối không viết Hook thành câu văn dài lòng thòng giải thích hết nghĩa ở trang 1.

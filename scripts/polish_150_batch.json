@@ -7,7 +7,7 @@
           "startRowIndex": 1,
           "endRowIndex": 157,
           "startColumnIndex": 0,
-          "endColumnIndex": 15
+          "endColumnIndex": 16
         }
       }
     },
@@ -18,18 +18,15 @@
           "startRowIndex": 0,
           "endRowIndex": 1,
           "startColumnIndex": 0,
-          "endColumnIndex": 16
+          "endColumnIndex": 17
         },
         "cell": {
           "userEnteredFormat": {
             "backgroundColor": {
-              "red": 0.058823529411764705,
-              "green": 0.09019607843137255,
-              "blue": 0.16470588235294117
+              "red": 0.059,
+              "green": 0.09,
+              "blue": 0.165
             },
-            "horizontalAlignment": "CENTER",
-            "verticalAlignment": "MIDDLE",
-            "wrapStrategy": "WRAP",
             "textFormat": {
               "foregroundColor": {
                 "red": 1.0,
@@ -37,29 +34,15 @@
                 "blue": 1.0
               },
               "bold": true,
-              "fontSize": 10
-            }
-          }
-        },
-        "fields": "userEnteredFormat(backgroundColor,horizontalAlignment,verticalAlignment,wrapStrategy,textFormat)"
-      }
-    },
-    {
-      "repeatCell": {
-        "range": {
-          "sheetId": 0,
-          "startRowIndex": 1,
-          "endRowIndex": 152,
-          "startColumnIndex": 0,
-          "endColumnIndex": 16
-        },
-        "cell": {
-          "userEnteredFormat": {
+              "fontSize": 10,
+              "fontFamily": "Roboto"
+            },
+            "horizontalAlignment": "CENTER",
             "verticalAlignment": "MIDDLE",
             "wrapStrategy": "WRAP"
           }
         },
-        "fields": "userEnteredFormat(verticalAlignment,wrapStrategy)"
+        "fields": "userEnteredFormat(backgroundColor,textFormat,horizontalAlignment,verticalAlignment,wrapStrategy)"
       }
     },
     {
@@ -69,6 +52,45 @@
           "startRowIndex": 1,
           "endRowIndex": 152,
           "startColumnIndex": 0,
+          "endColumnIndex": 17
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "verticalAlignment": "MIDDLE",
+            "wrapStrategy": "WRAP",
+            "textFormat": {
+              "fontSize": 9,
+              "fontFamily": "Roboto"
+            }
+          }
+        },
+        "fields": "userEnteredFormat(verticalAlignment,wrapStrategy,textFormat)"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 0,
+          "startRowIndex": 1,
+          "endRowIndex": 152,
+          "startColumnIndex": 0,
+          "endColumnIndex": 1
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "horizontalAlignment": "CENTER"
+          }
+        },
+        "fields": "userEnteredFormat.horizontalAlignment"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 0,
+          "startRowIndex": 1,
+          "endRowIndex": 152,
+          "startColumnIndex": 1,
           "endColumnIndex": 2
         },
         "cell": {
@@ -119,8 +141,59 @@
           "sheetId": 0,
           "startRowIndex": 1,
           "endRowIndex": 152,
-          "startColumnIndex": 12,
+          "startColumnIndex": 13,
+          "endColumnIndex": 14
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "horizontalAlignment": "CENTER"
+          }
+        },
+        "fields": "userEnteredFormat.horizontalAlignment"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 0,
+          "startRowIndex": 1,
+          "endRowIndex": 152,
+          "startColumnIndex": 14,
+          "endColumnIndex": 15
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "horizontalAlignment": "CENTER"
+          }
+        },
+        "fields": "userEnteredFormat.horizontalAlignment"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 0,
+          "startRowIndex": 1,
+          "endRowIndex": 152,
+          "startColumnIndex": 15,
           "endColumnIndex": 16
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "horizontalAlignment": "CENTER"
+          }
+        },
+        "fields": "userEnteredFormat.horizontalAlignment"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 0,
+          "startRowIndex": 1,
+          "endRowIndex": 152,
+          "startColumnIndex": 16,
+          "endColumnIndex": 17
         },
         "cell": {
           "userEnteredFormat": {
@@ -279,7 +352,7 @@
           "endIndex": 11
         },
         "properties": {
-          "pixelSize": 320
+          "pixelSize": 260
         },
         "fields": "pixelSize"
       }
@@ -293,7 +366,7 @@
           "endIndex": 12
         },
         "properties": {
-          "pixelSize": 200
+          "pixelSize": 320
         },
         "fields": "pixelSize"
       }
@@ -307,7 +380,7 @@
           "endIndex": 13
         },
         "properties": {
-          "pixelSize": 140
+          "pixelSize": 200
         },
         "fields": "pixelSize"
       }
@@ -321,7 +394,7 @@
           "endIndex": 14
         },
         "properties": {
-          "pixelSize": 130
+          "pixelSize": 140
         },
         "fields": "pixelSize"
       }
@@ -335,7 +408,7 @@
           "endIndex": 15
         },
         "properties": {
-          "pixelSize": 120
+          "pixelSize": 130
         },
         "fields": "pixelSize"
       }
@@ -347,6 +420,20 @@
           "dimension": "COLUMNS",
           "startIndex": 15,
           "endIndex": 16
+        },
+        "properties": {
+          "pixelSize": 120
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 16,
+          "endIndex": 17
         },
         "properties": {
           "pixelSize": 130

@@ -42,3 +42,4 @@ Thumbs.db
 .cache/
 tmp/
 *.tmp
+assets/templates/raw_cache/

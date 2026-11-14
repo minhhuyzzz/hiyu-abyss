@@ -6,7 +6,7 @@ widths = [
     (1, 2, 95),    # B: Mã ID
     (2, 3, 280),   # C: Tiêu Đề
     (3, 4, 380),   # D: Mô Tả
-    (4, 5, 130),   # E: Nguồn Tác Giả
+    (4, 5, 180),   # E: Nguồn Tác Giả
     (5, 6, 230),   # F: Hashtags
     (6, 7, 160),   # G: Định Dạng Slide
     (7, 8, 260),   # H: Trang 1

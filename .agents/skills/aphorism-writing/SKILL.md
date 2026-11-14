@@ -34,13 +34,18 @@ Tự chất vấn: Khi nào quan sát này không đúng? Điều kiện nào l�
 - **M7 (Phản đề không kết luận):** Đặt hai mệnh đề căng nhau để người đọc tự suy ngẫm.
 - **M8 (Vết nứt trong niềm tin):** Chỉ ra hoàn cảnh một giá trị đổi tính chất.
 
-### Bước 4: Viết và nén câu (Vietnamese Crafting)
-1. Thử nghiệm tối thiểu 3 biến thể với độ dài và cấu trúc khác nhau:
-   - *Vi ngôn:* 8–20 từ.
-   - *Triết ngôn ngắn:* 20–45 từ.
-   - *Triết ngôn nhiều lớp:* 45–75 từ.
-2. Dùng động từ mạnh, danh từ cụ thể. Cắt bỏ các trạng từ thừa (`luôn luôn`, `chắc chắn`, `tất cả`).
-3. Đọc thầm nhịp điệu tiếng Việt: nhịp câu có thuận tai, thanh điệu có gập ghềnh không?
+### Bước 4: Viết, nén câu & Thiết kế nhịp điệu (Vietnamese Crafting & Pacing)
+1. **Lựa chọn định dạng nhịp điệu phù hợp:**
+   - **Single-Punch (1 trang):** Một câu hoàn chỉnh, nén đanh thép, không cần mào đầu hay hook. Đọc 3 giây là đọng lại dư ba.
+   - **Carousel 2 trang (Hook lửng lơ `...` $\rightarrow$ Cú lật):**
+     + *Trang 1 (Hook):* Cực kỳ ngắn (< 10 từ), tạo khoảng trống tò mò (curiosity gap) và ngắt lửng bằng dấu ba chấm (`......`) ở điểm kích thích nhất.
+     + *Trang 2 (Cú lật):* Câu trả lời bất ngờ bóc trần sự thật ngầm.
+   - **Carousel 3 trang (Diễn tiến chiều sâu):** Dành riêng cho nghịch lý phức tạp (Hiện tượng $\rightarrow$ Căn nguyên $\rightarrow$ Chiếc gương tự soi chiếu).
+2. **Kỹ nghệ câu chữ tiếng Việt tự nhiên:**
+   - Dùng từ ngữ phản ánh đúng va chạm tâm lý đời thực (quan hệ, đồng nghiệp, bạn bè, ranh giới cá nhân, kỳ vọng xã hội).
+   - Loại bỏ từ dịch thô hoặc lý thuyết sáo rỗng ("tấm bình phong", "dã tâm", "cán cân công lý").
+   - Cắt bỏ các trạng từ thừa (`luôn luôn`, `chắc chắn`, `tất cả`).
+   - Đọc thầm nhịp điệu tiếng Việt: nhịp câu có thuận tai, thanh điệu có gập ghềnh không?
 
 ### Bước 5: Tạo hồ sơ `TXT` nháp
 1. Tạo file `editorial/content/TXT-xxxx.md` theo mẫu `templates/content.md`.

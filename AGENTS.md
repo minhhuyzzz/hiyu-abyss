@@ -24,6 +24,7 @@ Agent phải kích hoạt chính xác kỹ năng theo đúng pha nhiệm vụ, k
 | **1. Nghiên cứu & Thẩm định nguồn** | `source-discovery` | Khảo sát tài liệu, tìm kiếm sách/nghiên cứu theo chủ đề | `SRC-xxxx`, `RUN-xxxx` |
 | | `book-insight-summarization` | Có văn bản thực tế, trích xuất luận điểm của tác giả | `NOTE-xxxx` |
 | | `citation-and-quote-audit` | Có trích dẫn, gán tên triết gia; kiểm định 4 tầng | Cập nhật `evidence_status` (G1) |
+| | `tiktok-trend-mining` | Cào xu hướng TikTok, phân tích bộ từ khóa SEO & hashtag thịnh hành | Bộ hashtag & SEO keywords |
 | **2. Khai thác nghịch lý** | `hypocrisy-paradox-mining` | Bóc tách khoảng cách giữa lời nói đạo đức và động cơ | `IDEA-xxxx` (nghịch lý) |
 | | `social-insight-mining` | Khảo sát hiện tượng, thảo luận công khai đời thực | `IDEA-xxxx`, `RUN-xxxx` |
 | | `philosophical-argument-mapping`| Phân tích tiền đề, kết luận, phản đề của luận điểm | `CON-xxxx` |

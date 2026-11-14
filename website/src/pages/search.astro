@@ -1,14 +1,12 @@
 ---
-// src/pages/search.astro - Tìm Kiếm Toàn Văn Kho Tri Thức Hiyu Abyss
+// src/pages/search.astro - Instant Vietnamese Full-Text Search
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import { getAllPublishedQuotes, getAllTopics } from '../lib/content-publisher';
 
 const allQuotes = getAllPublishedQuotes();
 const allTopics = getAllTopics();
 
-// Serialized search index for ultra-fast, zero-latency client search
+// Serialized search index for zero-latency instant client search
 const searchIndex = allQuotes.map((q) => ({
   id: q.id,
   slug: q.slug,
@@ -28,52 +26,54 @@ const searchIndex = allQuotes.map((q) => ({
   title="Tìm Kiếm Kho Tri Thức & Nghệ Thuật | Hiyu Abyss"
   description="Tìm kiếm toàn văn 100 tác phẩm triết ngôn, danh ngôn tâm lý học và tác phẩm hội họa cổ điển theo từ khóa, tác giả hoặc chủ đề."
 >
-  <Header />
-
-  <main class="min-h-screen pt-24 sm:pt-32 pb-20 px-4 sm:px-6">
+  <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6">
     <div class="max-w-4xl mx-auto space-y-12">
-      {/* Header Search Section */}
+      
+      <!-- Header Search Section -->
       <div class="text-center space-y-6">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[var(--border-subtle)] bg-[var(--bg-secondary)] text-xs font-sans tracking-widest uppercase text-[var(--accent-primary)]">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-accent/30 bg-accent/10 text-[10px] font-sans tracking-[0.2em] uppercase font-medium text-accent">
           Tra cứu toàn văn · 100 tác phẩm đã duyệt
         </div>
-        <h1 class="font-display text-4xl sm:text-6xl font-medium tracking-tight text-[var(--text-primary)]">
+        <h1 class="font-display text-4xl sm:text-6xl font-medium tracking-tight text-text">
           Tìm Kiếm Tri Thức
         </h1>
-        <p class="font-serif italic text-base sm:text-xl text-[var(--text-secondary)] max-w-xl mx-auto">
+        <p class="font-serif italic text-base sm:text-xl text-muted max-w-xl mx-auto">
           Tra cứu theo từ khóa tâm lý, tác giả (Nietzsche, Jung, Freud...) hoặc tư tưởng phản tư.
         </p>
 
-        {/* Search Input Box */}
-        <div class="relative max-w-2xl mx-auto mt-6">
-          <input
-            id="search-input"
-            type="search"
-            placeholder="Nhập từ khóa (ví dụ: thao túng, bản ngã, sự thật, tự do...)"
-            autocomplete="off"
-            class="w-full px-5 py-4 pl-12 text-base sm:text-lg bg-[var(--bg-surface)] border-2 border-[var(--border-subtle)] focus:border-[var(--accent-primary)] rounded font-serif text-[var(--text-primary)] placeholder-[var(--text-tertiary)] outline-none transition-all shadow-sm focus:shadow-lg"
-          />
-          <div class="absolute left-4 top-1/2 -translate-y-1/2 text-[var(--text-tertiary)] pointer-events-none">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-            </svg>
+        <!-- Search Input Box (Doppelrand Double-Bezel Architecture) -->
+        <div class="max-w-2xl mx-auto mt-6 p-1 rounded-full bg-surface border border-border/80 focus-within:border-accent shadow-xl transition-all">
+          <div class="relative rounded-full bg-bg/80 flex items-center px-4 py-1.5">
+            <div class="text-muted pl-1 pr-3 pointer-events-none">
+              <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" stroke-width="1.75" />
+                <path d="m21 21-4.35-4.35" stroke-width="1.75" stroke-linecap="round" />
+              </svg>
+            </div>
+            <input
+              id="search-input"
+              type="search"
+              placeholder="Nhập từ khóa (thao túng, bản ngã, sự thật, tự do...)"
+              autocomplete="off"
+              class="w-full py-3 text-base sm:text-lg bg-transparent border-none font-serif text-text placeholder-muted/60 outline-none"
+            />
+            <button
+              id="clear-search-btn"
+              type="button"
+              class="hidden text-xs font-sans text-muted hover:text-text py-1 px-3 rounded-full hover:bg-surface transition-colors"
+            >
+              Xóa ✕
+            </button>
           </div>
-          <button
-            id="clear-search-btn"
-            type="button"
-            class="hidden absolute right-4 top-1/2 -translate-y-1/2 text-xs font-sans text-[var(--text-tertiary)] hover:text-[var(--text-primary)] py-1 px-2 rounded"
-          >
-            Xóa ✕
-          </button>
         </div>
 
-        {/* Quick Suggestion Chips */}
+        <!-- Quick Keyword Suggestion Chips -->
         <div class="flex flex-wrap items-center justify-center gap-2 pt-2 text-xs font-sans">
-          <span class="text-[var(--text-tertiary)]">Gợi ý từ khóa:</span>
+          <span class="text-muted">Gợi ý từ khóa:</span>
           {['Thao túng', 'Bản ngã', 'Đạo đức giả', 'Sự thật', 'Cô độc', 'Tự do', 'Tiêu chuẩn kép'].map((keyword) => (
             <button
               type="button"
-              class="quick-tag px-3 py-1 bg-[var(--bg-secondary)] hover:bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--accent-primary)] transition-colors"
+              class="quick-tag px-3 py-1 bg-surface hover:bg-surface-raised border border-border/80 rounded-full text-muted hover:text-text hover:border-accent transition-all"
               data-keyword={keyword}
             >
               {keyword}
@@ -82,17 +82,17 @@ const searchIndex = allQuotes.map((q) => ({
         </div>
       </div>
 
-      {/* Filters & Results Meta */}
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-4 border-b border-[var(--border-subtle)] text-xs font-sans text-[var(--text-tertiary)]">
-        <div id="results-count" class="font-medium text-[var(--text-secondary)]">
+      <!-- Filters & Results Meta -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-4 border-b border-border/60 text-xs font-sans text-muted">
+        <div id="results-count" class="font-medium text-text/80">
           Đang hiển thị tất cả 100 tác phẩm
         </div>
 
         <div class="flex flex-wrap items-center gap-3">
-          {/* Topic Dropdown */}
+          <!-- Topic Dropdown -->
           <select
             id="topic-filter"
-            class="bg-[var(--bg-surface)] border border-[var(--border-subtle)] text-[var(--text-secondary)] px-3 py-1.5 rounded text-xs outline-none focus:border-[var(--accent-primary)]"
+            class="bg-surface border border-border/80 text-text px-4 py-2 rounded-full text-xs outline-none focus:border-accent transition-colors cursor-pointer"
           >
             <option value="">Tất cả chủ đề ({allTopics.length})</option>
             {allTopics.map((t) => (
@@ -100,10 +100,10 @@ const searchIndex = allQuotes.map((q) => ({
             ))}
           </select>
 
-          {/* Type Dropdown */}
+          <!-- Type Dropdown -->
           <select
             id="type-filter"
-            class="bg-[var(--bg-surface)] border border-[var(--border-subtle)] text-[var(--text-secondary)] px-3 py-1.5 rounded text-xs outline-none focus:border-[var(--accent-primary)]"
+            class="bg-surface border border-border/80 text-text px-4 py-2 rounded-full text-xs outline-none focus:border-accent transition-colors cursor-pointer"
           >
             <option value="">Tất cả phân loại</option>
             <option value="DIRECT_QUOTE">Trích dẫn đã xác minh</option>
@@ -114,36 +114,34 @@ const searchIndex = allQuotes.map((q) => ({
         </div>
       </div>
 
-      {/* Results Container */}
+      <!-- Results Container -->
       <div id="search-results" class="space-y-6">
         <!-- Rendered by client script below -->
       </div>
 
-      {/* Empty State */}
-      <div id="empty-state" class="hidden text-center py-16 space-y-4">
+      <!-- Empty State -->
+      <div id="empty-state" class="hidden text-center py-20 space-y-4">
         <div class="text-4xl">🔍</div>
-        <h3 class="font-display text-xl text-[var(--text-primary)]">
+        <h3 class="font-display text-2xl text-text font-medium">
           Không tìm thấy kết quả phù hợp
         </h3>
-        <p class="font-serif italic text-sm text-[var(--text-tertiary)] max-w-md mx-auto">
-          Hãy thử tìm kiếm với từ khóa ngắn gọn hơn, không dấu, hoặc xóa các bộ lọc phân loại.
+        <p class="font-serif italic text-sm text-muted max-w-md mx-auto leading-relaxed">
+          Hãy thử tìm kiếm với từ khóa ngắn gọn hơn, không dấu, hoặc đặt lại các bộ lọc phân loại.
         </p>
         <button
           id="reset-filter-btn"
           type="button"
-          class="inline-block mt-2 px-4 py-2 border border-[var(--border-subtle)] hover:border-[var(--text-primary)] rounded font-sans text-xs uppercase tracking-widest text-[var(--text-primary)] transition-colors"
+          class="inline-block mt-2 px-6 py-2.5 rounded-full border border-border/80 hover:border-accent font-sans text-xs uppercase tracking-widest text-accent transition-colors"
         >
           Đặt lại bộ lọc
         </button>
       </div>
+
     </div>
-  </main>
+  </div>
 
-  <Footer />
-
-  {/* Embedded Search Script */}
+  <!-- Embedded Instant Search Engine Script -->
   <script is:inline define:vars={{ searchIndex }}>
-    // Utility to remove Vietnamese diacritics for flexible fuzzy matching
     function removeVietnameseTones(str) {
       if (!str) return '';
       str = str.toLowerCase();
@@ -183,39 +181,41 @@ const searchIndex = allQuotes.map((q) => ({
       const html = quotes
         .map((q) => {
           return `
-          <article class="p-6 sm:p-8 bg-[var(--bg-surface)] border border-[var(--border-subtle)] hover:border-[var(--accent-primary)] rounded transition-all duration-300 hover:shadow-lg flex flex-col sm:flex-row gap-6 items-start">
-            ${
-              q.imageRef
-                ? `<div class="w-full sm:w-36 h-28 sm:h-36 flex-shrink-0 overflow-hidden rounded bg-black/40 border border-[var(--border-subtle)]">
-                    <img src="${q.imageRef}" alt="${q.title}" class="w-full h-full object-cover filter brightness-90 hover:scale-105 transition-all duration-500" loading="lazy" />
-                   </div>`
-                : ''
-            }
-            <div class="flex-1 space-y-3">
-              <div class="flex flex-wrap items-center gap-2 text-xs font-sans">
-                <span class="text-[var(--accent-primary)] font-medium uppercase tracking-wider">${q.id}</span>
-                <span class="text-[var(--text-tertiary)]">·</span>
-                <span class="text-[var(--text-tertiary)] uppercase tracking-wider">${q.quoteTypeLabel}</span>
-                <span class="text-[var(--text-tertiary)]">·</span>
-                <span class="text-[var(--text-secondary)] font-medium">#${q.primaryTopicTitle}</span>
-              </div>
+          <article class="p-1 rounded-2xl bg-surface border border-border/80 hover:border-accent/70 transition-all duration-300 hover:shadow-xl">
+            <div class="p-6 sm:p-8 rounded-[calc(1rem-0.125rem)] bg-bg/80 flex flex-col sm:flex-row gap-6 items-start">
+              ${
+                q.imageRef
+                  ? `<div class="w-full sm:w-36 h-28 sm:h-36 flex-shrink-0 overflow-hidden rounded-xl bg-surface border border-border/60">
+                      <img src="${q.imageRef}" alt="${q.title}" class="w-full h-full object-cover filter brightness-90 hover:scale-105 transition-all duration-500" loading="lazy" />
+                     </div>`
+                  : ''
+              }
+              <div class="flex-1 space-y-3">
+                <div class="flex flex-wrap items-center gap-2 text-xs font-sans">
+                  <span class="text-accent font-semibold tracking-wider font-mono">${q.id}</span>
+                  <span class="text-muted">·</span>
+                  <span class="text-muted uppercase tracking-wider text-[11px]">${q.quoteTypeLabel}</span>
+                  <span class="text-muted">·</span>
+                  <span class="text-text font-medium text-[11px]">#${q.primaryTopicTitle}</span>
+                </div>
 
-              <h2 class="font-serif text-lg sm:text-xl font-medium text-[var(--text-primary)] leading-snug">
-                <a href="/library/${q.slug}" class="hover:text-[var(--accent-primary)] transition-colors">
-                  ${q.title}
-                </a>
-              </h2>
+                <h2 class="font-display text-xl sm:text-2xl font-medium text-text leading-snug">
+                  <a href="/library/${q.slug}" class="hover:text-accent transition-colors">
+                    ${q.title}
+                  </a>
+                </h2>
 
-              <p class="font-serif italic text-sm text-[var(--text-secondary)] line-clamp-3 leading-relaxed">
-                "${q.content}"
-              </p>
+                <p class="font-serif italic text-sm text-text/85 line-clamp-3 leading-relaxed">
+                  "${q.content}"
+                </p>
 
-              <div class="pt-2 flex items-center justify-between text-xs font-sans">
-                <span class="text-[var(--text-tertiary)]">Tác giả: <strong class="text-[var(--text-secondary)] font-normal">${q.author}</strong></span>
-                <a href="/library/${q.slug}" class="inline-flex items-center gap-1 text-[var(--accent-primary)] hover:underline font-medium">
-                  <span>Đọc tác phẩm</span>
-                  <span>→</span>
-                </a>
+                <div class="pt-3 border-t border-border/40 flex items-center justify-between text-xs font-sans">
+                  <span class="text-muted">Tác giả: <strong class="text-text font-medium">${q.author}</strong></span>
+                  <a href="/library/${q.slug}" class="inline-flex items-center gap-1.5 text-accent hover:underline font-semibold uppercase tracking-wider text-[11px]">
+                    <span>Đọc tác phẩm</span>
+                    <span>→</span>
+                  </a>
+                </div>
               </div>
             </div>
           </article>
@@ -239,17 +239,8 @@ const searchIndex = allQuotes.map((q) => ({
       }
 
       const filtered = searchIndex.filter((item) => {
-        // Filter by topic
-        if (selectedTopic && item.primaryTopic !== selectedTopic) {
-          return false;
-        }
-
-        // Filter by type
-        if (selectedType && item.quoteType !== selectedType) {
-          return false;
-        }
-
-        // Filter by text query
+        if (selectedTopic && item.primaryTopic !== selectedTopic) return false;
+        if (selectedType && item.quoteType !== selectedType) return false;
         if (!normQuery) return true;
 
         const normTitle = removeVietnameseTones(item.title);
@@ -272,7 +263,6 @@ const searchIndex = allQuotes.map((q) => ({
       renderResults(filtered, rawQuery);
     }
 
-    // Event listeners
     input.addEventListener('input', doSearch);
     topicFilter.addEventListener('change', doSearch);
     typeFilter.addEventListener('change', doSearch);
@@ -298,18 +288,12 @@ const searchIndex = allQuotes.map((q) => ({
       doSearch();
     });
 
-    // Check URL search params (e.g. ?q=thao+tung)
     const urlParams = new URLSearchParams(window.location.search);
     const initialQuery = urlParams.get('q');
     const initialTopic = urlParams.get('topic');
-    if (initialQuery) {
-      input.value = initialQuery;
-    }
-    if (initialTopic) {
-      topicFilter.value = initialTopic.toUpperCase();
-    }
+    if (initialQuery) input.value = initialQuery;
+    if (initialTopic) topicFilter.value = initialTopic.toUpperCase();
 
-    // Initial render
     doSearch();
   </script>
 </BaseLayout>

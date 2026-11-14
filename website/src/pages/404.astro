@@ -1,0 +1,49 @@
+---
+// src/pages/404.astro - Branded 404 Philosophical Page Not Found
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="404 — Lạc Lối Giữa Hố Sâu | Hiyu Abyss"
+  description="Trang bạn đang tìm kiếm không tồn tại hoặc đã chìm sâu vào bóng tối của thời gian."
+>
+  <div class="min-h-[75vh] flex items-center justify-center px-4 sm:px-6 py-16 sm:py-24">
+    <div class="max-w-xl mx-auto w-full">
+      <div class="p-1.5 rounded-[2rem] bg-surface/70 border border-border/80 shadow-2xl text-center">
+        <div class="p-8 sm:p-14 rounded-[calc(2rem-0.375rem)] bg-bg/95 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-[10px] font-sans tracking-[0.2em] uppercase font-medium text-oxide border border-oxide/30 bg-oxide/10">
+            Lỗi 404 · Lạc Lối
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-6xl text-text font-medium tracking-tight">
+            Khoảng Trống Vô Định
+          </h1>
+
+          <blockquote class="font-serif italic text-base sm:text-lg text-muted leading-relaxed">
+            "Không phải mọi lối đi đều dẫn tới câu trả lời. Nhưng việc thừa nhận mình đang lạc lối luôn là bước khởi đầu của sự nhận thức."
+          </blockquote>
+
+          <p class="font-sans text-xs sm:text-sm text-muted/80 leading-relaxed">
+            Trang bạn đang tìm kiếm không tồn tại, đã đổi vị trí, hoặc đã chìm sâu vào bóng tối của thời gian.
+          </p>
+
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="/"
+              class="w-full sm:w-auto px-6 py-3 rounded-full border border-border/80 hover:border-text font-sans text-xs uppercase tracking-widest text-muted hover:text-text transition-colors"
+            >
+              ← Về Trang Chủ
+            </a>
+            <a
+              href="/library"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 bg-accent text-on-accent font-sans text-xs uppercase tracking-widest font-bold rounded-full hover:opacity-95 transition-all shadow-xl active:scale-[0.98]"
+            >
+              <span>Vào Thư Viện</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

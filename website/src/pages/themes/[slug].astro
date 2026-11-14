@@ -1,8 +1,6 @@
 ---
-// src/pages/themes/[slug].astro
+// src/pages/themes/[slug].astro - Dynamic Topic Gallery
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
 import QuoteCard from '../../components/QuoteCard.astro';
 import { getAllTopics, getQuotesByTopic } from '../../lib/content-publisher';
 import type { TopicDefinition } from '../../lib/types';
@@ -27,13 +25,11 @@ const quotes = getQuotesByTopic(topic.code);
   title={`${topic.title} · Chủ Đề Triết Học Hiyu Abyss`}
   description={topic.description}
 >
-  <Header slot="header" />
-
-  <section class="py-12 md:py-16 bg-bg border-b border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section class="py-12 sm:py-20 md:py-28 border-b border-border/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
       <!-- Breadcrumb -->
-      <nav class="flex items-center gap-2 text-xs font-sans text-muted mb-8 pb-4 border-b border-border/50">
+      <nav class="flex items-center gap-2 text-xs font-sans text-muted pb-4 border-b border-border/60">
         <a href="/" class="hover:text-text transition-colors">Trang Chủ</a>
         <span>/</span>
         <a href="/themes" class="hover:text-text transition-colors">Chủ Đề</a>
@@ -42,40 +38,38 @@ const quotes = getQuotesByTopic(topic.code);
       </nav>
 
       <!-- Topic Header -->
-      <div class="mb-12 pb-6 border-b border-border/60">
-        <div class="flex items-center gap-3 mb-2">
-          <span class="px-3 py-1 rounded-full text-xs font-sans font-semibold tracking-wider uppercase bg-accent/15 text-accent border border-accent/30">
-            {topic.code}
+      <div class="pb-8 border-b border-border/60 space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="px-3.5 py-1 rounded-full text-[10px] font-sans font-medium tracking-[0.2em] uppercase bg-accent/15 text-accent border border-accent/30">
+            #{topic.code}
           </span>
           <span class="text-xs text-muted font-sans">{quotes.length} tác phẩm</span>
         </div>
-        <h1 class="font-display text-3xl sm:text-4xl md:text-5xl text-text font-bold mt-2">
+        <h1 class="font-display text-3xl sm:text-5xl md:text-6xl text-text font-medium leading-tight">
           {topic.title}
         </h1>
-        <p class="font-serif text-base sm:text-lg text-muted mt-3 max-w-2xl leading-relaxed italic">
+        <p class="font-serif text-base sm:text-xl text-muted max-w-2xl leading-relaxed italic">
           "{topic.description}"
         </p>
       </div>
 
       <!-- Quotes Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
         {quotes.map((q) => (
           <QuoteCard quote={q} />
         ))}
       </div>
 
-      <!-- Navigation back to all themes -->
-      <div class="mt-14 pt-8 border-t border-border/60 text-center">
+      <!-- Back to all topics button -->
+      <div class="pt-8 flex justify-center">
         <a
           href="/themes"
-          class="inline-flex items-center gap-2 px-6 py-3 rounded border border-border bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-wider uppercase font-semibold transition-colors"
+          class="px-6 py-3 rounded-full border border-border/80 hover:border-accent font-sans text-xs uppercase tracking-widest text-muted hover:text-text transition-colors"
         >
-          <span>← Quay lại tất cả các chủ đề</span>
+          ← Xem tất cả chủ đề
         </a>
       </div>
 
     </div>
   </section>
-
-  <Footer slot="footer" />
 </BaseLayout>

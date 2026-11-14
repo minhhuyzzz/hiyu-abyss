@@ -1,5 +1,5 @@
 ---
-// QuoteCard.astro
+// QuoteCard.astro - Double-Bezel Museum Plaque Card Architecture
 import type { PublicQuote } from '../lib/types';
 
 interface Props {
@@ -11,57 +11,61 @@ const artSrc = quote.artInfo?.slides?.slide_1 || `/images/themes/${quote.imageRe
 ---
 
 <article
-  class="quote-card group flex flex-col justify-between rounded-lg border border-border bg-surface/70 hover:border-accent/80 transition-all duration-300 overflow-hidden hover:shadow-xl"
+  class="quote-card group p-1 rounded-2xl bg-surface/80 border border-border/80 hover:border-accent/70 transition-all duration-500 hover:shadow-2xl flex flex-col justify-between hover:-translate-y-1"
   data-topic={quote.topicCodes.join(' ')}
 >
-  <!-- Card Header Artwork Thumbnail -->
-  <a href={`/library/${quote.slug}`} class="relative w-full aspect-[16/10] overflow-hidden bg-bg block">
-    <img
-      src={artSrc}
-      alt={quote.artInfo?.alt_vi || quote.cleanTitle}
-      class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-      loading="lazy"
-      decoding="async"
-    />
-    <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-60"></div>
+  <div class="rounded-[calc(1rem-0.125rem)] overflow-hidden bg-bg/90 flex-1 flex flex-col justify-between">
     
-    <!-- Topic Pill -->
-    <span class="absolute top-3 left-3 px-2.5 py-1 rounded text-[10px] tracking-wider uppercase font-sans font-semibold bg-bg/85 backdrop-blur-md text-accent border border-border/50">
-      {quote.primaryTopicTitle}
-    </span>
-  </a>
+    <!-- Card Header Artwork Thumbnail -->
+    <a href={`/library/${quote.slug}`} class="relative w-full aspect-[16/10] overflow-hidden bg-surface block">
+      <img
+        src={artSrc}
+        alt={quote.artInfo?.alt_vi || quote.cleanTitle}
+        class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-95 group-hover:brightness-100"
+        loading="lazy"
+        decoding="async"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent opacity-70"></div>
+      
+      <!-- Topic Pill (Micro-Badge) -->
+      <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] tracking-wider uppercase font-sans font-medium bg-bg/90 backdrop-blur-md text-accent border border-border/60 shadow-sm">
+        #{quote.primaryTopicTitle}
+      </span>
+    </a>
 
-  <!-- Card Body Text -->
-  <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
-    <div>
-      <div class="flex items-center justify-between text-xs text-muted mb-2 font-sans">
-        <span>{quote.author}</span>
-        <span class="text-[10px] uppercase tracking-wider">{quote.quoteTypeLabel}</span>
+    <!-- Card Body Content -->
+    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+      <div class="space-y-2">
+        <div class="flex items-center justify-between text-xs text-muted font-sans">
+          <span class="font-medium text-text/80">{quote.author}</span>
+          <span class="text-[10px] uppercase tracking-wider text-muted/70">{quote.quoteTypeLabel}</span>
+        </div>
+
+        <h3 class="font-display text-xl text-text font-medium group-hover:text-accent transition-colors leading-snug">
+          <a href={`/library/${quote.slug}`}>
+            {quote.cleanTitle}
+          </a>
+        </h3>
+
+        <p class="font-serif text-sm text-text/85 line-clamp-3 italic leading-relaxed pt-1">
+          "{quote.content}"
+        </p>
       </div>
 
-      <h3 class="font-display text-lg sm:text-xl text-text font-bold mb-3 group-hover:text-accent transition-colors leading-snug">
-        <a href={`/library/${quote.slug}`}>
-          {quote.cleanTitle}
+      <!-- Card Footer (Clean Horizontal Alignment) -->
+      <div class="pt-4 border-t border-border/40 flex items-center justify-between text-xs font-sans">
+        <span class="text-muted text-[11px] font-mono">
+          {quote.id}
+        </span>
+        <a
+          href={`/library/${quote.slug}`}
+          class="inline-flex items-center gap-1.5 text-accent hover:underline font-semibold tracking-wider uppercase text-[11px] transition-all group-hover:translate-x-0.5"
+        >
+          <span>Đọc tác phẩm</span>
+          <span>→</span>
         </a>
-      </h3>
-
-      <p class="font-serif text-sm text-text/80 line-clamp-3 italic leading-relaxed mb-4">
-        "{quote.content}"
-      </p>
+      </div>
     </div>
 
-    <!-- Card Footer -->
-    <div class="pt-4 border-t border-border/40 flex items-center justify-between text-xs">
-      <span class="text-muted text-[11px] font-sans">
-        {quote.id} · {quote.slideFormat}
-      </span>
-      <a
-        href={`/library/${quote.slug}`}
-        class="text-accent hover:underline font-semibold font-sans tracking-wider uppercase text-[11px] flex items-center gap-1"
-      >
-        <span>Đọc tác phẩm</span>
-        <span>→</span>
-      </a>
-    </div>
   </div>
 </article>

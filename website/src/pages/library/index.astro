@@ -1,8 +1,6 @@
 ---
-// src/pages/library/index.astro
+// src/pages/library/index.astro - Magazine Library with Dynamic Open Taxonomy
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
 import QuoteCard from '../../components/QuoteCard.astro';
 import { getAllPublishedQuotes, getAllTopics } from '../../lib/content-publisher';
 
@@ -14,79 +12,83 @@ const topics = getAllTopics();
   title="The Library · Thư Viện Giám Tuyển 100 Tác Phẩm"
   description="Kho lưu trữ 100 tác phẩm triết học tâm lý và mỹ học cổ điển. Phân loại theo 20 dòng tư tưởng mở."
 >
-  <Header slot="header" />
-
-  <section class="py-12 md:py-16 bg-bg border-b border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section class="py-12 sm:py-20 md:py-28 border-b border-border/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
       <!-- Page Header -->
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 pb-6 border-b border-border/60">
-        <div>
-          <span class="font-sans text-xs tracking-[0.25em] text-accent uppercase font-bold">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-border/60">
+        <div class="space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] uppercase tracking-[0.2em] font-sans font-medium text-accent border border-accent/30 bg-accent/10">
             The Living Library
-          </span>
-          <h1 class="font-display text-3xl sm:text-4xl md:text-5xl text-text font-bold mt-1">
+          </div>
+          <h1 class="font-display text-3xl sm:text-5xl md:text-6xl text-text font-medium leading-tight">
             Thư Viện Triết Học Chiêm Nghiệm
           </h1>
-          <p class="font-serif text-sm sm:text-base text-muted mt-2 max-w-2xl leading-relaxed">
+          <p class="font-serif text-base sm:text-lg text-muted max-w-2xl leading-relaxed">
             100 tác phẩm đã được giám tuyển nghiêm ngặt, đối thoại giữa câu chữ và hội họa bảo tàng. 
             Chọn một chủ đề hoặc để định mệnh dẫn lối bằng tính năng ngẫu nhiên.
           </p>
         </div>
 
-        <!-- Surprise Me Button -->
+        <!-- Surprise Me Button (Button-in-Button Pattern) -->
         <button
           id="surprise-btn"
           type="button"
-          class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded border border-accent bg-accent/10 text-accent hover:bg-accent hover:text-on-accent transition-all duration-300 font-sans text-xs tracking-[0.15em] uppercase font-bold min-h-[44px] shadow-sm self-start md:self-auto flex-shrink-0"
+          class="group inline-flex items-center gap-3 pl-6 pr-2.5 py-2.5 rounded-full border border-accent/80 bg-accent/10 text-accent hover:bg-accent hover:text-on-accent transition-all duration-300 font-sans text-xs tracking-[0.15em] uppercase font-bold min-h-[48px] shadow-sm self-start md:self-auto flex-shrink-0 active:scale-[0.98]"
         >
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-          </svg>
-          <span>Bốc Bài Ngẫu Nhiên (Surprise Me)</span>
+          <span>Bốc Bài Ngẫu Nhiên</span>
+          <span class="w-8 h-8 rounded-full bg-accent/20 group-hover:bg-on-accent/20 flex items-center justify-center transition-colors">
+            🎲
+          </span>
         </button>
       </div>
 
       <!-- Open Taxonomy Filter Bar -->
-      <div class="mb-10">
-        <div class="text-xs font-sans tracking-[0.15em] text-muted uppercase font-semibold mb-3 flex items-center justify-between">
-          <span>Lọc Theo Chủ Đề:</span>
+      <div class="space-y-4">
+        <div class="text-xs font-sans tracking-[0.15em] text-muted uppercase font-semibold flex items-center justify-between">
+          <span>Lọc Theo Dòng Tư Tưởng:</span>
           <span id="active-count" class="text-accent font-bold">100 / 100 tác phẩm</span>
         </div>
-        <div class="flex flex-wrap gap-2">
+        <div class="flex flex-wrap gap-2 pt-1">
           <button
-            class="filter-btn active px-3.5 py-1.5 rounded-full text-xs font-sans border border-accent bg-accent text-on-accent font-semibold transition-all min-h-[36px]"
+            class="filter-btn active px-4 py-2 rounded-full text-xs font-sans border border-accent bg-accent text-on-accent font-semibold transition-all min-h-[36px] shadow-sm"
             data-filter="ALL"
           >
             Tất Cả ({quotes.length})
           </button>
           {topics.map((t) => (
             <button
-              class="filter-btn px-3.5 py-1.5 rounded-full text-xs font-sans border border-border bg-surface text-muted hover:text-text hover:border-accent transition-all min-h-[36px]"
+              class="filter-btn px-4 py-2 rounded-full text-xs font-sans border border-border/80 bg-surface text-muted hover:text-text hover:border-accent transition-all min-h-[36px]"
               data-filter={t.code}
             >
-              {t.title} <span class="opacity-70 text-[10px]">({t.count})</span>
+              #{t.title} <span class="opacity-60 text-[10px]">({t.count})</span>
             </button>
           ))}
         </div>
       </div>
 
-      <!-- Quotes Magazine Grid -->
-      <div id="quotes-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <!-- Quotes Magazine Grid (3 Columns) -->
+      <div id="quotes-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
         {quotes.map((q) => (
           <QuoteCard quote={q} />
         ))}
       </div>
 
       <!-- Empty State (hidden by default) -->
-      <div id="empty-state" class="hidden py-16 text-center">
+      <div id="empty-state" class="hidden py-24 text-center space-y-4">
+        <div class="text-4xl">🏛️</div>
         <p class="font-serif text-lg text-muted italic">Không tìm thấy tác phẩm nào thuộc chủ đề này.</p>
+        <button
+          type="button"
+          onclick="document.querySelector('[data-filter=\"ALL\"]').click()"
+          class="px-5 py-2.5 rounded-full border border-border bg-surface text-xs uppercase tracking-widest font-sans text-accent hover:border-accent"
+        >
+          Xem lại tất cả tác phẩm
+        </button>
       </div>
 
     </div>
   </section>
-
-  <Footer slot="footer" />
 </BaseLayout>
 
 <script is:inline define:vars={{ quoteSlugs: quotes.map((q) => q.slug) }}>
@@ -101,37 +103,36 @@ const topics = getAllTopics();
     });
   }
 
-  // Dynamic Taxonomy Filtering
+  // Filter Functionality
   const filterBtns = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.quote-card');
-  const countEl = document.getElementById('active-count');
+  const activeCount = document.getElementById('active-count');
   const emptyState = document.getElementById('empty-state');
 
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
-      // Toggle button styles
       filterBtns.forEach((b) => {
-        b.classList.remove('bg-accent', 'text-on-accent', 'border-accent', 'font-semibold');
-        b.classList.add('bg-surface', 'text-muted', 'border-border');
+        b.classList.remove('active', 'bg-accent', 'text-on-accent', 'border-accent', 'font-semibold', 'shadow-sm');
+        b.classList.add('bg-surface', 'text-muted', 'border-border/80');
       });
-      btn.classList.add('bg-accent', 'text-on-accent', 'border-accent', 'font-semibold');
-      btn.classList.remove('bg-surface', 'text-muted', 'border-border');
+      btn.classList.add('active', 'bg-accent', 'text-on-accent', 'border-accent', 'font-semibold', 'shadow-sm');
+      btn.classList.remove('bg-surface', 'text-muted', 'border-border/80');
 
-      const filter = btn.getAttribute('data-filter');
+      const filter = btn.dataset.filter;
       let visible = 0;
 
       cards.forEach((card) => {
-        const topics = card.getAttribute('data-topic') || '';
+        const topics = card.dataset.topic || '';
         if (filter === 'ALL' || topics.includes(filter)) {
-          card.classList.remove('hidden');
+          card.style.display = 'flex';
           visible++;
         } else {
-          card.classList.add('hidden');
+          card.style.display = 'none';
         }
       });
 
-      if (countEl) {
-        countEl.textContent = `${visible} / ${cards.length} tác phẩm`;
+      if (activeCount) {
+        activeCount.textContent = `${visible} / ${cards.length} tác phẩm`;
       }
 
       if (emptyState) {

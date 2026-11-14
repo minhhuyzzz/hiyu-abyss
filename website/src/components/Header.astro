@@ -1,5 +1,5 @@
 ---
-// Header.astro
+// Header.astro - Floating Island Navigation Header
 import BrandLogo from './BrandLogo.astro';
 import ThemeToggle from './ThemeToggle.astro';
 
@@ -13,103 +13,125 @@ const navLinks = [
 const pathname = Astro.url.pathname;
 ---
 
-<header class="sticky top-0 z-50 w-full bg-bg/95 backdrop-blur-md border-b border-border/60 transition-colors duration-200">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
-    <!-- Brand Logo -->
-    <BrandLogo variant="full" />
+<header class="sticky top-3 sm:top-5 z-50 w-full px-3 sm:px-6 pointer-events-none transition-all duration-300">
+  <div class="max-w-5xl mx-auto w-full pointer-events-auto">
+    <!-- Floating Glass Island -->
+    <div class="h-16 sm:h-20 px-4 sm:px-8 rounded-full border border-border/80 bg-surface/90 backdrop-blur-xl shadow-2xl flex items-center justify-between transition-all duration-300 hover:border-accent/40">
+      
+      <!-- Brand Logo -->
+      <BrandLogo variant="full" />
 
-    <!-- Desktop Navigation -->
-    <nav class="hidden md:flex items-center gap-8" aria-label="Điều hướng chính">
-      {navLinks.map((link) => {
-        const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
-        return (
-          <a
-            href={link.href}
-            class={`group relative py-1 text-sm tracking-[0.1em] uppercase font-medium transition-colors duration-200 ${
-              isActive ? 'text-accent font-semibold' : 'text-muted hover:text-text'
-            }`}
-          >
-            <span>{link.label}</span>
-            <span class={`absolute bottom-0 left-0 h-[2px] bg-accent transition-all duration-300 ${
-              isActive ? 'w-full' : 'w-0 group-hover:w-full'
-            }`} />
-          </a>
-        );
-      })}
-    </nav>
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-1.5 lg:gap-3" aria-label="Điều hướng chính">
+        {navLinks.map((link) => {
+          const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
+          return (
+            <a
+              href={link.href}
+              aria-current={isActive ? 'page' : undefined}
+              class={`relative px-4 py-1.5 rounded-full text-xs uppercase tracking-[0.15em] font-sans transition-all duration-300 ${
+                isActive
+                  ? 'bg-accent/15 text-accent font-semibold border border-accent/30 shadow-sm'
+                  : 'text-muted hover:text-text hover:bg-surface-raised/80'
+              }`}
+            >
+              <span>{link.label}</span>
+              {isActive && (
+                <span class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-accent" />
+              )}
+            </a>
+          );
+        })}
+      </nav>
 
-    <!-- Header Actions (Search icon + Theme Toggle + Mobile Menu Trigger) -->
-    <div class="flex items-center gap-2 sm:gap-4">
-      <a
-        href="/search"
-        class="p-2 text-muted hover:text-text rounded-full hover:bg-surface transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center md:hidden"
-        aria-label="Tìm kiếm"
-      >
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <circle cx="11" cy="11" r="8" stroke-width="1.75" />
-          <path d="m21 21-4.35-4.35" stroke-width="1.75" stroke-linecap="round" />
-        </svg>
-      </a>
+      <!-- Right Header Actions (Search + Theme Switcher + Mobile Trigger) -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Quick Search Icon on mobile -->
+        <a
+          href="/search"
+          class="p-2 text-muted hover:text-text rounded-full hover:bg-surface-raised transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center md:hidden"
+          aria-label="Tìm kiếm"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8" stroke-width="1.75" />
+            <path d="m21 21-4.35-4.35" stroke-width="1.75" stroke-linecap="round" />
+          </svg>
+        </a>
 
-      <!-- Theme Switcher -->
-      <ThemeToggle />
+        <!-- Dual-Theme Switcher -->
+        <ThemeToggle />
 
-      <!-- Mobile Hamburger Button -->
-      <button
-        id="mobile-menu-btn"
-        type="button"
-        class="md:hidden p-2 text-muted hover:text-text rounded-lg hover:bg-surface transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
-        aria-label="Mở danh mục điều hướng"
-        aria-expanded="false"
-      >
-        <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
+        <!-- Mobile Animated Hamburger Button -->
+        <button
+          id="mobile-menu-btn"
+          type="button"
+          class="md:hidden relative w-11 h-11 rounded-full flex flex-col items-center justify-center gap-1.5 p-2 text-muted hover:text-text hover:bg-surface-raised transition-all"
+          aria-label="Mở danh mục điều hướng"
+          aria-expanded="false"
+        >
+          <span class="hamburger-bar w-5 h-0.5 bg-current transition-all duration-300 transform origin-center"></span>
+          <span class="hamburger-bar w-5 h-0.5 bg-current transition-all duration-300 transform origin-center"></span>
+        </button>
+      </div>
     </div>
-  </div>
 
-  <!-- Mobile Drawer Menu -->
-  <div
-    id="mobile-menu"
-    class="md:hidden hidden border-b border-border bg-surface/98 backdrop-blur-lg px-6 py-6 transition-all duration-300"
-  >
-    <nav class="flex flex-col gap-4">
-      {navLinks.map((link) => {
-        const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
-        return (
-          <a
-            href={link.href}
-            class={`flex items-center justify-between py-3 text-base tracking-[0.1em] uppercase font-medium border-b border-border/30 ${
-              isActive ? 'text-accent font-semibold' : 'text-text hover:text-accent'
-            }`}
-          >
-            <span>{link.label}</span>
-            <span class="text-xs text-muted tracking-widest font-serif lowercase italic">{link.enLabel}</span>
-          </a>
-        );
-      })}
-    </nav>
+    <!-- Mobile Drawer Overlay -->
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden mt-3 p-6 rounded-3xl border border-border/80 bg-surface/98 backdrop-blur-2xl shadow-2xl transition-all duration-300"
+    >
+      <nav class="flex flex-col gap-2">
+        {navLinks.map((link) => {
+          const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
+          return (
+            <a
+              href={link.href}
+              class={`flex items-center justify-between px-5 py-3.5 rounded-2xl text-sm uppercase tracking-[0.15em] font-sans transition-all ${
+                isActive
+                  ? 'bg-accent/15 text-accent font-semibold border border-accent/30'
+                  : 'text-text hover:bg-surface-raised'
+              }`}
+            >
+              <span>{link.label}</span>
+              <span class="text-xs text-muted tracking-widest font-serif lowercase italic">
+                {link.enLabel}
+              </span>
+            </a>
+          );
+        })}
+      </nav>
+    </div>
   </div>
 </header>
 
 <script is:inline>
   const menuBtn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  const hamIcon = document.getElementById('hamburger-icon');
-  const closeIcon = document.getElementById('close-icon');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const bars = document.querySelectorAll('.hamburger-bar');
 
-  if (menuBtn && menu) {
+  if (menuBtn && mobileMenu) {
     menuBtn.addEventListener('click', () => {
       const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
-      menuBtn.setAttribute('aria-expanded', String(!isExpanded));
-      menu.classList.toggle('hidden');
-      if (hamIcon && closeIcon) {
-        hamIcon.classList.toggle('hidden');
-        closeIcon.classList.toggle('hidden');
+      menuBtn.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('hidden');
+
+      // Morphing hamburger animation
+      if (!isExpanded) {
+        if (bars[0]) bars[0].style.transform = 'translateY(4px) rotate(45deg)';
+        if (bars[1]) bars[1].style.transform = 'translateY(-4px) rotate(-45deg)';
+      } else {
+        if (bars[0]) bars[0].style.transform = '';
+        if (bars[1]) bars[1].style.transform = '';
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+        menuBtn.setAttribute('aria-expanded', 'false');
+        mobileMenu.classList.add('hidden');
+        if (bars[0]) bars[0].style.transform = '';
+        if (bars[1]) bars[1].style.transform = '';
       }
     });
   }

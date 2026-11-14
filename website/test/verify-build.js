@@ -109,6 +109,7 @@ assert(fs.existsSync(path.join(distDir, 'mirror/index.html')), 'Trang /mirror/in
 assert(fs.existsSync(path.join(distDir, 'mirror/su-that-va-binh-yen/index.html')), 'Hành trình /mirror/su-that-va-binh-yen tồn tại');
 assert(fs.existsSync(path.join(distDir, 'search/index.html')), 'Trang /search/index.html tồn tại');
 assert(fs.existsSync(path.join(distDir, 'themes/index.html')), 'Trang /themes/index.html tồn tại');
+assert(fs.existsSync(path.join(distDir, '404.html')), 'Trang lỗi nhận diện /404.html tồn tại');
 
 // Check 100 quote pages
 let quotesMissing = 0;

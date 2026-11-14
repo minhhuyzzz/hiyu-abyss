@@ -1,10 +1,8 @@
 ---
-// src/pages/library/[slug].astro
+// src/pages/library/[slug].astro - Classical Aphorism Reader with Multi-Angle View & Provenance
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
 import SourceAttribution from '../../components/SourceAttribution.astro';
-import { getAllPublishedQuotes, getQuoteBySlug } from '../../lib/content-publisher';
+import { getAllPublishedQuotes } from '../../lib/content-publisher';
 import type { PublicQuote } from '../../lib/types';
 
 export function getStaticPaths() {
@@ -36,115 +34,117 @@ const slide3Src = quote.artInfo?.slides?.slide_3 || `/images/themes/${quote.imag
   description={quote.content}
   image={artSrc}
 >
-  <Header slot="header" />
-
-  <article class="py-10 md:py-16 bg-bg">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+  <article class="py-12 sm:py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
-      <!-- Breadcrumb & Top Bar -->
-      <nav class="flex items-center justify-between text-xs font-sans text-muted mb-8 pb-4 border-b border-border/50">
+      <!-- Breadcrumb Navigation Bar -->
+      <nav class="flex items-center justify-between text-xs font-sans text-muted pb-4 border-b border-border/60">
         <div class="flex items-center gap-2">
           <a href="/" class="hover:text-text transition-colors">Trang Chủ</a>
           <span>/</span>
           <a href="/library" class="hover:text-text transition-colors">Thư Viện</a>
           <span>/</span>
           <a href={`/themes/${quote.primaryTopic.toLowerCase().replace(/_/g, '-')}`} class="text-accent hover:underline">
-            {quote.primaryTopicTitle}
+            #{quote.primaryTopicTitle}
           </a>
         </div>
-        <span class="font-mono text-xs">{quote.id}</span>
+        <span class="font-mono text-xs text-accent font-semibold">{quote.id}</span>
       </nav>
 
-      <!-- Header Section -->
-      <header class="mb-10 flex flex-col gap-4">
-        <div class="flex flex-wrap items-center gap-2.5">
-          <span class="px-3 py-1 rounded-full text-xs font-sans font-semibold tracking-wider uppercase bg-accent/15 text-accent border border-accent/30">
-            {quote.primaryTopicTitle}
-          </span>
-          <span class="px-3 py-1 rounded-full text-xs font-sans tracking-wider uppercase bg-surface text-muted border border-border">
-            {quote.quoteTypeLabel}
-          </span>
-          <span class="text-xs font-sans text-muted">Tác giả: <strong class="text-text">{quote.author}</strong></span>
-        </div>
-
-        <h1 class="font-display text-3xl sm:text-4xl md:text-5xl text-text font-bold leading-tight mt-2">
-          {quote.cleanTitle}
-        </h1>
-      </header>
-
       <!-- Main Visual & Inscription Section -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-14">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
         
         <!-- Left: Core Aphorism & Actions -->
-        <div class="lg:col-span-7 flex flex-col gap-6 order-2 lg:order-1">
-          <blockquote class="font-serif text-2xl sm:text-3xl text-text leading-relaxed italic border-l-4 border-accent pl-6 py-2 bg-surface/30 rounded-r-lg">
+        <div class="lg:col-span-7 flex flex-col gap-8 order-2 lg:order-1">
+          <div class="space-y-4">
+            <div class="flex flex-wrap items-center gap-2.5">
+              <span class="px-3.5 py-1 rounded-full text-[10px] font-sans font-medium tracking-[0.2em] uppercase bg-accent/15 text-accent border border-accent/30">
+                #{quote.primaryTopicTitle}
+              </span>
+              <span class="px-3.5 py-1 rounded-full text-[10px] font-sans tracking-[0.2em] uppercase bg-surface text-muted border border-border/80">
+                {quote.quoteTypeLabel}
+              </span>
+            </div>
+
+            <h1 class="font-display text-3xl sm:text-5xl text-text font-medium leading-tight">
+              {quote.cleanTitle}
+            </h1>
+            <p class="text-xs font-sans text-muted">
+              Tác giả luận đề: <strong class="text-text font-medium">{quote.author}</strong>
+            </p>
+          </div>
+
+          <!-- Master Blockquote -->
+          <blockquote class="font-serif text-2xl sm:text-3xl text-text leading-relaxed sm:leading-loose italic border-l-2 border-accent pl-6 py-2 bg-surface/30 rounded-r-xl shadow-inner">
             "{quote.content}"
           </blockquote>
 
-          <!-- Action Toolbar -->
-          <div class="flex flex-wrap items-center gap-3 pt-2">
+          <!-- Action Toolbar (Button-in-Button Architecture) -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
             <button
               id="copy-quote-btn"
               type="button"
-              class="inline-flex items-center gap-2 px-4 py-2.5 rounded border border-border bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-wider uppercase font-semibold transition-colors min-h-[44px]"
+              class="group inline-flex items-center gap-2.5 px-6 py-3 rounded-full border border-border/80 bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-wider uppercase font-semibold transition-all shadow-sm active:scale-[0.98] min-h-[48px]"
             >
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke-width="2" />
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke-width="2" />
+              <svg class="w-4 h-4 text-accent transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke-width="1.75" />
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke-width="1.75" />
               </svg>
-              <span>Sao Chép Câu Chữ</span>
+              <span>Sao Chép Triết Ngôn</span>
             </button>
 
             <button
               id="share-btn"
               type="button"
-              class="inline-flex items-center gap-2 px-4 py-2.5 rounded border border-border bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-wider uppercase font-semibold transition-colors min-h-[44px]"
+              class="group inline-flex items-center gap-2.5 px-6 py-3 rounded-full border border-border/80 bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-wider uppercase font-semibold transition-all shadow-sm active:scale-[0.98] min-h-[48px]"
             >
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <circle cx="18" cy="5" r="3" stroke-width="2" />
-                <circle cx="6" cy="12" r="3" stroke-width="2" />
-                <circle cx="18" cy="19" r="3" stroke-width="2" />
-                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" stroke-width="2" />
-                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke-width="2" />
+              <svg class="w-4 h-4 text-accent transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <circle cx="18" cy="5" r="3" stroke-width="1.75" />
+                <circle cx="6" cy="12" r="3" stroke-width="1.75" />
+                <circle cx="18" cy="19" r="3" stroke-width="1.75" />
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" stroke-width="1.75" />
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke-width="1.75" />
               </svg>
               <span>Chia Sẻ</span>
             </button>
           </div>
 
           <!-- Deep Commentary -->
-          <div class="mt-4 pt-6 border-t border-border/60">
-            <h2 class="font-display text-lg tracking-[0.15em] uppercase font-bold text-accent mb-3">
+          <div class="pt-6 border-t border-border/60 space-y-4">
+            <h2 class="font-display text-base tracking-[0.15em] uppercase font-semibold text-accent">
               Chiêm Nghiệm & Bóc Tách Tâm Lý
             </h2>
-            <div class="font-serif text-base sm:text-lg text-text/90 leading-relaxed space-y-4">
+            <div class="font-serif text-base sm:text-lg text-text/90 leading-relaxed sm:leading-loose">
               <p>{quote.description}</p>
             </div>
           </div>
 
           <!-- Multi-Slide Rhythm Breakdown -->
           {quote.slides.slide_1 !== '-' && (
-            <div class="mt-4 p-5 rounded-lg border border-border/70 bg-surface/40 flex flex-col gap-3 font-sans text-xs">
-              <span class="tracking-[0.15em] uppercase font-bold text-muted">Cấu Trúc Trình Diễn Đa Nhịp (Slides)</span>
-              <div class="flex flex-col gap-2">
-                <div class="flex gap-2">
-                  <span class="text-accent font-bold">Trang 1:</span>
+            <div class="p-6 rounded-2xl border border-border/80 bg-surface/40 space-y-3 font-sans text-xs">
+              <span class="tracking-[0.15em] uppercase font-semibold text-muted block">
+                Cấu Trúc Diễn Tiến Đa Nhịp (Slides)
+              </span>
+              <div class="space-y-2">
+                <div class="flex gap-3">
+                  <span class="text-accent font-semibold min-w-[55px]">Trang 1:</span>
                   <span class="text-text">{quote.slides.slide_1}</span>
                 </div>
                 {quote.slides.slide_2 !== '-' && (
-                  <div class="flex gap-2">
-                    <span class="text-accent font-bold">Trang 2:</span>
+                  <div class="flex gap-3">
+                    <span class="text-accent font-semibold min-w-[55px]">Trang 2:</span>
                     <span class="text-text">{quote.slides.slide_2}</span>
                   </div>
                 )}
                 {quote.slides.slide_3 !== '-' && (
-                  <div class="flex gap-2">
-                    <span class="text-accent font-bold">Trang 3:</span>
+                  <div class="flex gap-3">
+                    <span class="text-accent font-semibold min-w-[55px]">Trang 3:</span>
                     <span class="text-text">{quote.slides.slide_3}</span>
                   </div>
                 )}
                 {quote.slides.slide_4 !== '-' && (
-                  <div class="flex gap-2">
-                    <span class="text-accent font-bold">Trang 4:</span>
+                  <div class="flex gap-3">
+                    <span class="text-accent font-semibold min-w-[55px]">Trang 4:</span>
                     <span class="text-text">{quote.slides.slide_4}</span>
                   </div>
                 )}
@@ -153,34 +153,36 @@ const slide3Src = quote.artInfo?.slides?.slide_3 || `/images/themes/${quote.imag
           )}
         </div>
 
-        <!-- Right: Museum Artwork Presentation -->
+        <!-- Right: Museum Artwork Presentation (Double-Bezel Architecture) -->
         <div class="lg:col-span-5 order-1 lg:order-2 flex flex-col gap-4">
-          <div class="relative w-full aspect-[9/16] rounded-xl overflow-hidden border border-border/80 shadow-2xl bg-surface">
-            <img
-              id="main-artwork-img"
-              src={artSrc}
-              alt={quote.artInfo?.alt_vi || quote.cleanTitle}
-              class="w-full h-full object-cover transition-all duration-500"
-              loading="eager"
-            />
+          <div class="p-1.5 rounded-[2rem] bg-surface/70 border border-border/80 shadow-2xl">
+            <div class="relative w-full aspect-[9/16] rounded-[calc(2rem-0.375rem)] overflow-hidden bg-bg shadow-inner">
+              <img
+                id="main-artwork-img"
+                src={artSrc}
+                alt={quote.artInfo?.alt_vi || quote.cleanTitle}
+                class="w-full h-full object-cover transition-all duration-700 filter brightness-95"
+                loading="eager"
+              />
+            </div>
           </div>
 
           <!-- Slide Angle Switcher (Establishing, Closeup, Macro) -->
-          <div class="flex items-center justify-center gap-2 p-1.5 rounded-lg border border-border bg-surface text-xs font-sans">
+          <div class="flex items-center justify-center gap-2 p-1.5 rounded-full border border-border/80 bg-surface text-xs font-sans">
             <button
-              class="angle-btn active flex-1 py-1.5 rounded text-[11px] font-semibold bg-accent text-on-accent transition-colors"
+              class="angle-btn active flex-1 py-2 px-3 rounded-full text-[11px] font-semibold bg-accent text-on-accent transition-all min-h-[36px]"
               data-src={artSrc}
             >
               Toàn Cảnh
             </button>
             <button
-              class="angle-btn flex-1 py-1.5 rounded text-[11px] text-muted hover:text-text transition-colors"
+              class="angle-btn flex-1 py-2 px-3 rounded-full text-[11px] text-muted hover:text-text transition-all min-h-[36px]"
               data-src={slide2Src}
             >
               Cận Cảnh
             </button>
             <button
-              class="angle-btn flex-1 py-1.5 rounded text-[11px] text-muted hover:text-text transition-colors"
+              class="angle-btn flex-1 py-2 px-3 rounded-full text-[11px] text-muted hover:text-text transition-all min-h-[36px]"
               data-src={slide3Src}
             >
               Đặc Tả
@@ -193,28 +195,36 @@ const slide3Src = quote.artInfo?.slides?.slide_3 || `/images/themes/${quote.imag
       <!-- Scholarly Source & Provenance Box -->
       <SourceAttribution quote={quote} />
 
-      <!-- Prev / Next Navigation Footer -->
-      <nav class="mt-14 pt-8 border-t border-border/60 flex items-center justify-between gap-4 font-sans text-xs">
+      <!-- Prev / Next Navigation Plaques -->
+      <nav class="pt-10 border-t border-border/60 grid grid-cols-1 sm:grid-cols-2 gap-4 font-sans text-xs">
         <a
           href={`/library/${prevQuote.slug}`}
-          class="flex items-center gap-2 p-2 rounded hover:text-accent transition-colors max-w-[45%]"
+          class="group p-4 rounded-2xl border border-border/80 hover:border-accent bg-surface/40 hover:bg-surface transition-all flex items-center gap-4"
         >
-          <span class="text-lg">←</span>
-          <div class="flex flex-col text-left">
-            <span class="text-muted text-[10px] uppercase tracking-wider">Tác phẩm trước</span>
-            <span class="text-text font-medium truncate max-w-xs">{prevQuote.cleanTitle}</span>
+          <span class="w-8 h-8 rounded-full border border-border flex items-center justify-center text-muted group-hover:border-accent group-hover:text-accent transition-colors flex-shrink-0">
+            ←
+          </span>
+          <div class="overflow-hidden">
+            <span class="text-muted text-[10px] uppercase tracking-wider block">Tác phẩm trước</span>
+            <span class="text-text font-medium truncate block group-hover:text-accent transition-colors font-serif text-sm">
+              {prevQuote.cleanTitle}
+            </span>
           </div>
         </a>
 
         <a
           href={`/library/${nextQuote.slug}`}
-          class="flex items-center gap-2 p-2 rounded hover:text-accent transition-colors max-w-[45%] text-right"
+          class="group p-4 rounded-2xl border border-border/80 hover:border-accent bg-surface/40 hover:bg-surface transition-all flex items-center justify-end text-right gap-4"
         >
-          <div class="flex flex-col text-right">
-            <span class="text-muted text-[10px] uppercase tracking-wider">Tác phẩm tiếp theo</span>
-            <span class="text-text font-medium truncate max-w-xs">{nextQuote.cleanTitle}</span>
+          <div class="overflow-hidden">
+            <span class="text-muted text-[10px] uppercase tracking-wider block">Tác phẩm tiếp theo</span>
+            <span class="text-text font-medium truncate block group-hover:text-accent transition-colors font-serif text-sm">
+              {nextQuote.cleanTitle}
+            </span>
           </div>
-          <span class="text-lg">→</span>
+          <span class="w-8 h-8 rounded-full border border-border flex items-center justify-center text-muted group-hover:border-accent group-hover:text-accent transition-colors flex-shrink-0">
+            →
+          </span>
         </a>
       </nav>
 
@@ -224,12 +234,11 @@ const slide3Src = quote.artInfo?.slides?.slide_3 || `/images/themes/${quote.imag
   <!-- Toast Notification -->
   <div
     id="toast"
-    class="fixed bottom-6 right-6 z-50 px-4 py-2.5 rounded-lg bg-surface border border-accent text-text text-xs font-sans shadow-2xl transition-opacity duration-300 opacity-0 pointer-events-none"
+    class="fixed bottom-6 right-6 z-50 px-5 py-3 rounded-full bg-surface border border-accent text-text text-xs font-sans shadow-2xl transition-all duration-300 transform translate-y-8 opacity-0 pointer-events-none flex items-center gap-2"
   >
-    Đã sao chép câu triết ngôn vào bộ nhớ tạm!
+    <span class="w-2 h-2 rounded-full bg-accent animate-ping"></span>
+    <span>Đã sao chép triết ngôn vào bộ nhớ tạm!</span>
   </div>
-
-  <Footer slot="footer" />
 </BaseLayout>
 
 <script is:inline define:vars={{ quoteText: quote.content, quoteTitle: quote.cleanTitle, quoteUrl: Astro.url.href }}>
@@ -239,23 +248,21 @@ const slide3Src = quote.artInfo?.slides?.slide_3 || `/images/themes/${quote.imag
 
   function showToast(msg) {
     if (toast) {
-      toast.textContent = msg;
-      toast.classList.remove('opacity-0', 'pointer-events-none');
-      toast.classList.add('opacity-100');
+      if (msg) toast.querySelector('span:last-child').textContent = msg;
+      toast.classList.remove('opacity-0', 'translate-y-8', 'pointer-events-none');
       setTimeout(() => {
-        toast.classList.remove('opacity-100');
-        toast.classList.add('opacity-0', 'pointer-events-none');
-      }, 2500);
+        toast.classList.add('opacity-0', 'translate-y-8', 'pointer-events-none');
+      }, 3000);
     }
   }
 
   if (copyBtn) {
     copyBtn.addEventListener('click', async () => {
       try {
-        await navigator.clipboard.writeText(`"${quoteText}"\n\n— ${quoteTitle} (Hiyu Abyss)`);
-        showToast('Đã sao chép câu triết ngôn vào bộ nhớ tạm!');
+        await navigator.clipboard.writeText(`"${quoteText}"\n— ${quoteTitle}`);
+        showToast('Đã sao chép triết ngôn vào bộ nhớ tạm!');
       } catch (err) {
-        showToast('Không thể sao chép, vui lòng thử lại.');
+        showToast('Không thể sao chép tự động.');
       }
     });
   }
@@ -271,32 +278,40 @@ const slide3Src = quote.artInfo?.slides?.slide_3 || `/images/themes/${quote.imag
             text: `"${quoteText}" — Hiyu Abyss`,
             url: quoteUrl,
           });
-        } catch (e) {}
+        } catch (err) {
+          // User cancelled
+        }
       } else {
         try {
           await navigator.clipboard.writeText(quoteUrl);
-          showToast('Đã sao chép liên kết bài viết!');
-        } catch (e) {}
+          showToast('Đã sao chép liên kết vào bộ nhớ tạm!');
+        } catch (e) {
+          showToast('Không thể sao chép liên kết.');
+        }
       }
     });
   }
 
-  // Multi-angle image previewer
-  const mainImg = document.getElementById('main-artwork-img');
+  // Slide Angle Switcher
   const angleBtns = document.querySelectorAll('.angle-btn');
+  const mainImg = document.getElementById('main-artwork-img');
 
   angleBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
       angleBtns.forEach((b) => {
-        b.classList.remove('bg-accent', 'text-on-accent', 'font-semibold');
+        b.classList.remove('active', 'bg-accent', 'text-on-accent', 'font-semibold');
         b.classList.add('text-muted');
       });
-      btn.classList.add('bg-accent', 'text-on-accent', 'font-semibold');
+      btn.classList.add('active', 'bg-accent', 'text-on-accent', 'font-semibold');
       btn.classList.remove('text-muted');
 
-      const newSrc = btn.getAttribute('data-src');
+      const newSrc = btn.dataset.src;
       if (mainImg && newSrc) {
-        mainImg.src = newSrc;
+        mainImg.style.opacity = '0.3';
+        setTimeout(() => {
+          mainImg.src = newSrc;
+          mainImg.style.opacity = '1';
+        }, 150);
       }
     });
   });

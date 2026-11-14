@@ -1,19 +1,25 @@
 ---
-// BaseLayout.astro
+// BaseLayout.astro - Nền tảng giao diện chuẩn ấn phẩm mỹ thuật
 import '../styles/tokens.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 interface Props {
   title?: string;
   description?: string;
   image?: string;
   canonicalURL?: string;
+  hideHeader?: boolean;
+  hideFooter?: boolean;
 }
 
 const {
   title = 'Hiyu Abyss — Thư Viện Nghệ Thuật & Triết Học Chiêm Nghiệm',
   description = 'Không gian lưu giữ và khám phá tri thức, triết học tâm lý và mỹ học cổ điển. Nơi đối thoại giữa câu chữ và nghệ phẩm bảo tàng.',
-  image = '/images/og-cover.webp',
+  image = '/images/themes/theme_01/slide_1_establishing.jpg',
   canonicalURL = Astro.url.href,
+  hideHeader = false,
+  hideFooter = false,
 } = Astro.props;
 
 const siteTitle = title.includes('Hiyu Abyss') ? title : `${title} · Hiyu Abyss`;
@@ -60,11 +66,36 @@ const siteTitle = title.includes('Hiyu Abyss') ? title : `${title} · Hiyu Abyss
       })();
     </script>
   </head>
-  <body class="min-h-screen bg-bg text-text selection:bg-oxide selection:text-on-accent antialiased flex flex-col">
-    <slot name="header" />
+  <body class="min-h-screen bg-bg text-text selection:bg-oxide selection:text-on-accent antialiased flex flex-col relative">
+    <!-- Skip to Content Link (Accessibility) -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-[100] px-4 py-2 rounded bg-accent text-on-accent font-sans text-xs uppercase tracking-widest font-semibold shadow-2xl transition-all"
+    >
+      Chuyển đến nội dung chính
+    </a>
+
+    <!-- Header slot or Default Header -->
+    {
+      Astro.slots.has('header') ? (
+        <slot name="header" />
+      ) : (
+        !hideHeader && <Header />
+      )
+    }
+
+    <!-- Main Content Container -->
     <main id="main-content" class="flex-1 w-full focus:outline-none">
       <slot />
     </main>
-    <slot name="footer" />
+
+    <!-- Footer slot or Default Footer -->
+    {
+      Astro.slots.has('footer') ? (
+        <slot name="footer" />
+      ) : (
+        !hideFooter && <Footer />
+      )
+    }
   </body>
 </html>

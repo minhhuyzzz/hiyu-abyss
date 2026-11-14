@@ -1,0 +1,315 @@
+---
+// src/pages/search.astro - Tìm Kiếm Toàn Văn Kho Tri Thức Hiyu Abyss
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getAllPublishedQuotes, getAllTopics } from '../lib/content-publisher';
+
+const allQuotes = getAllPublishedQuotes();
+const allTopics = getAllTopics();
+
+// Serialized search index for ultra-fast, zero-latency client search
+const searchIndex = allQuotes.map((q) => ({
+  id: q.id,
+  slug: q.slug,
+  title: q.cleanTitle || q.title,
+  author: q.author,
+  content: q.content,
+  intentBadge: q.intentBadge || '',
+  primaryTopic: q.primaryTopic,
+  primaryTopicTitle: q.primaryTopicTitle,
+  quoteType: q.quoteType,
+  quoteTypeLabel: q.quoteTypeLabel,
+  imageRef: q.imageRef || '',
+}));
+---
+
+<BaseLayout
+  title="Tìm Kiếm Kho Tri Thức & Nghệ Thuật | Hiyu Abyss"
+  description="Tìm kiếm toàn văn 100 tác phẩm triết ngôn, danh ngôn tâm lý học và tác phẩm hội họa cổ điển theo từ khóa, tác giả hoặc chủ đề."
+>
+  <Header />
+
+  <main class="min-h-screen pt-24 sm:pt-32 pb-20 px-4 sm:px-6">
+    <div class="max-w-4xl mx-auto space-y-12">
+      {/* Header Search Section */}
+      <div class="text-center space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[var(--border-subtle)] bg-[var(--bg-secondary)] text-xs font-sans tracking-widest uppercase text-[var(--accent-primary)]">
+          Tra cứu toàn văn · 100 tác phẩm đã duyệt
+        </div>
+        <h1 class="font-display text-4xl sm:text-6xl font-medium tracking-tight text-[var(--text-primary)]">
+          Tìm Kiếm Tri Thức
+        </h1>
+        <p class="font-serif italic text-base sm:text-xl text-[var(--text-secondary)] max-w-xl mx-auto">
+          Tra cứu theo từ khóa tâm lý, tác giả (Nietzsche, Jung, Freud...) hoặc tư tưởng phản tư.
+        </p>
+
+        {/* Search Input Box */}
+        <div class="relative max-w-2xl mx-auto mt-6">
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Nhập từ khóa (ví dụ: thao túng, bản ngã, sự thật, tự do...)"
+            autocomplete="off"
+            class="w-full px-5 py-4 pl-12 text-base sm:text-lg bg-[var(--bg-surface)] border-2 border-[var(--border-subtle)] focus:border-[var(--accent-primary)] rounded font-serif text-[var(--text-primary)] placeholder-[var(--text-tertiary)] outline-none transition-all shadow-sm focus:shadow-lg"
+          />
+          <div class="absolute left-4 top-1/2 -translate-y-1/2 text-[var(--text-tertiary)] pointer-events-none">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+          <button
+            id="clear-search-btn"
+            type="button"
+            class="hidden absolute right-4 top-1/2 -translate-y-1/2 text-xs font-sans text-[var(--text-tertiary)] hover:text-[var(--text-primary)] py-1 px-2 rounded"
+          >
+            Xóa ✕
+          </button>
+        </div>
+
+        {/* Quick Suggestion Chips */}
+        <div class="flex flex-wrap items-center justify-center gap-2 pt-2 text-xs font-sans">
+          <span class="text-[var(--text-tertiary)]">Gợi ý từ khóa:</span>
+          {['Thao túng', 'Bản ngã', 'Đạo đức giả', 'Sự thật', 'Cô độc', 'Tự do', 'Tiêu chuẩn kép'].map((keyword) => (
+            <button
+              type="button"
+              class="quick-tag px-3 py-1 bg-[var(--bg-secondary)] hover:bg-[var(--bg-surface)] border border-[var(--border-subtle)] rounded text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--accent-primary)] transition-colors"
+              data-keyword={keyword}
+            >
+              {keyword}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Filters & Results Meta */}
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-4 border-b border-[var(--border-subtle)] text-xs font-sans text-[var(--text-tertiary)]">
+        <div id="results-count" class="font-medium text-[var(--text-secondary)]">
+          Đang hiển thị tất cả 100 tác phẩm
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          {/* Topic Dropdown */}
+          <select
+            id="topic-filter"
+            class="bg-[var(--bg-surface)] border border-[var(--border-subtle)] text-[var(--text-secondary)] px-3 py-1.5 rounded text-xs outline-none focus:border-[var(--accent-primary)]"
+          >
+            <option value="">Tất cả chủ đề ({allTopics.length})</option>
+            {allTopics.map((t) => (
+              <option value={t.code}>{t.title} ({t.count})</option>
+            ))}
+          </select>
+
+          {/* Type Dropdown */}
+          <select
+            id="type-filter"
+            class="bg-[var(--bg-surface)] border border-[var(--border-subtle)] text-[var(--text-secondary)] px-3 py-1.5 rounded text-xs outline-none focus:border-[var(--accent-primary)]"
+          >
+            <option value="">Tất cả phân loại</option>
+            <option value="DIRECT_QUOTE">Trích dẫn đã xác minh</option>
+            <option value="PARAPHRASE">Diễn giải tư tưởng</option>
+            <option value="INSPIRED_ORIGINAL">Sáng tác lấy cảm hứng</option>
+            <option value="INDEPENDENT_ORIGINAL">Sáng tác Hiyu Abyss</option>
+          </select>
+        </div>
+      </div>
+
+      {/* Results Container */}
+      <div id="search-results" class="space-y-6">
+        <!-- Rendered by client script below -->
+      </div>
+
+      {/* Empty State */}
+      <div id="empty-state" class="hidden text-center py-16 space-y-4">
+        <div class="text-4xl">🔍</div>
+        <h3 class="font-display text-xl text-[var(--text-primary)]">
+          Không tìm thấy kết quả phù hợp
+        </h3>
+        <p class="font-serif italic text-sm text-[var(--text-tertiary)] max-w-md mx-auto">
+          Hãy thử tìm kiếm với từ khóa ngắn gọn hơn, không dấu, hoặc xóa các bộ lọc phân loại.
+        </p>
+        <button
+          id="reset-filter-btn"
+          type="button"
+          class="inline-block mt-2 px-4 py-2 border border-[var(--border-subtle)] hover:border-[var(--text-primary)] rounded font-sans text-xs uppercase tracking-widest text-[var(--text-primary)] transition-colors"
+        >
+          Đặt lại bộ lọc
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+
+  {/* Embedded Search Script */}
+  <script is:inline define:vars={{ searchIndex }}>
+    // Utility to remove Vietnamese diacritics for flexible fuzzy matching
+    function removeVietnameseTones(str) {
+      if (!str) return '';
+      str = str.toLowerCase();
+      str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, 'a');
+      str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, 'e');
+      str = str.replace(/ì|í|ị|ỉ|ĩ/g, 'i');
+      str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, 'o');
+      str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, 'u');
+      str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, 'y');
+      str = str.replace(/đ/g, 'd');
+      str = str.replace(/\u0300|\u0301|\u0303|\u0309|\u0323/g, '');
+      str = str.replace(/\u02C6|\u0306|\u031B/g, '');
+      return str.trim();
+    }
+
+    const input = document.getElementById('search-input');
+    const clearBtn = document.getElementById('clear-search-btn');
+    const topicFilter = document.getElementById('topic-filter');
+    const typeFilter = document.getElementById('type-filter');
+    const resultsContainer = document.getElementById('search-results');
+    const resultsCount = document.getElementById('results-count');
+    const emptyState = document.getElementById('empty-state');
+    const resetFilterBtn = document.getElementById('reset-filter-btn');
+    const quickTags = document.querySelectorAll('.quick-tag');
+
+    function renderResults(quotes, query) {
+      if (quotes.length === 0) {
+        resultsContainer.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        resultsCount.textContent = 'Không có kết quả nào';
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      resultsCount.textContent = `Tìm thấy ${quotes.length} tác phẩm phù hợp`;
+
+      const html = quotes
+        .map((q) => {
+          return `
+          <article class="p-6 sm:p-8 bg-[var(--bg-surface)] border border-[var(--border-subtle)] hover:border-[var(--accent-primary)] rounded transition-all duration-300 hover:shadow-lg flex flex-col sm:flex-row gap-6 items-start">
+            ${
+              q.imageRef
+                ? `<div class="w-full sm:w-36 h-28 sm:h-36 flex-shrink-0 overflow-hidden rounded bg-black/40 border border-[var(--border-subtle)]">
+                    <img src="${q.imageRef}" alt="${q.title}" class="w-full h-full object-cover filter brightness-90 hover:scale-105 transition-all duration-500" loading="lazy" />
+                   </div>`
+                : ''
+            }
+            <div class="flex-1 space-y-3">
+              <div class="flex flex-wrap items-center gap-2 text-xs font-sans">
+                <span class="text-[var(--accent-primary)] font-medium uppercase tracking-wider">${q.id}</span>
+                <span class="text-[var(--text-tertiary)]">·</span>
+                <span class="text-[var(--text-tertiary)] uppercase tracking-wider">${q.quoteTypeLabel}</span>
+                <span class="text-[var(--text-tertiary)]">·</span>
+                <span class="text-[var(--text-secondary)] font-medium">#${q.primaryTopicTitle}</span>
+              </div>
+
+              <h2 class="font-serif text-lg sm:text-xl font-medium text-[var(--text-primary)] leading-snug">
+                <a href="/library/${q.slug}" class="hover:text-[var(--accent-primary)] transition-colors">
+                  ${q.title}
+                </a>
+              </h2>
+
+              <p class="font-serif italic text-sm text-[var(--text-secondary)] line-clamp-3 leading-relaxed">
+                "${q.content}"
+              </p>
+
+              <div class="pt-2 flex items-center justify-between text-xs font-sans">
+                <span class="text-[var(--text-tertiary)]">Tác giả: <strong class="text-[var(--text-secondary)] font-normal">${q.author}</strong></span>
+                <a href="/library/${q.slug}" class="inline-flex items-center gap-1 text-[var(--accent-primary)] hover:underline font-medium">
+                  <span>Đọc tác phẩm</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        `;
+        })
+        .join('');
+
+      resultsContainer.innerHTML = html;
+    }
+
+    function doSearch() {
+      const rawQuery = input.value.trim();
+      const normQuery = removeVietnameseTones(rawQuery);
+      const selectedTopic = topicFilter.value;
+      const selectedType = typeFilter.value;
+
+      if (rawQuery.length > 0) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+
+      const filtered = searchIndex.filter((item) => {
+        // Filter by topic
+        if (selectedTopic && item.primaryTopic !== selectedTopic) {
+          return false;
+        }
+
+        // Filter by type
+        if (selectedType && item.quoteType !== selectedType) {
+          return false;
+        }
+
+        // Filter by text query
+        if (!normQuery) return true;
+
+        const normTitle = removeVietnameseTones(item.title);
+        const normContent = removeVietnameseTones(item.content);
+        const normAuthor = removeVietnameseTones(item.author);
+        const normTopic = removeVietnameseTones(item.primaryTopicTitle);
+        const normBadge = removeVietnameseTones(item.intentBadge);
+        const normId = removeVietnameseTones(item.id);
+
+        return (
+          normTitle.includes(normQuery) ||
+          normContent.includes(normQuery) ||
+          normAuthor.includes(normQuery) ||
+          normTopic.includes(normQuery) ||
+          normBadge.includes(normQuery) ||
+          normId.includes(normQuery)
+        );
+      });
+
+      renderResults(filtered, rawQuery);
+    }
+
+    // Event listeners
+    input.addEventListener('input', doSearch);
+    topicFilter.addEventListener('change', doSearch);
+    typeFilter.addEventListener('change', doSearch);
+
+    clearBtn.addEventListener('click', () => {
+      input.value = '';
+      input.focus();
+      doSearch();
+    });
+
+    quickTags.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        input.value = btn.dataset.keyword || '';
+        input.focus();
+        doSearch();
+      });
+    });
+
+    resetFilterBtn?.addEventListener('click', () => {
+      input.value = '';
+      topicFilter.value = '';
+      typeFilter.value = '';
+      doSearch();
+    });
+
+    // Check URL search params (e.g. ?q=thao+tung)
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialQuery = urlParams.get('q');
+    const initialTopic = urlParams.get('topic');
+    if (initialQuery) {
+      input.value = initialQuery;
+    }
+    if (initialTopic) {
+      topicFilter.value = initialTopic.toUpperCase();
+    }
+
+    // Initial render
+    doSearch();
+  </script>
+</BaseLayout>

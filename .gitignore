@@ -26,6 +26,9 @@ ENV/
 
 # Node
 node_modules/
+website/node_modules/
+website/dist/
+website/.astro/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

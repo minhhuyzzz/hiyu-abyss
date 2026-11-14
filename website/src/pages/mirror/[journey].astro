@@ -1,0 +1,36 @@
+---
+// src/pages/mirror/[journey].astro - Dynamic Journey Runner
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import MirrorJourney from '../../components/MirrorJourney';
+import { getPublicJourneys } from '../../lib/content-publisher';
+import type { MirrorJourneyData } from '../../lib/types';
+
+export function getStaticPaths() {
+  const journeys = getPublicJourneys();
+  return journeys.map((journey) => ({
+    params: { journey: journey.slug },
+    props: { journey },
+  }));
+}
+
+interface Props {
+  journey: MirrorJourneyData;
+}
+
+const { journey } = Astro.props;
+---
+
+<BaseLayout
+  title={`${journey.title} — The Mirror | Hiyu Abyss`}
+  description={journey.subtitle}
+>
+  <Header />
+
+  <main class="min-h-screen pt-20 sm:pt-28 pb-20">
+    <MirrorJourney client:visible journey={journey} />
+  </main>
+
+  <Footer />
+</BaseLayout>

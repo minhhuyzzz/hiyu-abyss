@@ -1,0 +1,70 @@
+---
+// BaseLayout.astro
+import '../styles/tokens.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonicalURL?: string;
+}
+
+const {
+  title = 'Hiyu Abyss — Thư Viện Nghệ Thuật & Triết Học Chiêm Nghiệm',
+  description = 'Không gian lưu giữ và khám phá tri thức, triết học tâm lý và mỹ học cổ điển. Nơi đối thoại giữa câu chữ và nghệ phẩm bảo tàng.',
+  image = '/images/og-cover.webp',
+  canonicalURL = Astro.url.href,
+} = Astro.props;
+
+const siteTitle = title.includes('Hiyu Abyss') ? title : `${title} · Hiyu Abyss`;
+---
+
+<!doctype html>
+<html lang="vi" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Primary Meta Tags -->
+    <title>{siteTitle}</title>
+    <meta name="title" content={siteTitle} />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={siteTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.url)} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={siteTitle} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+    <!-- Zero-FOUC Inline Theme Boot Script -->
+    <script is:inline>
+      (function () {
+        try {
+          const savedTheme = localStorage.getItem('theme');
+          const theme = savedTheme === 'light' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="min-h-screen bg-bg text-text selection:bg-oxide selection:text-on-accent antialiased flex flex-col">
+    <slot name="header" />
+    <main id="main-content" class="flex-1 w-full focus:outline-none">
+      <slot />
+    </main>
+    <slot name="footer" />
+  </body>
+</html>

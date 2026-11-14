@@ -1,0 +1,52 @@
+---
+// src/pages/index.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HeroArtwork from '../components/HeroArtwork.astro';
+import EditorialMosaic from '../components/EditorialMosaic.astro';
+import { getAllPublishedQuotes, getFeaturedQuotes, getAllTopics } from '../lib/content-publisher';
+
+const allQuotes = getAllPublishedQuotes();
+const featuredQuotes = getFeaturedQuotes();
+const topics = getAllTopics();
+const primaryHero = featuredQuotes[0] || allQuotes[0];
+---
+
+<BaseLayout
+  title="Hiyu Abyss — Thư Viện Nghệ Thuật & Triết Học Chiêm Nghiệm"
+  description="Thư viện giám tuyển 100 tác phẩm triết học, tâm lý học hành vi và kiệt tác hội họa bảo tàng cổ điển."
+>
+  <Header slot="header" />
+
+  <!-- Hero Section -->
+  {primaryHero && <HeroArtwork quote={primaryHero} />}
+
+  <!-- Editorial Mosaic Section -->
+  <EditorialMosaic featuredQuotes={featuredQuotes} topics={topics} />
+
+  <!-- Philosophical Manifesto Section -->
+  <section class="py-16 md:py-20 border-b border-border bg-bg">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center flex flex-col items-center gap-6">
+      <span class="font-sans text-xs tracking-[0.25em] text-accent uppercase font-bold">
+        Tuyên Ngôn Hiyu Abyss
+      </span>
+      <h2 class="font-display text-2xl sm:text-3xl md:text-4xl text-text font-bold leading-tight">
+        "Con người không đau khổ vì sự việc, mà vì góc nhìn của họ về sự việc."
+      </h2>
+      <p class="font-serif text-base sm:text-lg text-muted max-w-2xl leading-relaxed italic">
+        Chúng tôi không xây dựng một blog châm ngôn đại trà. Hiyu Abyss là nơi lưu giữ những tư tưởng sắc bén được đối chứng với các kiệt tác hội họa qua hàng thế kỷ, để mỗi lần ghé thăm là một lần độc giả bước qua ranh giới của sự tự lừa dối.
+      </p>
+      <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
+        <a
+          href="/library"
+          class="px-6 py-3 rounded border border-border bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs sm:text-sm tracking-[0.15em] uppercase font-bold transition-colors"
+        >
+          Khám Phá Toàn Bộ Thư Viện
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>

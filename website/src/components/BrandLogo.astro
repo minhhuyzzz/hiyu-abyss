@@ -1,0 +1,40 @@
+---
+// BrandLogo.astro
+interface Props {
+  variant?: 'full' | 'compact' | 'icon-only';
+  class?: string;
+}
+
+const { variant = 'full', class: className = '' } = Astro.props;
+---
+
+<a
+  href="/"
+  class={`group inline-flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg rounded px-1 transition-opacity duration-200 hover:opacity-90 ${className}`}
+  aria-label="Về trang chủ Hiyu Abyss"
+>
+  <!-- Monogram Icon -->
+  <div class="relative w-8 h-8 flex-shrink-0 flex items-center justify-center">
+    <svg class="w-8 h-8 text-accent transition-transform duration-500 group-hover:scale-105" viewBox="0 0 64 64" fill="none">
+      <rect x="32" y="4" width="39.6" height="39.6" transform="rotate(45 32 4)" stroke="currentColor" stroke-width="2.5" fill="none" opacity="0.8"/>
+      <circle cx="32" cy="32" r="16" stroke="currentColor" stroke-width="2" fill="none"/>
+      <line x1="26" y1="22" x2="26" y2="42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="38" y1="22" x2="38" y2="42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="26" y1="32" x2="38" y2="32" stroke="currentColor" stroke-width="2"/>
+      <path d="M 26 22 L 32 14 L 38 22" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  {variant !== 'icon-only' && (
+    <div class="flex flex-col">
+      <span class="font-display text-xl tracking-[0.2em] font-bold uppercase text-text leading-tight group-hover:text-accent transition-colors">
+        HIYU ABYSS
+      </span>
+      {variant === 'full' && (
+        <span class="font-sans text-[10px] tracking-[0.25em] text-muted uppercase font-medium">
+          The Living Library
+        </span>
+      )}
+    </div>
+  )}
+</a>

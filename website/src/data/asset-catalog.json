@@ -1,0 +1,842 @@
+{
+  "theme_01": {
+    "art_id": "ART-0001",
+    "title": "Narcissus bên dòng nước tĩnh lặng",
+    "artist": "Caravaggio",
+    "year": "1597–1599",
+    "museum": "Galleria Nazionale d'Arte Antica, Rome",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Chàng Narcissus cúi nhìn hình bóng phản chiếu của chính mình dưới mặt nước đen tĩnh lặng.",
+    "slides": {
+      "slide_1": "/images/themes/theme_01/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_01/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_01/slide_3_macro.jpg"
+    }
+  },
+  "theme_02": {
+    "art_id": "ART-0002",
+    "title": "Aristotle chiêm ngắm tượng bán thân của Homer",
+    "artist": "Rembrandt van Rijn",
+    "year": "1653",
+    "museum": "Metropolitan Museum of Art, New York",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Triết gia Aristotle trầm tư đặt tay lên tượng bán thân Homer trong ánh sáng chiaroscuro huyền bí.",
+    "slides": {
+      "slide_1": "/images/themes/theme_02/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_02/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_02/slide_3_macro.jpg"
+    }
+  },
+  "theme_03": {
+    "art_id": "ART-0003",
+    "title": "Kẻ lãng du trên biển sương mù",
+    "artist": "Caspar David Friedrich",
+    "year": "1818",
+    "museum": "Hamburger Kunsthalle",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Bóng lưng người đàn ông đứng trên mỏm đá nhìn ra biển mây cuồn cuộn bao la.",
+    "slides": {
+      "slide_1": "/images/themes/theme_03/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_03/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_03/slide_3_macro.jpg"
+    }
+  },
+  "theme_04": {
+    "art_id": "ART-0004",
+    "title": "Dante và Virgil nơi Địa ngục",
+    "artist": "William-Adolphe Bouguereau",
+    "year": "1850",
+    "museum": "Musée d'Orsay, Paris",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Hai linh hồn vật lộn dữ dội dưới ánh mắt trầm mặc của Dante và Virgil.",
+    "slides": {
+      "slide_1": "/images/themes/theme_04/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_04/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_04/slide_3_macro.jpg"
+    }
+  },
+  "theme_05": {
+    "art_id": "ART-0005",
+    "title": "Mặt nạ Medusa trên khiên nghi lễ",
+    "artist": "Caravaggio",
+    "year": "1597",
+    "museum": "Uffizi Gallery, Florence",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Đầu Medusa với mái tóc rắn mở to mắt kinh hoàng trên chiếc khiên gỗ mạ vàng.",
+    "slides": {
+      "slide_1": "/images/themes/theme_05/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_05/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_05/slide_3_macro.jpg"
+    }
+  },
+  "theme_06": {
+    "art_id": "ART-0006",
+    "title": "Bão trên biển Galilee",
+    "artist": "Rembrandt van Rijn",
+    "year": "1633",
+    "museum": "Isabella Stewart Gardner Museum",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Con thuyền nghiêng ngả giữa những ngọn sóng dữ dội và ánh sáng xé toạc màn đêm.",
+    "slides": {
+      "slide_1": "/images/themes/theme_06/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_06/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_06/slide_3_macro.jpg"
+    }
+  },
+  "theme_07": {
+    "art_id": "ART-0007",
+    "title": "Apollo và Daphne hóa cây nguyệt quế",
+    "artist": "Gian Lorenzo Bernini",
+    "year": "1622–1625",
+    "museum": "Galleria Borghese, Rome",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tượng cẩm thạch tuyệt mỹ khắc họa ngón tay Daphne biến thành cành lá nguyệt quế.",
+    "slides": {
+      "slide_1": "/images/themes/theme_07/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_07/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_07/slide_3_macro.jpg"
+    }
+  },
+  "theme_08": {
+    "art_id": "ART-0008",
+    "title": "Người triết gia trầm tư bên cửa sổ vòm",
+    "artist": "Rembrandt van Rijn",
+    "year": "1632",
+    "museum": "Musée du Louvre, Paris",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Cầu thang xoắn ốc và căn phòng gác mái với luồng nắng xiên chiếu vào vị học giả.",
+    "slides": {
+      "slide_1": "/images/themes/theme_08/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_08/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_08/slide_3_macro.jpg"
+    }
+  },
+  "theme_09": {
+    "art_id": "ART-0009",
+    "title": "Người mẹ Whistlers (Bố cục xám và đen)",
+    "artist": "James McNeill Whistler",
+    "year": "1871",
+    "museum": "Musée d'Orsay, Paris",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Người mẹ già ngồi nghiêng trầm lặng bên bức tường xám và bức tranh khắc gỗ nhỏ.",
+    "slides": {
+      "slide_1": "/images/themes/theme_09/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_09/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_09/slide_3_macro.jpg"
+    }
+  },
+  "theme_10": {
+    "art_id": "ART-0010",
+    "title": "Đảo người chết (Die Toteninsel)",
+    "artist": "Arnold Böcklin",
+    "year": "1883",
+    "museum": "Alte Nationalgalerie, Berlin",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Con thuyền cô độc lướt trên mặt nước phẳng lặng tiến vào hòn đảo vách đá và hàng cây bách u uất.",
+    "slides": {
+      "slide_1": "/images/themes/theme_10/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_10/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_10/slide_3_macro.jpg"
+    }
+  },
+  "theme_11": {
+    "art_id": "ART-0011",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 11",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_11 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_11/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_11/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_11/slide_3_macro.jpg"
+    }
+  },
+  "theme_12": {
+    "art_id": "ART-0012",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 12",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_12 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_12/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_12/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_12/slide_3_macro.jpg"
+    }
+  },
+  "theme_13": {
+    "art_id": "ART-0013",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 13",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_13 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_13/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_13/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_13/slide_3_macro.jpg"
+    }
+  },
+  "theme_14": {
+    "art_id": "ART-0014",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 14",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_14 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_14/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_14/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_14/slide_3_macro.jpg"
+    }
+  },
+  "theme_15": {
+    "art_id": "ART-0015",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 15",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_15 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_15/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_15/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_15/slide_3_macro.jpg"
+    }
+  },
+  "theme_16": {
+    "art_id": "ART-0016",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 16",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_16 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_16/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_16/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_16/slide_3_macro.jpg"
+    }
+  },
+  "theme_17": {
+    "art_id": "ART-0017",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 17",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_17 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_17/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_17/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_17/slide_3_macro.jpg"
+    }
+  },
+  "theme_18": {
+    "art_id": "ART-0018",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 18",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_18 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_18/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_18/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_18/slide_3_macro.jpg"
+    }
+  },
+  "theme_19": {
+    "art_id": "ART-0019",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 19",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_19 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_19/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_19/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_19/slide_3_macro.jpg"
+    }
+  },
+  "theme_20": {
+    "art_id": "ART-0020",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 20",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_20 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_20/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_20/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_20/slide_3_macro.jpg"
+    }
+  },
+  "theme_21": {
+    "art_id": "ART-0021",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 21",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_21 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_21/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_21/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_21/slide_3_macro.jpg"
+    }
+  },
+  "theme_22": {
+    "art_id": "ART-0022",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 22",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_22 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_22/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_22/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_22/slide_3_macro.jpg"
+    }
+  },
+  "theme_23": {
+    "art_id": "ART-0023",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 23",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_23 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_23/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_23/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_23/slide_3_macro.jpg"
+    }
+  },
+  "theme_24": {
+    "art_id": "ART-0024",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 24",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_24 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_24/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_24/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_24/slide_3_macro.jpg"
+    }
+  },
+  "theme_25": {
+    "art_id": "ART-0025",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 25",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_25 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_25/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_25/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_25/slide_3_macro.jpg"
+    }
+  },
+  "theme_26": {
+    "art_id": "ART-0026",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 26",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_26 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_26/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_26/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_26/slide_3_macro.jpg"
+    }
+  },
+  "theme_27": {
+    "art_id": "ART-0027",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 27",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_27 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_27/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_27/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_27/slide_3_macro.jpg"
+    }
+  },
+  "theme_28": {
+    "art_id": "ART-0028",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 28",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_28 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_28/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_28/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_28/slide_3_macro.jpg"
+    }
+  },
+  "theme_29": {
+    "art_id": "ART-0029",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 29",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_29 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_29/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_29/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_29/slide_3_macro.jpg"
+    }
+  },
+  "theme_30": {
+    "art_id": "ART-0030",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 30",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_30 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_30/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_30/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_30/slide_3_macro.jpg"
+    }
+  },
+  "theme_31": {
+    "art_id": "ART-0031",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 31",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_31 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_31/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_31/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_31/slide_3_macro.jpg"
+    }
+  },
+  "theme_32": {
+    "art_id": "ART-0032",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 32",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_32 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_32/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_32/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_32/slide_3_macro.jpg"
+    }
+  },
+  "theme_33": {
+    "art_id": "ART-0033",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 33",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_33 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_33/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_33/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_33/slide_3_macro.jpg"
+    }
+  },
+  "theme_34": {
+    "art_id": "ART-0034",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 34",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_34 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_34/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_34/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_34/slide_3_macro.jpg"
+    }
+  },
+  "theme_35": {
+    "art_id": "ART-0035",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 35",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_35 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_35/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_35/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_35/slide_3_macro.jpg"
+    }
+  },
+  "theme_36": {
+    "art_id": "ART-0036",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 36",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_36 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_36/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_36/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_36/slide_3_macro.jpg"
+    }
+  },
+  "theme_37": {
+    "art_id": "ART-0037",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 37",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_37 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_37/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_37/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_37/slide_3_macro.jpg"
+    }
+  },
+  "theme_38": {
+    "art_id": "ART-0038",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 38",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_38 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_38/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_38/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_38/slide_3_macro.jpg"
+    }
+  },
+  "theme_39": {
+    "art_id": "ART-0039",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 39",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_39 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_39/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_39/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_39/slide_3_macro.jpg"
+    }
+  },
+  "theme_40": {
+    "art_id": "ART-0040",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 40",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_40 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_40/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_40/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_40/slide_3_macro.jpg"
+    }
+  },
+  "theme_41": {
+    "art_id": "ART-0041",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 41",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_41 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_41/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_41/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_41/slide_3_macro.jpg"
+    }
+  },
+  "theme_42": {
+    "art_id": "ART-0042",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 42",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_42 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_42/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_42/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_42/slide_3_macro.jpg"
+    }
+  },
+  "theme_43": {
+    "art_id": "ART-0043",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 43",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_43 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_43/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_43/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_43/slide_3_macro.jpg"
+    }
+  },
+  "theme_44": {
+    "art_id": "ART-0044",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 44",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_44 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_44/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_44/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_44/slide_3_macro.jpg"
+    }
+  },
+  "theme_45": {
+    "art_id": "ART-0045",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 45",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_45 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_45/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_45/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_45/slide_3_macro.jpg"
+    }
+  },
+  "theme_46": {
+    "art_id": "ART-0046",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 46",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_46 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_46/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_46/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_46/slide_3_macro.jpg"
+    }
+  },
+  "theme_47": {
+    "art_id": "ART-0047",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 47",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_47 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_47/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_47/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_47/slide_3_macro.jpg"
+    }
+  },
+  "theme_48": {
+    "art_id": "ART-0048",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 48",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_48 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_48/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_48/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_48/slide_3_macro.jpg"
+    }
+  },
+  "theme_49": {
+    "art_id": "ART-0049",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 49",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_49 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_49/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_49/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_49/slide_3_macro.jpg"
+    }
+  },
+  "theme_50": {
+    "art_id": "ART-0050",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 50",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_50 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_50/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_50/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_50/slide_3_macro.jpg"
+    }
+  },
+  "theme_51": {
+    "art_id": "ART-0051",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 51",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_51 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_51/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_51/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_51/slide_3_macro.jpg"
+    }
+  },
+  "theme_52": {
+    "art_id": "ART-0052",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 52",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_52 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_52/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_52/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_52/slide_3_macro.jpg"
+    }
+  },
+  "theme_53": {
+    "art_id": "ART-0053",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 53",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_53 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_53/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_53/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_53/slide_3_macro.jpg"
+    }
+  },
+  "theme_54": {
+    "art_id": "ART-0054",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 54",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_54 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_54/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_54/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_54/slide_3_macro.jpg"
+    }
+  },
+  "theme_55": {
+    "art_id": "ART-0055",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 55",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_55 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_55/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_55/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_55/slide_3_macro.jpg"
+    }
+  },
+  "theme_56": {
+    "art_id": "ART-0056",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 56",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_56 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_56/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_56/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_56/slide_3_macro.jpg"
+    }
+  },
+  "theme_57": {
+    "art_id": "ART-0057",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 57",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_57 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_57/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_57/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_57/slide_3_macro.jpg"
+    }
+  },
+  "theme_58": {
+    "art_id": "ART-0058",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 58",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_58 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_58/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_58/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_58/slide_3_macro.jpg"
+    }
+  },
+  "theme_59": {
+    "art_id": "ART-0059",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 59",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_59 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_59/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_59/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_59/slide_3_macro.jpg"
+    }
+  },
+  "theme_60": {
+    "art_id": "ART-0060",
+    "title": "Kiệt tác Phục Hưng & Cổ Điển Số 60",
+    "artist": "Bậc thầy Cổ điển Châu Âu",
+    "year": "Thế kỷ XVI - XIX",
+    "museum": "Bộ sưu tập bảo tàng công cộng",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tác phẩm nghệ thuật cổ điển chủ đề theme_60 với ánh sáng chiaroscuro và chi tiết bảo tàng sắc nét.",
+    "slides": {
+      "slide_1": "/images/themes/theme_60/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_60/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_60/slide_3_macro.jpg"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+---
+// SourceAttribution.astro
+import type { PublicQuote } from '../lib/types';
+
+interface Props {
+  quote: PublicQuote;
+}
+
+const { quote } = Astro.props;
+---
+
+<div class="rounded-lg border border-border bg-surface p-6 flex flex-col gap-4 text-xs font-sans">
+  <div class="flex items-center justify-between border-b border-border/50 pb-3">
+    <span class="tracking-[0.15em] uppercase font-bold text-accent">Minh Bạch Học Thuật & Nguồn Gốc</span>
+    <span class="text-muted">{quote.id}</span>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div>
+      <span class="text-muted block mb-1 uppercase tracking-wider text-[10px]">Tác Giả Tư Tưởng</span>
+      <span class="font-semibold text-text text-sm">{quote.author}</span>
+    </div>
+    <div>
+      <span class="text-muted block mb-1 uppercase tracking-wider text-[10px]">Phân Loại Kiểm Chứng</span>
+      <span class="inline-flex items-center gap-1.5 font-semibold text-text text-sm">
+        <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+        {quote.quoteTypeLabel}
+      </span>
+    </div>
+  </div>
+
+  {quote.artInfo && (
+    <div class="border-t border-border/40 pt-3 flex flex-col gap-1.5">
+      <span class="text-muted uppercase tracking-wider text-[10px]">Tác Phẩm Mỹ Thuật Đồng Hành</span>
+      <p class="text-text font-serif italic text-sm">
+        "{quote.artInfo.title}" — {quote.artInfo.artist} ({quote.artInfo.year})
+      </p>
+      <p class="text-muted text-[11px]">
+        Lưu trữ tại: {quote.artInfo.museum} · Giấy phép: {quote.artInfo.license}
+      </p>
+    </div>
+  )}
+
+  <p class="text-muted text-[11px] leading-relaxed border-t border-border/30 pt-2">
+    * Dữ liệu được thẩm định và xác thực theo tiêu chuẩn nghiên cứu nguồn HYA-02 của dự án Hiyu Abyss.
+  </p>
+</div>

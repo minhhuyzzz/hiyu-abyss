@@ -7,19 +7,22 @@ const allQuotes = getAllPublishedQuotes();
 const allTopics = getAllTopics();
 
 // Serialized search index for zero-latency instant client search
-const searchIndex = allQuotes.map((q) => ({
-  id: q.id,
-  slug: q.slug,
-  title: q.cleanTitle || q.title,
-  author: q.author,
-  content: q.content,
-  intentBadge: q.intentBadge || '',
-  primaryTopic: q.primaryTopic,
-  primaryTopicTitle: q.primaryTopicTitle,
-  quoteType: q.quoteType,
-  quoteTypeLabel: q.quoteTypeLabel,
-  imageRef: q.imageRef || '',
-}));
+const searchIndex = allQuotes.map((q) => {
+  const artSrc = q.artInfo?.slides?.slide_1 || `/images/themes/${q.imageRef}/slide_1_establishing.jpg`;
+  return {
+    id: q.id,
+    slug: q.slug,
+    title: q.cleanTitle || q.title,
+    author: q.author,
+    content: q.content,
+    intentBadge: q.intentBadge || '',
+    primaryTopic: q.primaryTopic,
+    primaryTopicTitle: q.primaryTopicTitle,
+    quoteType: q.quoteType,
+    quoteTypeLabel: q.quoteTypeLabel,
+    imageRef: artSrc,
+  };
+});
 ---
 
 <BaseLayout

@@ -1,5 +1,5 @@
 ---
-// src/pages/library/[slug].astro - Classical Aphorism Reader with Multi-Angle View & Provenance
+// src/pages/library/[slug].astro - Classical Aphorism Reader with Museum Artwork & Provenance
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SourceAttribution from '../../components/SourceAttribution.astro';
 import { getAllPublishedQuotes } from '../../lib/content-publisher';
@@ -25,8 +25,6 @@ interface Props {
 
 const { quote, prevQuote, nextQuote } = Astro.props;
 const artSrc = quote.artInfo?.slides?.slide_1 || `/images/themes/${quote.imageRef}/slide_1_establishing.jpg`;
-const slide2Src = quote.artInfo?.slides?.slide_2 || `/images/themes/${quote.imageRef}/slide_2_closeup.jpg`;
-const slide3Src = quote.artInfo?.slides?.slide_3 || `/images/themes/${quote.imageRef}/slide_3_macro.jpg`;
 ---
 
 <BaseLayout
@@ -118,39 +116,6 @@ const slide3Src = quote.artInfo?.slides?.slide_3 || `/images/themes/${quote.imag
               <p>{quote.description}</p>
             </div>
           </div>
-
-          <!-- Multi-Slide Rhythm Breakdown -->
-          {quote.slides.slide_1 !== '-' && (
-            <div class="p-6 rounded-2xl border border-border/80 bg-surface/40 space-y-3 font-sans text-xs">
-              <span class="tracking-[0.15em] uppercase font-semibold text-muted block">
-                Cấu Trúc Diễn Tiến Đa Nhịp (Slides)
-              </span>
-              <div class="space-y-2">
-                <div class="flex gap-3">
-                  <span class="text-accent font-semibold min-w-[55px]">Trang 1:</span>
-                  <span class="text-text">{quote.slides.slide_1}</span>
-                </div>
-                {quote.slides.slide_2 !== '-' && (
-                  <div class="flex gap-3">
-                    <span class="text-accent font-semibold min-w-[55px]">Trang 2:</span>
-                    <span class="text-text">{quote.slides.slide_2}</span>
-                  </div>
-                )}
-                {quote.slides.slide_3 !== '-' && (
-                  <div class="flex gap-3">
-                    <span class="text-accent font-semibold min-w-[55px]">Trang 3:</span>
-                    <span class="text-text">{quote.slides.slide_3}</span>
-                  </div>
-                )}
-                {quote.slides.slide_4 !== '-' && (
-                  <div class="flex gap-3">
-                    <span class="text-accent font-semibold min-w-[55px]">Trang 4:</span>
-                    <span class="text-text">{quote.slides.slide_4}</span>
-                  </div>
-                )}
-              </div>
-            </div>
-          )}
         </div>
 
         <!-- Right: Museum Artwork Presentation (Double-Bezel Architecture) -->
@@ -161,32 +126,20 @@ const slide3Src = quote.artInfo?.slides?.slide_3 || `/images/themes/${quote.imag
                 id="main-artwork-img"
                 src={artSrc}
                 alt={quote.artInfo?.alt_vi || quote.cleanTitle}
-                class="w-full h-full object-cover transition-all duration-700 filter brightness-95"
+                class="w-full h-full object-cover filter brightness-95"
                 loading="eager"
               />
+              {quote.artInfo && (
+                <div class="absolute bottom-3 left-3 right-3 p-3.5 rounded-xl bg-bg/85 backdrop-blur-md border border-border/60 text-xs shadow-md">
+                  <p class="font-serif italic text-text font-medium truncate">
+                    "{quote.artInfo.title}"
+                  </p>
+                  <p class="text-[11px] text-muted truncate mt-0.5 font-sans">
+                    {quote.artInfo.artist} ({quote.artInfo.year}) · {quote.artInfo.museum}
+                  </p>
+                </div>
+              )}
             </div>
-          </div>
-
-          <!-- Slide Angle Switcher (Establishing, Closeup, Macro) -->
-          <div class="flex items-center justify-center gap-2 p-1.5 rounded-full border border-border/80 bg-surface text-xs font-sans">
-            <button
-              class="angle-btn active flex-1 py-2 px-3 rounded-full text-[11px] font-semibold bg-accent text-on-accent transition-all min-h-[36px]"
-              data-src={artSrc}
-            >
-              Toàn Cảnh
-            </button>
-            <button
-              class="angle-btn flex-1 py-2 px-3 rounded-full text-[11px] text-muted hover:text-text transition-all min-h-[36px]"
-              data-src={slide2Src}
-            >
-              Cận Cảnh
-            </button>
-            <button
-              class="angle-btn flex-1 py-2 px-3 rounded-full text-[11px] text-muted hover:text-text transition-all min-h-[36px]"
-              data-src={slide3Src}
-            >
-              Đặc Tả
-            </button>
           </div>
         </div>
 
@@ -291,28 +244,4 @@ const slide3Src = quote.artInfo?.slides?.slide_3 || `/images/themes/${quote.imag
       }
     });
   }
-
-  // Slide Angle Switcher
-  const angleBtns = document.querySelectorAll('.angle-btn');
-  const mainImg = document.getElementById('main-artwork-img');
-
-  angleBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      angleBtns.forEach((b) => {
-        b.classList.remove('active', 'bg-accent', 'text-on-accent', 'font-semibold');
-        b.classList.add('text-muted');
-      });
-      btn.classList.add('active', 'bg-accent', 'text-on-accent', 'font-semibold');
-      btn.classList.remove('text-muted');
-
-      const newSrc = btn.dataset.src;
-      if (mainImg && newSrc) {
-        mainImg.style.opacity = '0.3';
-        setTimeout(() => {
-          mainImg.src = newSrc;
-          mainImg.style.opacity = '1';
-        }, 150);
-      }
-    });
-  });
 </script>

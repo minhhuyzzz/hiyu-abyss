@@ -12,7 +12,7 @@ export default defineConfig({
       configPath: 'wrangler.jsonc',
     },
   }),
-  site: process.env.PUBLIC_SITE_URL || 'https://hiyuabyss.vercel.app',
+  site: process.env.PUBLIC_SITE_URL || 'https://hiyu-abyss.pages.dev',
   integrations: [
     react(),
     tailwind({

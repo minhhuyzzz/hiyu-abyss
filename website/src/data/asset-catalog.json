@@ -1681,12 +1681,12 @@
   },
   "theme_151": {
     "art_id": "ART-0151",
-    "title": "Bộ tranh sơn dầu: The Penitent Magdalen MET DT7252",
-    "artist": "Georges de La Tour",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caspar David Friedrich - Wanderer above the Sea of Fog, Caravaggio - The Cardsharps, Georges de La Tour - The Penitent Magdalen",
+    "artist": "Caspar David Friedrich & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Georges de La Tour, vân cọ impasto và toan vải hữu cơ cho chủ đề THAO TÚNG (Khí độc & Kiểm soát tâm lý).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (THAO TÚNG (Khí độc & Kiểm soát tâm lý)): Caspar David Friedrich - Wanderer above the Sea of Fog, Caravaggio - The Cardsharps, Georges de La Tour - The Penitent Magdalen.",
     "slides": {
       "slide_1": "/images/themes/theme_151/slide_1.jpg",
       "slide_2": "/images/themes/theme_151/slide_2.jpg",
@@ -1695,40 +1695,37 @@
   },
   "theme_152": {
     "art_id": "ART-0152",
-    "title": "Bộ tranh sơn dầu: Narcissus-Caravaggio (1594-96) edited",
-    "artist": "Caravaggio",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caravaggio - Narcissus, Jacques-Louis David - The Death of Marat",
+    "artist": "Caravaggio & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Caravaggio, vân cọ impasto và toan vải hữu cơ cho chủ đề THAO TÚNG (Khí độc & Kiểm soát tâm lý).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (THAO TÚNG (Khí độc & Kiểm soát tâm lý)): Caravaggio - Narcissus, Jacques-Louis David - The Death of Marat.",
     "slides": {
       "slide_1": "/images/themes/theme_152/slide_1.jpg",
-      "slide_2": "/images/themes/theme_152/slide_2.jpg",
-      "slide_3": "/images/themes/theme_152/slide_3.jpg"
+      "slide_2": "/images/themes/theme_152/slide_2.jpg"
     }
   },
   "theme_153": {
     "art_id": "ART-0153",
-    "title": "Bộ tranh sơn dầu: Caravaggio Cardsharps Kimbell detail",
-    "artist": "Caravaggio",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Quentin Matsys - The Moneylender and his Wife",
+    "artist": "Quentin Matsys",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Caravaggio, vân cọ impasto và toan vải hữu cơ cho chủ đề THAO TÚNG (Khí độc & Kiểm soát tâm lý).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (THAO TÚNG (Khí độc & Kiểm soát tâm lý)): Quentin Matsys - The Moneylender and his Wife.",
     "slides": {
-      "slide_1": "/images/themes/theme_153/slide_1.jpg",
-      "slide_2": "/images/themes/theme_153/slide_2.jpg",
-      "slide_3": "/images/themes/theme_153/slide_3.jpg"
+      "slide_1": "/images/themes/theme_153/slide_1.jpg"
     }
   },
   "theme_154": {
     "art_id": "ART-0154",
-    "title": "Bộ tranh sơn dầu: La Belle Dame sans Merci (1893)",
-    "artist": "John William Waterhouse",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Lawrence Alma-Tadema - The Roses of Heliogabalus, John William Waterhouse - La Belle Dame sans Merci, Vilhelm Hammershoi - Interior with Young Woman Seen from the Back",
+    "artist": "Lawrence Alma-Tadema & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của John William Waterhouse, vân cọ impasto và toan vải hữu cơ cho chủ đề THAO TÚNG (Khí độc & Kiểm soát tâm lý).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (THAO TÚNG (Khí độc & Kiểm soát tâm lý)): Lawrence Alma-Tadema - The Roses of Heliogabalus, John William Waterhouse - La Belle Dame sans Merci, Vilhelm Hammershoi - Interior with Young Woman Seen from the Back.",
     "slides": {
       "slide_1": "/images/themes/theme_154/slide_1.jpg",
       "slide_2": "/images/themes/theme_154/slide_2.jpg",
@@ -1737,40 +1734,37 @@
   },
   "theme_155": {
     "art_id": "ART-0155",
-    "title": "Bộ tranh sơn dầu: Interieur mit Rueckenansicht einer Frau - 1903-1904 - Randers Kunstmuseum",
-    "artist": "Vilhelm Hammershøi",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Frederic Leighton - Solitude, Edmund Leighton - The Accolade",
+    "artist": "Frederic Leighton & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Vilhelm Hammershøi, vân cọ impasto và toan vải hữu cơ cho chủ đề THAO TÚNG (Khí độc & Kiểm soát tâm lý).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (THAO TÚNG (Khí độc & Kiểm soát tâm lý)): Frederic Leighton - Solitude, Edmund Leighton - The Accolade.",
     "slides": {
       "slide_1": "/images/themes/theme_155/slide_1.jpg",
-      "slide_2": "/images/themes/theme_155/slide_2.jpg",
-      "slide_3": "/images/themes/theme_155/slide_3.jpg"
+      "slide_2": "/images/themes/theme_155/slide_2.jpg"
     }
   },
   "theme_156": {
     "art_id": "ART-0156",
-    "title": "Bộ tranh sơn dầu: Massysm Quentin — The Moneylender and his Wife — 1514",
-    "artist": "Quentin Matsys",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Marinus van Reymerswaele - The Moneychanger and his Wife",
+    "artist": "Marinus van Reymerswaele",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Quentin Matsys, vân cọ impasto và toan vải hữu cơ cho chủ đề THAO TÚNG (Khí độc & Kiểm soát tâm lý).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (THAO TÚNG (Khí độc & Kiểm soát tâm lý)): Marinus van Reymerswaele - The Moneychanger and his Wife.",
     "slides": {
-      "slide_1": "/images/themes/theme_156/slide_1.jpg",
-      "slide_2": "/images/themes/theme_156/slide_2.jpg",
-      "slide_3": "/images/themes/theme_156/slide_3.jpg"
+      "slide_1": "/images/themes/theme_156/slide_1.jpg"
     }
   },
   "theme_157": {
     "art_id": "ART-0157",
-    "title": "Bộ tranh sơn dầu: Francisco de Goya, Saturno devorando a su hijo (1819-1823)",
-    "artist": "Francisco Goya",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Jacques-Louis David - The Death of Socrates, Francisco Goya - Saturn Devouring His Son, Alexandre Cabanel - The Fallen Angel",
+    "artist": "Jacques-Louis David & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Francisco Goya, vân cọ impasto và toan vải hữu cơ cho chủ đề THAO TÚNG (Khí độc & Kiểm soát tâm lý).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (THAO TÚNG (Khí độc & Kiểm soát tâm lý)): Jacques-Louis David - The Death of Socrates, Francisco Goya - Saturn Devouring His Son, Alexandre Cabanel - The Fallen Angel.",
     "slides": {
       "slide_1": "/images/themes/theme_157/slide_1.jpg",
       "slide_2": "/images/themes/theme_157/slide_2.jpg",
@@ -1779,40 +1773,37 @@
   },
   "theme_158": {
     "art_id": "ART-0158",
-    "title": "Bộ tranh sơn dầu: Monk by the Sea",
-    "artist": "Caspar David Friedrich",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Jan Cossiers - Prometheus Carrying Fire",
+    "artist": "Jan Cossiers",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Caspar David Friedrich, vân cọ impasto và toan vải hữu cơ cho chủ đề THAO TÚNG (Khí độc & Kiểm soát tâm lý).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (THAO TÚNG (Khí độc & Kiểm soát tâm lý)): Jan Cossiers - Prometheus Carrying Fire.",
     "slides": {
-      "slide_1": "/images/themes/theme_158/slide_1.jpg",
-      "slide_2": "/images/themes/theme_158/slide_2.jpg",
-      "slide_3": "/images/themes/theme_158/slide_3.jpg"
+      "slide_1": "/images/themes/theme_158/slide_1.jpg"
     }
   },
   "theme_159": {
     "art_id": "ART-0159",
-    "title": "Bộ tranh sơn dầu: Volga Boatmen (1870-1873)",
-    "artist": "Ilya Repin",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Honore Daumier - The Chess Players, Paul Delaroche - Napoleon at Fontainebleau",
+    "artist": "Honore Daumier & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Ilya Repin, vân cọ impasto và toan vải hữu cơ cho chủ đề THAO TÚNG (Khí độc & Kiểm soát tâm lý).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (THAO TÚNG (Khí độc & Kiểm soát tâm lý)): Honore Daumier - The Chess Players, Paul Delaroche - Napoleon at Fontainebleau.",
     "slides": {
       "slide_1": "/images/themes/theme_159/slide_1.jpg",
-      "slide_2": "/images/themes/theme_159/slide_2.jpg",
-      "slide_3": "/images/themes/theme_159/slide_3.jpg"
+      "slide_2": "/images/themes/theme_159/slide_2.jpg"
     }
   },
   "theme_160": {
     "art_id": "ART-0160",
-    "title": "Bộ tranh sơn dầu: Wanderer above the sea of fog",
-    "artist": "Caspar David Friedrich",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Fra Angelico - The Mocking of Christ, Pieter Bruegel the Elder - The Tower of Babel, Caspar David Friedrich - Wanderer in the Mist",
+    "artist": "Fra Angelico & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Caspar David Friedrich, vân cọ impasto và toan vải hữu cơ cho chủ đề THAO TÚNG (Khí độc & Kiểm soát tâm lý).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (THAO TÚNG (Khí độc & Kiểm soát tâm lý)): Fra Angelico - The Mocking of Christ, Pieter Bruegel the Elder - The Tower of Babel, Caspar David Friedrich - Wanderer in the Mist.",
     "slides": {
       "slide_1": "/images/themes/theme_160/slide_1.jpg",
       "slide_2": "/images/themes/theme_160/slide_2.jpg",
@@ -1821,12 +1812,12 @@
   },
   "theme_161": {
     "art_id": "ART-0161",
-    "title": "Bộ tranh sơn dầu: Honore Daumier The Uprising",
-    "artist": "Honoré Daumier",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Pieter Bruegel the Elder - The Blind Leading the Blind, Theodore Gericault - The Raft of the Medusa, Rembrandt - The Philosopher in Meditation",
+    "artist": "Pieter Bruegel the Elder & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Honoré Daumier, vân cọ impasto và toan vải hữu cơ cho chủ đề TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)): Pieter Bruegel the Elder - The Blind Leading the Blind, Theodore Gericault - The Raft of the Medusa, Rembrandt - The Philosopher in Meditation.",
     "slides": {
       "slide_1": "/images/themes/theme_161/slide_1.jpg",
       "slide_2": "/images/themes/theme_161/slide_2.jpg",
@@ -1835,40 +1826,37 @@
   },
   "theme_162": {
     "art_id": "ART-0162",
-    "title": "Bộ tranh sơn dầu: El Tres de Mayo, by Francisco de Goya, from Prado thin black margin",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Francisco Goya - The Third of May 1808",
     "artist": "Francisco Goya",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Francisco Goya, vân cọ impasto và toan vải hữu cơ cho chủ đề TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)): Francisco Goya - The Third of May 1808.",
     "slides": {
-      "slide_1": "/images/themes/theme_162/slide_1.jpg",
-      "slide_2": "/images/themes/theme_162/slide_2.jpg",
-      "slide_3": "/images/themes/theme_162/slide_3.jpg"
+      "slide_1": "/images/themes/theme_162/slide_1.jpg"
     }
   },
   "theme_163": {
     "art_id": "ART-0163",
-    "title": "Bộ tranh sơn dầu: The Anatomy Lesson of Dr Nicolaes Tulp",
-    "artist": "Rembrandt",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Valentin de Boulogne - The Judgment of Solomon, Mattia Preti - Pilate Washing His Hands",
+    "artist": "Valentin de Boulogne & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Rembrandt, vân cọ impasto và toan vải hữu cơ cho chủ đề TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)): Valentin de Boulogne - The Judgment of Solomon, Mattia Preti - Pilate Washing His Hands.",
     "slides": {
       "slide_1": "/images/themes/theme_163/slide_1.jpg",
-      "slide_2": "/images/themes/theme_163/slide_2.jpg",
-      "slide_3": "/images/themes/theme_163/slide_3.jpg"
+      "slide_2": "/images/themes/theme_163/slide_2.jpg"
     }
   },
   "theme_164": {
     "art_id": "ART-0164",
-    "title": "Bộ tranh sơn dầu: Pieter Bruegel the Elder (1568) The Blind Leading the Blind",
-    "artist": "Pieter Bruegel the Elder",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Sandro Botticelli - The Calumny of Apelles, Honoré Daumier - The Third-Class Carriage, Ilya Repin - They Did Not Expect Him",
+    "artist": "Sandro Botticelli & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Pieter Bruegel the Elder, vân cọ impasto và toan vải hữu cơ cho chủ đề TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)): Sandro Botticelli - The Calumny of Apelles, Honoré Daumier - The Third-Class Carriage, Ilya Repin - They Did Not Expect Him.",
     "slides": {
       "slide_1": "/images/themes/theme_164/slide_1.jpg",
       "slide_2": "/images/themes/theme_164/slide_2.jpg",
@@ -1877,40 +1865,37 @@
   },
   "theme_165": {
     "art_id": "ART-0165",
-    "title": "Bộ tranh sơn dầu: Slave-ship",
-    "artist": "J.M.W. Turner",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Eugene Delacroix - The Good Samaritan, Pieter Bruegel the Elder - Landscape with the Fall of Icarus",
+    "artist": "Eugene Delacroix & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của J.M.W. Turner, vân cọ impasto và toan vải hữu cơ cho chủ đề TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)): Eugene Delacroix - The Good Samaritan, Pieter Bruegel the Elder - Landscape with the Fall of Icarus.",
     "slides": {
       "slide_1": "/images/themes/theme_165/slide_1.jpg",
-      "slide_2": "/images/themes/theme_165/slide_2.jpg",
-      "slide_3": "/images/themes/theme_165/slide_3.jpg"
+      "slide_2": "/images/themes/theme_165/slide_2.jpg"
     }
   },
   "theme_166": {
     "art_id": "ART-0166",
-    "title": "Bộ tranh sơn dầu: The Death of Socrates",
-    "artist": "Jacques-Louis David",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Jean-Leon Gerome - Pollice Verso",
+    "artist": "Jean-Leon Gerome",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Jacques-Louis David, vân cọ impasto và toan vải hữu cơ cho chủ đề TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)): Jean-Leon Gerome - Pollice Verso.",
     "slides": {
-      "slide_1": "/images/themes/theme_166/slide_1.jpg",
-      "slide_2": "/images/themes/theme_166/slide_2.jpg",
-      "slide_3": "/images/themes/theme_166/slide_3.jpg"
+      "slide_1": "/images/themes/theme_166/slide_1.jpg"
     }
   },
   "theme_167": {
     "art_id": "ART-0167",
-    "title": "Bộ tranh sơn dầu: Jan Matejko, Stańczyk",
-    "artist": "Jan Matejko",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: James Ensor - The Intrigue, Lucas Cranach the Elder - The Fountain of Youth, Rembrandt - Aristotle with a Bust of Homer",
+    "artist": "James Ensor & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Jan Matejko, vân cọ impasto và toan vải hữu cơ cho chủ đề TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)): James Ensor - The Intrigue, Lucas Cranach the Elder - The Fountain of Youth, Rembrandt - Aristotle with a Bust of Homer.",
     "slides": {
       "slide_1": "/images/themes/theme_167/slide_1.jpg",
       "slide_2": "/images/themes/theme_167/slide_2.jpg",
@@ -1919,54 +1904,49 @@
   },
   "theme_168": {
     "art_id": "ART-0168",
-    "title": "Bộ tranh sơn dầu: Evening on Karl Johan Street (1892)",
-    "artist": "Edvard Munch",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Hieronymus Bosch - Christ Carrying the Cross",
+    "artist": "Hieronymus Bosch",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Edvard Munch, vân cọ impasto và toan vải hữu cơ cho chủ đề TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)): Hieronymus Bosch - Christ Carrying the Cross.",
     "slides": {
-      "slide_1": "/images/themes/theme_168/slide_1.jpg",
-      "slide_2": "/images/themes/theme_168/slide_2.jpg",
-      "slide_3": "/images/themes/theme_168/slide_3.jpg"
+      "slide_1": "/images/themes/theme_168/slide_1.jpg"
     }
   },
   "theme_169": {
     "art_id": "ART-0169",
-    "title": "Bộ tranh sơn dầu: Christ's Entry into Brussels in 1889",
-    "artist": "James Ensor",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Pietro Longhi - The Rhinoceros, Francisco Goya - Witches Sabbath",
+    "artist": "Pietro Longhi & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của James Ensor, vân cọ impasto và toan vải hữu cơ cho chủ đề TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)): Pietro Longhi - The Rhinoceros, Francisco Goya - Witches Sabbath.",
     "slides": {
       "slide_1": "/images/themes/theme_169/slide_1.jpg",
-      "slide_2": "/images/themes/theme_169/slide_2.jpg",
-      "slide_3": "/images/themes/theme_169/slide_3.jpg"
+      "slide_2": "/images/themes/theme_169/slide_2.jpg"
     }
   },
   "theme_170": {
     "art_id": "ART-0170",
-    "title": "Bộ tranh sơn dầu: Two Men Contemplating the Moon",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caspar David Friedrich - The Solitary Tree",
     "artist": "Caspar David Friedrich",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Caspar David Friedrich, vân cọ impasto và toan vải hữu cơ cho chủ đề TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)): Caspar David Friedrich - The Solitary Tree.",
     "slides": {
-      "slide_1": "/images/themes/theme_170/slide_1.jpg",
-      "slide_2": "/images/themes/theme_170/slide_2.jpg",
-      "slide_3": "/images/themes/theme_170/slide_3.jpg"
+      "slide_1": "/images/themes/theme_170/slide_1.jpg"
     }
   },
   "theme_171": {
     "art_id": "ART-0171",
-    "title": "Bộ tranh sơn dầu: The Thinker detail of the Gates of Hell Rodin musée Rodin S.01304 Paris",
-    "artist": "Auguste Rodin",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Francisco Goya - The Garrotte, Francisco Goya - The Sleep of Reason Produces Monsters, Eugene Delacroix - Liberty Leading the People",
+    "artist": "Francisco Goya & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Auguste Rodin, vân cọ impasto và toan vải hữu cơ cho chủ đề NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)): Francisco Goya - The Garrotte, Francisco Goya - The Sleep of Reason Produces Monsters, Eugene Delacroix - Liberty Leading the People.",
     "slides": {
       "slide_1": "/images/themes/theme_171/slide_1.jpg",
       "slide_2": "/images/themes/theme_171/slide_2.jpg",
@@ -1975,40 +1955,37 @@
   },
   "theme_172": {
     "art_id": "ART-0172",
-    "title": "Bộ tranh sơn dầu: Europe a Prophecy - Creation of the World (1794, mirrored background, 1920 ",
-    "artist": "William Blake",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Edvard Munch - Melancholy, Carl Spitzweg - The Poor Poet",
+    "artist": "Edvard Munch & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của William Blake, vân cọ impasto và toan vải hữu cơ cho chủ đề NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)): Edvard Munch - Melancholy, Carl Spitzweg - The Poor Poet.",
     "slides": {
       "slide_1": "/images/themes/theme_172/slide_1.jpg",
-      "slide_2": "/images/themes/theme_172/slide_2.jpg",
-      "slide_3": "/images/themes/theme_172/slide_3.jpg"
+      "slide_2": "/images/themes/theme_172/slide_2.jpg"
     }
   },
   "theme_173": {
     "art_id": "ART-0173",
-    "title": "Bộ tranh sơn dầu: Edouard Manet, A Bar at the Folies-Bergère",
-    "artist": "Édouard Manet",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Edouard Manet - A Bar at the Folies-Bergere",
+    "artist": "Edouard Manet",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Édouard Manet, vân cọ impasto và toan vải hữu cơ cho chủ đề NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)): Edouard Manet - A Bar at the Folies-Bergere.",
     "slides": {
-      "slide_1": "/images/themes/theme_173/slide_1.jpg",
-      "slide_2": "/images/themes/theme_173/slide_2.jpg",
-      "slide_3": "/images/themes/theme_173/slide_3.jpg"
+      "slide_1": "/images/themes/theme_173/slide_1.jpg"
     }
   },
   "theme_174": {
     "art_id": "ART-0174",
-    "title": "Bộ tranh sơn dầu: Edvard Munch, 1893, The Scream, oil, tempera and pastel on cardboard, 91 x ",
-    "artist": "Edvard Munch",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Albrecht Durer - Melencolia I, Caspar David Friedrich - Chalk Cliffs on Rugen, Caspar David Friedrich - Morning in the Riesengebirge",
+    "artist": "Albrecht Durer & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Edvard Munch, vân cọ impasto và toan vải hữu cơ cho chủ đề NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)): Albrecht Durer - Melencolia I, Caspar David Friedrich - Chalk Cliffs on Rugen, Caspar David Friedrich - Morning in the Riesengebirge.",
     "slides": {
       "slide_1": "/images/themes/theme_174/slide_1.jpg",
       "slide_2": "/images/themes/theme_174/slide_2.jpg",
@@ -2017,40 +1994,37 @@
   },
   "theme_175": {
     "art_id": "ART-0175",
-    "title": "Bộ tranh sơn dầu: Fernand Léger, 1919, The City (La Ville), oil on canvas, 231.1 x 298.4 cm, ",
-    "artist": "Fernand Léger",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Gustave Caillebotte - Paris Street Rainy Day, Edgar Degas - In a Cafe (The Absinthe Drinker)",
+    "artist": "Gustave Caillebotte & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Fernand Léger, vân cọ impasto và toan vải hữu cơ cho chủ đề NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)): Gustave Caillebotte - Paris Street Rainy Day, Edgar Degas - In a Cafe (The Absinthe Drinker).",
     "slides": {
       "slide_1": "/images/themes/theme_175/slide_1.jpg",
-      "slide_2": "/images/themes/theme_175/slide_2.jpg",
-      "slide_3": "/images/themes/theme_175/slide_3.jpg"
+      "slide_2": "/images/themes/theme_175/slide_2.jpg"
     }
   },
   "theme_176": {
     "art_id": "ART-0176",
-    "title": "Bộ tranh sơn dầu: The Garden of Earthly Delights by Bosch High Resolution",
-    "artist": "Hieronymus Bosch",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: William-Adolphe Bouguereau - Dante and Virgil in Hell",
+    "artist": "William-Adolphe Bouguereau",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Hieronymus Bosch, vân cọ impasto và toan vải hữu cơ cho chủ đề NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)): William-Adolphe Bouguereau - Dante and Virgil in Hell.",
     "slides": {
-      "slide_1": "/images/themes/theme_176/slide_1.jpg",
-      "slide_2": "/images/themes/theme_176/slide_2.jpg",
-      "slide_3": "/images/themes/theme_176/slide_3.jpg"
+      "slide_1": "/images/themes/theme_176/slide_1.jpg"
     }
   },
   "theme_177": {
     "art_id": "ART-0177",
-    "title": "Bộ tranh sơn dầu: Melencolia I (427760)",
-    "artist": "Albrecht Dürer",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Rembrandt - Jeremiah Lamenting the Destruction of Jerusalem, John Everett Millais - Ophelia, Pierre-Auguste Renoir - Young Girl with Daisies",
+    "artist": "Rembrandt & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Albrecht Dürer, vân cọ impasto và toan vải hữu cơ cho chủ đề NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)): Rembrandt - Jeremiah Lamenting the Destruction of Jerusalem, John Everett Millais - Ophelia, Pierre-Auguste Renoir - Young Girl with Daisies.",
     "slides": {
       "slide_1": "/images/themes/theme_177/slide_1.jpg",
       "slide_2": "/images/themes/theme_177/slide_2.jpg",
@@ -2059,54 +2033,49 @@
   },
   "theme_178": {
     "art_id": "ART-0178",
-    "title": "Bộ tranh sơn dầu: Cross in the Mountains (Tetschen Altar) - WGA08237",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caspar David Friedrich - Monk by the Sea",
     "artist": "Caspar David Friedrich",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Caspar David Friedrich, vân cọ impasto và toan vải hữu cơ cho chủ đề NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)): Caspar David Friedrich - Monk by the Sea.",
     "slides": {
-      "slide_1": "/images/themes/theme_178/slide_1.jpg",
-      "slide_2": "/images/themes/theme_178/slide_2.jpg",
-      "slide_3": "/images/themes/theme_178/slide_3.jpg"
+      "slide_1": "/images/themes/theme_178/slide_1.jpg"
     }
   },
   "theme_179": {
     "art_id": "ART-0179",
-    "title": "Bộ tranh sơn dầu: Dargenta & Salvador Dali The persistance of Memory",
-    "artist": "Salvador Dalí",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Pieter Claesz - Vanitas Still Life, Philippe de Champaigne - Vanitas",
+    "artist": "Pieter Claesz & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Salvador Dalí, vân cọ impasto và toan vải hữu cơ cho chủ đề NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)): Pieter Claesz - Vanitas Still Life, Philippe de Champaigne - Vanitas.",
     "slides": {
       "slide_1": "/images/themes/theme_179/slide_1.jpg",
-      "slide_2": "/images/themes/theme_179/slide_2.jpg",
-      "slide_3": "/images/themes/theme_179/slide_3.jpg"
+      "slide_2": "/images/themes/theme_179/slide_2.jpg"
     }
   },
   "theme_180": {
     "art_id": "ART-0180",
-    "title": "Bộ tranh sơn dầu: La liberté guidant le peuple",
-    "artist": "Eugène Delacroix",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Jacques-Louis David - The Oath of the Horatii",
+    "artist": "Jacques-Louis David",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Eugène Delacroix, vân cọ impasto và toan vải hữu cơ cho chủ đề NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)): Jacques-Louis David - The Oath of the Horatii.",
     "slides": {
-      "slide_1": "/images/themes/theme_180/slide_1.jpg",
-      "slide_2": "/images/themes/theme_180/slide_2.jpg",
-      "slide_3": "/images/themes/theme_180/slide_3.jpg"
+      "slide_1": "/images/themes/theme_180/slide_1.jpg"
     }
   },
   "theme_181": {
     "art_id": "ART-0181",
-    "title": "Bộ tranh sơn dầu: Michelangelo Merisi, named Caravaggio",
-    "artist": "Caravaggio",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caravaggio - The Incredulity of Saint Thomas, Domenico Fetti - The Parable of the Mote and the Beam, Caravaggio - Saint Jerome Writing",
+    "artist": "Caravaggio & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Caravaggio, vân cọ impasto và toan vải hữu cơ cho chủ đề THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)): Caravaggio - The Incredulity of Saint Thomas, Domenico Fetti - The Parable of the Mote and the Beam, Caravaggio - Saint Jerome Writing.",
     "slides": {
       "slide_1": "/images/themes/theme_181/slide_1.jpg",
       "slide_2": "/images/themes/theme_181/slide_2.jpg",
@@ -2115,40 +2084,37 @@
   },
   "theme_182": {
     "art_id": "ART-0182",
-    "title": "Bộ tranh sơn dầu: A Rake's Progress - Tavern Scene",
-    "artist": "William Hogarth",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Johannes Vermeer - The Procuress, J.M.W. Turner - Snow Storm Hannibal and his Army Crossing the Alps",
+    "artist": "Johannes Vermeer & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của William Hogarth, vân cọ impasto và toan vải hữu cơ cho chủ đề THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)): Johannes Vermeer - The Procuress, J.M.W. Turner - Snow Storm Hannibal and his Army Crossing the Alps.",
     "slides": {
       "slide_1": "/images/themes/theme_182/slide_1.jpg",
-      "slide_2": "/images/themes/theme_182/slide_2.jpg",
-      "slide_3": "/images/themes/theme_182/slide_3.jpg"
+      "slide_2": "/images/themes/theme_182/slide_2.jpg"
     }
   },
   "theme_183": {
     "art_id": "ART-0183",
-    "title": "Bộ tranh sơn dầu: Las Meninas, by Diego Velázquez, from Prado in Google Earth",
-    "artist": "Diego Velázquez",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Georges de La Tour - Joseph the Carpenter",
+    "artist": "Georges de La Tour",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Diego Velázquez, vân cọ impasto và toan vải hữu cơ cho chủ đề THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)): Georges de La Tour - Joseph the Carpenter.",
     "slides": {
-      "slide_1": "/images/themes/theme_183/slide_1.jpg",
-      "slide_2": "/images/themes/theme_183/slide_2.jpg",
-      "slide_3": "/images/themes/theme_183/slide_3.jpg"
+      "slide_1": "/images/themes/theme_183/slide_1.jpg"
     }
   },
   "theme_184": {
     "art_id": "ART-0184",
-    "title": "Bộ tranh sơn dầu: Ophelia",
-    "artist": "John Everett Millais",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: John William Waterhouse - The Lady of Shalott, Dante Gabriel Rossetti - Proserpine, Winslow Homer - The Gulf Stream",
+    "artist": "John William Waterhouse & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của John Everett Millais, vân cọ impasto và toan vải hữu cơ cho chủ đề THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)): John William Waterhouse - The Lady of Shalott, Dante Gabriel Rossetti - Proserpine, Winslow Homer - The Gulf Stream.",
     "slides": {
       "slide_1": "/images/themes/theme_184/slide_1.jpg",
       "slide_2": "/images/themes/theme_184/slide_2.jpg",
@@ -2157,40 +2123,37 @@
   },
   "theme_185": {
     "art_id": "ART-0185",
-    "title": "Bộ tranh sơn dầu: Caravaggio",
-    "artist": "Artemisia Gentileschi",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Ilya Repin - Ivan the Terrible and His Son Ivan, Fernand Cormon - Cain flying before Jehovah Curse",
+    "artist": "Ilya Repin & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Artemisia Gentileschi, vân cọ impasto và toan vải hữu cơ cho chủ đề THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)): Ilya Repin - Ivan the Terrible and His Son Ivan, Fernand Cormon - Cain flying before Jehovah Curse.",
     "slides": {
       "slide_1": "/images/themes/theme_185/slide_1.jpg",
-      "slide_2": "/images/themes/theme_185/slide_2.jpg",
-      "slide_3": "/images/themes/theme_185/slide_3.jpg"
+      "slide_2": "/images/themes/theme_185/slide_2.jpg"
     }
   },
   "theme_186": {
     "art_id": "ART-0186",
-    "title": "Bộ tranh sơn dầu: Rembrandt Self-portrait (Kenwood)",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Rembrandt - The Return of the Prodigal Son",
     "artist": "Rembrandt",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Rembrandt, vân cọ impasto và toan vải hữu cơ cho chủ đề THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)): Rembrandt - The Return of the Prodigal Son.",
     "slides": {
-      "slide_1": "/images/themes/theme_186/slide_1.jpg",
-      "slide_2": "/images/themes/theme_186/slide_2.jpg",
-      "slide_3": "/images/themes/theme_186/slide_3.jpg"
+      "slide_1": "/images/themes/theme_186/slide_1.jpg"
     }
   },
   "theme_187": {
     "art_id": "ART-0187",
-    "title": "Bộ tranh sơn dầu: The Astronomer - 1668",
-    "artist": "Johannes Vermeer",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Johannes Vermeer - The Astronomer, Carl Spitzweg - The Bookworm, Raphael - The School of Athens",
+    "artist": "Johannes Vermeer & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Johannes Vermeer, vân cọ impasto và toan vải hữu cơ cho chủ đề THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)): Johannes Vermeer - The Astronomer, Carl Spitzweg - The Bookworm, Raphael - The School of Athens.",
     "slides": {
       "slide_1": "/images/themes/theme_187/slide_1.jpg",
       "slide_2": "/images/themes/theme_187/slide_2.jpg",
@@ -2199,54 +2162,49 @@
   },
   "theme_188": {
     "art_id": "ART-0188",
-    "title": "Bộ tranh sơn dầu: Return of the Prodigal Son",
-    "artist": "Rembrandt",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Giotto - Kiss of Judas",
+    "artist": "Giotto",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Rembrandt, vân cọ impasto và toan vải hữu cơ cho chủ đề THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)): Giotto - Kiss of Judas.",
     "slides": {
-      "slide_1": "/images/themes/theme_188/slide_1.jpg",
-      "slide_2": "/images/themes/theme_188/slide_2.jpg",
-      "slide_3": "/images/themes/theme_188/slide_3.jpg"
+      "slide_1": "/images/themes/theme_188/slide_1.jpg"
     }
   },
   "theme_189": {
     "art_id": "ART-0189",
-    "title": "Bộ tranh sơn dầu: Carl Spitzweg 021-detail",
-    "artist": "Carl Spitzweg",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Frans Hals - The Laughing Cavalier, Rembrandt - Self-Portrait with Two Circles",
+    "artist": "Frans Hals & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Carl Spitzweg, vân cọ impasto và toan vải hữu cơ cho chủ đề THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)): Frans Hals - The Laughing Cavalier, Rembrandt - Self-Portrait with Two Circles.",
     "slides": {
       "slide_1": "/images/themes/theme_189/slide_1.jpg",
-      "slide_2": "/images/themes/theme_189/slide_2.jpg",
-      "slide_3": "/images/themes/theme_189/slide_3.jpg"
+      "slide_2": "/images/themes/theme_189/slide_2.jpg"
     }
   },
   "theme_190": {
     "art_id": "ART-0190",
-    "title": "Bộ tranh sơn dầu: Venus with a Mirror",
-    "artist": "Titian",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Albrecht Durer - Self-Portrait at Twenty-Eight",
+    "artist": "Albrecht Durer",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Titian, vân cọ impasto và toan vải hữu cơ cho chủ đề THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)): Albrecht Durer - Self-Portrait at Twenty-Eight.",
     "slides": {
-      "slide_1": "/images/themes/theme_190/slide_1.jpg",
-      "slide_2": "/images/themes/theme_190/slide_2.jpg",
-      "slide_3": "/images/themes/theme_190/slide_3.jpg"
+      "slide_1": "/images/themes/theme_190/slide_1.jpg"
     }
   },
   "theme_191": {
     "art_id": "ART-0191",
-    "title": "Bộ tranh sơn dầu: Sisyphus",
-    "artist": "Titian",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Titian - Sisyphus, Cornelis van Haarlem - The Fall of the Titans, Peter Paul Rubens - Prometheus Bound",
+    "artist": "Titian & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Titian, vân cọ impasto và toan vải hữu cơ cho chủ đề HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)): Titian - Sisyphus, Cornelis van Haarlem - The Fall of the Titans, Peter Paul Rubens - Prometheus Bound.",
     "slides": {
       "slide_1": "/images/themes/theme_191/slide_1.jpg",
       "slide_2": "/images/themes/theme_191/slide_2.jpg",
@@ -2255,26 +2213,24 @@
   },
   "theme_192": {
     "art_id": "ART-0192",
-    "title": "Bộ tranh sơn dầu: Prisoners",
-    "artist": "Vincent van Gogh",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Rembrandt - The Apostle Paul in Prison",
+    "artist": "Rembrandt",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Vincent van Gogh, vân cọ impasto và toan vải hữu cơ cho chủ đề HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)): Rembrandt - The Apostle Paul in Prison.",
     "slides": {
-      "slide_1": "/images/themes/theme_192/slide_1.jpg",
-      "slide_2": "/images/themes/theme_192/slide_2.jpg",
-      "slide_3": "/images/themes/theme_192/slide_3.jpg"
+      "slide_1": "/images/themes/theme_192/slide_1.jpg"
     }
   },
   "theme_193": {
     "art_id": "ART-0193",
-    "title": "Bộ tranh sơn dầu: The Cyclops",
-    "artist": "Odilon Redon",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Gustave Moreau - Saint George and the Dragon, Caravaggio - David with the Head of Goliath, Caravaggio - Medusa",
+    "artist": "Gustave Moreau & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Odilon Redon, vân cọ impasto và toan vải hữu cơ cho chủ đề HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)): Gustave Moreau - Saint George and the Dragon, Caravaggio - David with the Head of Goliath, Caravaggio - Medusa.",
     "slides": {
       "slide_1": "/images/themes/theme_193/slide_1.jpg",
       "slide_2": "/images/themes/theme_193/slide_2.jpg",
@@ -2283,54 +2239,49 @@
   },
   "theme_194": {
     "art_id": "ART-0194",
-    "title": "Bộ tranh sơn dầu: The Sea of Ice",
-    "artist": "Caspar David Friedrich",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Henry Fuseli - The Nightmare",
+    "artist": "Henry Fuseli",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Caspar David Friedrich, vân cọ impasto và toan vải hữu cơ cho chủ đề HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)): Henry Fuseli - The Nightmare.",
     "slides": {
-      "slide_1": "/images/themes/theme_194/slide_1.jpg",
-      "slide_2": "/images/themes/theme_194/slide_2.jpg",
-      "slide_3": "/images/themes/theme_194/slide_3.jpg"
+      "slide_1": "/images/themes/theme_194/slide_1.jpg"
     }
   },
   "theme_195": {
     "art_id": "ART-0195",
-    "title": "Bộ tranh sơn dầu: Impression, Sunrise",
-    "artist": "Claude Monet",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caspar David Friedrich - The Sea of Ice, Claude Monet - Field of Poppies",
+    "artist": "Caspar David Friedrich & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Claude Monet, vân cọ impasto và toan vải hữu cơ cho chủ đề HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)): Caspar David Friedrich - The Sea of Ice, Claude Monet - Field of Poppies.",
     "slides": {
       "slide_1": "/images/themes/theme_195/slide_1.jpg",
-      "slide_2": "/images/themes/theme_195/slide_2.jpg",
-      "slide_3": "/images/themes/theme_195/slide_3.jpg"
+      "slide_2": "/images/themes/theme_195/slide_2.jpg"
     }
   },
   "theme_196": {
     "art_id": "ART-0196",
-    "title": "Bộ tranh sơn dầu: Jeremiah Lamenting the Destruction of Jerusalem",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Rembrandt - An Old Man in Red",
     "artist": "Rembrandt",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Rembrandt, vân cọ impasto và toan vải hữu cơ cho chủ đề HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)): Rembrandt - An Old Man in Red.",
     "slides": {
-      "slide_1": "/images/themes/theme_196/slide_1.jpg",
-      "slide_2": "/images/themes/theme_196/slide_2.jpg",
-      "slide_3": "/images/themes/theme_196/slide_3.jpg"
+      "slide_1": "/images/themes/theme_196/slide_1.jpg"
     }
   },
   "theme_197": {
     "art_id": "ART-0197",
-    "title": "Bộ tranh sơn dầu: Snow Storm: Steam-Boat off a Harbour",
-    "artist": "J.M.W. Turner",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Rembrandt - The Blinding of Samson, Francisco Goya - Saturn, Rembrandt - Man in Armour",
+    "artist": "Rembrandt & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của J.M.W. Turner, vân cọ impasto và toan vải hữu cơ cho chủ đề HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)): Rembrandt - The Blinding of Samson, Francisco Goya - Saturn, Rembrandt - Man in Armour.",
     "slides": {
       "slide_1": "/images/themes/theme_197/slide_1.jpg",
       "slide_2": "/images/themes/theme_197/slide_2.jpg",
@@ -2339,40 +2290,37 @@
   },
   "theme_198": {
     "art_id": "ART-0198",
-    "title": "Bộ tranh sơn dầu: The Wave - WGA5517",
-    "artist": "Gustave Courbet",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Winslow Homer - Breezing Up (A Fair Wind)",
+    "artist": "Winslow Homer",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Gustave Courbet, vân cọ impasto và toan vải hữu cơ cho chủ đề HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)): Winslow Homer - Breezing Up (A Fair Wind).",
     "slides": {
-      "slide_1": "/images/themes/theme_198/slide_1.jpg",
-      "slide_2": "/images/themes/theme_198/slide_2.jpg",
-      "slide_3": "/images/themes/theme_198/slide_3.jpg"
+      "slide_1": "/images/themes/theme_198/slide_1.jpg"
     }
   },
   "theme_199": {
     "art_id": "ART-0199",
-    "title": "Bộ tranh sơn dầu: The Colossus, Francisco de Goya",
-    "artist": "Francisco Goya",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Eugene Delacroix - Liberty Leading the People, Rembrandt - Aristotle Contemplating a Bust of Homer",
+    "artist": "Eugene Delacroix & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Francisco Goya, vân cọ impasto và toan vải hữu cơ cho chủ đề HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)): Eugene Delacroix - Liberty Leading the People, Rembrandt - Aristotle Contemplating a Bust of Homer.",
     "slides": {
       "slide_1": "/images/themes/theme_199/slide_1.jpg",
-      "slide_2": "/images/themes/theme_199/slide_2.jpg",
-      "slide_3": "/images/themes/theme_199/slide_3.jpg"
+      "slide_2": "/images/themes/theme_199/slide_2.jpg"
     }
   },
   "theme_200": {
     "art_id": "ART-0200",
-    "title": "Bộ tranh sơn dầu: Die Lebensstufen (ca. 1834)",
-    "artist": "Caspar David Friedrich",
-    "year": "Thế kỷ XVI - XIX / Phục dựng Hiyu Abyss 2026",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Edward Burne-Jones - The Wheel of Fortune, Gustave Moreau - Oedipus and the Sphinx, Jean-Leon Gerome - Pygmalion and Galatea",
+    "artist": "Edward Burne-Jones & các bậc thầy cổ điển",
+    "year": "Thế kỷ XV - XIX / Phục dựng Hiyu Abyss 2026",
     "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
     "license": "Public Domain / HYA-08 Canvas Normalized",
-    "alt_vi": "Tranh sơn dầu cổ điển kiệt tác của Caspar David Friedrich, vân cọ impasto và toan vải hữu cơ cho chủ đề HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống).",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)): Edward Burne-Jones - The Wheel of Fortune, Gustave Moreau - Oedipus and the Sphinx, Jean-Leon Gerome - Pygmalion and Galatea.",
     "slides": {
       "slide_1": "/images/themes/theme_200/slide_1.jpg",
       "slide_2": "/images/themes/theme_200/slide_2.jpg",

@@ -1,0 +1,1042 @@
+[
+  {
+    "stt": 151,
+    "theme_id": "theme_151",
+    "txt_id": "TXT-0151",
+    "title": "[Bản Chất Của Gaslighting] Kẻ thao túng không cãi lý với bạn, họ hủy hoại niềm tin vào nhận thức của chính bạn.",
+    "author": "Kate Abramson",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Khi ai đó liên tục bảo bạn......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Rằng bạn đang làm quá lên, rằng bạn quá nhạy cảm hay nhớ nhầm mọi chuyện.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Họ không bảo vệ sự thật; họ đang từng bước hủy hoại chiếc la bàn nhận thức của bạn để biến bạn thành tù nhân cảm xúc.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 152,
+    "theme_id": "theme_152",
+    "txt_id": "TXT-0152",
+    "title": "[Ái Kỷ Ngấm Ngầm] Kẻ ái kỷ nguy hiểm nhất không phải kẻ khoe khoang, mà là kẻ thích đóng vai nạn nhân.",
+    "author": "Delroy L. Paulhus & Kevin M. Williams",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "format": "Carousel 2 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Kẻ ái kỷ độc hại nhất......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Không đòi bạn tán dương, họ dùng sự đáng thương và nước mắt để trói bạn vào món nợ cảm xúc không bao giờ trả hết.",
+        "role": "Twist"
+      }
+    ]
+  },
+  {
+    "stt": 153,
+    "theme_id": "theme_153",
+    "txt_id": "TXT-0153",
+    "title": "[Cái Bẫy Machiavellian] Đừng để lòng tốt của bạn trở thành công cụ miễn phí cho kẻ cơ hội.",
+    "author": "Richard Christie & Florence Geis",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Lòng tốt thiếu ranh giới không phải sự bao dung, đó là lời mời gọi kẻ thực dụng đến lợi dụng bạn.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 154,
+    "theme_id": "theme_154",
+    "txt_id": "TXT-0154",
+    "title": "[Chiêu Bài Love Bombing] Cơn mưa quà tặng và sự nồng nhiệt bất thường luôn đi kèm một cái giá cắt cổ.",
+    "author": "Delroy L. Paulhus & Kevin M. Williams",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Sự nồng nhiệt đến ngột ngạt ban đầu......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Hiếm khi xuất phát từ tình yêu chân thành; đó là chiếc lưới đánh cá bọc nhung đang siết lại quanh tự do của bạn.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Một mối quan hệ lành mạnh cần không gian để thở, không phải một cơn bão khiến bạn choáng ngợp và đánh mất lý trí.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 155,
+    "theme_id": "theme_155",
+    "txt_id": "TXT-0155",
+    "title": "[Bạo Lực Im Lặng] Silent Treatment không phải là sự bình yên, đó là sự trừng phạt tàn nhẫn nhất.",
+    "author": "George K. Simon",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "format": "Carousel 2 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Im lặng không phải lúc nào cũng vàng......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Khi nó được dùng để ép bạn phải quỳ gối xin lỗi cho những sai lầm không phải của mình, đó là sự tàn nhẫn đội lốt điềm tĩnh.",
+        "role": "Twist"
+      }
+    ]
+  },
+  {
+    "stt": 156,
+    "theme_id": "theme_156",
+    "txt_id": "TXT-0156",
+    "title": "[Nợ Ân Tình Độc Hại] Một ân huệ kèm theo điều kiện ngầm không phải là quà tặng, đó là chiếc xích xiềng.",
+    "author": "Niccolò Machiavelli",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Ân huệ mà người ta liên tục nhắc lại không phải là sự giúp đỡ; đó là chiếc hóa đơn đòi lại linh hồn bạn.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 157,
+    "theme_id": "theme_157",
+    "txt_id": "TXT-0157",
+    "title": "[Cơn Thịnh Nộ Ái Kỷ] Khi bạn vạch trần chiếc mặt nạ, kẻ thao túng sẽ dùng sự giận dữ để lấp liếm sự nhục nhã.",
+    "author": "Delroy L. Paulhus & Kevin M. Williams",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Khi bạn nói ra sự thật hiển nhiên......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Kẻ thao túng không phủ nhận bằng lý lẽ; họ gầm thét, đóng sầm cửa và biến mình thành nạn nhân bị xúc phạm.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Cơn giận dữ đó không phải sức mạnh; đó là tiếng la hét tuyệt vọng của một bản ngã giả tạo đang sụp đổ trước ánh sáng chân lý.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 158,
+    "theme_id": "theme_158",
+    "txt_id": "TXT-0158",
+    "title": "[Tội Lỗi Gán Ép] Bạn không có nghĩa vụ phải tự thiêu để giữ ấm cho một người không biết ơn.",
+    "author": "Martha Stout",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Đừng tự thiêu rụi chính mình chỉ để sưởi ấm cho một kẻ luôn phàn nàn rằng đốm lửa của bạn quá nhỏ.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 159,
+    "theme_id": "theme_159",
+    "txt_id": "TXT-0159",
+    "title": "[Chiến Thuật Bào Mòn] Sự thỏa hiệp hôm nay là ranh giới bị xâm phạm vào ngày mai.",
+    "author": "George K. Simon",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "format": "Carousel 2 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Nếu bạn lùi một bước......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Kẻ không biết tôn trọng ranh giới sẽ đòi bạn lùi mười bước, cho đến khi lưng bạn dán chặt vào tường.",
+        "role": "Twist"
+      }
+    ]
+  },
+  {
+    "stt": 160,
+    "theme_id": "theme_160",
+    "txt_id": "TXT-0160",
+    "title": "[Thoát Khỏi Khí Độc] Cách trả thù thanh lịch nhất với kẻ thao túng là sự dửng dưng tuyệt đối.",
+    "author": "Kate Abramson",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Đừng tốn sức giải thích......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Với kẻ đã quyết tâm bóp méo câu từ của bạn để phục vụ cho sự đắc thắng của họ.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Thu hồi toàn bộ sự chú ý của bạn; sự im lặng dửng dưng chính là bản án nặng nề nhất dành cho kẻ thèm khát quyền lực.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 161,
+    "theme_id": "theme_161",
+    "txt_id": "TXT-0161",
+    "title": "[Ảo Tưởng Của Đám Đông] Trong một bầy cừu cuồng nộ, con cừu đầu đàn chỉ đơn giản là con bị xô đẩy mạnh nhất.",
+    "author": "Gustave Le Bon",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Khi bạn bước vào đám đông......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Lý trí của bạn bị bốc hơi, nhường chỗ cho những khẩu hiệu giận dữ và ảo tưởng về sự toàn năng.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Đám đông không tìm kiếm sự thật; họ tìm kiếm một kẻ thù chung để giải tỏa sự bất lực của chính mình.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 162,
+    "theme_id": "theme_162",
+    "txt_id": "TXT-0162",
+    "title": "[Sự Tầm Thường Của Cái Ác] Tội ác ghê rợn nhất lịch sử không sinh ra từ quái vật, mà từ những kẻ chỉ biết tuân lệnh.",
+    "author": "Hannah Arendt",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Thảm kịch lớn nhất của nhân loại không phải do quái vật gây ra, mà do những người bình thường từ chối suy ngẫm trước mệnh lệnh.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 163,
+    "theme_id": "theme_163",
+    "txt_id": "TXT-0163",
+    "title": "[Thí Nghiệm Milgram] Khi có một kẻ nhân danh quyền lực đứng sau, con người sẵn sàng chà đạp đồng loại.",
+    "author": "Stanley Milgram",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "format": "Carousel 2 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Con người trở nên tàn bạo nhất......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Không phải khi họ bất tuân, mà là khi họ ngoan ngoãn giao nộp lương tâm cho kẻ có quyền lực.",
+        "role": "Twist"
+      }
+    ]
+  },
+  {
+    "stt": 164,
+    "theme_id": "theme_164",
+    "txt_id": "TXT-0164",
+    "title": "[Thí Nghiệm Asch] Người ta thà đồng thuận với điều sai trái còn hơn đứng một mình với sự thật.",
+    "author": "Solomon E. Asch",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Đa số không đồng nghĩa với đúng đắn......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Nếu hàng triệu người cùng tin vào một điều dối trá, điều đó chỉ biến nó thành một lời dối trá phổ biến, không bao giờ thành chân lý.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Giữ vững sự thật khi chỉ có một mình là phẩm giá cao quý nhất của một linh hồn độc lập.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 165,
+    "theme_id": "theme_165",
+    "txt_id": "TXT-0165",
+    "title": "[Hiệu Ứng Bàng Quan] Khi tất cả cùng nhìn, sẽ không có một ai ra tay cứu giúp.",
+    "author": "John Darley & Bibb Latané",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "format": "Carousel 2 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Giữa một biển người chứng kiến......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Nạn nhân không chết vì sự độc ác của kẻ thủ ác, họ chết vì sự im lặng chờ đợi lẫn nhau của những người vô can.",
+        "role": "Twist"
+      }
+    ]
+  },
+  {
+    "stt": 166,
+    "theme_id": "theme_166",
+    "txt_id": "TXT-0166",
+    "title": "[Quyền Lực Của Ngôn Từ Bầy Đàn] Đám đông tha thứ cho sự bạo lực, nhưng không bao giờ tha thứ cho sự khác biệt.",
+    "author": "Gustave Le Bon",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Cái giá của sự tỉnh thức giữa một đám đông cuồng loạn là bạn sẽ trở thành kẻ thù đầu tiên bị ném đá.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 167,
+    "theme_id": "theme_167",
+    "txt_id": "TXT-0167",
+    "title": "[Lối Mòn Tư Duy Nhóm] Khi tất cả cùng nghĩ giống nhau, chẳng có ai đang thực sự suy nghĩ.",
+    "author": "Irving Janis",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Sự đồng lòng tuyệt đối......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Hiếm khi là dấu hiệu của sự thông thái; thường là biểu hiện của một tập thể đang run rẩy sợ hãi sự thật.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Một người dám nói lời khó nghe cứu vớt cả một đoàn tàu khỏi lao xuống vực thẳm.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 168,
+    "theme_id": "theme_168",
+    "txt_id": "TXT-0168",
+    "title": "[Bình Thường Hóa Sự Tàn Nhẫn] Khi thói xấu trở thành thông lệ, người tử tế bỗng biến thành kẻ lập dị.",
+    "author": "Hannah Arendt",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Bi kịch của thời đại là người tử tế phải dùng hết dũng khí chỉ để làm những điều bình thường.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 169,
+    "theme_id": "theme_169",
+    "txt_id": "TXT-0169",
+    "title": "[Hiệu Ứng Vô Danh] Khi khuôn mặt bị che khuất, bóng tối trong tim con người được giải phóng.",
+    "author": "Philip Zimbardo",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "format": "Carousel 2 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Chiếc mặt nạ ẩn danh......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Không làm thay đổi bản chất con người; nó chỉ tháo chiếc khóa xích để con thú hoang bên trong được tự do cắn xé.",
+        "role": "Twist"
+      }
+    ]
+  },
+  {
+    "stt": 170,
+    "theme_id": "theme_170",
+    "txt_id": "TXT-0170",
+    "title": "[Tự Do Tư Tưởng Tối Thượng] Thà đi lạc trên con đường của chính mình còn hơn đi đúng theo bản đồ của kẻ khác.",
+    "author": "Gustave Le Bon",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Một bước đi sai lầm của tư duy độc lập vẫn vinh quang hơn ngàn dặm bước đều theo sự sai khiến của đám đông.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 171,
+    "theme_id": "theme_171",
+    "txt_id": "TXT-0171",
+    "title": "[Sự Ngụy Tín Của Sartre] Bạn không phải nạn nhân của số phận; bạn chỉ đang đóng vai một kẻ bất lực.",
+    "author": "Jean-Paul Sartre",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Câu nói 'tôi không còn lựa chọn nào khác'......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Hiếm khi là sự thật khách quan; đó là tấm màn ngụy tín mà bạn giăng ra để khỏi phải chịu trách nhiệm cho sự hèn nhát của mình.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Không chọn lựa cũng là một lựa chọn: lựa chọn đầu hàng và trao quyền định đoạt cho người khác.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 172,
+    "theme_id": "theme_172",
+    "txt_id": "TXT-0172",
+    "title": "[Trốn Chạy Tự Do] Tự do thực sự quá cô đơn và đáng sợ, nên con người vội vã trao nó cho kẻ độc tài.",
+    "author": "Erich Fromm",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "format": "Carousel 2 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Con người khao khát tự do......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Nhưng khi cánh cửa lồng mở toang, họ run rẩy trước bầu trời bao la và van xin được trao lại chiếc chìa khóa cho người khác.",
+        "role": "Twist"
+      }
+    ]
+  },
+  {
+    "stt": 173,
+    "theme_id": "theme_173",
+    "txt_id": "TXT-0173",
+    "title": "[Vở Kịch Xã Hội] Đừng để chức danh công việc nuốt chửng linh hồn sống động của bạn.",
+    "author": "Jean-Paul Sartre",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Khi bạn quá mải mê đóng tròn vai diễn xã hội trao tặng, bạn quên mất rằng chiếc mặt nạ đã dính chặt vào da thịt mình.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 174,
+    "theme_id": "theme_174",
+    "txt_id": "TXT-0174",
+    "title": "[Lo Âu Hiện Sinh] Cơn lo âu không phải là bệnh tật, đó là tiếng chuông thức tỉnh của tự do.",
+    "author": "Søren Kierkegaard",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Nỗi lo âu cồn cào trong lồng ngực......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Không phải vì bạn yếu đuối; đó là cơn chóng mặt khi linh hồn bạn đứng trước vực sâu của sự tự do và nhận ra mình phải tự chọn hướng đi.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Kẻ trốn tránh lo âu bằng sự xao nhãng tầm thường sẽ sống một cuộc đời êm ả nhưng rỗng tuếch.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 175,
+    "theme_id": "theme_175",
+    "txt_id": "TXT-0175",
+    "title": "[Cỗ Máy Tự Động Hóa] Đừng biến mình thành một chiếc bánh răng hoàn hảo trong cỗ máy của người khác.",
+    "author": "Erich Fromm",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "format": "Carousel 2 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Cứ tưởng mình tự do lựa chọn......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Cho đến khi nhận ra mọi ước mơ, nỗi sợ và tham vọng của bạn đều được sao chép nguyên vẹn từ những mẩu quảng cáo và kỳ vọng của thiên hạ.",
+        "role": "Twist"
+      }
+    ]
+  },
+  {
+    "stt": 176,
+    "theme_id": "theme_176",
+    "txt_id": "TXT-0176",
+    "title": "[Địa Ngục Là Kẻ Khác] Khi bạn để miệng đời định giá, bạn đã tự nộp mình vào chốn ngục tù.",
+    "author": "Jean-Paul Sartre",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Địa ngục không phải nơi có lửa thiêu; địa ngục là khi bạn trao chiếc búa thẩm phán cuộc đời mình cho ánh nhìn của người khác.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 177,
+    "theme_id": "theme_177",
+    "txt_id": "TXT-0177",
+    "title": "[Căn Bệnh Tuyệt Vọng] Cơn tuyệt vọng sâu sắc nhất là không muốn làm chính bản thân mình.",
+    "author": "Søren Kierkegaard",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Nỗi đau lớn nhất......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Không phải bị cả thế giới ruồng bỏ, mà là khi bạn đứng trước gương và cảm thấy xa lạ, ghê tởm chính bản thân mình.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Hòa giải với chính mình là chiến thắng vĩ đại nhất mà không ai có thể tước đoạt khỏi bạn.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 178,
+    "theme_id": "theme_178",
+    "txt_id": "TXT-0178",
+    "title": "[Tự Do Hiện Sinh] Không có dấu hiệu nào trên trời chỉ đường; bạn phải tự chịu trách nhiệm cho từng ngã rẽ.",
+    "author": "Jean-Paul Sartre",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Đừng đi tìm những dấu hiệu chỉ đường của số phận; chính bước chân của bạn tạo nên con đường.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 179,
+    "theme_id": "theme_179",
+    "txt_id": "TXT-0179",
+    "title": "[Chiếc Bẫy Trì Hoãn] Trì hoãn cuộc sống là hình thức ngụy tín tinh vi nhất.",
+    "author": "Jean-Paul Sartre",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "format": "Carousel 2 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Lời hứa 'ngày mai tôi sẽ bắt đầu'......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Là lời nói dối ngọt ngào nhất mà bạn thầm thì với chính mình để ru ngủ cảm giác tội lỗi trong ngày hôm nay.",
+        "role": "Twist"
+      }
+    ]
+  },
+  {
+    "stt": 180,
+    "theme_id": "theme_180",
+    "txt_id": "TXT-0180",
+    "title": "[Phẩm Giá Của Tự Do] Tự do không phải là làm bất cứ điều gì mình thích, mà là không bị ép buộc làm điều mình ghét.",
+    "author": "Jean-Paul Sartre",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Đỉnh cao của sự tự do không phải là có tất cả mọi thứ, mà là không có bất kỳ thứ gì có thể trói buộc được bạn.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 181,
+    "theme_id": "theme_181",
+    "txt_id": "TXT-0181",
+    "title": "[Bất Hòa Nhận Thức] Khi sự thật va chạm với niềm tin, người ta thà bóp méo sự thật hơn là nhận mình sai.",
+    "author": "Leon Festinger",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Khi bằng chứng rành rành phơi bày trước mắt......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Kẻ tự ái cao sẽ không cúi đầu nhận lỗi; họ tấn công nhân cách của người đưa tin để bảo vệ niềm tin mù quáng của mình.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Trí tuệ bắt đầu khi bạn dám vui mừng vì tìm thấy sai lầm của chính mình, bởi đó là khoảnh khắc bạn trở nên khôn ngoan hơn.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 182,
+    "theme_id": "theme_182",
+    "txt_id": "TXT-0182",
+    "title": "[Kim Tự Tháp Lựa Chọn] Một lời bao biện nhỏ hôm nay là khởi đầu của sự tha hóa không đáy ngày mai.",
+    "author": "Carol Tavris & Elliot Aronson",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "format": "Carousel 2 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Sự tha hóa không diễn ra sau một đêm......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Nó bắt đầu từ một lời nói dối nhỏ mà bạn tự thuyết phục mình rằng 'chỉ lần này thôi, chẳng hại ai cả'.",
+        "role": "Twist"
+      }
+    ]
+  },
+  {
+    "stt": 183,
+    "theme_id": "theme_183",
+    "txt_id": "TXT-0183",
+    "title": "[Ảo Tưởng WYSIATI] Đừng vội phán xét một con người chỉ qua vài trang sách bạn tình cờ đọc được.",
+    "author": "Daniel Kahneman",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Kẻ biết ít nhất thường là kẻ phán xét ồn ào và tự tin nhất, bởi họ không biết rằng thế giới còn vô vàn điều họ chưa từng thấy.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 184,
+    "theme_id": "theme_184",
+    "txt_id": "TXT-0184",
+    "title": "[Chi Phí Chìm Tình Cảm] Bám víu một mối quan hệ độc hại chỉ vì đã lãng phí quá nhiều năm tháng là sự ngu ngốc tột cùng.",
+    "author": "Daniel Kahneman",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Năm năm hay mười năm đã qua......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Không phải là lý do để bạn lãng phí thêm một ngày nào nữa bên cạnh một kẻ không hề tôn trọng bạn.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Cắt lỗ trong tình cảm đau đớn trong một khắc, nhưng ôm giữ nó sẽ hủy hoại cả cuộc đời bạn.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 185,
+    "theme_id": "theme_185",
+    "txt_id": "TXT-0185",
+    "title": "[Hạ Thấp Nạn Nhân] Kẻ làm tổn thương bạn luôn phải tìm ra khuyết điểm của bạn để lương tâm họ được yên ổn.",
+    "author": "Carol Tavris & Elliot Aronson",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "format": "Carousel 2 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Khi ai đó đối xử tàn nhẫn với bạn......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Họ sẽ rêu rao rằng bạn là kẻ độc hại; bởi đó là cách duy nhất giúp họ ngủ ngon mà không bị lương tâm cắn rứt.",
+        "role": "Twist"
+      }
+    ]
+  },
+  {
+    "stt": 186,
+    "theme_id": "theme_186",
+    "txt_id": "TXT-0186",
+    "title": "[Thiên Kiến Hồi Tưởng] Đừng dằn vặt bản thân trong quá khứ bằng sự khôn ngoan của ngày hôm nay.",
+    "author": "Daniel Kahneman",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Đừng dùng sự khôn ngoan mà bạn phải trả giá bằng bao nhiêu đau đớn ngày hôm nay để quay về tát vào mặt phiên bản ngây thơ của ngày hôm qua.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 187,
+    "theme_id": "theme_187",
+    "txt_id": "TXT-0187",
+    "title": "[Thiên Kiến Xác Nhận] Người ta chỉ nhìn thấy điều họ muốn thấy và lắng nghe điều họ đã tin sẵn.",
+    "author": "Leon Festinger",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Bạn không tìm kiếm sự thật......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Bạn chỉ đang săn lùng những bằng chứng để vỗ về cho những định kiến đã được đóng đinh trong tâm trí bạn.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Khoảnh khắc bạn dám thừa nhận 'tôi đã lầm' mới chính là lúc chân lý thực sự bắt đầu hé mở.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 188,
+    "theme_id": "theme_188",
+    "txt_id": "TXT-0188",
+    "title": "[Lời Xin Lỗi Bị Đánh Cắp] Lời xin lỗi đi kèm chữ 'NHƯNG' chỉ là một lời biện hộ trơ trẽn.",
+    "author": "Carol Tavris & Elliot Aronson",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Một lời xin lỗi có chữ 'NHƯNG' là một lời dối trá khoác áo lịch thiệp; nếu bạn không đủ dũng khí nhận lỗi, thà im lặng còn hơn giả vờ hối hận.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 189,
+    "theme_id": "theme_189",
+    "txt_id": "TXT-0189",
+    "title": "[Hội Chứng Dunning-Kruger] Kẻ kém cỏi nhất luôn tự tin rằng mình biết tuốt.",
+    "author": "Daniel Kahneman",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "format": "Carousel 2 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Sự tự tin thái quá......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Hiếm khi đến từ sự uyên thâm; nó sinh ra từ một cái đầu quá hẹp hòi để nhận thức được sự bao la của những gì mình chưa biết.",
+        "role": "Twist"
+      }
+    ]
+  },
+  {
+    "stt": 190,
+    "theme_id": "theme_190",
+    "txt_id": "TXT-0190",
+    "title": "[Sự Tự Nhận Thức Khắt Khe] Thách thức lớn nhất không phải lừa dối người khác, mà là không tự lừa dối chính mình.",
+    "author": "Carol Tavris & Elliot Aronson",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Người dễ bị bạn lừa dối nhất chính là người trong gương; và chiến thắng vĩ đại nhất của một kiếp người là dám lột bỏ chiếc mặt nạ đó trước mặt chính mình.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 191,
+    "theme_id": "theme_191",
+    "txt_id": "TXT-0191",
+    "title": "[Huyền Thoại Sisyphus] Phải hình dung Sisyphus hạnh phúc khi đẩy tảng đá lên núi.",
+    "author": "Albert Camus",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Cuộc đời có thể phi lý......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Tảng đá có thể tiếp tục lăn xuống chân dốc ngàn vạn lần, xóa sạch mọi công sức của bạn.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Nhưng khoảnh khắc bạn mỉm cười và tiếp tục đặt tay vào tảng đá, bạn không còn là nạn nhân của số phận — bạn là người làm chủ nó.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 192,
+    "theme_id": "theme_192",
+    "txt_id": "TXT-0192",
+    "title": "[Tự Do Tối Thượng Của Frankl] Người ta có thể tước đoạt mọi thứ của bạn, trừ quyền tự chọn thái độ sống.",
+    "author": "Viktor E. Frankl",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Ngoại cảnh có thể giam cầm thể xác bạn trong nghịch cảnh, nhưng chỉ có bạn mới là người có quyền quyết định tâm hồn mình sẽ quỳ gối hay kiêu hãnh mỉm cười.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 193,
+    "theme_id": "theme_193",
+    "txt_id": "TXT-0193",
+    "title": "[Lời Cảnh Báo Của Nietzsche] Kẻ chiến đấu với quái vật phải coi chừng kẻo chính mình biến thành quái vật.",
+    "author": "Friedrich Nietzsche",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Khi bạn chiến đấu với bóng tối......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Nếu bạn dùng chính sự cay nghiệt và mưu mô của kẻ thù để đáp trả, bạn đã thua ngay từ khoảnh khắc chiến thắng.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Bởi vì thứ bước ra khỏi cuộc chiến đó không còn là bạn thuở ban đầu, mà là một con quái vật mới mang khuôn mặt của chính bạn.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 194,
+    "theme_id": "theme_194",
+    "txt_id": "TXT-0194",
+    "title": "[Sự Tĩnh Lặng Của Seneca] Chúng ta đau khổ trong tưởng tượng nhiều hơn là trong thực tế.",
+    "author": "Seneca",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Nỗi sợ hãi tồi tệ nhất luôn nằm trong trí tưởng tượng của bạn; hãy ngưng diễn tập nỗi đau trước khi nó thực sự xảy đến.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 195,
+    "theme_id": "theme_195",
+    "txt_id": "TXT-0195",
+    "title": "[Mùa Hè Bất Diệt Của Camus] Giữa mùa đông lạnh giá, tôi nhận ra trong mình có một mùa hè bất khả chiến bại.",
+    "author": "Albert Camus",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "format": "Carousel 2 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Dù cuộc đời có tàn nhẫn đóng băng bạn......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Hãy nhớ rằng bên dưới lớp tuyết dày của nghịch cảnh, hạt mầm của một mùa hè rực rỡ vẫn đang âm thầm chờ ngày đâm chồi.",
+        "role": "Twist"
+      }
+    ]
+  },
+  {
+    "stt": 196,
+    "theme_id": "theme_196",
+    "txt_id": "TXT-0196",
+    "title": "[Chữ Tại Sao Của Frankl] Người có một lý do để sống có thể chịu đựng hầu hết mọi cách sống.",
+    "author": "Viktor E. Frankl",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Khi bạn có một chữ 'Tại sao' đủ thiêng liêng, không có nghịch cảnh nào của thế gian có thể bẻ gãy được ý chí của bạn.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 197,
+    "theme_id": "theme_197",
+    "txt_id": "TXT-0197",
+    "title": "[Lửa Thử Vàng Của Nietzsche] Điều gì không giết được tôi sẽ làm tôi mạnh mẽ hơn.",
+    "author": "Friedrich Nietzsche",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Vết thương ngày hôm nay......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Có thể làm bạn rướm máu và quỵ ngã trong bóng tối.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Nhưng khi da thịt lành lặn, nơi từng rách nát sẽ trở thành lớp giáp sắt kiên cường nhất bảo vệ linh hồn bạn.",
+        "role": "Mirror"
+      }
+    ]
+  },
+  {
+    "stt": 198,
+    "theme_id": "theme_198",
+    "txt_id": "TXT-0198",
+    "title": "[Thái Độ Khắc Kỷ Trước Nghịch Cảnh] Cây sồi không trở nên vững chãi nếu không từng đón nhận trăm ngàn cơn gió bão.",
+    "author": "Seneca",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "format": "Single-Punch (1 trang)",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Không có cơn gió thuận nào dành cho kẻ không biết mình đang chèo về đâu; và không có linh hồn vĩ đại nào được tạo nên từ một cuộc đời quá đỗi êm đềm.",
+        "role": "Hook"
+      }
+    ]
+  },
+  {
+    "stt": 199,
+    "theme_id": "theme_199",
+    "txt_id": "TXT-0199",
+    "title": "[Tinh Thần Nổi Loạn Hiện Sinh] Tôi nổi loạn, vậy nên chúng ta tồn tại.",
+    "author": "Albert Camus",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "format": "Carousel 2 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Nói 'KHÔNG' trước sự bất công......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Không phải sự chống đối mù quáng; đó là lời khẳng định thiêng liêng nhất rằng phẩm giá của bạn có ranh giới mà không ai được phép vượt qua.",
+        "role": "Twist"
+      }
+    ]
+  },
+  {
+    "stt": 200,
+    "theme_id": "theme_200",
+    "txt_id": "TXT-0200",
+    "title": "[Tình Yêu Định Mệnh Amor Fati] Đừng chỉ cam chịu số phận; hãy yêu say đắm từng vết thương định mệnh ban tặng.",
+    "author": "Friedrich Nietzsche",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "format": "Carousel 3 trang",
+    "slides": [
+      {
+        "index": 1,
+        "text": "Đỉnh cao của sự giác ngộ......",
+        "role": "Hook"
+      },
+      {
+        "index": 2,
+        "text": "Không phải là né tránh những vết thương; mà là đứng thẳng mỉm cười và ôm hôn số phận như người tình tri kỷ.",
+        "role": "Twist"
+      },
+      {
+        "index": 3,
+        "text": "Mọi đắng cay, phản bội và giông bão đều là chiếc búa đục đẽo nên bức tượng vĩ đại của con người bạn ngày hôm nay.",
+        "role": "Mirror"
+      }
+    ]
+  }
+]

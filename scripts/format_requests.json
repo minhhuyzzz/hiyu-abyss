@@ -1,0 +1,54 @@
+{
+  "requests": [
+    {
+      "copyPaste": {
+        "source": {
+          "sheetId": 0,
+          "startRowIndex": 203,
+          "endRowIndex": 204,
+          "startColumnIndex": 0,
+          "endColumnIndex": 17
+        },
+        "destination": {
+          "sheetId": 0,
+          "startRowIndex": 204,
+          "endRowIndex": 251,
+          "startColumnIndex": 0,
+          "endColumnIndex": 17
+        },
+        "pasteType": "PASTE_FORMAT",
+        "pasteOrientation": "NORMAL"
+      }
+    },
+    {
+      "copyPaste": {
+        "source": {
+          "sheetId": 0,
+          "startRowIndex": 203,
+          "endRowIndex": 204,
+          "startColumnIndex": 0,
+          "endColumnIndex": 17
+        },
+        "destination": {
+          "sheetId": 0,
+          "startRowIndex": 204,
+          "endRowIndex": 251,
+          "startColumnIndex": 0,
+          "endColumnIndex": 17
+        },
+        "pasteType": "PASTE_DATA_VALIDATION",
+        "pasteOrientation": "NORMAL"
+      }
+    },
+    {
+      "autoResizeDimensions": {
+        "dimensions": {
+          "sheetId": 0,
+          "dimension": "ROWS",
+          "startIndex": 204,
+          "endIndex": 251
+        }
+      }
+    }
+  ]
+}

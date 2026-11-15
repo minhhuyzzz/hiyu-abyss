@@ -3,6 +3,7 @@ export const prerender = false;
 import type { APIRoute } from 'astro';
 import { AgoraService } from '../../../../lib/agora/service';
 import { createCommentSchema } from '../../../../lib/agora/schemas';
+import { getSession } from '../../../../lib/agora/auth';
 
 export const GET: APIRoute = async ({ request, locals }) => {
   try {
@@ -37,15 +38,27 @@ export const GET: APIRoute = async ({ request, locals }) => {
 
 export const POST: APIRoute = async ({ request, locals }) => {
   try {
+    // 1. Enforce Authentication Check
+    const session = await getSession(request, (locals as any)?.runtime?.env);
+    if (!session) {
+      return new Response(
+        JSON.stringify({
+          success: false,
+          error: { message: 'Vui lòng đăng nhập bằng tài khoản Google để gửi bình luận.' },
+        }),
+        { status: 401, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
+
     const body = await request.json();
     const validated = createCommentSchema.parse(body);
 
     const service = new AgoraService((locals as any)?.runtime?.env);
-    // In production, author comes from verified session. Fallback for guest/demo author
     const author = {
-      id: 'usr_guest_demo',
-      handle: 'nguoi_dong_hanh',
-      displayName: 'Người Đồng Hành',
+      id: session.user.id,
+      handle: session.user.handle,
+      displayName: session.user.displayName,
+      avatar: session.user.avatarUrl,
     };
 
     const newComment = await service.createComment(validated, author);

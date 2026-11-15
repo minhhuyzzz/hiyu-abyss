@@ -17,6 +17,16 @@ interface Comment {
   replies?: Comment[];
 }
 
+interface UserProfile {
+  id: string;
+  email: string;
+  name: string;
+  handle: string;
+  displayName: string;
+  avatarUrl?: string;
+  role: string;
+}
+
 interface Props {
   quoteId: string;
   quoteTitle: string;
@@ -25,6 +35,8 @@ interface Props {
 }
 
 export default function LibraryComments({ quoteId, quoteTitle, categorySlug, contextType = 'LIBRARY' }: Props) {
+  const [currentUser, setCurrentUser] = useState<UserProfile | null>(null);
+  const [checkingAuth, setCheckingAuth] = useState(true);
   const [comments, setComments] = useState<Comment[]>([]);
   const [loading, setLoading] = useState(true);
   const [newCommentBody, setNewCommentBody] = useState('');
@@ -33,6 +45,21 @@ export default function LibraryComments({ quoteId, quoteTitle, categorySlug, con
   const [replyBody, setReplyBody] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+
+  // Check auth state on mount
+  useEffect(() => {
+    fetch('/api/auth/me')
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.authenticated && data.user) {
+          setCurrentUser(data.user);
+        } else {
+          setCurrentUser(null);
+        }
+      })
+      .catch(() => setCurrentUser(null))
+      .finally(() => setCheckingAuth(false));
+  }, []);
 
   // Fetch comments on mount
   const fetchComments = async () => {
@@ -53,9 +80,16 @@ export default function LibraryComments({ quoteId, quoteTitle, categorySlug, con
     fetchComments();
   }, [quoteId, contextType]);
 
+  // Current page path for redirect after login
+  const currentPath = typeof window !== 'undefined' ? window.location.pathname : `/library/${quoteId.toLowerCase()}`;
+
   // Submit Root Comment
   const handlePostComment = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!currentUser) {
+      setErrorMsg('Vui lòng đăng nhập bằng Google để gửi bình luận.');
+      return;
+    }
     if (!newCommentBody.trim() || submitting) return;
 
     setSubmitting(true);
@@ -89,6 +123,10 @@ export default function LibraryComments({ quoteId, quoteTitle, categorySlug, con
 
   // Submit Nested Reply
   const handlePostReply = async (parentId: string) => {
+    if (!currentUser) {
+      setErrorMsg('Vui lòng đăng nhập để trả lời bình luận.');
+      return;
+    }
     if (!replyBody.trim() || submitting) return;
 
     setSubmitting(true);
@@ -110,7 +148,6 @@ export default function LibraryComments({ quoteId, quoteTitle, categorySlug, con
       if (json.success && json.data) {
         setReplyBody('');
         setReplyingToId(null);
-        // Add to nested replies locally
         setComments((prev) =>
           prev.map((c) => {
             if (c.id === parentId) {
@@ -129,7 +166,13 @@ export default function LibraryComments({ quoteId, quoteTitle, categorySlug, con
     }
   };
 
+  // Optimistic Like
   const handleLike = (commentId: string) => {
+    if (!currentUser) {
+      alert('Vui lòng đăng nhập bằng Google để thả tim bình luận này.');
+      return;
+    }
+
     setComments((prev) =>
       prev.map((c) => {
         if (c.id === commentId) {
@@ -183,7 +226,7 @@ export default function LibraryComments({ quoteId, quoteTitle, categorySlug, con
 
         <div className="flex items-center gap-3">
           <span className="text-xs font-sans text-muted">
-            {totalCommentCount} {totalCommentCount === 1 ? 'chia sẻ' : 'chia sẻ'}
+            {totalCommentCount} chia sẻ
           </span>
           <a
             href="/agora"
@@ -195,53 +238,104 @@ export default function LibraryComments({ quoteId, quoteTitle, categorySlug, con
         </div>
       </div>
 
-      {/* Main Comment Composer */}
-      <form onSubmit={handlePostComment} className="space-y-3 bg-surface/30 p-5 sm:p-6 border border-border/70 rounded-sm">
-        <div className="flex items-center justify-between text-xs font-sans text-muted">
-          <span className="font-medium text-text/90">Để lại cảm nghĩ hoặc góc nhìn đời thực của bạn:</span>
-          <div className="flex items-center gap-2">
-            <button
-              type="button"
-              onClick={() => setIsPreview(!isPreview)}
-              className="text-xs text-muted hover:text-accent font-sans transition-colors"
+      {/* Main Comment Composer or Auth Gate */}
+      {!currentUser ? (
+        <div className="p-6 sm:p-8 bg-surface/40 border border-border/80 rounded-sm space-y-4 text-center shadow-lg">
+          <div className="w-10 h-10 rounded-full bg-accent/15 border border-accent/40 text-accent mx-auto flex items-center justify-center text-sm font-serif">
+            🔒
+          </div>
+          <div className="space-y-1 max-w-md mx-auto">
+            <h3 className="font-display text-lg sm:text-xl text-text font-medium">
+              Đăng Nhập Để Chia Sẻ Góc Nhìn
+            </h3>
+            <p className="text-xs font-sans text-muted leading-relaxed">
+              The Agora bảo lưu danh tính đối thoại văn minh. Vui lòng đăng nhập bằng Google để tham gia bình luận và đối thoại cùng độc giả.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+            <a
+              href={`/api/auth/google?redirect=${encodeURIComponent(currentPath)}`}
+              className="px-5 py-2.5 bg-white hover:bg-neutral-100 text-neutral-900 border border-neutral-300 font-sans text-xs uppercase tracking-wider font-semibold rounded-sm transition-all flex items-center gap-2.5 shadow-sm min-h-[42px]"
             >
-              {isPreview ? 'Viết tiếp' : 'Xem trước'}
-            </button>
-            <span className="text-border">·</span>
-            <span className="font-mono text-[11px]">{newCommentBody.length} / 4000</span>
+              <svg className="w-4 h-4" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
+              <span>Đăng nhập bằng Google</span>
+            </a>
+
+            <a
+              href={`/api/auth/dev-login?redirect=${encodeURIComponent(currentPath)}`}
+              className="px-4 py-2 bg-surface hover:bg-surface/80 text-muted hover:text-text border border-border/70 font-sans text-xs tracking-wider rounded-sm transition-all"
+            >
+              <span>⚡ Đăng nhập nhanh (Demo)</span>
+            </a>
           </div>
         </div>
+      ) : (
+        <form onSubmit={handlePostComment} className="space-y-3 bg-surface/30 p-5 sm:p-6 border border-border/70 rounded-sm">
+          <div className="flex items-center justify-between text-xs font-sans text-muted">
+            <div className="flex items-center gap-2">
+              {currentUser.avatarUrl ? (
+                <img src={currentUser.avatarUrl} alt={currentUser.displayName} className="w-5 h-5 rounded-full object-cover" />
+              ) : (
+                <span className="w-5 h-5 rounded-full bg-accent text-on-accent text-[10px] font-bold flex items-center justify-center font-mono uppercase">
+                  {currentUser.displayName.charAt(0)}
+                </span>
+              )}
+              <span className="font-medium text-text/90">
+                Đang bình luận với tư cách: <strong className="text-accent">{currentUser.displayName}</strong>
+                <span className="text-muted font-mono font-normal"> (@{currentUser.handle})</span>
+              </span>
+            </div>
 
-        {isPreview ? (
-          <div
-            className="min-h-[100px] p-4 bg-surface/60 border border-border/60 rounded-sm prose-reading text-sm text-text"
-            dangerouslySetInnerHTML={{ __html: renderSafeMarkdown(newCommentBody || '*Chưa có nội dung xem trước*') }}
-          />
-        ) : (
-          <textarea
-            value={newCommentBody}
-            onChange={(e) => setNewCommentBody(e.target.value)}
-            placeholder="Bạn nhìn nhận câu nói này thế nào qua trải nghiệm của riêng mình?..."
-            rows={3}
-            className="w-full p-4 bg-surface/50 border border-border/80 focus:border-accent text-sm text-text placeholder-muted/60 rounded-sm outline-none resize-y transition-colors font-sans leading-relaxed"
-          />
-        )}
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => setIsPreview(!isPreview)}
+                className="text-xs text-muted hover:text-accent font-sans transition-colors"
+              >
+                {isPreview ? 'Viết tiếp' : 'Xem trước'}
+              </button>
+              <span className="text-border">·</span>
+              <span className="font-mono text-[11px]">{newCommentBody.length} / 4000</span>
+            </div>
+          </div>
 
-        {errorMsg && <p className="text-xs text-red-400 font-sans">{errorMsg}</p>}
+          {isPreview ? (
+            <div
+              className="min-h-[100px] p-4 bg-surface/60 border border-border/60 rounded-sm prose-reading text-sm text-text"
+              dangerouslySetInnerHTML={{ __html: renderSafeMarkdown(newCommentBody || '*Chưa có nội dung xem trước*') }}
+            />
+          ) : (
+            <textarea
+              value={newCommentBody}
+              onChange={(e) => setNewCommentBody(e.target.value)}
+              placeholder="Bạn nhìn nhận câu nói này thế nào qua trải nghiệm của riêng mình?..."
+              rows={3}
+              className="w-full p-4 bg-surface/50 border border-border/80 focus:border-accent text-sm text-text placeholder-muted/60 rounded-sm outline-none resize-y transition-colors font-sans leading-relaxed"
+            />
+          )}
 
-        <div className="flex items-center justify-between pt-2">
-          <span className="text-[11px] font-sans text-muted/70">
-            Hỗ trợ định dạng **in đậm**, *in nghiêng*, &gt; trích dẫn.
-          </span>
-          <button
-            type="submit"
-            disabled={submitting || !newCommentBody.trim()}
-            className="px-6 py-2.5 bg-accent text-on-accent text-xs font-sans uppercase tracking-widest font-bold hover:opacity-90 disabled:opacity-50 transition-opacity rounded-sm shadow-sm"
-          >
-            {submitting ? 'Đang gửi...' : 'Gửi góc nhìn'}
-          </button>
-        </div>
-      </form>
+          {errorMsg && <p className="text-xs text-red-400 font-sans">{errorMsg}</p>}
+
+          <div className="flex items-center justify-between pt-2">
+            <span className="text-[11px] font-sans text-muted/70">
+              Hỗ trợ định dạng **in đậm**, *in nghiêng*, &gt; trích dẫn.
+            </span>
+            <button
+              type="submit"
+              disabled={submitting || !newCommentBody.trim()}
+              className="px-6 py-2.5 bg-accent text-on-accent text-xs font-sans uppercase tracking-widest font-bold hover:opacity-90 disabled:opacity-50 transition-opacity rounded-sm shadow-sm"
+            >
+              {submitting ? 'Đang gửi...' : 'Gửi góc nhìn'}
+            </button>
+          </div>
+        </form>
+      )}
 
       {/* Comments List */}
       {loading ? (
@@ -260,20 +354,28 @@ export default function LibraryComments({ quoteId, quoteTitle, categorySlug, con
       ) : (
         <div className="space-y-6">
           {comments.map((comment) => (
-            <article key={comment.id} className="p-5 bg-surface/30 border border-border/60 rounded-sm space-y-4">
-              {/* Author & Meta */}
+            <article key={comment.id} className="p-5 sm:p-6 bg-surface/30 border border-border/70 rounded-sm space-y-4">
+              
+              {/* Comment Header */}
               <div className="flex items-center justify-between text-xs font-sans">
-                <div className="flex items-center gap-2.5">
-                  <span className="w-7 h-7 rounded-full bg-accent/20 border border-accent/40 text-accent font-semibold flex items-center justify-center font-mono text-xs uppercase">
-                    {comment.author_display_name?.[0] || 'A'}
-                  </span>
+                <div className="flex items-center gap-3">
+                  {comment.author_avatar && comment.author_avatar.startsWith('http') ? (
+                    <img src={comment.author_avatar} alt={comment.author_display_name} className="w-7 h-7 rounded-full object-cover border border-border/60" />
+                  ) : (
+                    <span className="w-7 h-7 rounded-full bg-accent/20 text-accent font-semibold flex items-center justify-center font-mono text-xs uppercase border border-accent/40">
+                      {comment.author_display_name?.[0] || 'A'}
+                    </span>
+                  )}
                   <div>
-                    <span className="font-medium text-text block leading-none mb-0.5">
+                    <span className="font-medium text-text block">
                       {comment.author_display_name}
                     </span>
-                    <span className="text-[10px] text-muted font-mono">@{comment.author_handle}</span>
+                    <span className="text-muted font-mono text-[10px]">
+                      @{comment.author_handle}
+                    </span>
                   </div>
                 </div>
+
                 <span className="text-[11px] text-muted font-mono">
                   {new Date(comment.created_at * 1000).toLocaleDateString('vi-VN')}
                 </span>
@@ -281,38 +383,45 @@ export default function LibraryComments({ quoteId, quoteTitle, categorySlug, con
 
               {/* Comment Content */}
               <div
-                className="font-serif text-sm sm:text-base text-text/90 leading-relaxed pl-1"
+                className="font-serif text-sm sm:text-base text-text/90 leading-relaxed space-y-2"
                 dangerouslySetInnerHTML={{ __html: renderSafeMarkdown(comment.body_md) }}
               />
 
-              {/* Action Toolbar */}
-              <div className="flex items-center gap-4 pt-2 border-t border-border/40 text-xs font-sans text-muted">
-                <button
-                  type="button"
-                  onClick={() => handleLike(comment.id)}
-                  className={`flex items-center gap-1.5 transition-colors ${
-                    comment.is_liked ? 'text-accent font-semibold' : 'hover:text-accent'
-                  }`}
-                >
-                  <span>♥</span>
-                  <span>{comment.likes_count || 0}</span>
-                </button>
+              {/* Comment Actions */}
+              <div className="flex items-center justify-between pt-2 border-t border-border/40 text-xs font-sans text-muted">
+                <div className="flex items-center gap-4">
+                  {/* Like Button */}
+                  <button
+                    type="button"
+                    onClick={() => handleLike(comment.id)}
+                    className={`flex items-center gap-1.5 transition-colors ${
+                      comment.is_liked ? 'text-accent font-semibold' : 'hover:text-accent'
+                    }`}
+                  >
+                    <span>♥</span>
+                    <span>{comment.likes_count || 0}</span>
+                  </button>
 
-                <button
-                  type="button"
-                  onClick={() => {
-                    setReplyingToId(replyingToId === comment.id ? null : comment.id);
-                    setReplyBody('');
-                  }}
-                  className="hover:text-text transition-colors"
-                >
-                  Trả lời
-                </button>
+                  {/* Reply Button */}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (!currentUser) {
+                        alert('Vui lòng đăng nhập bằng Google để trả lời bình luận.');
+                        return;
+                      }
+                      setReplyingToId(replyingToId === comment.id ? null : comment.id);
+                    }}
+                    className="hover:text-text transition-colors"
+                  >
+                    {replyingToId === comment.id ? 'Đóng trả lời' : 'Trả lời'}
+                  </button>
+                </div>
               </div>
 
-              {/* Inline Nested Reply Form */}
+              {/* Reply Composer Form */}
               {replyingToId === comment.id && (
-                <div className="pt-3 pl-4 border-l-2 border-accent/40 space-y-2.5">
+                <div className="pt-3 pl-4 border-l-2 border-accent space-y-2">
                   <textarea
                     value={replyBody}
                     onChange={(e) => setReplyBody(e.target.value)}
@@ -347,11 +456,18 @@ export default function LibraryComments({ quoteId, quoteTitle, categorySlug, con
                     <div key={reply.id} className="p-3.5 bg-surface/50 border border-border/40 rounded-sm space-y-2">
                       <div className="flex items-center justify-between text-xs font-sans">
                         <div className="flex items-center gap-2">
-                          <span className="w-5 h-5 rounded-full bg-accent/15 text-accent text-[10px] font-semibold flex items-center justify-center font-mono">
-                            {reply.author_display_name?.[0] || 'R'}
-                          </span>
+                          {reply.author_avatar && reply.author_avatar.startsWith('http') ? (
+                            <img src={reply.author_avatar} alt={reply.author_display_name} className="w-5 h-5 rounded-full object-cover" />
+                          ) : (
+                            <span className="w-5 h-5 rounded-full bg-accent/15 text-accent text-[10px] font-semibold flex items-center justify-center font-mono">
+                              {reply.author_display_name?.[0] || 'R'}
+                            </span>
+                          )}
                           <span className="font-medium text-text text-[11px]">
                             {reply.author_display_name}
+                          </span>
+                          <span className="text-muted font-mono text-[10px]">
+                            @{reply.author_handle}
                           </span>
                         </div>
                         <span className="text-[10px] text-muted font-mono">

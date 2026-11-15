@@ -1,10 +1,12 @@
 ---
-// src/pages/agora/new.astro - New Thread Composer
+// src/pages/agora/new.astro - New Thread Composer with Authentication Gate
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { AgoraService } from '../../lib/agora/service';
+import { getSession } from '../../lib/agora/auth';
 
 export const prerender = false;
 
+const session = await getSession(Astro.request, Astro.locals?.runtime?.env);
 const service = new AgoraService(Astro.locals?.runtime?.env);
 const categories = await service.getCategories();
 const preselectedCat = Astro.url.searchParams.get('category') || categories[0]?.id;
@@ -22,104 +24,178 @@ const preselectedCat = Astro.url.searchParams.get('category') || categories[0]?.
       <span class="text-text font-medium">Viết chủ đề mới</span>
     </nav>
 
-    <header class="space-y-2 pb-4 border-b border-border/60">
-      <h1 class="font-display text-3xl sm:text-4xl font-medium text-text">
-        Mở Một Cuộc Đối Thoại
-      </h1>
-      <p class="font-sans text-xs sm:text-sm text-muted">
-        Chia sẻ một câu hỏi, một trăn trở hoặc một góc nhìn đời thực để cùng cộng đồng soi chiếu.
-      </p>
-    </header>
-
-    <form id="new-thread-form" class="space-y-6 bg-surface/30 p-6 sm:p-8 border border-border/70 rounded-sm">
-      
-      {/* Category Picker */}
-      <div class="space-y-2">
-        <label for="category-select" class="text-xs font-sans font-medium text-text block uppercase tracking-wider">
-          Chọn chuyên mục phù hợp: <span class="text-accent">*</span>
-        </label>
-        <select
-          id="category-select"
-          required
-          class="w-full p-3.5 bg-surface border border-border/80 focus:border-accent text-sm text-text rounded-sm outline-none font-sans"
-        >
-          {categories.map((c) => (
-            <option value={c.id} selected={c.id === preselectedCat}>
-              {c.title} — {c.description.slice(0, 50)}...
-            </option>
-          ))}
-        </select>
-      </div>
-
-      {/* Title Input */}
-      <div class="space-y-2">
-        <div class="flex items-center justify-between text-xs font-sans">
-          <label for="thread-title" class="font-medium text-text uppercase tracking-wider">
-            Tiêu đề câu hỏi / chủ đề: <span class="text-accent">*</span>
-          </label>
-          <span id="title-counter" class="text-muted font-mono text-[11px]">0 / 150</span>
+    {/* CASE 1: USER IS NOT LOGGED IN -> SHOW AUTH GATE */}
+    {!session ? (
+      <div class="max-w-2xl mx-auto py-12 px-6 sm:px-10 bg-surface/40 border border-border/80 rounded-sm space-y-8 text-center shadow-2xl">
+        <div class="w-16 h-16 rounded-full bg-accent/15 border border-accent/40 text-accent mx-auto flex items-center justify-center text-2xl font-serif">
+          🔒
         </div>
-        <input
-          id="thread-title"
-          type="text"
-          required
-          placeholder="Ví dụ: Đâu là ranh giới giữa việc tha thứ và sự nhu nhược?"
-          maxlength="150"
-          class="w-full p-3.5 bg-surface border border-border/80 focus:border-accent text-base text-text placeholder-muted/60 rounded-sm outline-none font-sans"
-        />
-        <span class="text-[11px] text-muted block">Tối thiểu 15 ký tự. Nêu rõ khúc mắc hoặc câu hỏi trọng tâm.</span>
-      </div>
 
-      {/* Body Textarea with Preview */}
-      <div class="space-y-2">
-        <div class="flex items-center justify-between text-xs font-sans">
-          <label for="thread-body" class="font-medium text-text uppercase tracking-wider">
-            Nội dung chia sẻ: <span class="text-accent">*</span>
-          </label>
-          <div class="flex items-center gap-3">
-            <button
-              type="button"
-              id="preview-toggle-btn"
-              class="text-accent hover:underline font-semibold"
-            >
-              Xem trước
-            </button>
-            <span id="body-counter" class="text-muted font-mono text-[11px]">0 / 10000</span>
+        <div class="space-y-3">
+          <span class="text-xs font-mono uppercase tracking-[0.2em] text-accent font-semibold block">
+            THE AGORA · BẢO LƯU DANH TÍNH
+          </span>
+          <h1 class="font-display text-2xl sm:text-3xl text-text font-medium leading-snug">
+            Cần Đăng Nhập Để Khởi Tạo Đối Thoại
+          </h1>
+          <p class="font-sans text-xs sm:text-sm text-muted leading-relaxed max-w-lg mx-auto">
+            The Agora là không gian chia sẻ suy ngẫm và đối thoại văn minh. Vui lòng đăng nhập bằng tài khoản Google để tạo chủ đề và bảo lưu danh tính thảo luận của bạn.
+          </p>
+        </div>
+
+        <div class="space-y-3 pt-2 max-w-md mx-auto">
+          {/* Official Google OAuth Action */}
+          <a
+            href="/api/auth/google?redirect=/agora/new"
+            class="w-full py-3.5 px-4 bg-white hover:bg-neutral-100 text-neutral-900 border border-neutral-300 font-sans text-xs uppercase tracking-wider font-semibold rounded-sm transition-all flex items-center justify-center gap-3 shadow-md min-h-[48px]"
+          >
+            <svg class="w-4 h-4" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            <span>Đăng nhập với Google</span>
+          </a>
+
+          {/* Quick Dev/Demo Login for local evaluation */}
+          <a
+            href="/api/auth/dev-login?redirect=/agora/new"
+            class="w-full py-2.5 px-4 bg-surface hover:bg-surface/80 text-muted hover:text-text border border-border/80 font-sans text-xs tracking-wider rounded-sm transition-all flex items-center justify-center gap-2"
+          >
+            <span>⚡ Đăng nhập nhanh thử nghiệm (Chế độ Demo/Dev)</span>
+          </a>
+        </div>
+
+        <div class="pt-4 border-t border-border/40 text-xs text-muted flex items-center justify-between max-w-md mx-auto font-sans">
+          <a href="/agora" class="hover:text-accent">← Quay lại diễn đàn</a>
+          <a href="/agora/guidelines" class="hover:text-text underline">Nội quy đối thoại →</a>
+        </div>
+      </div>
+    ) : (
+      /* CASE 2: USER IS LOGGED IN -> SHOW FULL COMPOSER */
+      <div class="space-y-8">
+        <header class="space-y-3 pb-4 border-b border-border/60">
+          <h1 class="font-display text-3xl sm:text-4xl font-medium text-text">
+            Mở Một Cuộc Đối Thoại
+          </h1>
+          <p class="font-sans text-xs sm:text-sm text-muted">
+            Chia sẻ một câu hỏi, một trăn trở hoặc một góc nhìn đời thực để cùng cộng đồng soi chiếu.
+          </p>
+
+          {/* Active Author Card */}
+          <div class="flex items-center justify-between p-3.5 bg-surface/50 border border-border/70 rounded-sm">
+            <div class="flex items-center gap-3">
+              {session.user.avatarUrl ? (
+                <img src={session.user.avatarUrl} alt={session.user.displayName} class="w-8 h-8 rounded-full object-cover border border-border/60" />
+              ) : (
+                <span class="w-8 h-8 rounded-full bg-accent text-on-accent font-semibold flex items-center justify-center font-mono text-xs uppercase">
+                  {session.user.name.charAt(0)}
+                </span>
+              )}
+              <div class="text-xs font-sans">
+                <span class="text-text font-medium">{session.user.displayName}</span>
+                <span class="text-muted font-mono"> (@{session.user.handle})</span>
+                <span class="text-muted/60 block text-[11px]">Đang đăng bài với tư cách thành viên</span>
+              </div>
+            </div>
+            <a href="/api/auth/logout?redirect=/agora/new" class="text-xs text-muted hover:text-accent font-sans">
+              Đổi tài khoản
+            </a>
           </div>
-        </div>
+        </header>
 
-        <div id="preview-panel" class="hidden min-h-[200px] p-4 bg-surface border border-border/60 rounded-sm prose-reading text-sm text-text">
-        </div>
+        <form id="new-thread-form" class="space-y-6 bg-surface/30 p-6 sm:p-8 border border-border/70 rounded-sm">
+          
+          {/* Category Picker */}
+          <div class="space-y-2">
+            <label for="category-select" class="text-xs font-sans font-medium text-text block uppercase tracking-wider">
+              Chọn chuyên mục phù hợp: <span class="text-accent">*</span>
+            </label>
+            <select
+              id="category-select"
+              required
+              class="w-full p-3.5 bg-surface border border-border/80 focus:border-accent text-sm text-text rounded-sm outline-none font-sans"
+            >
+              {categories.map((c) => (
+                <option value={c.id} selected={c.id === preselectedCat}>
+                  {c.title} — {c.description.slice(0, 50)}...
+                </option>
+              ))}
+            </select>
+          </div>
 
-        <textarea
-          id="thread-body"
-          required
-          rows="10"
-          placeholder="Kể về tình huống đời thực bạn gặp, hoặc giải thích vì sao câu hỏi này quan trọng với bạn... (Hỗ trợ **in đậm**, *in nghiêng*, > trích dẫn)"
-          maxlength="10000"
-          class="w-full p-4 bg-surface border border-border/80 focus:border-accent text-sm text-text placeholder-muted/60 rounded-sm outline-none font-serif leading-relaxed"
-        ></textarea>
+          {/* Title Input */}
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-sans">
+              <label for="thread-title" class="font-medium text-text uppercase tracking-wider">
+                Tiêu đề câu hỏi / chủ đề: <span class="text-accent">*</span>
+              </label>
+              <span id="title-counter" class="text-muted font-mono text-[11px]">0 / 150</span>
+            </div>
+            <input
+              id="thread-title"
+              type="text"
+              required
+              placeholder="Ví dụ: Đâu là ranh giới giữa việc tha thứ và sự nhu nhược?"
+              maxlength="150"
+              class="w-full p-3.5 bg-surface border border-border/80 focus:border-accent text-base text-text placeholder-muted/60 rounded-sm outline-none font-sans"
+            />
+            <span class="text-[11px] text-muted block">Tối thiểu 15 ký tự. Nêu rõ khúc mắc hoặc câu hỏi trọng tâm.</span>
+          </div>
+
+          {/* Body Textarea with Preview */}
+          <div class="space-y-2">
+            <div class="flex items-center justify-between text-xs font-sans">
+              <label for="thread-body" class="font-medium text-text uppercase tracking-wider">
+                Nội dung chia sẻ: <span class="text-accent">*</span>
+              </label>
+              <div class="flex items-center gap-3">
+                <button
+                  type="button"
+                  id="preview-toggle-btn"
+                  class="text-accent hover:underline font-semibold"
+                >
+                  Xem trước
+                </button>
+                <span id="body-counter" class="text-muted font-mono text-[11px]">0 / 10000</span>
+              </div>
+            </div>
+
+            <div id="preview-panel" class="hidden min-h-[200px] p-4 bg-surface border border-border/60 rounded-sm prose-reading text-sm text-text">
+            </div>
+
+            <textarea
+              id="thread-body"
+              required
+              rows="10"
+              placeholder="Kể về tình huống đời thực bạn gặp, hoặc giải thích vì sao câu hỏi này quan trọng với bạn... (Hỗ trợ **in đậm**, *in nghiêng*, > trích dẫn)"
+              maxlength="10000"
+              class="w-full p-4 bg-surface border border-border/80 focus:border-accent text-sm text-text placeholder-muted/60 rounded-sm outline-none font-serif leading-relaxed"
+            ></textarea>
+          </div>
+
+          {/* Error Message Box */}
+          <div id="form-error" class="hidden p-3 bg-red-950/40 border border-red-800 text-xs text-red-300 rounded-sm"></div>
+
+          {/* Submit Action */}
+          <div class="pt-4 border-t border-border/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <a href="/agora" class="text-xs text-muted hover:text-text font-sans">
+              ← Hủy và quay lại
+            </a>
+
+            <button
+              type="submit"
+              id="submit-btn"
+              class="px-8 py-3.5 bg-accent text-on-accent text-xs font-sans uppercase tracking-[0.2em] font-bold hover:opacity-90 transition-opacity rounded-sm shadow-md min-h-[48px]"
+            >
+              Xuất bản chủ đề →
+            </button>
+          </div>
+
+        </form>
       </div>
-
-      {/* Error Message Box */}
-      <div id="form-error" class="hidden p-3 bg-red-950/40 border border-red-800 text-xs text-red-300 rounded-sm"></div>
-
-      {/* Submit Action */}
-      <div class="pt-4 border-t border-border/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <a href="/agora" class="text-xs text-muted hover:text-text font-sans">
-          ← Hủy và quay lại
-        </a>
-
-        <button
-          type="submit"
-          id="submit-btn"
-          class="px-8 py-3.5 bg-accent text-on-accent text-xs font-sans uppercase tracking-[0.2em] font-bold hover:opacity-90 transition-opacity rounded-sm shadow-md min-h-[48px]"
-        >
-          Xuất bản chủ đề →
-        </button>
-      </div>
-
-    </form>
+    )}
 
   </div>
 

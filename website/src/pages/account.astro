@@ -1,10 +1,18 @@
 ---
 // src/pages/account.astro - Account & Authentication Hub
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getSession } from '../lib/agora/auth';
+
+export const prerender = false;
+
+const session = await getSession(Astro.request, Astro.locals?.runtime?.env);
+const status = Astro.url.searchParams.get('status');
+const errorMsg = Astro.url.searchParams.get('error');
+const redirectTo = Astro.url.searchParams.get('redirect') || '/account';
 ---
 
 <BaseLayout
-  title="Tài Khoản & Phiên Đăng Nhập — The Agora | Hiyu Abyss"
+  title="Tài Khoản & Xác Thực — The Agora | Hiyu Abyss"
   description="Quản lý tài khoản và phiên đăng nhập của bạn trên Hiyu Abyss."
 >
   <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-xl mx-auto space-y-8">
@@ -14,52 +22,150 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <span>HIYU ABYSS · TÀI KHOẢN</span>
       </div>
       <h1 class="font-display text-3xl sm:text-4xl font-medium text-text">
-        Cổng Xác Thực
+        {session ? 'Hồ Sơ Của Bạn' : 'Cổng Xác Thực'}
       </h1>
       <p class="font-sans text-xs sm:text-sm text-muted leading-relaxed">
-        Đăng nhập để tham gia đối thoại, gửi bình luận và đồng bộ các câu nói yêu thích của bạn qua các thiết bị.
+        {session
+          ? 'Bạn đang đăng nhập và có toàn quyền thảo luận, tạo chủ đề và lưu trữ góc nhìn trên The Agora.'
+          : 'Đăng nhập bằng tài khoản Google để tham gia đối thoại, chia sẻ góc nhìn và tạo chủ đề trên The Agora.'}
       </p>
     </header>
 
-    <div class="p-6 sm:p-8 bg-surface/30 border border-border/70 rounded-sm space-y-6 shadow-xl">
-      
-      {/* Current Session Mock / Active Card */}
-      <div class="flex items-center gap-4 p-4 bg-surface/60 border border-border/50 rounded-sm">
-        <span class="w-12 h-12 rounded-full bg-accent/20 border border-accent/40 text-accent font-semibold flex items-center justify-center font-mono text-base uppercase">
-          H
-        </span>
-        <div class="space-y-0.5">
-          <span class="text-sm font-medium text-text block">Độc Giả Hiyu Abyss</span>
-          <span class="text-xs text-muted font-mono block">@nguoi_dong_hanh</span>
-          <span class="text-[11px] text-accent font-mono">Phiên khách chủ động (Guest/Demo)</span>
-        </div>
-      </div>
-
-      {/* Google OAuth Button */}
-      <div class="space-y-3 pt-2">
-        <button
-          type="button"
-          onclick="alert('Chức năng Google OAuth sẽ kết nối với client_id được cấp quyền trong production.')"
-          class="w-full py-3.5 px-4 bg-white hover:bg-neutral-100 text-neutral-900 border border-neutral-300 font-sans text-xs uppercase tracking-wider font-semibold rounded-sm transition-all flex items-center justify-center gap-3 shadow-sm min-h-[48px]"
-        >
-          <svg class="w-4 h-4" viewBox="0 0 24 24">
-            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
-            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
-          </svg>
-          <span>Tiếp tục bằng tài khoản Google</span>
-        </button>
-
-        <p class="text-[11px] text-center text-muted font-sans leading-relaxed">
-          🔒 Quyền riêng tư: Xác thực Google chỉ dùng để định danh tài khoản, không tiết lộ email hay thông tin cá nhân lên diễn đàn.
+    {/* Status Alerts */}
+    {status === 'google_unconfigured' && (
+      <div class="p-4 bg-amber-950/40 border border-amber-700/60 rounded-sm text-xs text-amber-200 space-y-1 font-sans">
+        <p class="font-semibold">⚠️ Google OAuth chưa được kích hoạt khóa API:</p>
+        <p class="text-amber-300/80 leading-relaxed">
+          Chưa tìm thấy <code class="font-mono bg-black/40 px-1 py-0.5 rounded">GOOGLE_CLIENT_ID</code> trong file cấu hình. Bạn có thể sử dụng nút <strong>Đăng nhập nhanh thử nghiệm</strong> bên dưới để trải nghiệm ngay mọi tính năng đăng bài và bình luận!
         </p>
       </div>
+    )}
 
-      <div class="pt-4 border-t border-border/40 flex items-center justify-between text-xs font-sans">
-        <a href="/agora" class="text-accent hover:underline">← Về lại The Agora</a>
-        <a href="/saved" class="text-muted hover:text-text">Kho lưu trữ đã lưu →</a>
+    {status === 'auth_failed' && (
+      <div class="p-4 bg-red-950/40 border border-red-800 rounded-sm text-xs text-red-200 font-sans">
+        <span>Đăng nhập thất bại: {errorMsg || 'Không thể hoàn tất xác thực Google. Vui lòng thử lại.'}</span>
       </div>
+    )}
+
+    <div class="p-6 sm:p-8 bg-surface/30 border border-border/70 rounded-sm space-y-6 shadow-xl">
+      
+      {session ? (
+        /* CASE 1: LOGGED IN */
+        <div class="space-y-6">
+          <div class="flex items-center gap-4 p-4 bg-surface/70 border border-border/60 rounded-sm">
+            {session.user.avatarUrl ? (
+              <img
+                src={session.user.avatarUrl}
+                alt={session.user.displayName}
+                class="w-14 h-14 rounded-full object-cover border border-accent/40 shadow-sm"
+              />
+            ) : (
+              <span class="w-14 h-14 rounded-full bg-accent/20 border border-accent/40 text-accent font-semibold flex items-center justify-center font-mono text-xl uppercase">
+                {session.user.name.charAt(0)}
+              </span>
+            )}
+            <div class="space-y-0.5 flex-1 min-w-0">
+              <div class="flex items-center gap-2">
+                <span class="text-base font-medium text-text truncate">{session.user.displayName}</span>
+                <span class="px-2 py-0.5 text-[10px] font-mono bg-accent/15 text-accent border border-accent/30 rounded-full">
+                  {session.user.role}
+                </span>
+              </div>
+              <span class="text-xs text-muted font-mono block truncate">@{session.user.handle}</span>
+              <span class="text-xs text-text/75 font-sans block truncate">{session.user.email}</span>
+            </div>
+          </div>
+
+          <div class="space-y-2 pt-2">
+            <span class="text-xs font-mono text-muted uppercase tracking-wider block">Lối tắt hành động:</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 font-sans text-xs">
+              <a
+                href="/agora/new"
+                class="p-3 bg-accent/10 border border-accent/40 text-accent hover:bg-accent hover:text-on-accent transition-colors rounded-sm flex items-center justify-between font-semibold"
+              >
+                <span>+ Mở chủ đề đối thoại mới</span>
+                <span>→</span>
+              </a>
+              <a
+                href="/saved"
+                class="p-3 bg-surface/60 border border-border/70 text-text hover:border-accent transition-colors rounded-sm flex items-center justify-between"
+              >
+                <span>Kho câu nói đã lưu</span>
+                <span>→</span>
+              </a>
+              <a
+                href={`/members/${session.user.handle}`}
+                class="p-3 bg-surface/60 border border-border/70 text-text hover:border-accent transition-colors rounded-sm flex items-center justify-between"
+              >
+                <span>Hồ sơ công khai</span>
+                <span>→</span>
+              </a>
+              <a
+                href="/notifications"
+                class="p-3 bg-surface/60 border border-border/70 text-text hover:border-accent transition-colors rounded-sm flex items-center justify-between"
+              >
+                <span>Thông báo của bạn</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-border/50 flex items-center justify-between">
+            <a href="/agora" class="text-xs text-muted hover:text-text font-sans">
+              ← Về lại diễn đàn The Agora
+            </a>
+            <a
+              href="/api/auth/logout"
+              class="px-4 py-2 border border-red-900/60 text-red-400 hover:bg-red-950/40 text-xs font-sans rounded-sm transition-colors"
+            >
+              Đăng xuất khỏi tài khoản
+            </a>
+          </div>
+        </div>
+      ) : (
+        /* CASE 2: GUEST / NOT LOGGED IN */
+        <div class="space-y-6">
+          <div class="p-4 bg-surface/50 border border-border/50 rounded-sm text-center space-y-1">
+            <span class="text-xs font-mono text-accent uppercase tracking-wider block">Phiên khách (Chưa xác thực)</span>
+            <p class="text-xs text-muted font-sans leading-relaxed">
+              Bạn đang duyệt trang dưới quyền độc giả khách. Để tạo chủ đề mới hoặc gửi bình luận, vui lòng đăng nhập bên dưới.
+            </p>
+          </div>
+
+          {/* Google OAuth Button */}
+          <div class="space-y-3">
+            <a
+              href={`/api/auth/google?redirect=${encodeURIComponent(redirectTo)}`}
+              class="w-full py-3.5 px-4 bg-white hover:bg-neutral-100 text-neutral-900 border border-neutral-300 font-sans text-xs uppercase tracking-wider font-semibold rounded-sm transition-all flex items-center justify-center gap-3 shadow-md min-h-[48px]"
+            >
+              <svg class="w-4 h-4" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
+              <span>Tiếp tục bằng tài khoản Google</span>
+            </a>
+
+            {/* Quick Demo Login Option */}
+            <a
+              href={`/api/auth/dev-login?redirect=${encodeURIComponent(redirectTo)}`}
+              class="w-full py-2.5 px-4 bg-surface hover:bg-surface/80 text-muted hover:text-text border border-border/80 font-sans text-xs tracking-wider rounded-sm transition-all flex items-center justify-center gap-2"
+            >
+              <span>⚡ Đăng nhập nhanh thử nghiệm (Chế độ Demo/Dev)</span>
+            </a>
+
+            <p class="text-[11px] text-center text-muted font-sans leading-relaxed pt-1">
+              🔒 Quyền riêng tư: Xác thực Google chỉ dùng để định danh tài khoản, không chia sẻ email hay mật khẩu của bạn ra bên ngoài.
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-border/40 flex items-center justify-between text-xs font-sans">
+            <a href="/agora" class="text-accent hover:underline">← Về lại The Agora</a>
+            <a href="/saved" class="text-muted hover:text-text">Kho lưu trữ đã lưu →</a>
+          </div>
+        </div>
+      )}
 
     </div>
 

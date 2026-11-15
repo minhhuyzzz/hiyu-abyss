@@ -168,6 +168,35 @@ class MemoryD1Fallback implements D1DatabaseLike {
     },
   ];
 
+  private users: any[] = [
+    {
+      id: 'usr_guest_demo',
+      name: 'Người Đồng Hành',
+      email: 'donghanh@hiyuabyss.com',
+      emailVerified: 1,
+      image: null,
+      createdAt: 1731672000,
+      updatedAt: 1731672000,
+    },
+  ];
+
+  private member_profiles: any[] = [
+    {
+      user_id: 'usr_guest_demo',
+      handle: 'nguoi_dong_hanh',
+      display_name: 'Người Đồng Hành',
+      bio: 'Độc giả yêu thích những câu nói hay và góc nhìn cuộc sống.',
+      avatar_preset: 'monogram',
+      avatar_url: null,
+      role: 'MEMBER',
+      state: 'ACTIVE',
+      created_at: 1731672000,
+      updated_at: 1731672000,
+    },
+  ];
+
+  private sessions: any[] = [];
+  private accounts: any[] = [];
   private reactions: any[] = [];
   private bookmarks: any[] = [];
   private follows: any[] = [];
@@ -222,21 +251,139 @@ class MemoryD1Fallback implements D1DatabaseLike {
           return { success: true, results: found as T[] };
         }
 
+        if (clean.startsWith('SELECT') && clean.includes('FROM SESSION')) {
+          const token = boundParams[0];
+          const now = boundParams[1] || Math.floor(Date.now() / 1000);
+          const sess = self.sessions.find((s) => s.token === token && s.expiresAt > now);
+          if (!sess) return { success: true, results: [] };
+          const u = self.users.find((user) => user.id === sess.userId);
+          const p = self.member_profiles.find((prof) => prof.user_id === sess.userId);
+          if (!u) return { success: true, results: [] };
+          const joined = {
+            session_id: sess.id,
+            token: sess.token,
+            expiresAt: sess.expiresAt,
+            user_id: u.id,
+            email: u.email,
+            name: u.name,
+            image: u.image,
+            handle: p?.handle || u.email.split('@')[0],
+            display_name: p?.display_name || u.name,
+            role: p?.role || 'MEMBER',
+            bio: p?.bio || '',
+            avatar_preset: p?.avatar_preset || 'monogram',
+            avatar_url: p?.avatar_url || u.image || null,
+            created_at: p?.created_at || u.createdAt,
+          };
+          return { success: true, results: [joined] as T[] };
+        }
+
+        if (clean.startsWith('SELECT') && clean.includes('FROM USER')) {
+          if (clean.includes('WHERE EMAIL =')) {
+            const email = boundParams[0];
+            const found = self.users.find((u) => u.email === email);
+            return { success: true, results: (found ? [found] : []) as T[] };
+          }
+          if (clean.includes('WHERE ID =')) {
+            const id = boundParams[0];
+            const found = self.users.find((u) => u.id === id);
+            return { success: true, results: (found ? [found] : []) as T[] };
+          }
+          return { success: true, results: [...self.users] as T[] };
+        }
+
+        if (clean.startsWith('SELECT') && clean.includes('FROM MEMBER_PROFILES')) {
+          if (clean.includes('WHERE USER_ID =')) {
+            const uid = boundParams[0];
+            const found = self.member_profiles.find((p) => p.user_id === uid);
+            return { success: true, results: (found ? [found] : []) as T[] };
+          }
+          if (clean.includes('WHERE HANDLE =')) {
+            const handle = boundParams[0];
+            const found = self.member_profiles.find((p) => p.handle === handle);
+            return { success: true, results: (found ? [found] : []) as T[] };
+          }
+          return { success: true, results: [...self.member_profiles] as T[] };
+        }
+
         return { success: true, results: [] };
       },
       async run(): Promise<D1Response> {
         const clean = sql.trim().toUpperCase();
 
+        if (clean.startsWith('INSERT INTO SESSION')) {
+          self.sessions.push({
+            id: boundParams[0],
+            expiresAt: boundParams[1],
+            token: boundParams[2],
+            createdAt: boundParams[3],
+            updatedAt: boundParams[4],
+            ipAddress: boundParams[5],
+            userAgent: boundParams[6],
+            userId: boundParams[7],
+          });
+          return { success: true };
+        }
+
+        if (clean.startsWith('DELETE FROM SESSION')) {
+          const token = boundParams[0];
+          self.sessions = self.sessions.filter((s) => s.token !== token);
+          return { success: true };
+        }
+
+        if (clean.startsWith('INSERT INTO USER')) {
+          self.users.push({
+            id: boundParams[0],
+            name: boundParams[1],
+            email: boundParams[2],
+            emailVerified: boundParams[3] || 1,
+            image: boundParams[4] || null,
+            createdAt: boundParams[5],
+            updatedAt: boundParams[6],
+          });
+          return { success: true };
+        }
+
+        if (clean.startsWith('UPDATE USER SET')) {
+          const img = boundParams[0];
+          const updated = boundParams[1];
+          const uid = boundParams[2];
+          const user = self.users.find((u) => u.id === uid);
+          if (user) {
+            user.image = img;
+            user.updatedAt = updated;
+          }
+          return { success: true };
+        }
+
+        if (clean.startsWith('INSERT INTO MEMBER_PROFILES')) {
+          self.member_profiles.push({
+            user_id: boundParams[0],
+            handle: boundParams[1],
+            display_name: boundParams[2],
+            bio: boundParams[3],
+            avatar_preset: boundParams[4] || 'monogram',
+            avatar_url: boundParams[5] || null,
+            role: boundParams[6] || 'MEMBER',
+            state: boundParams[7] || 'ACTIVE',
+            created_at: boundParams[8],
+            updated_at: boundParams[9],
+          });
+          return { success: true };
+        }
+
         if (clean.startsWith('INSERT INTO COMMENTS')) {
+          const uid = boundParams[4];
+          const profile = self.member_profiles.find((p) => p.user_id === uid);
           const newComment = {
             id: boundParams[0],
             context_type: boundParams[1],
             context_id: boundParams[2],
             parent_id: boundParams[3],
-            author_id: boundParams[4],
-            author_handle: 'nguoi_dong_hanh',
-            author_display_name: 'Người Đồng Hành',
-            author_avatar: 'monogram',
+            author_id: uid,
+            author_handle: profile?.handle || 'nguoi_dong_hanh',
+            author_display_name: profile?.display_name || 'Người Đồng Hành',
+            author_avatar: profile?.avatar_url || 'monogram',
             body_md: boundParams[5],
             status: 'ACTIVE',
             likes_count: 0,
@@ -253,13 +400,15 @@ class MemoryD1Fallback implements D1DatabaseLike {
         }
 
         if (clean.startsWith('INSERT INTO THREADS')) {
+          const uid = boundParams[2];
+          const profile = self.member_profiles.find((p) => p.user_id === uid);
           const newThread = {
             id: boundParams[0],
             category_id: boundParams[1],
-            author_id: boundParams[2],
-            author_handle: 'nguoi_dong_hanh',
-            author_display_name: 'Người Đồng Hành',
-            author_avatar: 'monogram',
+            author_id: uid,
+            author_handle: profile?.handle || 'nguoi_dong_hanh',
+            author_display_name: profile?.display_name || 'Người Đồng Hành',
+            author_avatar: profile?.avatar_url || 'monogram',
             title: boundParams[3],
             slug: boundParams[4],
             body_md: boundParams[5],

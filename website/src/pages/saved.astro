@@ -1,0 +1,148 @@
+---
+// src/pages/saved.astro - Unified Saved Library & Agora Discussions Hub
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAllPublishedQuotes } from '../lib/content-publisher';
+
+const allQuotes = getAllPublishedQuotes();
+---
+
+<BaseLayout
+  title="Kho Lưu Trữ Cá Nhân — Saved | Hiyu Abyss"
+  description="Các câu nói yêu thích và chủ đề thảo luận bạn đã đánh dấu để đọc lại."
+>
+  <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-12">
+    
+    <header class="space-y-3 pb-6 border-b border-border/70">
+      <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-accent font-semibold">
+        <span>KHO LƯU TRỮ CÁ NHÂN</span>
+      </div>
+      <h1 class="font-display text-3xl sm:text-5xl font-medium text-text">
+        Những Điều Bạn Đã Giữ Lại
+      </h1>
+      <p class="font-sans text-xs sm:text-sm text-muted max-w-xl">
+        Toàn bộ câu nói hay trong Thư viện và các chủ đề thảo luận trên The Agora mà bạn đã lưu lại để chiêm nghiệm.
+      </p>
+    </header>
+
+    {/* Saved Items Container rendered on client from localStorage */}
+    <div id="saved-container" class="space-y-8">
+      
+      <div class="flex items-center justify-between pb-3 border-b border-border/50">
+        <h2 class="font-display text-xl text-text font-medium flex items-center gap-2">
+          <span>Câu Nói Trong Thư Viện</span>
+          <span id="saved-count-badge" class="px-2 py-0.5 bg-accent/15 text-accent text-xs font-mono rounded">0</span>
+        </h2>
+
+        <button
+          id="clear-all-btn"
+          type="button"
+          class="text-xs font-sans text-muted hover:text-red-400 transition-colors"
+        >
+          Xóa tất cả
+        </button>
+      </div>
+
+      <div id="saved-quotes-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        {/* Dynamic JS populated cards */}
+      </div>
+
+      <div id="empty-state" class="hidden py-16 text-center border border-border/50 bg-surface/20 rounded-sm space-y-3">
+        <p class="font-serif italic text-lg text-text/80">
+          Kho lưu trữ của bạn đang trống.
+        </p>
+        <p class="text-xs font-sans text-muted max-w-md mx-auto leading-relaxed">
+          Khi bắt gặp một câu nói chạm đến cảm xúc, hãy bấm biểu tượng trái tim để lưu lại vào đây.
+        </p>
+        <a
+          href="/library"
+          class="mt-4 inline-block px-6 py-2.5 bg-accent text-on-accent text-xs font-sans uppercase tracking-widest font-semibold rounded-sm"
+        >
+          Khám phá thư viện →
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script define:vars={{ quotesCatalog: allQuotes.map(q => ({ id: q.id, slug: q.slug, title: q.cleanTitle, content: q.content, author: q.author, image: q.artInfo?.slides?.slide_1 || `/images/themes/${q.imageRef}/slide_1_establishing.jpg` })) }}>
+    const grid = document.getElementById('saved-quotes-grid');
+    const emptyState = document.getElementById('empty-state');
+    const countBadge = document.getElementById('saved-count-badge');
+    const clearBtn = document.getElementById('clear-all-btn');
+
+    function renderSaved() {
+      let savedIds = [];
+      try {
+        savedIds = JSON.parse(localStorage.getItem('hiyu_saved_quotes') || '[]');
+      } catch {
+        savedIds = [];
+      }
+
+      if (countBadge) countBadge.textContent = String(savedIds.length);
+
+      if (savedIds.length === 0) {
+        if (grid) grid.innerHTML = '';
+        if (emptyState) emptyState.classList.remove('hidden');
+        return;
+      }
+
+      if (emptyState) emptyState.classList.add('hidden');
+
+      const savedQuotes = quotesCatalog.filter(q => savedIds.includes(q.id));
+
+      if (grid) {
+        grid.innerHTML = savedQuotes.map(q => `
+          <article class="p-5 bg-surface/40 border border-border/70 hover:border-accent rounded-sm transition-all flex flex-col justify-between space-y-4 group">
+            <div class="space-y-3">
+              <a href="/library/${q.slug}" class="relative aspect-[16/10] overflow-hidden bg-surface rounded-sm border border-border/40 block">
+                <img src="${q.image}" alt="${q.title}" class="w-full h-full object-cover filter brightness-[0.9] group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                <span class="absolute top-2 left-2 px-2 py-0.5 text-[9px] font-mono tracking-wider uppercase bg-bg/90 text-accent border border-border/60">
+                  ${q.id}
+                </span>
+              </a>
+              <div>
+                <span class="text-[10px] font-sans text-muted block mb-1">${q.author}</span>
+                <h3 class="font-display text-lg text-text font-medium group-hover:text-accent transition-colors leading-snug">
+                  <a href="/library/${q.slug}">${q.title}</a>
+                </h3>
+              </div>
+              <p class="font-serif italic text-xs text-text/80 leading-relaxed line-clamp-3">
+                "${q.content}"
+              </p>
+            </div>
+            <div class="pt-3 border-t border-border/40 flex items-center justify-between text-xs font-sans">
+              <a href="/library/${q.slug}" class="text-accent hover:underline font-semibold uppercase tracking-wider text-[11px]">
+                Xem chi tiết →
+              </a>
+              <button type="button" class="remove-btn text-muted hover:text-red-400 text-xs transition-colors" data-id="${q.id}">
+                Bỏ lưu
+              </button>
+            </div>
+          </article>
+        `).join('');
+
+        // Wire remove buttons
+        document.querySelectorAll('.remove-btn').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const id = (e.currentTarget as HTMLElement).getAttribute('data-id');
+            if (id) {
+              const updated = savedIds.filter(x => x !== id);
+              localStorage.setItem('hiyu_saved_quotes', JSON.stringify(updated));
+              renderSaved();
+            }
+          });
+        });
+      }
+    }
+
+    clearBtn?.addEventListener('click', () => {
+      if (confirm('Bạn có chắc muốn xóa tất cả các mục đã lưu?')) {
+        localStorage.removeItem('hiyu_saved_quotes');
+        renderSaved();
+      }
+    });
+
+    renderSaved();
+  </script>
+</BaseLayout>

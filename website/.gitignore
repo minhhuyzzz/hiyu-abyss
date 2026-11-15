@@ -20,3 +20,6 @@ yarn-error.log*
 # test artifacts
 test-artifacts/
 
+# Cloudflare Wrangler
+.wrangler/
+

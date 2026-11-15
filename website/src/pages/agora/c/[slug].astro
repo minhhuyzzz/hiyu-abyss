@@ -1,0 +1,153 @@
+---
+// src/pages/agora/c/[slug].astro - Category Discussion Stream
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { AgoraService } from '../../../lib/agora/service';
+
+export const prerender = false;
+
+const slug = Astro.params.slug;
+const service = new AgoraService(Astro.locals?.runtime?.env);
+const category = slug ? await service.getCategoryBySlug(slug) : null;
+
+if (!category) {
+  return Astro.redirect('/agora');
+}
+
+const threads = await service.getThreads({ categoryId: category.id, limit: 30 });
+---
+
+<BaseLayout
+  title={`${category.title} — The Agora | Hiyu Abyss`}
+  description={category.description}
+>
+  <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-12 sm:space-y-16">
+    
+    {/* Breadcrumbs */}
+    <nav class="flex items-center gap-2 text-xs font-mono text-muted uppercase tracking-wider">
+      <a href="/agora" class="hover:text-accent transition-colors">The Agora</a>
+      <span class="text-border">/</span>
+      <span class="text-text font-medium">{category.title}</span>
+    </nav>
+
+    {/* Category Hero Banner */}
+    <header class="border border-border/80 bg-surface/40 rounded-sm overflow-hidden shadow-xl">
+      <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+        
+        <div class="lg:col-span-5 relative min-h-[240px] sm:min-h-[300px] bg-surface flex flex-col justify-between p-6 border-b lg:border-b-0 lg:border-r border-border/70 overflow-hidden">
+          <img
+            src={category.cover_art_ref}
+            alt={category.title}
+            class="absolute inset-0 w-full h-full object-cover filter brightness-[0.88]"
+            loading="eager"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-bg via-bg/25 to-transparent"></div>
+
+          <div class="relative z-10">
+            <span class="px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-widest bg-bg/90 text-accent border border-border/70">
+              CHUYÊN MỤC
+            </span>
+          </div>
+
+          <div class="relative z-10 pt-16">
+            <p class="font-display text-sm text-white font-medium drop-shadow">
+              {category.cover_art_title}
+            </p>
+            <span class="text-xs font-serif italic text-white/80">
+              {category.cover_art_artist}
+            </span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between space-y-6">
+          <div class="space-y-3">
+            <h1 class="font-display text-3xl sm:text-4xl font-medium text-text leading-tight">
+              {category.title}
+            </h1>
+            <p class="font-sans text-sm sm:text-base text-muted/90 leading-relaxed max-w-xl">
+              {category.description}
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-border/60 flex flex-wrap items-center justify-between gap-4">
+            <span class="font-mono text-xs text-muted">
+              {threads.length} chủ đề đang mở
+            </span>
+            <a
+              href={`/agora/new?category=${category.id}`}
+              class="px-6 py-2.5 bg-accent text-on-accent text-xs font-sans uppercase tracking-widest font-bold hover:opacity-90 transition-opacity rounded-sm shadow-sm"
+            >
+              + Viết chủ đề trong mục này
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    {/* Threads List */}
+    <section class="space-y-6">
+      <div class="pb-3 border-b border-border/60 flex items-center justify-between">
+        <h2 class="font-display text-xl font-medium text-text">
+          Tất Cả Thảo Luận ({threads.length})
+        </h2>
+      </div>
+
+      {threads.length === 0 ? (
+        <div class="py-16 text-center border border-border/50 bg-surface/20 rounded-sm space-y-3">
+          <p class="font-serif italic text-lg text-text/80">
+            Chưa có bài thảo luận nào trong chuyên mục này.
+          </p>
+          <p class="text-xs font-sans text-muted max-w-md mx-auto leading-relaxed">
+            Hãy là người đầu tiên đặt ra một câu hỏi hay hoặc chia sẻ góc nhìn về chủ đề này.
+          </p>
+          <a
+            href={`/agora/new?category=${category.id}`}
+            class="mt-4 inline-block px-6 py-2.5 bg-accent text-on-accent text-xs font-sans uppercase tracking-widest font-semibold rounded-sm"
+          >
+            Tạo chủ đề đầu tiên
+          </a>
+        </div>
+      ) : (
+        <div class="divide-y divide-border/60 border-y border-border/60">
+          {threads.map((thread) => (
+            <article class="py-5 sm:py-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-surface/30 px-2 sm:px-4 -mx-2 sm:-mx-4 transition-colors rounded-sm group">
+              <div class="space-y-1.5 max-w-3xl">
+                <div class="flex items-center gap-2 text-[11px] font-mono text-muted">
+                  <span>@{thread.author_handle || 'dong_hanh'}</span>
+                  <span class="text-border">·</span>
+                  <span>{new Date(thread.created_at * 1000).toLocaleDateString('vi-VN')}</span>
+                  {thread.pinned ? (
+                    <span class="px-2 py-0.2 text-[9px] bg-accent/20 text-accent font-sans uppercase font-bold rounded">Ghim</span>
+                  ) : null}
+                </div>
+
+                <h3 class="font-display text-lg sm:text-xl font-medium text-text group-hover:text-accent transition-colors leading-snug">
+                  <a href={`/agora/t/${thread.id}/${thread.slug}`}>
+                    {thread.title}
+                  </a>
+                </h3>
+
+                <p class="font-serif italic text-xs sm:text-sm text-muted/90 line-clamp-2 leading-relaxed">
+                  "{thread.body_md}"
+                </p>
+              </div>
+
+              <div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-2 shrink-0 pt-2 sm:pt-0">
+                <span class="px-3 py-1 bg-surface border border-border/60 rounded text-xs font-mono text-text/80">
+                  {thread.reply_count || 0} trả lời
+                </span>
+                <a
+                  href={`/agora/t/${thread.id}/${thread.slug}`}
+                  class="text-accent hover:underline text-xs font-sans uppercase tracking-wider font-semibold"
+                >
+                  Tham gia →
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      )}
+    </section>
+
+  </div>
+</BaseLayout>

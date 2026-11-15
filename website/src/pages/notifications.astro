@@ -1,0 +1,71 @@
+---
+// src/pages/notifications.astro - Member Notification Center
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Trung Tâm Thông Báo — The Agora | Hiyu Abyss"
+  description="Các thông báo phản hồi, lượt thích và cập nhật thảo luận mới."
+>
+  <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto space-y-8">
+    
+    <header class="flex items-center justify-between pb-6 border-b border-border/70">
+      <div>
+        <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-accent font-semibold mb-1">
+          <span>THE AGORA · THÔNG BÁO</span>
+        </div>
+        <h1 class="font-display text-2xl sm:text-3xl font-medium text-text">
+          Hộp Thư Thông Báo
+        </h1>
+      </div>
+
+      <button
+        type="button"
+        class="text-xs font-sans text-muted hover:text-accent transition-colors"
+        onclick="alert('Đã đánh dấu tất cả là đã đọc.')"
+      >
+        Đánh dấu đã đọc tất cả
+      </button>
+    </header>
+
+    <div class="space-y-4">
+      {/* Sample Notification Feed */}
+      <div class="p-4 bg-surface/40 border-l-2 border-accent border-border/60 rounded-r flex items-start gap-3">
+        <span class="w-8 h-8 rounded-full bg-accent/20 text-accent font-semibold flex items-center justify-center font-mono text-xs uppercase shrink-0 mt-0.5">
+          M
+        </span>
+        <div class="space-y-1 flex-1 text-xs font-sans">
+          <p class="text-text leading-relaxed">
+            <strong class="font-medium text-accent">@minh_nguyen</strong> vừa trả lời bình luận của bạn trong tác phẩm <strong class="text-text">TXT-0001</strong>:
+          </p>
+          <p class="font-serif italic text-muted text-xs line-clamp-2">
+            "Đôi khi giữ lại một khoảng im lặng không phải hèn nhát, mà là sự tôn trọng..."
+          </p>
+          <span class="text-[10px] text-muted/70 font-mono block pt-1">2 giờ trước</span>
+        </div>
+        <a href="/library/txt-0001#discussions" class="text-xs text-accent hover:underline shrink-0">
+          Xem →
+        </a>
+      </div>
+
+      <div class="p-4 bg-surface/20 border-l-2 border-transparent border border-border/40 rounded-r flex items-start gap-3 opacity-80">
+        <span class="w-8 h-8 rounded-full bg-surface border border-border/60 text-muted font-semibold flex items-center justify-center font-mono text-xs uppercase shrink-0 mt-0.5">
+          H
+        </span>
+        <div class="space-y-1 flex-1 text-xs font-sans">
+          <p class="text-text leading-relaxed">
+            Chủ đề mới trong chuyên mục <strong class="text-text">Góc nhìn & Cuộc sống</strong> bạn đang quan tâm:
+          </p>
+          <p class="font-serif italic text-muted text-xs line-clamp-2">
+            "Có phải mọi sự thật đều cần được nói ra trước một thời điểm nhất định?"
+          </p>
+          <span class="text-[10px] text-muted/70 font-mono block pt-1">Hôm qua</span>
+        </div>
+        <a href="/agora" class="text-xs text-accent hover:underline shrink-0">
+          Xem →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</BaseLayout>

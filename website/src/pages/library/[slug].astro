@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import SourceAttribution from '../../components/SourceAttribution.astro';
 import ArtworkPlacard from '../../components/ArtworkPlacard.astro';
 import MuseumLightbox from '../../components/MuseumLightbox.astro';
+import LibraryComments from '../../components/library/LibraryComments';
 import { getAllPublishedQuotes } from '../../lib/content-publisher';
 import type { PublicQuote } from '../../lib/types';
 
@@ -229,6 +230,14 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
 
       <!-- 06. Scholarly Provenance & Academic Integrity Box -->
       <SourceAttribution quote={quote} />
+
+      <!-- 06.2. The Agora Dialogue Box: Community Perspectives under Library Work -->
+      <LibraryComments
+        client:visible
+        quoteId={quote.id}
+        quoteTitle={quote.cleanTitle}
+        categorySlug={quote.primaryTopic.toLowerCase().replace(/_/g, '-')}
+      />
 
       <!-- 06.5. Related Works of Contemplation (Tác Phẩm Chiêm Nghiệm Liên Quan) -->
       <section class="pt-16 space-y-6">

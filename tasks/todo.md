@@ -1,3 +1,25 @@
+# Danh Mục Nhiệm Vụ: Hiyu Abyss Digital Living Museum Transformation
+
+## Master Track: Nâng Cấp Bảo Tàng Tư Tưởng & Thẩm Định Độc Lập (Sprints 0 -> 2)
+
+- [x] **Sprint 0: Audit & Baseline**
+  - Chạy bản build, kiểm tra hệ thống, chụp và đo đạc toàn diện.
+- [x] **Sprint 1: Trust & QA (P0 - Minh Bạch Xuất Xứ & An Toàn Kỹ Thuật)**
+  - [x] **P0-01:** Bổ sung schema `ScholarlySource` và `verification_status` trong `types.ts` & `content-publisher.ts`. Hạ nhãn verified ảo về `PENDING_VERIFICATION`, đối chiếu mẫu `TXT-0001`.
+  - [x] **P0-02:** Khai báo `ArtworkProvenanceType` cho tranh bảo tàng CCO và tranh phục dựng hữu cơ HYA-08 trong `SourceAttribution.astro`.
+  - [x] **P0-03:** Khắc phục canonical domain (fallback `https://hiyuabyss.vercel.app`), gỡ bỏ hoàn toàn thẻ `hreflang="en"` trỏ cùng trang tiếng Việt.
+  - [x] **P0-04:** Xử lý triệt để lỗi tràn ngang trên mobile 320px/360px (Header compact spacing, SavedDrawer `invisible` khi đóng, `overflow-x: hidden`).
+  - [x] **P0-05:** Viết lại cơ chế hiển thị Search: dùng DOM API an toàn (`document.createElement`, `textContent`), chặn XSS, đồng bộ URL parameters.
+- [x] **Sprint 2: The Mirror Cinematic (P1 - Trải Nghiệm Chiêm Nghiệm)**
+  - [x] Xây dựng Scene Renderer với 5 Room Archetypes (`threshold`, `observation`, `silence`, `confrontation`, `ending`).
+  - [x] Tích hợp Transition Director với hiệu ứng chuyển động có hướng (`lateral-reveal`, `reveal-slow`, `crossfade`, `stillness`), tôn trọng `prefers-reduced-motion`.
+  - [x] Bổ sung bộ kiểm thử E2E Playwright (`website/test/e2e-smoke.mjs`) kiểm tra thực tế trên trình duyệt Chromium: 26/26 tests PASS, đi qua trọn vẹn cả 4 nhánh rẽ và 4 kết thúc mở.
+- [x] **Sprint 3: Landing Editorial (P1 - Minh Bạch Mỹ Thuật)**
+  - [x] Bổ sung section `ArtProvenanceSection.astro` trên Landing Page minh bạch quy chuẩn HYA-02 và HYA-08.
+  - [x] Đẩy nhánh riêng `feat/digital-living-museum-transformation` lên GitHub để chủ dự án xem xét PR.
+
+---
+
 # Danh Mục Nhiệm Vụ: Chế Tác 50 Bộ Ảnh Sơn Dầu Cổ Điển Bảo Tàng (Theme 151 -> 200)
 
 ## Phase 1: Đặc Tả Mỹ Thuật HYA-08 & Manifest 50 Danh Tác

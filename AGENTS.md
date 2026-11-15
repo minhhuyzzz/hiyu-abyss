@@ -55,7 +55,28 @@ Tránh tuyệt đối bẫy rập khuôn công nghiệp. Khi sản xuất nội 
 
 ---
 
-## 4. Các ranh giới cấm vượt (Hard Boundaries)
+## 4. Quy chuẩn Mỹ thuật Sơn Dầu & Khử Dấu Vết AI (HYA-08 Anti-AI Standard)
+
+Tuyệt đối loại bỏ thẩm mỹ rẻ tiền, công nghiệp của AI. Mọi hình ảnh phục vụ bài đăng hoặc xuất bản thư viện phải tuân thủ nghiêm ngặt:
+
+1. **Nguyên tắc Tác phẩm Độc lập theo Slide (Chấm dứt crop/zoom lặp ảnh):**
+   - Tuyệt đối không lấy một bức tranh duy nhất rồi phóng to, crop vụn các góc để đối phó thành các slide tiếp theo.
+   - Mỗi slide trong bài carousel phải là một bức tranh sơn dầu riêng biệt, bổ trợ hoàn hảo cho từng nhịp tư tưởng (Hiện tượng $\rightarrow$ Cú lật $\rightarrow$ Chiếc gương).
+2. **Cấm triệt để các tì vết AI (Banned AI Artifacts / Anti-AI-Slop):**
+   - **Cấm bề mặt nhựa/sáp:** Không chấp nhận da láng mịn như búp bê sáp hoặc hiệu ứng 3D CGI bóng bẩy (`NO 3D plastic/waxy sheen`).
+   - **Cấm ánh sáng kỹ thuật số rực rỡ:** Không dùng ánh sáng neon, hào quang phát sáng ảo (`NO airbrushed glow / fantasy sparkles`).
+   - **Cấm ký tự giả & watermark:** Không để AI tự ý vẽ chữ, hoa văn nguệch ngoạc hay ký tự kỳ dị vào tranh (`NO pseudo-text or gibberish runes`).
+   - **Cấm dị tật giải phẫu:** Bàn tay, ngón tay, mắt, tỷ lệ cơ thể phải tự nhiên hoặc ẩn trong bóng tối/góc nhìn nghệ thuật.
+3. **Quy trình Hậu kỳ Khử AI Bắt buộc (Organic Canvas Normalization):**
+   Mọi hình ảnh sau khi sinh ra phải đi qua bộ lọc vật lý tại `scripts/organize_generated_oil_suites.py`:
+   - Chuẩn hóa tỷ lệ dọc 9:16 (1080x1920) bằng thuật toán Lanczos.
+   - Cân bằng màu: Giảm nhẹ độ bão hòa (-4%) để sắc tố trở về màu khoáng sơn dầu tự nhiên (đất son, hổ phách, xanh Prussian, đỏ thẫm).
+   - Phủ lớp hạt vi mô hữu cơ (*Organic Canvas Grain*) để phá vỡ hoàn toàn bề mặt nhẵn bóng nhân tạo.
+   - Tinh chỉnh *Micro-contrast Unsharp Mask* làm nổi rõ thớ vải toan và gờ sơn dầu impasto vật lý.
+
+---
+
+## 5. Các ranh giới cấm vượt (Hard Boundaries)
 
 - **Tuyệt đối không bịa đặt nguồn:** Không bao giờ tự bịa tên sách, số trang, số chương, tác giả, DOI, trích đoạn hay kết quả nghiên cứu khoa học.
 - **Không nâng trạng thái truy cập ảo:** Chỉ gán `READ_SOURCE` hoặc `CONTEXT_CHECKED` khi đã thực sự đọc văn bản. Nếu chỉ có kết quả tìm kiếm/metadata, dừng ở `FOUND_METADATA`. Nếu chỉ đọc preview/đoạn trích, chỉ ghi `PARTIAL_TEXT`.
@@ -66,7 +87,7 @@ Tránh tuyệt đối bẫy rập khuôn công nghiệp. Khi sản xuất nội 
 
 ---
 
-## 5. Quy trình bàn giao & Báo cáo kết quả
+## 6. Quy trình bàn giao & Báo cáo kết quả
 
 Khi hoàn thành bất kỳ lượt nghiên cứu hay biên tập nào, Agent phải báo cáo rõ ràng:
 1. **Các file đã tạo/chỉnh sửa:** Đường dẫn tuyệt đối, ID và trạng thái.

@@ -6,7 +6,7 @@ export const i18nDict: Record<Language, Record<string, string>> = {
   vi: {
     // Navigation
     'nav.library': 'Thư Viện',
-    'nav.mirror': 'Chiếc Gương',
+    'nav.mirror': 'The Mirror',
     'nav.themes': 'Chủ Đề',
     'nav.search': 'Tìm Kiếm',
     'nav.saved': 'Kho Lưu Trữ',
@@ -15,7 +15,7 @@ export const i18nDict: Record<Language, Record<string, string>> = {
     // Hero
     'hero.badge': 'CÂU NÓI NỔI BẬT',
     'hero.readMore': 'Đọc Thêm',
-    'hero.mirrorBtn': 'Chiếc Gương',
+    'hero.mirrorBtn': 'The Mirror',
     'hero.subtext': 'Hiyu Abyss lưu giữ những câu nói hay, sâu sắc về tâm lý và cuộc đời được biên soạn tinh tế, đồng hành cùng tranh cổ điển chọn lọc.',
 
     // Common Buttons & Actions

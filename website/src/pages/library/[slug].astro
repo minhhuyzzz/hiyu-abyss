@@ -378,7 +378,27 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
 
     if (bookmarkBtn) {
       checkBookmarkStatus();
-      bookmarkBtn.addEventListener('click', () => {
+      bookmarkBtn.addEventListener('click', async () => {
+        // Enforce login requirement for saving to archive
+        let user = window.__HIYU_USER;
+        if (user === undefined) {
+          try {
+            const res = await fetch('/api/auth/me');
+            const data = await res.json();
+            user = data.authenticated ? data.user : null;
+            window.__HIYU_USER = user;
+          } catch (e) {
+            user = null;
+          }
+        }
+
+        if (!user) {
+          if (confirm('Bạn cần đăng nhập để lưu tác phẩm vào kho của riêng bạn. Đi đến trang đăng nhập ngay?')) {
+            window.location.href = `/account?redirect=${encodeURIComponent(window.location.pathname)}`;
+          }
+          return;
+        }
+
         try {
           const saved = JSON.parse(localStorage.getItem('hiyu_saved_quotes') || '[]');
           const idx = saved.indexOf(quoteId);

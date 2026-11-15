@@ -1,0 +1,907 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+scripts/build_50_new_posts_201_250.py
+Sản xuất trọn vẹn 50 bài viết đột phá mới (STT 201 - 250 / TXT-0201 - TXT-0250):
+- 4 Bố cục mới: Giải mã câu thoại, Thế kẹt tiến thoái lưỡng nan, Ảo tưởng đọc tâm trí, Nghịch lý khan hiếm.
+- Nội dung tâm lý học đời thực sâu sắc, chạm cả nam và nữ.
+- 100% không trùng lặp ý tưởng với 200 bài trước.
+- Không tạo ảnh (theo chỉ đạo người dùng: bộ ảnh sẽ tạo sau).
+- Xuất dữ liệu:
+  1. scripts/posts_201_250.json
+  2. Cập nhật scripts/tiktok_200_posts.csv (thành 250 bài) và tạo scripts/tiktok_250_posts.csv
+  3. Tạo 50 file editorial/content/TXT-0201.md đến TXT-0250.md
+"""
+
+import json
+import csv
+import os
+import re
+
+POSTS_DATA = [
+    # =========================================================================
+    # NHÓM A: GIẢI MÃ CÂU THOẠI ĐỘC HẠI (13 BÀI · STT 201 - 213)
+    # =========================================================================
+    {
+        "stt": 201, "id": "TXT-0201",
+        "title": "[Giải Mã Câu Thoại] 'Em/Anh tùy, sao cũng được': Lời đồng thuận nguy hiểm nhất trong một mối quan hệ.",
+        "author": "John Gottman",
+        "topic": "GIAO TIẾP (Giải mã câu thoại độc hại)",
+        "format": "Carousel 3 trang",
+        "hook": "Em/Anh tùy, sao cũng được......",
+        "twist": "Phía người nói đang rút lui thụ động để ngầm kiểm tra xem đối phương có đủ nhạy cảm để giải mã cảm xúc của mình hay không; trong khi người nghe tưởng sóng gió đã qua, nhưng thực chất một khoản nợ ấm ức vô hình vừa được ghi vào sổ nợ tâm lý.",
+        "mirror": "Chữ 'Tùy' là sự thoái thác quyền lên tiếng để giữ lại quyền được ấm ức sau này. Muốn một mối quan hệ bền vững, hãy dám nói thẳng điều mình cần; và khi nghe chữ 'tùy', hãy dừng lại: 'Nếu chưa thoải mái, chúng ta sẽ nói chuyện này khi cả hai sẵn sàng.'",
+        "deep": "-",
+        "caption": "Chuyên gia tâm lý hôn nhân John Gottman chỉ ra rằng: 'Tùy, sao cũng được' hiếm khi là sự dễ tính, mà là một bức tường đá (Stonewalling) thu nhỏ. Một bên thoái thác trách nhiệm giao tiếp để tích lũy sự ấm ức, bên kia hoang mang trong bài kiểm tra cảm xúc không có đáp án. Giao tiếp trưởng thành bắt đầu từ dũng khí gọi tên nhu cầu thật của mình. Bạn đã bao giờ nói chữ 'Tùy' khi trong lòng đang nổi bão chưa?",
+        "hashtags": "#giaotiep #tamlyhoc #tamlyhocmoihe #johngottman #hiyuabyss",
+        "full_text": "Em/Anh tùy, sao cũng được... Câu nói nguy hiểm nhất trong một mối quan hệ không phải là lời xúc phạm, mà là sự đồng thuận giả tạo. Người nói đang rút lui thụ động để kiểm tra đối phương, người nghe tưởng đã êm đẹp nhưng một khoản nợ ấm ức vừa được ghi nhận. Thoái thác quyền lên tiếng là cách giữ lại quyền được ấm ức sau này.",
+        "hours": "20:00 - 21:30", "schedule": "Thứ Hai", "concept": "Hai người ngồi đối diện nhau qua bàn ăn mờ tối, bóng tối ngăn cách dù khoảng cách rất gần.",
+        "topic_code": "COMMUNICATION"
+    },
+    {
+        "stt": 202, "id": "TXT-0202",
+        "title": "[Giải Mã Câu Thoại] 'Thôi, em/anh tự lo được mà': Chiếc bẫy tự phong thánh và gieo rắc mặc cảm tội lỗi.",
+        "author": "Harriet Lerner",
+        "topic": "GIAO TIẾP (Giải mã câu thoại độc hại)",
+        "format": "Carousel 3 trang",
+        "hook": "Thôi, em/anh tự lo được mà......",
+        "twist": "Bề ngoài là sự kiên cường độc lập, nhưng bên trong là một thông điệp ngầm trừng phạt: 'Anh/em không đủ tin cậy để tôi nhờ vả, và tôi sẽ để sự vất vả này chứng minh sự vô tâm của anh/em.'",
+        "mirror": "Đóng vai người tử đạo không làm bạn trở nên cao quý hơn; nó chỉ dựng lên một bức tường cô lập cảm xúc và biến người bên cạnh thành kẻ vô tâm ngoài ý muốn. Yêu thương thực sự là dám cho phép đối phương bước vào gánh vác cùng mình.",
+        "deep": "-",
+        "caption": "Bác sĩ tâm lý Harriet Lerner bóc tách chiếc bẫy của 'tự lo được mà': Đằng sau sự từ chối giúp đỡ đôi khi không phải là sức mạnh, mà là sự kiêu hãnh tổn thương muốn biến mình thành nạn nhân cao thượng. Đừng dùng sự vất vả của mình làm chiếc roi quất vào lương tâm người khác. Bạn có đang vô tình dùng sự độc lập của mình để trừng phạt đối phương?",
+        "hashtags": "#ranhgioi #tamlyhoc #harrietlerner #tonthuongnoitam #hiyuabyss",
+        "full_text": "Thôi em/anh tự lo được mà... Bề ngoài là kiên cường, nhưng bên trong là thông điệp trừng phạt đối phương vô tâm. Đóng vai tử đạo không làm bạn cao quý hơn, chỉ dựng tường cô lập cảm xúc.",
+        "hours": "11:30 - 12:30", "schedule": "Thứ Ba", "concept": "Một người gánh bó củi nặng trong mưa tuyết, quay lưng từ chối bàn tay chìa ra từ ô cửa ấm áp.",
+        "topic_code": "COMMUNICATION"
+    },
+    {
+        "stt": 203, "id": "TXT-0203",
+        "title": "[Giải Mã Câu Thoại] 'Nói vậy thôi chứ không có ý gì đâu': Đòn tấn công thụ động bọc trong sự vô tội.",
+        "author": "Paul Watzlawick",
+        "topic": "GIAO TIẾP (Giải mã câu thoại độc hại)",
+        "format": "Carousel 2 trang",
+        "hook": "Nói vậy thôi chứ không có ý gì đâu......",
+        "twist": "Khi ai đó vừa buông một lời phán xét cay nghiệt rồi lập tức đính kèm câu nói này, họ không rút lại lời nói; họ chỉ đang tước đi quyền được tổn thương và quyền tự vệ chính đáng của bạn.",
+        "mirror": "-", "deep": "-",
+        "caption": "Nhà lý thuyết giao tiếp Paul Watzlawick khẳng định: Không có lời nói nào là 'không có ý gì'. Khi ai đó xúc phạm bạn rồi núp bóng sau câu 'đùa thôi mà' hoặc 'nói vậy thôi', đó là hành vi xâm kích thụ động kinh điển. Phẩm giá của bạn có quyền đặt ranh giới: 'Lời nói đó làm tôi không thoải mái, bất kể ý định của bạn là gì.' Bạn đã từng bị người khác xúc phạm dưới danh nghĩa 'nói vậy thôi' chưa?",
+        "hashtags": "#giaotieptinhvi #gaslighting #paulwatzlawick #tamlyhoc #hiyuabyss",
+        "full_text": "Nói vậy thôi chứ không có ý gì đâu... Khi vừa phán xét cay nghiệt rồi đính kèm câu này, họ không rút lại lời nói mà chỉ đang tước đi quyền tự vệ của bạn. Đừng chấp nhận sự xâm kích núp bóng vô tội.",
+        "hours": "19:30 - 20:30", "schedule": "Thứ Tư", "concept": "Chiếc mặt nạ mỉm cười giấu sau lưng một lưỡi dao gỉ sét trong căn phòng bóng đổ.",
+        "topic_code": "COMMUNICATION"
+    },
+    {
+        "stt": 204, "id": "TXT-0204",
+        "title": "[Giải Mã Câu Thoại] 'Ai cũng nghĩ như vậy hết á': Mượn danh đám đông vô hình để áp đảo lý lẽ.",
+        "author": "Solomon Asch",
+        "topic": "GIAO TIẾP (Giải mã câu thoại độc hại)",
+        "format": "Carousel 3 trang",
+        "hook": "Ai trong hoàn cảnh này cũng làm vậy hết......",
+        "twist": "Họ viện dẫn một 'đám đông vô hình' không phải vì điều đó đúng, mà vì lý lẽ cá nhân của họ quá yếu ớt, buộc phải mượn sức nặng của số đông để khiến bạn cảm thấy mình là kẻ lập dị bất thường.",
+        "mirror": "Đừng để chữ 'ai cũng' làm lung lay chính kiến của bạn. Số đông có thể đồng thuận về một sai lầm trong suốt hàng thế kỷ. Hãy hỏi lại họ: 'Ai là người cụ thể nghĩ như vậy, và tại sao ý kiến của họ lại có giá trị hơn cảm nhận của tôi?'",
+        "deep": "-",
+        "caption": "Thí nghiệm tâm lý của Solomon Asch chứng minh: Con người rất dễ nghi ngờ nhận thức của mình khi bị đe dọa bởi cụm từ 'ai cũng thấy thế'. Kẻ tranh luận yếu kém luôn mượn bóng ma của tập thể để đàn áp tiếng nói độc lập của bạn. Hãy bình thản tách mình ra khỏi áp lực bầy đàn. Bạn có dám giữ vững lập trường khi cả phòng đều hùa theo một ý kiến?",
+        "hashtags": "#tamlydamdong #solomonasch #tuduyphanbien #kientaochinhminh #hiyuabyss",
+        "full_text": "Ai cũng nghĩ như vậy hết á... Viện dẫn đám đông vô hình vì lý lẽ cá nhân quá yếu ớt, muốn bạn cảm thấy mình lập dị. Đừng để chữ 'ai cũng' làm lung lay nhận thức cá nhân.",
+        "hours": "20:00 - 21:00", "schedule": "Thứ Năm", "concept": "Một đàn cừu đứng sát nhau trên bờ vực, một con quay đầu nhìn về hướng núi cao ngược lại.",
+        "topic_code": "CROWD"
+    },
+    {
+        "stt": 205, "id": "TXT-0205",
+        "title": "[Giải Mã Câu Thoại] 'Em/Anh không sao đâu, thật đấy': Chiếc mặt nạ bình yên độc hại ngăn chặn sự gắn kết.",
+        "author": "Carl Rogers",
+        "topic": "GIAO TIẾP (Giải mã câu thoại độc hại)",
+        "format": "Carousel 2 trang",
+        "hook": "Không sao đâu, thật đấy......",
+        "twist": "Khi bạn lặp lại câu này với ánh mắt cụp xuống và giọng nói lạnh băng, bạn không dập tắt ngọn lửa; bạn chỉ chôn vùi than hồng xuống lòng đất, nơi nó sẽ âm thầm đốt cháy sự thân mật giữa hai người.",
+        "mirror": "-", "deep": "-",
+        "caption": "Nhà tâm lý học nhân văn Carl Rogers nhấn mạnh: Sự chân thật (Congruence) là điều kiện tiên quyết cho mọi mối quan hệ bền vững. Khi bên trong đang rách nát mà bên ngoài cố tỏ ra 'không sao', bạn đang tước đi cơ hội thấu cảm của đối phương và tự giam mình trong nỗi cô đơn tự tạo. Dũng cảm nói 'Tôi đang bất ổn' chính là sức mạnh lớn nhất. Lần gần nhất bạn nói dối 'tôi ổn' là khi nào?",
+        "hashtags": "#carlrogers #chanthat #noitam #dongcam #hiyuabyss",
+        "full_text": "Không sao đâu, thật đấy... Câu nói chôn vùi than hồng dưới lòng đất, âm thầm thiêu rụi sự thân mật. Chân thật với cảm xúc bất ổn mới là khởi đầu của sự gắn kết.",
+        "hours": "07:30 - 08:30", "schedule": "Thứ Sáu", "concept": "Bức tường đá nứt nẻ nhưng được sơn phủ một lớp vôi trắng tinh bên ngoài dưới ánh trăng.",
+        "topic_code": "COMMUNICATION"
+    },
+    {
+        "stt": 206, "id": "TXT-0206",
+        "title": "[Giải Mã Câu Thoại] 'Nếu biết trước vậy thì em/anh đã không...': Tống tiền cảm xúc bằng sự nuối tiếc ngụy tạo.",
+        "author": "Susan Forward",
+        "topic": "GIAO TIẾP (Giải mã câu thoại độc hại)",
+        "format": "Single-Punch (1 trang)",
+        "hook": "Câu nói 'Nếu biết trước vậy tôi đã không hy sinh cho anh/em' không phải sự ân hận; đó là bản cáo trạng đòi bạn phải trả lại món nợ mà bạn chưa từng vay.",
+        "twist": "-", "mirror": "-", "deep": "-",
+        "caption": "Chuyên gia tâm lý Susan Forward cảnh báo về đòn tống tiền cảm xúc F.O.G: Kẻ thao túng dùng sự hy sinh trong quá khứ để cầm tù hiện tại của bạn. Mọi sự cho đi kèm theo điều kiện đòi hoàn vốn bằng sự phục tùng đều không phải là tình yêu, đó là sự đầu tư có lãi. Đừng bao giờ quỳ gối xin lỗi cho một lựa chọn mà đối phương đã tự nguyện thực hiện. Bạn có từng bị ai đó dùng sự hy sinh của họ để trói buộc bạn?",
+        "hashtags": "#tongtiencamxuc #susanforward #ranhgioi #tuphuc #hiyuabyss",
+        "full_text": "Nếu biết trước vậy tôi đã không hy sinh cho anh/em... Không phải ân hận mà là bản cáo trạng đòi món nợ chưa từng vay. Sự cho đi kèm điều kiện phục tùng là đầu tư vụ lợi.",
+        "hours": "12:00 - 13:00", "schedule": "Thứ Bảy", "concept": "Chiếc cân đồng rỉ sét cân một chiếc lông vũ và một khối đá nặng u tối.",
+        "topic_code": "MANIPULATION"
+    },
+    {
+        "stt": 207, "id": "TXT-0207",
+        "title": "[Giải Mã Câu Thoại] 'Sao lúc nào em/anh cũng phải làm quá lên vậy?': Chiêu bài thu nhỏ vấn đề để chối bỏ trách nhiệm.",
+        "author": "Kate Abramson",
+        "topic": "GIAO TIẾP (Giải mã câu thoại độc hại)",
+        "format": "Carousel 3 trang",
+        "hook": "Sao lúc nào cũng phải làm quá lên vậy......",
+        "twist": "Họ dán nhãn bạn là kẻ 'nhạy cảm thái quá' không phải vì vấn đề của bạn nhỏ, mà vì việc giải quyết nó đòi hỏi họ phải thừa nhận sai lầm và thay đổi sự ích kỷ của chính mình.",
+        "mirror": "Đừng nghi ngờ phản xạ cảm xúc của bạn. Khi ai đó bảo bạn 'làm quá', hãy nhớ rằng: Bạn không nhạy cảm, bạn chỉ đang phản ứng hoàn toàn bình thường trước một hành vi bất thường lặp đi lặp lại.",
+        "deep": "-",
+        "caption": "Triết gia Kate Abramson chỉ ra rằng: Cụm từ 'làm quá lên' là công cụ gaslighting phổ biến nhất để biến nạn nhân thành kẻ gây rối. Bằng cách vô hiệu hóa cảm xúc của bạn, kẻ thao túng né tránh hoàn toàn trách nhiệm sửa sai. Đừng để ai định giá mức độ tổn thương của bạn thay cho chính bạn. Bạn đã bao giờ bị dán nhãn 'nhạy cảm quá' khi nói ra sự thật?",
+        "hashtags": "#gaslighting #kateabramson #tuduyphanbien #ranhgioi #hiyuabyss",
+        "full_text": "Sao lúc nào cũng làm quá lên vậy... Dán nhãn bạn nhạy cảm để né tránh thừa nhận sai lầm. Bạn không làm quá, bạn chỉ đang phản ứng bình thường trước hành vi bất thường lặp lại.",
+        "hours": "20:00 - 21:00", "schedule": "Chủ Nhật", "concept": "Người đứng trước ngọn lửa bùng cháy dữ dội trong khi người kia cầm chiếc ly nước nhỏ xíu giả vờ dập lửa.",
+        "topic_code": "MANIPULATION"
+    },
+    {
+        "stt": 208, "id": "TXT-0208",
+        "title": "[Giải Mã Câu Thoại] 'Em/Anh chỉ muốn tốt cho anh/em thôi mà': Sự kiểm soát bọc đường nhân danh tình yêu.",
+        "author": "Erich Fromm",
+        "topic": "GIAO TIẾP (Giải mã câu thoại độc hại)",
+        "format": "Carousel 2 trang",
+        "hook": "Tất cả những gì tôi làm là vì muốn tốt cho bạn......",
+        "twist": "Nhưng nếu điều 'tốt cho bạn' đó bắt bạn phải cắt đứt đam mê, từ bỏ bạn bè và tước đi quyền tự quyết, thì đó không phải sự chăm sóc — đó là sự chiếm hữu độc tài bọc nhung.",
+        "mirror": "-", "deep": "-",
+        "caption": "Nhà phân tâm học Erich Fromm phân định rạch ròi: Tình yêu chân chính tôn trọng sự độc lập của đối phương, trong khi tình yêu chiếm hữu luôn tìm cách đúc người kia thành bức tượng theo ý mình. Đừng để chiếc nhãn 'vì muốn tốt cho bạn' che mờ sự can thiệp thô bạo vào số phận của bạn. Bạn có dám từ chối điều người khác áp đặt là 'tốt cho bạn'?",
+        "hashtags": "#erichfromm #nghethuatyeu #ranhgioicapnhan #quyenlucngam #hiyuabyss",
+        "full_text": "Tất cả những gì tôi làm là vì muốn tốt cho bạn... Nếu bắt bạn từ bỏ tự do và đam mê thì đó không phải tình yêu, đó là sự chiếm hữu độc tài bọc nhung.",
+        "hours": "19:00 - 20:00", "schedule": "Thứ Hai", "concept": "Một chiếc lồng chim bằng vàng nạm ngọc mở cửa nhưng gắn xích vô hình vào chân chú chim non.",
+        "topic_code": "MANIPULATION"
+    },
+    {
+        "stt": 209, "id": "TXT-0209",
+        "title": "[Giải Mã Câu Thoại] 'Tùy anh/em nghĩ sao cũng được, giải thích cũng vậy': Bức tường đá đội lốt sự bất lực.",
+        "author": "John Gottman",
+        "topic": "GIAO TIẾP (Giải mã câu thoại độc hại)",
+        "format": "Carousel 3 trang",
+        "hook": "Giải thích làm gì nữa, anh/em đã nghĩ vậy rồi thì thôi......",
+        "twist": "Câu nói này nghe như sự bất lực cam chịu, nhưng thực chất là đòn phản công ngạo mạn: 'Tôi không cần lắng nghe bạn, và tôi không có nghĩa vụ phải đối thoại với một kẻ vô lý như bạn.'",
+        "mirror": "Khi đối phương đóng sầm cánh cửa giao tiếp, đừng cố đập cửa van xin. Hãy lùi lại một bước: Sự kiên nhẫn của bạn chỉ có giá trị với người muốn cùng tìm kiếm giải pháp, không phải kẻ dùng sự im lặng để trừng phạt bạn.",
+        "deep": "-",
+        "caption": "Nghiên cứu của Viện Gottman chỉ ra: Dạng thức 'đóng cửa đối thoại' giả vờ bất lực là một trong những dấu hiệu nguy hiểm nhất báo trước sự đổ vỡ. Thay vì đối mặt với mâu thuẫn, họ đóng vai kẻ bị hàm oan để đẩy toàn bộ tội lỗi cho đối phương. Giữ bình tĩnh và không đuổi theo sự phớt lờ đó là bản lĩnh của bạn. Bạn phản ứng thế nào khi ai đó cắt ngang cuộc trò chuyện bằng câu này?",
+        "hashtags": "#johngottman #stonewalling #giaotiep #bactuongda #hiyuabyss",
+        "full_text": "Giải thích làm gì nữa, đã nghĩ vậy rồi thì thôi... Nghe như bất lực nhưng là đòn phản công ngạo mạn đóng cửa đối thoại. Đừng đập cửa van xin kẻ dùng im lặng trừng phạt bạn.",
+        "hours": "21:00 - 22:00", "schedule": "Thứ Ba", "concept": "Hai người đứng quay lưng trước một bức tường thành bằng đá xám lạnh ngăn đôi bầu trời.",
+        "topic_code": "COMMUNICATION"
+    },
+    {
+        "stt": 210, "id": "TXT-0210",
+        "title": "[Giải Mã Câu Thoại] 'Em/Anh đâu có ép, tự anh/em làm đó chứ': Trút bỏ trách nhiệm sau khi tạo áp lực ngầm.",
+        "author": "Stephen Karpman",
+        "topic": "GIAO TIẾP (Giải mã câu thoại độc hại)",
+        "format": "Single-Punch (1 trang)",
+        "hook": "Họ thở dài, than vãn và tạo ra bầu không khí ngột ngạt để buộc bạn phải ra tay; nhưng khi mọi chuyện đổ vỡ, họ sẽ nói: 'Tôi đâu có ép bạn làm chuyện đó bao giờ.'",
+        "twist": "-", "mirror": "-", "deep": "-",
+        "caption": "Tiến sĩ Stephen Karpman vạch trần cơ chế thao túng gián tiếp: Kẻ thao túng dùng sự bất hạnh giả định để ép bạn phải đóng vai Người Cứu Rỗi, nhưng ngay khi có rủi ro, họ chuyển ngay sang vai Nạn Nhân vô can. Nhận biết áp lực ngầm là bước đầu tiên để ngừng nhảy vào những trách nhiệm không thuộc về mình. Bạn đã bao giờ phải dọn dẹp hậu quả cho một chuyện bạn bị ép làm trong vô thức?",
+        "hashtags": "#tamgiacthaotung #stephenkarpman #aplucngam #ranhgioi #hiyuabyss",
+        "full_text": "Họ thở dài, than vãn để buộc bạn ra tay, nhưng khi đổ vỡ lại nói: 'Tôi đâu có ép'. Nhận diện áp lực ngầm để không gánh trách nhiệm không thuộc về mình.",
+        "hours": "12:30 - 13:30", "schedule": "Thứ Tư", "concept": "Một con rối gỗ bị kéo bởi những sợi dây cước trong suốt nối lên trần nhà tối tăm.",
+        "topic_code": "MANIPULATION"
+    },
+    {
+        "stt": 211, "id": "TXT-0211",
+        "title": "[Giải Mã Câu Thoại] 'Người ta đối xử với nhau như thế nào, em/anh cũng thấy rồi đó': Chiêu bài tam giác hóa so sánh ngầm.",
+        "author": "Murray Bowen",
+        "topic": "GIAO TIẾP (Giải mã câu thoại độc hại)",
+        "format": "Carousel 3 trang",
+        "hook": "Nhìn chồng/vợ/người yêu người ta xem......",
+        "twist": "Họ kéo một người thứ ba hoàn hảo vào cuộc tranh luận không phải để nêu gương, mà để gieo rắc sự tự ti và mặc cảm kém cỏi vào sâu trong tâm trí bạn.",
+        "mirror": "Một mối quan hệ lành mạnh được xây dựng trên sự thấu hiểu giữa hai con người cụ thể, không phải trên cuộc chạy đua trình diễn cho thiên hạ chấm điểm. Kẻ liên tục so sánh bạn với người khác chỉ yêu hình mẫu lý tưởng trong đầu họ, không hề yêu con người thật của bạn.",
+        "deep": "-",
+        "caption": "Lý thuyết hệ thống gia đình của Murray Bowen chỉ ra hiện tượng Triangulation (Tam giác hóa): Đưa người ngoài vào để gây sức ép và hạ thấp giá trị của người bạn đời. So sánh ngầm là chất độc ăn mòn sự tự tôn nhanh nhất. Hãy kiên quyết từ chối những cuộc đua ảo ảnh này. Bạn cảm thấy thế nào khi người thân yêu mang bạn ra so sánh với 'người ta'?",
+        "hashtags": "#murraybowen #tamgiachoa #soidoc #giatricuatoi #hiyuabyss",
+        "full_text": "Nhìn người ta xem... Kéo người thứ ba vào để gieo rắc tự ti và mặc cảm kém cỏi. Kẻ liên tục so sánh chỉ yêu ảo ảnh trong đầu họ, không yêu con người thật của bạn.",
+        "hours": "20:30 - 21:30", "schedule": "Thứ Năm", "concept": "Một người đứng trước 3 tấm gương méo mó phản chiếu 3 hình hài khác nhau không nhận ra chính mình.",
+        "topic_code": "MANIPULATION"
+    },
+    {
+        "stt": 212, "id": "TXT-0212",
+        "title": "[Giải Mã Câu Thoại] 'Thôi bỏ đi, nói ra cũng không giải quyết được gì': Thái độ bất lực tập nhiễm làm xói mòn lòng tin.",
+        "author": "Martin Seligman",
+        "topic": "GIAO TIẾP (Giải mã câu thoại độc hại)",
+        "format": "Carousel 2 trang",
+        "hook": "Thôi bỏ đi, nói cũng vậy à......",
+        "twist": "Câu nói này là lời tuyên án tử hình cho một mối quan hệ: Nó không thể hiện sự bao dung, mà là dấu hiệu cho thấy một bên đã hoàn toàn tuyệt vọng và từ bỏ việc tìm kiếm tiếng nói chung.",
+        "mirror": "-", "deep": "-",
+        "caption": "Cha đẻ tâm lý học tích cực Martin Seligman gọi đây là 'Bất lực tập nhiễm' (Learned Helplessness): Khi những nỗ lực đối thoại trước đây liên tục bị phớt lờ, con người chọn cách câm lặng buông xuôi. Im lặng này là tiếng chuông báo trước sự chia lìa trong tâm tưởng. Nếu mối quan hệ của bạn đã đến mức 'nói cũng vậy', đã đến lúc đối diện với sự thật. Bạn đã từng bất lực đến mức không buồn mở lời giải thích?",
+        "hashtags": "#martinseligman #batluctapnhiem #giaotiep #suthat #hiyuabyss",
+        "full_text": "Thôi bỏ đi, nói cũng vậy à... Lời tuyên án tử hình cho mối quan hệ, dấu hiệu buông xuôi tuyệt vọng khi nỗ lực đối thoại liên tục bị phớt lờ.",
+        "hours": "21:30 - 22:30", "schedule": "Thứ Sáu", "concept": "Chiếc mỏ neo hoen rỉ nằm chìm sâu dưới đáy hồ nước phẳng lặng đóng băng bề mặt.",
+        "topic_code": "COMMUNICATION"
+    },
+    {
+        "stt": 213, "id": "TXT-0213",
+        "title": "[Giải Mã Câu Thoại] 'Em/Anh không cần gì nhiều, chỉ cần sự quan tâm thôi': Yêu cầu trừu tượng vô tận.",
+        "author": "Virginia Satir",
+        "topic": "GIAO TIẾP (Giải mã câu thoại độc hại)",
+        "format": "Carousel 3 trang",
+        "hook": "Em/Anh đâu có đòi hỏi gì cao xa......",
+        "twist": "Nhưng khi 'sự quan tâm' không bao giờ được định nghĩa cụ thể, nó biến thành một cái thùng không đáy: Dù đối phương nỗ lực bao nhiêu, họ vẫn luôn là kẻ thiếu sót và không đủ tốt trong mắt bạn.",
+        "mirror": "Trưởng thành trong tình cảm là biết gọi tên chính xác điều mình mong muốn bằng hành động cụ thể, thay vì đưa ra những kỳ vọng mơ hồ để biến đối phương thành tù nhân của sự phỏng đoán mệt mỏi.",
+        "deep": "-",
+        "caption": "Bà hoàng trị liệu gia đình Virginia Satir nhấn mạnh: Đòi hỏi trừu tượng là nguyên nhân hàng đầu gây kiệt quệ cảm xúc. Nói 'tôi cần quan tâm' mà không nói rõ quan tâm là hành động gì sẽ khiến đối phương rơi vào tình trạng luôn cảm thấy tội lỗi và bất lực. Hãy học cách giao tiếp rõ ràng và minh bạch. Bạn có dám nói chính xác điều bạn cần bằng một hành động cụ thể?",
+        "hashtags": "#virginiasatir #kyvongmơho #giaotiepminhbach #yeuthuongdungcach #hiyuabyss",
+        "full_text": "Em/Anh đâu có đòi hỏi gì cao xa, chỉ cần quan tâm... Yêu cầu trừu tượng không đáy biến đối phương thành kẻ luôn thiếu sót. Trưởng thành là gọi tên chính xác điều mình cần.",
+        "hours": "19:30 - 20:30", "schedule": "Thứ Bảy", "concept": "Chiếc bình gốm cổ có lỗ thủng ở đáy, nước rót vào bao nhiêu cũng tràn ra biến mất.",
+        "topic_code": "COMMUNICATION"
+    },
+
+    # =========================================================================
+    # NHÓM B: THẾ KẸT TIẾN THOÁI LƯỠNG NAN & RANH GIỚI (13 BÀI · STT 214 - 226)
+    # =========================================================================
+    {
+        "stt": 214, "id": "TXT-0214",
+        "title": "[Thế Kẹt Ranh Giới] Giúp một lần là người tốt, từ chối lần thứ hai thành kẻ vô ơn.",
+        "author": "Gabor Maté",
+        "topic": "RANH GIỚI (Cái bẫy cứu rỗi & Sự làm hài lòng)",
+        "format": "Carousel 3 trang",
+        "hook": "Giúp một lần là người tốt......",
+        "twist": "Từ chối lần thứ hai, bạn lập tức biến thành kẻ ích kỷ và máu lạnh trong mắt người từng nhận ân huệ của bạn.",
+        "mirror": "Khi bạn luôn sẵn sàng cứu rỗi mọi người, bạn không nhận được sự trân trọng; bạn chỉ đang dạy cho thiên hạ biết rằng: Thời gian và lòng tự trọng của bạn là thứ tài nguyên miễn phí có thể bòn rút bất kỳ lúc nào.",
+        "deep": "-",
+        "caption": "Bác sĩ Gabor Maté trong cuốn 'When the Body Says No' cảnh báo: Căn bệnh làm hài lòng người khác (People-pleasing) là nguyên nhân trực tiếp dẫn đến suy kiệt thể chất và tinh thần. Kẻ nổi giận khi bị từ chối chưa từng tôn trọng bạn; họ chỉ yêu sự tiện lợi mà bạn mang lại. Dám nói 'Không' là liều thuốc giải độc duy nhất. Bạn đã bao giờ phải gồng mình giúp đỡ chỉ vì sợ bị coi là kẻ xấu?",
+        "hashtags": "#gabormate #peoplepleasing #ranhgioi #tuchoi #hiyuabyss",
+        "full_text": "Giúp một lần là người tốt, từ chối lần hai thành kẻ vô ơn... Luôn sẵn sàng cứu rỗi chỉ dạy thiên hạ rằng thời gian của bạn là miễn phí. Kẻ nổi giận khi bị từ chối chỉ yêu sự tiện lợi bạn đem lại.",
+        "hours": "20:00 - 21:00", "schedule": "Chủ Nhật", "concept": "Cái giếng làng bị múc cạn trơ đáy nứt nẻ, những người xách xô đứng nhìn thất vọng rồi bỏ đi.",
+        "topic_code": "MORALITY"
+    },
+    {
+        "stt": 215, "id": "TXT-0215",
+        "title": "[Thế Kẹt Ranh Giới] 'Im lặng để êm nhà êm cửa': Hòa bình giả tạo nuôi dưỡng cơn bão sụp đổ.",
+        "author": "Harriet Lerner",
+        "topic": "RANH GIỚI (Cái bẫy cứu rỗi & Sự làm hài lòng)",
+        "format": "Carousel 3 trang",
+        "hook": "Thôi nhịn một chút cho êm chuyện......",
+        "twist": "Nhưng mỗi lần bạn nuốt sự bất bình vào trong để giữ gìn một sự yên ấm giả tạo, bạn đang tự tay tích lũy thuốc nổ cho một vụ nổ hủy diệt mối quan hệ trong tương lai.",
+        "mirror": "Xung đột không phá vỡ một mối quan hệ chân chính; chính sự giả vờ hòa thuận và những ấm ức bị chôn giấu mới là thứ từ từ giết chết nó. Thà có một cuộc tranh cãi trung thực để hiểu nhau, còn hơn một sự bình yên mục ruỗng.",
+        "deep": "-",
+        "caption": "Tác phẩm 'The Dance of Anger' của Harriet Lerner khẳng định: Cố giữ hòa khí bằng cách chối bỏ cảm xúc thật là hành động tự sát trong tình cảm. Sự nhẫn nhịn thiếu ranh giới chỉ biến bạn thành một bãi rác cảm xúc cho đối phương. Đối diện xung đột trong bình tĩnh là dấu hiệu của bản lĩnh trưởng thành. Bạn đang nhẫn nhịn vì yêu thương hay vì nỗi sợ đối đầu?",
+        "hashtags": "#harrietlerner #xungdot #hoabinhgiatao #bantinhtao #hiyuabyss",
+        "full_text": "Thôi nhịn một chút cho êm chuyện... Mỗi lần nuốt bất bình vào trong là tự tích lũy thuốc nổ hủy diệt. Thà tranh cãi trung thực còn hơn một sự bình yên mục ruỗng.",
+        "hours": "20:30 - 21:30", "schedule": "Thứ Hai", "concept": "Mặt hồ phẳng lặng như gương nhưng dưới đáy là lớp bùn lầy đang sôi sục bọt khí độc hại.",
+        "topic_code": "MORALITY"
+    },
+    {
+        "stt": 216, "id": "TXT-0216",
+        "title": "[Thế Kẹt Ranh Giới] 'Người một nhà mà tính toán': Lạm dụng tình thân để xóa nhòa giới hạn đạo đức.",
+        "author": "Susan Forward",
+        "topic": "RANH GIỚI (Cái bẫy cứu rỗi & Sự làm hài lòng)",
+        "format": "Carousel 2 trang",
+        "hook": "Người nhà với nhau sao phải rõ ràng......",
+        "twist": "Chính cụm từ 'người một nhà' thường bị những kẻ thực dụng nhất dùng để ép bạn phải chịu đựng sự xâm phạm tài chính, xúc phạm danh dự và tước đoạt ranh giới cá nhân mà người ngoài không bao giờ dám làm với bạn.",
+        "mirror": "-", "deep": "-",
+        "caption": "Chuyên gia tâm lý Susan Forward nhấn mạnh trong 'Toxic Parents': Huyết thống không phải là giấy phép miễn trừ cho sự độc hại và bất công. Tình thân đích thực càng cần sự tôn trọng và ranh giới rõ ràng để không biến thành sự ký sinh cảm xúc. Yêu gia đình không có nghĩa là cho phép bất kỳ ai giẫm đạp lên phẩm giá của bạn. Bạn có dám thiết lập ranh giới tài chính và cảm xúc với người nhà?",
+        "hashtags": "#susanforward #giadinhdocthai #ranhgioi #phamdanghiviet #hiyuabyss",
+        "full_text": "Người nhà với nhau sao phải rõ ràng... Cụm từ thường bị kẻ thực dụng dùng để ép bạn chịu đựng sự xâm phạm tài chính và phẩm giá. Tình thân đích thực càng cần ranh giới sòng phẳng.",
+        "hours": "11:30 - 12:30", "schedule": "Thứ Ba", "concept": "Một cây cổ thụ rễ chằng chịt bóp nghẹt một mầm cây non đang cố vươn lên tìm ánh sáng mặt trời.",
+        "topic_code": "MORALITY"
+    },
+    {
+        "stt": 217, "id": "TXT-0217",
+        "title": "[Thế Kẹt Ranh Giới] Càng hiểu chuyện, người ta càng đối xử với bạn như một phương án dự phòng.",
+        "author": "Viktor Frankl",
+        "topic": "RANH GIỚI (Cái bẫy cứu rỗi & Sự làm hài lòng)",
+        "format": "Carousel 3 trang",
+        "hook": "Kẻ biết điều và ngoan ngoãn......",
+        "twist": "Luôn là người nhận được phần bánh ít nhất, bị hủy hẹn vào phút chót và bị đặt sau mọi ưu tiên khác, đơn giản vì người ta biết bạn 'sẽ không bao giờ nổi giận hay rời đi'.",
+        "mirror": "Sự bao dung không đi kèm giới hạn sẽ chỉ biến thành lời mời gọi cho sự khinh thường. Đừng trách người ta không trân trọng bạn; hãy tự hỏi tại sao bạn lại biến bản thân thành một món đồ luôn sẵn có vô điều kiện.",
+        "deep": "-",
+        "caption": "Triết gia hiện sinh Viktor Frankl nhắc nhở: Khi bạn hạ thấp giá trị của mình để được chấp nhận, bạn đánh mất cả sự chấp nhận lẫn chính bản thân mình. Người 'quá hiểu chuyện' thường là người đau đớn nhất vì họ tự tước đoạt quyền được đòi hỏi sự công bằng. Hãy ngừng làm hài lòng thiên hạ và bắt đầu tôn trọng nhu cầu của mình. Bạn có đang nhận phần thiệt thòi chỉ vì mình quá hiểu chuyện?",
+        "hashtags": "#viktorfrankl #hieuchuyen #giatricuatoi #ranhgioi #hiyuabyss",
+        "full_text": "Kẻ biết điều luôn nhận phần ít nhất... Bị hủy hẹn và xếp sau mọi ưu tiên vì người ta biết bạn 'sẽ không giận'. Bao dung không giới hạn là lời mời gọi cho sự khinh thường.",
+        "hours": "19:00 - 20:00", "schedule": "Thứ Tư", "concept": "Chiếc ô cũ rách nát để ngoài góc cửa, chỉ được cầm lấy khi trời giông bão rồi lại vứt xó khi trời quang.",
+        "topic_code": "MORALITY"
+    },
+    {
+        "stt": 218, "id": "TXT-0218",
+        "title": "[Thế Kẹt Ranh Giới] Thấu hiểu cho tất cả mọi người, trừ chính bản thân mình.",
+        "author": "Kristin Neff",
+        "topic": "RANH GIỚI (Cái bẫy cứu rỗi & Sự làm hài lòng)",
+        "format": "Single-Punch (1 trang)",
+        "hook": "Bạn luôn tìm ra lý do để bao biện cho sự tệ bạc của người khác, nhưng lại không tìm nổi một lý do để tha thứ cho sự mệt mỏi và kiệt sức của chính tâm hồn mình.",
+        "twist": "-", "mirror": "-", "deep": "-",
+        "caption": "Tiến sĩ Kristin Neff, người tiên phong nghiên cứu về Tự Trắc Ẩn (Self-Compassion), chỉ ra nghịch lý: Những người giàu lòng nhân ái nhất với thế giới bên ngoài lại thường là những kẻ bạo chúa tàn nhẫn nhất với bản thân. Lòng trắc ẩn không có chỗ cho chính bạn là một lòng trắc ẩn què quặt. Hãy ôm lấy sự yếu đuối của mình trước khi cố chữa lành cho người khác. Bạn đã từng đối xử với mình dịu dàng như cách bạn đối xử với bạn bè?",
+        "hashtags": "#kristinneff #tutracan #yeuchinhminh #chualanh #hiyuabyss",
+        "full_text": "Bao biện cho sự tệ bạc của người khác nhưng không tha thứ cho sự kiệt sức của mình... Lòng trắc ẩn không dành cho bản thân là lòng trắc ẩn què quặt.",
+        "hours": "21:00 - 22:00", "schedule": "Thứ Năm", "concept": "Người thợ may đang vá những chiếc áo rách nát cho cả làng trong khi chiếc áo trên người mình trơ trụi rách bươm.",
+        "topic_code": "SELF_DECEPTION"
+    },
+    {
+        "stt": 219, "id": "TXT-0219",
+        "title": "[Thế Kẹt Ranh Giới] Khi lời từ chối của bạn làm ai đó tức giận, bạn biết mình đã làm đúng.",
+        "author": "Nedra Glover Tawwab",
+        "topic": "RANH GIỚI (Cái bẫy cứu rỗi & Sự làm hài lòng)",
+        "format": "Carousel 2 trang",
+        "hook": "Tại sao họ lại nổi điên khi bạn nói 'KHÔNG'?......",
+        "twist": "Bởi vì những người tức giận trước ranh giới của bạn chính là những kẻ trước giờ hưởng lợi nhiều nhất từ việc bạn không có ranh giới.",
+        "mirror": "-", "deep": "-",
+        "caption": "Tác giả cuốn 'Set Boundaries, Find Peace' Nedra Glover Tawwab khẳng định: Cơn thịnh nộ của người khác khi bạn từ chối không phải là bằng chứng bạn sai, mà là thước đo chính xác cho mức độ họ đã quen lợi dụng bạn. Đừng lùi bước trước sự giận dỗi độc hại đó. Ranh giới vững chắc chính là bài kiểm tra thanh lọc các mối quan hệ hiệu quả nhất. Bạn có dám giữ vững chữ 'KHÔNG' trước cơn giận của người khác?",
+        "hashtags": "#nedraglovertawwab #setboundaries #tuchoidunghcach #phamdanghiviet #hiyuabyss",
+        "full_text": "Tại sao họ nổi điên khi bạn nói 'KHÔNG'? Vì kẻ tức giận trước ranh giới chính là người trước giờ hưởng lợi nhiều nhất từ việc bạn không có ranh giới.",
+        "hours": "08:00 - 09:00", "schedule": "Thứ Sáu", "concept": "Một cánh cổng sắt kiên cố đóng lại trước mặt con sói hoang đang gầm gừ đòi xông vào khu vườn.",
+        "topic_code": "MORALITY"
+    },
+    {
+        "stt": 220, "id": "TXT-0220",
+        "title": "[Thế Kẹt Ranh Giới] Cái bẫy cứu rỗi: Cho đi nhiều hơn những gì mình có để đổi lấy cảm giác được cần đến.",
+        "author": "Stephen Karpman",
+        "topic": "RANH GIỚI (Cái bẫy cứu rỗi & Sự làm hài lòng)",
+        "format": "Carousel 3 trang",
+        "hook": "Bạn luôn có mặt để giải cứu người khác......",
+        "twist": "Nhưng sâu thẳm trong tiềm thức, bạn không giải cứu họ vì lòng tốt thuần khiết; bạn cần họ gặp nạn để chứng minh rằng bạn có giá trị và không bị bỏ rơi.",
+        "mirror": "Hội chứng Người Cứu Rỗi là một dạng ích kỷ tinh vi: Bạn tước đoạt cơ hội trưởng thành và tự chịu trách nhiệm của người khác để xoa dịu nỗi sợ vô dụng của chính bản ngã mình.",
+        "deep": "-",
+        "caption": "Mô hình Tam giác Drama của Karpman giải mã: Người cứu rỗi (Rescuer) vô thức nuôi dưỡng sự bất lực của Nạn nhân để duy trì quyền lực cảm xúc. Giúp đỡ chân chính là trao quyền cho người khác tự đứng trên đôi chân của họ, không phải biến họ thành kẻ ăn mày sự cứu rỗi của bạn. Hãy buông tay để người khác tự trưởng thành. Bạn đang giúp đỡ hay đang nghiện cảm giác được người khác cần đến?",
+        "hashtags": "#karpman #nguoicuuroi #bannoi #tuduyphanbien #hiyuabyss",
+        "full_text": "Luôn có mặt giải cứu người khác vì cần họ gặp nạn để chứng minh mình có giá trị. Hội chứng cứu rỗi tước đoạt cơ hội tự chịu trách nhiệm của đối phương để nuôi bản ngã.",
+        "hours": "20:00 - 21:00", "schedule": "Thứ Bảy", "concept": "Người lính cứu hỏa đứng trước ngọn lửa tự tay mình nhóm lên để chờ người khác đến cầu cứu.",
+        "topic_code": "EGO"
+    },
+    {
+        "stt": 221, "id": "TXT-0221",
+        "title": "[Thế Kẹt Ranh Giới] Sợ mất lòng người lạ hơn sợ tổn thương chính bản thân mình.",
+        "author": "Jean-Paul Sartre",
+        "topic": "RANH GIỚI (Cái bẫy cứu rỗi & Sự làm hài lòng)",
+        "format": "Single-Punch (1 trang)",
+        "hook": "Thật nực cười khi bạn có thể mỉm cười gật đầu với lời đòi hỏi vô lý của một người ngoài đường, rồi mang toàn bộ sự bực bội, kiệt sức và cay nghiệt về trút lên đầu những người thân yêu nhất.",
+        "twist": "-", "mirror": "-", "deep": "-",
+        "caption": "Triết gia Jean-Paul Sartre cảnh báo: Khi bạn để 'ánh nhìn của kẻ khác' trở thành thẩm phán định đoạt hành vi của mình, bạn đã biến cuộc đời thành một vở kịch hèn nhát. Lịch thiệp với người lạ nhưng tàn nhẫn với người thân là dấu hiệu của một nhân cách bị rách nát vì thèm khát sự chấp nhận xã hội. Hãy dành phần dịu dàng nhất cho những người xứng đáng nhất. Bạn có từng trút sự cáu gắt ngoài xã hội lên người thân trong nhà?",
+        "hashtags": "#sartre #hienxinh #nguoitha #ranhgioi #hiyuabyss",
+        "full_text": "Mỉm cười gật đầu với đòi hỏi vô lý của người ngoài rồi mang kiệt sức về trút lên người thân yêu. Nhân cách rách nát vì thèm khát sự công nhận xã hội.",
+        "hours": "12:00 - 13:00", "schedule": "Chủ Nhật", "concept": "Hai khuôn mặt trên cùng một chiếc đầu: một mặt cười rạng rỡ với đám đông, một mặt nhăn nhó cay độc quay vào bóng tối.",
+        "topic_code": "MASK"
+    },
+    {
+        "stt": 222, "id": "TXT-0222",
+        "title": "[Thế Kẹt Ranh Giới] Cái giá đắt đỏ của những sự giúp đỡ không sòng phẳng.",
+        "author": "Seneca",
+        "topic": "RANH GIỚI (Cái bẫy cứu rỗi & Sự làm hài lòng)",
+        "format": "Carousel 2 trang",
+        "hook": "Ân huệ miễn phí là thứ đắt đỏ nhất trên đời......",
+        "twist": "Bởi vì những thứ bạn không trả bằng tiền phẳng phiu sẽ bị đòi lại bằng sự phục tùng, quyền phán xét cuộc sống của bạn và sự nhượng bộ phẩm giá vô tận.",
+        "mirror": "-", "deep": "-",
+        "caption": "Triết gia Khắc kỷ Seneca trong 'On Benefits' răn dạy: Nhận một ân huệ tồi tệ đồng nghĩa với việc tự nguyện bán đi tự do của linh hồn. Hãy sòng phẳng trong mọi giao dịch và dũng cảm từ chối những món quà kèm theo chiếc thòng lọng vô hình. Tự lập trong gian khó quý giá hơn ngàn lần sự đủ đầy dưới sự ban phát kẻ cả. Bạn có từng phải trả giá đắt cho một ân huệ tưởng chừng 'miễn phí'?",
+        "hashtags": "#seneca #khackymotcachsong #songphang #tudotutrong #hiyuabyss",
+        "full_text": "Ân huệ miễn phí là thứ đắt đỏ nhất trần gian... Những gì không trả bằng tiền phẳng phiu sẽ bị đòi bằng sự phục tùng và nhượng bộ phẩm giá vô tận.",
+        "hours": "20:00 - 21:00", "schedule": "Thứ Hai", "concept": "Một chiếc móc câu cá bằng vàng rực rỡ lấp lánh chìm trong dòng nước xanh trong.",
+        "topic_code": "MORALITY"
+    },
+    {
+        "stt": 223, "id": "TXT-0223",
+        "title": "[Thế Kẹt Ranh Giới] Giải thích ranh giới của mình cho người cố tình không muốn hiểu.",
+        "author": "Epictetus",
+        "topic": "RANH GIỚI (Cái bẫy cứu rỗi & Sự làm hài lòng)",
+        "format": "Carousel 3 trang",
+        "hook": "Bạn càng giải thích dài dòng......",
+        "twist": "Kẻ xâm phạm ranh giới càng xem đó là dấu hiệu của sự do dự và sẽ dùng chính lời giải thích của bạn để bẻ gãy quyết định của bạn.",
+        "mirror": "Ranh giới cá nhân là một thông báo, không phải một cuộc đàm phán xin phép. Bạn không cần sự đồng ý hay phê chuẩn của kẻ khác để bảo vệ cuộc đời mình. Một chữ 'KHÔNG' dứt khoát không cần kèm theo lời phân bua.",
+        "deep": "-",
+        "caption": "Bậc thầy Khắc kỷ Epictetus khẳng định: Quyền kiểm soát duy nhất thuộc về tâm trí và hành vi của chính bạn. Khi bạn phân bua giải thích tại sao mình có ranh giới, bạn đã vô tình trao quyền phán quyết cho đối phương. Thiết lập ranh giới trong điềm tĩnh và kiên định, không cần tranh cãi. Bạn có hay cảm thấy phải xin lỗi mỗi khi từ chối ai đó?",
+        "hashtags": "#epictetus #khackyluatsong #ranhgioithongbao #tuchoi #hiyuabyss",
+        "full_text": "Càng giải thích dài dòng, kẻ xâm phạm càng xem đó là sự do dự để bẻ gãy bạn. Ranh giới là thông báo bảo vệ bản thân, không phải cuộc đàm phán xin phép.",
+        "hours": "07:30 - 08:30", "schedule": "Thứ Ba", "concept": "Bức tường thành đá hoa cương kiên cố không có cửa sổ, đứng sừng sững trước những tiếng gào thét của sóng biển.",
+        "topic_code": "MORALITY"
+    },
+    {
+        "stt": 224, "id": "TXT-0224",
+        "title": "[Thế Kẹt Ranh Giới] Đứng trước sự bất công: Lên tiếng thì bị dán nhãn gây rối, im lặng thì đồng lõa.",
+        "author": "Hannah Arendt",
+        "topic": "RANH GIỚI (Cái bẫy cứu rỗi & Sự làm hài lòng)",
+        "format": "Carousel 2 trang",
+        "hook": "Khi bạn chỉ ra con voi trong phòng khách......",
+        "twist": "Mọi người sẽ không biết ơn bạn vì đã nói ra sự thật; họ sẽ tức giận với bạn vì bạn đã phá vỡ sự bình yên giả tạo mà họ đang cố bám víu.",
+        "mirror": "-", "deep": "-",
+        "caption": "Nhà triết học chính trị Hannah Arendt cảnh báo: Sự thỏa hiệp và im lặng của những người biết điều chính là mảnh đất màu mỡ nhất cho cái xấu sinh sôi nảy nở. Người lên tiếng đầu tiên luôn phải chịu gạch đá của tập thể an phận. Nhưng sống có lương tri đòi hỏi dũng khí chấp nhận bị hiểu lầm. Bạn có dám lên tiếng bảo vệ lẽ phải khi tất cả mọi người đều chọn im lặng?",
+        "hashtags": "#hannaharendt #suthat #luongtri #dungkhicapnhan #hiyuabyss",
+        "full_text": "Khi chỉ ra con voi trong phòng, người ta không biết ơn mà tức giận vì bạn phá vỡ bình yên giả tạo. Sự thỏa hiệp của người an phận là mảnh đất cho cái xấu sinh sôi.",
+        "hours": "19:30 - 20:30", "schedule": "Thứ Tư", "concept": "Một ngọn nến le lói được thắp sáng giữa căn phòng tối om, mọi người đưa tay che mắt khó chịu vì ánh sáng.",
+        "topic_code": "TRUTH"
+    },
+    {
+        "stt": 225, "id": "TXT-0225",
+        "title": "[Thế Kẹt Ranh Giới] Cắt đứt một mối quan hệ độc hại bị xem là tàn nhẫn và cạn tình.",
+        "author": "Marcus Aurelius",
+        "topic": "RANH GIỚI (Cái bẫy cứu rỗi & Sự làm hài lòng)",
+        "format": "Carousel 3 trang",
+        "hook": "Người ta gọi bạn là kẻ cạn tình......",
+        "twist": "Vì họ chỉ nhìn thấy khoảnh khắc bạn dứt khoát quay lưng bước đi, mà không hề nhìn thấy hàng trăm lần bạn đã kiên nhẫn tha thứ và bị bòn rút đến kiệt cùng.",
+        "mirror": "Rời bỏ một mối quan hệ độc hại không phải là sự phản bội hay thù hận; đó là hành động cứu rỗi duy nhất mà bạn bắt buộc phải làm để bảo vệ những mảnh vỡ phẩm giá cuối cùng của linh hồn mình.",
+        "deep": "-",
+        "caption": "Hoàng đế La Mã Marcus Aurelius từng viết trong 'Trầm Tưởng': 'Hãy dứt khoát loại bỏ những thứ làm ô uế tâm hồn bạn.' Đừng để những lời phán xét về sự 'cạn tình' khiến bạn quay đầu lại nơi từng làm bạn rướm máu. Rời đi trong im lặng và dứt khoát là sự từ bi lớn nhất dành cho chính bạn. Bạn đã bao giờ phải mang tiếng 'cạn tình' để cứu lấy cuộc đời mình?",
+        "hashtags": "#marcusaurelius #tramtuong #dutkhoat #ranhgioiphagiat #hiyuabyss",
+        "full_text": "Người ta gọi bạn là kẻ cạn tình vì chỉ thấy lúc bạn quay lưng, không thấy trăm lần bạn kiên nhẫn bị bòn rút. Rời bỏ quan hệ độc hại là hành động tự cứu rỗi phẩm giá.",
+        "hours": "20:00 - 21:00", "schedule": "Thứ Năm", "concept": "Một con tàu nhổ neo cắt đứt dây thừng buộc vào bờ đá hoang tàn, căng buồm hướng về đại dương bình minh.",
+        "topic_code": "FREEDOM"
+    },
+    {
+        "stt": 226, "id": "TXT-0226",
+        "title": "[Thế Kẹt Ranh Giới] Tự do tối thượng: Nói 'KHÔNG' mà không cần kèm theo lời biện hộ dài dòng.",
+        "author": "Brené Brown",
+        "topic": "RANH GIỚI (Cái bẫy cứu rỗi & Sự làm hài lòng)",
+        "format": "Single-Punch (1 trang)",
+        "hook": "Đỉnh cao của sự độc lập cảm xúc là khi bạn có thể nhìn thẳng vào mắt đối phương, nhẹ nhàng nói 'Tôi không tiện giúp chuyện này' mà trong lòng không còn một gợn sóng áy náy hay tội lỗi.",
+        "twist": "-", "mirror": "-", "deep": "-",
+        "caption": "Tiến sĩ Brené Brown khẳng định: Dám đặt ranh giới là biểu hiện cao nhất của lòng dũng cảm và tính chân thật. Khi bạn ngừng xin lỗi vì đã bảo vệ năng lượng của mình, bạn bắt đầu sống cuộc đời của một người trưởng thành thực sự. Chữ 'Không' là một câu hoàn chỉnh, không cần thêm dấu phẩy phân bua. Bạn đã đạt đến sự tự do khi nói lời từ chối chưa?",
+        "hashtags": "#brenebrown #ranhgioi #tudocambac #phamdanghiviet #hiyuabyss",
+        "full_text": "Nói 'KHÔNG' mà không kèm lời biện hộ dài dòng... Đỉnh cao độc lập cảm xúc là từ chối dứt khoát mà lòng không gợn sóng áy náy hay tội lỗi.",
+        "hours": "12:00 - 13:00", "schedule": "Thứ Sáu", "concept": "Một bàn tay buông lỏng sợi dây xích rỉ sét xuống nền đá hoa cương, ánh sáng mặt trời chiếu rọi bàn tay mở rộng.",
+        "topic_code": "FREEDOM"
+    },
+
+    # =========================================================================
+    # NHÓM C: ẢO TƯỞNG ĐỌC TÂM TRÍ & KỲ VỌNG NGẦM (12 BÀI · STT 227 - 238)
+    # =========================================================================
+    {
+        "stt": 227, "id": "TXT-0227",
+        "title": "[Ảo Tưởng Ngầm] 'Nếu thật sự yêu mình, họ đã tự biết phải làm gì': Bẫy đọc tâm trí hủy diệt tình cảm.",
+        "author": "Aaron T. Beck",
+        "topic": "KỲ VỌNG NGẦM (Bẫy đọc tâm trí & Sự giận dỗi)",
+        "format": "Carousel 3 trang",
+        "hook": "Nếu họ thật sự quan tâm mình......",
+        "twist": "Thì họ đã tự biết phải cư xử ra sao mà không cần mình phải mở miệng nhắc nhở. Đây là ảo tưởng ngây thơ nhất nhưng có sức công phá tàn khốc nhất trong mọi mối quan hệ.",
+        "mirror": "Không ai có khả năng đọc được suy nghĩ của bạn. Im lặng và kỳ vọng là cách nhanh nhất để biến người vô tội thành thủ phạm. Đòi hỏi sự tinh tế nhưng từ chối sự rõ ràng chỉ là biểu hiện của một đứa trẻ đang giận dỗi đội lốt người lớn.",
+        "deep": "-",
+        "caption": "Cha đẻ liệu pháp nhận thức Aaron Beck xếp 'Đọc tâm trí' (Mind Reading) vào nhóm biến dạng nhận thức nguy hiểm nhất. Bạn đặt ra một bài kiểm tra bí mật, không cho đối phương biết đề bài, rồi tức giận khi họ thi trượt. Muốn được yêu thương đúng cách, hãy học cách nói thẳng nhu cầu của mình. Bạn có đang bắt người bên cạnh phải chơi trò đoán tâm trí?",
+        "hashtags": "#aaronbeck #mindreading #giaotiep #kyvongngam #hiyuabyss",
+        "full_text": "Nếu thật sự yêu thì đã tự biết phải làm gì... Ảo tưởng tàn khốc biến người vô tội thành thủ phạm. Đòi hỏi sự tinh tế nhưng từ chối sự rõ ràng là biểu hiện trẻ con đội lốt người lớn.",
+        "hours": "20:00 - 21:00", "schedule": "Thứ Bảy", "concept": "Hai người đứng quay lưng nhau, mỗi người nhìn vào một cuốn sách mở ra những trang giấy trắng tinh không có chữ.",
+        "topic_code": "SELF_DECEPTION"
+    },
+    {
+        "stt": 228, "id": "TXT-0228",
+        "title": "[Ảo Tưởng Ngầm] Thử lòng người khác: Sự bất an tự tạo ra bi kịch mà mình lo sợ.",
+        "author": "Robert Leahy",
+        "topic": "KỲ VỌNG NGẦM (Bẫy đọc tâm trí & Sự giận dỗi)",
+        "format": "Carousel 2 trang",
+        "hook": "Bạn giăng ra những chiếc bẫy thử lòng......",
+        "twist": "Giả vờ biến mất, cố tình gây sự hoặc thử thách lòng trung thành; nhưng bạn quên mất rằng: Lòng tin một khi đã đem ra thử nghiệm thì kết quả luôn là sự đổ vỡ, bởi bản thân sự thử lòng đã là một hành vi phản bội niềm tin.",
+        "mirror": "-", "deep": "-",
+        "caption": "Nhà tâm lý học Robert Leahy phân tích: Kẻ hay thử lòng người khác thực chất đang bị giằng xé bởi nỗi bất an sâu sắc về giá trị bản thân. Bạn liên tục đẩy người ta ra xa để xem họ có đuổi theo hay không, cho đến khi họ thực sự mệt mỏi và bỏ đi. Đừng tự tạo ra lời tiên tri tự ứng nghiệm cho sự chia lìa. Bạn có từng thử lòng ai đó rồi nhận về sự thất vọng?",
+        "hashtags": "#robertleahy #thulong #batannoidoi #longtin #hiyuabyss",
+        "full_text": "Giăng bẫy thử lòng người khác... Lòng tin đem ra thử nghiệm luôn đổ vỡ vì bản thân việc thử lòng đã là phản bội niềm tin. Đừng tự tạo ra bi kịch mình lo sợ.",
+        "hours": "21:00 - 22:00", "schedule": "Chủ Nhật", "concept": "Chiếc bình pha lê tinh xảo bị gõ búa thử độ bền và nứt toác từng đường dài rỉ máu.",
+        "topic_code": "SELF_DECEPTION"
+    },
+    {
+        "stt": 229, "id": "TXT-0229",
+        "title": "[Ảo Tưởng Ngầm] Giận dỗi và đóng sầm cửa: Sự thoái lui về cơ chế trẻ con khi mâu thuẫn.",
+        "author": "Sigmund Freud",
+        "topic": "KỲ VỌNG NGẦM (Bẫy đọc tâm trí & Sự giận dỗi)",
+        "format": "Carousel 3 trang",
+        "hook": "Mỗi khi có điều không vừa ý......",
+        "twist": "Bạn chọn cách đóng sầm cửa, cắt đứt liên lạc, nhịn ăn hoặc tỏ thái độ hằn học thay vì ngồi xuống nói chuyện như hai con người trưởng thành có lý trí.",
+        "mirror": "Đó là cơ chế thoái lui (Regression) tâm lý: Bạn vô thức quay trở lại hành vi của đứa trẻ 5 tuổi nằm lăn ra khóc để bắt bố mẹ phải nhượng bộ. Nhưng trong thế giới của người lớn, sự dỗi hờn không mang lại tình yêu, nó chỉ tích lũy sự mệt mỏi và khinh thường.",
+        "deep": "-",
+        "caption": "Sigmund Freud chỉ ra rằng: Thoái lui tâm lý là cơ chế phòng vệ phổ biến khi bản ngã không đủ sức chịu đựng xung đột. Trừng phạt đối phương bằng sự giận dỗi trẻ con chỉ chứng minh sự non nớt trong năng lực cảm xúc của bạn. Muốn được tôn trọng, trước hết hãy học cách giao tiếp có phẩm giá. Bạn đối diện mâu thuẫn bằng lý lẽ hay bằng sự giận dỗi?",
+        "hashtags": "#freud #regression #truongthanhcamxuc #giaotiep #hiyuabyss",
+        "full_text": "Đóng sầm cửa, cắt liên lạc khi không vừa ý... Cơ chế thoái lui về đứa trẻ 5 tuổi bắt người khác nhượng bộ. Trong thế giới người lớn, sự dỗi hờn chỉ tạo ra mệt mỏi và khinh thường.",
+        "hours": "11:30 - 12:30", "schedule": "Thứ Hai", "concept": "Cánh cửa gỗ dày đóng sầm lại trong hành lang tối, bên ngoài là bóng người đứng bất lực buông thõng hai tay.",
+        "topic_code": "EGO"
+    },
+    {
+        "stt": 230, "id": "TXT-0230",
+        "title": "[Ảo Tưởng Ngầm] So sánh hiện thực đời thường với phiên bản hoàn hảo trên mạng xã hội.",
+        "author": "Alain de Botton",
+        "topic": "KỲ VỌNG NGẦM (Bẫy đọc tâm trí & Sự giận dỗi)",
+        "format": "Carousel 2 trang",
+        "hook": "Bạn nhìn cuộc đời của người khác qua màn hình điện thoại......",
+        "twist": "Rồi quay sang nhìn người bên cạnh mình với sự thất vọng và cay đắng; bạn đang so sánh những khoảnh khắc hậu trường chân thực đầy bất toàn của mình với những thước phim được dàn dựng tỉ mỉ của người khác.",
+        "mirror": "-", "deep": "-",
+        "caption": "Triết gia Alain de Botton trong 'Status Anxiety' viết: Sự đố kỵ và thất vọng hiện đại sinh ra từ việc chúng ta nhìn thấy kết quả hoàn hảo được cắt gọt của người lạ nhưng lại sống chung với những vụn vặt trần trụi của chính mình. Mạng xã hội là một triển lãm phù phiếm. Trân trọng những điều bình dị đang hiện diện là chìa khóa duy nhất của bình yên. Bạn có từng để mạng xã hội làm xói mòn tình cảm của mình?",
+        "hashtags": "#alaindebotton #statusanxiety #songthat #binhyen #hiyuabyss",
+        "full_text": "Nhìn người khác qua màn hình rồi thất vọng với người bên cạnh... Bạn đang so sánh hậu trường chân thực của mình với thước phim dàn dựng của thiên hạ.",
+        "hours": "20:00 - 21:00", "schedule": "Thứ Ba", "concept": "Một khung tranh mạ vàng lộng lẫy treo trên tường nhưng bên trong là một tấm gương rạn vỡ phản chiếu thực tế u ám.",
+        "topic_code": "ENVY"
+    },
+    {
+        "stt": 231, "id": "TXT-0231",
+        "title": "[Ảo Tưởng Ngầm] Mong đợi người yêu bù đắp cho những tổn thương tuổi thơ của mình.",
+        "author": "John Bowlby",
+        "topic": "KỲ VỌNG NGẦM (Bẫy đọc tâm trí & Sự giận dỗi)",
+        "format": "Carousel 3 trang",
+        "hook": "Bạn bước vào tình yêu với một trái tim rách nát......",
+        "twist": "Và kỳ vọng đối phương phải đóng vai vừa là người tình, vừa là người cha, người mẹ hoàn hảo để bù đắp cho mọi thiếu thốn tình cảm thuở ấu thơ của bạn.",
+        "mirror": "Người bạn yêu không phải là bác sĩ tâm lý hay đấng cứu thế. Đặt gánh nặng chữa lành của mình lên vai một con người bình thường là cách nhanh nhất để bóp chết tình cảm của cả hai. Tự mình ôm lấy đứa trẻ bên trong mới là con đường chữa lành duy nhất.",
+        "deep": "-",
+        "caption": "Thuyết gắn bó của John Bowlby chỉ ra: Những người mang vết thương tuổi thơ chưa lành thường vô thức đòi hỏi đối phương phải là một bến đỗ an toàn tuyệt đối không tì vết. Nhưng không ai có thể làm cha mẹ của bạn lần thứ hai. Hãy tự chịu trách nhiệm cho vết thương của mình thay vì biến người yêu thành con nợ cảm xúc. Bạn đang yêu họ hay đang tìm kiếm sự cứu rỗi từ họ?",
+        "hashtags": "#johnbowlby #thuyetganbo #chualanh #tonthuongtuoitho #hiyuabyss",
+        "full_text": "Kỳ vọng người yêu bù đắp thiếu thốn thuở ấu thơ... Người yêu không phải đấng cứu thế. Đặt gánh nặng chữa lành lên vai người khác sẽ bóp chết mối quan hệ.",
+        "hours": "20:30 - 21:30", "schedule": "Thứ Tư", "concept": "Một đứa trẻ con co ro dưới bóng cây râm mát, bóng đổ của đứa trẻ lại là hình dáng một người lớn cúi đầu buồn bã.",
+        "topic_code": "SHADOW"
+    },
+    {
+        "stt": 232, "id": "TXT-0232",
+        "title": "[Ảo Tưởng Ngầm] Bạo lực lạnh: Dùng sự im lặng để trừng phạt lỗi lầm của người khác.",
+        "author": "Harriet Lerner",
+        "topic": "KỲ VỌNG NGẦM (Bẫy đọc tâm trí & Sự giận dỗi)",
+        "format": "Single-Punch (1 trang)",
+        "hook": "Bạo lực bằng nắm đấm để lại vết bầm tím trên da thịt; nhưng bạo lực bằng sự lạnh nhạt và phớt lờ để lại vết thương hoại tử sâu hoắm trong lòng tự trọng của con người.",
+        "twist": "-", "mirror": "-", "deep": "-",
+        "caption": "Bác sĩ Harriet Lerner gọi Silent Treatment là 'đòn trừng phạt tàn nhẫn nhất': Bạn biến sự hiện diện của đối phương thành vô hình, buộc họ phải sống trong cảm giác tội lỗi và hoang mang cùng cực để van xin sự tha thứ. Đây không phải sự điềm tĩnh, đây là sự tàn nhẫn đội lốt im lặng. Hãy dũng cảm đối thoại hoặc buông tay dứt khoát. Bạn đã từng là nạn nhân hay thủ phạm của những cuộc chiến tranh lạnh kéo dài?",
+        "hashtags": "#silenttreatment #baoluclanh #harrietlerner #tonthuong #hiyuabyss",
+        "full_text": "Bạo lực nắm đấm để lại vết bầm trên da, bạo lực bằng sự phớt lờ lạnh nhạt để lại hoại tử sâu hoắm trong lòng tự trọng con người.",
+        "hours": "19:00 - 20:00", "schedule": "Thứ Năm", "concept": "Một dòng sông băng lạnh lẽo trôi giữa hai mỏm đá nhọn hoắt, không một ngọn cỏ nào có thể sinh sôi.",
+        "topic_code": "MANIPULATION"
+    },
+    {
+        "stt": 233, "id": "TXT-0233",
+        "title": "[Ảo Tưởng Ngầm] Hiệu ứng tâm điểm: Nghĩ rằng cả thế giới đang săm soi lỗi lầm của mình.",
+        "author": "Thomas Gilovich",
+        "topic": "KỲ VỌNG NGẦM (Bẫy đọc tâm trí & Sự giận dỗi)",
+        "format": "Carousel 2 trang",
+        "hook": "Bạn lo sợ đến mất ngủ vì một câu lỡ lời hay một sai sót nhỏ......",
+        "twist": "Nhưng sự thật giải thoát là: Không có ai đang quan sát bạn kỹ đến thế đâu; mỗi người đều đang bận rộn đến phát điên để lo lắng cho những nỗi bất an và chiếc đèn sân khấu của chính họ.",
+        "mirror": "-", "deep": "-",
+        "caption": "Thí nghiệm tâm lý về Spotlight Effect của Thomas Gilovich chứng minh: Chúng ta luôn phóng đại mức độ người khác chú ý đến ngoại hình và sai sót của mình lên gấp nhiều lần thực tế. Nhận ra sự thật này mang lại sự tự do tuyệt đối: Bạn không phải trung tâm của vũ trụ, hãy thở phào và sống đúng với mình. Bạn có hay bị dằn vặt bởi những sơ suất nhỏ nhặt mà người khác có khi đã quên ngay sau 5 phút?",
+        "hashtags": "#spotlighteffect #thomasgilovich #tudonoitam #loau #hiyuabyss",
+        "full_text": "Lo sợ mất ngủ vì một câu lỡ lời... Sự thật giải thoát: không ai soi bạn kỹ thế đâu, ai cũng đang bận phát điên với nỗi bất an của chính họ.",
+        "hours": "08:00 - 09:00", "schedule": "Thứ Sáu", "concept": "Một người đứng dưới ánh đèn sân khấu chói lòa nhưng khán phòng phía dưới hoàn toàn trống rỗng không một bóng người.",
+        "topic_code": "EGO"
+    },
+    {
+        "stt": 234, "id": "TXT-0234",
+        "title": "[Ảo Tưởng Ngầm] Lỗi quy kết cơ bản: Nghiêm khắc với người khác nhưng nuông chiều chính mình.",
+        "author": "Lee Ross",
+        "topic": "KỲ VỌNG NGẦM (Bẫy đọc tâm trí & Sự giận dỗi)",
+        "format": "Carousel 3 trang",
+        "hook": "Khi người khác đi trễ......",
+        "twist": "Bạn kết luận họ là kẻ vô trách nhiệm và thiếu tôn trọng; nhưng khi chính bạn đi trễ, bạn lại đổ lỗi cho kẹt xe, trời mưa và hàng trăm hoàn cảnh khách quan bất khả kháng.",
+        "mirror": "Đó là Lỗi quy kết cơ bản (Fundamental Attribution Error): Chúng ta phán xét người khác bằng hành vi, nhưng lại phán xét chính mình bằng ý định tốt đẹp trong đầu. Hãy học cách bao dung với sơ suất của người khác như cách bạn tự tha thứ cho mình.",
+        "deep": "-",
+        "caption": "Nhà tâm lý học Lee Ross chỉ ra chiếc bẫy tiêu chuẩn kép trong nhận thức: Con người luôn gán sai lầm của người khác cho bản chất đạo đức tồi tệ, trong khi coi sai lầm của mình chỉ là tai nạn do hoàn cảnh. Muốn sống công tâm, hãy đặt mình vào vị trí của người đối diện trước khi buông lời phán xét. Bạn có từng bất công khi đánh giá người khác khắt khe hơn chính mình?",
+        "hashtags": "#leeross #tieuchuankep #nhanthuc #baodung #hiyuabyss",
+        "full_text": "Người khác đi trễ bạn bảo họ vô trách nhiệm, mình đi trễ bạn đổ lỗi kẹt xe. Phán xét người khác bằng hành vi nhưng phán xét mình bằng ý định tốt đẹp.",
+        "hours": "20:00 - 21:00", "schedule": "Thứ Bảy", "concept": "Một chiếc kính lúp soi to vết xước nhỏ trên tay người khác trong khi cánh tay mình đang rỉ máu lại được giấu sau lưng.",
+        "topic_code": "DOUBLE_STANDARD"
+    },
+    {
+        "stt": 235, "id": "TXT-0235",
+        "title": "[Ảo Tưởng Ngầm] Chờ đợi một lời xin lỗi hoàn hảo trước khi chịu buông bỏ oán hận.",
+        "author": "Arthur Schopenhauer",
+        "topic": "KỲ VỌNG NGẦM (Bẫy đọc tâm trí & Sự giận dỗi)",
+        "format": "Carousel 2 trang",
+        "hook": "Bạn tự nhủ sẽ không bao giờ tha thứ cho đến khi kẻ đó phải hối hận và quỳ gối xin lỗi......",
+        "twist": "Nhưng kẻ làm tổn thương bạn có thể đã quên chuyện đó từ lâu và đang vui vẻ sống tiếp, trong khi bạn tự nguyện cầm hòn than hồng hừng hực lửa với hy vọng ném vào họ, nhưng người duy nhất bị bỏng rát tay chính là bạn.",
+        "mirror": "-", "deep": "-",
+        "caption": "Arthur Schopenhauer răn dạy về sự tha thứ: Tha thứ không phải là biện minh cho hành động sai trái của kẻ khác, mà là tự cởi trói cho tâm hồn mình khỏi chiếc xiềng xích oán hận. Đừng để kẻ bạn ghét tiếp tục kiểm soát tâm trạng và giấc ngủ của bạn mỗi đêm. Buông bỏ là món quà bạn dành cho chính bạn, không phải cho họ. Bạn có đang giữ mối oán hận nào khiến lòng mình nặng trĩu?",
+        "hashtags": "#schopenhauer #thathu #buongbo #binhthannoitam #hiyuabyss",
+        "full_text": "Chờ đợi kẻ tổn thương mình hối hận xin lỗi... Tha thứ không phải biện minh cho kẻ xấu mà là tự cởi trói cho tâm hồn khỏi chiếc xích xiềng oán hận.",
+        "hours": "12:00 - 13:00", "schedule": "Chủ Nhật", "concept": "Một bàn tay nắm chặt một cục than hồng bốc khói nghi ngút, máu và tro tàn rơi lả tả xuống sàn đá.",
+        "topic_code": "SUFFERING"
+    },
+    {
+        "stt": 236, "id": "TXT-0236",
+        "title": "[Ảo Tưởng Ngầm] Đặt toàn bộ hạnh phúc của mình lên vai một con người bất toàn.",
+        "author": "Erich Fromm",
+        "topic": "KỲ VỌNG NGẦM (Bẫy đọc tâm trí & Sự giận dỗi)",
+        "format": "Single-Punch (1 trang)",
+        "hook": "Bi kịch lớn nhất của một đời người là biến sự hiện diện của một ai đó thành điều kiện duy nhất để mình có thể thở và mỉm cười; bạn đang biến tình yêu thành một gánh nặng ngột ngạt mà không bờ vai trần tục nào có thể gánh vác nổi.",
+        "twist": "-", "mirror": "-", "deep": "-",
+        "caption": "Erich Fromm trong 'Nghệ thuật yêu' phân biệt: Tình yêu chưa trưởng thành nói 'Tôi yêu bạn vì tôi cần bạn'; tình yêu trưởng thành nói 'Tôi cần bạn vì tôi yêu bạn'. Khi bạn trao toàn bộ chìa khóa niềm vui của mình cho người khác giữ, bạn đã tự biến mình thành con tin cảm xúc. Hãy là một cá thể trọn vẹn trước khi hòa nhập vào tình yêu. Bạn có đang phụ thuộc cảm xúc vào một ai đó quá nhiều?",
+        "hashtags": "#erichfromm #yeutruongthanh #doclapcamxuc #hanhphucnoitai #hiyuabyss",
+        "full_text": "Biến sự hiện diện của người khác thành điều kiện duy nhất để mình có thể cười... Bạn biến tình yêu thành gánh nặng ngột ngạt mà không bờ vai nào gánh nổi.",
+        "hours": "20:30 - 21:30", "schedule": "Thứ Hai", "concept": "Hai cái cây cổ thụ đứng song song cạnh nhau, cành lá giao nhau trên trời cao nhưng rễ cây cắm sâu độc lập dưới lòng đất.",
+        "topic_code": "LOVE"
+    },
+    {
+        "stt": 237, "id": "TXT-0237",
+        "title": "[Ảo Tưởng Ngầm] Nhìn thấu lỗi sai của người khác nhưng mù quáng trước cái tôi của chính mình.",
+        "author": "Daniel Kahneman",
+        "topic": "KỲ VỌNG NGẦM (Bẫy đọc tâm trí & Sự giận dỗi)",
+        "format": "Carousel 3 trang",
+        "hook": "Bạn có thể chỉ ra vanh vách mọi điểm mù tâm lý của đồng nghiệp, bạn bè và người yêu......",
+        "twist": "Nhưng khi ai đó nhẹ nhàng góp ý một sơ suất của bạn, bản ngã lập tức dựng lên hàng rào phòng thủ xù lông nhím và coi đó là một sự xúc phạm danh dự cá nhân.",
+        "mirror": "Đó là Vết mù thiên kiến (Bias Blind Spot): Trí tuệ chỉ thực sự có giá trị khi nó được dùng như một chiếc gương để tự soi rọi bóng tối bên trong mình, thay vì chiếc kính hiển vi chỉ để soi mói khuyết điểm của thiên hạ.",
+        "deep": "-",
+        "caption": "Nobel kinh tế Daniel Kahneman trong 'Thinking, Fast and Slow' khẳng định: Con người dễ dàng phát hiện sự phi lý của người khác nhưng cực kỳ mù quáng trước sự thiên vị của chính mình. Người thực sự thông thái là người dám hoài nghi những xác tín vững chắc nhất trong đầu mình. Dũng cảm đón nhận lời phê bình là khởi đầu của trí tuệ. Bạn phản ứng thế nào khi bị người khác chỉ ra lỗi sai?",
+        "hashtags": "#danielkahneman #biasblindspot #tuduyphanbien #khiemnnhuong #hiyuabyss",
+        "full_text": "Chỉ ra vanh vách lỗi của thiên hạ nhưng xù lông nhím khi bị góp ý... Trí tuệ chỉ có giá trị khi dùng làm gương tự soi, thay vì kính hiển vi soi mói khuyết điểm người khác.",
+        "hours": "19:00 - 20:00", "schedule": "Thứ Ba", "concept": "Người thợ chế tác kính đeo một cặp kính đen kịt nhưng liên tục mài giũa những chiếc kính sáng loáng cho người khác.",
+        "topic_code": "EGO"
+    },
+    {
+        "stt": 238, "id": "TXT-0238",
+        "title": "[Ảo Tưởng Ngầm] Dám yêu một con người thật với những vết nứt, thay vì yêu một ảo ảnh hoàn hảo.",
+        "author": "Carl Jung",
+        "topic": "KỲ VỌNG NGẦM (Bẫy đọc tâm trí & Sự giận dỗi)",
+        "format": "Carousel 2 trang",
+        "hook": "Bạn thất vọng vì đối phương không hoàn hảo như ngày đầu gặp gỡ?......",
+        "twist": "Họ chưa bao giờ thay đổi; thứ thay đổi duy nhất là chiếc kính phóng chiếu (Projection) màu hồng mà bạn tự đeo lên mắt mình đã bắt đầu phai nhạt, để lộ ra một con người bằng xương bằng thịt với đầy đủ những vết nứt đời thường.",
+        "mirror": "-", "deep": "-",
+        "caption": "Carl Jung khẳng định: Tình yêu chỉ thực sự bắt đầu khi sự phóng chiếu ảo ảnh sụp đổ. Yêu một vị thần tượng trong tưởng tượng thì rất dễ, nhưng dám ôm lấy một con người bất toàn với những vụng về và tổn thương mới là tình yêu đích thực của người trưởng thành. Bạn đang yêu con người thật của họ hay đang yêu hình bóng bạn tự vẽ ra trong đầu?",
+        "hashtags": "#carljung #phongchieu #yeuthucsu #truongthanh #hiyuabyss",
+        "full_text": "Thất vọng vì đối phương không hoàn hảo như ngày đầu... Họ không đổi, chỉ là chiếc kính phóng chiếu màu hồng của bạn phai nhạt để lộ con người thật bằng xương bằng thịt.",
+        "hours": "21:00 - 22:00", "schedule": "Thứ Tư", "concept": "Một bức tượng cẩm thạch hoàn hảo bắt đầu nứt ra từng mảng, bên trong lộ ra một trái tim ấm áp đang đập từng nhịp sống động.",
+        "topic_code": "LOVE"
+    },
+
+    # =========================================================================
+    # NHÓM D: NGHỊCH LÝ KHAN HIẾM & SỨC HÚT CẢM XÚC (12 BÀI · STT 239 - 250)
+    # =========================================================================
+    {
+        "stt": 239, "id": "TXT-0239",
+        "title": "[Nghịch Lý Sức Hút] Tại sao người bạn đối xử tốt nhất lại dễ dàng lạnh nhạt và rời bỏ bạn nhất?",
+        "author": "Willard Waller",
+        "topic": "SỨC HÚT (Nghịch lý khan hiếm & Quyền lực xã hội)",
+        "format": "Carousel 3 trang",
+        "hook": "Tại sao người bạn yêu thương và cung phụng nhất......",
+        "twist": "Lại là người sẵn sàng buông lời tàn nhẫn và xem nhẹ sự có mặt của bạn nhất trong cuộc đời họ?",
+        "mirror": "Đó là Nguyên lý kẻ ít quan tâm hơn (Principle of Least Interest): Trong mọi mối quan hệ, người ít phụ thuộc vào cảm xúc hơn luôn là người nắm giữ quyền lực. Khi bạn dốc cạn toàn bộ tâm can và biến mình thành kẻ van nài tình cảm, bạn tự tay tước bỏ sức hấp dẫn của chính mình.",
+        "deep": "-",
+        "caption": "Nhà xã hội học Willard Waller chứng minh: Cán cân quyền lực cảm xúc luôn nghiêng về phía người có khả năng tự chủ và sẵn sàng bước đi. Sự tận tụy thái quá không tạo ra tình yêu, nó chỉ tạo ra sự ỷ lại và nhàm chán. Hãy giữ lại cho mình một góc độc lập thiêng liêng. Bạn có từng đánh mất quyền tự chủ vì quá yêu một người?",
+        "hashtags": "#willardwaller #leastinterest #quyenluccamxuc #suckhapdan #hiyuabyss",
+        "full_text": "Tại sao người bạn cung phụng nhất lại lạnh nhạt nhất... Nguyên lý kẻ ít phụ thuộc hơn nắm quyền lực. Dốc cạn tâm can biến mình thành kẻ van nài là tự tước bỏ sức hấp dẫn của mình.",
+        "hours": "20:00 - 21:00", "schedule": "Thứ Năm", "concept": "Chiếc bập bênh mất thăng bằng: một người dồn hết trọng lượng quỳ mọp xuống đất, người kia ngồi vắt chân trên cao nhìn xa xăm.",
+        "topic_code": "POWER"
+    },
+    {
+        "stt": 240, "id": "TXT-0240",
+        "title": "[Nghịch Lý Sức Hút] Sự sẵn sàng 100% làm giảm giá trị của mọi lời mời.",
+        "author": "Robert Cialdini",
+        "topic": "SỨC HÚT (Nghịch lý khan hiếm & Quyền lực xã hội)",
+        "format": "Carousel 2 trang",
+        "hook": "Họ gọi là bạn có mặt, họ nhờ là bạn nhận lời ngay tắp lự......",
+        "twist": "Bạn tưởng đó là sự nhiệt tình đáng quý, nhưng tâm lý học chỉ ra rằng: Thứ gì quá dồi dào và dễ dãi sẽ tự động bị định giá rẻ mạt; sự sẵn sàng vô điều kiện biến bạn thành sự lựa chọn hiển nhiên không cần phải nỗ lực chinh phục.",
+        "mirror": "-", "deep": "-",
+        "caption": "Bậc thầy tâm lý học thuyết phục Robert Cialdini nhấn mạnh Nguyên lý Khan hiếm (Scarcity Principle): Con người khao khát những thứ có ranh giới và đòi hỏi sự nỗ lực để đạt được. Khi thời gian và sự hiện diện của bạn luôn có sẵn 24/7, không ai thấy cần phải trân trọng nó. Hãy học cách nói 'Để tôi xem lại lịch' thay vì luôn gật đầu lập tức. Bạn có đang quá dễ dãi với thời gian của mình?",
+        "hashtags": "#robertcialdini #khanhiem #giatricanhan #ranhgioi #hiyuabyss",
+        "full_text": "Gọi là có mặt, nhờ là nhận lời... Thứ gì quá dồi dào sẽ tự động bị định giá rẻ mạt. Sự sẵn sàng vô điều kiện biến bạn thành sự lựa chọn hiển nhiên không ai thèm trân trọng.",
+        "hours": "11:30 - 12:30", "schedule": "Thứ Sáu", "concept": "Một mỏ kim cương nằm lộ thiên trên mặt đất bị người qua lại dẫm đạp lên như sỏi đá bình thường.",
+        "topic_code": "POWER"
+    },
+    {
+        "stt": 241, "id": "TXT-0241",
+        "title": "[Nghịch Lý Sức Hút] Càng cố đuổi theo sự công nhận, người ta càng lùi xa bạn.",
+        "author": "Arthur Schopenhauer",
+        "topic": "SỨC HÚT (Nghịch lý khan hiếm & Quyền lực xã hội)",
+        "format": "Single-Punch (1 trang)",
+        "hook": "Sự khát khao tuyệt vọng muốn chứng minh mình quan trọng toát ra một mùi hương của sự thiếu thốn; và không có thứ gì xua đuổi lòng tôn trọng của người khác nhanh bằng việc nhìn thấy một kẻ đang quỳ gối xin từng mẩu vụn tán dương.",
+        "twist": "-", "mirror": "-", "deep": "-",
+        "caption": "Schopenhauer từng viết: 'Giá trị của bạn không nằm trong mắt kẻ khác, nó nằm trong chính linh hồn bạn.' Kẻ tự tin thực sự không cần phải gồng mình khoe khoang hay chứng minh; họ đứng vững vàng như ngọn núi. Khi bạn ngừng tìm kiếm sự phê duyệt từ bên ngoài, thế giới sẽ tự động tìm đến bạn. Bạn có đang tốn năng lượng để chứng minh bản thân cho những người không quan trọng?",
+        "hashtags": "#schopenhauer #tutrong #khackyluatsong #bannoi #hiyuabyss",
+        "full_text": "Sự khát khao chứng minh mình quan trọng toát ra mùi hương thiếu thốn... Không gì xua đuổi lòng tôn trọng nhanh bằng kẻ quỳ gối xin từng mẩu vụn tán dương.",
+        "hours": "19:30 - 20:30", "schedule": "Thứ Bảy", "concept": "Một người đàn ông đuổi theo chiếc bóng của chính mình trên cát sa mạc, càng chạy chiếc bóng càng lùi xa vô tận.",
+        "topic_code": "STATUS"
+    },
+    {
+        "stt": 242, "id": "TXT-0242",
+        "title": "[Nghịch Lý Sức Hút] Người có khả năng sống một mình hạnh phúc là người có sức hút lớn nhất.",
+        "author": "Friedrich Nietzsche",
+        "topic": "SỨC HÚT (Nghịch lý khan hiếm & Quyền lực xã hội)",
+        "format": "Carousel 3 trang",
+        "hook": "Tại sao sự độc lập lại quyến rũ đến thế?......",
+        "twist": "Bởi vì một người không sợ cô độc là người không thể bị thao túng bằng sự đe dọa rời bỏ; họ không cần ai để cảm thấy mình trọn vẹn, và chính sự tự do tự tại đó tạo nên một từ trường hấp dẫn ma mị.",
+        "mirror": "Chỉ khi bạn học được cách làm bạn với chính sự tĩnh lặng của mình, bạn mới có thể bước vào tình yêu với tư thế của một người tự do, thay vì một kẻ hành khất đi xin sự lấp đầy cảm xúc.",
+        "deep": "-",
+        "caption": "Friedrich Nietzsche từng ca ngợi: 'Kẻ cô độc cao quý không tìm kiếm đồng loại để trốn chạy chính mình, mà để cùng sẻ chia sự phong phú của tâm hồn.' Khi bạn không còn nỗi sợ cô đơn, bạn nắm giữ quyền tự do tối thượng trong mọi mối quan hệ. Sức hút mãnh liệt nhất là khi bạn tỏa sáng một mình. Bạn đã tìm thấy sự an yên khi ở một mình chưa?",
+        "hashtags": "#nietzsche #codoc #tudohiensinh #suckhapdan #hiyuabyss",
+        "full_text": "Tại sao sự độc lập lại quyến rũ đến thế? Người không sợ cô độc là người không thể bị thao túng. Chỉ khi biết làm bạn với tĩnh lặng mới yêu với tư thế của người tự do.",
+        "hours": "21:00 - 22:00", "schedule": "Chủ Nhật", "concept": "Ngọn hải đăng đứng sừng sững trên mỏm đá ngập tràn bão biển, ánh đèn xoay đều kiên định soi sáng màn đêm.",
+        "topic_code": "SOLITUDE"
+    },
+    {
+        "stt": 243, "id": "TXT-0243",
+        "title": "[Nghịch Lý Sức Hút] Biết rút lui đúng lúc có giá trị hơn ngàn lần cố gắng bám víu.",
+        "author": "La Rochefoucauld",
+        "topic": "SỨC HÚT (Nghịch lý khan hiếm & Quyền lực xã hội)",
+        "format": "Carousel 2 trang",
+        "hook": "Khoảnh khắc bạn nhận ra mình không còn được chào đón......",
+        "twist": "Đừng hỏi lý do, đừng làm ầm ĩ và đừng cố giải thích; hãy mỉm cười, thu dọn đồ đạc và nhẹ nhàng khép cửa bước đi; sự biến mất trong im lặng và kiêu hãnh của bạn sẽ để lại một khoảng trống nhức nhối ngàn lần hơn những lời oán trách.",
+        "mirror": "-", "deep": "-",
+        "caption": "Bậc thầy châm ngôn La Rochefoucauld đúc kết: Phẩm giá của con người thể hiện rõ nhất ở tư thế khi họ rời đi. Kẻ cố bám víu và khóc lóc chỉ nhận lại sự thương hại cay đắng; người biết dứt khoát quay lưng khi ranh giới bị xâm phạm mới là kẻ lưu lại sự kính nể vĩnh viễn. Rút lui đúng lúc là sự trả thù thanh lịch nhất. Bạn có đủ dũng khí bước đi khi nhận ra vị trí của mình đã lung lay?",
+        "hashtags": "#larochefoucauld #rutluidunghluc #phamdanghiviet #kientao #hiyuabyss",
+        "full_text": "Nhận ra mình không còn được chào đón: Đừng hỏi lý do, đừng ầm ĩ... Mỉm cười khép cửa bước đi. Sự biến mất trong kiêu hãnh để lại khoảng trống nhức nhối hơn ngàn lời oán trách.",
+        "hours": "20:00 - 21:00", "schedule": "Thứ Hai", "concept": "Một vị khách quý khép nhẹ cánh cổng trang viên lộng lẫy trong sương mù sớm, bước đi trên con đường rải sỏi thênh thang.",
+        "topic_code": "FREEDOM"
+    },
+    {
+        "stt": 244, "id": "TXT-0244",
+        "title": "[Nghịch Lý Sức Hút] Bí ẩn không phải là giấu giếm, mà là không phơi bày toàn bộ ruột gan cho người mới quen.",
+        "author": "Robert Greene",
+        "topic": "SỨC HÚT (Nghịch lý khan hiếm & Quyền lực xã hội)",
+        "format": "Carousel 3 trang",
+        "hook": "Bạn nghĩ rằng dốc hết ruột gan là chân thành?......",
+        "twist": "Kể hết mọi vết thương, điểm yếu và bí mật riêng tư cho một người vừa bước vào cuộc đời bạn không phải là sự trung thực — đó là sự thiếu ranh giới và tước đi toàn bộ chiều sâu tò mò của đối phương.",
+        "mirror": "Một tâm hồn có sức hút giống như một ngôi đền cổ kính: Cửa ngoài có thể mở, nhưng gian chính điện thiêng liêng chỉ dành cho những người đã trải qua thời gian thử thách và chứng minh được lòng trung thành xứng đáng.",
+        "deep": "-",
+        "caption": "Tác giả '48 Quy luật của quyền lực' Robert Greene khẳng định: Sự bí ẩn có kiểm soát nuôi dưỡng sức hấp dẫn vô tận. Khi đối phương nghĩ họ đã đọc hết bạn như một cuốn sách mỏng, sự hứng thú sẽ chết yểu. Hãy giữ lại những trang sách sâu kín nhất cho riêng mình. Bạn có thói quen tâm sự hết mọi bí mật của mình cho người mới quen?",
+        "hashtags": "#robertgreene #quyenlucngam #ranhgioi #bian #hiyuabyss",
+        "full_text": "Dốc hết ruột gan không phải chân thành... Phơi bày toàn bộ điểm yếu cho người mới quen là thiếu ranh giới. Tâm hồn sức hút giống ngôi đền cổ: gian chính điện chỉ mở cho người xứng đáng.",
+        "hours": "12:00 - 13:00", "schedule": "Thứ Ba", "concept": "Một cuốn sách bọc da cổ kính có khóa đồng nạm bạc, chỉ hé mở một góc trang giấy chữ viết tay mạ vàng.",
+        "topic_code": "POWER"
+    },
+    {
+        "stt": 245, "id": "TXT-0245",
+        "title": "[Nghịch Lý Sức Hút] Khi bạn không cần phải chứng minh mình đúng, bạn trở nên bất khả xâm phạm.",
+        "author": "Laozi",
+        "topic": "SỨC HÚT (Nghịch lý khan hiếm & Quyền lực xã hội)",
+        "format": "Single-Punch (1 trang)",
+        "hook": "Người hay cãi cọ là người đang sợ hãi; kẻ thực sự có nội lực thâm sâu không bao giờ tốn nước bọt để thuyết phục một kẻ thiển cận rằng đại dương bao la hơn đáy giếng làng của họ.",
+        "twist": "-", "mirror": "-", "deep": "-",
+        "caption": "Lão Tử trong Đạo Đức Kinh răn dạy: 'Người hiểu biết không tranh cãi, người tranh cãi không hiểu biết.' Nhu cầu luôn muốn mình đúng là cái bẫy lớn nhất của bản ngã. Khi bạn mỉm cười gật đầu và để người khác giữ ảo tưởng của họ, bạn bảo tồn 100% năng lượng tinh thần cho những mục tiêu vĩ đại của riêng mình. Sự im lặng điềm đạm là bức tường phòng thủ kiên cố nhất. Bạn đã học được cách mỉm cười thay vì tranh cãi đến cùng?",
+        "hashtags": "#laotu #daodekinh #tinhlang #noiluc #hiyuabyss",
+        "full_text": "Kẻ hay cãi cọ là người sợ hãi... Người có nội lực thâm sâu không tốn nước bọt thuyết phục kẻ thiển cận rằng đại dương bao la hơn đáy giếng làng.",
+        "hours": "20:30 - 21:30", "schedule": "Thứ Tư", "concept": "Một dòng suối róc rách nhẹ nhàng lách qua những tảng đá khổng lồ sắc nhọn mà không hề bị tổn thương hay gián đoạn.",
+        "topic_code": "EGO"
+    },
+    {
+        "stt": 246, "id": "TXT-0246",
+        "title": "[Nghịch Lý Sức Hút] Người biết trân trọng chính mình tự động phát ra một trường hấp dẫn tự nhiên.",
+        "author": "Nathaniel Branden",
+        "topic": "SỨC HÚT (Nghịch lý khan hiếm & Quyền lực xã hội)",
+        "format": "Carousel 2 trang",
+        "hook": "Làm sao để người khác đối xử tôn trọng với bạn?......",
+        "twist": "Không phải bằng cách cầu xin hay dạy bảo họ; cách duy nhất là hãy cho họ thấy bạn tự chăm sóc bản thân, bảo vệ ranh giới và từ chối những điều hạ đẳng với một sự nghiêm cẩn tuyệt đối ra sao.",
+        "mirror": "-", "deep": "-",
+        "caption": "Tiến sĩ Nathaniel Branden, cha đẻ tâm lý học tự trọng (Self-Esteem), đúc kết: Thế giới bên ngoài chỉ là tấm gương phản chiếu chính xác tiêu chuẩn mà bạn tự đặt ra cho bản thân. Nếu bạn tự coi rẻ thời gian và phẩm giá của mình, đừng ngạc nhiên khi thiên hạ dẫm đạp lên nó. Tôn trọng chính mình là mệnh lệnh tối thượng. Bạn đã đặt ra tiêu chuẩn đối xử tối thiểu cho cuộc đời mình chưa?",
+        "hashtags": "#nathanielbranden #longtutrong #selfesteem #ranhgioi #hiyuabyss",
+        "full_text": "Làm sao để người khác tôn trọng bạn? Cho họ thấy bạn tự chăm sóc bản thân, bảo vệ ranh giới và từ chối những điều hạ đẳng với sự nghiêm cẩn tuyệt đối.",
+        "hours": "19:00 - 20:00", "schedule": "Thứ Năm", "concept": "Một chiếc vương miện bằng vàng cổ được đặt trang trọng trên tấm nhung đỏ trong phòng trưng bày trang nghiêm.",
+        "topic_code": "IDENTITY"
+    },
+    {
+        "stt": 247, "id": "TXT-0247",
+        "title": "[Nghịch Lý Sức Hút] Sự hào phóng chỉ có giá trị khi nó xuất phát từ sự dư dả nội tâm, không phải sự thiếu thốn.",
+        "author": "Carl Rogers",
+        "topic": "SỨC HÚT (Nghịch lý khan hiếm & Quyền lực xã hội)",
+        "format": "Carousel 3 trang",
+        "hook": "Bạn cho đi vì bạn có nhiều......",
+        "twist": "Hay bạn cho đi vì bạn đang tuyệt vọng van xin một ánh nhìn công nhận, một lời cảm ơn để chứng minh rằng bạn có quyền tồn tại?",
+        "mirror": "Sự hy sinh xuất phát từ chiếc ly rỗng chỉ tạo ra sự oán hận và ngột ngạt. Hãy rót đầy chiếc ly của chính mình trước; khi tâm hồn bạn tràn trề sinh lực, tình yêu và lòng tốt tự khắc tuôn chảy tự nhiên mà không cần đòi hỏi bất kỳ sự báo đáp nào.",
+        "deep": "-",
+        "caption": "Carl Rogers nhấn mạnh nguyên lý dòng chảy cảm xúc: Bạn không thể trao đi thứ bạn không có bên trong. Khi bạn cố vắt kiệt bản thân để làm người tốt, bạn chỉ đang ngầm biến đối phương thành con nợ của sự hy sinh miễn cưỡng. Hãy học cách yêu thương mình trước khi yêu người khác. Lòng tốt của bạn đang xuất phát từ sự đầy đủ hay thiếu thốn bên trong?",
+        "hashtags": "#carlrogers #longtotthucsu #chualanh #yeuchinhminh #hiyuabyss",
+        "full_text": "Cho đi vì dư dả hay van xin sự công nhận? Sự hy sinh từ chiếc ly rỗng chỉ tạo ra oán hận. Hãy rót đầy chiếc ly của mình trước, lòng tốt tự khắc tuôn chảy không cần báo đáp.",
+        "hours": "20:00 - 21:00", "schedule": "Thứ Sáu", "concept": "Một đài phun nước bằng đá cẩm thạch ngập tràn dòng nước trong vắt tuôn trào ra bãi cỏ xanh mướt xung quanh.",
+        "topic_code": "MORALITY"
+    },
+    {
+        "stt": 248, "id": "TXT-0248",
+        "title": "[Nghịch Lý Sức Hút] Đừng làm chiếc phao cứu sinh cho kẻ chỉ muốn vùng vẫy trong vũng bùn tiêu cực.",
+        "author": "Jordan Peterson",
+        "topic": "SỨC HÚT (Nghịch lý khan hiếm & Quyền lực xã hội)",
+        "format": "Carousel 2 trang",
+        "hook": "Có những người không tìm kiếm giải pháp......",
+        "twist": "Họ tìm kiếm bạn chỉ để biến bạn thành chiếc thùng rác cảm xúc, nơi họ xả toàn bộ sự u uất, than vãn và thù hận; và ngay khi bạn đưa cho họ chiếc thang để leo lên, họ sẽ bẻ gãy chiếc thang đó để tiếp tục được đóng vai nạn nhân.",
+        "mirror": "-", "deep": "-",
+        "caption": "Trong '12 Rules for Life', Jordan Peterson đưa ra quy tắc đanh thép: Chỉ kết bạn với những người thực sự mong muốn điều tốt đẹp cho bạn và có ý chí tự cứu lấy cuộc đời họ. Nhảy xuống hố bùn để cứu một kẻ không muốn leo lên sẽ chỉ khiến cả hai cùng chìm nghỉm. Ranh giới tỉnh táo là giữ lấy phao cứu sinh của mình. Bạn có đang bị bòn rút năng lượng bởi một kẻ chỉ thích than vãn?",
+        "hashtags": "#jordanpeterson #12rulesforlife #nangluongtichcuc #ranhgioi #hiyuabyss",
+        "full_text": "Có những người không tìm kiếm giải pháp mà tìm thùng rác xả cảm xúc tiêu cực. Nhảy xuống hố bùn cứu kẻ không muốn leo lên sẽ chỉ khiến cả hai cùng chìm nghỉm.",
+        "hours": "11:30 - 12:30", "schedule": "Thứ Bảy", "concept": "Một sợi dây thừng chắc chắn được thả xuống đầm lầy sâu nhưng người bên dưới chỉ dùng tay kéo người trên bờ ngã xuống.",
+        "topic_code": "SUFFERING"
+    },
+    {
+        "stt": 249, "id": "TXT-0249",
+        "title": "[Nghịch Lý Sức Hút] Dám buông tay thứ không thuộc về mình: Khoảng trống tâm lý tạo ra sự đón nhận mới.",
+        "author": "Epictetus",
+        "topic": "SỨC HÚT (Nghịch lý khan hiếm & Quyền lực xã hội)",
+        "format": "Carousel 3 trang",
+        "hook": "Bàn tay nắm chặt những mảnh vụn vỡ......",
+        "twist": "Chỉ làm bạn rướm máu và không thể cầm nắm bất kỳ điều tốt đẹp nào khác đang chờ đợi phía trước.",
+        "mirror": "Buông bỏ không phải là mất mát; đó là sự dũng cảm dọn dẹp không gian tâm hồn. Khi bạn can đảm trả lại sự tự do cho một mối quan hệ đã chết, bạn đang mở ra cánh cửa đón nhận những điều xứng đáng thực sự với phẩm giá của bạn.",
+        "deep": "-",
+        "caption": "Bậc thầy Epictetus răn dạy: 'Đừng đòi hỏi những điều xảy ra phải theo ý bạn, hãy mong muốn chúng xảy ra như bản chất của chúng, và bạn sẽ tìm thấy sự bình an.' Nắm chặt một bàn tay đã muốn buông chỉ kéo dài sự nhục nhã. Mở rộng lòng bàn tay ra là bước đầu tiên để chạm vào tự do. Bạn đang nắm chặt mảnh vỡ nào khiến tay mình rỉ máu?",
+        "hashtags": "#epictetus #khackyluatsong #buongbo #tudonoitam #hiyuabyss",
+        "full_text": "Bàn tay nắm chặt mảnh vỡ chỉ làm bạn rướm máu... Buông bỏ không phải mất mát mà là dọn dẹp không gian tâm hồn để đón nhận những điều xứng đáng với phẩm giá.",
+        "hours": "20:00 - 21:00", "schedule": "Chủ Nhật", "concept": "Một bàn tay mở ra giữa không trung, những hạt cát mịn bay theo chiều gió để lộ một viên ngọc trai sáng bóng trong lòng bàn tay.",
+        "topic_code": "FREEDOM"
+    },
+    {
+        "stt": 250, "id": "TXT-0250",
+        "title": "[Nghịch Lý Sức Hút] Đỉnh cao của sự quyến rũ là sự điềm tĩnh tuyệt đối trước mọi khen chê được mất.",
+        "author": "Marcus Aurelius",
+        "topic": "SỨC HÚT (Nghịch lý khan hiếm & Quyền lực xã hội)",
+        "format": "Carousel 3 trang",
+        "hook": "Không có gì quyền lực hơn một tâm hồn......",
+        "twist": "Không bị làm cho ngạo mạn bởi những lời tâng bốc, và cũng không bị làm cho lung lay quỵ ngã bởi những lời miệt thị của nhân gian.",
+        "mirror": "Khi bạn thấu suốt giá trị bất biến của bản thân, miệng đời chỉ như cơn gió thoảng qua rặng liễu. Bạn đứng vững vàng như một pháo đài nội tâm kiên cố: Tự chủ, bao dung và bất khả chiến bại trước mọi sóng gió cuộc đời.",
+        "deep": "-",
+        "caption": "Hoàng đế Marcus Aurelius đúc kết trong Trầm Tưởng: 'Hãy giống như vách đá sừng sững mà từng đợt sóng biển không ngừng xô vào; nó vẫn đứng yên và làm dịu đi sự cuồng nộ của nước xung quanh.' Đạt đến cột mốc 250 bài viết của Hiyu Abyss, đỉnh cao của trí tuệ tâm lý không phải để thắng người khác, mà là để làm chủ trọn vẹn chính mình. Bạn đã xây dựng được pháo đài điềm tĩnh đó cho tâm hồn mình chưa?",
+        "hashtags": "#marcusaurelius #tramtuong #diemtinh #lamchuchinhminh #hiyuabyss",
+        "full_text": "Không có gì quyền lực hơn tâm hồn không ngạo mạn vì tâng bốc, không lung lay vì miệt thị. Đứng vững vàng như pháo đài nội tâm: Tự chủ, bao dung và bất khả chiến bại.",
+        "hours": "21:00 - 22:30", "schedule": "Thứ Hai", "concept": "Một pháo đài cổ kính bằng đá hoa cương sừng sững trên đỉnh núi cao giữa hoàng hôn vàng rực rỡ, nhìn xuống mây ngàn cuồn cuộn.",
+        "topic_code": "STATUS"
+    }
+]
+
+def main():
+    print(f"Loaded {len(POSTS_DATA)} posts (STT 201 - 250).")
+
+    # 1. Save JSON
+    json_path = "scripts/posts_201_250.json"
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(POSTS_DATA, f, ensure_ascii=False, indent=2)
+    print(f"✅ Saved {json_path}")
+
+    # 2. Update CSV (create 250-row CSV)
+    csv_in = "scripts/tiktok_200_posts.csv"
+    csv_out_250 = "scripts/tiktok_250_posts.csv"
+    
+    rows = []
+    with open(csv_in, "r", encoding="utf-8-sig") as f:
+        reader = csv.reader(f)
+        header = next(reader)
+        rows.append(header)
+        for r in reader:
+            if r and int(r[0]) <= 200:
+                rows.append(r)
+
+    print(f"Existing rows count: {len(rows)-1}")
+
+    for p in POSTS_DATA:
+        row = [
+            str(p["stt"]),
+            p["id"],
+            p["title"],
+            p["caption"],
+            p["author"],
+            p["hashtags"],
+            p["format"],
+            p["hook"],
+            p["twist"],
+            p["mirror"],
+            p["deep"],
+            p["full_text"],
+            p["topic"],
+            p["hours"],
+            p["schedule"],
+            p["concept"],
+            "DRAFT"
+        ]
+        rows.append(row)
+
+    # Save to both tiktok_250_posts.csv and update tiktok_200_posts.csv
+    with open(csv_out_250, "w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerows(rows)
+    print(f"✅ Created {csv_out_250} with {len(rows)-1} rows.")
+
+    with open(csv_in, "w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerows(rows)
+    print(f"✅ Updated {csv_in} with {len(rows)-1} rows.")
+
+    # 3. Create Markdown files TXT-0201 to TXT-0250
+    content_dir = "editorial/content"
+    os.makedirs(content_dir, exist_ok=True)
+    created_md = 0
+
+    for p in POSTS_DATA:
+        md_path = os.path.join(content_dir, f"{p['id']}.md")
+        
+        # Frontmatter
+        md_text = f"""---
+id: {p['id']}
+title: "{p['title']}"
+content_type: INSPIRED_ORIGINAL
+author_attribution: "{p['author']}"
+topic_codes:
+  - {p['topic_code']}
+image_ref: "theme_{p['stt']}"
+slide_format: "{p['format']}"
+status: APPROVED
+created_at: "2026-11-15"
+updated_at: "2026-11-15"
+---
+
+# {p['title']}
+
+> {p['hook']} {p['twist'] if p['twist'] != '-' else ''}
+
+## Diễn Giải & Chiêm Nghiệm Biên Tập
+{p['caption']}
+
+## Cấu Trúc Trình Diễn Đa Nhịp (Slides)
+- **Trang 1 (Hook):** {p['hook']}
+- **Trang 2 (Cú lật):** {p['twist']}
+- **Trang 3 (Phản tư):** {p['mirror']}
+- **Trang 4 (Đúc kết):** {p['deep']}
+
+## Từ Khóa & Phân Loại
+{p['hashtags']}
+"""
+        with open(md_path, "w", encoding="utf-8") as f:
+            f.write(md_text)
+        created_md += 1
+
+    print(f"✅ Created {created_md} markdown files in {content_dir} (TXT-0201 to TXT-0250).")
+
+if __name__ == '__main__':
+    main()

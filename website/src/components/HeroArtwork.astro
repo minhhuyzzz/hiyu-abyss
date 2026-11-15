@@ -61,42 +61,52 @@ if (!curatorInsight) {
             <span data-i18n-vi="KHO LƯU TRỮ SỐNG" data-i18n-en="THE LIVING ARCHIVE">KHO LƯU TRỮ SỐNG</span>
           </span>
           <span class="text-muted/40 font-mono text-xs">/</span>
-          <span class="text-xs font-sans tracking-widest uppercase text-text/80 font-semibold">
+          <span class="text-xs font-mono tracking-widest uppercase text-muted/80 font-semibold">
             HIYU ABYSS
           </span>
         </div>
 
-        <!-- Monumental Brand Statement (Fixed H1 & Dek) -->
-        <div class="space-y-2">
-          <h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] text-text font-medium leading-[1.12] tracking-tight text-balance">
-            Đọc để nhìn thế giới khác đi.
+        <!-- Monumental Brand Statement (Refined Typographic Hierarchy) -->
+        <div class="space-y-3">
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-[3.35rem] text-text font-normal leading-[1.08] tracking-tight text-balance">
+            Đọc để nhìn <br/>
+            <span class="italic font-serif text-accent">thế giới khác đi.</span>
           </h1>
-          <p class="font-serif italic text-xl sm:text-2xl text-accent/90 leading-snug">
-            Suy ngẫm để hiểu mình rõ hơn.
+          <p class="font-serif italic text-xl sm:text-2xl text-text/80 leading-snug">
+            Suy ngẫm để thấu tỏ chính mình.
           </p>
         </div>
 
-        <!-- Brand Purpose Narrative -->
-        <p class="font-sans text-sm sm:text-base text-muted max-w-xl leading-relaxed">
-          Tuyển tập những câu nói hay và góc nhìn sâu sắc về cuộc sống, tâm lý con người, giúp bạn đọc để nhìn thế giới khác đi và hiểu mình rõ hơn.
+        <!-- Brand Purpose Narrative (Sharp & Philosophical) -->
+        <p class="font-sans text-sm sm:text-base text-muted/90 max-w-xl leading-relaxed">
+          Không chỉ là trích dẫn. Hiyu Abyss là không gian bóc trần những nghịch lý bản ngã, soi chiếu bóng tối nội tâm và khơi mở cuộc đối thoại đa chiều cùng những tư tưởng kinh điển.
         </p>
 
-        <!-- Curator Commentary Box (Explicitly distinguished from author quotes) -->
-        <div class="relative pl-5 py-2.5 border-l-2 border-accent/70 bg-surface/50 rounded-r-md">
-          <p class="font-serif text-xs sm:text-sm text-text/90 italic leading-relaxed">
-            "{curatorInsight}"
-          </p>
-          <span class="text-[10px] font-mono text-accent/90 tracking-wider uppercase block mt-1.5 font-semibold">
-            — Bình giải · Hiyu Abyss
-          </span>
+        <!-- Curator Accession & Provenance Strip (Replaces redundant quote box) -->
+        <div class="flex items-center gap-3 py-2.5 px-3.5 rounded-xl bg-surface/60 border border-border/70 backdrop-blur-sm max-w-xl">
+          <div class="w-2 h-2 rounded-full bg-accent flex-shrink-0 animate-pulse"></div>
+          <div class="text-xs font-sans text-text/90 flex-1 truncate">
+            <span class="text-muted text-[10px] uppercase tracking-wider font-mono mr-1.5">Tác Phẩm Hôm Nay:</span>
+            <span class="font-serif italic font-medium">Folio #{quote.id.replace('TXT-', '')}</span>
+            <span class="text-muted/60 mx-1.5">·</span>
+            <span class="text-accent font-semibold">{quote.author}</span>
+            <span class="text-muted/60 mx-1.5">·</span>
+            <span class="text-muted text-[11px]">#{quote.primaryTopicTitle}</span>
+          </div>
+          <a
+            href={`/library/${quote.slug}`}
+            class="text-[11px] font-mono text-accent hover:underline uppercase tracking-wider flex-shrink-0 font-medium"
+          >
+            Chi tiết →
+          </a>
         </div>
 
         <!-- Button-in-Button Primary & Secondary CTAs -->
-        <div class="flex flex-wrap items-center gap-4 pt-2">
+        <div class="flex flex-wrap items-center gap-3.5 pt-1">
           <!-- Primary CTA -->
           <a
             href="/library"
-            class="group pl-6 pr-2.5 py-2.5 bg-accent text-on-accent rounded-full font-sans text-xs tracking-wider uppercase font-bold hover:opacity-95 transition-all duration-300 inline-flex items-center gap-3 shadow-lg active:scale-[0.98]"
+            class="group pl-6 pr-2.5 py-2.5 bg-accent text-on-accent rounded-full font-sans text-xs tracking-wider uppercase font-bold hover:opacity-95 hover:shadow-[0_0_24px_rgba(184,137,96,0.35)] transition-all duration-300 inline-flex items-center gap-3 shadow-lg active:scale-[0.98]"
           >
             <span data-i18n-vi="Khám Phá Thư Viện" data-i18n-en="Explore Library">Khám Phá Thư Viện</span>
             <span class="w-7 h-7 rounded-full bg-black/20 text-white flex items-center justify-center text-xs transition-transform duration-300 group-hover:translate-x-0.5">
@@ -109,11 +119,38 @@ if (!curatorInsight) {
             href="/mirror"
             class="group pl-5 pr-2.5 py-2.5 border border-border/80 bg-surface/70 text-text hover:border-accent hover:text-accent rounded-full font-sans text-xs tracking-wider uppercase font-semibold transition-all duration-300 inline-flex items-center gap-3 active:scale-[0.98]"
           >
-            <span data-i18n-vi="Thử The Mirror" data-i18n-en="Try The Mirror">Thử The Mirror</span>
+            <span data-i18n-vi="Chiếc Gương (The Mirror)" data-i18n-en="The Mirror">Chiếc Gương (The Mirror)</span>
             <span class="w-7 h-7 rounded-full bg-surface-raised border border-border/60 text-accent flex items-center justify-center text-[10px] transition-transform duration-300 group-hover:rotate-45">
               ◈
             </span>
           </a>
+
+          <!-- Tertiary CTA: The Agora -->
+          <a
+            href="/agora"
+            class="px-3 py-2 text-xs text-muted hover:text-accent font-sans tracking-wider uppercase transition-colors inline-flex items-center gap-1.5"
+          >
+            <span data-i18n-vi="Đối Thoại (Agora)" data-i18n-en="The Agora">Đối Thoại (Agora)</span>
+            <span class="text-accent text-sm">↗</span>
+          </a>
+        </div>
+
+        <!-- Museum Authority Metrics -->
+        <div class="flex items-center gap-4 sm:gap-6 pt-1 text-[11px] font-mono text-muted/70 tracking-widest uppercase">
+          <div class="flex items-center gap-1.5">
+            <span class="text-accent font-semibold font-sans text-xs">200</span>
+            <span>Tác phẩm</span>
+          </div>
+          <span class="text-border">·</span>
+          <div class="flex items-center gap-1.5">
+            <span class="text-accent font-semibold font-sans text-xs">20</span>
+            <span>Chủ đề</span>
+          </div>
+          <span class="text-border">·</span>
+          <div class="flex items-center gap-1.5">
+            <span class="text-accent font-semibold font-sans text-xs">Sơn dầu</span>
+            <span>Bảo tàng</span>
+          </div>
         </div>
       </div>
 
@@ -198,7 +235,7 @@ if (!curatorInsight) {
                     {quote.quoteTypeLabel}
                   </span>
 
-                  <blockquote class="font-serif italic text-sm sm:text-base leading-relaxed text-[#201C16]">
+                  <blockquote class="font-serif italic text-base sm:text-lg lg:text-[1.125rem] leading-relaxed text-[#201C16]">
                     "{quote.content}"
                   </blockquote>
 

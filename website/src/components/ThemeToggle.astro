@@ -1,18 +1,28 @@
 ---
 // ThemeToggle.astro
+interface Props {
+  variant?: 'default' | 'minimal';
+  class?: string;
+}
+
+const { variant = 'default', class: className = '' } = Astro.props;
+const isMinimal = variant === 'minimal';
 ---
 
 <button
   id="theme-toggle"
   type="button"
-  class="relative inline-flex items-center justify-center p-2 rounded-full border border-border text-muted hover:text-text hover:border-accent transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg min-w-[44px] min-h-[44px]"
+  class={isMinimal
+    ? `relative inline-flex items-center justify-center w-8 h-8 rounded-full text-muted hover:text-text hover:bg-surface-raised transition-colors duration-200 focus:outline-none ${className}`
+    : `relative inline-flex items-center justify-center p-2 rounded-full border border-border text-muted hover:text-text hover:border-accent transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg min-w-[44px] min-h-[44px] ${className}`
+  }
   aria-label="Chuyển đổi giao diện Sáng / Tối (Black Archive / Pale Archive)"
   title="Chuyển đổi giao diện"
 >
   <!-- Sun Icon (hiển thị khi Dark mode, bấm vào để chuyển sang Light) -->
   <svg
     id="sun-icon"
-    class="w-5 h-5 transition-transform duration-300 hidden"
+    class={isMinimal ? "w-4 h-4 transition-transform duration-300 hidden" : "w-5 h-5 transition-transform duration-300 hidden"}
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     fill="none"

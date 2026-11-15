@@ -49,22 +49,22 @@ const pathname = Astro.url.pathname;
         })}
       </nav>
 
-      <!-- Right Header Actions (Saved Archive + Language + Theme + Mobile Trigger) -->
-      <div class="flex items-center gap-1 sm:gap-2.5">
+      <!-- Right Header Actions (Sleek Integrated Utility Dock - No Nested Pill Noise) -->
+      <div class="flex items-center gap-1 sm:gap-2 pl-2">
         
         <!-- Saved Archive Drawer Trigger Button with Dynamic Counter Badge -->
         <button
           id="open-saved-drawer-btn"
           type="button"
-          class="px-2 sm:px-3 py-1.5 text-xs font-sans text-muted hover:text-accent rounded-full border border-border/70 hover:border-accent/50 bg-surface/60 hover:bg-surface-raised transition-all flex items-center gap-1.5 sm:gap-2 min-h-[36px]"
+          class="px-2 sm:px-2.5 py-1.5 text-xs font-sans text-muted hover:text-accent rounded-full hover:bg-surface-raised transition-all flex items-center gap-1.5 min-h-[32px] group"
           aria-label="Mở kho tác phẩm đã lưu"
           title="Kho lưu trữ cá nhân"
         >
-          <svg class="w-3.5 h-3.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-3.5 h-3.5 text-accent transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
           </svg>
           <span
-            class="hidden sm:inline text-[11px] tracking-wider uppercase font-medium"
+            class="hidden lg:inline text-[11px] tracking-wider uppercase font-medium"
             id="saved-header-label"
             data-i18n-vi="Kho"
             data-i18n-en="Saved"
@@ -73,49 +73,57 @@ const pathname = Astro.url.pathname;
           </span>
           <span
             id="saved-count-badge"
-            class="px-1.5 py-0.2 rounded-full text-[10px] font-mono font-semibold bg-accent/20 text-accent border border-accent/30"
+            class="min-w-[18px] h-[18px] px-1 rounded-full text-[10px] font-mono font-semibold bg-accent/20 text-accent border border-accent/40 flex items-center justify-center"
           >
             0
           </span>
         </button>
 
+        <!-- Subtle Vertical Hairline Separator -->
+        <span class="w-px h-3.5 bg-border/60 mx-0.5 hidden sm:inline-block"></span>
+
         <!-- Account / Profile Button -->
         <a
           href="/account"
           id="header-account-btn"
-          class="px-2 sm:px-3 py-1.5 text-xs font-sans text-muted hover:text-accent rounded-full border border-border/70 hover:border-accent/50 bg-surface/60 hover:bg-surface-raised transition-all flex items-center gap-1.5 min-h-[36px]"
+          class="px-2 sm:px-2.5 py-1.5 text-xs font-sans text-muted hover:text-accent rounded-full hover:bg-surface-raised transition-all flex items-center gap-1.5 min-h-[32px] group"
           aria-label="Tài khoản cá nhân"
           title="Tài khoản cá nhân"
         >
-          <svg class="w-3.5 h-3.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-          </svg>
+          <div class="w-5 h-5 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center text-accent group-hover:border-accent transition-colors">
+            <svg class="w-3 h-3 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+          </div>
           <span class="hidden sm:inline text-[11px] tracking-wider uppercase font-medium" id="header-account-text">
             Tài khoản
           </span>
         </a>
 
-        <!-- Bilingual Switcher [VI | EN] (Applies globally across the entire site) -->
+        <!-- Subtle Vertical Hairline Separator -->
+        <span class="w-px h-3.5 bg-border/60 mx-0.5"></span>
+
+        <!-- Bilingual Switcher [VI | EN] (Minimalist text switch, no thick border) -->
         <button
           id="lang-toggle-btn"
           type="button"
-          class="px-2 sm:px-2.5 py-1.5 text-[11px] sm:text-xs tracking-wider sm:tracking-widest font-mono font-semibold text-muted hover:text-text rounded-full border border-border/70 hover:border-accent/50 bg-surface/60 hover:bg-surface-raised transition-all min-h-[36px] flex items-center"
+          class="px-2 py-1 text-[11px] font-mono tracking-wider font-semibold text-muted hover:text-text rounded-md hover:bg-surface-raised transition-all min-h-[30px] flex items-center"
           aria-label="Chuyển đổi ngôn ngữ Tiếng Việt / English"
           title="Switch language (VI / EN)"
         >
           <span id="lang-indicator-vi" class="text-accent font-bold">VI</span>
-          <span class="text-border mx-1">/</span>
+          <span class="text-border/60 mx-1">/</span>
           <span id="lang-indicator-en" class="text-muted/60">EN</span>
         </button>
 
-        <!-- Dual-Theme Switcher -->
-        <ThemeToggle />
+        <!-- Dual-Theme Switcher (Minimal variant) -->
+        <ThemeToggle variant="minimal" />
 
         <!-- Mobile Animated Hamburger Button -->
         <button
           id="mobile-menu-btn"
           type="button"
-          class="md:hidden relative w-9 h-9 rounded-full flex flex-col items-center justify-center gap-1.2 p-1.5 text-muted hover:text-text hover:bg-surface-raised transition-all"
+          class="md:hidden relative w-8 h-8 rounded-full flex flex-col items-center justify-center gap-1.2 p-1.5 text-muted hover:text-text hover:bg-surface-raised transition-all"
           aria-label="Mở danh mục điều hướng"
           aria-expanded="false"
         >

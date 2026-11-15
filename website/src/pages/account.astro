@@ -12,22 +12,22 @@ const redirectTo = Astro.url.searchParams.get('redirect') || '/account';
 ---
 
 <BaseLayout
-  title="Tài Khoản & Xác Thực — The Agora | Hiyu Abyss"
-  description="Quản lý tài khoản và phiên đăng nhập của bạn trên Hiyu Abyss."
+  title={session ? "Hồ Sơ Của Bạn — Hiyu Abyss" : "Đăng Nhập — Hiyu Abyss"}
+  description="Đăng nhập để tham gia đối thoại và lưu trữ câu nói tâm đắc trên Hiyu Abyss."
 >
   <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-xl mx-auto space-y-8">
     
     <header class="space-y-2 text-center pb-6 border-b border-border/70">
       <div class="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-accent font-semibold">
-        <span>HIYU ABYSS · TÀI KHOẢN</span>
+        <span>HIYU ABYSS</span>
       </div>
       <h1 class="font-display text-3xl sm:text-4xl font-medium text-text">
-        {session ? 'Hồ Sơ Của Bạn' : 'Cổng Xác Thực'}
+        {session ? 'Hồ Sơ Của Bạn' : 'Đăng Nhập'}
       </h1>
-      <p class="font-sans text-xs sm:text-sm text-muted leading-relaxed">
+      <p class="font-sans text-xs sm:text-sm text-muted leading-relaxed max-w-md mx-auto">
         {session
           ? 'Bạn đang đăng nhập và có toàn quyền thảo luận, tạo chủ đề và lưu trữ góc nhìn trên The Agora.'
-          : 'Đăng nhập bằng tài khoản Google để tham gia đối thoại, chia sẻ góc nhìn và tạo chủ đề trên The Agora.'}
+          : 'Đăng nhập bằng tài khoản Google để tham gia đối thoại, chia sẻ góc nhìn và lưu tác phẩm vào kho của bạn.'}
       </p>
     </header>
 

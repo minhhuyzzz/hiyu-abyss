@@ -174,7 +174,7 @@ const searchIndex = allQuotes.map((q) => {
                 class="type-dropdown-item w-full text-left px-4 py-2 hover:bg-surface-raised hover:text-accent flex items-center justify-between transition-colors text-text/90"
                 data-value="DIRECT_QUOTE"
               >
-                <span>Trích dẫn đã xác minh</span>
+                <span>Trích dẫn nguyên văn</span>
               </button>
               <button
                 type="button"
@@ -325,8 +325,10 @@ const searchIndex = allQuotes.map((q) => {
     });
 
     function renderResults(quotes, query) {
+      // Clear previous results safely
+      resultsContainer.textContent = '';
+
       if (quotes.length === 0) {
-        resultsContainer.innerHTML = '';
         emptyState.classList.remove('hidden');
         resultsCount.textContent = 'Không có kết quả nào';
         return;
@@ -335,55 +337,124 @@ const searchIndex = allQuotes.map((q) => {
       emptyState.classList.add('hidden');
       resultsCount.textContent = `Tìm thấy ${quotes.length} tác phẩm phù hợp`;
 
-      const html = quotes
-        .map((q) => {
-          return `
-          <article class="border border-border/70 bg-surface/30 hover:border-accent p-6 sm:p-8 transition-colors duration-200">
-            <div class="flex flex-col sm:flex-row gap-6 items-start">
-              ${
-                q.imageRef
-                  ? `<div class="w-full sm:w-36 h-28 sm:h-36 flex-shrink-0 overflow-hidden bg-surface border border-border/60">
-                      <img src="${q.imageRef}" alt="${q.title}" class="w-full h-full object-cover filter brightness-90 hover:scale-105 transition-all duration-500" loading="lazy" />
-                     </div>`
-                  : ''
-              }
-              <div class="flex-1 space-y-3">
-                <div class="flex flex-wrap items-center gap-2 text-xs font-sans">
-                  <span class="text-accent font-semibold tracking-wider font-mono">${q.id}</span>
-                  <span class="text-border">·</span>
-                  <span class="text-muted uppercase tracking-wider text-[10px]">${q.quoteTypeLabel}</span>
-                  <span class="text-border">·</span>
-                  <span class="text-text font-medium text-[11px]">#${q.primaryTopicTitle}</span>
-                </div>
+      const fragment = document.createDocumentFragment();
 
-                <h2 class="font-display text-xl sm:text-2xl font-medium text-text leading-snug">
-                  <a href="/library/${q.slug}" class="hover:text-accent transition-colors">
-                    ${q.title}
-                  </a>
-                </h2>
+      for (const q of quotes) {
+        const article = document.createElement('article');
+        article.className = 'border border-border/70 bg-surface/30 hover:border-accent p-6 sm:p-8 transition-colors duration-200';
 
-                <p class="font-serif italic text-sm text-text/85 line-clamp-3 leading-relaxed">
-                  "${q.content}"
-                </p>
+        const row = document.createElement('div');
+        row.className = 'flex flex-col sm:flex-row gap-6 items-start';
 
-                <div class="pt-3 border-t border-border/40 flex items-center justify-between text-xs font-sans">
-                  <span class="text-muted">Tác giả: <strong class="text-text font-medium">${q.author}</strong></span>
-                  <a href="/library/${q.slug}" class="inline-flex items-center gap-1.5 text-accent hover:underline font-semibold uppercase tracking-wider text-[11px]">
-                    <span>Chiêm nghiệm</span>
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </article>
-        `;
-        })
-        .join('');
+        // Optional Artwork Image
+        if (q.imageRef) {
+          const imgContainer = document.createElement('div');
+          imgContainer.className = 'w-full sm:w-36 h-28 sm:h-36 flex-shrink-0 overflow-hidden bg-surface border border-border/60';
 
-      resultsContainer.innerHTML = html;
+          const img = document.createElement('img');
+          img.src = q.imageRef;
+          img.alt = q.title || 'Artwork thumbnail';
+          img.className = 'w-full h-full object-cover filter brightness-90 hover:scale-105 transition-all duration-500';
+          img.loading = 'lazy';
+          imgContainer.appendChild(img);
+          row.appendChild(imgContainer);
+        }
+
+        const contentCol = document.createElement('div');
+        contentCol.className = 'flex-1 space-y-3';
+
+        // Badges Row
+        const badgesRow = document.createElement('div');
+        badgesRow.className = 'flex flex-wrap items-center gap-2 text-xs font-sans';
+
+        const idSpan = document.createElement('span');
+        idSpan.className = 'text-accent font-semibold tracking-wider font-mono';
+        idSpan.textContent = q.id;
+
+        const dot1 = document.createElement('span');
+        dot1.className = 'text-border';
+        dot1.textContent = '·';
+
+        const typeSpan = document.createElement('span');
+        typeSpan.className = 'text-muted uppercase tracking-wider text-[10px]';
+        typeSpan.textContent = q.quoteTypeLabel;
+
+        const dot2 = document.createElement('span');
+        dot2.className = 'text-border';
+        dot2.textContent = '·';
+
+        const topicSpan = document.createElement('span');
+        topicSpan.className = 'text-text font-medium text-[11px]';
+        topicSpan.textContent = '#' + q.primaryTopicTitle;
+
+        badgesRow.appendChild(idSpan);
+        badgesRow.appendChild(dot1);
+        badgesRow.appendChild(typeSpan);
+        badgesRow.appendChild(dot2);
+        badgesRow.appendChild(topicSpan);
+        contentCol.appendChild(badgesRow);
+
+        // Title with link
+        const h2 = document.createElement('h2');
+        h2.className = 'font-display text-xl sm:text-2xl font-medium text-text leading-snug';
+        const titleLink = document.createElement('a');
+        titleLink.href = `/library/${encodeURIComponent(q.slug)}`;
+        titleLink.className = 'hover:text-accent transition-colors';
+        titleLink.textContent = q.title;
+        h2.appendChild(titleLink);
+        contentCol.appendChild(h2);
+
+        // Quote Content
+        const pContent = document.createElement('p');
+        pContent.className = 'font-serif italic text-sm text-text/85 line-clamp-3 leading-relaxed';
+        pContent.textContent = `"${q.content}"`;
+        contentCol.appendChild(pContent);
+
+        // Footer Row
+        const footerDiv = document.createElement('div');
+        footerDiv.className = 'pt-3 border-t border-border/40 flex items-center justify-between text-xs font-sans';
+
+        const authorSpan = document.createElement('span');
+        authorSpan.className = 'text-muted';
+        authorSpan.textContent = 'Tác giả: ';
+        const strongAuthor = document.createElement('strong');
+        strongAuthor.className = 'text-text font-medium';
+        strongAuthor.textContent = q.author;
+        authorSpan.appendChild(strongAuthor);
+
+        const actionLink = document.createElement('a');
+        actionLink.href = `/library/${encodeURIComponent(q.slug)}`;
+        actionLink.className = 'inline-flex items-center gap-1.5 text-accent hover:underline font-semibold uppercase tracking-wider text-[11px]';
+
+        const actionSpan = document.createElement('span');
+        actionSpan.textContent = 'Chiêm nghiệm';
+        const arrowSpan = document.createElement('span');
+        arrowSpan.textContent = '→';
+        actionLink.appendChild(actionSpan);
+        actionLink.appendChild(arrowSpan);
+
+        footerDiv.appendChild(authorSpan);
+        footerDiv.appendChild(actionLink);
+        contentCol.appendChild(footerDiv);
+
+        row.appendChild(contentCol);
+        article.appendChild(row);
+        fragment.appendChild(article);
+      }
+
+      resultsContainer.appendChild(fragment);
     }
 
-    function doFilter() {
+    function syncUrlParams(q, topic, type) {
+      if (typeof window === 'undefined') return;
+      const url = new URL(window.location.href);
+      if (q) url.searchParams.set('q', q); else url.searchParams.delete('q');
+      if (topic) url.searchParams.set('topic', topic); else url.searchParams.delete('topic');
+      if (type) url.searchParams.set('type', type); else url.searchParams.delete('type');
+      window.history.replaceState({}, '', url.toString());
+    }
+
+    function doFilter(updateUrl = true) {
       const q = searchInput.value.trim();
       const topicVal = topicValInput.value;
       const typeVal = typeValInput.value;
@@ -392,6 +463,10 @@ const searchIndex = allQuotes.map((q) => {
         clearBtn.classList.remove('hidden');
       } else {
         clearBtn.classList.add('hidden');
+      }
+
+      if (updateUrl) {
+        syncUrlParams(q, topicVal, typeVal);
       }
 
       const normalizedQ = removeVietnameseTones(q);
@@ -422,6 +497,34 @@ const searchIndex = allQuotes.map((q) => {
       });
 
       renderResults(filtered, q);
+    }
+
+    // Read initial URL params on load
+    const initialUrlParams = new URLSearchParams(window.location.search);
+    const initialQ = initialUrlParams.get('q');
+    const initialTopic = initialUrlParams.get('topic');
+    const initialType = initialUrlParams.get('type');
+
+    if (initialQ) {
+      searchInput.value = initialQ;
+    }
+    if (initialTopic) {
+      topicValInput.value = initialTopic;
+      const matchedBtn = Array.from(topicItems).find((b) => b.getAttribute('data-value') === initialTopic);
+      if (matchedBtn) {
+        topicLabel.textContent = matchedBtn.querySelector('span:first-child').textContent;
+        topicItems.forEach((b) => b.classList.remove('text-accent', 'font-semibold'));
+        matchedBtn.classList.add('text-accent', 'font-semibold');
+      }
+    }
+    if (initialType) {
+      typeValInput.value = initialType;
+      const matchedBtn = Array.from(typeItems).find((b) => b.getAttribute('data-value') === initialType);
+      if (matchedBtn) {
+        typeLabel.textContent = matchedBtn.querySelector('span:first-child').textContent;
+        typeItems.forEach((b) => b.classList.remove('text-accent', 'font-semibold'));
+        matchedBtn.classList.add('text-accent', 'font-semibold');
+      }
     }
 
     searchInput.addEventListener('input', doFilter);

@@ -26,22 +26,22 @@ const {
 } = Astro.props;
 
 const siteTitle = title.includes('Hiyu Abyss') ? title : `${title} · Hiyu Abyss`;
-const siteUrl = Astro.site ? Astro.site.toString() : 'https://hiyuabyss.com';
+const siteUrl = Astro.site ? Astro.site.toString().replace(/\/$/, '') : 'https://hiyuabyss.vercel.app';
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
       '@type': 'WebSite',
-      '@id': `${siteUrl}#website`,
+      '@id': `${siteUrl}/#website`,
       'url': siteUrl,
       'name': 'Hiyu Abyss',
       'description': description,
-      'inLanguage': ['vi', 'en'],
+      'inLanguage': 'vi-VN',
     },
     {
       '@type': 'Organization',
-      '@id': `${siteUrl}#organization`,
+      '@id': `${siteUrl}/#organization`,
       'name': 'Hiyu Abyss',
       'url': siteUrl,
       'logo': `${siteUrl}/favicon.svg`,
@@ -68,7 +68,6 @@ const jsonLd = {
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href={canonicalURL} />
     <link rel="alternate" hreflang="vi" href={canonicalURL} />
-    <link rel="alternate" hreflang="en" href={canonicalURL} />
     <link rel="alternate" hreflang="x-default" href={canonicalURL} />
 
     <!-- Open Graph / Facebook -->

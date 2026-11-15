@@ -1,13 +1,40 @@
 // types.ts - Cấu trúc dữ liệu Thư Viện Nghệ Thuật & The Mirror V3
 export type QuoteType = 'DIRECT_QUOTE' | 'PARAPHRASE' | 'INSPIRED_ORIGINAL' | 'INDEPENDENT_ORIGINAL';
 
+export type VerificationStatus = 
+  | 'VERIFIED_SOURCE'         // Đã đối chiếu ấn bản, số trang/chương cụ thể
+  | 'PENDING_VERIFICATION'    // Đang đối chiếu tài liệu ấn bản gốc
+  | 'INSPIRED_ORIGINAL'       // Sáng tác lấy cảm hứng từ tư tưởng
+  | 'INDEPENDENT_ORIGINAL';   // Đúc kết sáng tác độc lập Hiyu Abyss
+
+export interface ScholarlySource {
+  work?: string;               // Tên tác phẩm / ấn bản gốc
+  work_original?: string;      // Tên tác phẩm theo ngôn ngữ gốc
+  location?: string;           // Vị trí (chương, đoạn, trang, số hiệu châm ngôn)
+  source_url?: string;         // URL đối chiếu bản in số hóa (Gutenberg, BnF Gallica, Archive.org...)
+  original_text?: string;      // Câu nguyên tác (tiếng Pháp, Đức, Hy Lạp, Anh...)
+  translation_note?: string;   // Ghi chú dịch thuật
+  verification_status: VerificationStatus;
+  verified_at?: string;        // Ngày kiểm chứng
+}
+
+export type ArtworkProvenanceType = 
+  | 'ORIGINAL_MUSEUM_SCAN'        // Ảnh chụp/scan nguyên bản từ bảo tàng
+  | 'TRANSFORMED_PUBLIC_DOMAIN'    // Tranh cổ điển Public Domain chuẩn hóa bố cục 9:16 & thớ toan hữu cơ (HYA-08)
+  | 'COMMISSIONED_DERIVATIVE'      // Tác phẩm phái sinh/sáng tác nội bộ của dự án
+  | 'HISTORICAL_DOCUMENT';         // Bản khắc, tài liệu cổ
+
 export interface ArtMasterpiece {
   art_id: string;
   title: string;
+  title_original?: string;
   artist: string;
   year: string;
   museum: string;
   license: string;
+  provenance_type?: ArtworkProvenanceType;
+  source_institution_url?: string;
+  curation_note?: string;
   alt_vi: string;
   slides: {
     slide_1: string;
@@ -27,6 +54,7 @@ export interface PublicQuote {
   author: string;
   quoteType: QuoteType;
   quoteTypeLabel: string;
+  scholarlySource?: ScholarlySource;
   topicCodes: string[];
   primaryTopic: string;
   primaryTopicTitle: string;

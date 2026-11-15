@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import yaml from 'js-yaml';
-import type { PublicQuote, TopicDefinition, QuoteType, MirrorJourneyData } from './types';
+import type { PublicQuote, TopicDefinition, QuoteType, MirrorJourneyData, ScholarlySource, VerificationStatus } from './types';
 import artCatalog from '../data/asset-catalog.json';
 
 // Resolving cross-platform relative paths with multiple candidate fallbacks
@@ -53,7 +53,7 @@ const TOPIC_NAMES: Record<string, { title: string; desc: string }> = {
 };
 
 const QUOTE_TYPE_LABELS: Record<QuoteType, string> = {
-  DIRECT_QUOTE: 'Trích dẫn đã xác minh',
+  DIRECT_QUOTE: 'Trích dẫn nguyên văn',
   PARAPHRASE: 'Diễn giải tư tưởng',
   INSPIRED_ORIGINAL: 'Sáng tác lấy cảm hứng',
   INDEPENDENT_ORIGINAL: 'Sáng tác Hiyu Abyss',
@@ -140,7 +140,38 @@ export function getAllPublishedQuotes(): PublicQuote[] {
 
     const quoteType: QuoteType = frontmatter?.content_type || 'PARAPHRASE';
     const imageRef = frontmatter?.image_ref || 'theme_01';
-    const artInfo = (artCatalog as any)[imageRef];
+    const rawArt = (artCatalog as any)[imageRef];
+    const artInfo = rawArt
+      ? {
+          ...rawArt,
+          provenance_type: rawArt.provenance_type || 'TRANSFORMED_PUBLIC_DOMAIN',
+        }
+      : undefined;
+
+    // Academic Rigor: Build ScholarlySource per HYA-02 (P0-01)
+    let verificationStatus: VerificationStatus = 'PENDING_VERIFICATION';
+    if (quoteType === 'INSPIRED_ORIGINAL') {
+      verificationStatus = 'INSPIRED_ORIGINAL';
+    } else if (quoteType === 'INDEPENDENT_ORIGINAL') {
+      verificationStatus = 'INDEPENDENT_ORIGINAL';
+    } else if (frontmatter?.verification_status) {
+      verificationStatus = frontmatter.verification_status;
+    } else if (frontmatter?.source_work && frontmatter?.source_location && frontmatter?.source_url) {
+      verificationStatus = 'VERIFIED_SOURCE';
+    } else {
+      verificationStatus = 'PENDING_VERIFICATION';
+    }
+
+    const scholarlySource: ScholarlySource = {
+      work: frontmatter?.source_work || undefined,
+      work_original: frontmatter?.source_work_original || undefined,
+      location: frontmatter?.source_location || undefined,
+      source_url: frontmatter?.source_url || undefined,
+      original_text: frontmatter?.original_text || undefined,
+      translation_note: frontmatter?.translation_note || undefined,
+      verification_status: verificationStatus,
+      verified_at: frontmatter?.verified_at || undefined,
+    };
 
     quotes.push({
       id,
@@ -153,6 +184,7 @@ export function getAllPublishedQuotes(): PublicQuote[] {
       author: frontmatter?.author_attribution || 'Khuyết danh',
       quoteType,
       quoteTypeLabel: QUOTE_TYPE_LABELS[quoteType] || 'Chiêm nghiệm',
+      scholarlySource,
       topicCodes,
       primaryTopic,
       primaryTopicTitle,

@@ -49,3 +49,5 @@ tmp/
 assets/templates/raw_cache/
 .env
 .env.*
+
+website/test-artifacts/

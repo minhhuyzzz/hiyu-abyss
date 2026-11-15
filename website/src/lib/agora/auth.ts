@@ -49,6 +49,16 @@ export function getClearSessionCookieHeader(): string {
   return `${SESSION_COOKIE_NAME}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0`;
 }
 
+export function getAppOrigin(request: Request): string {
+  const forwardedProto = request.headers.get('x-forwarded-proto');
+  const forwardedHost = request.headers.get('x-forwarded-host') || request.headers.get('host');
+  if (forwardedProto && forwardedHost) {
+    return `${forwardedProto}://${forwardedHost}`;
+  }
+  const url = new URL(request.url);
+  return url.origin;
+}
+
 export async function getSession(request: Request, runtimeEnv?: any): Promise<AuthSession | null> {
   const cookieHeader = request.headers.get('cookie');
   const token = parseCookie(cookieHeader, SESSION_COOKIE_NAME);

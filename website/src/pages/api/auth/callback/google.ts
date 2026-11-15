@@ -6,6 +6,7 @@ import {
   getSessionCookieHeader,
   OAUTH_STATE_COOKIE_NAME,
   OAUTH_REDIRECT_COOKIE_NAME,
+  getAppOrigin,
   upsertGoogleUser,
   createSession,
 } from '../../../../lib/agora/auth';
@@ -29,7 +30,7 @@ export const GET: APIRoute = async ({ request, locals, redirect }) => {
     return redirect(`/account?status=auth_failed&error=${encodeURIComponent(error || 'Invalid OAuth state')}`);
   }
 
-  const origin = url.origin;
+  const origin = getAppOrigin(request);
   const callbackUrl = `${origin}/api/auth/callback/google`;
 
   try {

@@ -1,7 +1,7 @@
 export const prerender = false;
 
 import type { APIRoute } from 'astro';
-import { OAUTH_STATE_COOKIE_NAME, OAUTH_REDIRECT_COOKIE_NAME } from '../../../lib/agora/auth';
+import { OAUTH_STATE_COOKIE_NAME, OAUTH_REDIRECT_COOKIE_NAME, getAppOrigin } from '../../../lib/agora/auth';
 
 export const GET: APIRoute = async ({ request, locals, redirect }) => {
   const env = (locals as any)?.runtime?.env || {};
@@ -21,7 +21,7 @@ export const GET: APIRoute = async ({ request, locals, redirect }) => {
   const state = Array.from(randomBytes, (b) => b.toString(16).padStart(2, '0')).join('');
 
   // Determine callback URL
-  const origin = url.origin;
+  const origin = getAppOrigin(request);
   const callbackUrl = `${origin}/api/auth/callback/google`;
 
   const googleAuthUrl = new URL('https://accounts.google.com/o/oauth2/v2/auth');

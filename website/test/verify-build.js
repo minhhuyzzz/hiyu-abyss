@@ -100,7 +100,7 @@ assert(ratioLightAccent >= 3.0, `Pale Archive Accent đạt WCAG Large Text AA (
 // ----------------------------------------------------
 // 2. STATIC ROUTES INTEGRITY AUDIT
 // ----------------------------------------------------
-console.log('\n▶ [2/4] Kiểm định Tính Toàn Vẹn Tuyến Đường Tĩnh (126 trang)');
+console.log('\n▶ [2/4] Kiểm định Tính Toàn Vẹn Tuyến Đường Tĩnh (234 trang)');
 
 assert(fs.existsSync(distDir), 'Thư mục website/dist tồn tại');
 assert(fs.existsSync(path.join(distDir, 'index.html')), 'Trang chủ /index.html tồn tại');
@@ -111,16 +111,16 @@ assert(fs.existsSync(path.join(distDir, 'search/index.html')), 'Trang /search/in
 assert(fs.existsSync(path.join(distDir, 'themes/index.html')), 'Trang /themes/index.html tồn tại');
 assert(fs.existsSync(path.join(distDir, '404.html')), 'Trang lỗi nhận diện /404.html tồn tại');
 
-// Check 100 quote pages
+// Check 200 quote pages
 let quotesMissing = 0;
-for (let i = 1; i <= 100; i++) {
+for (let i = 1; i <= 200; i++) {
   const idStr = String(i).padStart(4, '0');
   const quotePath = path.join(distDir, `library/txt-${idStr}/index.html`);
   if (!fs.existsSync(quotePath)) {
     quotesMissing++;
   }
 }
-assert(quotesMissing === 0, `Đủ 100/100 trang tác phẩm chi tiết (library/txt-0001 -> txt-0100)`);
+assert(quotesMissing === 0, `Đủ 200/200 trang tác phẩm chi tiết (library/txt-0001 -> txt-0200)`);
 
 // Check sample theme pages
 const sampleThemes = ['hypocrisy', 'ego', 'truth', 'freedom', 'manipulation', 'solitude'];

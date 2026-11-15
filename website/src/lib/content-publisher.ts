@@ -50,6 +50,15 @@ const TOPIC_NAMES: Record<string, { title: string; desc: string }> = {
   MEANING: { title: 'Ý Nghĩa Cuộc Sống', desc: 'Vượt qua cảm giác trống rỗng hiện sinh theo tinh thần Viktor Frankl.' },
   SOLITUDE: { title: 'Nghệ Thuật Cô Độc', desc: 'Sự tĩnh lặng nuôi dưỡng tâm hồn, phân biệt giữa cô đơn và cô độc lành mạnh.' },
   STATUS: { title: 'Danh Vọng & Khiêm Nhường', desc: 'Bản chất của sự thừa nhận xã hội và trò trình diễn khiêm tốn giả tạo.' },
+  BOUNDARIES: { title: 'Ranh Giới Cá Nhân', desc: 'Thiết lập ranh giới lành mạnh và dũng khí bảo vệ sự độc lập nội tâm.' },
+  SERENITY: { title: 'Thanh Thản & Tĩnh Lặng', desc: 'Bình yên vững chãi trước những biến động và áp lực đời sống.' },
+  RESILIENCE: { title: 'Kiên Cường & Nghị Lực', desc: 'Sức mạnh phục hồi và sự trưởng thành sau đau thương.' },
+  CONNECTION: { title: 'Kết Nối & Tình Bạn', desc: 'Nghệ thuật thấu cảm và những mối quan hệ chân thành, sâu sắc.' },
+  TRANSCENDENCE: { title: 'Vượt Lên Phán Xét', desc: 'Thoát khỏi chiếc lồng công nhận của miệng đời và ánh nhìn số đông.' },
+  EXISTENCE: { title: 'Hiện Sinh & Lựa Chọn', desc: 'Sức bật nội tại và đối diện với những nghịch lý của sự tồn tại.' },
+  BAD_FAITH: { title: 'Ngụy Tín (Bad Faith)', desc: 'Nỗi sợ tự do và cơ chế trốn tránh trách nhiệm cá nhân theo Jean-Paul Sartre.' },
+  BIAS: { title: 'Thiên Kiến & Tự Biện Hộ', desc: 'Những chiếc bẫy nhận thức và sự ngụy biện xoa dịu bản ngã.' },
+  PSYCHOLOGY: { title: 'Tâm Lý Học Hành Vi', desc: 'Khám phá những cơ chế tâm lý điều hướng hành vi con người.' },
 };
 
 const QUOTE_TYPE_LABELS: Record<QuoteType, string> = {
@@ -104,9 +113,9 @@ export function getAllPublishedQuotes(): PublicQuote[] {
 
     const { frontmatter, body } = parseMarkdownFile(filePath);
 
-    // GATE CHECK: Must be APPROVED or PUBLISHED
+    // GATE CHECK: Must be APPROVED, PUBLISHED, or SẴN SÀNG
     const status = frontmatter?.status?.toUpperCase();
-    if (status !== 'APPROVED' && status !== 'PUBLISHED') {
+    if (status !== 'APPROVED' && status !== 'PUBLISHED' && status !== 'SẴN SÀNG' && status !== 'READY') {
       continue;
     }
 

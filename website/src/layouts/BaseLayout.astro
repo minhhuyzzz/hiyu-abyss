@@ -25,6 +25,29 @@ const {
 } = Astro.props;
 
 const siteTitle = title.includes('Hiyu Abyss') ? title : `${title} · Hiyu Abyss`;
+const siteUrl = Astro.site ? Astro.site.toString() : 'https://hiyuabyss.com';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}#website`,
+      'url': siteUrl,
+      'name': 'Hiyu Abyss',
+      'description': description,
+      'inLanguage': ['vi', 'en'],
+    },
+    {
+      '@type': 'Organization',
+      '@id': `${siteUrl}#organization`,
+      'name': 'Hiyu Abyss',
+      'url': siteUrl,
+      'logo': `${siteUrl}/favicon.svg`,
+      'sameAs': ['https://www.tiktok.com/@hiyuabyss'],
+    },
+  ],
+};
 ---
 
 <!doctype html>
@@ -39,7 +62,13 @@ const siteTitle = title.includes('Hiyu Abyss') ? title : `${title} · Hiyu Abyss
     <title>{siteTitle}</title>
     <meta name="title" content={siteTitle} />
     <meta name="description" content={description} />
+    <meta name="keywords" content="triết học, tâm lý học đen, mỹ học cổ điển, danh ngôn, triết học hành vi, bảo tàng nghệ thuật, hiyu abyss, dark psychology aphorisms, classical art" />
+    <meta name="author" content="Hiyu Abyss" />
+    <meta name="robots" content="index, follow" />
     <link rel="canonical" href={canonicalURL} />
+    <link rel="alternate" hreflang="vi" href={canonicalURL} />
+    <link rel="alternate" hreflang="en" href={canonicalURL} />
+    <link rel="alternate" hreflang="x-default" href={canonicalURL} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -54,6 +83,9 @@ const siteTitle = title.includes('Hiyu Abyss') ? title : `${title} · Hiyu Abyss
     <meta property="twitter:title" content={siteTitle} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+    <!-- Structured Data JSON-LD Schema.org -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
     <!-- Zero-FOUC Inline Theme Boot Script -->
     <script is:inline>

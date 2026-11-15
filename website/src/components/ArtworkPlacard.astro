@@ -1,0 +1,38 @@
+---
+// ArtworkPlacard.astro - Authentic Museum Exhibition Placard
+interface Props {
+  title?: string;
+  artist?: string;
+  year?: string;
+  museum?: string;
+  license?: string;
+  compact?: boolean;
+}
+
+const {
+  title = "Tác phẩm mỹ thuật cổ điển",
+  artist = "Danh họa",
+  year,
+  museum = "Bộ sưu tập bảo tàng",
+  license = "Public Domain / CC0",
+  compact = false,
+} = Astro.props;
+---
+
+<div class={`border-l-2 border-border/80 pl-3.5 py-1 ${compact ? 'text-xs' : 'text-xs sm:text-sm'}`}>
+  <p class="font-display text-text font-medium italic text-sm sm:text-base leading-snug">
+    {title}
+  </p>
+  <div class="font-sans text-[11px] text-muted tracking-wide mt-1 flex flex-wrap items-center gap-x-2 gap-y-1">
+    <span class="text-text/90 font-medium">{artist}</span>
+    {year && <span>({year})</span>}
+    <span class="text-border">·</span>
+    <span>{museum}</span>
+    {license && (
+      <>
+        <span class="text-border">·</span>
+        <span class="text-accent/90 text-[10px] tracking-widest uppercase">{license}</span>
+      </>
+    )}
+  </div>
+</div>

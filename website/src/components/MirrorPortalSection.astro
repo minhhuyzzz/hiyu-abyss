@@ -1,0 +1,107 @@
+---
+// MirrorPortalSection.astro - Scene 07: The Mirror Portal (Masterplan V3)
+import SectionHeader from './SectionHeader.astro';
+import ArtworkPlacard from './ArtworkPlacard.astro';
+---
+
+<section class="py-20 sm:py-28 md:py-36 bg-surface/20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      
+      <!-- Visual Column: The Mirror Threshold Frame (5 cols) -->
+      <div class="lg:col-span-5 order-2 lg:order-1 flex flex-col gap-3">
+        <div class="relative aspect-[4/5] w-full max-w-md mx-auto overflow-hidden bg-surface shadow-2xl group border border-border/50">
+          <img
+            src="/images/themes/theme_11/slide_1_establishing.jpg"
+            alt="Kẻ lãng du trên biển sương mù - Caspar David Friedrich"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            loading="lazy"
+            decoding="async"
+          />
+          <!-- Quiet Vignette -->
+          <div class="absolute inset-0 bg-gradient-to-t from-bg/90 via-bg/20 to-transparent"></div>
+          
+          <!-- Subtle Floating Overlay Label -->
+          <div class="absolute bottom-5 left-5 right-5 text-center">
+            <span class="font-display italic text-lg sm:text-xl text-text drop-shadow">
+              "Bạn ưu tiên sự thật phơi bày, hay cần một khoảng lặng bình yên?"
+            </span>
+          </div>
+        </div>
+
+        <div class="max-w-md mx-auto w-full pt-1">
+          <ArtworkPlacard
+            title="Kẻ lãng du trên biển sương mù"
+            artist="Caspar David Friedrich"
+            year="1818"
+            museum="Hamburger Kunsthalle"
+            license="Public Domain / CC0"
+            compact={true}
+          />
+        </div>
+      </div>
+
+      <!-- Narrative Column (7 cols) -->
+      <div class="lg:col-span-7 order-1 lg:order-2 flex flex-col gap-6">
+        <SectionHeader
+          index="07"
+          tag="THE MIRROR PORTAL"
+          title="Buồng Chiêm Nghiệm & Những Ngã Rẽ Tư Tưởng"
+          description="Một hành trình tự sự triết học nhiều nhánh (Directed Scene Graph) giúp đối thoại với những mâu thuẫn nội tâm sâu kín nhất."
+        />
+
+        <!-- Philosophical Framework Features (Clean Spacing, No Excessive Lines) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+          <div class="p-4 bg-surface/30 space-y-1.5">
+            <span class="text-accent font-sans text-xs tracking-widest uppercase font-semibold">01 · Rẽ Nhánh Thực Sự</span>
+            <p class="font-sans text-xs sm:text-sm text-muted leading-relaxed">
+              Ít nhất 2 điểm quyết định, phân hóa thành 4 luồng phản đề khác biệt thay vì kịch bản tuyến tính giả lập.
+            </p>
+          </div>
+
+          <div class="p-4 bg-surface/30 space-y-1.5">
+            <span class="text-accent font-sans text-xs tracking-widest uppercase font-semibold">02 · Bốn Kết Thúc Độc Lập</span>
+            <p class="font-sans text-xs sm:text-sm text-muted leading-relaxed">
+              Mỗi lựa chọn dẫn tới một kết thúc mở mang ngôn từ và tranh minh họa riêng, không gộp chung kết luận.
+            </p>
+          </div>
+
+          <div class="p-4 bg-surface/30 space-y-1.5">
+            <span class="text-accent font-sans text-xs tracking-widest uppercase font-semibold">03 · Tôn Trọng Người Đọc</span>
+            <p class="font-sans text-xs sm:text-sm text-muted leading-relaxed">
+              Không chấm điểm, không dán nhãn tính cách. Mỗi lựa chọn chỉ là một giả thuyết tạm thời cho cuộc đối thoại.
+            </p>
+          </div>
+
+          <div class="p-4 bg-surface/30 space-y-1.5">
+            <span class="text-accent font-sans text-xs tracking-widest uppercase font-semibold">04 · Bảo Mật Tuyệt Đối</span>
+            <p class="font-sans text-xs sm:text-sm text-muted leading-relaxed">
+              Toàn bộ tương tác chạy 100% trong trình duyệt. Không thu thập dữ liệu, không theo dõi định danh độc giả.
+            </p>
+          </div>
+        </div>
+
+        <!-- Action Links -->
+        <div class="flex flex-wrap items-center gap-4 pt-4">
+          <a
+            href="/mirror/su-that-va-binh-yen"
+            class="px-7 py-3.5 bg-accent text-on-accent font-sans text-xs tracking-[0.18em] uppercase font-bold hover:opacity-90 transition-opacity min-h-[48px] inline-flex items-center justify-center"
+          >
+            Bước Vào Hành Trình MIR-0001
+          </a>
+
+          <a
+            href="/mirror"
+            class="px-6 py-3.5 border border-border/70 bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-[0.18em] uppercase font-semibold transition-colors min-h-[48px] inline-flex items-center gap-2"
+          >
+            <span>Danh Mục Các Hành Trình</span>
+            <span class="text-xs">→</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>

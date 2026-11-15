@@ -1,48 +1,165 @@
+# website/journeys/MIR-0001.yaml
+# The Mirror V3 - Directed Scene Graph Architecture
 id: MIR-0001
+status: APPROVED
 slug: su-that-va-binh-yen
-title: "Sự thật và Bình yên"
-subtitle: "Một hành trình tự vấn về lòng can đảm và bản năng tự vệ"
+version: 3
+title: Sự thật và Bình yên
+subtitle: Một hành trình không có đáp án đúng
 artwork_id: ART-0011
 artwork_url: /images/themes/theme_11/slide_1_establishing.jpg
 artwork_title: "Wanderer above the Sea of Fog"
 artwork_artist: "Caspar David Friedrich (1818)"
 estimated_minutes: 3
-intro:
-  lead: "Chào mừng bạn bước vào The Mirror"
-  description: "Đây không phải là bài trắc nghiệm đo nhân cách hay phân loại tâm lý. Đây là một không gian tĩnh lặng, nơi câu hỏi quan trọng hơn câu trả lời. Bạn có thể tạm dừng, suy ngẫm, hoặc rời đi bất kỳ lúc nào."
-  button_label: "Bắt đầu chiêm nghiệm"
-question:
-  prompt: "Giữa một sự thật làm bạn bất an và một lời giải thích giúp bạn yên lòng, điều gì đang níu giữ bạn lúc này?"
-  context: "Trong những bước ngoặt của đời sống, chúng ta thường đứng trước lằn ranh này mà không tự nhận ra."
-  choices:
-    - id: choice_truth
-      label: "Tôi khao khát một sự thật trần trụi, dẫu nó mang lại sự bất an sâu sắc."
-      reflection_text: "Khi bạn chọn sự thật bằng mọi giá, bạn tin rằng sự rõ ràng sẽ mang lại tự do. Nhưng sự thật trần trụi không có lòng trắc ẩn; nó phơi bày những vết thương mà tâm trí đôi khi chưa đủ vững vàng để băng bó."
-      reflection_subtext: "Tự do mà sự thật mang lại thường đi kèm cái giá của sự cô độc tuyệt đối."
-      artwork_ref: /images/themes/theme_11/slide_2_closeup.jpg
-    - id: choice_peace
-      label: "Tôi cần một lời giải thích dịu dàng, giữ lại sự bình yên hiện tại."
-      reflection_text: "Tìm kiếm sự bình yên không nhất thiết là sự hèn nhát hay trốn chạy thực tại. Đó có thể là một cơ chế tự vệ cần thiết trước khi bạn đủ sức đối diện với bão giông."
-      reflection_subtext: "Một ảo ảnh tử tế đôi khi là chiếc neo duy nhất giữ con người lại với cuộc đời qua những mùa kiệt cùng."
-      artwork_ref: /images/themes/theme_11/slide_3_macro.jpg
-counterpoint:
-  text: "Có khi tìm kiếm sự thật là biểu hiện của lòng can đảm tột cùng; nhưng cũng có khi, nó lại là một cách vô thức để tự trừng phạt chính mình. Ngược lại, khát khao bình yên có thể là sự bao dung, nhưng cũng có thể là sự ru ngủ trước nguy nan."
-  subtext: "Ranh giới giữa can đảm và tự hủy hoại, giữa bao dung và tự dối mình, mong manh như một làn khói."
-  question: "Điều gì thực sự đang thúc đẩy lựa chọn của bạn: Sự giải thoát thật sự, hay nỗi ám ảnh về việc phải luôn kiểm soát mọi thứ?"
-open_ending:
-  prompt: "Bạn không cần phải trả lời câu hỏi này ngay lập tức. Hãy mang nó theo bên mình như một chiếc gương soi trong đời sống thường nhật."
-  closing_note: "Hôm nay, bạn đang đối diện với điều gì cần thêm lòng can đảm, và điều gì cần bạn học cách buông tay để tự tha thứ cho mình?"
-  related_topics:
-    - code: truth
-      title: "Sự thật"
-      slug: truth
-    - code: self-deception
-      title: "Tự dối mình"
-      slug: self-deception
-    - code: solitude
-      title: "Sự cô độc"
-      slug: solitude
-  suggested_quotes:
-    - TXT-0011
-    - TXT-0046
-    - TXT-0001
+entry: threshold
+
+nodes:
+  threshold:
+    type: intro
+    title: Cánh cửa của điều chưa biết
+    body: "Có những điều ta muốn biết, và có những điều ta sợ rằng một khi đã biết sẽ không thể trở lại như cũ."
+    scenePreset: gallery-threshold
+    motionPreset: reveal-slow
+    next: first_choice
+
+  first_choice:
+    type: choice
+    title: Giữa sự thật và bình yên, bạn nghiêng về đâu?
+    body: "Đây chỉ là một lựa chọn cho cuộc đối thoại, không phải kết luận về con người bạn."
+    scenePreset: two-door
+    motionPreset: crossfade
+    choices:
+      - id: seek_truth
+        label: Tôi muốn hiểu điều đang bị che khuất.
+        to: truth_room
+        editorialIntent: "Khao khát đối diện sự thật bất kể chông chênh"
+      - id: protect_peace
+        label: Tôi cần giữ lại một khoảng bình yên.
+        to: peace_room
+        editorialIntent: "Bảo vệ khoảng lặng an toàn cho tâm trí"
+
+  truth_room:
+    type: statement
+    title: Phòng Quan Sát
+    body: "Sự thật có thể giải phóng, nhưng nhu cầu biết mọi điều đôi khi cũng là khát vọng kiểm soát."
+    scenePreset: stone-archive
+    motionPreset: lateral-reveal
+    artwork_ref: /images/themes/theme_11/slide_2_closeup.jpg
+    next: truth_second_choice
+
+  truth_second_choice:
+    type: choice
+    title: Bạn muốn tiến đến sự thật bằng cách nào?
+    body: "Không phải mọi câu hỏi đều cần được trả lời trong cùng một thời điểm."
+    scenePreset: aperture
+    motionPreset: crossfade
+    choices:
+      - id: immediately
+        label: Tôi muốn biết ngay, bất kể hệ quả.
+        to: counter_control
+        editorialIntent: "Sự khẩn thiết loại bỏ bất định"
+      - id: with_care
+        label: Tôi sẽ đợi đến khi có thể đối diện một cách sáng suốt.
+        to: counter_timing
+        editorialIntent: "Sự kiên nhẫn và tỉnh thức theo thời điểm"
+
+  peace_room:
+    type: statement
+    title: Phòng Im Lặng
+    body: "Bình yên có thể là nơi nghỉ ngơi cần thiết, nhưng cũng có thể trở thành một cách trì hoãn câu hỏi quan trọng."
+    scenePreset: paper-chamber
+    motionPreset: lateral-reveal
+    artwork_ref: /images/themes/theme_11/slide_3_macro.jpg
+    next: peace_second_choice
+
+  peace_second_choice:
+    type: choice
+    title: Điều gì đang được bảo vệ trong lựa chọn ấy?
+    body: "Bình yên là chiếc khiên che chắn cho điều gì sâu kín nhất lúc này?"
+    scenePreset: aperture
+    motionPreset: crossfade
+    choices:
+      - id: self_boundary
+        label: Giới hạn và sự ổn định của chính tôi.
+        to: counter_boundary
+        editorialIntent: "Xác lập ranh giới tự vệ cá nhân"
+      - id: others_welfare
+        label: Sự bình yên của người khác.
+        to: counter_responsibility
+        editorialIntent: "Bảo vệ tâm thế của những người xung quanh"
+
+  counter_control:
+    type: counterpoint
+    title: Hiểu biết không đồng nghĩa với quyền kiểm soát
+    body: "Sự thật càng khó chịu, ta càng dễ nhầm lòng can đảm với nhu cầu loại bỏ mọi bất định."
+    scenePreset: shadow-closeup
+    motionPreset: reveal-quiet
+    artwork_ref: /images/themes/theme_11/slide_2_closeup.jpg
+    next: ending_control
+
+  counter_timing:
+    type: counterpoint
+    title: Đối diện không có nghĩa là vội vã
+    body: "Một điều đúng không nhất thiết trở nên sáng rõ khi được ép nói ra trước thời điểm thích hợp."
+    scenePreset: open-window
+    motionPreset: reveal-quiet
+    artwork_ref: /images/themes/theme_11/slide_1_establishing.jpg
+    next: ending_timing
+
+  counter_boundary:
+    type: counterpoint
+    title: Ranh giới không phải là sự trốn tránh
+    body: "Giữ khoảng cách có thể là một hành động tỉnh táo; chỉ bạn mới có thể xem mình đang nghỉ ngơi hay đang né tránh điều gì."
+    scenePreset: veil
+    motionPreset: reveal-quiet
+    artwork_ref: /images/themes/theme_11/slide_3_macro.jpg
+    next: ending_boundary
+
+  counter_responsibility:
+    type: counterpoint
+    title: Bảo vệ và tước đi quyền lựa chọn
+    body: "Che giấu để người khác khỏi tổn thương có thể xuất phát từ lòng thương, nhưng ai là người có quyền quyết định điều họ cần biết?"
+    scenePreset: twin-portraits
+    motionPreset: reveal-quiet
+    artwork_ref: /images/themes/theme_11/slide_2_closeup.jpg
+    next: ending_responsibility
+
+  ending_control:
+    type: ending
+    title: Sự thật và nỗi ám ảnh kiểm soát
+    body: "Có lẽ câu hỏi không chỉ là điều gì đúng, mà còn là điều gì trong ta đòi sự chắc chắn đến thế."
+    closingQuestion: "Hôm nay, bạn đang tìm kiếm sự thật để tự do, hay để không phải chịu đựng cảm giác bất an?"
+    scenePreset: open-ended-dark
+    motionPreset: stillness
+    artwork_ref: /images/themes/theme_11/slide_1_establishing.jpg
+    relatedTopic: "TRUTH"
+
+  ending_timing:
+    type: ending
+    title: Sự thật có thời điểm
+    body: "Biết chờ không làm chân lý bớt chân thật. Nó buộc ta suy ngẫm về trách nhiệm với cách sự thật được trao đi."
+    closingQuestion: "Điều gì mách bảo bạn rằng đây đã là thời điểm thích hợp để đối diện, hay sự kiên nhẫn đang dần biến thành sự trì hoãn?"
+    scenePreset: horizon
+    motionPreset: stillness
+    artwork_ref: /images/themes/theme_11/slide_1_establishing.jpg
+    relatedTopic: "SELF_DECEPTION"
+
+  ending_boundary:
+    type: ending
+    title: Bình yên và giới hạn
+    body: "Một nơi trú ẩn có thể nuôi dưỡng lòng can đảm. Điều quan trọng là ta còn nhớ con đường bước ra hay không."
+    closingQuestion: "Khoảng lặng này đang giúp bạn tích lũy nội lực để bước tiếp, hay đang trở thành một nhà tù êm ái?"
+    scenePreset: empty-room
+    motionPreset: stillness
+    artwork_ref: /images/themes/theme_11/slide_3_macro.jpg
+    relatedTopic: "SOLITUDE"
+
+  ending_responsibility:
+    type: ending
+    title: Bình yên và trách nhiệm
+    body: "Đôi khi yêu thương không nằm ở việc giữ người khác khỏi mọi sự thật, mà ở việc tôn trọng năng lực lựa chọn của họ."
+    closingQuestion: "Bạn đang bảo bọc sự mong manh của họ, hay đang né tránh cơn bão cảm xúc mà bạn sợ mình không gánh nổi?"
+    scenePreset: two-figures
+    motionPreset: stillness
+    artwork_ref: /images/themes/theme_11/slide_2_closeup.jpg
+    relatedTopic: "MORALITY"

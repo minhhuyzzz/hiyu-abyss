@@ -1,6 +1,7 @@
 ---
-// src/pages/search.astro - Instant Vietnamese Full-Text Search
+// src/pages/search.astro - Instant Vietnamese Full-Text Search (Museum Editorial Architecture)
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
 import { getAllPublishedQuotes, getAllTopics } from '../lib/content-publisher';
 
 const allQuotes = getAllPublishedQuotes();
@@ -27,43 +28,47 @@ const searchIndex = allQuotes.map((q) => {
 
 <BaseLayout
   title="Tìm Kiếm Kho Tri Thức & Nghệ Thuật | Hiyu Abyss"
-  description="Tìm kiếm toàn văn 100 tác phẩm triết ngôn, danh ngôn tâm lý học và tác phẩm hội họa cổ điển theo từ khóa, tác giả hoặc chủ đề."
+  description="Tìm kiếm toàn văn các tác phẩm triết ngôn, danh ngôn tâm lý học và tác phẩm hội họa cổ điển theo từ khóa, tác giả hoặc chủ đề."
 >
-  <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6">
+  <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8">
     <div class="max-w-4xl mx-auto space-y-12">
       
-      <!-- Header Search Section -->
-      <div class="text-center space-y-6">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-accent/30 bg-accent/10 text-[10px] font-sans tracking-[0.2em] uppercase font-medium text-accent">
-          Tra cứu toàn văn · 100 tác phẩm đã duyệt
+      <!-- Masthead -->
+      <div class="text-center space-y-4">
+        <div class="flex items-center justify-center gap-2 text-xs tracking-[0.25em] uppercase font-sans text-muted">
+          <span class="text-accent font-semibold">SEARCH ARCHIVE</span>
+          <span class="text-muted/30">/</span>
+          <span>{allQuotes.length} TÁC PHẨM ĐÃ DUYỆT</span>
         </div>
+
         <h1 class="font-display text-4xl sm:text-6xl font-medium tracking-tight text-text">
-          Tìm Kiếm Tri Thức
+          Tìm Kiếm Toàn Văn
         </h1>
+
         <p class="font-serif italic text-base sm:text-xl text-muted max-w-xl mx-auto">
-          Tra cứu theo từ khóa tâm lý, tác giả (Nietzsche, Jung, Freud...) hoặc tư tưởng phản tư.
+          Tra cứu theo từ khóa tâm lý, tác giả (Nietzsche, Jung, Freud, Epictetus...) hoặc khái niệm triết học.
         </p>
 
-        <!-- Search Input Box (Doppelrand Double-Bezel Architecture) -->
-        <div class="max-w-2xl mx-auto mt-6 p-1 rounded-full bg-surface border border-border/80 focus-within:border-accent shadow-xl transition-all">
-          <div class="relative rounded-full bg-bg/80 flex items-center px-4 py-1.5">
+        <!-- Museum Editorial Search Input Box -->
+        <div class="max-w-2xl mx-auto mt-6 border border-border/80 focus-within:border-accent bg-surface/50 shadow-sm transition-colors">
+          <div class="relative flex items-center px-4 py-2">
             <div class="text-muted pl-1 pr-3 pointer-events-none">
               <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <circle cx="11" cy="11" r="8" stroke-width="1.75" />
+                <circle cx="11" cy="11" r="7.5" stroke-width="1.75" />
                 <path d="m21 21-4.35-4.35" stroke-width="1.75" stroke-linecap="round" />
               </svg>
             </div>
             <input
               id="search-input"
               type="search"
-              placeholder="Nhập từ khóa (thao túng, bản ngã, sự thật, tự do...)"
+              placeholder="Nhập từ khóa (thao túng, bản ngã, sự thật, tự do, cô độc...)"
               autocomplete="off"
-              class="w-full py-3 text-base sm:text-lg bg-transparent border-none font-serif text-text placeholder-muted/60 outline-none"
+              class="w-full py-2.5 text-base sm:text-lg bg-transparent border-none font-serif text-text placeholder-muted/60 outline-none"
             />
             <button
               id="clear-search-btn"
               type="button"
-              class="hidden text-xs font-sans text-muted hover:text-text py-1 px-3 rounded-full hover:bg-surface transition-colors"
+              class="hidden text-xs font-sans text-muted hover:text-text py-1 px-3 hover:bg-surface transition-colors"
             >
               Xóa ✕
             </button>
@@ -76,7 +81,7 @@ const searchIndex = allQuotes.map((q) => {
           {['Thao túng', 'Bản ngã', 'Đạo đức giả', 'Sự thật', 'Cô độc', 'Tự do', 'Tiêu chuẩn kép'].map((keyword) => (
             <button
               type="button"
-              class="quick-tag px-3 py-1 bg-surface hover:bg-surface-raised border border-border/80 rounded-full text-muted hover:text-text hover:border-accent transition-all"
+              class="quick-tag px-3 py-1 bg-surface border border-border/80 text-muted hover:text-text hover:border-accent transition-colors"
               data-keyword={keyword}
             >
               {keyword}
@@ -86,16 +91,16 @@ const searchIndex = allQuotes.map((q) => {
       </div>
 
       <!-- Filters & Results Meta -->
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-4 border-b border-border/60 text-xs font-sans text-muted">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-4 border-b border-border/70 text-xs font-sans text-muted">
         <div id="results-count" class="font-medium text-text/80">
-          Đang hiển thị tất cả 100 tác phẩm
+          Đang hiển thị tất cả {allQuotes.length} tác phẩm
         </div>
 
         <div class="flex flex-wrap items-center gap-3">
           <!-- Topic Dropdown -->
           <select
             id="topic-filter"
-            class="bg-surface border border-border/80 text-text px-4 py-2 rounded-full text-xs outline-none focus:border-accent transition-colors cursor-pointer"
+            class="bg-surface border border-border/80 text-text px-3.5 py-1.5 text-xs outline-none focus:border-accent transition-colors cursor-pointer"
           >
             <option value="">Tất cả chủ đề ({allTopics.length})</option>
             {allTopics.map((t) => (
@@ -106,7 +111,7 @@ const searchIndex = allQuotes.map((q) => {
           <!-- Type Dropdown -->
           <select
             id="type-filter"
-            class="bg-surface border border-border/80 text-text px-4 py-2 rounded-full text-xs outline-none focus:border-accent transition-colors cursor-pointer"
+            class="bg-surface border border-border/80 text-text px-3.5 py-1.5 text-xs outline-none focus:border-accent transition-colors cursor-pointer"
           >
             <option value="">Tất cả phân loại</option>
             <option value="DIRECT_QUOTE">Trích dẫn đã xác minh</option>
@@ -123,8 +128,8 @@ const searchIndex = allQuotes.map((q) => {
       </div>
 
       <!-- Empty State -->
-      <div id="empty-state" class="hidden text-center py-20 space-y-4">
-        <div class="text-4xl">🔍</div>
+      <div id="empty-state" class="hidden text-center py-20 space-y-4 border border-dashed border-border/80 p-8">
+        <div class="text-3xl text-muted">∅</div>
         <h3 class="font-display text-2xl text-text font-medium">
           Không tìm thấy kết quả phù hợp
         </h3>
@@ -134,7 +139,7 @@ const searchIndex = allQuotes.map((q) => {
         <button
           id="reset-filter-btn"
           type="button"
-          class="inline-block mt-2 px-6 py-2.5 rounded-full border border-border/80 hover:border-accent font-sans text-xs uppercase tracking-widest text-accent transition-colors"
+          class="mt-2 px-5 py-2 border border-border/80 hover:border-accent font-sans text-xs uppercase tracking-widest text-accent transition-colors"
         >
           Đặt lại bộ lọc
         </button>
@@ -148,19 +153,12 @@ const searchIndex = allQuotes.map((q) => {
     function removeVietnameseTones(str) {
       if (!str) return '';
       str = str.toLowerCase();
-      str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, 'a');
-      str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, 'e');
-      str = str.replace(/ì|í|ị|ỉ|ĩ/g, 'i');
-      str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, 'o');
-      str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, 'u');
-      str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, 'y');
-      str = str.replace(/đ/g, 'd');
-      str = str.replace(/\u0300|\u0301|\u0303|\u0309|\u0323/g, '');
-      str = str.replace(/\u02C6|\u0306|\u031B/g, '');
-      return str.trim();
+      str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      str = str.replace(/[đĐ]/g, 'd');
+      return str;
     }
 
-    const input = document.getElementById('search-input');
+    const searchInput = document.getElementById('search-input');
     const clearBtn = document.getElementById('clear-search-btn');
     const topicFilter = document.getElementById('topic-filter');
     const typeFilter = document.getElementById('type-filter');
@@ -184,11 +182,11 @@ const searchIndex = allQuotes.map((q) => {
       const html = quotes
         .map((q) => {
           return `
-          <article class="p-1 rounded-2xl bg-surface border border-border/80 hover:border-accent/70 transition-all duration-300 hover:shadow-xl">
-            <div class="p-6 sm:p-8 rounded-[calc(1rem-0.125rem)] bg-bg/80 flex flex-col sm:flex-row gap-6 items-start">
+          <article class="border border-border/70 bg-surface/30 hover:border-accent p-6 sm:p-8 transition-colors duration-200">
+            <div class="flex flex-col sm:flex-row gap-6 items-start">
               ${
                 q.imageRef
-                  ? `<div class="w-full sm:w-36 h-28 sm:h-36 flex-shrink-0 overflow-hidden rounded-xl bg-surface border border-border/60">
+                  ? `<div class="w-full sm:w-36 h-28 sm:h-36 flex-shrink-0 overflow-hidden bg-surface border border-border/60">
                       <img src="${q.imageRef}" alt="${q.title}" class="w-full h-full object-cover filter brightness-90 hover:scale-105 transition-all duration-500" loading="lazy" />
                      </div>`
                   : ''
@@ -196,9 +194,9 @@ const searchIndex = allQuotes.map((q) => {
               <div class="flex-1 space-y-3">
                 <div class="flex flex-wrap items-center gap-2 text-xs font-sans">
                   <span class="text-accent font-semibold tracking-wider font-mono">${q.id}</span>
-                  <span class="text-muted">·</span>
-                  <span class="text-muted uppercase tracking-wider text-[11px]">${q.quoteTypeLabel}</span>
-                  <span class="text-muted">·</span>
+                  <span class="text-border">·</span>
+                  <span class="text-muted uppercase tracking-wider text-[10px]">${q.quoteTypeLabel}</span>
+                  <span class="text-border">·</span>
                   <span class="text-text font-medium text-[11px]">#${q.primaryTopicTitle}</span>
                 </div>
 
@@ -215,7 +213,7 @@ const searchIndex = allQuotes.map((q) => {
                 <div class="pt-3 border-t border-border/40 flex items-center justify-between text-xs font-sans">
                   <span class="text-muted">Tác giả: <strong class="text-text font-medium">${q.author}</strong></span>
                   <a href="/library/${q.slug}" class="inline-flex items-center gap-1.5 text-accent hover:underline font-semibold uppercase tracking-wider text-[11px]">
-                    <span>Đọc tác phẩm</span>
+                    <span>Chiêm nghiệm</span>
                     <span>→</span>
                   </a>
                 </div>
@@ -229,74 +227,72 @@ const searchIndex = allQuotes.map((q) => {
       resultsContainer.innerHTML = html;
     }
 
-    function doSearch() {
-      const rawQuery = input.value.trim();
-      const normQuery = removeVietnameseTones(rawQuery);
-      const selectedTopic = topicFilter.value;
-      const selectedType = typeFilter.value;
+    function doFilter() {
+      const q = searchInput.value.trim();
+      const topicVal = topicFilter.value;
+      const typeVal = typeFilter.value;
 
-      if (rawQuery.length > 0) {
+      if (q.length > 0) {
         clearBtn.classList.remove('hidden');
       } else {
         clearBtn.classList.add('hidden');
       }
 
+      const normalizedQ = removeVietnameseTones(q);
+
       const filtered = searchIndex.filter((item) => {
-        if (selectedTopic && item.primaryTopic !== selectedTopic) return false;
-        if (selectedType && item.quoteType !== selectedType) return false;
-        if (!normQuery) return true;
+        // Topic filter
+        if (topicVal && item.primaryTopic !== topicVal) return false;
+        // Type filter
+        if (typeVal && item.quoteType !== typeVal) return false;
+        // Search text query
+        if (normalizedQ) {
+          const titleNorm = removeVietnameseTones(item.title);
+          const authorNorm = removeVietnameseTones(item.author);
+          const contentNorm = removeVietnameseTones(item.content);
+          const topicNorm = removeVietnameseTones(item.primaryTopicTitle);
 
-        const normTitle = removeVietnameseTones(item.title);
-        const normContent = removeVietnameseTones(item.content);
-        const normAuthor = removeVietnameseTones(item.author);
-        const normTopic = removeVietnameseTones(item.primaryTopicTitle);
-        const normBadge = removeVietnameseTones(item.intentBadge);
-        const normId = removeVietnameseTones(item.id);
+          const matches =
+            titleNorm.includes(normalizedQ) ||
+            authorNorm.includes(normalizedQ) ||
+            contentNorm.includes(normalizedQ) ||
+            topicNorm.includes(normalizedQ) ||
+            item.id.toLowerCase().includes(normalizedQ);
 
-        return (
-          normTitle.includes(normQuery) ||
-          normContent.includes(normQuery) ||
-          normAuthor.includes(normQuery) ||
-          normTopic.includes(normQuery) ||
-          normBadge.includes(normQuery) ||
-          normId.includes(normQuery)
-        );
+          if (!matches) return false;
+        }
+
+        return true;
       });
 
-      renderResults(filtered, rawQuery);
+      renderResults(filtered, q);
     }
 
-    input.addEventListener('input', doSearch);
-    topicFilter.addEventListener('change', doSearch);
-    typeFilter.addEventListener('change', doSearch);
+    searchInput.addEventListener('input', doFilter);
+    topicFilter.addEventListener('change', doFilter);
+    typeFilter.addEventListener('change', doFilter);
 
     clearBtn.addEventListener('click', () => {
-      input.value = '';
-      input.focus();
-      doSearch();
+      searchInput.value = '';
+      doFilter();
+      searchInput.focus();
     });
 
-    quickTags.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        input.value = btn.dataset.keyword || '';
-        input.focus();
-        doSearch();
+    resetFilterBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      topicFilter.value = '';
+      typeFilter.value = '';
+      doFilter();
+    });
+
+    quickTags.forEach((tag) => {
+      tag.addEventListener('click', () => {
+        searchInput.value = tag.getAttribute('data-keyword');
+        doFilter();
       });
     });
 
-    resetFilterBtn?.addEventListener('click', () => {
-      input.value = '';
-      topicFilter.value = '';
-      typeFilter.value = '';
-      doSearch();
-    });
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const initialQuery = urlParams.get('q');
-    const initialTopic = urlParams.get('topic');
-    if (initialQuery) input.value = initialQuery;
-    if (initialTopic) topicFilter.value = initialTopic.toUpperCase();
-
-    doSearch();
+    // Initial render
+    doFilter();
   </script>
 </BaseLayout>

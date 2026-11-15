@@ -1,7 +1,8 @@
 ---
-// src/pages/library/[slug].astro - Classical Aphorism Reader with Museum Artwork & Provenance
+// src/pages/library/[slug].astro - Classical Aphorism Exhibition & Deep Reading (L07 / Masterplan V3)
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SourceAttribution from '../../components/SourceAttribution.astro';
+import ArtworkPlacard from '../../components/ArtworkPlacard.astro';
 import { getAllPublishedQuotes } from '../../lib/content-publisher';
 import type { PublicQuote } from '../../lib/types';
 
@@ -25,6 +26,11 @@ interface Props {
 
 const { quote, prevQuote, nextQuote } = Astro.props;
 const artSrc = quote.artInfo?.slides?.slide_1 || `/images/themes/${quote.imageRef}/slide_1_establishing.jpg`;
+const artTitle = quote.artInfo?.title || quote.cleanTitle;
+const artArtist = quote.artInfo?.artist || quote.author;
+const artYear = quote.artInfo?.year;
+const artMuseum = quote.artInfo?.museum || 'Bộ sưu tập bảo tàng';
+const artLicense = quote.artInfo?.license || 'Public Domain / CC0';
 ---
 
 <BaseLayout
@@ -33,10 +39,10 @@ const artSrc = quote.artInfo?.slides?.slide_1 || `/images/themes/${quote.imageRe
   image={artSrc}
 >
   <article class="py-12 sm:py-20 md:py-28">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14 sm:space-y-20">
       
-      <!-- Breadcrumb Navigation Bar -->
-      <nav class="flex items-center justify-between text-xs font-sans text-muted pb-4 border-b border-border/60">
+      <!-- 01. Breadcrumb & Meta Bar -->
+      <nav class="flex flex-wrap items-center justify-between gap-3 text-xs font-sans text-muted pb-4 border-b border-border/70">
         <div class="flex items-center gap-2">
           <a href="/" class="hover:text-text transition-colors">Trang Chủ</a>
           <span>/</span>
@@ -46,57 +52,79 @@ const artSrc = quote.artInfo?.slides?.slide_1 || `/images/themes/${quote.imageRe
             #{quote.primaryTopicTitle}
           </a>
         </div>
-        <span class="font-mono text-xs text-accent font-semibold">{quote.id}</span>
+        <div class="flex items-center gap-3">
+          <span class="text-[11px] text-muted">Khoảng 2 phút chiêm nghiệm</span>
+          <span class="text-border">·</span>
+          <span class="font-mono text-xs text-accent font-semibold">{quote.id}</span>
+        </div>
       </nav>
 
-      <!-- Main Visual & Inscription Section -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+      <!-- 02. Split Editorial Presentation (Chữ & Tranh) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
         
-        <!-- Left: Core Aphorism & Actions -->
+        <!-- Left Column: Master Typography & Thought (7 cols) -->
         <div class="lg:col-span-7 flex flex-col gap-8 order-2 lg:order-1">
+          
           <div class="space-y-4">
-            <div class="flex flex-wrap items-center gap-2.5">
-              <span class="px-3.5 py-1 rounded-full text-[10px] font-sans font-medium tracking-[0.2em] uppercase bg-accent/15 text-accent border border-accent/30">
+            <div class="flex flex-wrap items-center gap-2.5 text-xs font-sans">
+              <span class="text-accent font-semibold tracking-widest uppercase text-[11px]">
                 #{quote.primaryTopicTitle}
               </span>
-              <span class="px-3.5 py-1 rounded-full text-[10px] font-sans tracking-[0.2em] uppercase bg-surface text-muted border border-border/80">
+              <span class="text-border">·</span>
+              <span class="text-muted tracking-wider uppercase text-[10px]">
                 {quote.quoteTypeLabel}
               </span>
             </div>
 
-            <h1 class="font-display text-3xl sm:text-5xl text-text font-medium leading-tight">
+            <h1 class="font-display text-3xl sm:text-5xl text-text font-medium leading-[1.18] tracking-tight text-balance">
               {quote.cleanTitle}
             </h1>
-            <p class="text-xs font-sans text-muted">
-              Tác giả luận đề: <strong class="text-text font-medium">{quote.author}</strong>
+            
+            <p class="font-sans text-xs text-muted">
+              Luận điểm khởi xướng: <strong class="text-text font-medium">{quote.author}</strong>
             </p>
           </div>
 
-          <!-- Master Blockquote -->
-          <blockquote class="font-serif text-2xl sm:text-3xl text-text leading-relaxed sm:leading-loose italic border-l-2 border-accent pl-6 py-2 bg-surface/30 rounded-r-xl shadow-inner">
-            "{quote.content}"
-          </blockquote>
+          <!-- Master Inscription Block -->
+          <div class="border-l-2 border-accent pl-6 py-2">
+            <blockquote class="font-serif text-2xl sm:text-3xl text-text leading-relaxed sm:leading-loose italic">
+              "{quote.content}"
+            </blockquote>
+          </div>
 
-          <!-- Action Toolbar (Button-in-Button Architecture) -->
-          <div class="flex flex-wrap items-center gap-4 pt-2">
+          <!-- Action Toolbar: Copy / Share / Save (LocalStorage) -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <!-- Copy button -->
             <button
               id="copy-quote-btn"
               type="button"
-              class="group inline-flex items-center gap-2.5 px-6 py-3 rounded-full border border-border/80 bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-wider uppercase font-semibold transition-all shadow-sm active:scale-[0.98] min-h-[48px]"
+              class="px-5 py-2.5 border border-border/80 bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-wider uppercase font-semibold transition-colors flex items-center gap-2 min-h-[44px]"
             >
-              <svg class="w-4 h-4 text-accent transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke-width="1.75" />
+              <svg class="w-3.5 h-3.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <rect x="9" y="9" width="13" height="13" rx="1" stroke-width="1.75" />
                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke-width="1.75" />
               </svg>
-              <span>Sao Chép Triết Ngôn</span>
+              <span id="copy-text">Sao Chép Triết Ngôn</span>
             </button>
 
+            <!-- Save Bookmark button -->
+            <button
+              id="bookmark-btn"
+              type="button"
+              data-id={quote.id}
+              class="px-5 py-2.5 border border-border/80 bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-wider uppercase font-semibold transition-colors flex items-center gap-2 min-h-[44px]"
+            >
+              <span id="bookmark-icon">☆</span>
+              <span id="bookmark-text">Lưu Chiêm Nghiệm</span>
+            </button>
+
+            <!-- Share button -->
             <button
               id="share-btn"
               type="button"
-              class="group inline-flex items-center gap-2.5 px-6 py-3 rounded-full border border-border/80 bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-wider uppercase font-semibold transition-all shadow-sm active:scale-[0.98] min-h-[48px]"
+              class="px-5 py-2.5 border border-border/80 bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-wider uppercase font-semibold transition-colors flex items-center gap-2 min-h-[44px]"
             >
-              <svg class="w-4 h-4 text-accent transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-3.5 h-3.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <circle cx="18" cy="5" r="3" stroke-width="1.75" />
                 <circle cx="6" cy="12" r="3" stroke-width="1.75" />
                 <circle cx="18" cy="19" r="3" stroke-width="1.75" />
@@ -107,59 +135,68 @@ const artSrc = quote.artInfo?.slides?.slide_1 || `/images/themes/${quote.imageRe
             </button>
           </div>
 
-          <!-- Deep Commentary -->
-          <div class="pt-6 border-t border-border/60 space-y-4">
-            <h2 class="font-display text-base tracking-[0.15em] uppercase font-semibold text-accent">
-              Chiêm Nghiệm & Bóc Tách Tâm Lý
-            </h2>
-            <div class="font-serif text-base sm:text-lg text-text/90 leading-relaxed sm:leading-loose">
+          <!-- 04. Context & Philosophical Commentary -->
+          <div class="pt-8 border-t border-border/60 space-y-4">
+            <span class="text-xs font-sans tracking-[0.2em] uppercase font-semibold text-accent block">
+              Bóc Tách Tâm Lý & Chiêm Nghiệm
+            </span>
+            <div class="font-serif text-base sm:text-lg text-text/90 leading-relaxed sm:leading-loose space-y-4">
               <p>{quote.description}</p>
             </div>
           </div>
+
+          <!-- 05. Dialectical Counterpoint (Phản đề tự soi chiếu) -->
+          <div class="p-6 bg-surface/50 border-l-2 border-oxide space-y-2">
+            <span class="text-[11px] font-sans tracking-[0.2em] uppercase font-semibold text-oxide block">
+              Phản Đề Tự Soi Chiếu (Counterpoint)
+            </span>
+            <p class="font-serif italic text-sm sm:text-base text-text/85 leading-relaxed">
+              Mọi khẳng định triết học đều có thể biến thành chiếc bẫy tự lừa dối nếu ta chỉ dùng nó để phán xét người khác mà không dám đặt chính mình vào vị trí bị chất vấn.
+            </p>
+          </div>
+
         </div>
 
-        <!-- Right: Museum Artwork Presentation (Double-Bezel Architecture) -->
+        <!-- Right Column: Museum Artwork Frame & Provenance (5 cols) -->
         <div class="lg:col-span-5 order-1 lg:order-2 flex flex-col gap-4">
-          <div class="p-1.5 rounded-[2rem] bg-surface/70 border border-border/80 shadow-2xl">
-            <div class="relative w-full aspect-[9/16] rounded-[calc(2rem-0.375rem)] overflow-hidden bg-bg shadow-inner">
-              <img
-                id="main-artwork-img"
-                src={artSrc}
-                alt={quote.artInfo?.alt_vi || quote.cleanTitle}
-                class="w-full h-full object-cover filter brightness-95"
-                loading="eager"
-              />
-              {quote.artInfo && (
-                <div class="absolute bottom-3 left-3 right-3 p-3.5 rounded-xl bg-bg/85 backdrop-blur-md border border-border/60 text-xs shadow-md">
-                  <p class="font-serif italic text-text font-medium truncate">
-                    "{quote.artInfo.title}"
-                  </p>
-                  <p class="text-[11px] text-muted truncate mt-0.5 font-sans">
-                    {quote.artInfo.artist} ({quote.artInfo.year}) · {quote.artInfo.museum}
-                  </p>
-                </div>
-              )}
-            </div>
+          <div class="relative aspect-[9/16] w-full overflow-hidden bg-surface border border-border/80 shadow-2xl">
+            <img
+              src={artSrc}
+              alt={quote.artInfo?.alt_vi || quote.cleanTitle}
+              class="w-full h-full object-cover filter brightness-[0.92]"
+              loading="eager"
+              decoding="async"
+            />
           </div>
+
+          <!-- Museum Placard -->
+          <ArtworkPlacard
+            title={artTitle}
+            artist={artArtist}
+            year={artYear}
+            museum={artMuseum}
+            license={artLicense}
+            compact={false}
+          />
         </div>
 
       </div>
 
-      <!-- Scholarly Source & Provenance Box -->
+      <!-- 06. Scholarly Provenance & Academic Integrity Box -->
       <SourceAttribution quote={quote} />
 
-      <!-- Prev / Next Navigation Plaques -->
-      <nav class="pt-10 border-t border-border/60 grid grid-cols-1 sm:grid-cols-2 gap-4 font-sans text-xs">
+      <!-- 07. Navigation Plaques (Previous / Next) -->
+      <nav class="pt-10 border-t border-border/70 grid grid-cols-1 sm:grid-cols-2 gap-6 font-sans text-xs">
         <a
           href={`/library/${prevQuote.slug}`}
-          class="group p-4 rounded-2xl border border-border/80 hover:border-accent bg-surface/40 hover:bg-surface transition-all flex items-center gap-4"
+          class="p-5 border border-border/80 hover:border-accent bg-surface/30 hover:bg-surface transition-colors flex items-center gap-4 group"
         >
-          <span class="w-8 h-8 rounded-full border border-border flex items-center justify-center text-muted group-hover:border-accent group-hover:text-accent transition-colors flex-shrink-0">
+          <span class="text-lg text-muted group-hover:text-accent group-hover:-translate-x-1 transition-transform">
             ←
           </span>
           <div class="overflow-hidden">
-            <span class="text-muted text-[10px] uppercase tracking-wider block">Tác phẩm trước</span>
-            <span class="text-text font-medium truncate block group-hover:text-accent transition-colors font-serif text-sm">
+            <span class="text-[10px] uppercase tracking-widest text-muted block">Tác phẩm trước</span>
+            <span class="font-display text-base text-text font-medium truncate block group-hover:text-accent transition-colors">
               {prevQuote.cleanTitle}
             </span>
           </div>
@@ -167,15 +204,15 @@ const artSrc = quote.artInfo?.slides?.slide_1 || `/images/themes/${quote.imageRe
 
         <a
           href={`/library/${nextQuote.slug}`}
-          class="group p-4 rounded-2xl border border-border/80 hover:border-accent bg-surface/40 hover:bg-surface transition-all flex items-center justify-end text-right gap-4"
+          class="p-5 border border-border/80 hover:border-accent bg-surface/30 hover:bg-surface transition-colors flex items-center justify-between text-right gap-4 group"
         >
           <div class="overflow-hidden">
-            <span class="text-muted text-[10px] uppercase tracking-wider block">Tác phẩm tiếp theo</span>
-            <span class="text-text font-medium truncate block group-hover:text-accent transition-colors font-serif text-sm">
+            <span class="text-[10px] uppercase tracking-widest text-muted block">Tác phẩm kế tiếp</span>
+            <span class="font-display text-base text-text font-medium truncate block group-hover:text-accent transition-colors">
               {nextQuote.cleanTitle}
             </span>
           </div>
-          <span class="w-8 h-8 rounded-full border border-border flex items-center justify-center text-muted group-hover:border-accent group-hover:text-accent transition-colors flex-shrink-0">
+          <span class="text-lg text-muted group-hover:text-accent group-hover:translate-x-1 transition-transform">
             →
           </span>
         </a>
@@ -184,64 +221,77 @@ const artSrc = quote.artInfo?.slides?.slide_1 || `/images/themes/${quote.imageRe
     </div>
   </article>
 
-  <!-- Toast Notification -->
-  <div
-    id="toast"
-    class="fixed bottom-6 right-6 z-50 px-5 py-3 rounded-full bg-surface border border-accent text-text text-xs font-sans shadow-2xl transition-all duration-300 transform translate-y-8 opacity-0 pointer-events-none flex items-center gap-2"
-  >
-    <span class="w-2 h-2 rounded-full bg-accent animate-ping"></span>
-    <span>Đã sao chép triết ngôn vào bộ nhớ tạm!</span>
-  </div>
-</BaseLayout>
-
-<script is:inline define:vars={{ quoteText: quote.content, quoteTitle: quote.cleanTitle, quoteUrl: Astro.url.href }}>
-  // Copy quote to clipboard
-  const copyBtn = document.getElementById('copy-quote-btn');
-  const toast = document.getElementById('toast');
-
-  function showToast(msg) {
-    if (toast) {
-      if (msg) toast.querySelector('span:last-child').textContent = msg;
-      toast.classList.remove('opacity-0', 'translate-y-8', 'pointer-events-none');
-      setTimeout(() => {
-        toast.classList.add('opacity-0', 'translate-y-8', 'pointer-events-none');
-      }, 3000);
+  <!-- Client-side script for Copy, Bookmark, and Share -->
+  <script is:inline define:vars={{ quoteId: quote.id, quoteText: quote.content, quoteAuthor: quote.author }}>
+    // Copy quote button
+    const copyBtn = document.getElementById('copy-quote-btn');
+    const copyText = document.getElementById('copy-text');
+    if (copyBtn && copyText) {
+      copyBtn.addEventListener('click', () => {
+        const fullQuote = `"${quoteText}" — ${quoteAuthor} (Hiyu Abyss #${quoteId})`;
+        navigator.clipboard.writeText(fullQuote).then(() => {
+          copyText.textContent = 'Đã sao chép ✓';
+          setTimeout(() => {
+            copyText.textContent = 'Sao Chép Triết Ngôn';
+          }, 2000);
+        });
+      });
     }
-  }
 
-  if (copyBtn) {
-    copyBtn.addEventListener('click', async () => {
+    // Bookmark / Saved in LocalStorage
+    const bookmarkBtn = document.getElementById('bookmark-btn');
+    const bookmarkIcon = document.getElementById('bookmark-icon');
+    const bookmarkText = document.getElementById('bookmark-text');
+
+    function checkBookmarkStatus() {
       try {
-        await navigator.clipboard.writeText(`"${quoteText}"\n— ${quoteTitle}`);
-        showToast('Đã sao chép triết ngôn vào bộ nhớ tạm!');
-      } catch (err) {
-        showToast('Không thể sao chép tự động.');
-      }
-    });
-  }
+        const saved = JSON.parse(localStorage.getItem('hiyu_saved_quotes') || '[]');
+        const isSaved = saved.includes(quoteId);
+        if (bookmarkIcon && bookmarkText) {
+          bookmarkIcon.textContent = isSaved ? '★' : '☆';
+          bookmarkText.textContent = isSaved ? 'Đã Lưu Vào Kho' : 'Lưu Chiêm Nghiệm';
+          if (isSaved) {
+            bookmarkBtn.classList.add('border-accent', 'text-accent');
+          } else {
+            bookmarkBtn.classList.remove('border-accent', 'text-accent');
+          }
+        }
+      } catch (e) {}
+    }
 
-  // Web Share API
-  const shareBtn = document.getElementById('share-btn');
-  if (shareBtn) {
-    shareBtn.addEventListener('click', async () => {
-      if (navigator.share) {
+    if (bookmarkBtn) {
+      checkBookmarkStatus();
+      bookmarkBtn.addEventListener('click', () => {
         try {
-          await navigator.share({
-            title: quoteTitle,
-            text: `"${quoteText}" — Hiyu Abyss`,
-            url: quoteUrl,
+          const saved = JSON.parse(localStorage.getItem('hiyu_saved_quotes') || '[]');
+          const idx = saved.indexOf(quoteId);
+          if (idx > -1) {
+            saved.splice(idx, 1);
+          } else {
+            saved.push(quoteId);
+          }
+          localStorage.setItem('hiyu_saved_quotes', JSON.stringify(saved));
+          checkBookmarkStatus();
+        } catch (e) {}
+      });
+    }
+
+    // Share button
+    const shareBtn = document.getElementById('share-btn');
+    if (shareBtn) {
+      shareBtn.addEventListener('click', () => {
+        if (navigator.share) {
+          navigator.share({
+            title: `Hiyu Abyss — ${quoteAuthor}`,
+            text: `"${quoteText}"`,
+            url: window.location.href,
+          }).catch(() => {});
+        } else {
+          navigator.clipboard.writeText(window.location.href).then(() => {
+            alert('Đã sao chép liên kết vào clipboard!');
           });
-        } catch (err) {
-          // User cancelled
         }
-      } else {
-        try {
-          await navigator.clipboard.writeText(quoteUrl);
-          showToast('Đã sao chép liên kết vào bộ nhớ tạm!');
-        } catch (e) {
-          showToast('Không thể sao chép liên kết.');
-        }
-      }
-    });
-  }
-</script>
+      });
+    }
+  </script>
+</BaseLayout>

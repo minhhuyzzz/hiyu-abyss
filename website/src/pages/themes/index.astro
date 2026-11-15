@@ -1,6 +1,7 @@
 ---
-// src/pages/themes/index.astro - Open Seed Taxonomy Map
+// src/pages/themes/index.astro - Atlas of Ideas (Open Taxonomy Map - Masterplan V3)
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
 import { getAllTopics } from '../../lib/content-publisher';
 
 const topics = getAllTopics();
@@ -8,52 +9,60 @@ const topics = getAllTopics();
 
 <BaseLayout
   title="Bản Đồ Chủ Đề Triết Học Mở · Hiyu Abyss"
-  description="Khám phá 20 dòng tư tưởng và nghịch lý tâm lý học hành vi được giám tuyển trong Thư Viện Hiyu Abyss."
+  description="Khám phá các dòng tư tưởng và nghịch lý tâm lý học hành vi được giám tuyển trong Thư Viện Hiyu Abyss."
 >
-  <section class="py-12 sm:py-20 md:py-28 border-b border-border/80">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-      
-      <div class="pb-6 border-b border-border/60 space-y-3">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-accent/30 bg-accent/10 text-[10px] font-sans tracking-[0.2em] uppercase font-medium text-accent">
-          Open Seed Taxonomy
-        </div>
-        <h1 class="font-display text-3xl sm:text-5xl md:text-6xl text-text font-medium leading-tight">
-          Bản Đồ Chủ Đề Triết Học
-        </h1>
-        <p class="font-serif text-base sm:text-lg text-muted max-w-2xl leading-relaxed">
-          Hệ thống phân loại tư tưởng mở của Hiyu Abyss không bị giới hạn cố định. Mỗi chủ đề là một lát cắt sâu sắc về thân phận con người và những chiếc mặt nạ xã hội.
-        </p>
+  <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-12 sm:space-y-16">
+    
+    <!-- Masthead -->
+    <div class="pb-8 border-b border-border/70 space-y-4">
+      <div class="flex items-center gap-2 text-xs tracking-[0.25em] uppercase font-sans text-muted">
+        <span class="text-accent font-semibold">ATLAS OF IDEAS</span>
+        <span class="text-muted/30">/</span>
+        <span>HỆ THỐNG CHỦ ĐỀ MỞ</span>
       </div>
 
-      <!-- Themes Grid with Doppelrand Architecture -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
-        {topics.map((t) => (
-          <a
-            href={`/themes/${t.slug}`}
-            class="group p-1 rounded-2xl bg-surface border border-border/80 hover:border-accent/70 transition-all duration-500 hover:shadow-2xl flex flex-col justify-between hover:-translate-y-1"
-          >
-            <div class="p-6 sm:p-8 rounded-[calc(1rem-0.125rem)] bg-bg/70 flex-1 flex flex-col justify-between space-y-6">
-              <div class="space-y-3">
-                <div class="flex items-center justify-between text-xs text-muted font-sans">
-                  <span class="font-mono text-[10px] tracking-widest uppercase text-accent font-semibold">{t.code}</span>
-                  <span class="px-2.5 py-0.5 rounded-full bg-surface border border-border/80 text-[10px] font-medium text-text/80">{t.count} tác phẩm</span>
-                </div>
-                <h2 class="font-display text-2xl text-text font-medium group-hover:text-accent transition-colors leading-snug">
-                  {t.title}
-                </h2>
-                <p class="font-serif text-sm text-muted/90 leading-relaxed line-clamp-3">
-                  {t.description}
-                </p>
-              </div>
-              <div class="pt-4 border-t border-border/40 flex items-center justify-between text-xs text-accent font-sans font-semibold tracking-wider uppercase text-[11px]">
-                <span>Khám phá chủ đề</span>
-                <span class="w-6 h-6 rounded-full border border-border flex items-center justify-center transition-transform group-hover:translate-x-1 group-hover:border-accent">→</span>
-              </div>
-            </div>
-          </a>
-        ))}
-      </div>
+      <h1 class="font-display text-3xl sm:text-5xl md:text-6xl text-text font-medium leading-[1.12] tracking-tight text-balance">
+        Bản Đồ Các Luồng Tư Tưởng
+      </h1>
 
+      <p class="font-serif italic text-base sm:text-lg text-muted max-w-2xl leading-relaxed">
+        Hệ thống phân loại tư tưởng mở của Hiyu Abyss không bị giới hạn trong khuôn khổ cứng nhắc. Mỗi chủ đề là một chòm sao tư tưởng đối thoại với những mâu thuẫn sâu sắc của thân phận con người.
+      </p>
     </div>
-  </section>
+
+    <!-- Themes Grid (Museum Editorial Atlas Layout) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+      {topics.map((t) => (
+        <a
+          href={`/themes/${t.slug}`}
+          class="border border-border/80 bg-surface/30 hover:border-accent p-6 sm:p-8 flex flex-col justify-between gap-6 transition-colors duration-300 group"
+        >
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs font-sans text-muted">
+              <span class="font-mono text-[11px] tracking-widest uppercase text-accent font-semibold">
+                {t.code}
+              </span>
+              <span class="text-[11px] text-muted">
+                {t.count} tác phẩm
+              </span>
+            </div>
+
+            <h2 class="font-display text-2xl text-text font-medium group-hover:text-accent transition-colors leading-snug">
+              {t.title}
+            </h2>
+
+            <p class="font-serif italic text-sm text-text/80 leading-relaxed line-clamp-3">
+              "{t.description}"
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-border/40 flex items-center justify-between text-xs text-accent font-sans font-semibold tracking-widest uppercase text-[11px]">
+            <span>Khám phá chòm tư tưởng</span>
+            <span class="transition-transform group-hover:translate-x-1">→</span>
+          </div>
+        </a>
+      ))}
+    </div>
+
+  </div>
 </BaseLayout>

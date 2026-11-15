@@ -15,11 +15,21 @@ export default {
         oxide: 'var(--oxide)',
         patina: 'var(--patina)',
         'on-accent': 'var(--on-accent)',
+        paper: 'var(--color-paper)',
+        ink: 'var(--color-ink)',
+        rule: 'var(--color-rule)',
       },
       fontFamily: {
         display: ['"Cormorant Garamond"', 'serif'],
         serif: ['Literata', 'serif'],
         sans: ['"Be Vietnam Pro"', 'sans-serif'],
+      },
+      transitionTimingFunction: {
+        editorial: 'var(--ease-editorial)',
+        spring: 'var(--ease-spring)',
+      },
+      maxWidth: {
+        prose: 'var(--measure-prose)',
       },
     },
   },

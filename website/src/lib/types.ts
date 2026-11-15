@@ -1,5 +1,4 @@
-// types.ts - Định nghĩa cấu trúc dữ liệu cho Thư Viện Nghệ Thuật Hiyu Abyss
-
+// types.ts - Cấu trúc dữ liệu Thư Viện Nghệ Thuật & The Mirror V3
 export type QuoteType = 'DIRECT_QUOTE' | 'PARAPHRASE' | 'INSPIRED_ORIGINAL' | 'INDEPENDENT_ORIGINAL';
 
 export interface ArtMasterpiece {
@@ -52,6 +51,32 @@ export interface TopicDefinition {
   count: number;
 }
 
+// ==========================================
+// THE MIRROR V3: DIRECTED SCENE GRAPH ENGINE
+// ==========================================
+export type SceneNodeType = 'intro' | 'statement' | 'choice' | 'counterpoint' | 'ending';
+
+export interface SceneChoice {
+  id: string;
+  label: string;
+  to: string;
+  editorialIntent?: string;
+}
+
+export interface SceneNode {
+  type: SceneNodeType;
+  title: string;
+  body?: string;
+  scenePreset?: string;
+  motionPreset?: string;
+  artwork_ref?: string;
+  closingQuestion?: string;
+  relatedTopic?: string;
+  choices?: SceneChoice[];
+  next?: string;
+}
+
+// Backwards compatibility choice structure for V2
 export interface MirrorChoice {
   id: string;
   label: string;
@@ -76,24 +101,29 @@ export interface MirrorStepOpenEnding {
 export interface MirrorJourneyData {
   id: string;
   slug: string;
+  version?: number;
+  status?: string;
   title: string;
   subtitle: string;
   artwork_id?: string;
   artwork_url?: string;
   artwork_title?: string;
   artwork_artist?: string;
-  estimated_minutes: number;
-  intro: {
+  estimated_minutes?: number;
+  entry?: string;
+  nodes?: Record<string, SceneNode>;
+
+  // Legacy V2 fields (optional fallback)
+  intro?: {
     lead: string;
     description: string;
     button_label: string;
   };
-  question: {
+  question?: {
     prompt: string;
     context?: string;
     choices: MirrorChoice[];
   };
-  counterpoint: MirrorStepCounterpoint;
-  open_ending: MirrorStepOpenEnding;
+  counterpoint?: MirrorStepCounterpoint;
+  open_ending?: MirrorStepOpenEnding;
 }
-

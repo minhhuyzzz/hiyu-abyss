@@ -1,5 +1,7 @@
 ---
-// HeroArtwork.astro - Art-Directed Hero Section with Doppelrand Frame & Button-in-Button Architecture
+// HeroArtwork.astro - Scene 01: The Entrance (Museum Editorial Architecture)
+import ArtworkPlacard from './ArtworkPlacard.astro';
+
 interface Props {
   quote: {
     cleanTitle: string;
@@ -11,7 +13,10 @@ interface Props {
     artInfo?: {
       title: string;
       artist: string;
+      year?: string;
       museum: string;
+      license?: string;
+      alt_vi?: string;
       slides: { slide_1: string };
     };
   };
@@ -19,91 +24,87 @@ interface Props {
 
 const { quote } = Astro.props;
 const artSrc = quote.artInfo?.slides?.slide_1 || `/images/themes/${quote.imageRef}/slide_1_establishing.jpg`;
+const artTitle = quote.artInfo?.title || "Tác phẩm mỹ thuật cổ điển";
+const artArtist = quote.artInfo?.artist || "Danh họa";
+const artYear = quote.artInfo?.year;
+const artMuseum = quote.artInfo?.museum || "Bảo tàng quốc tế";
+const artLicense = quote.artInfo?.license || "Public Domain / CC0";
+const artAlt = quote.artInfo?.alt_vi || `${artTitle} - ${artArtist}`;
 ---
 
-<section class="relative w-full overflow-hidden border-b border-border/80 py-16 sm:py-24 md:py-32 lg:py-40">
-  <!-- Subtle Ambient Glow -->
-  <div class="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-accent/5 filter blur-3xl pointer-events-none"></div>
-
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<section class="relative w-full py-16 sm:py-24 md:py-32 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Editorial Split Grid: Asymmetric 7/5 columns -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
       
-      <!-- Left Column: Master Typography & Thought -->
+      <!-- Left Column: Master Typography & Thought (7 cols) -->
       <div class="lg:col-span-7 flex flex-col gap-6 sm:gap-8 order-2 lg:order-1">
-        <!-- Eyebrow Tag (Pill Architecture) -->
-        <div class="inline-flex items-center gap-2 self-start px-3.5 py-1 rounded-full border border-accent/30 bg-accent/10 text-[10px] tracking-[0.2em] uppercase font-sans font-medium text-accent">
-          <span class="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></span>
+        
+        <!-- Systematic Header Tag (No White Dashes) -->
+        <div class="flex items-center gap-2 text-xs tracking-[0.25em] uppercase font-sans text-muted">
+          <span class="text-accent font-semibold">01</span>
+          <span class="text-muted/30">/</span>
           <span>{quote.quoteTypeLabel} · {quote.author}</span>
         </div>
 
         <!-- Master Title / Question -->
-        <h1 class="font-display text-3xl sm:text-5xl md:text-6xl text-text font-medium leading-[1.12] tracking-tight text-balance">
+        <h1 class="font-display text-3xl sm:text-5xl md:text-6xl text-text font-medium leading-[1.14] tracking-tight text-balance">
           {quote.cleanTitle}
         </h1>
 
-        <!-- Blockquote Inscription -->
-        <blockquote class="font-serif text-lg sm:text-2xl text-text/90 italic leading-relaxed sm:leading-loose border-l-2 border-accent pl-6 my-1">
-          "{quote.content}"
-        </blockquote>
+        <!-- Inscription of Truth -->
+        <div class="relative pl-6 py-1 border-l-2 border-accent">
+          <blockquote class="font-serif text-lg sm:text-2xl text-text/90 italic leading-relaxed sm:leading-loose">
+            "{quote.content}"
+          </blockquote>
+        </div>
 
         <p class="font-sans text-sm sm:text-base text-muted max-w-xl leading-relaxed">
-          Mỗi tác phẩm trong kho tàng Hiyu Abyss là một cuộc đối thoại không khoan nhượng giữa bóng tối tâm lý và ánh sáng mỹ học, giúp bóc trần những chiếc mặt nạ ta vẫn mang mỗi ngày.
+          Hiyu Abyss là một thư viện tư tưởng và ấn phẩm mỹ thuật sống. Nơi triết học hành vi đối thoại cùng các kiệt tác hội họa qua hàng thế kỷ để khơi gợi sự tự soi chiếu nội tâm.
         </p>
 
-        <!-- CTA Action Buttons (Button-in-Button Pattern) -->
+        <!-- Museum Editorial Actions (No SaaS Pill Buttons) -->
         <div class="flex flex-wrap items-center gap-4 pt-2">
-          <!-- Primary CTA with Button-in-Button -->
           <a
             href={`/library/${quote.slug}`}
-            class="group inline-flex items-center gap-3 pl-7 pr-2.5 py-2.5 rounded-full bg-accent text-on-accent font-sans text-xs tracking-[0.15em] uppercase font-bold hover:opacity-95 transition-all duration-300 shadow-xl active:scale-[0.98] min-h-[48px]"
+            class="px-7 py-3.5 bg-accent text-on-accent font-sans text-xs tracking-[0.18em] uppercase font-bold hover:opacity-90 transition-opacity duration-200 min-h-[48px] inline-flex items-center justify-center shadow-sm"
           >
-            <span>Đọc Chiêm Nghiệm</span>
-            <span class="w-8 h-8 rounded-full bg-on-accent/15 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5">
-              →
-            </span>
+            Đọc Chiêm Nghiệm
           </a>
 
-          <!-- Secondary CTA -->
           <a
             href="/mirror/su-that-va-binh-yen"
-            class="group inline-flex items-center gap-3 px-6 py-3 rounded-full border border-border/80 bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-[0.15em] uppercase font-semibold transition-all duration-300 min-h-[48px] active:scale-[0.98]"
+            class="px-6 py-3.5 border border-border/80 bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-[0.18em] uppercase font-semibold transition-colors duration-200 min-h-[48px] inline-flex items-center gap-2"
           >
             <span>Vào Chiếc Gương Phản Tư</span>
-            <span class="text-xs transition-transform duration-300 group-hover:translate-x-1">↗</span>
+            <span class="text-xs">→</span>
           </a>
         </div>
       </div>
 
-      <!-- Right Column: Curated Museum Artwork Frame (Doppelrand Double-Bezel Architecture) -->
-      <div class="lg:col-span-5 order-1 lg:order-2 flex justify-center">
-        <div class="group relative w-full max-w-sm sm:max-w-md p-2 rounded-[2rem] bg-surface/60 border border-border/80 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:scale-[1.02]">
-          
-          <!-- Inner Core Enclosure with Concentric Radius -->
-          <div class="relative aspect-[9/16] w-full rounded-[calc(2rem-0.5rem)] overflow-hidden bg-bg shadow-[inset_0_1px_1px_rgba(255,255,255,0.15)]">
-            <!-- Artwork Image -->
-            <img
-              src={artSrc}
-              alt={quote.artInfo?.alt_vi || quote.cleanTitle}
-              class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
-              loading="eager"
-              decoding="async"
-            />
+      <!-- Right Column: Classical Artwork Exhibition Frame (5 cols) -->
+      <div class="lg:col-span-5 order-1 lg:order-2 flex flex-col gap-3">
+        <div class="relative aspect-[9/16] w-full max-w-sm sm:max-w-md mx-auto overflow-hidden bg-surface border border-border/80 shadow-2xl">
+          <img
+            src={artSrc}
+            alt={artAlt}
+            class="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.02]"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
 
-            <!-- Subtle Vignette Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent opacity-85 group-hover:opacity-70 transition-opacity duration-500"></div>
-
-            <!-- Bottom Artwork Provenance Caption Card -->
-            {quote.artInfo && (
-              <div class="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-bg/85 backdrop-blur-md border border-border/60 text-xs shadow-lg transition-transform duration-300 group-hover:-translate-y-1">
-                <p class="font-serif italic text-text font-medium truncate">
-                  "{quote.artInfo.title}"
-                </p>
-                <p class="text-[11px] text-muted truncate mt-0.5 font-sans">
-                  {quote.artInfo.artist} · {quote.artInfo.museum}
-                </p>
-              </div>
-            )}
-          </div>
+        <!-- Museum Gallery Placard Below the Artwork -->
+        <div class="max-w-sm sm:max-w-md mx-auto w-full pt-1">
+          <ArtworkPlacard
+            title={artTitle}
+            artist={artArtist}
+            year={artYear}
+            museum={artMuseum}
+            license={artLicense}
+            compact={true}
+          />
         </div>
       </div>
 

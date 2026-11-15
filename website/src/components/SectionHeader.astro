@@ -1,0 +1,31 @@
+---
+// SectionHeader.astro - Museum Editorial Section Header (No intrusive divider lines)
+interface Props {
+  index: string; // e.g. "01", "02", "07"
+  tag: string;   // e.g. "ENTRANCE", "CURATOR'S SELECTION"
+  title: string;
+  description?: string;
+  align?: 'left' | 'center';
+}
+
+const { index, tag, title, description, align = 'left' } = Astro.props;
+---
+
+<div class={`mb-10 sm:mb-14 ${align === 'center' ? 'text-center max-w-3xl mx-auto' : 'max-w-4xl'}`}>
+  <!-- Systematic Section Index (Clean Typographic Hierarchy, No White Dashes) -->
+  <div class={`flex items-center gap-2.5 text-xs tracking-[0.25em] uppercase font-sans text-muted mb-3 ${align === 'center' ? 'justify-center' : ''}`}>
+    <span class="text-accent font-semibold">{index}</span>
+    <span class="text-muted/30">/</span>
+    <span>{tag}</span>
+  </div>
+
+  <h2 class="font-display text-2xl sm:text-4xl md:text-5xl text-text font-medium leading-[1.18] tracking-tight text-balance">
+    {title}
+  </h2>
+
+  {description && (
+    <p class={`font-serif text-base sm:text-lg text-muted/90 italic leading-relaxed mt-4 max-w-2xl ${align === 'center' ? 'mx-auto' : ''}`}>
+      {description}
+    </p>
+  )}
+</div>

@@ -1,5 +1,5 @@
 ---
-// SourceAttribution.astro
+// SourceAttribution.astro - Provenance & Scholarly Integrity Component (L08 / HYA-02)
 import type { PublicQuote } from '../lib/types';
 
 interface Props {
@@ -7,41 +7,99 @@ interface Props {
 }
 
 const { quote } = Astro.props;
+
+// Transparent labels and definitions per HYA-02
+const quoteTypeDetails = {
+  DIRECT_QUOTE: {
+    label: 'Trích dẫn nguyên văn',
+    badge: 'DIRECT_QUOTE',
+    desc: 'Câu văn được dịch sát nghĩa hoặc trích dẫn trực tiếp từ tác phẩm gốc đã qua đối chiếu.',
+    verified: true,
+  },
+  PARAPHRASE: {
+    label: 'Diễn giải tư tưởng',
+    badge: 'PARAPHRASE',
+    desc: 'Diễn đạt lại luận điểm cốt lõi của triết gia nhằm phù hợp với ngữ cảnh tiếng Việt hiện đại.',
+    verified: true,
+  },
+  INSPIRED_ORIGINAL: {
+    label: 'Sáng tác lấy cảm hứng',
+    badge: 'INSPIRED_ORIGINAL',
+    desc: 'Ý tưởng phát triển từ một câu hỏi triết học. Tuyệt đối không mượn danh triết gia làm tác giả câu chữ.',
+    verified: false,
+  },
+  INDEPENDENT_ORIGINAL: {
+    label: 'Sáng tác Hiyu Abyss',
+    badge: 'INDEPENDENT_ORIGINAL',
+    desc: 'Đúc kết độc lập của dự án Hiyu Abyss dựa trên quan sát tâm lý học hành vi đương đại.',
+    verified: false,
+  },
+};
+
+const currentKind = quoteTypeDetails[quote.quoteType] || quoteTypeDetails.INSPIRED_ORIGINAL;
 ---
 
-<div class="rounded-lg border border-border bg-surface p-6 flex flex-col gap-4 text-xs font-sans">
-  <div class="flex items-center justify-between border-b border-border/50 pb-3">
-    <span class="tracking-[0.15em] uppercase font-bold text-accent">Minh Bạch Học Thuật & Nguồn Gốc</span>
-    <span class="text-muted">{quote.id}</span>
+<div class="border border-border/80 bg-surface/40 p-6 sm:p-8 space-y-6">
+  
+  <!-- Header -->
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-border/60">
+    <div class="flex items-center gap-2.5">
+      <span class="w-2 h-2 rounded-full bg-accent"></span>
+      <h3 class="font-sans text-xs tracking-[0.2em] uppercase font-bold text-text">
+        Minh Bạch Học Thuật & Nguồn Gốc (HYA-02)
+      </h3>
+    </div>
+    <span class="font-mono text-xs text-muted">{quote.id}</span>
   </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-    <div>
-      <span class="text-muted block mb-1 uppercase tracking-wider text-[10px]">Tác Giả Tư Tưởng</span>
-      <span class="font-semibold text-text text-sm">{quote.author}</span>
-    </div>
-    <div>
-      <span class="text-muted block mb-1 uppercase tracking-wider text-[10px]">Phân Loại Kiểm Chứng</span>
-      <span class="inline-flex items-center gap-1.5 font-semibold text-text text-sm">
-        <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
-        {quote.quoteTypeLabel}
+  <!-- 2-Column Grid: Text Origin & Verification Category -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <div class="space-y-1.5">
+      <span class="text-[10px] uppercase tracking-[0.2em] font-sans text-muted block">
+        Tư Tưởng Gia / Nguồn Gốc
+      </span>
+      <p class="font-display text-lg text-text font-medium">
+        {quote.author}
+      </p>
+      <span class="text-xs font-sans text-muted block">
+        Chủ đề tư tưởng: #{quote.primaryTopicTitle}
       </span>
     </div>
+
+    <div class="space-y-1.5">
+      <span class="text-[10px] uppercase tracking-[0.2em] font-sans text-muted block">
+        Chuẩn Phân Loại Biên Tập
+      </span>
+      <div class="flex items-center gap-2">
+        <span class="font-sans text-xs font-semibold text-accent border border-accent/40 bg-accent/10 px-2.5 py-0.5">
+          {currentKind.label}
+        </span>
+      </div>
+      <p class="font-sans text-xs text-muted leading-relaxed pt-1">
+        {currentKind.desc}
+      </p>
+    </div>
   </div>
 
+  <!-- Museum Artwork Provenance Box -->
   {quote.artInfo && (
-    <div class="border-t border-border/40 pt-3 flex flex-col gap-1.5">
-      <span class="text-muted uppercase tracking-wider text-[10px]">Tác Phẩm Mỹ Thuật Đồng Hành</span>
-      <p class="text-text font-serif italic text-sm">
-        "{quote.artInfo.title}" — {quote.artInfo.artist} ({quote.artInfo.year})
+    <div class="border-t border-border/50 pt-5 space-y-2">
+      <span class="text-[10px] uppercase tracking-[0.2em] font-sans text-muted block">
+        Chứng Tích Mỹ Thuật Đồng Hành
+      </span>
+      <p class="font-serif italic text-sm sm:text-base text-text">
+        "{quote.artInfo.title}" — {quote.artInfo.artist} {quote.artInfo.year ? `(${quote.artInfo.year})` : ''}
       </p>
-      <p class="text-muted text-[11px]">
-        Lưu trữ tại: {quote.artInfo.museum} · Giấy phép: {quote.artInfo.license}
-      </p>
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted font-sans">
+        <span>Bảo tàng lưu giữ: <strong class="text-text font-normal">{quote.artInfo.museum}</strong></span>
+        <span class="text-border">·</span>
+        <span>Bản quyền: <strong class="text-accent font-normal uppercase text-[11px]">{quote.artInfo.license}</strong></span>
+      </div>
     </div>
   )}
 
-  <p class="text-muted text-[11px] leading-relaxed border-t border-border/30 pt-2">
-    * Dữ liệu được thẩm định và xác thực theo tiêu chuẩn nghiên cứu nguồn HYA-02 của dự án Hiyu Abyss.
+  <!-- Rigorous Scholarly Note -->
+  <p class="text-[11px] font-sans text-muted/80 leading-relaxed border-t border-border/40 pt-4">
+    * Dự án Hiyu Abyss tuân thủ nguyên tắc không bịa đặt nguồn gốc và không nâng trạng thái kiểm chứng ảo. Mọi ghi chú đều nhằm mục đích giúp độc giả tự tra cứu và phản tư một cách độc lập.
   </p>
 </div>

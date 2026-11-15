@@ -1,0 +1,121 @@
+# V3 narrative-design example; the engine schema/validator must be implemented before use.
+# Copy into website/journeys only AFTER editorial review and art provenance checks.
+id: MIR-0001
+status: DRAFT
+slug: su-that-va-binh-yen
+version: 3
+title: Sự thật và Bình yên
+subtitle: Một hành trình không có đáp án đúng
+entry: threshold
+nodes:
+  threshold:
+    type: intro
+    title: Cánh cửa của điều chưa biết
+    body: "Có những điều ta muốn biết, và có những điều ta sợ rằng một khi đã biết sẽ không thể trở lại như cũ."
+    scenePreset: gallery-threshold
+    motionPreset: reveal-slow
+    next: first_choice
+  first_choice:
+    type: choice
+    title: Giữa sự thật và bình yên, bạn nghiêng về đâu?
+    body: "Đây chỉ là một lựa chọn cho cuộc đối thoại, không phải kết luận về con người bạn."
+    scenePreset: two-door
+    motionPreset: crossfade
+    choices:
+      - id: seek_truth
+        label: Tôi muốn hiểu điều đang bị che khuất.
+        to: truth_room
+      - id: protect_peace
+        label: Tôi cần giữ lại một khoảng bình yên.
+        to: peace_room
+  truth_room:
+    type: statement
+    title: Phòng Quan Sát
+    body: "Sự thật có thể giải phóng, nhưng nhu cầu biết mọi điều đôi khi cũng là khát vọng kiểm soát."
+    scenePreset: stone-archive
+    motionPreset: lateral-reveal
+    next: truth_second_choice
+  truth_second_choice:
+    type: choice
+    title: Bạn muốn tiến đến sự thật bằng cách nào?
+    body: "Không phải mọi câu hỏi đều cần được trả lời trong cùng một thời điểm."
+    scenePreset: aperture
+    motionPreset: crossfade
+    choices:
+      - id: immediately
+        label: Tôi muốn biết ngay, bất kể hệ quả.
+        to: counter_control
+      - id: with_care
+        label: Tôi sẽ đợi đến khi có thể đối diện một cách sáng suốt.
+        to: counter_timing
+  peace_room:
+    type: statement
+    title: Phòng Im Lặng
+    body: "Bình yên có thể là nơi nghỉ ngơi cần thiết, nhưng cũng có thể trở thành một cách trì hoãn câu hỏi quan trọng."
+    scenePreset: paper-chamber
+    motionPreset: lateral-reveal
+    next: peace_second_choice
+  peace_second_choice:
+    type: choice
+    title: Điều gì đang được bảo vệ trong lựa chọn ấy?
+    scenePreset: aperture
+    motionPreset: crossfade
+    choices:
+      - id: self_boundary
+        label: Giới hạn và sự ổn định của chính tôi.
+        to: counter_boundary
+      - id: others_welfare
+        label: Sự bình yên của người khác.
+        to: counter_responsibility
+  counter_control:
+    type: counterpoint
+    title: Hiểu biết không đồng nghĩa với quyền kiểm soát
+    body: "Sự thật càng khó chịu, ta càng dễ nhầm lòng can đảm với nhu cầu loại bỏ mọi bất định."
+    scenePreset: shadow-closeup
+    motionPreset: reveal-quiet
+    next: ending_control
+  counter_timing:
+    type: counterpoint
+    title: Đối diện không có nghĩa là vội vã
+    body: "Một điều đúng không nhất thiết trở nên sáng rõ khi được ép nói ra trước thời điểm thích hợp."
+    scenePreset: open-window
+    motionPreset: reveal-quiet
+    next: ending_timing
+  counter_boundary:
+    type: counterpoint
+    title: Ranh giới không phải là sự trốn tránh
+    body: "Giữ khoảng cách có thể là một hành động tỉnh táo; chỉ bạn mới có thể xem mình đang nghỉ ngơi hay đang né tránh điều gì."
+    scenePreset: veil
+    motionPreset: reveal-quiet
+    next: ending_boundary
+  counter_responsibility:
+    type: counterpoint
+    title: Bảo vệ và tước đi quyền lựa chọn
+    body: "Che giấu để người khác khỏi tổn thương có thể xuất phát từ lòng thương, nhưng ai là người có quyền quyết định điều họ cần biết?"
+    scenePreset: twin-portraits
+    motionPreset: reveal-quiet
+    next: ending_responsibility
+  ending_control:
+    type: ending
+    title: Sự thật và nỗi ám ảnh kiểm soát
+    body: "Có lẽ câu hỏi không chỉ là điều gì đúng, mà còn là điều gì trong ta đòi sự chắc chắn đến thế."
+    scenePreset: open-ended-dark
+    motionPreset: stillness
+  ending_timing:
+    type: ending
+    title: Sự thật có thời điểm
+    body: "Biết chờ không làm chân lý bớt chân thật. Nó buộc ta suy ngẫm về trách nhiệm với cách sự thật được trao đi."
+    scenePreset: horizon
+    motionPreset: stillness
+  ending_boundary:
+    type: ending
+    title: Bình yên và giới hạn
+    body: "Một nơi trú ẩn có thể nuôi dưỡng lòng can đảm. Điều quan trọng là ta còn nhớ con đường bước ra hay không."
+    scenePreset: empty-room
+    motionPreset: stillness
+  ending_responsibility:
+    type: ending
+    title: Bình yên và trách nhiệm
+    body: "Đôi khi yêu thương không nằm ở việc giữ người khác khỏi mọi sự thật, mà ở việc tôn trọng năng lực lựa chọn của họ."
+    scenePreset: two-figures
+    motionPreset: stillness

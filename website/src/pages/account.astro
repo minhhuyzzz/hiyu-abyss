@@ -47,12 +47,12 @@ const redirectTo = Astro.url.searchParams.get('redirect') || '/account';
       </div>
     )}
 
-    <div class="p-6 sm:p-8 bg-surface/30 border border-border/70 rounded-sm space-y-6 shadow-xl">
+    <div class="p-6 sm:p-8 bg-surface/30 border border-border/70 rounded-2xl space-y-6 shadow-xl">
       
       {session ? (
         /* CASE 1: LOGGED IN */
         <div class="space-y-6">
-          <div class="flex items-center gap-4 p-4 bg-surface/70 border border-border/60 rounded-sm">
+          <div class="flex items-center gap-4 p-4 bg-surface/70 border border-border/60 rounded-xl">
             {session.user.avatarUrl ? (
               <img
                 src={session.user.avatarUrl}
@@ -81,28 +81,28 @@ const redirectTo = Astro.url.searchParams.get('redirect') || '/account';
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 font-sans text-xs">
               <a
                 href="/agora/new"
-                class="p-3 bg-accent/10 border border-accent/40 text-accent hover:bg-accent hover:text-on-accent transition-colors rounded-sm flex items-center justify-between font-semibold"
+                class="p-3 bg-accent/10 border border-accent/40 text-accent hover:bg-accent hover:text-on-accent transition-colors rounded-xl flex items-center justify-between font-semibold"
               >
                 <span>+ Mở chủ đề đối thoại mới</span>
                 <span>→</span>
               </a>
               <a
                 href="/saved"
-                class="p-3 bg-surface/60 border border-border/70 text-text hover:border-accent transition-colors rounded-sm flex items-center justify-between"
+                class="p-3 bg-surface/60 border border-border/70 text-text hover:border-accent transition-colors rounded-xl flex items-center justify-between"
               >
                 <span>Kho câu nói đã lưu</span>
                 <span>→</span>
               </a>
               <a
                 href={`/members/${session.user.handle}`}
-                class="p-3 bg-surface/60 border border-border/70 text-text hover:border-accent transition-colors rounded-sm flex items-center justify-between"
+                class="p-3 bg-surface/60 border border-border/70 text-text hover:border-accent transition-colors rounded-xl flex items-center justify-between"
               >
                 <span>Hồ sơ công khai</span>
                 <span>→</span>
               </a>
               <a
                 href="/notifications"
-                class="p-3 bg-surface/60 border border-border/70 text-text hover:border-accent transition-colors rounded-sm flex items-center justify-between"
+                class="p-3 bg-surface/60 border border-border/70 text-text hover:border-accent transition-colors rounded-xl flex items-center justify-between"
               >
                 <span>Thông báo của bạn</span>
                 <span>→</span>
@@ -116,7 +116,7 @@ const redirectTo = Astro.url.searchParams.get('redirect') || '/account';
             </a>
             <a
               href="/api/auth/logout"
-              class="px-4 py-2 border border-red-900/60 text-red-400 hover:bg-red-950/40 text-xs font-sans rounded-sm transition-colors"
+              class="px-4 py-2 border border-red-900/60 text-red-400 hover:bg-red-950/40 text-xs font-sans rounded-full transition-colors"
             >
               Đăng xuất khỏi tài khoản
             </a>

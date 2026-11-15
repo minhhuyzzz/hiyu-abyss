@@ -39,10 +39,13 @@ const topics = getAllTopics();
         <button
           id="surprise-btn"
           type="button"
-          class="px-5 py-2.5 border border-accent/80 bg-accent/10 text-accent hover:bg-accent hover:text-on-accent transition-colors font-sans text-xs tracking-wider uppercase font-semibold flex items-center gap-2 min-h-[44px]"
+          class="group pl-5 pr-3 py-2.5 rounded-full border border-accent/60 bg-accent/10 text-accent hover:bg-accent hover:text-on-accent transition-all duration-300 font-sans text-xs tracking-wider uppercase font-semibold flex items-center gap-2.5 min-h-[44px] shadow-sm active:scale-95"
           title="Mở ngẫu nhiên 1 tác phẩm"
         >
-          <span>🎲 Bốc Bài Ngẫu Nhiên</span>
+          <span>Khám Phá Ngẫu Nhiên</span>
+          <span class="w-6 h-6 rounded-full bg-accent/20 group-hover:bg-black/20 text-accent group-hover:text-white flex items-center justify-center text-xs transition-transform duration-300 group-hover:rotate-45">
+            🎲
+          </span>
         </button>
       </div>
     </div>
@@ -53,30 +56,30 @@ const topics = getAllTopics();
       <!-- Top Toolbar: View Switchers & Search Input -->
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2">
         <!-- 3 View Mode Switchers -->
-        <div class="flex items-center gap-1 font-sans text-xs" role="tablist" aria-label="Chế độ xem thư viện">
+        <div class="p-1 rounded-full border border-border/80 bg-surface/70 backdrop-blur-sm flex items-center gap-1 font-sans text-xs" role="tablist" aria-label="Chế độ xem thư viện">
           <button
             id="view-editorial-btn"
             type="button"
-            class="view-mode-btn active px-4 py-2 border border-accent bg-accent text-on-accent font-semibold uppercase tracking-wider transition-colors"
+            class="view-mode-btn active px-4 py-1.5 rounded-full border border-accent bg-accent text-on-accent font-semibold uppercase tracking-wider transition-colors"
             data-view="editorial"
           >
-            Tạp Chí (Editorial)
+            Tạp Chí
           </button>
           <button
             id="view-gallery-btn"
             type="button"
-            class="view-mode-btn px-4 py-2 border border-border bg-surface text-muted hover:text-text uppercase tracking-wider transition-colors"
+            class="view-mode-btn px-4 py-1.5 rounded-full border border-border bg-surface text-muted hover:text-text uppercase tracking-wider transition-colors"
             data-view="gallery"
           >
-            Mỹ Thuật (Gallery)
+            Mỹ Thuật
           </button>
           <button
             id="view-index-btn"
             type="button"
-            class="view-mode-btn px-4 py-2 border border-border bg-surface text-muted hover:text-text uppercase tracking-wider transition-colors"
+            class="view-mode-btn px-4 py-1.5 rounded-full border border-border bg-surface text-muted hover:text-text uppercase tracking-wider transition-colors"
             data-view="index"
           >
-            Mục Lục (Index)
+            Mục Lục
           </button>
         </div>
 
@@ -95,14 +98,14 @@ const topics = getAllTopics();
         </span>
         <div class="flex flex-nowrap sm:flex-wrap gap-2 overflow-x-auto pb-2 sm:pb-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
           <button
-            class="topic-btn active shrink-0 whitespace-nowrap px-3.5 py-1.5 text-xs font-sans border border-accent bg-accent text-on-accent font-semibold transition-colors"
+            class="topic-btn active shrink-0 whitespace-nowrap px-4 py-1.5 text-xs font-sans rounded-full border border-accent bg-accent text-on-accent font-semibold transition-colors"
             data-topic="ALL"
           >
             Tất Cả ({quotes.length})
           </button>
           {topics.map((t) => (
             <button
-              class="topic-btn shrink-0 whitespace-nowrap px-3.5 py-1.5 text-xs font-sans border border-border/70 bg-surface/40 text-muted hover:text-text hover:border-accent transition-colors"
+              class="topic-btn shrink-0 whitespace-nowrap px-4 py-1.5 text-xs font-sans rounded-full border border-border/70 bg-surface/40 text-muted hover:text-text hover:border-accent transition-colors"
               data-topic={t.code}
             >
               #{t.title} ({t.count})

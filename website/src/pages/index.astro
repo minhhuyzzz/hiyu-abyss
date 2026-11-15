@@ -6,6 +6,7 @@ import CuratorManifesto from '../components/CuratorManifesto.astro';
 import ThemeExhibitionWings from '../components/ThemeExhibitionWings.astro';
 import EditorialMosaic from '../components/EditorialMosaic.astro';
 import MirrorPortalSection from '../components/MirrorPortalSection.astro';
+import ArtProvenanceSection from '../components/ArtProvenanceSection.astro';
 import ClosingInvitation from '../components/ClosingInvitation.astro';
 import { getAllPublishedQuotes, getFeaturedQuotes, getAllTopics } from '../lib/content-publisher';
 
@@ -38,6 +39,9 @@ const primaryHero = featuredPool[dayOfYear % featuredPool.length] || allQuotes[0
   <!-- Scene 05: The Mirror Portal (Interactive Sanctuary) -->
   <MirrorPortalSection />
 
-  <!-- Scene 06: Closing & Invitation -->
+  <!-- Scene 06: Art & Provenance (Scholarly & Visual Transparency HYA-02 / HYA-08) -->
+  <ArtProvenanceSection />
+
+  <!-- Scene 07: Closing & Invitation -->
   <ClosingInvitation />
 </BaseLayout>

@@ -1,135 +1,79 @@
-# Cương Lĩnh Kiến Trúc & Kế Hoạch Triển Khai: Thư Viện Nghệ Thuật & Hệ Thống Xuất Bản Hiyu Abyss (The Living Art Library & Publishing System)
+# Kế Hoạch Triển Khai: Tái Thiết Toàn Diện Mỹ Học Bảo Tàng & Trải Nghiệm Đắm Chìm (Hiyu Abyss V3.1)
 
-> **Dự án:** Hiyu Abyss  
-> **Tuyên ngôn tư duy:** *Chuyển dịch triệt để từ tư duy "xây 100 trang triết ngôn" sang "kiến tạo một Thư viện Nghệ thuật đương đại với hệ thống xuất bản đáng tin cậy".*  
-> **Căn cứ pháp quy:** `HYA-01` (Bản sắc) $\rightarrow$ `HYA-02` (Chuẩn nguồn) $\rightarrow$ `HYA-03` (Văn phong) $\rightarrow$ `HYA-04` (Mô hình dữ liệu) $\rightarrow$ `HYA-06` (Cổng kiểm định) $\rightarrow$ `HYA-07` (Đặc tả Thư viện & Trải nghiệm)  
-> **Mã nguồn hệ thống:** `website/` (Không gian kiến trúc cô lập, an toàn tại gốc dự án)  
-> **Phiên bản:** `3.0 — The Living Library Edition`  
+> **Căn cứ:** Bản Tuyên Bố Chủ Đích đã xác nhận ngày 15/11/2026.  
+> **Mục tiêu:** Thoát khỏi cảm giác "web sơ sài" dạng blog phẳng; kiến tạo một **Bảo Tàng Số Sống Động về Tâm Lý Học Đen & Mỹ Học Cổ Điển (The Living Museum of Dark Psychology)**.  
+> **Quy chuẩn tuân thủ:** `HYA-01` (Bản sắc), `HYA-02` (Chuẩn nguồn), `HYA-03` (Văn phong sắc bén), `HYA-08` (Mỹ thuật sơn dầu thuần túy, sạch tì vết AI).
 
 ---
 
-## 1. Triết Lý & Chuyển Dịch Tư Duy Nền Tảng
+## 1. Tổng Quan Kiến Trúc & Quyết Định Thiết Kế
 
-```
-TƯ DUY CŨ (Page-Factory / Churn):
-Kho bài TikTok ──→ Xuất HTML hàng loạt ──→ 100 trang web na ná nhau ──→ Đếm số lượng
-
-                    ▼ BƯỚC CHUYỂN DỊCH TƯ DUY ▼
-
-TƯ DUY MỚI (Art-Directed Library & Trusted Publishing System):
-Tư tưởng triết học   +   Mỹ học Old Masters & Bảo tàng
-        │                          │
-        └──────────────┬───────────┘
-                       ▼
-        HỆ THỐNG XUẤT BẢN ĐÁNG TIN CẬY (Publishing Engine)
-        - Cổng phê duyệt 2 lớp (Publication Gate G5)
-        - Xác minh xuất xứ văn bản & tác giả (HYA-02)
-        - Catalog bản quyền & nguồn gốc tranh ảnh (ART-xxxx)
-        - Taxonomy chủ đề mở linh hoạt (Open Seed Ontology)
-                       ▼
-        THƯ VIỆN NGHỆ THUẬT SỐNG (The Living Library & The Mirror)
-        - Nhịp điệu mỹ thuật: Monument, Reading, Index
-        - Đối thoại bình đẳng giữa Chữ và Hình
-        - Hai điều kiện chiếu sáng: Black Archive / Pale Archive
-        - Không gian phản tư riêng tư, bảo mật tuyệt đối
-```
-
-### 4 Trụ Cột Của "Hệ Thống Xuất Bản Đáng Tin Cậy":
-1. **Đáng tin cậy về Tri thức & Học thuật (Scholarly & Philosophical Integrity):**  
-   Mọi văn bản đều minh bạch về bản chất: đâu là câu nguyên văn (`DIRECT_QUOTE`), đâu là diễn giải (`PARAPHRASE`), đâu là sáng tác lấy cảm hứng (`INSPIRED_ORIGINAL`) hay sáng tác nội bộ (`INDEPENDENT_ORIGINAL`). Tuyệt đối không mượn danh triết gia cho câu tự nghĩ; nguồn gốc xuất xứ được truy xuất về tài liệu thực tế.
-2. **Đáng tin cậy về Mỹ học & Bản quyền Hình ảnh (Curated Visual Provenance):**  
-   Tranh ảnh không phải là "ảnh nền lấp chỗ trống". Mỗi bức tranh là một chứng tích nghệ thuật được giám tuyển (Old Masters, tranh khắc đồng, kiến trúc cổ), có hồ sơ `ART-xxxx` ghi nhận bảo tàng lưu trữ (The Met, Art Institute of Chicago, Rijksmuseum...), trạng thái bản quyền (Public Domain / CC0) và văn bản alt mô tả tiếp cận.
-3. **Đáng tin cậy về Kỹ thuật & Bảo mật Dữ liệu (Publishing Infrastructure Gate):**  
-   Cơ chế kiểm soát 2 lớp: Chỉ xuất bản những nội dung nằm trong `publication-manifest.yaml` VÀ đạt trạng thái `APPROVED`/`PUBLISHED`. Bộ điều hợp xuất bản (Publishing Adapter) tự động thanh lọc dữ liệu (data sanitization), ngăn chặn 100% rò rỉ ghi chú nghiên cứu nội bộ ra tệp HTML công khai.
-4. **Đáng tin cậy về Trải nghiệm Độc giả (Humanity & Privacy):**  
-   The Mirror không phải quiz tâm lý hay trò bói toán tính cách. Đó là một buồng chiêm nghiệm tĩnh lặng (Contemplative Sanctuary), nơi người đọc chủ động đối diện với các nghịch lý và tự rút ra kết luận cho riêng mình. 100% xử lý tại trình duyệt của người dùng (zero tracking, zero profiling).
+1. **Header Tinh Gọn & Đa Ngữ (Lean Header & Bilingual Switcher):**
+   - Thu nhỏ chiều cao Floating Header từ `h-16/20` xuống `h-12/14`, giảm padding, tạo cảm giác thanh mảnh như gờ viền kim loại đồng hồ cao cấp.
+   - Thêm nút chuyển đổi ngôn ngữ `[VI | EN]` với từ điển giao diện `i18n.ts`.
+   - Bổ sung nút trigger **"Kho Lưu Trữ"** kèm Badge số đếm tác phẩm đã lưu.
+2. **Kho Lưu Trữ Cá Nhân (Saved Drawer):**
+   - Xây dựng Drawer trượt từ cạnh phải màn hình hiển thị toàn bộ danh sách các tác phẩm người dùng đã đánh dấu trong `localStorage['hiyu_saved_quotes']`.
+   - Cung cấp tính năng xem nhanh, điều hướng tới bài đọc sâu, và xóa khỏi kho lưu trữ.
+3. **Nút "Lên Đầu Trang" (Floating Widget FAB):**
+   - Tách khỏi footer; trở thành Floating Action Widget nằm cố định ở góc dưới phải (`fixed bottom-6 right-6 z-40`), có hiệu ứng fade-in mượt khi cuộn xuống quá 300px và smooth scroll lên đỉnh trang.
+4. **Footer Tinh Giản & Thuần Việt:**
+   - Xóa bỏ hoàn toàn cột "Minh bạch xuất xứ" theo đúng yêu cầu người dùng.
+   - Bỏ toàn bộ các ngoặc đơn dịch ngữ `(Thư Viện)`, `(Chiếc Gương)`, chỉ giữ tiếng Việt chuẩn mực: `Thư Viện`, `Chiếc Gương`, `Chủ Đề`, `Tìm Kiếm`.
+5. **Hero Giám Tuyển Độc Bản (Curated Masterpiece):**
+   - Không gán cứng `TXT-0001` làm Hero. Thiết kế cơ chế giám tuyển tác phẩm tiêu biểu (Curated Masterpiece) hoặc luân phiên trong ngày.
+   - Tách bạch cấu trúc Tiêu đề và Trích dẫn, xóa bỏ hiện tượng lặp lại nguyên văn giữa Headline và Blockquote.
+6. **Custom Dropdown Tìm Kiếm (Khắc phục lỗi xổ lên trên):**
+   - Thay thế thẻ `<select>` nguyên thủy của trình duyệt bằng Custom Dropdown có vị trí tuyệt đối (`top-full mt-1.5 z-30`), bảo đảm luôn mở hướng xuống dưới và đồng bộ mỹ học bảo tàng.
+7. **Trang Chi Tiết Sâu Sắc & Chế Độ Thưởng Lãm (Exhibition Lightbox):**
+   - Tẩy bỏ câu "Phản đề tự soi chiếu" cố định đại trà; cá thể hóa nội dung chiêm nghiệm cho từng tác phẩm.
+   - Bổ sung chế độ **Thưởng Lãm Bảo Tàng Toàn Màn Hình (Exhibition Lightbox)** giúp người xem chiêm ngưỡng cận cảnh từng nét cọ sơn dầu cổ điển.
+8. **Thiết Kế Lại Logo Monogram Ẩn Ý Hiện Đại:**
+   - Thay thế biểu tượng hình thoi chữ H bằng Monogram tối giản mang chiều sâu vực thẳm và sự phản chiếu vô tận (Abyss & Mirror).
 
 ---
 
-## 2. Quyết Định Công Nghệ & Kiến Trúc Kỹ Thuật
+## 2. Danh Sách Nhiệm Vụ Triển Khai (Task Breakdown)
 
-| Hạng mục | Quyết định kỹ thuật | Lý do bảo vệ chất lượng & bản sắc |
+### Phase 1: Nền Tảng Giao Diện, Header, Ngôn Ngữ & Kho Lưu Trữ
+- **Task 1:** Header Thanh Mảnh (`h-13/14`), Logo Monogram Ẩn Ý & Nút Gạt Ngôn Ngữ `[VI | EN]`
+- **Task 2:** Xây Dựng Ngăn Kéo "Kho Lưu Trữ Cá Nhân" (Saved Drawer) & Quản Lý Bookmark
+- **Task 3:** Floating Widget "Lên Đầu Trang" (FAB) & Tinh Giản Footer Thuần Việt
+
+### ❖ Checkpoint 1: Header, Navigation & Saved Flow
+- [ ] Header thanh thoát, không che khuất nội dung khi cuộn.
+- [ ] Nút chuyển ngữ VI/EN hoạt động mượt mà.
+- [ ] Nhấn "Lưu Chiêm Nghiệm" lập tức cập nhật Badge và hiển thị trong Saved Drawer.
+- [ ] Floating Widget xuất hiện khi cuộn và cuộn mượt lên đỉnh. Footer sạch sẽ, thuần Việt.
+
+---
+
+### Phase 2: Chiều Sâu Giám Tuyển, Trải Nghiệm Thưởng Lãm & Khắc Phục Lỗi Tương Tác
+- **Task 4:** Tái Thiết Section Hero: Giám Tuyển Linh Hoạt & Khử Trùng Lặp Headline/Quote
+- **Task 5:** Xây Dựng Custom Dropdown Tìm Kiếm (Bảo Đảm Luôn Mở Hướng Xuống Dưới)
+- **Task 6:** Nâng Cấp Chiều Sâu Trang Chi Tiết & Chế Độ Thưởng Lãm Toàn Cảnh (Exhibition Lightbox)
+
+### ❖ Checkpoint 2: Editorial & Interactive Depth
+- [ ] Hero không còn gán cứng tác phẩm 1, không còn lặp từ.
+- [ ] Dropdown bộ lọc mở hướng xuống dưới 100%, không bị che lấp.
+- [ ] Trang chi tiết có bóc tách tâm lý riêng biệt, bấm xem ảnh toàn màn hình với placard bảo tàng.
+
+---
+
+### Phase 3: Chuẩn Hóa SEO, Metadata & Kiểm Thử Toàn Diện
+- **Task 7:** Chuẩn Hóa SEO Toàn Diện, Schema.org & Kiểm Thử Tĩnh 127 Trang
+
+### ❖ Checkpoint 3: Complete & Production Ready
+- [ ] 127 trang tĩnh build thành công trong thời gian < 3s.
+- [ ] 100% kiểm thử trong `website/test/verify-build.js` vượt qua.
+- [ ] Không có lỗi console hay đụng chạm file ảnh catalog.
+
+---
+
+## 3. Bảng Đánh Giá Rủi Ro & Biện Pháp Kiểm Soát
+
+| Rủi ro kỹ thuật | Mức độ | Biện pháp kiểm soát |
 |---|---|---|
-| **Engine xuất bản** | **Astro v5 (Static-First)** | Tạo ra các trang HTML tĩnh thuần túy, tốc độ tức thì, tối ưu SEO, không cồng kềnh JS. |
-| **Lớp tương tác** | **React Islands (`client:visible`)** | Chỉ nạp JavaScript tại thành phần thực sự cần tương tác: Trình phản tư *The Mirror* và bộ phát audio/bốc bài ngẫu nhiên. |
-| **Hệ thống ánh sáng** | **Black Archive / Pale Archive** | Hai điều kiện ánh sáng hoàn chỉnh, cùng một lưới và tỷ lệ vàng; chuyển đổi mượt bằng inline boot script chống FOUC. |
-| **Typography** | **Cormorant Garamond + Literata + Be Vietnam Pro** | 3 tầng chữ: Nhận diện thương hiệu cổ điển $\rightarrow$ Đọc sách tiếng Việt êm ái $\rightarrow$ Điều hướng UI sắc sảo. |
-| **Đường dẫn dữ liệu** | **Cross-Platform Relative Resolution** | Dùng `import.meta.url` và `path.resolve`, bảo đảm tính di động tuyệt đối giữa Windows và Linux hosting. |
-| **Hạ tầng hình ảnh** | **Astro `<Image />` / `<Picture />` Pipeline** | Tự động sinh WebP/AVIF, responsive `srcset`, chống layout shift (CLS), placeholder màu pigment. |
-| **Tìm kiếm nội dung** | **Pagefind Static Search** | Chỉ mục tìm kiếm tĩnh tốc độ cao sau build, hỗ trợ tiếng Việt có dấu, tìm kiếm toàn văn không cần server. |
-| **Đa thiết bị & Màn hình** | **Mobile-First & Fluid Editorial Matrix** | Viewport từ 320px đến 1920px+; touch targets $\ge 44\times 44\text{px}$; safe-area insets (`env(safe-area-inset-*)`) cho tai thỏ/dynamic island; giới hạn `max-w-6xl` cho màn hình siêu rộng chống kéo dãn dòng chữ. |
-
----
-
-## 3. Bản Đồ Năng Lực & 5 Giai Đoạn Triển Khai (16 Tasks)
-
-```
-Giai Đoạn 1: Nền Tảng Kỹ Thuật & Nhận Diện Bản Sắc (Astro, Tokens, 3 Fonts, Vector Logo)
-   │
-   ▼ ❖ Checkpoint 1: Môi trường build hoàn chỉnh, chuyển đổi theme hoàn hảo, typography chuẩn mực
-Giai Đoạn 2: Publishing Engine & Chuẩn Hóa Kho Tri Thức (Catalog ART-xxxx, Manifest Gate, Adapter)
-   │
-   ▼ ❖ Checkpoint 2: Dữ liệu 100 tác phẩm đạt chuẩn HYA-04, bảo mật nội bộ 100%, dynamic taxonomy
-Giai Đoạn 3: Trụ Cột The Library — Không Gian Giám Tuyển (Hero Chiaroscuro, Catalog, Reader, Surprise Me)
-   │
-   ▼ ❖ Checkpoint 3: Thư viện nghệ thuật hoạt động mượt mà, nhịp điệu ấn phẩm, không rập khuôn card AI
-Giai Đoạn 4: Trụ Cột The Mirror — Buồng Chiêm Nghiệm (Hành trình MIR-0001, Client-side React Island)
-   │
-   ▼ ❖ Checkpoint 4: Luồng phản tư 5 nhịp sâu lắng, không lưu dữ liệu, bảo mật quyền riêng tư
-Giai Đoạn 5: Tìm Kiếm Toàn Văn, Audit Tiếp Cận WCAG AA & Xuất Bản Production
-   │
-   ▼ ❖ Checkpoint 5: Nghiệm thu toàn diện 100% tiêu chí HYA-07, sẵn sàng vận hành & mở rộng dài hạn
-```
-
----
-
-## 4. Chi Tiết Kế Hoạch Từng Giai Đoạn
-
-### Giai Đoạn 1: Nền Tảng Kỹ Thuật & Nhận Diện Bản Sắc (`web-foundation`)
-- **Task 1: Khởi tạo Kiến trúc Astro v5 tại `website/`**  
-  Thiết lập môi trường build tĩnh độc lập, TypeScript strict mode, React Integration, và cấu hình build đa nền tảng không phụ thuộc hệ điều hành.
-- **Task 2: Hệ Thống Theme Tokens & Typography 3 Tầng**  
-  Cài đặt bảng màu độc bản (*Lampblack, Bone Paper, Oxide, Patina*), nạp 3 font qua `@fontsource` với đầy đủ ký tự tiếng Việt có dấu, và cấu hình script chặn FOUC ngay tại `<head>`.
-- **Task 3: Thiết Kế Bộ Nhận Diện Vector Logo Monogram & Favicon**  
-  Sử dụng quy chuẩn `taste-skill` để vẽ monogram tối giản (biểu tượng hố sâu tri thức / chiếc gương hình học) định dạng SVG siêu nhẹ, tự đổi sắc tố theo Dark/Light.
-- **❖ Checkpoint 1:** Build tĩnh chạy trơn tru, chuyển theme tức thì không nháy trắng, font tiếng Việt hiển thị sắc nét.
-
-### Giai Đoạn 2: Publishing Engine & Chuẩn Hóa Kho Tri Thức (`publishing-engine`)
-- **Task 4: Chuẩn Hóa Dữ Liệu 100 Tác Phẩm Sang Markdown Chuẩn `HYA-04`**  
-  Đồng bộ 100 bài viết xuất sắc từ pipeline vào thư mục lưu trữ vĩnh viễn `editorial/content/TXT-0001.md` $\rightarrow$ `TXT-0100.md` với đầy đủ Frontmatter: ID, loại trích dẫn, tác giả, chủ đề, trạng thái `APPROVED`.
-- **Task 5: Thiết Lập Publication Manifest & Catalog Mỹ Thuật `ART-xxxx`**  
-  Tạo `website/publication-manifest.yaml` kiểm soát danh sách xuất bản công khai. Xây dựng catalog `ART-xxxx` lưu trữ thông tin tranh bảo tàng, họa sĩ, niên đại, license và văn bản alt mô tả thị giác.
-- **Task 6: Xây Dựng Publishing Adapter & Dynamic Open Taxonomy Engine**  
-  Viết module `website/src/lib/content-publisher.ts` thực thi: đường dẫn tương đối, xác thực cổng kiểm duyệt 2 lớp, thanh lọc dữ liệu nội bộ (data sanitization), và tự động trích xuất taxonomy chủ đề mở từ các tác phẩm được duyệt.
-- **❖ Checkpoint 2:** Adapter nạp đúng 100 tác phẩm, tự sinh danh mục chủ đề mở, loại bỏ hoàn toàn các bài nháp và ghi chú nhạy cảm.
-
-### Giai Đoạn 3: Trụ Cột The Library — Không Gian Giám Tuyển (`the-library`)
-- **Task 7: Khung Giao Diện Ấn Phẩm Nghệ Thuật (`BaseLayout`, `Header`, `Footer`)**  
-  Xây dựng thanh điều hướng tối giản (*Library · Mirror · Themes · Search · ThemeToggle*) và chân trang mang tuyên ngôn triết học và ghi công xuất xứ.
-- **Task 8: Trang Chủ Art-Directed Hero & Editorial Mosaic (`src/pages/index.astro`)**  
-  Thiết kế trang chủ theo cấu trúc ấn phẩm nghệ thuật: Hero artwork khổ lớn ánh sáng chiaroscuro, khối trích dẫn mở màn, và cụm Editorial Mosaic dẫn dắt vào các dòng tư tưởng.
-- **Task 9: Danh Mục Thư Viện Đa Nhịp Điệu (`src/pages/library/index.astro`)**  
-  Bố cục tạp chí nghệ thuật (xen kẽ tranh lớn, thẻ đọc, khoảng lặng), bộ lọc chủ đề mở động không cần tải lại trang, và tính năng *Surprise Me* (Bốc ngẫu nhiên một tác phẩm chiêm nghiệm).
-- **Task 10: Trang Đọc Chi Tiết Tác Phẩm (`src/pages/library/[slug].astro`)**  
-  Không gian đọc tĩnh lặng với tranh nền bảo tàng mờ ảo, nhãn minh bạch bản chất trích dẫn (`DIRECT_QUOTE`, `PARAPHRASE`, `INSPIRED_ORIGINAL`), chú thích tác giả và công cụ chia sẻ trích dẫn.
-- **Task 11: Trang Bản Đồ Chủ Đề Mở (`src/pages/themes/[slug].astro`)**  
-  Sinh tự động các không gian tập hợp tác phẩm theo từng luồng tư tưởng mở (Thao túng, Đạo đức giả, Bản ngã, Khắc kỷ, Ranh giới...).
-- **❖ Checkpoint 3:** Toàn bộ 100 trang tác phẩm và trang chủ đề hoạt động trơn tru trên mọi độ phân giải màn hình.
-
-### Giai Đoạn 4: Trụ Cột The Mirror — Buồng Chiêm Nghiệm Tĩnh Lặng (`the-mirror`)
-- **Task 12: Soạn Thảo Kịch Bản Hành Trình `MIR-0001` ("Sự thật và bình yên")**  
-  Tạo hồ sơ `website/journeys/MIR-0001.yaml` với cấu trúc 5 bước triết học: Khởi đầu $\rightarrow$ Câu hỏi $\rightarrow$ Lựa chọn góc nhìn $\rightarrow$ Phản đề thức tỉnh $\rightarrow$ Kết thúc mở để tự vấn.
-- **Task 13: Xây Dựng React Island `MirrorJourney.tsx`**  
-  Component tương tác client-side với nhịp chuyển động chậm rãi, tĩnh lặng, hỗ trợ quay lại (Back), thoát (Exit), bắt đầu lại (Restart), bảo mật tuyệt đối thông tin người đọc.
-- **Task 14: Trang Trải Nghiệm The Mirror (`src/pages/mirror/index.astro` & `[journey].astro`)**  
-  Không gian trải nghiệm phản tư với tranh mở màn huyền ảo và lối dẫn dắt trang nghiêm.
-- **❖ Checkpoint 4:** Người đọc hoàn thành trọn vẹn hành trình phản tư mà không gặp bất kỳ lỗi logic hay gián đoạn trải nghiệm nào.
-
-### Giai Đoạn 5: Tìm Kiếm, Bộ Kiểm Thử Tiếp Cận WCAG AA & Hoàn Tất (`search-and-audit`)
-- **Task 15: Tích Hợp Tìm Kiếm Toàn Văn Pagefind (`src/pages/search.astro`)**  
-  Đánh chỉ mục tĩnh kho 100 tác phẩm, tìm kiếm tức thì tiếng Việt có dấu, hỗ trợ lọc theo chủ đề và tác giả.
-- **Task 16: Bộ Kiểm Thử Tự Động & Đóng Gói Production Build**  
-  - *Accessibility Audit:* Đo tương phản màu đạt chuẩn WCAG AA ($\ge 4.5:1$ chữ thường, $\ge 3:1$ chữ lớn) trên CẢ 2 THEME.
-  - *Integrity & Security Test:* Kiểm tra tự động tính hợp lệ của toàn bộ route tĩnh và xác nhận không rò rỉ dữ liệu nháp ra bản build.
-  - *Production Build:* Chạy `npm run build` xuất ra thư mục tĩnh `website/dist/` hoàn hảo.
-- **❖ Checkpoint 5:** 16/16 tasks hoàn thành và kiểm định đạt chuẩn, sẵn sàng đưa lên hosting toàn cầu (Cloudflare Pages / Vercel).
+| Đụng chạm tiến trình sinh ảnh của bên ngoài | Cao | Tuyệt đối không chạm vào `website/src/data/asset-catalog.json` hay thư mục ảnh nguồn `assets/templates/`. |
+| Giao diện đa ngữ gây phình to mã tĩnh | Thấp | Sử dụng Client-side dictionary siêu nhẹ kết hợp data attributes để chuyển đổi tức thì không cần tải lại trang. |
+| Drawer chiếm nhiều bộ nhớ trình duyệt | Thấp | Chỉ lưu mảng các ID (`["TXT-0001", ...]`) trong `localStorage`, hydrate dữ liệu từ search index có sẵn. |

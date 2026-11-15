@@ -1,48 +1,54 @@
 ---
-// ClosingInvitation.astro - Scene 12: Closing & Invitation (Masterplan V3)
+// ClosingInvitation.astro - Scene 12: Closing & Invitation (Taste-Skill / Museum Finale)
 import SectionHeader from './SectionHeader.astro';
 ---
 
-<section class="py-24 sm:py-32 md:py-40 bg-bg">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
+<section class="py-24 sm:py-36 md:py-44 bg-bg relative overflow-hidden">
+  <!-- Subtle ambient glow -->
+  <div class="absolute inset-0 bg-radial-gradient pointer-events-none opacity-40"></div>
+  
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center flex flex-col items-center relative z-10 space-y-6">
     
-    <SectionHeader
-      index="12"
-      tag="CLOSING INVITATION"
-      title="Lời Mời Vào Thế Giới Tĩnh Lặng"
-      align="center"
-    />
+    <!-- Epictetus Eyebrow Tag -->
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-accent/40 bg-accent/10 text-accent font-mono text-[10px] tracking-[0.25em] uppercase font-semibold">
+      <span class="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></span>
+      <span>EPICTETUS · GHI CHÉP KHẮC KỶ</span>
+    </div>
 
-    <blockquote class="font-serif text-xl sm:text-2xl md:text-3xl text-text/95 italic leading-relaxed sm:leading-loose max-w-3xl my-6">
+    <!-- Monumental Quote -->
+    <blockquote class="font-serif text-2xl sm:text-3xl md:text-4xl text-text font-normal italic leading-relaxed sm:leading-snug max-w-3xl my-2 text-balance">
       "Con người không đau khổ vì sự việc, mà vì góc nhìn của họ về sự việc."
     </blockquote>
-    <span class="font-sans text-xs uppercase tracking-[0.2em] text-accent font-semibold mb-6">
-      — Epictetus · Ghi chép Khắc kỷ
-    </span>
 
-    <p class="font-sans text-sm sm:text-base text-muted max-w-2xl leading-relaxed mb-10">
+    <!-- Philosophical Purpose -->
+    <p class="font-sans text-sm sm:text-base text-muted/90 max-w-2xl leading-relaxed pt-2">
       Hiyu Abyss không sinh ra để cung cấp những lời khuyên dễ dãi hay ảo ảnh tích cực độc hại. Đây là nơi bạn quay về khi cần một khoảng lặng đủ sâu để phân biệt giữa điều mình thực sự cảm thấy và những chiếc mặt nạ xã hội đòi hỏi bạn phải mang.
     </p>
 
-    <!-- Navigation & Discovery Actions -->
-    <div class="flex flex-wrap items-center justify-center gap-4">
+    <!-- Navigation & Discovery Actions (Taste-Skill Button-in-Button Architecture) -->
+    <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+      <!-- Primary Pill -->
       <a
         href="/library"
-        class="px-8 py-4 bg-accent text-on-accent font-sans text-xs tracking-[0.2em] uppercase font-bold hover:opacity-90 transition-opacity duration-200 min-h-[48px] inline-flex items-center justify-center shadow-sm"
+        class="group pl-7 pr-3 py-3.5 bg-accent text-on-accent rounded-full font-sans text-xs tracking-[0.18em] uppercase font-bold hover:opacity-95 hover:shadow-[0_0_35px_rgba(184,137,96,0.45)] transition-all duration-300 inline-flex items-center gap-3.5 shadow-lg active:scale-[0.98]"
       >
-        Khám Phá Toàn Bộ Thư Viện
+        <span>Khám Phá Toàn Bộ Thư Viện</span>
+        <span class="w-8 h-8 rounded-full bg-black/20 text-white flex items-center justify-center text-xs transition-transform duration-300 group-hover:translate-x-1">
+          →
+        </span>
       </a>
 
+      <!-- Secondary Pill (TikTok) -->
       <a
         href="https://www.tiktok.com/@hiyuabyss"
         target="_blank"
         rel="noopener noreferrer"
-        class="px-6 py-4 border border-border/80 bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-[0.18em] uppercase font-semibold transition-colors duration-200 min-h-[48px] inline-flex items-center gap-2"
+        class="group pl-6 pr-3 py-3.5 border border-border/80 bg-surface/80 text-text hover:border-accent hover:text-accent rounded-full font-sans text-xs tracking-[0.16em] uppercase font-semibold transition-all duration-300 inline-flex items-center gap-3 active:scale-[0.98]"
       >
         <span>Theo Dõi Trên TikTok</span>
-        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-        </svg>
+        <span class="w-8 h-8 rounded-full bg-surface-raised border border-border/60 text-accent flex items-center justify-center text-xs transition-transform duration-300 group-hover:rotate-45">
+          ↗
+        </span>
       </a>
     </div>
 

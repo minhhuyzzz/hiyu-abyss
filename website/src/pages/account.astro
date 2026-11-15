@@ -33,10 +33,10 @@ const redirectTo = Astro.url.searchParams.get('redirect') || '/account';
 
     {/* Status Alerts */}
     {status === 'google_unconfigured' && (
-      <div class="p-4 bg-amber-950/40 border border-amber-700/60 rounded-sm text-xs text-amber-200 space-y-1 font-sans">
+      <div class="p-4 bg-amber-950/40 border border-amber-700/60 rounded-xl text-xs text-amber-200 space-y-1 font-sans">
         <p class="font-semibold">⚠️ Google OAuth chưa được kích hoạt khóa API:</p>
         <p class="text-amber-300/80 leading-relaxed">
-          Chưa tìm thấy <code class="font-mono bg-black/40 px-1 py-0.5 rounded">GOOGLE_CLIENT_ID</code> trong file cấu hình. Bạn có thể sử dụng nút <strong>Đăng nhập nhanh thử nghiệm</strong> bên dưới để trải nghiệm ngay mọi tính năng đăng bài và bình luận!
+          Chưa tìm thấy <code class="font-mono bg-black/40 px-1 py-0.5 rounded">GOOGLE_CLIENT_ID</code> trong file môi trường. Vui lòng kiểm tra lại cấu hình Google OAuth.
         </p>
       </div>
     )}
@@ -124,19 +124,12 @@ const redirectTo = Astro.url.searchParams.get('redirect') || '/account';
         </div>
       ) : (
         /* CASE 2: GUEST / NOT LOGGED IN */
-        <div class="space-y-6">
-          <div class="p-4 bg-surface/50 border border-border/50 rounded-sm text-center space-y-1">
-            <span class="text-xs font-mono text-accent uppercase tracking-wider block">Phiên khách (Chưa xác thực)</span>
-            <p class="text-xs text-muted font-sans leading-relaxed">
-              Bạn đang duyệt trang dưới quyền độc giả khách. Để tạo chủ đề mới hoặc gửi bình luận, vui lòng đăng nhập bên dưới.
-            </p>
-          </div>
-
-          {/* Google OAuth Button */}
-          <div class="space-y-3">
+        <div class="space-y-6 text-center">
+          {/* Google OAuth Button Only */}
+          <div class="space-y-4 max-w-sm mx-auto">
             <a
               href={`/api/auth/google?redirect=${encodeURIComponent(redirectTo)}`}
-              class="w-full py-3.5 px-4 bg-white hover:bg-neutral-100 text-neutral-900 border border-neutral-300 font-sans text-xs uppercase tracking-wider font-semibold rounded-sm transition-all flex items-center justify-center gap-3 shadow-md min-h-[48px]"
+              class="w-full py-3.5 px-6 bg-white hover:bg-neutral-100 text-neutral-900 border border-neutral-300 font-sans text-xs uppercase tracking-wider font-bold rounded-full transition-all flex items-center justify-center gap-3 shadow-md hover:shadow-lg active:scale-[0.99] min-h-[48px]"
             >
               <svg class="w-4 h-4" viewBox="0 0 24 24">
                 <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -147,16 +140,8 @@ const redirectTo = Astro.url.searchParams.get('redirect') || '/account';
               <span>Tiếp tục bằng tài khoản Google</span>
             </a>
 
-            {/* Quick Demo Login Option */}
-            <a
-              href={`/api/auth/dev-login?redirect=${encodeURIComponent(redirectTo)}`}
-              class="w-full py-2.5 px-4 bg-surface hover:bg-surface/80 text-muted hover:text-text border border-border/80 font-sans text-xs tracking-wider rounded-sm transition-all flex items-center justify-center gap-2"
-            >
-              <span>⚡ Đăng nhập nhanh thử nghiệm (Chế độ Demo/Dev)</span>
-            </a>
-
-            <p class="text-[11px] text-center text-muted font-sans leading-relaxed pt-1">
-              🔒 Quyền riêng tư: Xác thực Google chỉ dùng để định danh tài khoản, không chia sẻ email hay mật khẩu của bạn ra bên ngoài.
+            <p class="text-[11px] text-muted/70 font-sans leading-relaxed">
+              🔒 Xác thực an toàn qua Google · Tự động đồng bộ tên và ảnh đại diện của bạn.
             </p>
           </div>
 

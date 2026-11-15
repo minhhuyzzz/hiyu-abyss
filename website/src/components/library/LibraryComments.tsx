@@ -253,10 +253,10 @@ export default function LibraryComments({ quoteId, quoteTitle, categorySlug, con
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+          <div className="flex items-center justify-center pt-2">
             <a
               href={`/api/auth/google?redirect=${encodeURIComponent(currentPath)}`}
-              className="px-5 py-2.5 bg-white hover:bg-neutral-100 text-neutral-900 border border-neutral-300 font-sans text-xs uppercase tracking-wider font-semibold rounded-sm transition-all flex items-center gap-2.5 shadow-sm min-h-[42px]"
+              className="px-6 py-2.5 bg-white hover:bg-neutral-100 text-neutral-900 border border-neutral-300 font-sans text-xs uppercase tracking-wider font-bold rounded-full transition-all flex items-center gap-2.5 shadow-sm hover:shadow-md min-h-[42px]"
             >
               <svg className="w-4 h-4" viewBox="0 0 24 24">
                 <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -265,13 +265,6 @@ export default function LibraryComments({ quoteId, quoteTitle, categorySlug, con
                 <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
               </svg>
               <span>Đăng nhập bằng Google</span>
-            </a>
-
-            <a
-              href={`/api/auth/dev-login?redirect=${encodeURIComponent(currentPath)}`}
-              className="px-4 py-2 bg-surface hover:bg-surface/80 text-muted hover:text-text border border-border/70 font-sans text-xs tracking-wider rounded-sm transition-all"
-            >
-              <span>⚡ Đăng nhập nhanh (Demo)</span>
             </a>
           </div>
         </div>

@@ -1,0 +1,9 @@
+{
+  "name": "hiyu-abyss-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm run build --prefix website",
+    "deploy": "npx wrangler pages deploy website/dist --project-name=hiyu-abyss"
+  }
+}

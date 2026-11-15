@@ -839,6 +839,426 @@
       "slide_3": "/images/themes/theme_60/slide_3_macro.jpg"
     }
   },
+  "theme_61": {
+    "art_id": "ART-0061",
+    "title": "Mèo hoàng gia trong thư phòng",
+    "artist": "Henriette Ronner-Knip",
+    "year": "1893",
+    "museum": "Bộ sưu tập Cổ điển Châu Âu & Wikimedia Commons",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu: Những chú mèo quý tộc nằm lười biếng trên bàn sách và thảm nhung trong thư phòng cổ kính.",
+    "slides": {
+      "slide_1": "/images/themes/theme_61/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_61/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_61/slide_3_macro.jpg"
+    }
+  },
+  "theme_62": {
+    "art_id": "ART-0062",
+    "title": "Mèo con đùa nghịch",
+    "artist": "Henriette Ronner-Knip",
+    "year": "1896",
+    "museum": "Bộ sưu tập Cổ điển Châu Âu & Wikimedia Commons",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu: Những chú mèo con hiếu động vờn cuộn len bên lò sưởi ấm.",
+    "slides": {
+      "slide_1": "/images/themes/theme_62/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_62/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_62/slide_3_macro.jpg"
+    }
+  },
+  "theme_63": {
+    "art_id": "ART-0063",
+    "title": "Đôi bạn tri kỷ bên lò sưởi",
+    "artist": "Henriette Ronner-Knip",
+    "year": "1890",
+    "museum": "Bộ sưu tập Cổ điển Châu Âu & Wikimedia Commons",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu: Đôi mèo sưởi ấm bên ngọn lửa bập bùng trong một chiều đông tĩnh lặng.",
+    "slides": {
+      "slide_1": "/images/themes/theme_63/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_63/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_63/slide_3_macro.jpg"
+    }
+  },
+  "theme_64": {
+    "art_id": "ART-0064",
+    "title": "Những chú chuột thợ may",
+    "artist": "Beatrix Potter",
+    "year": "1902",
+    "museum": "Victoria and Albert Museum, London",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Minh họa màu nước cổ điển: Những chú chuột chăm chỉ may áo gấm hoa tỉ mỉ.",
+    "slides": {
+      "slide_1": "/images/themes/theme_64/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_64/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_64/slide_3_macro.jpg"
+    }
+  },
+  "theme_65": {
+    "art_id": "ART-0065",
+    "title": "Chú thỏ Peter trong khu vườn",
+    "artist": "Beatrix Potter",
+    "year": "1902",
+    "museum": "National Trust Collection, Anh Quốc",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Minh họa màu nước: Chú thỏ Peter phiêu lưu giữa những luống rau và hàng rào hoa ngập nắng.",
+    "slides": {
+      "slide_1": "/images/themes/theme_65/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_65/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_65/slide_3_macro.jpg"
+    }
+  },
+  "theme_66": {
+    "art_id": "ART-0066",
+    "title": "Bên lò sưởi ấm và tách trà chiều",
+    "artist": "Arthur Rackham",
+    "year": "1910",
+    "museum": "British Museum, London",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh màu nước cổ điển phong cách thần tiên huyền bí bên khung cửa sổ mùa đông.",
+    "slides": {
+      "slide_1": "/images/themes/theme_66/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_66/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_66/slide_3_macro.jpg"
+    }
+  },
+  "theme_67": {
+    "art_id": "ART-0067",
+    "title": "Kẻ mọt sách trong thư viện vòm cao",
+    "artist": "Carl Spitzweg",
+    "year": "1850",
+    "museum": "Museum Georg Schäfer, Schweinfurt",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu: Vị học giả đứng trên thang cao, say sưa lật giở từng trang sách cổ giữa hàng ngàn cuốn gáy da.",
+    "slides": {
+      "slide_1": "/images/themes/theme_67/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_67/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_67/slide_3_macro.jpg"
+    }
+  },
+  "theme_68": {
+    "art_id": "ART-0068",
+    "title": "Nhà thiên văn học trầm tư",
+    "artist": "Johannes Vermeer",
+    "year": "1668",
+    "museum": "Musée du Louvre, Paris",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu: Nhà thiên văn chạm tay vào quả địa cầu thiên thể bên luồng sáng cửa sổ huyền thoại của Vermeer.",
+    "slides": {
+      "slide_1": "/images/themes/theme_68/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_68/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_68/slide_3_macro.jpg"
+    }
+  },
+  "theme_69": {
+    "art_id": "ART-0069",
+    "title": "Cô gái đọc sách bên cửa sổ lộng gió",
+    "artist": "Winslow Homer",
+    "year": "1874",
+    "museum": "Metropolitan Museum of Art, New York",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu: Cô gái trẻ tĩnh lặng ngồi đọc sách bên khung cửa sổ mở ra cánh đồng cỏ mùa hạ.",
+    "slides": {
+      "slide_1": "/images/themes/theme_69/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_69/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_69/slide_3_macro.jpg"
+    }
+  },
+  "theme_70": {
+    "art_id": "ART-0070",
+    "title": "Góc đọc sách Thụy Điển ấm cúng",
+    "artist": "Carl Larsson",
+    "year": "1895",
+    "museum": "Nationalmuseum, Stockholm",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh màu nước: Không gian sống ấm cúng đặc trưng Bắc Âu với ánh sáng chan hòa và kệ sách gỗ.",
+    "slides": {
+      "slide_1": "/images/themes/theme_70/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_70/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_70/slide_3_macro.jpg"
+    }
+  },
+  "theme_71": {
+    "art_id": "ART-0071",
+    "title": "Cô gái đọc thư bên cửa sổ mở",
+    "artist": "Johannes Vermeer",
+    "year": "1657–1659",
+    "museum": "Gemäldegalerie Alte Meister, Dresden",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu: Thiếu nữ đứng bên khung cửa sổ mở, khuôn mặt phản chiếu dịu dàng trên mặt kính.",
+    "slides": {
+      "slide_1": "/images/themes/theme_71/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_71/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_71/slide_3_macro.jpg"
+    }
+  },
+  "theme_72": {
+    "art_id": "ART-0072",
+    "title": "Lâu đài bằng những quân bài",
+    "artist": "Jean-Siméon Chardin",
+    "year": "1737",
+    "museum": "National Gallery, London",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu: Thiếu niên kiên nhẫn và nín thở xếp từng quân bài mỏng manh trên mặt bàn nỉ xanh.",
+    "slides": {
+      "slide_1": "/images/themes/theme_72/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_72/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_72/slide_3_macro.jpg"
+    }
+  },
+  "theme_73": {
+    "art_id": "ART-0073",
+    "title": "Khu vườn ngập nắng ở Giverny",
+    "artist": "Claude Monet",
+    "year": "1900",
+    "museum": "Musée d'Orsay, Paris",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh trường phái ấn tượng: Lối đi rợp bóng hoa iris tím và tán cây xanh ngắt dưới nắng hè rực rỡ.",
+    "slides": {
+      "slide_1": "/images/themes/theme_73/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_73/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_73/slide_3_macro.jpg"
+    }
+  },
+  "theme_74": {
+    "art_id": "ART-0074",
+    "title": "Hoa súng nước Nymphéas",
+    "artist": "Claude Monet",
+    "year": "1914–1917",
+    "museum": "Musée de l'Orangerie, Paris",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu ấn tượng: Những đóa hoa súng bồng bềnh trên mặt nước hồ xanh biếc phản chiếu mây trời.",
+    "slides": {
+      "slide_1": "/images/themes/theme_74/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_74/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_74/slide_3_macro.jpg"
+    }
+  },
+  "theme_75": {
+    "art_id": "ART-0075",
+    "title": "Cẩm chướng, hoa huệ tây và đóa hồng",
+    "artist": "John Singer Sargent",
+    "year": "1885–1886",
+    "museum": "Tate Britain, London",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu: Hai bé gái thắp lồng đèn giấy lung linh giữa khu vườn chạng vạng ngập tràn hoa huệ và cẩm chướng.",
+    "slides": {
+      "slide_1": "/images/themes/theme_75/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_75/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_75/slide_3_macro.jpg"
+    }
+  },
+  "theme_76": {
+    "art_id": "ART-0076",
+    "title": "Bữa sáng nơi hành lang ngập nắng",
+    "artist": "John Singer Sargent",
+    "year": "1910",
+    "museum": "Freer Gallery of Art, Washington D.C.",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh màu nước: Luồng ánh sáng Địa Trung Hải xối qua cột đá cẩm thạch chiếu rọi bàn trà thanh lịch.",
+    "slides": {
+      "slide_1": "/images/themes/theme_76/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_76/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_76/slide_3_macro.jpg"
+    }
+  },
+  "theme_77": {
+    "art_id": "ART-0077",
+    "title": "Vườn nhà quê với những đóa hướng dương",
+    "artist": "Gustav Klimt",
+    "year": "1906",
+    "museum": "Österreichische Galerie Belvedere, Vienna",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu: Những đóa hướng dương rực rỡ và muôn sắc hoa dại đan cài như tấm thảm gấm hoa quý giá.",
+    "slides": {
+      "slide_1": "/images/themes/theme_77/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_77/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_77/slide_3_macro.jpg"
+    }
+  },
+  "theme_78": {
+    "art_id": "ART-0078",
+    "title": "Kênh đào lớn Venice lấp lánh",
+    "artist": "John Singer Sargent",
+    "year": "1902",
+    "museum": "Metropolitan Museum of Art, New York",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh màu nước bậc thầy: Những chiếc thuyền gondola dập dềnh trên làn nước ngọc bích của Grand Canal.",
+    "slides": {
+      "slide_1": "/images/themes/theme_78/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_78/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_78/slide_3_macro.jpg"
+    }
+  },
+  "theme_79": {
+    "art_id": "ART-0079",
+    "title": "Tách trà chiều thanh lịch",
+    "artist": "Mary Cassatt",
+    "year": "1880",
+    "museum": "Museum of Fine Arts, Boston",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu ấn tượng: Người phụ nữ nâng tách trà bạc trong phòng khách ấm cúng của giới quý tộc Paris.",
+    "slides": {
+      "slide_1": "/images/themes/theme_79/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_79/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_79/slide_3_macro.jpg"
+    }
+  },
+  "theme_80": {
+    "art_id": "ART-0080",
+    "title": "Những đóa hoa bên bậu cửa sổ",
+    "artist": "Carl Larsson",
+    "year": "1894",
+    "museum": "Nationalmuseum, Stockholm",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh màu nước: Chậu hoa phong lữ đỏ thắm đặt bên bậu cửa sổ trắng nhìn ra tuyết trắng mùa đông.",
+    "slides": {
+      "slide_1": "/images/themes/theme_80/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_80/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_80/slide_3_macro.jpg"
+    }
+  },
+  "theme_81": {
+    "art_id": "ART-0081",
+    "title": "Góc lười biếng ấm cúng (Lathörnet)",
+    "artist": "Carl Larsson",
+    "year": "1895",
+    "museum": "Nationalmuseum, Stockholm",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh màu nước: Chiếc ghế bành gỗ êm ái kê cạnh lò sưởi men gốm và bức tranh treo tường mộc mạc.",
+    "slides": {
+      "slide_1": "/images/themes/theme_81/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_81/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_81/slide_3_macro.jpg"
+    }
+  },
+  "theme_82": {
+    "art_id": "ART-0082",
+    "title": "Nàng hầu gái rót sữa",
+    "artist": "Johannes Vermeer",
+    "year": "1658–1660",
+    "museum": "Rijksmuseum, Amsterdam",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu kiệt tác: Dòng sữa trắng ngần chảy chậm từ chiếc bình gốm trong ánh sáng cửa sổ huyền diệu.",
+    "slides": {
+      "slide_1": "/images/themes/theme_82/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_82/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_82/slide_3_macro.jpg"
+    }
+  },
+  "theme_83": {
+    "art_id": "ART-0083",
+    "title": "Bàn trà trưa trong khu vườn ngập nắng",
+    "artist": "Claude Monet",
+    "year": "1873",
+    "museum": "Musée d'Orsay, Paris",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh trường phái ấn tượng: Bàn tiệc trưa dưới bóng râm của lùm cây xanh với chiếc mũ cói bỏ quên trên ghế.",
+    "slides": {
+      "slide_1": "/images/themes/theme_83/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_83/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_83/slide_3_macro.jpg"
+    }
+  },
+  "theme_84": {
+    "art_id": "ART-0084",
+    "title": "Cô giáo nhỏ và bài học đầu đời",
+    "artist": "Jean-Siméon Chardin",
+    "year": "1736",
+    "museum": "National Gallery, London",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu: Cô bé gái kiên nhẫn chỉ que trỏ vào bảng chữ cái dạy em nhỏ tập đánh vần.",
+    "slides": {
+      "slide_1": "/images/themes/theme_84/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_84/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_84/slide_3_macro.jpg"
+    }
+  },
+  "theme_85": {
+    "art_id": "ART-0085",
+    "title": "Con thuyền xanh trên mặt hồ phẳng lặng",
+    "artist": "Winslow Homer",
+    "year": "1892",
+    "museum": "Museum of Fine Arts, Boston",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh màu nước: Chiếc thuyền chèo xanh mộc mạc lướt đi giữa bóng núi và làn sương sớm bình yên.",
+    "slides": {
+      "slide_1": "/images/themes/theme_85/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_85/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_85/slide_3_macro.jpg"
+    }
+  },
+  "theme_86": {
+    "art_id": "ART-0086",
+    "title": "Bữa sáng dưới bóng cây bạch dương",
+    "artist": "Carl Larsson",
+    "year": "1896",
+    "museum": "Nationalmuseum, Stockholm",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh màu nước: Gia đình quây quần dùng bữa sáng ngoài trời dưới bóng cây bạch dương lá xanh rì rào.",
+    "slides": {
+      "slide_1": "/images/themes/theme_86/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_86/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_86/slide_3_macro.jpg"
+    }
+  },
+  "theme_87": {
+    "art_id": "ART-0087",
+    "title": "Trong phòng ăn dưới ánh sáng dịu êm",
+    "artist": "Berthe Morisot",
+    "year": "1886",
+    "museum": "National Gallery of Art, Washington D.C.",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh ấn tượng Pháp: Người phụ nữ trong phòng ăn với những nét cọ thoáng đạt tràn đầy chất thơ.",
+    "slides": {
+      "slide_1": "/images/themes/theme_87/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_87/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_87/slide_3_macro.jpg"
+    }
+  },
+  "theme_88": {
+    "art_id": "ART-0088",
+    "title": "Hai chị em trên sân thượng ven sông",
+    "artist": "Pierre-Auguste Renoir",
+    "year": "1881",
+    "museum": "Art Institute of Chicago",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu kinh điển: Hai chị em đội mũ rơm cài hoa ngồi bên lan can nhìn ra dòng sông Seine lấp lánh.",
+    "slides": {
+      "slide_1": "/images/themes/theme_88/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_88/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_88/slide_3_macro.jpg"
+    }
+  },
+  "theme_89": {
+    "art_id": "ART-0089",
+    "title": "Hoàng hôn trên bến cảng cổ kính",
+    "artist": "Claude Lorrain",
+    "year": "1639",
+    "museum": "Musée du Louvre, Paris",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh phong cảnh cổ điển: Vầng dương vàng óng tỏa ánh hào quang rực rỡ trên mặt biển và những con tàu cổ tích.",
+    "slides": {
+      "slide_1": "/images/themes/theme_89/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_89/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_89/slide_3_macro.jpg"
+    }
+  },
+  "theme_90": {
+    "art_id": "ART-0090",
+    "title": "Ánh hoàng hôn bên khung cửa sổ cổ",
+    "artist": "Carl Spitzweg",
+    "year": "1860",
+    "museum": "Museum Georg Schäfer, Schweinfurt",
+    "license": "Public Domain / CC0",
+    "alt_vi": "Tranh sơn dầu: Vị học giả già ngắm nhìn tia nắng cuối ngày nhuộm đỏ những mái ngói rêu phong của phố cổ.",
+    "slides": {
+      "slide_1": "/images/themes/theme_90/slide_1_establishing.jpg",
+      "slide_2": "/images/themes/theme_90/slide_2_closeup.jpg",
+      "slide_3": "/images/themes/theme_90/slide_3_macro.jpg"
+    }
+  },
   "theme_91": {
     "art_id": "ART-0091",
     "title": "Bộ tranh sơn dầu: [Nghệ Thuật Cô Độc] Cô độc là phẩm hạnh của những tâm hồn sâu sắc.",

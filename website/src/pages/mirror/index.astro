@@ -1,5 +1,5 @@
 ---
-// src/pages/mirror/index.astro - The Mirror Portal V3.5 (Featured Editorial Layout)
+// src/pages/mirror/index.astro - The Mirror Portal V4 (Editorial Cinematic Spread)
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import ArtworkPlacard from '../../components/ArtworkPlacard.astro';
@@ -11,28 +11,24 @@ const featuredJourney = journeys[0];
 
 <BaseLayout
   title="The Mirror — Những Lựa Chọn Không Có Đáp Án Đúng | Hiyu Abyss"
-  description="Đọc một tình huống khó. Chọn điều bạn sẽ làm. Mỗi lựa chọn mở ra một câu hỏi khác — và có thể thay đổi cách bạn nhìn sự việc."
+  description="Bạn sẽ làm gì khi không có lựa chọn nào hoàn toàn đúng? Bước vào một tình huống thực tế, chọn cách bạn hành động và khám phá điều lựa chọn ấy để lại phía sau."
 >
   <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16 sm:space-y-24">
     
-    <!-- Masthead: Human-Centered Contemplation Focus -->
+    <!-- Masthead: Human-Centered Storytelling -->
     <div class="text-center max-w-3xl mx-auto space-y-5">
       <div class="flex items-center justify-center gap-2 text-xs tracking-[0.25em] uppercase font-sans text-muted">
-        <span class="text-accent font-semibold">THE MIRROR</span>
+        <span class="text-accent font-semibold">HIYU ABYSS · THE MIRROR</span>
         <span class="text-muted/30">/</span>
         <span>NHỮNG LỰA CHỌN KHÔNG CÓ ĐÁP ÁN ĐÚNG</span>
       </div>
 
       <h1 class="font-display text-3xl sm:text-5xl md:text-6xl font-medium tracking-tight text-text leading-[1.14]">
-        Nếu được chọn lại, bạn có đi cùng một con đường?
+        Mọi lựa chọn đều mở ra một câu chuyện khác.
       </h1>
 
-      <p class="font-serif italic text-base sm:text-xl text-muted max-w-2xl mx-auto leading-relaxed">
-        "Chiếc gương không tạo ra bóng tối hay ánh sáng; nó chỉ trả lại nguyên vẹn những gì bạn dám đặt trước mặt nó."
-      </p>
-
-      <p class="font-sans text-sm sm:text-base text-muted/90 max-w-xl mx-auto leading-relaxed">
-        Đọc một tình huống. Chọn điều bạn sẽ làm. Mỗi lựa chọn mở ra một câu hỏi khác — và có thể thay đổi cách bạn nhìn sự việc.
+      <p class="font-sans text-base sm:text-lg text-muted/90 max-w-2xl mx-auto leading-relaxed">
+        Bạn sẽ làm gì khi không có lựa chọn nào hoàn toàn đúng? Bước vào một tình huống thực tế, chọn cách bạn hành động và khám phá điều lựa chọn ấy để lại phía sau.
       </p>
 
       <!-- 3 Human Experience Badges -->
@@ -41,7 +37,7 @@ const featuredJourney = journeys[0];
           <span class="text-accent">⏳</span> 3–5 phút
         </span>
         <span class="px-3.5 py-1 rounded-full text-xs font-sans tracking-wide bg-surface border border-border/80 text-text/80 flex items-center gap-1.5">
-          <span class="text-accent">◈</span> Không có đáp án đúng
+          <span class="text-accent">◈</span> Không chấm điểm
         </span>
         <span class="px-3.5 py-1 rounded-full text-xs font-sans tracking-wide bg-surface border border-border/80 text-text/80 flex items-center gap-1.5">
           <span class="text-accent">↺</span> Thử lại các lối khác
@@ -49,56 +45,56 @@ const featuredJourney = journeys[0];
       </div>
     </div>
 
-    <!-- Featured Journey Spread (Full-Width 100% Editorial Layout) -->
+    <!-- Featured Journey Cinematic Spread (Asymmetrical ~58% Art / ~42% Narrative) -->
     {featuredJourney && (
       <section class="border border-border/80 bg-surface/40 hover:border-accent/60 transition-colors duration-300 rounded-sm overflow-hidden shadow-2xl">
         <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
           
-          <!-- Left Column: Artwork Frame (45% / 5 cols) -->
-          <div class="lg:col-span-5 relative min-h-[320px] sm:min-h-[420px] bg-surface flex flex-col justify-between p-6 border-b lg:border-b-0 lg:border-r border-border/70 overflow-hidden group">
+          <!-- Left Column: Dominant Artwork Frame (~58% / 7 cols) -->
+          <div class="lg:col-span-7 relative min-h-[340px] sm:min-h-[460px] bg-surface flex flex-col justify-between p-6 sm:p-8 border-b lg:border-b-0 lg:border-r border-border/70 overflow-hidden group">
             {featuredJourney.artwork_url && (
               <img
                 src={featuredJourney.artwork_url}
-                alt={featuredJourney.title}
+                alt={featuredJourney.artwork_title || featuredJourney.title}
                 class="absolute inset-0 w-full h-full object-cover filter brightness-[0.88] group-hover:scale-105 transition-transform duration-700"
                 loading="eager"
               />
             )}
-            <div class="absolute inset-0 bg-gradient-to-t from-bg via-bg/30 to-transparent opacity-90"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-bg via-bg/25 to-transparent opacity-90"></div>
 
             <!-- Top Tag -->
             <div class="relative z-10 flex items-center justify-between">
               <span class="px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-widest bg-bg/90 text-accent border border-border/70">
-                HÀNH TRÌNH TIÊU ĐIỂM
+                TÌNH HUỐNG TIÊU ĐIỂM
               </span>
               <span class="text-xs font-mono text-white/70">
                 {featuredJourney.id}
               </span>
             </div>
 
-            <!-- Bottom Artwork Placard -->
-            <div class="relative z-10 pt-16">
+            <!-- Bottom Artwork Placard with Authentic Provenance -->
+            <div class="relative z-10 pt-20">
               <span class="text-[10px] font-sans text-white/70 tracking-widest uppercase block mb-1">
                 Không gian thị giác khởi đầu
               </span>
-              <p class="font-display text-base text-white font-medium drop-shadow">
+              <p class="font-display text-base sm:text-lg text-white font-medium drop-shadow">
                 {featuredJourney.artwork_title || "Kẻ lãng du trên biển sương mù"}
               </p>
               <span class="text-xs font-serif italic text-white/80">
-                {featuredJourney.artwork_artist || "Caspar David Friedrich"} (1818)
+                {featuredJourney.artwork_artist || "Caspar David Friedrich (1818)"} · Bảo tàng Kunsthalle Hamburg
               </span>
             </div>
           </div>
 
-          <!-- Right Column: Narrative & Interactive Preview (55% / 7 cols) -->
-          <div class="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between space-y-8">
+          <!-- Right Column: Narrative Dilemma & Single Dominant CTA (~42% / 5 cols) -->
+          <div class="lg:col-span-5 p-6 sm:p-8 lg:p-10 flex flex-col justify-between space-y-6">
             <div class="space-y-4">
               <div class="flex items-center gap-2 text-xs font-mono text-accent">
                 <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-                <span class="tracking-widest uppercase font-semibold">TÌNH HUỐNG THỰC TẾ</span>
+                <span class="tracking-widest uppercase font-semibold">TIẾN THOÁI LƯỠNG NAN</span>
               </div>
 
-              <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-medium text-text leading-snug">
+              <h2 class="font-display text-2xl sm:text-3xl font-medium text-text leading-snug">
                 {featuredJourney.title}
               </h2>
 
@@ -106,63 +102,58 @@ const featuredJourney = journeys[0];
                 {featuredJourney.subtitle}
               </p>
 
-              <!-- Concrete Situation Copy -->
-              <div class="p-4 sm:p-5 bg-surface-raised/50 border border-border/60 rounded-sm space-y-3">
+              <!-- Concrete Situation Dilemma Card -->
+              <div class="p-4 sm:p-5 bg-surface-raised/50 border border-border/60 rounded-sm space-y-2.5">
                 <span class="text-[11px] font-sans uppercase tracking-wider text-muted block font-semibold">
                   Tình huống mở đầu:
                 </span>
                 <p class="font-sans text-sm text-text/90 leading-relaxed">
-                  "Một người bạn hỏi bạn về chuyện mà bạn biết có thể khiến họ tổn thương. Bạn biết một phần sự thật, nhưng không biết liệu đây đã là lúc thích hợp để nói ra. Bạn sẽ chọn đối diện thế nào?"
+                  "Một người bạn hỏi bạn về điều mà bạn biết có thể khiến họ tổn thương. Bạn chỉ biết một phần sự thật, nhưng hiểu rằng nếu im lặng, họ có thể đưa ra quyết định sai lầm. Bạn sẽ chọn đối diện thế nào?"
                 </p>
               </div>
 
-              <!-- Interactive Decision Preview -->
-              <div class="space-y-2.5 pt-2">
-                <span class="text-xs font-sans text-muted tracking-wider uppercase block font-medium">
-                  Bạn sẽ làm gì trước ngưỡng cửa này?
-                </span>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <a
-                    href={`/mirror/${featuredJourney.slug}`}
-                    class="p-3 border border-border/70 hover:border-accent bg-surface/60 hover:bg-surface-raised text-left transition-all rounded-sm group/btn"
-                  >
-                    <span class="font-display text-xs text-accent font-semibold block mb-0.5">Lựa chọn I:</span>
-                    <span class="text-xs font-sans text-text/90 group-hover/btn:text-accent transition-colors">
-                      Nói ra sự thật dù có thể gây đau đớn
-                    </span>
-                  </a>
-
-                  <a
-                    href={`/mirror/${featuredJourney.slug}`}
-                    class="p-3 border border-border/70 hover:border-accent bg-surface/60 hover:bg-surface-raised text-left transition-all rounded-sm group/btn"
-                  >
-                    <span class="font-display text-xs text-accent font-semibold block mb-0.5">Lựa chọn II:</span>
-                    <span class="text-xs font-sans text-text/90 group-hover/btn:text-accent transition-colors">
-                      Giữ im lặng để bảo vệ sự bình yên hiện tại
-                    </span>
-                  </a>
-                </div>
-              </div>
+              <p class="text-xs text-muted leading-relaxed">
+                Trong tình huống này, mỗi lựa chọn đều mở ra một ngã rẽ thị giác và dẫn đến những hệ quả khác nhau. Không có đáp án đúng, chỉ có điều bạn sẵn sàng nhận trách nhiệm.
+              </p>
             </div>
 
-            <!-- Action & Outcome Assurance -->
-            <div class="pt-6 border-t border-border/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <div>
-                <span class="font-mono text-xs text-text/80 block">
-                  4 kết thúc mở độc lập
-                </span>
-                <span class="text-[11px] font-sans text-muted">
-                  Không đánh giá đạo đức · Thử lại bất kỳ lúc nào
-                </span>
+            <!-- Single Dominant CTA & Guide Toggle -->
+            <div class="pt-6 border-t border-border/60 space-y-4">
+              <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                <a
+                  href={`/mirror/${featuredJourney.slug}`}
+                  class="px-8 py-3.5 bg-accent text-on-accent font-sans text-xs uppercase tracking-[0.2em] font-bold hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-2 shadow-lg min-h-[48px]"
+                >
+                  <span>Bắt Đầu Câu Chuyện</span>
+                  <span>→</span>
+                </a>
+
+                <button
+                  id="guide-toggle-btn"
+                  type="button"
+                  class="px-4 py-3 border border-border/80 hover:border-accent text-muted hover:text-text text-xs font-sans tracking-wider uppercase transition-colors min-h-[48px] inline-flex items-center justify-center gap-1.5"
+                  aria-expanded="false"
+                  aria-controls="guide-card"
+                >
+                  <span>Tìm hiểu cách trải nghiệm</span>
+                  <span id="guide-arrow" class="transition-transform duration-200">↓</span>
+                </button>
               </div>
 
-              <a
-                href={`/mirror/${featuredJourney.slug}`}
-                class="px-8 py-3.5 bg-accent text-on-accent font-sans text-xs uppercase tracking-[0.2em] font-bold hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-2 shadow-lg"
-              >
-                <span>Bắt Đầu Hành Trình</span>
-                <span>→</span>
-              </a>
+              <!-- Collapsible Guide Panel -->
+              <div id="guide-card" class="hidden p-4 bg-surface border border-border/60 rounded-sm space-y-2 text-xs text-muted leading-relaxed">
+                <p class="font-semibold text-text">3 lưu ý khi trải nghiệm The Mirror:</p>
+                <ol class="list-decimal list-inside space-y-1">
+                  <li><strong>Chọn theo cảm xúc thật:</strong> Đừng cố đoán "đáp án chuẩn", hãy chọn điều bạn thực sự sẽ làm ngoài đời thực.</li>
+                  <li><strong>Không có điểm số:</strong> Đây là không gian riêng tư để suy ngẫm, không phân loại tính cách hay đánh giá đạo đức.</li>
+                  <li><strong>Khám phá các ngã rẽ:</strong> Sau khi hoàn thành một nhánh, bạn có thể quay lại thử ngã rẽ khác bất cứ lúc nào.</li>
+                </ol>
+              </div>
+
+              <div class="flex items-center justify-between text-[11px] font-sans text-muted pt-1">
+                <span class="font-mono text-text/80">4 kết thúc mở độc lập</span>
+                <span>Tự do thử lại · Tĩnh lặng</span>
+              </div>
             </div>
 
           </div>
@@ -171,54 +162,84 @@ const featuredJourney = journeys[0];
       </section>
     )}
 
-    <!-- Timeline of Experience Architecture -->
-    <div class="border border-border/70 bg-surface/30 p-6 sm:p-10 rounded-sm space-y-6">
-      <div class="text-center max-w-xl mx-auto space-y-1">
+    <!-- Sleek 3-Step Narrative Strip (Replacing the 4-Box Grid) -->
+    <div class="border border-border/70 bg-surface/30 p-6 sm:p-10 rounded-sm space-y-8">
+      <div class="text-center max-w-xl mx-auto space-y-2">
         <span class="text-[10px] font-mono tracking-[0.25em] uppercase text-accent font-semibold block">
-          CƠ CHẾ TƯƠNG TÁC
+          DÒNG CHẢY TRẢI NGHIỆM
         </span>
         <h3 class="font-display text-xl sm:text-2xl text-text font-medium">
-          Dòng Chảy Một Cuộc Đối Thoại
+          Ba Nhịp Của Một Lần Lựa Chọn
         </h3>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-2">
-        <div class="space-y-2 p-4 bg-surface/50 border border-border/40 rounded-sm">
-          <span class="text-xs font-mono text-accent font-semibold block">01 · TÌNH HUỐNG</span>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 pt-2">
+        <!-- Step 1 -->
+        <div class="p-6 bg-surface/60 border border-border/60 rounded-sm space-y-3 relative group hover:border-accent/60 transition-colors">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono text-accent font-semibold tracking-widest">01 · TÌNH HUỐNG</span>
+            <span class="text-[10px] uppercase font-mono text-muted/60">Khởi đầu</span>
+          </div>
+          <h4 class="font-display text-base text-text font-medium">Bước vào khúc mắc đời thực</h4>
           <p class="font-sans text-xs text-muted leading-relaxed">
-            Một khúc mắc đời thực đưa bạn vào vị trí phải đưa ra quyết định mà không có phương án trọn vẹn.
+            Một tình huống khó đưa bạn vào vị trí phải đưa ra quyết định mà không có phương án nào hoàn toàn êm đẹp.
           </p>
         </div>
 
-        <div class="space-y-2 p-4 bg-surface/50 border border-border/40 rounded-sm">
-          <span class="text-xs font-mono text-accent font-semibold block">02 · LỰA CHỌN</span>
+        <!-- Step 2 -->
+        <div class="p-6 bg-surface/60 border border-border/60 rounded-sm space-y-3 relative group hover:border-accent/60 transition-colors">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono text-accent font-semibold tracking-widest">02 · LỰA CHỌN</span>
+            <span class="text-[10px] uppercase font-mono text-muted/60">Ngã rẽ</span>
+          </div>
+          <h4 class="font-display text-base text-text font-medium">Đưa ra hành động cụ thể</h4>
           <p class="font-sans text-xs text-muted leading-relaxed">
-            Bạn chọn hướng đi phù hợp với trực giác của mình. Mỗi ngã rẽ mở ra một không gian thị giác và câu hỏi mới.
+            Chọn cách bạn sẽ hành động. Mỗi ngã rẽ mở ra một không gian hội họa bảo tàng và dẫn đến những hệ quả tiếp nối.
           </p>
         </div>
 
-        <div class="space-y-2 p-4 bg-surface/50 border border-border/40 rounded-sm">
-          <span class="text-xs font-mono text-accent font-semibold block">03 · PHẢN ĐỀ</span>
+        <!-- Step 3 -->
+        <div class="p-6 bg-surface/60 border border-border/60 rounded-sm space-y-3 relative group hover:border-accent/60 transition-colors">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono text-accent font-semibold tracking-widest">03 · HỆ QUẢ</span>
+            <span class="text-[10px] uppercase font-mono text-muted/60">Tự vấn</span>
+          </div>
+          <h4 class="font-display text-base text-text font-medium">Nhìn lại điều còn đọng lại</h4>
           <p class="font-sans text-xs text-muted leading-relaxed">
-            Đối diện với mặt khuất hoặc cái giá phải trả của chính lựa chọn đó dưới góc nhìn tâm lý học hành vi.
-          </p>
-        </div>
-
-        <div class="space-y-2 p-4 bg-surface/50 border border-border/40 rounded-sm">
-          <span class="text-xs font-mono text-accent font-semibold block">04 · KẾT THÚC MỞ</span>
-          <p class="font-sans text-xs text-muted leading-relaxed">
-            Một không gian tĩnh lặng để chiêm nghiệm. Không có điểm số hay kết luận bạn là người thế nào.
+            Dừng lại trước câu hỏi tự vấn và nhìn nhận những điều lựa chọn ấy để lại phía sau cho bạn và các mối quan hệ.
           </p>
         </div>
       </div>
     </div>
 
     <!-- Respect for Reader Footnote -->
-    <div class="text-center text-xs text-muted space-y-1 pt-4">
+    <div class="text-center text-xs text-muted space-y-1 pt-2">
       <p>
-        🔒 <strong>Quyền riêng tư tuyệt đối:</strong> Mọi lựa chọn diễn ra 100% trên thiết bị của bạn. Không cần tạo tài khoản, không theo dõi hay phân tích hồ sơ.
+        🔒 <strong>Quyền riêng tư tuyệt đối:</strong> Mọi lựa chọn diễn ra trực tiếp trên thiết bị của bạn. Không lưu câu trả lời vào máy chủ và không chấm điểm tính cách.
       </p>
     </div>
 
   </div>
+
+  <script>
+    // Client-side toggle for Guide Panel
+    const toggleBtn = document.getElementById('guide-toggle-btn');
+    const guideCard = document.getElementById('guide-card');
+    const guideArrow = document.getElementById('guide-arrow');
+
+    if (toggleBtn && guideCard && guideArrow) {
+      toggleBtn.addEventListener('click', () => {
+        const isHidden = guideCard.classList.contains('hidden');
+        if (isHidden) {
+          guideCard.classList.remove('hidden');
+          toggleBtn.setAttribute('aria-expanded', 'true');
+          guideArrow.style.transform = 'rotate(180deg)';
+        } else {
+          guideCard.classList.add('hidden');
+          toggleBtn.setAttribute('aria-expanded', 'false');
+          guideArrow.style.transform = 'rotate(0deg)';
+        }
+      });
+    }
+  </script>
 </BaseLayout>

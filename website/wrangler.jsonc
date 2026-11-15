@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hiyu-abyss",
+  "compatibility_date": "2026-02-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "pages_build_output_dir": "dist",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "hiyu-abyss-agora-preview",
+      "database_id": "27320384-957a-46f5-9760-c795f2b8ea2f"
+    }
+  ]
+}

@@ -1,165 +1,203 @@
 # website/journeys/MIR-0001.yaml
-# The Mirror V3 - Directed Scene Graph Architecture
+# The Mirror V4 - Concrete Dilemma Directed Scene Graph
 id: MIR-0001
 status: APPROVED
 slug: su-that-va-binh-yen
-version: 3
+version: 4
 title: Sự thật và Bình yên
-subtitle: Một hành trình không có đáp án đúng
-artwork_id: ART-0011
-artwork_url: /images/themes/theme_11/slide_1_establishing.jpg
-artwork_title: "Wanderer above the Sea of Fog"
+subtitle: Một tình huống không có đáp án đúng
+artwork_id: ART-0003
+artwork_url: /images/themes/theme_03/slide_1_establishing.jpg
+artwork_title: "Kẻ lãng du trên biển sương mù"
 artwork_artist: "Caspar David Friedrich (1818)"
-estimated_minutes: 3
+estimated_minutes: 4
 entry: threshold
 
 nodes:
   threshold:
     type: intro
-    title: Cánh cửa của điều chưa biết
-    body: "Có những điều ta muốn biết, và có những điều ta sợ rằng một khi đã biết sẽ không thể trở lại như cũ."
-    scenePreset: gallery-threshold
-    motionPreset: reveal-slow
+    title: Ngưỡng cửa của một khúc mắc
+    body: "Một người bạn thân thiết tìm đến bạn, hào hứng chia sẻ về một quyết định lớn mà họ sắp đưa ra. Nhưng bạn tình cờ biết một thông tin bất lợi — một điều mà nếu nói ra có thể khiến họ tổn thương sâu sắc, còn nếu im lặng, họ có thể bước vào sai lầm mà không hề hay biết."
+    scenePreset: museum-threshold
+    motionPreset: soft-reveal
+    artwork_ref: /images/themes/theme_03/slide_1_establishing.jpg
+    artwork_title: "Kẻ lãng du trên biển sương mù"
+    artwork_artist: "Caspar David Friedrich (1818)"
     next: first_choice
 
   first_choice:
     type: choice
-    title: Giữa sự thật và bình yên, bạn nghiêng về đâu?
-    body: "Đây chỉ là một lựa chọn cho cuộc đối thoại, không phải kết luận về con người bạn."
+    title: Đứng trước bạn mình, bạn sẽ chọn cách đối diện nào?
+    body: "Không có phương án nào hoàn hảo. Mỗi cách chọn đều mang theo một cái giá riêng."
     scenePreset: two-door
     motionPreset: crossfade
+    artwork_ref: /images/themes/theme_03/slide_1_establishing.jpg
+    artwork_title: "Kẻ lãng du trên biển sương mù"
+    artwork_artist: "Caspar David Friedrich (1818)"
     choices:
-      - id: seek_truth
-        label: Tôi muốn hiểu điều đang bị che khuất.
-        to: truth_room
-        editorialIntent: "Khao khát đối diện sự thật bất kể chông chênh"
-      - id: protect_peace
-        label: Tôi cần giữ lại một khoảng bình yên.
-        to: peace_room
-        editorialIntent: "Bảo vệ khoảng lặng an toàn cho tâm trí"
+      - id: choose_speak
+        label: "Nói ra điều mình biết, dù có thể làm tổn thương họ."
+        editorialIntent: "Chấp nhận làm vỡ sự êm ấm tức thì để đối diện sự thật."
+        to: speak_consequence
+      - id: choose_wait
+        label: "Giữ im lặng lúc này để bảo vệ sự bình yên của họ."
+        editorialIntent: "Bảo bọc cảm xúc hiện tại, tránh tạo thêm chông chênh."
+        to: wait_consequence
 
-  truth_room:
+  # ==========================================
+  # BRANCH A: CHỌN NÓI RA (SPEAK)
+  # ==========================================
+  speak_consequence:
     type: statement
-    title: Phòng Quan Sát
-    body: "Sự thật có thể giải phóng, nhưng nhu cầu biết mọi điều đôi khi cũng là khát vọng kiểm soát."
-    scenePreset: stone-archive
+    title: Cơn chấn động đầu tiên
+    body: "Bạn vừa mở lời. Ánh mắt người bạn thoáng sững lại. Sau vài giây im lặng nặng nề, họ nhìn thẳng vào bạn và hỏi một câu ngắn: 'Bạn có chắc chắn về điều này không?'. Bạn nhận ra thông tin mình biết là có thật, nhưng bạn chưa nắm trọn toàn bộ bối cảnh đằng sau."
+    scenePreset: observation-room
     motionPreset: lateral-reveal
-    artwork_ref: /images/themes/theme_11/slide_2_closeup.jpg
-    next: truth_second_choice
+    artwork_ref: /images/themes/theme_08/slide_1_establishing.jpg
+    artwork_title: "Người quan sát trầm tư bên bức tượng"
+    artwork_artist: "Rembrandt van Rijn (1653)"
+    next: speak_second_choice
 
-  truth_second_choice:
+  speak_second_choice:
     type: choice
-    title: Bạn muốn tiến đến sự thật bằng cách nào?
-    body: "Không phải mọi câu hỏi đều cần được trả lời trong cùng một thời điểm."
+    title: Khi được hỏi dồn, bạn sẽ tiếp tục thế nào?
+    body: "Lúc này, một lời nói thêm có thể định hình hoàn toàn cách người kia nhìn nhận sự việc."
     scenePreset: aperture
     motionPreset: crossfade
+    artwork_ref: /images/themes/theme_08/slide_1_establishing.jpg
+    artwork_title: "Người quan sát trầm tư bên bức tượng"
+    artwork_artist: "Rembrandt van Rijn (1653)"
     choices:
-      - id: immediately
-        label: Tôi muốn biết ngay, bất kể hệ quả.
-        to: counter_control
-        editorialIntent: "Sự khẩn thiết loại bỏ bất định"
-      - id: with_care
-        label: Tôi sẽ đợi đến khi có thể đối diện một cách sáng suốt.
-        to: counter_timing
-        editorialIntent: "Sự kiên nhẫn và tỉnh thức theo thời điểm"
+      - id: speak_brutal
+        label: "Nói hết mọi suy đoán và nghi ngờ ngay lập tức."
+        editorialIntent: "Nhu cầu giải tỏa dứt điểm mọi mơ hồ."
+        to: counter_brutal
+      - id: speak_responsible
+        label: "Chỉ nói phần đã xác minh, thành thật nhận phần mình chưa rõ."
+        editorialIntent: "Giữ trách nhiệm và tỉnh táo với giới hạn hiểu biết."
+        to: counter_responsible
 
-  peace_room:
-    type: statement
-    title: Phòng Im Lặng
-    body: "Bình yên có thể là nơi nghỉ ngơi cần thiết, nhưng cũng có thể trở thành một cách trì hoãn câu hỏi quan trọng."
-    scenePreset: paper-chamber
-    motionPreset: lateral-reveal
-    artwork_ref: /images/themes/theme_11/slide_3_macro.jpg
-    next: peace_second_choice
-
-  peace_second_choice:
-    type: choice
-    title: Điều gì đang được bảo vệ trong lựa chọn ấy?
-    body: "Bình yên là chiếc khiên che chắn cho điều gì sâu kín nhất lúc này?"
-    scenePreset: aperture
-    motionPreset: crossfade
-    choices:
-      - id: self_boundary
-        label: Giới hạn và sự ổn định của chính tôi.
-        to: counter_boundary
-        editorialIntent: "Xác lập ranh giới tự vệ cá nhân"
-      - id: others_welfare
-        label: Sự bình yên của người khác.
-        to: counter_responsibility
-        editorialIntent: "Bảo vệ tâm thế của những người xung quanh"
-
-  counter_control:
+  counter_brutal:
     type: counterpoint
-    title: Hiểu biết không đồng nghĩa với quyền kiểm soát
-    body: "Sự thật càng khó chịu, ta càng dễ nhầm lòng can đảm với nhu cầu loại bỏ mọi bất định."
+    title: Ranh giới giữa thành thật và sự vội vã
+    body: "Khi trút hết mọi nghi ngờ chưa được kiểm chứng, ta thường nghĩ mình đang bảo vệ người khác. Nhưng sâu bên dưới, đó đôi khi chỉ là mong muốn trút bỏ cảm giác bứt rứt của chính mình để không phải chịu đựng sự mơ hồ."
     scenePreset: shadow-closeup
     motionPreset: reveal-quiet
-    artwork_ref: /images/themes/theme_11/slide_2_closeup.jpg
-    next: ending_control
+    artwork_ref: /images/themes/theme_08/slide_2_closeup.jpg
+    artwork_title: "Chi tiết gương mặt suy tư"
+    artwork_artist: "Rembrandt van Rijn (1653)"
+    next: ending_brutal
 
-  counter_timing:
-    type: counterpoint
-    title: Đối diện không có nghĩa là vội vã
-    body: "Một điều đúng không nhất thiết trở nên sáng rõ khi được ép nói ra trước thời điểm thích hợp."
-    scenePreset: open-window
-    motionPreset: reveal-quiet
-    artwork_ref: /images/themes/theme_11/slide_1_establishing.jpg
-    next: ending_timing
-
-  counter_boundary:
-    type: counterpoint
-    title: Ranh giới không phải là sự trốn tránh
-    body: "Giữ khoảng cách có thể là một hành động tỉnh táo; chỉ bạn mới có thể xem mình đang nghỉ ngơi hay đang né tránh điều gì."
-    scenePreset: veil
-    motionPreset: reveal-quiet
-    artwork_ref: /images/themes/theme_11/slide_3_macro.jpg
-    next: ending_boundary
-
-  counter_responsibility:
-    type: counterpoint
-    title: Bảo vệ và tước đi quyền lựa chọn
-    body: "Che giấu để người khác khỏi tổn thương có thể xuất phát từ lòng thương, nhưng ai là người có quyền quyết định điều họ cần biết?"
-    scenePreset: twin-portraits
-    motionPreset: reveal-quiet
-    artwork_ref: /images/themes/theme_11/slide_2_closeup.jpg
-    next: ending_responsibility
-
-  ending_control:
+  ending_brutal:
     type: ending
-    title: Sự thật và nỗi ám ảnh kiểm soát
-    body: "Có lẽ câu hỏi không chỉ là điều gì đúng, mà còn là điều gì trong ta đòi sự chắc chắn đến thế."
-    closingQuestion: "Hôm nay, bạn đang tìm kiếm sự thật để tự do, hay để không phải chịu đựng cảm giác bất an?"
+    title: Thành thật và nỗi bất an
+    body: "Bạn đã chọn nói tất cả. Sự việc không còn gì giấu giếm, nhưng mối quan hệ để lại một vết nứt do những phán đoán vội vàng gây nên. Thành thật là một phẩm chất đáng quý, nhưng cách ta trao sự thật quyết định nó là chiếc phao cứu sinh hay là một gáo nước lạnh."
+    closingQuestion: "Khi nóng lòng muốn nói ra mọi chuyện, bạn đang thực sự nghĩ cho họ, hay chỉ muốn giải thoát cho sự bất an của chính mình?"
     scenePreset: open-ended-dark
     motionPreset: stillness
-    artwork_ref: /images/themes/theme_11/slide_1_establishing.jpg
-    relatedTopic: "TRUTH"
+    artwork_ref: /images/themes/theme_08/slide_2_closeup.jpg
+    artwork_title: "Chi tiết gương mặt suy tư"
+    artwork_artist: "Rembrandt van Rijn (1653)"
+    relatedTopic: TRUTH
 
-  ending_timing:
+  counter_responsible:
+    type: counterpoint
+    title: Dũng khí thừa nhận điều mình chưa biết
+    body: "Nói ra sự thật đã khó, nhưng dám dừng lại trước ranh giới của những điều mình chưa kiểm chứng còn đòi hỏi sự khiêm nhường lớn hơn. Bạn từ chối phóng đại nghi ngờ để giữ lại sự công tâm."
+    scenePreset: open-window
+    motionPreset: reveal-quiet
+    artwork_ref: /images/themes/theme_68/slide_1_establishing.jpg
+    artwork_title: "Nhà thiên văn học trầm tư"
+    artwork_artist: "Johannes Vermeer (1668)"
+    next: ending_responsible
+
+  ending_responsible:
     type: ending
-    title: Sự thật có thời điểm
-    body: "Biết chờ không làm chân lý bớt chân thật. Nó buộc ta suy ngẫm về trách nhiệm với cách sự thật được trao đi."
-    closingQuestion: "Điều gì mách bảo bạn rằng đây đã là thời điểm thích hợp để đối diện, hay sự kiên nhẫn đang dần biến thành sự trì hoãn?"
+    title: Sự thật và trách nhiệm của người quan sát
+    body: "Người bạn đón nhận thông tin với sự bình tĩnh hơn. Họ nhận ra bạn không nói để áp đặt kết luận, mà để trao cho họ dữ kiện họ xứng đáng được biết. Niềm tin giữa hai người không bị rạn nứt, mà sâu sắc hơn nhờ sự chừng mực."
+    closingQuestion: "Làm sao để vừa trung thực với người khác, vừa tỉnh táo không biến những phán đoán chủ quan của mình thành sự thật duy nhất?"
     scenePreset: horizon
     motionPreset: stillness
-    artwork_ref: /images/themes/theme_11/slide_1_establishing.jpg
-    relatedTopic: "SELF_DECEPTION"
+    artwork_ref: /images/themes/theme_68/slide_2_closeup.jpg
+    artwork_title: "Ánh sáng bên khung cửa sổ"
+    artwork_artist: "Johannes Vermeer (1668)"
+    relatedTopic: BOUNDARIES
 
-  ending_boundary:
+  # ==========================================
+  # BRANCH B: CHỌN IM LẶNG (WAIT)
+  # ==========================================
+  wait_consequence:
+    type: statement
+    title: Khoảng lặng che chở
+    body: "Bạn chọn mỉm cười và lắng nghe, không thốt ra điều bạn đang biết. Cuộc trò chuyện kết thúc trong êm đẹp. Vài ngày sau, người bạn chính thức đưa ra quyết định. Nhìn sự yên lòng của họ, trong bạn dấy lên một cảm giác chênh vênh: sự bình yên này thực chất rất mong manh."
+    scenePreset: silence-room
+    motionPreset: lateral-reveal
+    artwork_ref: /images/themes/theme_71/slide_1_establishing.jpg
+    artwork_title: "Cô gái đọc thư bên cửa sổ mở"
+    artwork_artist: "Johannes Vermeer (1659)"
+    next: wait_second_choice
+
+  wait_second_choice:
+    type: choice
+    title: Trước hệ quả đang dần mở ra, bạn chọn làm gì?
+    body: "Quyết định đã được đưa ra một nửa, nhưng sự việc vẫn còn đang tiếp diễn."
+    scenePreset: aperture
+    motionPreset: crossfade
+    artwork_ref: /images/themes/theme_71/slide_1_establishing.jpg
+    artwork_title: "Cô gái đọc thư bên cửa sổ mở"
+    artwork_artist: "Johannes Vermeer (1659)"
+    choices:
+      - id: wait_continue
+        label: "Tiếp tục im lặng, tin rằng mọi chuyện rồi sẽ tự ổn thỏa."
+        editorialIntent: "Kiên định giữ khoảng cách để không can thiệp việc người khác."
+        to: counter_avoidance
+      - id: wait_reopen
+        label: "Chủ động hẹn gặp lại: thừa nhận mình đã do dự, nhưng muốn chia sẻ chân thành."
+        editorialIntent: "Dũng cảm sửa sai và nhận trách nhiệm về sự ngập ngừng ban đầu."
+        to: counter_honest_pause
+
+  counter_avoidance:
+    type: counterpoint
+    title: Cái bóng của sự an toàn giả tạo
+    body: "Im lặng để không làm người khác buồn là một phản xạ nhân hậu. Nhưng khi sự im lặng kéo dài quá lâu, nó dần biến thành một lá chắn bảo vệ chính sự an toàn của ta trước nguy cơ bị trách cứ."
+    scenePreset: veil
+    motionPreset: reveal-quiet
+    artwork_ref: /images/themes/theme_71/slide_2_closeup.jpg
+    artwork_title: "Bức thư và chiếc bàn phủ thảm"
+    artwork_artist: "Johannes Vermeer (1659)"
+    next: ending_avoidance
+
+  ending_avoidance:
     type: ending
-    title: Bình yên và giới hạn
-    body: "Một nơi trú ẩn có thể nuôi dưỡng lòng can đảm. Điều quan trọng là ta còn nhớ con đường bước ra hay không."
-    closingQuestion: "Khoảng lặng này đang giúp bạn tích lũy nội lực để bước tiếp, hay đang trở thành một nhà tù êm ái?"
+    title: Cái giá của sự bình yên bị trì hoãn
+    body: "Một thời gian sau, sự thật không may lộ ra từ một nguồn khác. Người bạn ngỡ ngàng nhận ra bạn đã biết từ trước nhưng không nói. Sự im lặng từng được xem là lòng tốt bỗng chốc trở thành rào cản ngăn cách hai người."
+    closingQuestion: "Khoảng im lặng mà bạn thường chọn trong cuộc sống đang thực sự bảo vệ người khác, hay chỉ đang bảo vệ bạn khỏi những va chạm khó chịu?"
     scenePreset: empty-room
     motionPreset: stillness
-    artwork_ref: /images/themes/theme_11/slide_3_macro.jpg
-    relatedTopic: "SOLITUDE"
+    artwork_ref: /images/themes/theme_71/slide_3_macro.jpg
+    artwork_title: "Tĩnh vật trên bàn"
+    artwork_artist: "Johannes Vermeer (1659)"
+    relatedTopic: SELF_DECEPTION
 
-  ending_responsibility:
+  counter_honest_pause:
+    type: counterpoint
+    title: Dừng lại để kịp thời hiện diện
+    body: "Nhận ra sự ngập ngừng của mình không phải là thất bại. Quay lại nói lời chân thành sau một nhịp chần chừ đòi hỏi sự can đảm rất lớn, bởi bạn phải thừa nhận cả sự thiếu sót ban đầu của mình."
+    scenePreset: twin-portraits
+    motionPreset: reveal-quiet
+    artwork_ref: /images/themes/theme_03/slide_2_closeup.jpg
+    artwork_title: "Kẻ lãng du trên vách đá"
+    artwork_artist: "Caspar David Friedrich (1818)"
+    next: ending_honest_pause
+
+  ending_honest_pause:
     type: ending
-    title: Bình yên và trách nhiệm
-    body: "Đôi khi yêu thương không nằm ở việc giữ người khác khỏi mọi sự thật, mà ở việc tôn trọng năng lực lựa chọn của họ."
-    closingQuestion: "Bạn đang bảo bọc sự mong manh của họ, hay đang né tránh cơn bão cảm xúc mà bạn sợ mình không gánh nổi?"
+    title: Sự chân thành đến muộn nhưng đúng lúc
+    body: "Người bạn trân trọng cuộc hẹn thứ hai này. Dù có một chút bối rối lúc đầu, việc bạn dám quay lại để chia sẻ trong sự cẩn trọng đã giúp họ kịp thời có những chuẩn bị cần thiết. Bạn học được rằng hoàn hảo không quan trọng bằng sự hiện diện chân thành."
+    closingQuestion: "Có điều gì trong đời bạn từng ngập ngừng chưa nói, và hôm nay liệu đã đến lúc bạn có thể quay lại để đối thoại một cách chân thành?"
     scenePreset: two-figures
     motionPreset: stillness
-    artwork_ref: /images/themes/theme_11/slide_2_closeup.jpg
-    relatedTopic: "MORALITY"
+    artwork_ref: /images/themes/theme_03/slide_3_macro.jpg
+    artwork_title: "Biển mây bồng bềnh"
+    artwork_artist: "Caspar David Friedrich (1818)"
+    relatedTopic: RESILIENCE

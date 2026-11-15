@@ -1,0 +1,80 @@
+---
+// src/pages/members/[handle].astro - Public Member Profile
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export const prerender = false;
+
+const handle = Astro.params.handle || 'nguoi_dong_hanh';
+---
+
+<BaseLayout
+  title={`@${handle} — Hồ Sơ Thành Viên | Hiyu Abyss`}
+  description={`Trang hồ sơ công khai của @${handle} trên The Agora.`}
+>
+  <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto space-y-10">
+    
+    <nav class="flex items-center gap-2 text-xs font-mono text-muted uppercase tracking-wider">
+      <a href="/agora" class="hover:text-accent transition-colors">The Agora</a>
+      <span class="text-border">/</span>
+      <span class="text-text font-medium">Thành viên</span>
+      <span class="text-border">/</span>
+      <span class="text-accent font-semibold">@{handle}</span>
+    </nav>
+
+    {/* Profile Card */}
+    <div class="p-6 sm:p-8 bg-surface/30 border border-border/70 rounded-sm flex flex-col sm:flex-row items-start sm:items-center gap-6">
+      <span class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-accent/20 border-2 border-accent/40 text-accent font-semibold flex items-center justify-center font-mono text-2xl uppercase shrink-0">
+        {handle[0].toUpperCase()}
+      </span>
+
+      <div class="space-y-2 flex-1">
+        <div class="flex flex-wrap items-center gap-2.5">
+          <h1 class="font-display text-2xl sm:text-3xl font-medium text-text">
+            {handle === 'hiyu_abyss' ? 'Ban Biên Tập Hiyu Abyss' : 'Đồng Hành Cùng Chiêm Nghiệm'}
+          </h1>
+          <span class="px-2.5 py-0.5 rounded bg-surface border border-border/70 font-mono text-[11px] text-accent">
+            @{handle}
+          </span>
+        </div>
+
+        <p class="font-sans text-xs sm:text-sm text-muted leading-relaxed max-w-xl">
+          {handle === 'hiyu_abyss'
+            ? 'Khám phá và kết nối di sản tư tưởng cổ điển cùng hội họa bảo tàng.'
+            : 'Yêu thích sự tĩnh lặng, tìm kiếm những góc nhìn chân thực về cuộc sống và con người.'}
+        </p>
+
+        <div class="flex items-center gap-4 text-xs font-mono text-muted pt-1">
+          <span>Tham gia từ tháng 11/2026</span>
+          <span class="text-border">·</span>
+          <span>Thành viên hoạt động</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Member's Contributions / Threads Stream */}
+    <div class="space-y-4">
+      <div class="pb-3 border-b border-border/60">
+        <h2 class="font-display text-xl font-medium text-text">
+          Chủ Đề Đã Khởi Xướng
+        </h2>
+      </div>
+
+      <div class="p-5 bg-surface/30 border border-border/60 rounded-sm space-y-2">
+        <div class="flex items-center gap-2 text-[11px] font-mono text-muted">
+          <span class="text-accent">#triet-hoc-va-tu-tuong</span>
+          <span class="text-border">·</span>
+          <span>15/11/2026</span>
+        </div>
+        <h3 class="font-display text-lg text-text font-medium hover:text-accent transition-colors">
+          <a href="/agora/t/th_demo_01/co-phai-moi-su-that-deu-can-duoc-noi-ra">
+            Có phải mọi sự thật đều cần được nói ra trước một thời điểm nhất định?
+          </a>
+        </h3>
+        <p class="font-serif italic text-xs text-muted leading-relaxed">
+          "Đứng trước một người bạn đang tràn đầy hy vọng về quyết định của mình, nhưng bạn biết một thông tin bất lợi..."
+        </p>
+      </div>
+    </div>
+
+  </div>
+</BaseLayout>

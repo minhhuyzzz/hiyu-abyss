@@ -1,0 +1,241 @@
+---
+// src/pages/agora/index.astro - The Agora Main Forum Hub
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { AgoraService } from '../../lib/agora/service';
+
+const service = new AgoraService(Astro.locals?.runtime?.env);
+const categories = await service.getCategories();
+const threads = await service.getThreads({ limit: 20 });
+const spotlightThread = threads.find((t) => t.pinned) || threads[0];
+---
+
+<BaseLayout
+  title="The Agora — Diễn Đàn Đối Thoại & Góc Nhìn Mở | Hiyu Abyss"
+  description="Khám phá, đặt câu hỏi và trao đổi về các chủ đề cuộc sống, tâm lý, nghệ thuật và những khúc mắc đời thực."
+>
+  <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16 sm:space-y-24">
+    
+    <!-- 1. Masthead: Art Magazine Identity -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 pb-8 border-b border-border/70">
+      <div class="space-y-4 max-w-3xl">
+        <div class="flex items-center gap-2 text-xs tracking-[0.25em] uppercase font-sans text-muted">
+          <span class="text-accent font-semibold">THE AGORA</span>
+          <span class="text-muted/30">/</span>
+          <span>DIỄN ĐÀN ĐỐI THOẠI & GÓC NHÌN MỞ</span>
+        </div>
+
+        <h1 class="font-display text-3xl sm:text-5xl md:text-6xl text-text font-medium leading-[1.14] tracking-tight">
+          Một câu hỏi tốt có thể mở ra nhiều cuộc đối thoại.
+        </h1>
+
+        <p class="font-sans text-base sm:text-lg text-muted/90 max-w-2xl leading-relaxed">
+          Không gian trao đổi về cuộc sống, tâm lý, văn học, nghệ thuật và những khúc mắc đời thực. Không có câu trả lời đóng gói sẵn — chỉ có những góc nhìn chân thành được soi chiếu cùng nhau.
+        </p>
+      </div>
+
+      <!-- Quick Action: Write a Thread -->
+      <div class="flex flex-wrap items-center gap-3">
+        <a
+          href="/agora/new"
+          class="px-7 py-3.5 bg-accent text-on-accent font-sans text-xs uppercase tracking-[0.2em] font-bold hover:opacity-90 transition-opacity rounded-sm shadow-md min-h-[48px] inline-flex items-center gap-2"
+        >
+          <span>Viết một chủ đề</span>
+          <span>→</span>
+        </a>
+
+        <a
+          href="/agora/guidelines"
+          class="px-5 py-3.5 border border-border/80 hover:border-accent text-muted hover:text-text font-sans text-xs tracking-wider uppercase transition-colors rounded-sm min-h-[48px] inline-flex items-center"
+        >
+          Nguyên tắc đối thoại
+        </a>
+      </div>
+    </div>
+
+    <!-- 2. Spotlight Editorial Conversation (Pinned Real Topic) -->
+    {spotlightThread && (
+      <section class="border border-border/80 bg-surface/40 rounded-sm overflow-hidden shadow-xl group hover:border-accent/60 transition-colors">
+        <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+          
+          <div class="lg:col-span-5 relative min-h-[260px] sm:min-h-[340px] bg-surface flex flex-col justify-between p-6 border-b lg:border-b-0 lg:border-r border-border/70 overflow-hidden">
+            <img
+              src="/images/themes/theme_08/slide_1_establishing.jpg"
+              alt="Người quan sát trầm tư - Rembrandt"
+              class="absolute inset-0 w-full h-full object-cover filter brightness-[0.88] group-hover:scale-105 transition-transform duration-700"
+              loading="eager"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-bg via-bg/30 to-transparent"></div>
+
+            <div class="relative z-10">
+              <span class="px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-widest bg-bg/90 text-accent border border-border/70">
+                CHỦ ĐỀ TIÊU ĐIỂM
+              </span>
+            </div>
+
+            <div class="relative z-10 pt-16">
+              <span class="text-[10px] font-sans text-white/70 uppercase tracking-widest block mb-0.5">
+                Bức họa đồng hành
+              </span>
+              <p class="font-display text-sm text-white font-medium">
+                Người quan sát trầm tư bên bức tượng · Rembrandt (1653)
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between space-y-6">
+            <div class="space-y-3">
+              <div class="flex items-center gap-2 text-xs font-mono text-muted">
+                <span class="text-accent font-semibold uppercase">Góc nhìn & Cuộc sống</span>
+                <span class="text-border">·</span>
+                <span>@{spotlightThread.author_handle || 'hiyu_abyss'}</span>
+              </div>
+
+              <h2 class="font-display text-2xl sm:text-3xl font-medium text-text leading-snug group-hover:text-accent transition-colors">
+                <a href={`/agora/t/${spotlightThread.id}/${spotlightThread.slug}`}>
+                  {spotlightThread.title}
+                </a>
+              </h2>
+
+              <p class="font-serif italic text-base text-text/80 leading-relaxed line-clamp-3">
+                "{spotlightThread.body_md}"
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-border/60 flex items-center justify-between text-xs font-sans text-muted">
+              <span>{spotlightThread.reply_count || 0} câu trả lời thảo luận</span>
+              <a
+                href={`/agora/t/${spotlightThread.id}/${spotlightThread.slug}`}
+                class="text-accent font-semibold uppercase tracking-wider text-xs flex items-center gap-1 hover:underline"
+              >
+                <span>Tham gia đối thoại</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    )}
+
+    <!-- 3. Discussion Stream & Category Split -->
+    <div class="space-y-8">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-border/60">
+        <div>
+          <h2 class="font-display text-2xl font-medium text-text">Dòng Chảy Thảo Luận</h2>
+          <p class="text-xs font-sans text-muted">Những câu hỏi và góc nhìn mới nhất từ cộng đồng</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex items-center gap-2 font-sans text-xs">
+          <button class="px-3.5 py-1.5 border border-accent bg-accent text-on-accent font-semibold rounded-sm">
+            Tất cả ({threads.length})
+          </button>
+          <button class="px-3.5 py-1.5 border border-border/70 hover:border-accent text-muted hover:text-text rounded-sm transition-colors">
+            Chưa có câu trả lời
+          </button>
+        </div>
+      </div>
+
+      <!-- Threads List -->
+      <div class="divide-y divide-border/60 border-y border-border/60">
+        {threads.map((thread) => (
+          <article class="py-5 sm:py-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-surface/30 px-2 sm:px-4 -mx-2 sm:-mx-4 transition-colors rounded-sm group">
+            <div class="space-y-1.5 max-w-3xl">
+              <div class="flex items-center gap-2 text-[11px] font-mono text-muted">
+                <span class="text-accent uppercase font-medium">#{thread.category_id.replace('cat-', '')}</span>
+                <span class="text-border">·</span>
+                <span>@{thread.author_handle || 'dong_hanh'}</span>
+                <span class="text-border">·</span>
+                <span>{new Date(thread.created_at * 1000).toLocaleDateString('vi-VN')}</span>
+                {thread.pinned ? (
+                  <span class="px-2 py-0.2 text-[9px] bg-accent/20 text-accent font-sans uppercase font-bold rounded">Ghim</span>
+                ) : null}
+              </div>
+
+              <h3 class="font-display text-lg sm:text-xl font-medium text-text group-hover:text-accent transition-colors leading-snug">
+                <a href={`/agora/t/${thread.id}/${thread.slug}`}>
+                  {thread.title}
+                </a>
+              </h3>
+
+              <p class="font-serif italic text-xs sm:text-sm text-muted/90 line-clamp-2 leading-relaxed">
+                "{thread.body_md}"
+              </p>
+            </div>
+
+            <div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center gap-2 shrink-0 pt-2 sm:pt-0">
+              <span class="px-3 py-1 bg-surface border border-border/60 rounded text-xs font-mono text-text/80">
+                {thread.reply_count || 0} trả lời
+              </span>
+              <a
+                href={`/agora/t/${thread.id}/${thread.slug}`}
+                class="text-accent hover:underline text-xs font-sans uppercase tracking-wider font-semibold"
+              >
+                Xem tiếp →
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+
+    <!-- 4. Category Atlas (Museum Art Gallery) -->
+    <div class="space-y-8 pt-6">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="text-[10px] font-mono tracking-[0.25em] uppercase text-accent font-semibold block">
+          KHÔNG GIAN TRIỂN LÃM THEO CHUYÊN MỤC
+        </span>
+        <h2 class="font-display text-2xl sm:text-4xl font-medium text-text">
+          Các Vùng Đề Tài Đối Thoại
+        </h2>
+        <p class="font-sans text-xs sm:text-sm text-muted">
+          Mỗi chuyên mục đồng hành cùng một tác phẩm hội họa cổ điển làm điểm tựa cảm xúc
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        {categories.map((cat) => (
+          <a
+            href={`/agora/c/${cat.slug}`}
+            class="group p-5 bg-surface/30 border border-border/70 hover:border-accent rounded-sm transition-all flex flex-col justify-between space-y-4"
+          >
+            <div class="space-y-3">
+              <div class="relative aspect-[16/10] overflow-hidden bg-surface rounded-sm border border-border/40">
+                <img
+                  src={cat.cover_art_ref}
+                  alt={cat.title}
+                  class="w-full h-full object-cover filter brightness-[0.88] group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <span class="absolute bottom-2 left-2 px-2.5 py-0.5 text-[10px] font-mono uppercase bg-bg/90 text-accent border border-border/60">
+                  {cat.cover_art_title}
+                </span>
+              </div>
+
+              <h3 class="font-display text-xl font-medium text-text group-hover:text-accent transition-colors">
+                {cat.title}
+              </h3>
+
+              <p class="font-sans text-xs text-muted leading-relaxed line-clamp-2">
+                {cat.description}
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-border/40 flex items-center justify-between text-xs font-sans text-accent">
+              <span class="font-semibold uppercase tracking-wider text-[11px]">Khám phá chuyên mục</span>
+              <span>→</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- 5. Respect for Reader Footer Notice -->
+    <div class="text-center text-xs text-muted space-y-2 pt-8 border-t border-border/60">
+      <p>
+        🔒 <strong>Bảo tồn giá trị đối thoại:</strong> The Agora hướng tới những thảo luận có chiều sâu, tôn trọng và chân thành. Mọi nội dung vi phạm sẽ được xử lý minh bạch theo nguyên tắc cộng đồng.
+      </p>
+    </div>
+
+  </div>
+</BaseLayout>

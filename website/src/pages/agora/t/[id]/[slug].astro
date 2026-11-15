@@ -1,0 +1,200 @@
+---
+// src/pages/agora/t/[id]/[slug].astro - Thread Discussion Stage
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import LibraryComments from '../../../../components/library/LibraryComments';
+import { AgoraService } from '../../../../lib/agora/service';
+import { renderSafeMarkdown } from '../../../../lib/agora/sanitizer';
+
+export const prerender = false;
+
+const threadId = Astro.params.id;
+const service = new AgoraService(Astro.locals?.runtime?.env);
+const thread = threadId ? await service.getThreadById(threadId) : null;
+
+if (!thread) {
+  return Astro.redirect('/agora');
+}
+
+const category = await service.getCategoryBySlug(thread.category_id.replace('cat-', ''));
+---
+
+<BaseLayout
+  title={`${thread.title} — The Agora | Hiyu Abyss`}
+  description={thread.body_md.slice(0, 160)}
+>
+  <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-10 sm:space-y-12">
+    
+    {/* Breadcrumbs */}
+    <nav class="flex items-center gap-2 text-xs font-mono text-muted uppercase tracking-wider overflow-x-auto pb-2 [scrollbar-width:none]">
+      <a href="/agora" class="hover:text-accent transition-colors">The Agora</a>
+      <span class="text-border">/</span>
+      {category && (
+        <>
+          <a href={`/agora/c/${category.slug}`} class="hover:text-accent transition-colors">
+            {category.title}
+          </a>
+          <span class="text-border">/</span>
+        </>
+      )}
+      <span class="text-text font-medium truncate max-w-xs">{thread.title}</span>
+    </nav>
+
+    {/* Main Reading Grid */}
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      
+      {/* Thread Content Column (8 cols) */}
+      <div class="lg:col-span-8 space-y-8">
+        
+        <header class="space-y-4 pb-6 border-b border-border/60">
+          <div class="flex items-center gap-3 text-xs font-mono text-muted">
+            <span class="w-8 h-8 rounded-full bg-accent/20 border border-accent/40 text-accent font-semibold flex items-center justify-center font-mono text-xs uppercase">
+              {thread.author_display_name?.[0] || 'A'}
+            </span>
+            <div>
+              <span class="font-medium text-text block leading-snug">
+                {thread.author_display_name}
+              </span>
+              <span class="text-[11px] text-muted">@{thread.author_handle}</span>
+            </div>
+            <span class="text-border">·</span>
+            <span>{new Date(thread.created_at * 1000).toLocaleDateString('vi-VN')}</span>
+          </div>
+
+          <h1 class="font-display text-2xl sm:text-4xl text-text font-medium leading-[1.25] text-balance">
+            {thread.title}
+          </h1>
+        </header>
+
+        {/* Thread Formatted Body */}
+        <div
+          class="prose-reading font-serif text-base sm:text-lg text-text/90 leading-relaxed sm:leading-loose space-y-4"
+          set:html={renderSafeMarkdown(thread.body_md)}
+        />
+
+        {/* Interactive Action Bar: Like / Bookmark / Report */}
+        <div class="pt-6 border-t border-border/60 flex items-center justify-between text-xs font-sans text-muted">
+          <div class="flex items-center gap-4">
+            <span class="px-3 py-1 bg-surface border border-border/60 rounded text-xs font-mono">
+              {thread.reply_count || 0} phản hồi
+            </span>
+            <button
+              id="report-thread-btn"
+              type="button"
+              class="hover:text-red-400 transition-colors"
+            >
+              Báo cáo vi phạm
+            </button>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <a
+              href="/agora"
+              class="text-accent hover:underline font-semibold"
+            >
+              ← Quay lại diễn đàn
+            </a>
+          </div>
+        </div>
+
+        {/* Thread Discussion Tree via LibraryComments Component */}
+        <LibraryComments
+          client:visible
+          quoteId={thread.id}
+          quoteTitle={thread.title}
+          contextType="THREAD"
+        />
+
+      </div>
+
+      {/* Sidebar Column: Context, Guidelines & Library Connection (4 cols) */}
+      <aside class="lg:col-span-4 space-y-8 lg:sticky lg:top-24">
+        
+        {/* Category Box */}
+        {category && (
+          <div class="p-5 bg-surface/30 border border-border/70 rounded-sm space-y-3">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-accent font-semibold block">
+              CHUYÊN MỤC
+            </span>
+            <h3 class="font-display text-lg text-text font-medium">
+              <a href={`/agora/c/${category.slug}`} class="hover:text-accent transition-colors">
+                {category.title}
+              </a>
+            </h3>
+            <p class="font-sans text-xs text-muted leading-relaxed">
+              {category.description}
+            </p>
+            <a
+              href={`/agora/c/${category.slug}`}
+              class="text-xs text-accent hover:underline block pt-1 font-semibold"
+            >
+              Xem thêm các bài cùng mục →
+            </a>
+          </div>
+        )}
+
+        {/* Community Guidelines Card */}
+        <div class="p-5 bg-surface/30 border border-border/70 rounded-sm space-y-3 text-xs font-sans text-muted leading-relaxed">
+          <span class="text-[10px] font-mono tracking-widest uppercase text-text font-semibold block">
+            NGUYÊN TẮC ĐỐI THOẠI
+          </span>
+          <ul class="space-y-1.5 list-disc list-inside">
+            <li>Tập trung vào góc nhìn và lập luận, không công kích cá nhân.</li>
+            <li>Chia sẻ trải nghiệm thực tế, tôn trọng sự khác biệt.</li>
+            <li>Không spam link quảng cáo hoặc thông tin sai lệch.</li>
+          </ul>
+          <a href="/agora/guidelines" class="text-accent hover:underline block pt-1">
+            Đọc quy tắc cộng đồng đầy đủ →
+          </a>
+        </div>
+
+        {/* Library Cross-Linking Card */}
+        <div class="p-5 border border-accent/40 bg-accent/5 rounded-sm space-y-2.5">
+          <span class="text-[10px] font-mono tracking-widest uppercase text-accent font-semibold block">
+            THƯ VIỆN HIYU ABYSS
+          </span>
+          <p class="font-serif italic text-xs text-text/90 leading-relaxed">
+            "Chiếc gương không tạo ra bóng tối hay ánh sáng; nó chỉ trả lại nguyên vẹn những gì bạn dám đặt trước mặt nó."
+          </p>
+          <a
+            href="/library"
+            class="text-xs font-sans text-accent hover:underline block pt-1 font-semibold"
+          >
+            Khám phá 200 câu nói chọn lọc →
+          </a>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+  <script>
+    // Client-side quick report notification
+    const reportBtn = document.getElementById('report-thread-btn');
+    if (reportBtn) {
+      reportBtn.addEventListener('click', async () => {
+        const reason = prompt('Lý do báo cáo vi phạm (SPAM, HARASSMENT, MISINFORMATION, POLICY_VIOLATION, OTHER):', 'POLICY_VIOLATION');
+        if (!reason) return;
+        const detail = prompt('Mô tả thêm (nếu có):') || '';
+
+        try {
+          const res = await fetch('/api/v1/reports', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              targetType: 'THREAD',
+              targetId: window.location.pathname.split('/')[3],
+              reason,
+              detail,
+            }),
+          });
+          const json = await res.json();
+          alert(json.message || 'Báo cáo đã được tiếp nhận. Ban kiểm duyệt sẽ xử lý.');
+        } catch {
+          alert('Báo cáo đã được ghi nhận.');
+        }
+      });
+    }
+  </script>
+</BaseLayout>

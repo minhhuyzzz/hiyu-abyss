@@ -1,5 +1,5 @@
 ---
-// src/pages/library/index.astro - The Living Library V3 (Editorial / Gallery / Index Views)
+// src/pages/library/index.astro - The Library (Editorial / Gallery / Index Views)
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import ArtworkPlacard from '../../components/ArtworkPlacard.astro';
@@ -10,8 +10,8 @@ const topics = getAllTopics();
 ---
 
 <BaseLayout
-  title="The Library · Thư Viện Giám Tuyển Triết Học & Mỹ Thuật"
-  description="Kho lưu trữ giám tuyển các tác phẩm triết học tâm lý và kiệt tác hội họa bảo tàng cổ điển. Hỗ trợ 3 chế độ xem: Editorial, Gallery và Index."
+  title="The Library · Tuyển Tập Những Câu Nói Hay & Góc Nhìn Sâu Sắc"
+  description="Kho lưu trữ 200 câu nói ý nghĩa về tâm lý và cuộc sống, kết hợp cùng tranh nghệ thuật cổ điển chọn lọc."
 >
   <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-12 sm:space-y-16">
     
@@ -19,17 +19,17 @@ const topics = getAllTopics();
     <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pb-8 border-b border-border/70">
       <div class="space-y-4 max-w-3xl">
         <div class="flex items-center gap-2 text-xs tracking-[0.25em] uppercase font-sans text-muted">
-          <span class="text-accent font-semibold">THE LIVING LIBRARY</span>
+          <span class="text-accent font-semibold">KHO LƯU TRỮ</span>
           <span class="text-muted/30">/</span>
-          <span>{quotes.length} TÁC PHẨM ĐÃ GIÁM TUYỂN</span>
+          <span>{quotes.length} CÂU NÓI CHỌN LỌC</span>
         </div>
 
         <h1 class="font-display text-3xl sm:text-5xl md:text-6xl text-text font-medium leading-[1.12] tracking-tight text-balance">
-          Thư Viện Triết Học Chiêm Nghiệm
+          Những Câu Nói Hay & Góc Nhìn Sâu Sắc
         </h1>
 
         <p class="font-serif italic text-base sm:text-lg text-muted max-w-2xl leading-relaxed">
-          Kho tàng câu chữ sắc bén đối thoại cùng hội họa bảo tàng qua hàng thế kỷ. Khám phá theo dòng tư tưởng hoặc chuyển đổi giữa các chế độ xem để chiêm ngưỡng tác phẩm theo cách của bạn.
+          Những câu nói được chọn lọc và biên soạn kỹ lưỡng để cùng bạn nhìn nhận cuộc sống, hiểu thêm về chính mình và tìm thấy sự bình yên giữa đời thường.
         </p>
       </div>
 
@@ -84,25 +84,25 @@ const topics = getAllTopics();
         <div class="text-xs font-sans text-muted flex items-center gap-2">
           <span>Hiển thị:</span>
           <strong id="filter-count" class="text-accent font-semibold">{quotes.length} / {quotes.length}</strong>
-          <span>tác phẩm</span>
+          <span>câu nói</span>
         </div>
       </div>
 
       <!-- Topic Filter Tabs -->
       <div class="space-y-3">
         <span class="text-[11px] font-sans text-muted tracking-wider uppercase block">
-          Lọc theo luồng tư tưởng:
+          Chọn chủ đề bạn quan tâm:
         </span>
-        <div class="flex flex-wrap gap-2">
+        <div class="flex flex-nowrap sm:flex-wrap gap-2 overflow-x-auto pb-2 sm:pb-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
           <button
-            class="topic-btn active px-3.5 py-1.5 text-xs font-sans border border-accent bg-accent text-on-accent font-semibold transition-colors"
+            class="topic-btn active shrink-0 whitespace-nowrap px-3.5 py-1.5 text-xs font-sans border border-accent bg-accent text-on-accent font-semibold transition-colors"
             data-topic="ALL"
           >
             Tất Cả ({quotes.length})
           </button>
           {topics.map((t) => (
             <button
-              class="topic-btn px-3.5 py-1.5 text-xs font-sans border border-border/70 bg-surface/40 text-muted hover:text-text hover:border-accent transition-colors"
+              class="topic-btn shrink-0 whitespace-nowrap px-3.5 py-1.5 text-xs font-sans border border-border/70 bg-surface/40 text-muted hover:text-text hover:border-accent transition-colors"
               data-topic={t.code}
             >
               #{t.title} ({t.count})
@@ -146,7 +146,7 @@ const topics = getAllTopics();
                   type="button"
                   class="quick-save-card-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-white hover:text-accent hover:border-accent hover:scale-110 flex items-center justify-center transition-all z-10 opacity-90 sm:opacity-0 sm:group-hover:opacity-100 shadow-md"
                   data-id={q.id}
-                  title="Lưu vào kho chiêm nghiệm"
+                  title="Lưu câu nói"
                   aria-label="Lưu vào kho"
                   aria-pressed="false"
                 >
@@ -181,7 +181,7 @@ const topics = getAllTopics();
                     href={`/library/${q.slug}`}
                     class="text-accent group-hover:underline flex items-center gap-1 font-semibold text-[11px] uppercase tracking-widest"
                   >
-                    <span>Chiêm nghiệm</span>
+                    <span>Xem tiếp</span>
                     <span>→</span>
                   </a>
                 </div>
@@ -231,7 +231,7 @@ const topics = getAllTopics();
                   type="button"
                   class="quick-save-card-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-white hover:text-accent hover:border-accent hover:scale-110 flex items-center justify-center transition-all z-10 opacity-90 sm:opacity-0 sm:group-hover:opacity-100 shadow-md"
                   data-id={q.id}
-                  title="Lưu vào kho chiêm nghiệm"
+                  title="Lưu câu nói"
                   aria-label="Lưu vào kho"
                   aria-pressed="false"
                 >
@@ -255,11 +255,11 @@ const topics = getAllTopics();
           <thead class="bg-surface/80 border-b border-border/80 text-[11px] uppercase tracking-wider text-muted">
             <tr>
               <th class="p-4 font-semibold">Mã</th>
-              <th class="p-4 font-semibold">Tác Phẩm & Tuyên Ngôn</th>
-              <th class="p-4 font-semibold">Tư Tưởng Gia</th>
-              <th class="p-4 font-semibold">Dòng Tư Tưởng</th>
+              <th class="p-4 font-semibold">Câu Nói & Tiêu Đề</th>
+              <th class="p-4 font-semibold">Tác Giả</th>
+              <th class="p-4 font-semibold">Chủ Đề</th>
               <th class="p-4 font-semibold">Phân Loại</th>
-              <th class="p-4 text-right font-semibold">Đọc</th>
+              <th class="p-4 text-right font-semibold">Chi Tiết</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-border/40">

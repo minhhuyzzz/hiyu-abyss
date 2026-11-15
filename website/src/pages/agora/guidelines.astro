@@ -1,0 +1,99 @@
+---
+// src/pages/agora/guidelines.astro - Community Principles & Dialogue Rules
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Nguyên Tắc Đối Thoại — The Agora | Hiyu Abyss"
+  description="Các quy tắc văn hóa đối thoại, tôn trọng lẫn nhau và an toàn cộng đồng trên The Agora."
+>
+  <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto space-y-12">
+    
+    <nav class="flex items-center gap-2 text-xs font-mono text-muted uppercase tracking-wider">
+      <a href="/agora" class="hover:text-accent transition-colors">The Agora</a>
+      <span class="text-border">/</span>
+      <span class="text-text font-medium">Nguyên tắc đối thoại</span>
+    </nav>
+
+    <header class="space-y-4 pb-6 border-b border-border/60">
+      <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-accent font-semibold">
+        <span>VĂN HÓA CỘNG ĐỒNG</span>
+      </div>
+      <h1 class="font-display text-3xl sm:text-5xl font-medium text-text leading-tight">
+        Nguyên Tắc Đối Thoại & An Toàn Cộng Đồng
+      </h1>
+      <p class="font-sans text-sm sm:text-base text-muted/90 leading-relaxed max-w-2xl">
+        The Agora được xây dựng như một không gian tĩnh lặng để chia sẻ suy tư và lắng nghe góc nhìn khác biệt. Để giữ gìn tinh thần ấy, mỗi thành viên khi tham gia cùng đồng thuận tuân thủ các nguyên tắc dưới đây.
+      </p>
+    </header>
+
+    <div class="space-y-10 prose-reading text-sm sm:text-base leading-relaxed text-text/90">
+      
+      {/* Principle 1 */}
+      <section class="p-6 bg-surface/30 border border-border/70 rounded-sm space-y-3">
+        <h2 class="font-display text-xl text-text font-medium flex items-center gap-2">
+          <span class="text-accent font-mono text-base">01.</span>
+          <span>Đối thoại về ý tưởng, không phán xét nhân cách</span>
+        </h2>
+        <p class="text-muted leading-relaxed">
+          Chúng ta hoan nghênh những phản biện sắc sảo và góc nhìn đa chiều. Tuy nhiên, mọi tranh luận phải hướng vào lập luận, câu chữ và trải nghiệm thực tế, tuyệt đối không biến thành hành vi công kích cá nhân, hạ thấp danh dự hoặc miệt thị xuất thân, niềm tin của người khác.
+        </p>
+      </section>
+
+      {/* Principle 2 */}
+      <section class="p-6 bg-surface/30 border border-border/70 rounded-sm space-y-3">
+        <h2 class="font-display text-xl text-text font-medium flex items-center gap-2">
+          <span class="text-accent font-mono text-base">02.</span>
+          <span>Thành thật và tôn trọng sự chính xác</span>
+        </h2>
+        <p class="text-muted leading-relaxed">
+          Khi chia sẻ một trích dẫn, hãy ghi rõ nguồn hoặc nêu rõ đó là cảm nhận cá nhân. Không bịa đặt phát ngôn của các tác giả cổ điển hoặc gán ghép tư tưởng sai lệch nhằm củng cố quan điểm cá nhân.
+        </p>
+      </section>
+
+      {/* Principle 3 */}
+      <section class="p-6 bg-surface/30 border border-border/70 rounded-sm space-y-3">
+        <h2 class="font-display text-xl text-text font-medium flex items-center gap-2">
+          <span class="text-accent font-mono text-base">03.</span>
+          <span>Bảo vệ quyền riêng tư tuyệt đối</span>
+        </h2>
+        <p class="text-muted leading-relaxed">
+          Không công khai thông tin cá nhân (số điện thoại, địa chỉ, tài khoản riêng tư) của người khác khi chưa có sự đồng thuận. Mọi trải nghiệm trong The Mirror là hoàn toàn riêng tư và không bao giờ bị trích xuất sang The Agora trừ khi bạn chủ động viết ra.
+        </p>
+      </section>
+
+      {/* Principle 4 */}
+      <section class="p-6 bg-surface/30 border border-border/70 rounded-sm space-y-3">
+        <h2 class="font-display text-xl text-text font-medium flex items-center gap-2">
+          <span class="text-accent font-mono text-base">04.</span>
+          <span>Không spam và quảng cáo thương mại</span>
+        </h2>
+        <p class="text-muted leading-relaxed">
+          The Agora là nơi đàm đạo phi thương mại. Mọi hành vi rải link tiếp thị, quảng cáo dịch vụ hoặc đăng tải nội dung lặp lại nhằm mục đích thao túng sẽ bị ẩn bài và tạm ngưng tài khoản ngay lập tức.
+        </p>
+      </section>
+
+      {/* Principle 5 */}
+      <section class="p-6 bg-surface/30 border border-border/70 rounded-sm space-y-3">
+        <h2 class="font-display text-xl text-text font-medium flex items-center gap-2">
+          <span class="text-accent font-mono text-base">05.</span>
+          <span>Cơ chế tiếp nhận báo cáo & Xử lý vi phạm</span>
+        </h2>
+        <p class="text-muted leading-relaxed">
+          Mỗi bài viết và câu bình luận đều có nút <strong>"Báo cáo vi phạm"</strong>. Khi nhận được phản ánh, ban kiểm duyệt sẽ tiến hành xem xét khách quan. Các biện pháp bao gồm: nhắc nhở, ẩn nội dung hoặc cấm tài khoản tham gia diễn đàn đối với các hành vi cố tình vi phạm.
+        </p>
+      </section>
+
+    </div>
+
+    <div class="pt-6 border-t border-border/60 flex items-center justify-between">
+      <a href="/agora" class="px-6 py-2.5 bg-accent text-on-accent text-xs font-sans uppercase tracking-widest font-semibold rounded-sm">
+        ← Trở lại The Agora
+      </a>
+      <a href="/library" class="text-xs font-sans text-muted hover:text-accent">
+        Ghé thăm Thư Viện Hiyu Abyss →
+      </a>
+    </div>
+
+  </div>
+</BaseLayout>

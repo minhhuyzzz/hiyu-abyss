@@ -1,0 +1,109 @@
+---
+// src/pages/moderation/index.astro - Moderator & Admin Control Center
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getD1Database } from '../../lib/agora/db';
+
+export const prerender = false;
+
+const db = getD1Database(Astro.locals?.runtime?.env);
+const reportsRes = await db
+  .prepare('SELECT * FROM reports ORDER BY created_at DESC LIMIT 50')
+  .all();
+
+const reports = reportsRes.results || [];
+---
+
+<BaseLayout
+  title="Bảng Điều Hành Kiểm Duyệt — The Agora | Hiyu Abyss"
+  description="Trung tâm xử lý báo cáo và bảo vệ an toàn cộng đồng The Agora."
+>
+  <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-10">
+    
+    <header class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-6 border-b border-border/70">
+      <div class="space-y-2">
+        <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-accent font-semibold">
+          <span>THE AGORA</span>
+          <span class="text-border">·</span>
+          <span>QUẢN TRỊ & KIỂM DUYỆT</span>
+        </div>
+        <h1 class="font-display text-3xl sm:text-4xl font-medium text-text">
+          Hàng Đợi Xử Lý Báo Cáo
+        </h1>
+        <p class="font-sans text-xs sm:text-sm text-muted">
+          Kiểm tra các nội dung hoặc hành vi bị người dùng phản ánh vi phạm nguyên tắc đối thoại.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="px-3 py-1.5 bg-surface border border-border/70 rounded text-xs font-mono text-text">
+          {reports.length} báo cáo trong danh sách
+        </span>
+      </div>
+    </header>
+
+    {/* Reports Table / Feed */}
+    {reports.length === 0 ? (
+      <div class="py-16 text-center border border-border/50 bg-surface/20 rounded-sm space-y-2">
+        <p class="font-serif italic text-base text-text/80">
+          Hàng đợi kiểm duyệt hiện đang trống.
+        </p>
+        <p class="text-xs font-sans text-muted">
+          Không có bài viết hoặc bình luận nào đang chờ xem xét.
+        </p>
+      </div>
+    ) : (
+      <div class="space-y-4">
+        {reports.map((rep: any) => (
+          <div class="p-5 bg-surface/30 border border-border/70 rounded-sm space-y-3">
+            <div class="flex flex-wrap items-center justify-between text-xs font-sans gap-2">
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 bg-red-950/50 border border-red-800 text-red-300 font-mono text-[10px] uppercase font-bold rounded">
+                  {rep.reason}
+                </span>
+                <span class="text-muted">Đối tượng: <strong class="text-text">{rep.target_type}</strong> ({rep.target_id})</span>
+              </div>
+              <span class="text-muted font-mono text-[11px]">
+                {new Date(rep.created_at * 1000).toLocaleString('vi-VN')}
+              </span>
+            </div>
+
+            {rep.detail && (
+              <p class="font-serif italic text-xs sm:text-sm text-text/90 bg-surface/50 p-3 border-l-2 border-red-500 rounded-r">
+                "{rep.detail}"
+              </p>
+            )}
+
+            <div class="pt-2 flex flex-wrap items-center justify-between gap-3 border-t border-border/40 text-xs font-sans">
+              <span class="text-muted font-mono text-[11px]">Trạng thái: <span class="text-accent uppercase font-semibold">{rep.status}</span></span>
+              
+              <div class="flex items-center gap-2">
+                <button
+                  type="button"
+                  class="px-3 py-1.5 border border-border/70 hover:border-accent text-text text-xs rounded-sm transition-colors"
+                  onclick="alert('Đã ẩn nội dung khỏi diễn đàn')"
+                >
+                  Ẩn nội dung
+                </button>
+                <button
+                  type="button"
+                  class="px-3 py-1.5 border border-border/70 hover:border-red-400 text-red-400 text-xs rounded-sm transition-colors"
+                  onclick="alert('Đã tạm ngưng quyền đăng bài của thành viên')"
+                >
+                  Tạm ngưng thành viên
+                </button>
+                <button
+                  type="button"
+                  class="px-3 py-1.5 bg-accent/20 border border-accent text-accent hover:bg-accent hover:text-on-accent text-xs rounded-sm transition-colors"
+                  onclick="alert('Báo cáo đã được giải quyết hợp lệ')"
+                >
+                  Đánh dấu hoàn tất ✓
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+
+  </div>
+</BaseLayout>

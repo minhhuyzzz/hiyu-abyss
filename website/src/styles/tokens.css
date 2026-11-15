@@ -102,6 +102,18 @@
   /* Measure & Space */
   --measure-prose: 70ch;
   --space-section: clamp(4rem, 8vw, 8rem);
+
+  /* Physical Codex Book Tokens (Material preservation across all themes) */
+  --book-paper: #F5EFE4;
+  --book-paper-light: #FAF6ED;
+  --book-paper-edge: #E3D9C7;
+  --book-ink: #201C16;
+  --book-ink-muted: #5E5648;
+  --book-ink-faint: #918776;
+  --book-cover-leather: #14120E;
+  --book-cover-border: #3A3224;
+  --book-ribbon: #B88960;
+  --book-ribbon-shadow: #734F31;
 }
 
 html {

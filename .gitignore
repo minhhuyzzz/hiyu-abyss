@@ -47,3 +47,5 @@ Thumbs.db
 tmp/
 *.tmp
 assets/templates/raw_cache/
+.env
+.env.*

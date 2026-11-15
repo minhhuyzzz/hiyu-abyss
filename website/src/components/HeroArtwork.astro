@@ -1,5 +1,5 @@
 ---
-// HeroArtwork.astro - Scene 01: The Codex of the Abyss (Masterplan V3.2 / Taste-Skill)
+// HeroArtwork.astro - The Living Codex of the Abyss (V3.5 Physical Book Architecture)
 import ArtworkPlacard from './ArtworkPlacard.astro';
 
 interface Props {
@@ -34,65 +34,71 @@ const artMuseum = quote.artInfo?.museum || "Bảo tàng quốc tế";
 const artLicense = quote.artInfo?.license || "Public Domain / CC0";
 const artAlt = quote.artInfo?.alt_vi || `${artTitle} - ${artArtist}`;
 
-// Extract first 1-2 sentences of editorial commentary as curator insight
+// Extract editorial reflection for curator insight note
 let curatorInsight = '';
 if (quote.description) {
   const sentences = quote.description.split(/(?<=[.?!])\s+/);
   curatorInsight = sentences.slice(0, 2).join(' ');
 }
 if (!curatorInsight) {
-  curatorInsight = `Một chiêm nghiệm sâu sắc của ${quote.author} về bản ngã và ranh giới tâm lý con người trong thế giới hiện đại.`;
+  curatorInsight = `Một chiêm nghiệm sâu sắc về bản ngã, các cơ chế phòng vệ và ranh giới tâm lý con người trong đời sống hiện đại.`;
 }
 ---
 
-<section class="relative w-full py-10 sm:py-16 md:py-24 overflow-hidden">
+<section class="relative w-full py-10 sm:py-16 md:py-20 overflow-hidden" aria-label="Khu vực mở đầu">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
-    <!-- Symmetrical/Balanced Editorial Grid (6 cols / 6 cols on XL) -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+    <!-- Editorial 2-Column Asymmetric Balance (Left 45% Brand / Right 55% Book) -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
       
-      <!-- Left Column: Master Typography & Curated Insight (6 cols) -->
-      <div class="lg:col-span-6 flex flex-col gap-6 order-2 lg:order-1">
+      <!-- Left Column: Permanent Brand Identity & Curator Direction (5 cols) -->
+      <div class="lg:col-span-5 flex flex-col gap-6 order-2 lg:order-1">
         
         <!-- Eyebrow Tag Pill -->
         <div class="flex items-center gap-2.5">
           <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accent/40 bg-accent/10 text-accent font-mono text-[10px] tracking-[0.2em] uppercase font-semibold">
             <span class="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></span>
-            <span data-i18n-vi="KIỆT TÁC GIÁM TUYỂN" data-i18n-en="CURATED MASTERPIECE">KIỆT TÁC GIÁM TUYỂN</span>
+            <span data-i18n-vi="KHO LƯU TRỮ SỐNG" data-i18n-en="THE LIVING ARCHIVE">KHO LƯU TRỮ SỐNG</span>
           </span>
           <span class="text-muted/40 font-mono text-xs">/</span>
-          <span class="text-xs font-sans tracking-wider uppercase text-text/90 font-medium">
-            #{quote.primaryTopicTitle}
+          <span class="text-xs font-sans tracking-widest uppercase text-text/80 font-semibold">
+            HIYU ABYSS
           </span>
         </div>
 
-        <!-- Master Title / Monumental Inscription -->
-        <h1 class="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-text font-medium leading-[1.22] tracking-tight text-balance">
-          "{quote.content}"
-        </h1>
-
-        <!-- Inscription of Truth: Curator's Psychological Insight -->
-        <div class="relative pl-5 py-2 border-l-2 border-accent bg-surface/40 rounded-r-md">
-          <p class="font-serif text-sm sm:text-base text-text/90 italic leading-relaxed">
-            {curatorInsight}
+        <!-- Monumental Brand Statement (Fixed H1 & Dek) -->
+        <div class="space-y-2">
+          <h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] text-text font-medium leading-[1.12] tracking-tight text-balance">
+            Đọc để nhìn thế giới khác đi.
+          </h1>
+          <p class="font-serif italic text-xl sm:text-2xl text-accent/90 leading-snug">
+            Suy ngẫm để hiểu mình rõ hơn.
           </p>
-          <span class="text-[11px] font-sans text-muted tracking-wider uppercase block mt-1.5">
-            — <strong class="text-accent font-medium">{quote.author}</strong>
-          </span>
         </div>
 
-        <p class="font-sans text-xs sm:text-sm text-muted max-w-xl leading-relaxed">
-          Hiyu Abyss bảo tồn di sản tư tưởng triết học và mỹ học cổ điển. Nơi tâm lý học hành vi đối thoại cùng các kiệt tác hội họa qua hàng thế kỷ để khơi gợi sự tự soi chiếu nội tâm.
+        <!-- Brand Purpose Narrative -->
+        <p class="font-sans text-sm sm:text-base text-muted max-w-xl leading-relaxed">
+          Một thư viện tư tưởng và nghệ thuật số, nơi triết học, văn học, tâm lý học và nhiều góc nhìn khác nhau cùng mở ra những câu hỏi chưa khép lại.
         </p>
 
-        <!-- Button-in-Button CTA Architecture (Taste-Skill) -->
-        <div class="flex flex-wrap items-center gap-4 pt-1">
+        <!-- Curator Commentary Box (Explicitly distinguished from author quotes) -->
+        <div class="relative pl-5 py-2.5 border-l-2 border-accent/70 bg-surface/50 rounded-r-md">
+          <p class="font-serif text-xs sm:text-sm text-text/90 italic leading-relaxed">
+            "{curatorInsight}"
+          </p>
+          <span class="text-[10px] font-mono text-accent/90 tracking-wider uppercase block mt-1.5 font-semibold">
+            — Bình giải · Hiyu Abyss
+          </span>
+        </div>
+
+        <!-- Button-in-Button Primary & Secondary CTAs -->
+        <div class="flex flex-wrap items-center gap-4 pt-2">
           <!-- Primary CTA -->
           <a
-            href={`/library/${quote.slug}`}
+            href="/library"
             class="group pl-6 pr-2.5 py-2.5 bg-accent text-on-accent rounded-full font-sans text-xs tracking-wider uppercase font-bold hover:opacity-95 transition-all duration-300 inline-flex items-center gap-3 shadow-lg active:scale-[0.98]"
           >
-            <span data-i18n-vi="Đọc Chiêm Nghiệm" data-i18n-en="Read Commentary">Đọc Chiêm Nghiệm</span>
+            <span data-i18n-vi="Khám Phá Thư Viện" data-i18n-en="Explore Library">Khám Phá Thư Viện</span>
             <span class="w-7 h-7 rounded-full bg-black/20 text-white flex items-center justify-center text-xs transition-transform duration-300 group-hover:translate-x-0.5">
               →
             </span>
@@ -100,10 +106,10 @@ if (!curatorInsight) {
 
           <!-- Secondary CTA -->
           <a
-            href="/mirror/su-that-va-binh-yen"
+            href="/mirror"
             class="group pl-5 pr-2.5 py-2.5 border border-border/80 bg-surface/70 text-text hover:border-accent hover:text-accent rounded-full font-sans text-xs tracking-wider uppercase font-semibold transition-all duration-300 inline-flex items-center gap-3 active:scale-[0.98]"
           >
-            <span data-i18n-vi="Chiếc Gương Phản Tư" data-i18n-en="The Mirror">Chiếc Gương Phản Tư</span>
+            <span data-i18n-vi="Thử The Mirror" data-i18n-en="Try The Mirror">Thử The Mirror</span>
             <span class="w-7 h-7 rounded-full bg-surface-raised border border-border/60 text-accent flex items-center justify-center text-[10px] transition-transform duration-300 group-hover:rotate-45">
               ◈
             </span>
@@ -111,75 +117,121 @@ if (!curatorInsight) {
         </div>
       </div>
 
-      <!-- Right Column: The Open Antique Codex / Manuscript Book (6 cols) -->
-      <div class="lg:col-span-6 order-1 lg:order-2 flex flex-col items-center">
+      <!-- Right Column: The Physical Open Codex / Manuscript Spread (7 cols) -->
+      <div class="lg:col-span-7 order-1 lg:order-2 flex flex-col items-center">
         
-        <!-- Physical Antique Book Container (Double-page layout) -->
-        <div class="relative w-full max-w-lg lg:max-w-xl mx-auto filter drop-shadow-2xl">
+        <!-- Physical Antique Codex Container -->
+        <div class="relative w-full max-w-xl lg:max-w-2xl mx-auto filter drop-shadow-[0_20px_35px_rgba(0,0,0,0.45)]">
           
-          <!-- Outer Leather Binding Edge / Book Cover Flap -->
-          <div class="relative p-2.5 sm:p-3.5 rounded-2xl bg-[#141310] dark:bg-[#0c0c0b] border border-[#3b362b] shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
+          <!-- Outer Leather Binding Edge / Book Cover Casing -->
+          <div class="relative p-2.5 sm:p-3.5 rounded-2xl bg-[#14120E] border border-[#3A3224] shadow-[0_25px_60px_rgba(0,0,0,0.65)]">
             
-            <!-- Book Spine Central Groove Line -->
-            <div class="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-6 pointer-events-none z-20 flex justify-center">
-              <div class="w-1.5 h-full bg-gradient-to-r from-black/50 via-black/20 to-black/50 opacity-80"></div>
+            <!-- Book Spine Central Gutter Line & Silk Ribbon -->
+            <div class="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-8 pointer-events-none z-20 flex justify-center">
+              <!-- Central Trough Shadow -->
+              <div class="w-2.5 h-full bg-gradient-to-r from-black/50 via-black/15 to-black/50 opacity-90"></div>
               <!-- Golden Silk Ribbon Bookmark -->
-              <div class="absolute -top-1 w-2.5 h-24 bg-accent/90 shadow-md rounded-b-sm border-x border-amber-900/40"></div>
+              <div class="absolute -top-1 w-3 h-28 bg-[#B88960] shadow-md rounded-b-sm border-x border-[#734F31]/50">
+                <div class="w-full h-full bg-gradient-to-b from-transparent via-white/15 to-black/25"></div>
+              </div>
             </div>
 
-            <!-- Two Facing Pages (Open Book Layout) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 rounded-xl overflow-hidden bg-[#F4EFE6] dark:bg-[#151412] text-[#24221D] dark:text-[#E8E3D8] border border-[#443E33]/30">
+            <!-- Two Facing Pages (Open Book Spread Layout - Pure Warm Parchment across all themes) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 rounded-xl overflow-hidden bg-[#F5EFE4] text-[#201C16] border border-[#3A3224]/30 shadow-inner">
               
-              <!-- Left Page: Philosophical Manuscript Inscription -->
-              <div class="p-5 sm:p-6 flex flex-col justify-between border-b sm:border-b-0 sm:border-r border-[#3A352B]/20 relative bg-gradient-to-r from-transparent via-transparent to-black/5 dark:to-black/30">
-                <div class="space-y-3">
-                  <div class="flex items-center justify-between text-[9px] font-mono tracking-[0.25em] uppercase text-muted/80 pb-2 border-b border-muted/20">
-                    <span>CODEX ABYSSI</span>
-                    <span>FOLIO {quote.id.replace('TXT-', '')}</span>
-                  </div>
-
-                  <p class="font-serif italic text-xs sm:text-sm leading-relaxed text-text/90 line-clamp-6 pt-1">
-                    "{quote.content}"
-                  </p>
+              <!-- LEFT PAGE: The Classical Painting Plate (Trang Trái: Tranh bảo tàng thu nhỏ) -->
+              <div class="p-4 sm:p-5 flex flex-col justify-between border-b sm:border-b-0 sm:border-r border-[#3A3224]/20 relative bg-gradient-to-r from-transparent via-transparent to-black/[0.07]">
+                
+                <!-- Page Header: Folio & Exhibition Tag -->
+                <div class="flex items-center justify-between text-[9px] font-mono tracking-[0.2em] uppercase text-[#6B6457] pb-2 border-b border-[#3A3224]/15">
+                  <span>TABULA PICTA</span>
+                  <span>PL. {quote.id.replace('TXT-', '')}</span>
                 </div>
 
-                <div class="pt-4 mt-auto border-t border-muted/20 flex items-center justify-between text-[10px] font-sans text-muted">
-                  <span class="font-medium text-text">{quote.author}</span>
-                  <span class="font-mono text-accent">HIYU · {quote.id}</span>
+                <!-- Museum Plate Image Frame -->
+                <div class="my-3">
+                  <div class="relative aspect-[9/13] w-full overflow-hidden rounded-sm border border-[#3A3224]/35 shadow-inner group">
+                    <img
+                      src={artSrc}
+                      alt={artAlt}
+                      class="w-full h-full object-cover filter brightness-[0.95] contrast-[1.02] transition-transform duration-700 group-hover:scale-105"
+                      loading="eager"
+                      decoding="async"
+                    />
+                    <!-- Subtle Museum Corner Brackets -->
+                    <div class="absolute inset-0 pointer-events-none border border-white/20"></div>
+                  </div>
+
+                  <!-- Museum Attribution Placard below artwork -->
+                  <div class="pt-2 text-center space-y-0.5">
+                    <p class="font-display text-xs text-[#201C16] font-semibold tracking-wide truncate">
+                      {artTitle}
+                    </p>
+                    <p class="font-sans text-[10px] text-[#5E5648] tracking-wider truncate">
+                      {artArtist}{artYear ? ` · ${artYear}` : ''}
+                    </p>
+                    <p class="font-mono text-[9px] text-[#918776] uppercase tracking-widest truncate">
+                      {artMuseum}
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Left Page Bottom Index -->
+                <div class="pt-2 border-t border-[#3A3224]/15 flex items-center justify-between text-[9px] font-mono text-[#6B6457]">
+                  <span>HIYU ARCHIVE</span>
+                  <span>#{quote.primaryTopicTitle}</span>
                 </div>
               </div>
 
-              <!-- Right Page: The Classical Painting Plate as an Illuminated Miniature -->
-              <div class="p-3.5 sm:p-4 flex flex-col gap-2 relative bg-gradient-to-l from-transparent via-transparent to-black/5 dark:to-black/30">
-                <div class="relative aspect-[9/14] w-full overflow-hidden rounded-md border border-[#3A352B]/40 shadow-inner group">
-                  <img
-                    src={artSrc}
-                    alt={artAlt}
-                    class="w-full h-full object-cover filter brightness-[0.93] transition-transform duration-700 group-hover:scale-105"
-                    loading="eager"
-                    decoding="async"
-                  />
-                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
-                    <span class="text-white text-[10px] font-sans uppercase tracking-wider font-semibold">
-                      {artTitle}
-                    </span>
-                  </div>
+              <!-- RIGHT PAGE: The Curated Philosophical Inscription (Trang Phải: Văn tự & Trích tuyển) -->
+              <div class="p-4 sm:p-5 flex flex-col justify-between relative bg-gradient-to-l from-transparent via-transparent to-black/[0.07]">
+                
+                <!-- Page Header: Codex Inscription -->
+                <div class="flex items-center justify-between text-[9px] font-mono tracking-[0.2em] uppercase text-[#6B6457] pb-2 border-b border-[#3A3224]/15">
+                  <span>CODEX ABYSSI</span>
+                  <span>FOLIO {quote.id.replace('TXT-', '')}</span>
                 </div>
 
-                <!-- Subtle Manuscript Placard -->
-                <div class="text-[9px] font-sans text-muted tracking-wide text-center truncate pt-1">
-                  <span class="font-medium text-text">{artArtist}</span>
-                  {artYear ? ` · ${artYear}` : ''}
-                  <span class="text-muted/60"> ({artMuseum})</span>
+                <!-- Codex Manuscript Body -->
+                <div class="py-3 sm:py-4 space-y-3">
+                  <span class="inline-block px-2 py-0.5 rounded text-[9px] font-mono tracking-wider uppercase bg-[#E3D9C7]/70 text-[#5E5648] border border-[#3A3224]/15 font-semibold">
+                    {quote.quoteTypeLabel}
+                  </span>
+
+                  <blockquote class="font-serif italic text-sm sm:text-base leading-relaxed text-[#201C16]">
+                    "{quote.content}"
+                  </blockquote>
+
+                  <p class="font-sans text-[11px] text-[#5E5648] leading-relaxed line-clamp-3 pt-1">
+                    {quote.description || curatorInsight}
+                  </p>
                 </div>
+
+                <!-- Page Footer: Verified Sign-off & Deep Reading Link -->
+                <div class="pt-3 mt-auto border-t border-[#3A3224]/15 flex items-center justify-between text-[11px] font-sans">
+                  <div>
+                    <strong class="font-display font-bold text-[#201C16] block">{quote.author}</strong>
+                    <span class="font-mono text-[9px] text-[#918776] uppercase">{quote.id}</span>
+                  </div>
+
+                  <a
+                    href={`/library/${quote.slug}`}
+                    class="text-[#8E5A3C] hover:text-[#5E3A26] font-semibold text-[11px] uppercase tracking-wider flex items-center gap-1 group/link"
+                    title="Đọc toàn bộ chiêm nghiệm và bối cảnh"
+                  >
+                    <span>Xem bài</span>
+                    <span class="transition-transform group-hover/link:translate-x-0.5">→</span>
+                  </a>
+                </div>
+
               </div>
 
             </div>
 
           </div>
 
-          <!-- Bottom Book Shadow / Desk Reflection Effect -->
-          <div class="w-5/6 mx-auto h-4 bg-black/40 blur-lg rounded-full -mt-2"></div>
+          <!-- Bottom Book Shadow / Desk Surface Cast -->
+          <div class="w-11/12 mx-auto h-4 bg-black/40 blur-lg rounded-full -mt-2"></div>
         </div>
 
       </div>

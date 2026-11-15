@@ -244,7 +244,20 @@ ACADEMIC_TARGETS = [
 
 def harvest_openalex(query):
     """Truy vấn OpenAlex API lấy metadata và abstract"""
+    api_key = os.getenv("OPENALEX_API_KEY", "")
+    if not api_key and os.path.exists(".env"):
+        try:
+            with open(".env", "r", encoding="utf-8") as env_f:
+                for line in env_f:
+                    if line.startswith("OPENALEX_API_KEY="):
+                        api_key = line.split("=", 1)[1].strip()
+                        break
+        except Exception:
+            pass
+
     url = f"https://api.openalex.org/works?search={urllib.parse.quote(query)}&per-page=1"
+    if api_key:
+        url += f"&api_key={api_key}"
     try:
         req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=10) as resp:

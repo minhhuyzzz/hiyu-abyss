@@ -196,7 +196,7 @@ export default function MirrorJourney({ journey }: Props) {
     threshold: 'Khởi đầu tĩnh lặng trước cánh cửa của điều chưa biết.',
     observation: 'Nơi sự thật được soi tỏ dưới ánh sáng khách quan và phân tích tâm lý.',
     silence: 'Nơi tiếng ồn xung quanh lùi xa, nhường chỗ cho sự hiện diện chân thật.',
-    confrontation: 'Đặt giả định ban đầu vào vùng nghi vấn để bóc tách động cơ ngầm.',
+    confrontation: 'Đặt lại câu hỏi cho chính mình để nhìn nhận những toan tính thật sự.',
     ending: 'Không có điểm kết luận đóng lại — chỉ có câu hỏi bạn mang theo vào đời sống.',
   };
 

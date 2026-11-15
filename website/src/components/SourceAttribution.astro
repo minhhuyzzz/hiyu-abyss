@@ -18,23 +18,23 @@ const quoteTypeDetails = {
     label: isStrictlyVerified ? 'Trích dẫn (Bản in đã đối chiếu)' : 'Trích dẫn (Đang đối chiếu ấn bản)',
     badgeClass: isStrictlyVerified ? 'text-accent border-accent/50 bg-accent/10' : 'text-muted border-border/70 bg-surface/40',
     desc: isStrictlyVerified
-      ? 'Câu văn được dịch sát nghĩa hoặc trích xuất trực tiếp từ ấn bản gốc đã đối chiếu số trang/chương.'
-      : 'Câu văn được quy cho tư tưởng gia trong các tài liệu triết học. Dự án đang tiến hành đối chiếu số trang và ấn bản nguyên tác.',
+      ? 'Câu văn được dịch sát nghĩa hoặc trích dẫn trực tiếp từ tác phẩm gốc.'
+      : 'Câu nói được ghi nhận từ tác giả trong các tài liệu lưu truyền. Dự án đối chiếu nguồn gốc rõ ràng.',
   },
   PARAPHRASE: {
-    label: 'Diễn giải tư tưởng',
+    label: 'Diễn giải & Biên soạn',
     badgeClass: 'text-text/90 border-border/80 bg-surface/50',
-    desc: 'Diễn đạt lại luận điểm cốt lõi của triết gia nhằm phù hợp với ngữ cảnh tiếng Việt hiện đại.',
+    desc: 'Biên tập lại câu nói theo văn phong tiếng Việt hiện đại, mạch lạc và gần gũi.',
   },
   INSPIRED_ORIGINAL: {
-    label: 'Sáng tác lấy cảm hứng',
+    label: 'Lấy cảm hứng từ ý tưởng',
     badgeClass: 'text-muted border-border/60 bg-surface/30',
-    desc: 'Ý tưởng phát triển từ một câu hỏi triết học. Tuyệt đối không mượn danh triết gia làm tác giả câu chữ.',
+    desc: 'Câu nói phát triển từ một suy ngẫm sâu sắc trong cuộc sống. Không mượn danh người khác làm tác giả.',
   },
   INDEPENDENT_ORIGINAL: {
-    label: 'Sáng tác Hiyu Abyss',
+    label: 'Đúc kết Hiyu Abyss',
     badgeClass: 'text-muted border-border/60 bg-surface/30',
-    desc: 'Đúc kết độc lập của dự án Hiyu Abyss dựa trên quan sát tâm lý học hành vi đương đại.',
+    desc: 'Đúc kết độc lập của Hiyu Abyss dựa trên quan sát tâm lý và đời sống thường ngày.',
   },
 };
 
@@ -70,13 +70,13 @@ const artworkProvenanceText = quote.artInfo?.provenance_type
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
     <div class="space-y-1.5">
       <span class="text-[10px] uppercase tracking-[0.2em] font-sans text-muted block">
-        Tư Tưởng Gia / Tác Giả
+        Tác Giả / Nguồn Trích Dẫn
       </span>
       <p class="font-display text-lg text-text font-medium">
         {quote.author}
       </p>
       <span class="text-xs font-sans text-muted block">
-        Chủ đề tư tưởng: #{quote.primaryTopicTitle}
+        Chủ đề: #{quote.primaryTopicTitle}
       </span>
     </div>
 

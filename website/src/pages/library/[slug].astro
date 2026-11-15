@@ -43,31 +43,31 @@ const artAlt = quote.artInfo?.alt_vi || `${artTitle} - ${artArtist}`;
 
 // Tailored Philosophical Counterpoints per Topic (Eliminates universal repetition)
 const TOPIC_COUNTERPOINTS: Record<string, string> = {
-  HYPOCRISY: 'Khi ta say sưa bóc trần sự giả tạo của người khác, chiếc bẫy tinh vi nhất là ta bắt đầu tự mãn rằng mình là hiện thân của sự chân thật tuyệt đối.',
-  DOUBLE_STANDARD: 'Thước đo đạo đức công bằng nhất không phải là khi ta phán xét kẻ thù, mà là khi ta dám áp dụng cùng một tiêu chuẩn khắt khe ấy lên chính bản thân mình.',
-  MORALITY: 'Lòng tốt sẽ lập tức biến thành gông cùm tâm lý độc hại ngay khoảnh khắc người ban phát bắt đầu ghi sổ nợ ân tình và đòi hỏi sự phục tùng ngầm.',
-  EGO: 'Nhu cầu luôn phải chứng minh mình đúng thực chất là tiếng kêu cứu của một bản ngã mỏng manh, luôn run rẩy trước nỗi sợ bị chối bỏ.',
-  SELF_DECEPTION: 'Lời nói dối êm ái nhất chính là lời nói dối ta tự kể cho mình nghe mỗi ngày để trốn chạy thực tại nghiệt ngã.',
-  SHADOW: 'Phần tối trong bạn không bao giờ biến mất khi bị đè nén; nó chỉ âm thầm giật dây điều khiển số phận của bạn từ trong bóng tối vô thức.',
-  MASK: 'Chiếc mặt nạ xã hội đeo quá lâu sẽ ăn sâu vào da thịt, đến mức một ngày ta không còn nhận ra đâu là gương mặt nguyên bản của chính mình.',
+  HYPOCRISY: 'Khi ta say sưa chỉ trích sự giả tạo của người khác, chiếc bẫy tinh vi nhất là ta bắt đầu tự mãn rằng mình là hiện thân của sự chân thật tuyệt đối.',
+  DOUBLE_STANDARD: 'Thước đo đạo đức công bằng nhất không phải là khi ta phán xét người khác, mà là khi ta dám áp dụng cùng một tiêu chuẩn khắt khe ấy lên chính bản thân mình.',
+  MORALITY: 'Lòng tốt sẽ lập tức biến thành gánh nặng tâm lý ngay khoảnh khắc người ban phát bắt đầu ghi sổ nợ ân tình và đòi hỏi sự phục tùng ngầm.',
+  EGO: 'Nhu cầu luôn phải chứng minh mình đúng thực chất là tiếng kêu cứu của một cái tôi mỏng manh, luôn run rẩy trước nỗi sợ bị chối bỏ.',
+  SELF_DECEPTION: 'Lời nói dối êm ái nhất chính là lời nói dối ta tự kể cho mình nghe mỗi ngày để trốn chạy thực tại.',
+  SHADOW: 'Phần tối trong bạn không bao giờ biến mất khi bị đè nén; nó chỉ âm thầm gián tiếp điều khiển cảm xúc và hành động của bạn.',
+  MASK: 'Chiếc mặt nạ đeo quá lâu sẽ làm ta mệt mỏi, đến mức một ngày ta không còn nhận ra đâu là con người nguyên bản của chính mình.',
   POWER: 'Kẻ thèm khát kiểm soát người khác thường là kẻ bất lực và hỗn loạn nhất trong việc làm chủ thế giới nội tâm của bản thân.',
   MANIPULATION: 'Kẻ thao túng nguy hiểm nhất không bao giờ quát tháo; họ khiến bạn tự nguyện cảm thấy có lỗi ngay cả khi bạn là người chịu tổn thương.',
-  FREEDOM: 'Tự do hiện sinh không phải là muốn làm gì thì làm, mà là dũng khí dám gánh vác trọn vẹn trách nhiệm cho mọi lựa chọn của cuộc đời mình.',
-  TRUTH: 'Sự thật có thể cứa rách sự bình yên giả tạo trong chốc lát, nhưng lời dối trá êm tai sẽ đầu độc linh hồn bạn suốt cả cuộc đời.',
-  LOVE: 'Ranh giới giữa tình yêu trưởng thành và sự chiếm hữu ích kỷ nằm ở chỗ: Bạn yêu sự tự do của đối phương, hay yêu cảm giác được sở hữu họ?',
-  LOYALTY: 'Lòng trung thành không đi kèm tư duy phản biện chỉ là sự mù quáng tự nguyện dâng hiến cho sự bóc lột của kẻ khác.',
-  ENVY: 'Sự đố kỵ là chiếc độc dược ta uống vào nhưng lại mong người khác chết đi. Nó bóc trần sự tự ti sâu kín nhất trong tâm hồn.',
-  CROWD: 'Khi hòa tan vào đám đông cuồng nộ, con người dễ dàng trút bỏ lương tri cá nhân để nhân danh một lý tưởng tập thể mơ hồ.',
-  SUFFERING: 'Nghịch cảnh chỉ có giá trị khi nó tôi luyện dũng khí vượt thoát, chứ không phải trở thành tấm bình phong để ta say sưa đóng vai nạn nhân mãi mãi.',
-  IDENTITY: 'Bản sắc chân thật nhất của bạn được bộc lộ trong khoảnh khắc bạn ở một mình và hoàn toàn không có bất kỳ ai quan sát hay phán xét.',
-  MEANING: 'Ý nghĩa cuộc sống không phải thứ có sẵn để đi tìm; nó là trách nhiệm mà bạn phải dũng cảm kiến tạo giữa một vũ trụ vô ngôn.',
-  SOLITUDE: 'Kẻ không chịu nổi sự cô độc thực chất là kẻ sợ hãi việc phải đối diện với sự trống rỗng và nghèo nàn bên trong tâm hồn mình.',
-  STATUS: 'Khiêm nhường thực sự là quên đi tầm quan trọng của cái tôi, chứ không phải một màn trình diễn khiêm tốn giả tạo để cầu xin sự tán dương.',
+  FREEDOM: 'Tự do đích thực không phải là muốn làm gì thì làm, mà là dũng khí dám gánh vác trọn vẹn trách nhiệm cho mọi lựa chọn của cuộc đời mình.',
+  TRUTH: 'Sự thật có thể làm ta nhói lòng trong chốc lát, nhưng lời dối trá êm tai sẽ khiến ta lạc lối suốt cả một chặng đường dài.',
+  LOVE: 'Ranh giới giữa tình yêu chân thành và sự chiếm hữu ích kỷ nằm ở chỗ: Bạn tôn trọng sự tự do của đối phương, hay yêu cảm giác được sở hữu họ?',
+  LOYALTY: 'Lòng trung thành không đi kèm sự tỉnh táo chỉ là sự hy sinh mù quáng cho sự lợi dụng của người khác.',
+  ENVY: 'Sự đố kỵ là chiếc độc dược ta uống vào nhưng lại mong người khác tổn thương. Nó phản ánh nỗi bất an sâu kín nhất trong lòng mình.',
+  CROWD: 'Khi hòa tan vào đám đông ồn ào, con người dễ dàng đánh mất chính kiến cá nhân để đi theo những trào lưu nhất thời.',
+  SUFFERING: 'Nghịch cảnh chỉ có giá trị khi nó giúp ta thêm mạnh mẽ và thấu hiểu, chứ không phải trở thành lý do để ta mãi đóng vai nạn nhân.',
+  IDENTITY: 'Bản sắc chân thật nhất của bạn được bộc lộ trong khoảnh khắc bạn ở một mình và hoàn toàn không phải diễn cho ai xem.',
+  MEANING: 'Ý nghĩa cuộc sống không phải thứ có sẵn ở đích đến; nó là những giá trị bạn tự tay xây đắp qua từng trải nghiệm mỗi ngày.',
+  SOLITUDE: 'Kẻ không chịu nổi sự một mình thực chất là người sợ hãi việc phải đối diện với sự trống trải bên trong lòng mình.',
+  STATUS: 'Khiêm nhường thực sự là không bận tâm đến việc phải chứng tỏ cái tôi, chứ không phải một màn trình diễn khiêm tốn giả tạo để mong cầu lời khen.',
 };
 
 const counterpointText =
   TOPIC_COUNTERPOINTS[quote.primaryTopic] ||
-  'Mọi khẳng định triết học đều có thể biến thành chiếc bẫy tự lừa dối nếu ta chỉ dùng nó để phán xét người khác mà không dám đặt chính mình vào vị trí bị chất vấn.';
+  'Mọi câu nói hay đều có thể biến thành chiếc bẫy tự lừa dối nếu ta chỉ dùng nó để phán xét người khác mà không dám đặt chính mình vào vị trí tự soi rọi.';
 
 // Determine whether title and quote are redundant echoes
 const normTitle = quote.cleanTitle.toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -95,7 +95,7 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
           </a>
         </div>
         <div class="flex items-center gap-3">
-          <span class="text-[11px] text-muted">Khoảng 2 phút chiêm nghiệm</span>
+          <span class="text-[11px] text-muted">Khoảng 2 phút đọc</span>
           <span class="text-border">·</span>
           <span class="font-mono text-xs text-accent font-semibold">{quote.id}</span>
         </div>
@@ -124,7 +124,7 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
             </h1>
             
             <p class="font-sans text-xs text-muted">
-              Luận điểm khởi xướng: <strong class="text-text font-medium">{quote.author}</strong>
+              Tác giả: <strong class="text-text font-medium">{quote.author}</strong>
             </p>
           </div>
 
@@ -147,7 +147,7 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
                 <rect x="9" y="9" width="13" height="13" rx="1" stroke-width="1.75" />
                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke-width="1.75" />
               </svg>
-              <span id="copy-text">Sao Chép Triết Ngôn</span>
+              <span id="copy-text">Sao Chép Câu Nói</span>
             </button>
 
             <!-- Save Bookmark button (Dispatches live update to Saved Drawer & Header) -->
@@ -158,7 +158,7 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
               class="px-4 py-2 border border-border/80 bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-wider uppercase font-semibold transition-colors flex items-center gap-2 min-h-[40px]"
             >
               <span id="bookmark-icon">☆</span>
-              <span id="bookmark-text">Lưu Chiêm Nghiệm</span>
+              <span id="bookmark-text">Lưu Vào Kho</span>
             </button>
 
             <!-- Share button -->
@@ -178,10 +178,10 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
             </button>
           </div>
 
-          <!-- 04. Context & Philosophical Commentary -->
+          <!-- 04. Context & Commentary -->
           <div class="pt-6 space-y-3">
             <span class="text-xs font-sans tracking-[0.2em] uppercase font-semibold text-accent block">
-              Bóc Tách Tâm Lý & Chiêm Nghiệm
+              Góc Nhìn & Suy Ngẫm
             </span>
             <div class="font-serif text-base sm:text-lg text-text/90 leading-relaxed sm:leading-loose space-y-4">
               <p>{quote.description}</p>
@@ -191,7 +191,7 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
           <!-- 05. Dialectical Counterpoint (Tailored per topic - No repetition!) -->
           <div class="p-5 bg-surface/50 border-l-2 border-oxide space-y-2">
             <span class="text-[11px] font-sans tracking-[0.2em] uppercase font-semibold text-oxide block">
-              Phản Đề Tự Soi Chiếu (Counterpoint)
+              Một Góc Nhìn Khác
             </span>
             <p class="font-serif italic text-sm sm:text-base text-text/85 leading-relaxed">
               {counterpointText}
@@ -238,7 +238,7 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
               CHUYÊN ĐỀ #{quote.primaryTopicTitle}
             </span>
             <h2 class="font-display text-xl sm:text-2xl text-text font-medium" data-i18n-key="detail.relatedWorks">
-              Tác Phẩm Chiêm Nghiệm Liên Quan
+              Những Câu Nói Cùng Chủ Đề
             </h2>
           </div>
           <a

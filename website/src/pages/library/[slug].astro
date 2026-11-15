@@ -84,7 +84,7 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
       
       <!-- 01. Breadcrumb & Meta Bar -->
-      <nav class="flex flex-wrap items-center justify-between gap-3 text-xs font-sans text-muted pb-4 border-b border-border/70">
+      <nav class="flex flex-wrap items-center justify-between gap-3 text-xs font-sans text-muted pb-2">
         <div class="flex items-center gap-2">
           <a href="/" class="hover:text-text transition-colors">Trang Chủ</a>
           <span>/</span>
@@ -179,7 +179,7 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
           </div>
 
           <!-- 04. Context & Philosophical Commentary -->
-          <div class="pt-6 border-t border-border/60 space-y-3">
+          <div class="pt-6 space-y-3">
             <span class="text-xs font-sans tracking-[0.2em] uppercase font-semibold text-accent block">
               Bóc Tách Tâm Lý & Chiêm Nghiệm
             </span>
@@ -231,7 +231,7 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
       <SourceAttribution quote={quote} />
 
       <!-- 06.5. Related Works of Contemplation (Tác Phẩm Chiêm Nghiệm Liên Quan) -->
-      <section class="pt-10 border-t border-border/70 space-y-6">
+      <section class="pt-16 space-y-6">
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
           <div>
             <span class="text-[10px] font-mono tracking-[0.25em] uppercase text-accent font-semibold block">
@@ -279,7 +279,7 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
                     </h3>
                   </div>
 
-                  <div class="pt-3 border-t border-border/40 flex items-center justify-between text-[11px] font-sans">
+                  <div class="pt-3 flex items-center justify-between text-[11px] font-sans">
                     <span class="text-muted text-[10px] uppercase tracking-wider">{rq.quoteTypeLabel}</span>
                     <a href={`/library/${rq.slug}`} class="text-accent group-hover:underline font-semibold uppercase tracking-wider text-[10px] flex items-center gap-1">
                       <span>Đọc tiếp</span>
@@ -294,7 +294,7 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
       </section>
 
       <!-- 07. Navigation Plaques (Previous / Next) -->
-      <nav class="pt-8 border-t border-border/70 grid grid-cols-1 sm:grid-cols-2 gap-4 font-sans text-xs">
+      <nav class="pt-12 grid grid-cols-1 sm:grid-cols-2 gap-4 font-sans text-xs">
         <a
           href={`/library/${prevQuote.slug}`}
           class="p-4 border border-border/80 hover:border-accent bg-surface/30 hover:bg-surface transition-colors flex items-center gap-3 group"

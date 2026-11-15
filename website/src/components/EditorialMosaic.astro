@@ -86,7 +86,7 @@ const secondaryQuotes = featuredQuotes.slice(1, 4);
       <!-- Secondary Sequence (5 cols): Editorial Column with Quiet Dividers -->
       <div class="lg:col-span-5 flex flex-col gap-8">
         {secondaryQuotes.map((q, idx) => (
-          <article class="flex flex-col gap-3 pb-8 border-b border-border/60 last:border-b-0 group">
+          <article class="flex flex-col gap-3 p-5 rounded-xl bg-surface/40 hover:bg-surface-raised/50 border border-border/60 hover:border-accent/50 transition-all duration-300 group">
             <div class="flex items-center justify-between text-xs tracking-wider uppercase font-sans text-muted">
               <span class="text-accent font-semibold">{q.primaryTopicTitle}</span>
               <span>{q.author}</span>

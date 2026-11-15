@@ -16,8 +16,8 @@ const pathname = Astro.url.pathname;
 <header class="sticky top-3 sm:top-5 z-50 w-full px-3 sm:px-6 lg:px-8 pointer-events-none transition-all duration-300">
   <!-- Expanded Width: max-w-6xl for elegant architectural presence -->
   <div class="max-w-6xl mx-auto w-full pointer-events-auto">
-    <!-- Fluid Floating Glass Island (h-13 sm:h-14, px-4 sm:px-7) -->
-    <div class="h-13 sm:h-14 px-4 sm:px-7 rounded-full border border-border/80 bg-surface/90 backdrop-blur-md shadow-xl flex items-center justify-between transition-all duration-300 hover:border-accent/40">
+    <!-- Fluid Floating Glass Island (h-13 sm:h-14, px-2.5 sm:px-7) -->
+    <div class="h-13 sm:h-14 px-2.5 sm:px-7 rounded-full border border-border/80 bg-surface/90 backdrop-blur-md shadow-xl flex items-center justify-between transition-all duration-300 hover:border-accent/40">
       
       <!-- Brand Logo (Pure wordmark without secondary tag) -->
       <BrandLogo variant="compact" />
@@ -49,13 +49,13 @@ const pathname = Astro.url.pathname;
       </nav>
 
       <!-- Right Header Actions (Saved Archive + Language + Theme + Mobile Trigger) -->
-      <div class="flex items-center gap-2 sm:gap-2.5">
+      <div class="flex items-center gap-1 sm:gap-2.5">
         
         <!-- Saved Archive Drawer Trigger Button with Dynamic Counter Badge -->
         <button
           id="open-saved-drawer-btn"
           type="button"
-          class="px-3 py-1.5 text-xs font-sans text-muted hover:text-accent rounded-full border border-border/70 hover:border-accent/50 bg-surface/60 hover:bg-surface-raised transition-all flex items-center gap-2 min-h-[36px]"
+          class="px-2 sm:px-3 py-1.5 text-xs font-sans text-muted hover:text-accent rounded-full border border-border/70 hover:border-accent/50 bg-surface/60 hover:bg-surface-raised transition-all flex items-center gap-1.5 sm:gap-2 min-h-[36px]"
           aria-label="Mở kho tác phẩm đã lưu"
           title="Kho lưu trữ cá nhân"
         >
@@ -82,7 +82,7 @@ const pathname = Astro.url.pathname;
         <button
           id="lang-toggle-btn"
           type="button"
-          class="px-2.5 py-1.5 text-xs tracking-widest font-mono font-semibold text-muted hover:text-text rounded-full border border-border/70 hover:border-accent/50 bg-surface/60 hover:bg-surface-raised transition-all min-h-[36px] flex items-center"
+          class="px-2 sm:px-2.5 py-1.5 text-[11px] sm:text-xs tracking-wider sm:tracking-widest font-mono font-semibold text-muted hover:text-text rounded-full border border-border/70 hover:border-accent/50 bg-surface/60 hover:bg-surface-raised transition-all min-h-[36px] flex items-center"
           aria-label="Chuyển đổi ngôn ngữ Tiếng Việt / English"
           title="Switch language (VI / EN)"
         >

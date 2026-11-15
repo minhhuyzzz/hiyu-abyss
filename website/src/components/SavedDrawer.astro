@@ -29,7 +29,7 @@ const quotesMap = Object.fromEntries(
 <!-- Drawer Slide-out Panel -->
 <aside
   id="saved-drawer"
-  class="fixed top-0 right-0 h-full w-full max-w-md bg-surface border-l border-border/80 shadow-2xl z-50 translate-x-full transition-transform duration-300 ease-out flex flex-col font-sans"
+  class="fixed top-0 right-0 h-full w-full max-w-md bg-surface border-l border-border/80 shadow-2xl z-50 translate-x-full invisible transition-all duration-300 ease-out flex flex-col font-sans"
   aria-labelledby="saved-drawer-title"
   aria-modal="true"
   role="dialog"
@@ -102,10 +102,13 @@ const quotesMap = Object.fromEntries(
 
   function openSavedDrawer() {
     renderSavedList();
+    drawer.classList.remove('invisible');
     overlay.classList.remove('opacity-0', 'pointer-events-none');
     overlay.classList.add('opacity-100', 'pointer-events-auto');
-    drawer.classList.remove('translate-x-full');
-    drawer.classList.add('translate-x-0');
+    requestAnimationFrame(() => {
+      drawer.classList.remove('translate-x-full');
+      drawer.classList.add('translate-x-0');
+    });
     document.body.style.overflow = 'hidden';
   }
 
@@ -115,6 +118,11 @@ const quotesMap = Object.fromEntries(
     drawer.classList.add('translate-x-full');
     drawer.classList.remove('translate-x-0');
     document.body.style.overflow = '';
+    setTimeout(() => {
+      if (drawer.classList.contains('translate-x-full')) {
+        drawer.classList.add('invisible');
+      }
+    }, 300);
   }
 
   function getSavedIds() {

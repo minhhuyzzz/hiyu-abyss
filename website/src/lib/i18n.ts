@@ -70,7 +70,7 @@ export const i18nDict: Record<Language, Record<string, string>> = {
     'footer.mission': 'Không gian lưu giữ những câu nói hay, sâu sắc về cuộc sống và tâm lý con người bên cạnh tranh nghệ thuật cổ điển. Đọc để nhìn thế giới khác đi, suy ngẫm để hiểu mình rõ hơn.',
     'footer.stats': 'KHO LƯU TRỮ ĐANG MỞ RỘNG LIÊN TỤC',
     'footer.nav': 'Điều Hướng',
-    'footer.tiktok': 'Kênh TikTok @hiyuabyss',
+    'footer.tiktok': 'Kênh TikTok @hiyu.abyss',
     'footer.copyright': 'Tuyển tập những câu nói hay & tranh nghệ thuật cổ điển.',
   },
   en: {
@@ -140,7 +140,7 @@ export const i18nDict: Record<Language, Record<string, string>> = {
     'footer.mission': 'A sanctuary preserving philosophical thought, behavioral psychology, and classical museum aesthetics. Where profound aphorisms dialogue with masterworks to awaken introspection.',
     'footer.stats': 'CONTINUOUS LIVING ARCHIVE',
     'footer.nav': 'Navigation',
-    'footer.tiktok': 'TikTok Channel @hiyuabyss',
+    'footer.tiktok': 'TikTok Channel @hiyu.abyss',
     'footer.copyright': 'Preserving philosophical heritage & classical aesthetics.',
   },
 };

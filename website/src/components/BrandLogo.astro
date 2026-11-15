@@ -48,15 +48,8 @@ const { variant = 'full', class: className = '' } = Astro.props;
   </div>
 
   {variant !== 'icon-only' && (
-    <div class="flex flex-col">
-      <span class="font-display text-base sm:text-lg tracking-[0.22em] font-bold uppercase text-text leading-tight group-hover:text-accent transition-colors">
-        HIYU ABYSS
-      </span>
-      {variant === 'full' && (
-        <span class="font-sans text-[9px] sm:text-[10px] tracking-[0.28em] text-muted uppercase font-medium">
-          The Living Library
-        </span>
-      )}
-    </div>
+    <span class="font-display text-base sm:text-lg tracking-[0.24em] font-bold uppercase text-text leading-tight group-hover:text-accent transition-colors">
+      HIYU ABYSS
+    </span>
   )}
 </a>

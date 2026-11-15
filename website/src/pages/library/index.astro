@@ -128,17 +128,32 @@ const topics = getAllTopics();
               data-slug={q.slug}
             >
               <!-- Artwork Preview Header -->
-              <a href={`/library/${q.slug}`} class="relative aspect-[16/10] overflow-hidden bg-surface block border-b border-border/60">
-                <img
-                  src={artSrc}
-                  alt={q.cleanTitle}
-                  class="w-full h-full object-cover filter brightness-[0.92] group-hover:scale-105 group-hover:brightness-100 transition-all duration-700"
-                  loading="lazy"
-                />
-                <span class="absolute top-3 left-3 px-2.5 py-0.5 text-[10px] font-sans tracking-widest uppercase bg-bg/90 text-accent border border-border/60">
+              <div class="relative aspect-[16/10] overflow-hidden bg-surface block border-b border-border/60">
+                <a href={`/library/${q.slug}`} class="block w-full h-full">
+                  <img
+                    src={artSrc}
+                    alt={q.cleanTitle}
+                    class="w-full h-full object-cover filter brightness-[0.92] group-hover:scale-105 group-hover:brightness-100 transition-all duration-700"
+                    loading="lazy"
+                  />
+                </a>
+                <span class="absolute top-3 left-3 px-2.5 py-0.5 text-[10px] font-sans tracking-widest uppercase bg-bg/90 text-accent border border-border/60 pointer-events-none">
                   #{q.primaryTopicTitle}
                 </span>
-              </a>
+
+                <!-- Quick Bookmark Heart Button -->
+                <button
+                  type="button"
+                  class="quick-save-card-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-white hover:text-accent hover:border-accent hover:scale-110 flex items-center justify-center transition-all z-10 opacity-0 group-hover:opacity-100 shadow-md"
+                  data-id={q.id}
+                  title="Lưu vào kho chiêm nghiệm"
+                  aria-label="Lưu vào kho"
+                >
+                  <svg class="w-4 h-4 heart-icon transition-colors" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" fill="none">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                  </svg>
+                </button>
+              </div>
 
               <!-- Card Body -->
               <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
@@ -190,24 +205,39 @@ const topics = getAllTopics();
               data-type={q.quoteType}
               data-slug={q.slug}
             >
-              <a href={`/library/${q.slug}`} class="relative aspect-[9/16] overflow-hidden bg-surface block">
-                <img
-                  src={artSrc}
-                  alt={q.cleanTitle}
-                  class="w-full h-full object-cover filter brightness-[0.9] group-hover:scale-105 group-hover:brightness-100 transition-all duration-700"
-                  loading="lazy"
-                />
-                <div class="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent opacity-80" />
-                <div class="absolute bottom-3 left-3 right-3 text-left">
-                  <span class="font-mono text-[10px] text-accent block">{q.id}</span>
-                  <p class="font-display text-sm text-text font-medium truncate">
-                    {q.cleanTitle}
-                  </p>
-                  <span class="text-[10px] font-sans text-muted truncate block">
-                    {q.author}
-                  </span>
-                </div>
-              </a>
+              <div class="relative aspect-[9/16] overflow-hidden bg-surface block">
+                <a href={`/library/${q.slug}`} class="block w-full h-full">
+                  <img
+                    src={artSrc}
+                    alt={q.cleanTitle}
+                    class="w-full h-full object-cover filter brightness-[0.9] group-hover:scale-105 group-hover:brightness-100 transition-all duration-700"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent opacity-80" />
+                  <div class="absolute bottom-3 left-3 right-3 text-left">
+                    <span class="font-mono text-[10px] text-accent block">{q.id}</span>
+                    <p class="font-display text-sm text-text font-medium truncate">
+                      {q.cleanTitle}
+                    </p>
+                    <span class="text-[10px] font-sans text-muted truncate block">
+                      {q.author}
+                    </span>
+                  </div>
+                </a>
+
+                <!-- Quick Bookmark Heart Button -->
+                <button
+                  type="button"
+                  class="quick-save-card-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-white hover:text-accent hover:border-accent hover:scale-110 flex items-center justify-center transition-all z-10 opacity-0 group-hover:opacity-100 shadow-md"
+                  data-id={q.id}
+                  title="Lưu vào kho chiêm nghiệm"
+                  aria-label="Lưu vào kho"
+                >
+                  <svg class="w-4 h-4 heart-icon transition-colors" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" fill="none">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                  </svg>
+                </button>
+              </div>
             </article>
           );
         })}
@@ -396,5 +426,50 @@ const topics = getAllTopics();
         }
       });
     }
+
+    // Quick Bookmark Heart Buttons Logic
+    function syncLibraryHeartButtons() {
+      try {
+        const saved = JSON.parse(localStorage.getItem('hiyu_saved_quotes') || '[]');
+        document.querySelectorAll('.quick-save-card-btn').forEach((btn) => {
+          const id = btn.getAttribute('data-id');
+          const isSaved = saved.includes(id);
+          const icon = btn.querySelector('.heart-icon');
+          if (isSaved) {
+            btn.classList.remove('opacity-0');
+            btn.classList.add('opacity-100', 'text-accent', 'border-accent');
+            if (icon) icon.setAttribute('fill', 'currentColor');
+          } else {
+            btn.classList.remove('text-accent', 'border-accent');
+            btn.classList.add('opacity-0');
+            if (icon) icon.setAttribute('fill', 'none');
+          }
+        });
+      } catch (e) {}
+    }
+
+    syncLibraryHeartButtons();
+    window.addEventListener('storage', syncLibraryHeartButtons);
+    window.addEventListener('hiyu-bookmark-updated', syncLibraryHeartButtons);
+
+    document.querySelectorAll('.quick-save-card-btn').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        try {
+          const id = btn.getAttribute('data-id');
+          const saved = JSON.parse(localStorage.getItem('hiyu_saved_quotes') || '[]');
+          const idx = saved.indexOf(id);
+          if (idx > -1) {
+            saved.splice(idx, 1);
+          } else {
+            saved.push(id);
+          }
+          localStorage.setItem('hiyu_saved_quotes', JSON.stringify(saved));
+          syncLibraryHeartButtons();
+          window.dispatchEvent(new Event('hiyu-bookmark-updated'));
+        } catch (e) {}
+      });
+    });
   </script>
 </BaseLayout>

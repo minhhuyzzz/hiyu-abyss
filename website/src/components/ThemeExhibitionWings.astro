@@ -1,0 +1,93 @@
+---
+// ThemeExhibitionWings.astro - 4 Flagship Museum Wings (Taste-Skill Bento Grid)
+import { getAllTopics } from '../lib/content-publisher';
+
+const allTopics = getAllTopics();
+const flagshipCodes = ['HYPOCRISY', 'EGO', 'SHADOW', 'FREEDOM'];
+const flagshipTopics = allTopics.filter((t) => flagshipCodes.includes(t.code));
+
+const WING_IMAGES: Record<string, string> = {
+  HYPOCRISY: '/images/themes/theme_01/slide_1_establishing.jpg',
+  EGO: '/images/themes/theme_04/slide_1_establishing.jpg',
+  SHADOW: '/images/themes/theme_06/slide_1_establishing.jpg',
+  FREEDOM: '/images/themes/theme_10/slide_1_establishing.jpg',
+};
+---
+
+<section class="w-full py-16 sm:py-24 border-t border-border/60">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
+    
+    <!-- Section Header -->
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+      <div class="space-y-2">
+        <div class="flex items-center gap-2 text-[10px] tracking-[0.25em] uppercase font-mono text-accent">
+          <span>CURATED WINGS</span>
+          <span class="text-border">/</span>
+          <span>4 KHÔNG GIAN TRỌNG ĐIỂM</span>
+        </div>
+        <h2 class="font-display text-2xl sm:text-4xl text-text font-medium tracking-tight">
+          Các Cánh Trưng Bày Tiêu Biểu
+        </h2>
+      </div>
+
+      <a
+        href="/themes"
+        class="group text-xs font-sans text-accent hover:text-text font-semibold uppercase tracking-widest inline-flex items-center gap-2"
+      >
+        <span data-i18n-vi="Khám phá các luồng chủ đề" data-i18n-en="Explore All Themes">Khám phá các luồng chủ đề</span>
+        <span class="w-6 h-6 rounded-full border border-accent/40 flex items-center justify-center transition-transform group-hover:translate-x-1">
+          →
+        </span>
+      </a>
+    </div>
+
+    <!-- Asymmetrical 4-Wing Bento Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+      {flagshipTopics.map((topic, idx) => {
+        const bgImg = WING_IMAGES[topic.code] || '/images/themes/theme_01/slide_1_establishing.jpg';
+        return (
+          <a
+            href={`/themes/${topic.slug}`}
+            class="group relative overflow-hidden rounded-xl border border-border/80 bg-surface flex flex-col justify-between p-6 min-h-[300px] hover:border-accent transition-all duration-500 shadow-md"
+          >
+            <!-- Background Artwork with Dark Vignette -->
+            <div class="absolute inset-0 z-0 overflow-hidden">
+              <img
+                src={bgImg}
+                alt={topic.title}
+                class="w-full h-full object-cover filter brightness-[0.4] group-hover:scale-105 group-hover:brightness-[0.48] transition-all duration-700"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-bg via-bg/40 to-transparent"></div>
+            </div>
+
+            <!-- Top Tag -->
+            <div class="relative z-10 flex items-center justify-between text-[10px] font-mono tracking-widest uppercase">
+              <span class="px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-accent font-semibold">
+                WING 0{idx + 1}
+              </span>
+              <span class="text-white/70">
+                {topic.count} tác phẩm
+              </span>
+            </div>
+
+            <!-- Bottom Content -->
+            <div class="relative z-10 space-y-2 pt-16">
+              <h3 class="font-display text-lg sm:text-xl text-white font-medium group-hover:text-accent transition-colors leading-snug">
+                {topic.title}
+              </h3>
+              <p class="font-serif italic text-xs text-white/80 line-clamp-2 leading-relaxed">
+                {topic.description}
+              </p>
+              <div class="pt-2 text-[10px] font-sans font-semibold uppercase tracking-widest text-accent flex items-center gap-1">
+                <span>Bước vào cánh</span>
+                <span class="transition-transform group-hover:translate-x-1">→</span>
+              </div>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+
+  </div>
+</section>

@@ -26,6 +26,13 @@ interface Props {
 }
 
 const { quote, prevQuote, nextQuote } = Astro.props;
+const allQuotes = getAllPublishedQuotes();
+let relatedQuotes = allQuotes.filter((q) => q.id !== quote.id && q.primaryTopic === quote.primaryTopic).slice(0, 3);
+if (relatedQuotes.length < 3) {
+  const otherQuotes = allQuotes.filter((q) => q.id !== quote.id && !relatedQuotes.some((r) => r.id === q.id));
+  relatedQuotes.push(...otherQuotes.slice(0, 3 - relatedQuotes.length));
+}
+
 const artSrc = quote.artInfo?.slides?.slide_1 || `/images/themes/${quote.imageRef}/slide_1_establishing.jpg`;
 const artTitle = quote.artInfo?.title || quote.cleanTitle;
 const artArtist = quote.artInfo?.artist || quote.author;
@@ -222,6 +229,69 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
 
       <!-- 06. Scholarly Provenance & Academic Integrity Box -->
       <SourceAttribution quote={quote} />
+
+      <!-- 06.5. Related Works of Contemplation (Tác Phẩm Chiêm Nghiệm Liên Quan) -->
+      <section class="pt-10 border-t border-border/70 space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+          <div>
+            <span class="text-[10px] font-mono tracking-[0.25em] uppercase text-accent font-semibold block">
+              CHUYÊN ĐỀ #{quote.primaryTopicTitle}
+            </span>
+            <h2 class="font-display text-xl sm:text-2xl text-text font-medium" data-i18n-key="detail.relatedWorks">
+              Tác Phẩm Chiêm Nghiệm Liên Quan
+            </h2>
+          </div>
+          <a
+            href={`/themes/${quote.primaryTopic.toLowerCase().replace(/_/g, '-')}`}
+            class="text-xs font-sans text-accent hover:underline flex items-center gap-1 font-semibold tracking-wider uppercase text-[11px]"
+          >
+            <span>Xem tất cả bài cùng chủ đề</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {relatedQuotes.map((rq) => {
+            const rqArt = rq.artInfo?.slides?.slide_1 || `/images/themes/${rq.imageRef}/slide_1_establishing.jpg`;
+            return (
+              <article class="p-4 border border-border/70 bg-surface/40 hover:border-accent transition-all duration-300 flex flex-col justify-between group rounded-sm">
+                <a href={`/library/${rq.slug}`} class="relative aspect-[16/10] overflow-hidden bg-surface block border border-border/40 mb-3.5">
+                  <img
+                    src={rqArt}
+                    alt={rq.cleanTitle}
+                    class="w-full h-full object-cover filter brightness-[0.9] group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <span class="absolute top-2 left-2 px-2 py-0.5 text-[9px] font-mono tracking-wider uppercase bg-bg/90 text-accent border border-border/60">
+                    {rq.id}
+                  </span>
+                </a>
+
+                <div class="space-y-2 flex-1 flex flex-col justify-between">
+                  <div>
+                    <span class="text-[10px] font-sans text-muted block mb-1">
+                      {rq.author}
+                    </span>
+                    <h3 class="font-display text-sm sm:text-base text-text font-medium leading-snug group-hover:text-accent transition-colors line-clamp-2">
+                      <a href={`/library/${rq.slug}`}>
+                        {rq.cleanTitle}
+                      </a>
+                    </h3>
+                  </div>
+
+                  <div class="pt-3 border-t border-border/40 flex items-center justify-between text-[11px] font-sans">
+                    <span class="text-muted text-[10px] uppercase tracking-wider">{rq.quoteTypeLabel}</span>
+                    <a href={`/library/${rq.slug}`} class="text-accent group-hover:underline font-semibold uppercase tracking-wider text-[10px] flex items-center gap-1">
+                      <span>Đọc tiếp</span>
+                      <span>→</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </section>
 
       <!-- 07. Navigation Plaques (Previous / Next) -->
       <nav class="pt-8 border-t border-border/70 grid grid-cols-1 sm:grid-cols-2 gap-4 font-sans text-xs">

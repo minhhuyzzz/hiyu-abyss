@@ -1,7 +1,9 @@
 ---
-// src/pages/index.astro - Hiyu Abyss Museum Editorial Landing (Masterplan V3.1)
+// src/pages/index.astro - Hiyu Abyss Museum Editorial Landing (Masterplan V3.2 / Taste-Skill)
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroArtwork from '../components/HeroArtwork.astro';
+import CuratorManifesto from '../components/CuratorManifesto.astro';
+import ThemeExhibitionWings from '../components/ThemeExhibitionWings.astro';
 import EditorialMosaic from '../components/EditorialMosaic.astro';
 import MirrorPortalSection from '../components/MirrorPortalSection.astro';
 import ClosingInvitation from '../components/ClosingInvitation.astro';
@@ -11,8 +13,7 @@ const allQuotes = getAllPublishedQuotes();
 const featuredQuotes = getFeaturedQuotes();
 const topics = getAllTopics();
 
-// Curator Selection Algorithm:
-// Rotates across featured masterpieces (Epictetus, Jung, Nietzsche, Machiavelli, La Rochefoucauld) based on day of year
+// Curator Selection Algorithm: Rotates daily across featured masterpieces
 const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 1000 / 60 / 60 / 24);
 const featuredPool = featuredQuotes.length > 0 ? featuredQuotes : allQuotes;
 const primaryHero = featuredPool[dayOfYear % featuredPool.length] || allQuotes[0];
@@ -22,15 +23,21 @@ const primaryHero = featuredPool[dayOfYear % featuredPool.length] || allQuotes[0
   title="Hiyu Abyss — Thư Viện Nghệ Thuật & Triết Học Chiêm Nghiệm"
   description="Thư viện giám tuyển các tác phẩm triết học, tâm lý học hành vi và kiệt tác hội họa bảo tàng cổ điển."
 >
-  <!-- Scene 01: The Entrance / Curator's Masterpiece -->
+  <!-- Scene 01: The Entrance / Curator's Masterpiece (The Codex of the Abyss) -->
   {primaryHero && <HeroArtwork quote={primaryHero} />}
 
-  <!-- Scene 03: Curator's Selection -->
+  <!-- Scene 02: Curator's Manifesto (3 Pillars of Depth) -->
+  <CuratorManifesto />
+
+  <!-- Scene 03: Flagship Exhibition Wings (Bento Showcase) -->
+  <ThemeExhibitionWings />
+
+  <!-- Scene 04: Curator's Selection Mosaic -->
   <EditorialMosaic featuredQuotes={featuredQuotes} topics={topics} />
 
-  <!-- Scene 07: The Mirror Portal (Branching Interactive Experience) -->
+  <!-- Scene 05: The Mirror Portal (Interactive Sanctuary) -->
   <MirrorPortalSection />
 
-  <!-- Scene 12: Closing & Invitation -->
+  <!-- Scene 06: Closing & Invitation -->
   <ClosingInvitation />
 </BaseLayout>

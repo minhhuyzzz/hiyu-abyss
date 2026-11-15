@@ -1,10 +1,11 @@
 ---
-// BaseLayout.astro - Nền tảng giao diện chuẩn ấn phẩm mỹ thuật (V3.1)
+// BaseLayout.astro - Nền tảng giao diện chuẩn ấn phẩm mỹ thuật (V3.2 / Taste-Skill)
 import '../styles/tokens.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SavedDrawer from '../components/SavedDrawer.astro';
 import BackToTop from '../components/BackToTop.astro';
+import { i18nDict } from '../lib/i18n';
 
 interface Props {
   title?: string;
@@ -137,5 +138,58 @@ const jsonLd = {
 
     <!-- Floating Action Widget (Back to Top) -->
     <BackToTop />
+
+    <!-- Global Full-Site Reactive Bilingual Translation Engine -->
+    <script is:inline define:vars={{ i18nDict }}>
+      function applySiteLanguage(lang) {
+        document.documentElement.setAttribute('lang', lang);
+        const dict = i18nDict[lang] || i18nDict['vi'];
+
+        // 1. Elements with explicit data-i18n-vi & data-i18n-en
+        document.querySelectorAll('[data-i18n-vi]').forEach((el) => {
+          const target = lang === 'en' ? el.getAttribute('data-i18n-en') : el.getAttribute('data-i18n-vi');
+          if (target) el.textContent = target;
+        });
+
+        // 2. Elements with data-i18n-key
+        document.querySelectorAll('[data-i18n-key]').forEach((el) => {
+          const key = el.getAttribute('data-i18n-key');
+          if (dict[key]) el.textContent = dict[key];
+        });
+
+        // 3. Translate search input placeholders
+        const searchInput = document.getElementById('search-input');
+        if (searchInput) {
+          searchInput.placeholder = lang === 'en'
+            ? 'Enter keyword (manipulation, ego, truth, freedom, solitude...)'
+            : 'Nhập từ khóa (thao túng, bản ngã, sự thật, tự do, cô độc...)';
+        }
+
+        // 4. Translate button texts across the DOM
+        const copyBtnText = document.getElementById('copy-text');
+        if (copyBtnText && !copyBtnText.textContent.includes('✓')) {
+          copyBtnText.textContent = dict['btn.copy'] || copyBtnText.textContent;
+        }
+
+        const shareBtnSpan = document.querySelector('#share-btn span');
+        if (shareBtnSpan) {
+          shareBtnSpan.textContent = dict['btn.share'] || shareBtnSpan.textContent;
+        }
+
+        const viewArtSpan = document.querySelector('#open-lightbox-btn span');
+        if (viewArtSpan) {
+          viewArtSpan.textContent = dict['btn.viewArt'] || viewArtSpan.textContent;
+        }
+      }
+
+      // Initialize on load
+      const initLang = localStorage.getItem('hiyu_lang') || 'vi';
+      applySiteLanguage(initLang);
+
+      // Listen for language switch events from header or anywhere
+      window.addEventListener('hiyu-lang-changed', (e) => {
+        applySiteLanguage(e.detail.lang);
+      });
+    </script>
   </body>
 </html>

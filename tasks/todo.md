@@ -1,101 +1,87 @@
-# Danh Sách Nhiệm Vụ: Tái Thiết Toàn Diện Hiyu Abyss V3.1 (The Living Museum)
+# Danh Mục Nhiệm Vụ: Nghiên Cứu Học Thuật & Soạn Thảo 50 Bài Triết Ngôn Bổ Sung (TXT-0151 -> TXT-0200)
 
-> **Cương lĩnh kiến trúc:** [tasks/plan.md](file:///c:/hiyuabyss/tasks/plan.md)  
-> **Căn cứ pháp quy:** `HYA-01` $\rightarrow$ `HYA-08`  
-> **Mục tiêu:** Chuyển hóa toàn diện sang phong cách Bảo Tàng Số, khắc phục dứt điểm 8 lỗi giao diện đã ghi nhận.
+## Phase 1: Thu Thập & Cào Nguồn Học Thuật Mở (Academic Research & Scraper Pipeline)
 
----
+- [ ] **Task 1: Xây Dựng Bộ Thu Thập & Cào Nguồn Học Thuật Mở (`scripts/academic_source_harvester.py`)**
+  - **Mô tả:** Viết script kết nối OpenAlex, Crossref API, SEP và Gutenberg cào dữ liệu học thuật cho 5 cụm chủ đề.
+  - **Tiêu chí:** Tải về và tổng hợp metadata, abstract, DOI và văn bản chuẩn xác vào `scripts/academic_harvested_sources.json`.
+  - **Xác minh:** `python scripts/academic_source_harvester.py`
+  - **Files:** `scripts/academic_source_harvester.py`, `scripts/academic_harvested_sources.json`
+  - **Scope:** S (2 files)
 
-## Phase 1: Nền Tảng Giao Diện, Header, Ngôn Ngữ & Kho Lưu Trữ
+- [ ] **Task 2: Chuẩn Hóa Hồ Sơ Nguồn Học Thuật `SRC-0003` -> `SRC-0015` Vào `knowledge/sources/`**
+  - **Mô tả:** Tạo tối thiểu 10 hồ sơ nguồn Markdown chuẩn YAML frontmatter (`HYA-02`), xác định rõ tác giả, tác phẩm, DOI/URL, và mức truy cập.
+  - **Tiêu chí:** Vượt qua Hard Gate G1 (không bịa nguồn, có link/DOI thật), cập nhật `indexes/INDEX_SOURCES.md`.
+  - **Xác minh:** Kiểm tra cấu trúc file và link của `SRC-0003.md` -> `SRC-0015.md`.
+  - **Files:** `knowledge/sources/SRC-0003.md` đến `SRC-0015.md`, `indexes/INDEX_SOURCES.md`
+  - **Scope:** M (11 files)
 
-- [x] **Task 1: Header Thanh Mảnh (`h-13/14`), Logo Monogram Ẩn Ý & Nút Gạt Ngôn Ngữ `[VI | EN]`**
-  - **Mô tả:** Giảm chiều cao thanh Floating Header từ `h-16/20` xuống `h-12 sm:h-14` (48-56px), giảm đệm ngang, giữ nét thanh mảnh như viền đồng hồ cao cấp. Vẽ lại Monogram trong `BrandLogo.astro` theo phong cách ẩn ý hiện đại (hai vòng cung đối thoại / sự phản chiếu vô tận của gương và vực thẳm). Bổ sung nút gạt ngôn ngữ `[VI | EN]` và nút mở "Kho Lưu Trữ" kèm badge số lượng tác phẩm đã lưu.
-  - **Tiêu chí nghiệm thu:**
-    - Header mỏng, gọn, không chiếm diện tích màn hình hay che khuất chữ khi cuộn.
-    - Logo Monogram mới tối giản, sang trọng, mang biểu tượng sâu lắng của vực thẳm và chiếc gương.
-    - Nút `VI | EN` chuyển đổi ngôn ngữ mượt mà cho các nhãn điều hướng chính.
-    - Nút icon "Kho Lưu Trữ" hiển thị số lượng bài đã lưu (VD: `Kho (3)`).
-  - **Xác minh:** Kiểm tra hiển thị header trên cả desktop/mobile ở Light & Dark mode.
-  - **Files:** `website/src/components/Header.astro`, `website/src/components/BrandLogo.astro`, `website/public/favicon.svg`, `website/src/lib/i18n.ts`
-  - **Scope:** Medium (4 files)
-
-- [x] **Task 2: Xây Dựng Ngăn Kéo "Kho Lưu Trữ Cá Nhân" (Saved Drawer)**
-  - **Mô tả:** Tạo component `SavedDrawer.astro` mở từ cạnh màn hình khi người dùng bấm vào nút Kho Lưu Trữ trên Header hoặc sau khi bấm "Lưu Chiêm Nghiệm". Hiển thị danh sách các tác phẩm đã lưu từ `localStorage['hiyu_saved_quotes']`, có thumbnail tranh nhỏ, tiêu đề, tác giả, nút đọc sâu và nút gỡ khỏi kho lưu trữ.
-  - **Tiêu chí nghiệm thu:**
-    - Giải quyết dứt điểm câu hỏi "khi nhấn lưu kho thì nó lưu ở đâu?".
-    - Mở trượt êm ái, hiển thị danh sách đầy đủ, có trạng thái trống (Empty State) thơ mộng khi chưa lưu tác phẩm nào.
-    - Cập nhật số đếm badge trên Header theo thời gian thực mỗi khi thêm/xóa bài.
-  - **Xác minh:** Nhấn "Lưu Chiêm Nghiệm" trên trang chi tiết $\rightarrow$ mở drawer kiểm tra có xuất hiện bài vừa lưu hay không.
-  - **Files:** `website/src/components/SavedDrawer.astro`, `website/src/layouts/BaseLayout.astro`
-  - **Scope:** Small (2 files)
-
-- [x] **Task 3: Floating Action Widget "Lên Đầu Trang" (FAB) & Tinh Giản Footer Thuần Việt**
-  - **Mô tả:** Tạo component `BackToTop.astro` dạng Floating Action Widget ở góc dưới bên phải màn hình (`fixed bottom-6 right-6 z-40`), chỉ hiện lên khi cuộn quá 300px, bấm vào lướt mượt mà lên đỉnh. Cải tạo `Footer.astro`: xóa bỏ hoàn toàn cột "Minh bạch xuất xứ", loại bỏ các cụm mở ngoặc dịch nghĩa `(Thư Viện)`, `(Chiếc Gương)` để tiếng Việt gãy gọn, chuẩn mực.
-  - **Tiêu chí nghiệm thu:**
-    - Widget "Lên đầu trang" nổi ở góc màn hình, có hoạt họa tinh tế khi hover, hoạt động mượt mà trên cả điện thoại và máy tính.
-    - Footer chỉ còn 2 khối cân đối (Brand & Điều Hướng), không còn cột thừa, không còn ngoặc đơn tiếng Anh.
-  - **Xác minh:** Cuộn trang xuống và click widget để kiểm tra cuộn mượt; kiểm tra Footer sạch sẽ.
-  - **Files:** `website/src/components/BackToTop.astro`, `website/src/components/Footer.astro`, `website/src/layouts/BaseLayout.astro`
-  - **Scope:** Medium (3 files)
-
-### ❖ Checkpoint 1: Header, Navigation & Saved Flow
-- [x] Header thanh thoát, không che khuất nội dung.
-- [x] Bấm nút Lưu kho mở ngay Drawer hiển thị bài đã lưu.
-- [x] Widget "Lên đầu trang" hoạt động tốt, Footer tinh gọn thuần Việt.
+### ❖ Checkpoint 1: Academic Foundations
+- [ ] Dữ liệu học thuật được trích xuất minh bạch và lưu trữ chuẩn quy cách.
+- [ ] Các hồ sơ nguồn `SRC` có đầy đủ thông tin xuất xứ và mức truy cập.
 
 ---
 
-## Phase 2: Chiều Sâu Giám Tuyển, Trải Nghiệm Thưởng Lãm & Khắc Phục Lỗi Tương Tác
+## Phase 2: Soạn Thảo 50 Kịch Bản Triết Ngôn TikTok Chuẩn SEO (`TXT-0151` -> `TXT-0200`)
 
-- [x] **Task 4: Tái Thiết Section Hero: Giám Tuyển Linh Hoạt & Khử Trùng Lặp Headline/Quote**
-  - **Mô tả:** Bỏ cơ chế fix cứng `TXT-0001` làm Hero tại `index.astro`. Thiết kế cơ chế giám tuyển tác phẩm tiêu biểu (Curated Masterpiece) hoặc luân phiên trong ngày. Đồng thời, cấu trúc lại văn bản Hero: phân biệt rõ Tiêu Đề Dẫn Nhập (Curator's Inscription) và Nội Dung Trích Dẫn để chấm dứt hoàn toàn hiện tượng câu trên câu dưới lặp lại nhau như trong ảnh chụp màn hình 1.
-  - **Tiêu chí nghiệm thu:**
-    - Section Hero toát lên vẻ trang trọng của một phòng trưng bày chính.
-    - Không bị trùng lặp chữ giữa tiêu đề lớn và đoạn trích dẫn.
-    - Lựa chọn tác phẩm đắt giá nhất của bảo tàng làm điểm mở màn.
-  - **Xác minh:** Kiểm tra hiển thị trang chủ `/` không còn lặp từ và bố cục hài hòa.
-  - **Files:** `website/src/components/HeroArtwork.astro`, `website/src/pages/index.astro`, `website/src/lib/content-publisher.ts`
-  - **Scope:** Medium (3 files)
+- [ ] **Task 3: Biên Soạn Kịch Bản 50 Bài Triết Ngôn Sắc Lạnh Chuẩn SEO 17 Cột**
+  - **Mô tả:** Soạn 50 bài kịch bản mới (`TXT-0151` -> `TXT-0200`) theo 5 cụm chủ đề (10 bài/cụm), đúng quy chuẩn Hook ngắn < 10 từ kèm dấu `......`, Cú lật, Chiếc gương, Caption SEO < 90 từ, 5 hashtag, phôi ảnh `theme_151` -> `theme_200`.
+  - **Tiêu chí:** 50 bài chuẩn 17 cột, không sáo ngữ AI, lưu tại `scripts/posts_151_200_data.json` và `scripts/tiktok_200_posts.csv`.
+  - **Xác minh:** `python scripts/verify_50_new_posts.py`
+  - **Files:** `scripts/generate_50_academic_posts.py`, `scripts/posts_151_200_data.json`, `scripts/tiktok_200_posts.csv`
+  - **Scope:** M (3 files)
 
-- [x] **Task 5: Xây Dựng Custom Dropdown Tìm Kiếm (Bảo Đảm Luôn Mở Hướng Xuống Dưới)**
-  - **Mô tả:** Thay thế thẻ `<select>` mặc định của trình duyệt tại `search.astro` bằng Custom Dropdown chuẩn mỹ học bảo tàng. Định vị tuyệt đối `top-full mt-1.5 z-30` với thanh cuộn tinh tế, bảo đảm menu luôn luôn mở xổ xuống dưới, khắc phục triệt để hiện tượng bị trình duyệt đẩy ngược lên trên như ảnh chụp màn hình 3.
-  - **Tiêu chí nghiệm thu:**
-    - Menu bộ lọc chủ đề và phân loại luôn mở hướng xuống dưới 100%.
-    - Phong cách thiết kế đồng bộ với nền tối/sáng của bảo tàng, có trạng thái hover và chọn rõ ràng.
-    - Đóng dropdown khi click ra ngoài hoặc bấm phím Escape.
-  - **Xác minh:** Mở `/search`, click vào cả 2 dropdown bộ lọc và xác nhận hướng xổ xuống dưới.
-  - **Files:** `website/src/pages/search.astro`
-  - **Scope:** Small (1 file)
+- [ ] **Task 4: Thẩm Định Phản Biện Đa Tầng & Kiểm Định Trùng Lặp (Hard Gates G2, G3, G4)**
+  - **Mô tả:** Chạy kiểm tra tính mới ngữ nghĩa (`semantic-novelty-review`) với 150 bài cũ, rà soát tính sắc lạnh (`editorial-critique`).
+  - **Tiêu chí:** 0 trùng lặp, 100% đạt chuẩn Hiyu Abyss.
+  - **Xác minh:** `python scripts/audit_semantic_novelty_151_200.py`
+  - **Files:** `scripts/audit_semantic_novelty_151_200.py`
+  - **Scope:** S (1 file)
 
-- [x] **Task 6: Nâng Cấp Chiều Sâu Trang Chi Tiết & Chế Độ Thưởng Lãm Toàn Cảnh (Exhibition Lightbox)**
-  - **Mô tả:** Xóa bỏ câu "Phản đề tự soi chiếu" cố định đại trà trong `[slug].astro`. Đa dạng hóa tầng nghĩa chiêm nghiệm theo từng chủ đề. Tích hợp tính năng **Chế Độ Thưởng Lãm Toàn Cảnh (Museum Lightbox)**: người dùng có thể nhấp vào bức tranh sơn dầu để mở chế độ xem cận cảnh toàn màn hình với nền tối tĩnh lặng và bảng thông tin Placard của bảo tàng.
-  - **Tiêu chí nghiệm thu:**
-    - Phần "Bóc Tách Tâm Lý & Chiêm Nghiệm" không còn bị lặp lại các câu rập khuôn giữa các bài.
-    - Click vào tranh sơn dầu mở ra giao diện thưởng lãm tĩnh lặng toàn màn hình, có phím bấm đóng hoặc Esc.
-  - **Xác minh:** Kiểm tra một số trang chi tiết `/library/txt-0001`, `/library/txt-0002`... xác nhận nội dung riêng biệt và lightbox hoạt động mượt mà.
-  - **Files:** `website/src/pages/library/[slug].astro`, `website/src/components/MuseumLightbox.astro`
-  - **Scope:** Medium (2 files)
-
-### ❖ Checkpoint 2: Editorial & Interactive Depth
-- [x] Hero trang chủ đẳng cấp, không lặp câu chữ.
-- [x] Dropdown bộ lọc tìm kiếm mở xuống dưới thanh lịch.
-- [x] Trang chi tiết có chiều sâu riêng biệt và chế độ xem tranh toàn cảnh.
+### ❖ Checkpoint 2: Content & SEO Excellence
+- [ ] Đủ 50 bài kịch bản đạt tiêu chuẩn vàng 17 cột.
+- [ ] Vượt qua toàn bộ các cổng kiểm định chất lượng nội dung và SEO.
 
 ---
 
-## Phase 3: Chuẩn Hóa SEO, Metadata & Kiểm Thử Toàn Diện
+## Phase 3: Tích Hợp Google Sheet & Định Dạng Thẩm Mỹ Chuyên Nghiệp
 
-- [x] **Task 7: Chuẩn Hóa SEO Toàn Diện, Schema.org & Kiểm Thử Tĩnh 127 Trang**
-  - **Mô tả:** Chuẩn hóa toàn bộ thẻ Meta, OpenGraph tags, cấu trúc JSON-LD Schema.org (`Article`, `ExhibitionEvent`), thẻ `hreflang` hỗ trợ đa ngữ. Chạy kiểm thử tự động toàn bộ 127 trang tĩnh, đảm bảo 0 lỗi build và 0 broken links.
-  - **Tiêu chí nghiệm thu:**
-    - Thẻ meta tiêu chuẩn bảo tàng nghệ thuật, xem trước link Facebook/Zalo/X sắc nét.
-    - Chạy `node website/test/verify-build.js` vượt qua 100% các tiêu chí (22/22 PASS).
-    - Lệnh build tĩnh `npm run build` hoàn thành không cảnh báo lỗi.
-  - **Xác minh:** `cd website && npm run build && node test/verify-build.js`
-  - **Files:** `website/src/layouts/BaseLayout.astro`, `website/src/pages/index.astro`, `website/test/verify-build.js`
-  - **Scope:** Medium (3 files)
+- [ ] **Task 5: Nhúng 50 Bài Mới Vào Google Sheet & Đổi Tên Tab Thành "Kế Hoạch 200 Bài (TikTok Pipeline)"**
+  - **Mô tả:** Cập nhật 50 dòng mới (STT 151 -> 200) lên Google Sheet qua `gsheets mutate import-csv`, đổi tên tab thành `Kế Hoạch 200 Bài (TikTok Pipeline)`.
+  - **Tiêu chí:** Tab chứa đủ 200 bài liên tục, tên tab đổi thành công.
+  - **Xác minh:** `gsheets readonly info 1kimL2BCQ602wNIKTj0sqgFoPW9gRjiUKtV3YvIES1JY`
+  - **Files:** `scripts/upload_200_to_sheet.py`
+  - **Scope:** S (1 file)
 
-### ❖ Checkpoint 3: Complete & Production Ready
-- [x] 127 trang tĩnh build thành công trong thời gian < 3s.
-- [x] Tất cả 8 lỗi người dùng báo cáo được giải quyết triệt để.
-- [x] Không có bất kỳ xung đột nào với tiến trình sinh ảnh bên ngoài.
+- [ ] **Task 6: Tối Ưu Hóa Giao Diện & Thẩm Mỹ Bảng Tính (Dark Slate Polishing)**
+  - **Mô tả:** Định dạng Dark Slate (#0F172A), wrap text, căn giữa mã và ngày giờ, dropdown Trạng Thái cột Q cho toàn bộ 200 dòng.
+  - **Tiêu chí:** Bảng tính sang trọng, không tràn viền, dropdown mượt mà.
+  - **Xác minh:** Kiểm tra định dạng live trên Sheet.
+  - **Files:** `scripts/polish_200_sheet.py`
+  - **Scope:** S (1 file)
+
+### ❖ Checkpoint 3: Live Sheet Synchronization
+- [ ] Google Sheet cập nhật thành công 200 bài, đổi tên tab chuẩn.
+- [ ] Định dạng thẩm mỹ Dark Slate hoàn hảo, sẵn sàng cho nhóm sản xuất nội dung.
+
+---
+
+## Phase 4: Đồng Bộ Kho Tri Thức Nội Bộ & Kiểm Thử Toàn Diện
+
+- [ ] **Task 7: Đồng Bộ Kho Hồ Sơ Nội Bộ `editorial/content/` Cho 50 Bài Mới**
+  - **Mô tả:** Tạo 50 file markdown `TXT-0151.md` đến `TXT-0200.md` trong `editorial/content/` kèm YAML (`HYA-04`), cập nhật `indexes/INDEX_CONTENT.md`.
+  - **Tiêu chí:** 50 file mới có đủ ID, chủ đề, nguồn học thuật, bảng index có đủ 200 mục.
+  - **Xác minh:** Kiểm tra số lượng và tính toàn vẹn của các file trong `editorial/content/`.
+  - **Files:** `editorial/content/TXT-0151.md` đến `TXT-0200.md`, `indexes/INDEX_CONTENT.md`
+  - **Scope:** M (51 files)
+
+- [ ] **Task 8: Kiểm Thử Toàn Diện & Đẩy Toàn Bộ Lên GitHub**
+  - **Mô tả:** Chạy kiểm thử hệ thống, build website, đảm bảo 0 lỗi hồi quy. Commit và push lên `origin main`.
+  - **Tiêu chí:** Website build thành công 127 trang tĩnh, 22/22 kiểm tra WCAG AA đạt chuẩn, git đồng bộ.
+  - **Xác minh:** `cd website && npm run build && node test/verify-build.js` và `git status`.
+  - **Files:** Git commits
+  - **Scope:** S (0 code changes, validation only)
+
+### ❖ Checkpoint 4: Complete & Production Ready
+- [ ] 200 bài đăng hoàn chỉnh trên Google Sheet và kho dữ liệu nội bộ.
+- [ ] Hệ thống hoạt động trơn tru, mã nguồn được lưu trữ an toàn trên GitHub.

@@ -5,32 +5,35 @@ import BrandLogo from './BrandLogo.astro';
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="relative w-full bg-[#0A0907] text-[#D8D2C6] border-t border-border/80 mt-auto transition-colors duration-300 overflow-hidden pt-16 sm:pt-24 pb-8">
+<footer class="relative w-full bg-[#0A0907] text-[#D8D2C6] mt-auto transition-colors duration-300 overflow-hidden pt-16 sm:pt-20 pb-8">
+  <!-- Subtle Ambient Top Hairline (Fades smoothly to edges, eliminating harsh line cuts) -->
+  <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-border/70 to-transparent"></div>
+  
   <!-- Subtle Ambient Radial Halo (Awwwards-tier depth) -->
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-accent/5 blur-[120px] pointer-events-none rounded-full"></div>
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[220px] bg-accent/5 blur-[100px] pointer-events-none rounded-full"></div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     
-    <!-- 4-Column Architectural Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+    <!-- 4-Column Architectural Grid with Harmonious Spacing -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 xl:gap-12 items-start">
       
-      <!-- Brand & Mission Column (5 cols) -->
-      <div class="lg:col-span-5 flex flex-col gap-5">
+      <!-- Brand & Mission Column (4 cols) -->
+      <div class="lg:col-span-4 flex flex-col gap-4">
         <BrandLogo variant="compact" />
 
-        <p class="font-serif italic text-sm sm:text-base text-muted/90 leading-relaxed max-w-md pt-1">
+        <p class="font-serif italic text-sm text-muted/90 leading-relaxed max-w-sm pt-1">
           Kho lưu trữ triết học và tâm lý học đa chiều — nơi bóc trần những nghịch lý bản ngã, các cơ chế phòng vệ và khơi mở cuộc đối thoại sâu sắc cùng những tư tưởng kinh điển.
         </p>
 
-        <!-- Live Status Hardware Badge -->
+        <!-- Live Status Hardware Badge (No limits/numbers) -->
         <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-accent/30 bg-accent/10 text-accent font-mono text-[10px] tracking-[0.2em] uppercase font-semibold w-fit mt-1">
           <span class="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></span>
-          <span data-i18n-vi="KHO LƯU TRỮ ĐANG MỞ RỘNG LIÊN TỤC" data-i18n-en="CONTINUOUS LIVING ARCHIVE">KHO LƯU TRỮ SỐNG · 200 TÁC PHẨM</span>
+          <span data-i18n-vi="KHO LƯU TRỮ ĐANG MỞ RỘNG LIÊN TỤC" data-i18n-en="CONTINUOUS LIVING ARCHIVE">KHO LƯU TRỮ ĐANG MỞ RỘNG LIÊN TỤC</span>
         </div>
       </div>
 
-      <!-- Quick Portals (2 cols) -->
-      <div class="lg:col-span-2 flex flex-col gap-3">
+      <!-- Quick Portals (3 cols) -->
+      <div class="lg:col-span-3 flex flex-col gap-3">
         <h3 class="font-mono text-[10px] tracking-[0.25em] uppercase font-bold text-accent mb-1">
           KHÔNG GIAN
         </h3>
@@ -42,7 +45,7 @@ const currentYear = new Date().getFullYear();
             <a href="/mirror" class="hover:text-text transition-colors">Chiếc Gương (The Mirror)</a>
           </li>
           <li>
-            <a href="/themes" class="hover:text-text transition-colors">Atlas 20 Chủ Đề</a>
+            <a href="/themes" class="hover:text-text transition-colors">Chủ Đề & Căn Nguyên</a>
           </li>
           <li>
             <a href="/agora" class="hover:text-text transition-colors">Đối Thoại (The Agora)</a>
@@ -60,22 +63,22 @@ const currentYear = new Date().getFullYear();
         </h3>
         <ul class="space-y-2.5 text-xs font-sans text-muted">
           <li>
-            <a href="/library" class="hover:text-text transition-colors">Mỹ Thuật Sơn Dầu</a>
+            <a href="/library" class="hover:text-text transition-colors">Tranh Sơn Dầu Cổ Điển</a>
           </li>
           <li>
-            <a href="/agora/guidelines" class="hover:text-text transition-colors">Văn Phong Biên Tập</a>
+            <a href="/agora/guidelines" class="hover:text-text transition-colors">Tiêu Chuẩn Biên Tập</a>
           </li>
           <li>
-            <a href="/search" class="hover:text-text transition-colors">Chuẩn Nguồn Đối Chiếu</a>
+            <a href="/search" class="hover:text-text transition-colors">Thẩm Định Nguồn Gốc</a>
           </li>
           <li>
-            <a href="/account" class="hover:text-text transition-colors">Xác Thực & Bảo Mật</a>
+            <a href="/account" class="hover:text-text transition-colors">Bảo Mật & Danh Tính</a>
           </li>
         </ul>
       </div>
 
       <!-- Outreach & Connected Network (3 cols) -->
-      <div class="lg:col-span-3 flex flex-col gap-4">
+      <div class="lg:col-span-3 flex flex-col gap-3.5">
         <h3 class="font-mono text-[10px] tracking-[0.25em] uppercase font-bold text-accent mb-1">
           LAN TỎA
         </h3>
@@ -85,7 +88,7 @@ const currentYear = new Date().getFullYear();
           href="https://www.tiktok.com/@hiyuabyss"
           target="_blank"
           rel="noopener noreferrer"
-          class="p-4 rounded-xl border border-border/70 bg-surface/40 hover:bg-surface/80 hover:border-accent/70 transition-all duration-300 group flex items-center justify-between"
+          class="p-3.5 rounded-xl border border-border/70 bg-surface/40 hover:bg-surface/80 hover:border-accent/70 transition-all duration-300 group flex items-center justify-between"
         >
           <div class="space-y-0.5">
             <span class="text-xs font-sans font-bold text-text group-hover:text-accent transition-colors block">
@@ -115,7 +118,7 @@ const currentYear = new Date().getFullYear();
     </div>
 
     <!-- Architectural Hairline Divider -->
-    <div class="w-full h-px bg-border/50 my-12"></div>
+    <div class="w-full h-px bg-border/40 my-10"></div>
 
     <!-- Bottom Signature Line -->
     <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted/80 font-sans">
@@ -128,35 +131,29 @@ const currentYear = new Date().getFullYear();
           <span class="text-border">·</span>
           <span class="text-muted/60">○ PALE ARCHIVE</span>
         </div>
-
-        <!-- Scroll to Top Trigger -->
-        <button
-          id="footer-back-to-top"
-          type="button"
-          class="text-xs uppercase font-mono tracking-widest text-muted hover:text-accent transition-colors flex items-center gap-1.5 cursor-pointer"
-          aria-label="Cuộn lên đầu trang"
-        >
-          <span>Đầu trang</span>
-          <span class="text-accent">↑</span>
-        </button>
       </div>
     </div>
 
-    <!-- Monumental Watermark Typography (The Luxury Agency Signature) -->
-    <div class="w-full overflow-hidden select-none pointer-events-none pt-12 -mb-8 sm:-mb-12 opacity-[0.035] text-center">
-      <span class="font-display text-[14vw] font-bold tracking-[0.25em] uppercase leading-none whitespace-nowrap text-white block">
-        HIYU ABYSS
-      </span>
+    <!-- Monumental Architectural Watermark (Responsive SVG Typography - Guaranteed No Truncation) -->
+    <div class="w-full select-none pointer-events-none pt-8 sm:pt-12 pb-2 flex items-center justify-center opacity-[0.035] overflow-hidden">
+      <svg
+        viewBox="0 0 1000 90"
+        class="w-full max-w-5xl h-auto"
+        preserveAspectRatio="xMidYMid meet"
+        aria-hidden="true"
+      >
+        <text
+          x="500"
+          y="68"
+          text-anchor="middle"
+          fill="currentColor"
+          class="font-display font-bold uppercase"
+          style="font-size: 76px; letter-spacing: 0.18em;"
+        >
+          HIYU ABYSS
+        </text>
+      </svg>
     </div>
 
   </div>
 </footer>
-
-<script is:inline>
-  const backToTopBtn = document.getElementById('footer-back-to-top');
-  if (backToTopBtn) {
-    backToTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
-</script>

@@ -124,7 +124,7 @@ export const i18nDict: Record<Language, Record<string, string>> = {
 
     // Library Page
     'library.title': 'The Living Archive of Thought & Classical Art',
-    'library.subtitle': '100 aphorisms on behavioral psychology and existential thought in dialogue with museum masterpieces.',
+    'library.subtitle': 'A living archive of behavioral psychology and existential thought in dialogue with museum masterpieces.',
     'library.all': 'All',
     'library.viewEditorial': 'Editorial',
     'library.viewGallery': 'Gallery',

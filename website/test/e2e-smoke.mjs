@@ -145,64 +145,69 @@ async function runSmokeTests() {
 
   const MIRROR_URL = `${BASE_URL}/mirror/su-that-va-binh-yen`;
 
+  async function loadMirrorWithHydration() {
+    await page.goto(MIRROR_URL, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(400);
+  }
+
   // Path 1: Truth -> Immediately -> Ending Control
-  await page.goto(MIRROR_URL, { waitUntil: 'domcontentloaded' });
+  await loadMirrorWithHydration();
   await page.locator('button:has-text("Bước Qua Ngưỡng Cửa")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Tôi muốn hiểu điều đang bị che khuất")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Tiếp Tục Chiêm Nghiệm")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Tôi muốn biết ngay")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Tiếp Tục Chiêm Nghiệm")').click();
-  await page.waitForTimeout(350);
-  const ending1Text = await page.locator('h1').textContent();
+  await page.waitForTimeout(500);
+  const ending1Text = await page.locator('main h1').textContent();
   report(ending1Text.includes('kiểm soát'), `Nhánh 1 đi qua thành công đến kết thúc: "${ending1Text}"`);
 
   // Path 2: Truth -> With Care -> Ending Timing
-  await page.goto(MIRROR_URL, { waitUntil: 'domcontentloaded' });
+  await loadMirrorWithHydration();
   await page.locator('button:has-text("Bước Qua Ngưỡng Cửa")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Tôi muốn hiểu điều đang bị che khuất")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Tiếp Tục Chiêm Nghiệm")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Tôi sẽ đợi đến khi")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Tiếp Tục Chiêm Nghiệm")').click();
-  await page.waitForTimeout(350);
-  const ending2Text = await page.locator('h1').textContent();
+  await page.waitForTimeout(500);
+  const ending2Text = await page.locator('main h1').textContent();
   report(ending2Text.includes('thời điểm'), `Nhánh 2 đi qua thành công đến kết thúc: "${ending2Text}"`);
 
   // Path 3: Peace -> Boundary -> Ending Boundary
-  await page.goto(MIRROR_URL, { waitUntil: 'domcontentloaded' });
+  await loadMirrorWithHydration();
   await page.locator('button:has-text("Bước Qua Ngưỡng Cửa")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Tôi cần giữ lại một khoảng bình yên")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Tiếp Tục Chiêm Nghiệm")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Giới hạn và sự ổn định của chính tôi")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Tiếp Tục Chiêm Nghiệm")').click();
-  await page.waitForTimeout(350);
-  const ending3Text = await page.locator('h1').textContent();
+  await page.waitForTimeout(500);
+  const ending3Text = await page.locator('main h1').textContent();
   report(ending3Text.includes('giới hạn'), `Nhánh 3 đi qua thành công đến kết thúc: "${ending3Text}"`);
 
   // Path 4: Peace -> Others Welfare -> Ending Responsibility
-  await page.goto(MIRROR_URL, { waitUntil: 'domcontentloaded' });
+  await loadMirrorWithHydration();
   await page.locator('button:has-text("Bước Qua Ngưỡng Cửa")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Tôi cần giữ lại một khoảng bình yên")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Tiếp Tục Chiêm Nghiệm")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Sự bình yên của người khác")').click();
-  await page.waitForTimeout(350);
+  await page.waitForTimeout(500);
   await page.locator('button:has-text("Tiếp Tục Chiêm Nghiệm")').click();
-  await page.waitForTimeout(350);
-  const ending4Text = await page.locator('h1').textContent();
+  await page.waitForTimeout(500);
+  const ending4Text = await page.locator('main h1').textContent();
   report(ending4Text.includes('trách nhiệm'), `Nhánh 4 đi qua thành công đến kết thúc: "${ending4Text}"`);
 
   await browser.close();

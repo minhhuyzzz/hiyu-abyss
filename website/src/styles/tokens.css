@@ -186,3 +186,66 @@ p, blockquote {
     scroll-behavior: auto !important;
   }
 }
+
+
+/* Hiyu Abyss V3.4 — museum scene transitions
+   Presets are authored in journey YAML; no animation framework or paid dependency. */
+.mirror-stage {
+  --mirror-shift: 18px;
+  --mirror-scale: 1.035;
+  animation: mirror-room-enter 720ms var(--ease-editorial, ease-out) both;
+  transform-origin: 50% 44%;
+  isolation: isolate;
+}
+.mirror-stage--leaving {
+  animation: mirror-room-exit 220ms ease-in both;
+  pointer-events: none;
+}
+.mirror-stage-art {
+  animation: mirror-art-arrive 1150ms cubic-bezier(.22,1,.36,1) both;
+  transform-origin: center;
+}
+.mirror-stage[data-motion="lateral-reveal"] { --mirror-shift: 34px; }
+.mirror-stage[data-motion="crossfade"] { --mirror-shift: 0px; --mirror-scale: 1.01; }
+.mirror-stage[data-motion="reveal-quiet"] { --mirror-shift: 9px; }
+.mirror-stage[data-motion="reveal-slow"] { animation-duration: 1000ms; }
+.mirror-stage[data-scene="stone-archive"] .mirror-stage-art { filter: saturate(.62) contrast(1.12) brightness(.78); }
+.mirror-stage[data-scene="paper-chamber"] .mirror-stage-art { filter: saturate(.7) sepia(.15) brightness(.9); }
+.mirror-stage[data-scene="veil"] .mirror-stage-art { filter: grayscale(.3) brightness(.7); }
+.mirror-stage[data-scene="shadow-closeup"] .mirror-stage-art { filter: contrast(1.18) brightness(.65); }
+.mirror-stage[data-scene="open-window"] .mirror-stage-art { filter: saturate(.85) brightness(.96); }
+.mirror-stage[data-scene="twin-portraits"] .mirror-stage-art { filter: saturate(.7) contrast(1.12); }
+.mirror-choice {
+  position: relative;
+  overflow: hidden;
+}
+.mirror-choice::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 2px;
+  background: var(--accent);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 340ms var(--ease-editorial, ease-out);
+}
+.mirror-choice:hover::before,
+.mirror-choice:focus-visible::before { transform: scaleY(1); }
+@keyframes mirror-room-enter {
+  from { opacity: 0; transform: translate3d(0,var(--mirror-shift),0) scale(var(--mirror-scale)); }
+  to { opacity: 1; transform: translate3d(0,0,0) scale(1); }
+}
+@keyframes mirror-room-exit {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-8px); }
+}
+@keyframes mirror-art-arrive {
+  from { transform: scale(1.07); opacity: .7; }
+  to { transform: scale(1); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mirror-stage,
+  .mirror-stage--leaving,
+  .mirror-stage-art { animation: none !important; }
+  .mirror-choice::before { transition: none !important; }
+}

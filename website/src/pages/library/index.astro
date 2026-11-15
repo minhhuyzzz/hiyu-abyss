@@ -93,16 +93,16 @@ const topics = getAllTopics();
         <span class="text-[11px] font-sans text-muted tracking-wider uppercase block">
           Lọc theo luồng tư tưởng:
         </span>
-        <div class="flex flex-wrap gap-2">
+        <div class="flex flex-nowrap sm:flex-wrap gap-2 overflow-x-auto pb-2 sm:pb-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
           <button
-            class="topic-btn active px-3.5 py-1.5 text-xs font-sans border border-accent bg-accent text-on-accent font-semibold transition-colors"
+            class="topic-btn active shrink-0 whitespace-nowrap px-3.5 py-1.5 text-xs font-sans border border-accent bg-accent text-on-accent font-semibold transition-colors"
             data-topic="ALL"
           >
             Tất Cả ({quotes.length})
           </button>
           {topics.map((t) => (
             <button
-              class="topic-btn px-3.5 py-1.5 text-xs font-sans border border-border/70 bg-surface/40 text-muted hover:text-text hover:border-accent transition-colors"
+              class="topic-btn shrink-0 whitespace-nowrap px-3.5 py-1.5 text-xs font-sans border border-border/70 bg-surface/40 text-muted hover:text-text hover:border-accent transition-colors"
               data-topic={t.code}
             >
               #{t.title} ({t.count})

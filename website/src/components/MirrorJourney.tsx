@@ -18,44 +18,67 @@ export default function MirrorJourney({ journey }: Props) {
 
   const [currentNodeId, setCurrentNodeId] = useState<string>(entryId);
   const [history, setHistory] = useState<HistoryStep[]>([]);
-  const [hoveredChoice, setHoveredChoice] = useState<string | null>(null);
+  const [isLeaving, setIsLeaving] = useState(false);
+  const transitionRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  const hasNavigatedRef = useRef(false);
   const [copiedToast, setCopiedToast] = useState(false);
   const nodeContainerRef = useRef<HTMLDivElement>(null);
 
   const currentNode: SceneNode | undefined = journey.nodes?.[currentNodeId];
 
-  // Scroll to container top smoothly when node changes
+  // Focus the newly entered scene and respect reduced-motion preferences.
   useEffect(() => {
-    if (nodeContainerRef.current) {
-      nodeContainerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    if (!hasNavigatedRef.current) return;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    nodeContainerRef.current?.scrollIntoView({
+      behavior: reduceMotion ? 'instant' : 'smooth',
+      block: 'start',
+    });
+    headingRef.current?.focus({ preventScroll: true });
   }, [currentNodeId]);
 
-  // Handle navigating forward to next node
-  const handleProceed = (targetNodeId: string, choiceId?: string) => {
-    if (!journey.nodes?.[targetNodeId]) return;
+  useEffect(() => () => {
+    if (transitionRef.current !== null) clearTimeout(transitionRef.current);
+  }, []);
 
-    setHistory((prev) => [
-      ...prev,
-      {
-        nodeId: currentNodeId,
-        choiceId,
-        nodeTitle: currentNode?.title || currentNodeId,
-      },
-    ]);
-    setCurrentNodeId(targetNodeId);
+  // The YAML graph selects the next room; an exit/entrance transition tells that story.
+  // No scores, personality inference or user answers are sent to a server.
+  const handleProceed = (targetNodeId: string, choiceId?: string) => {
+    if (isLeaving || !journey.nodes?.[targetNodeId]) return;
+    const advance = () => {
+      hasNavigatedRef.current = true;
+      setHistory((prev) => [
+        ...prev,
+        { nodeId: currentNodeId, choiceId, nodeTitle: currentNode?.title || currentNodeId },
+      ]);
+      setCurrentNodeId(targetNodeId);
+      setIsLeaving(false);
+      transitionRef.current = null;
+    };
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      advance();
+    } else {
+      setIsLeaving(true);
+      transitionRef.current = setTimeout(advance, 220);
+    }
   };
 
-  // Handle Back (Popping last step)
+  // Back restores the actual traversed branch rather than a fixed five-step flow.
   const handleBack = () => {
-    if (history.length === 0) return;
+    if (isLeaving || history.length === 0) return;
     const previous = history[history.length - 1];
+    hasNavigatedRef.current = true;
     setHistory((prev) => prev.slice(0, prev.length - 1));
     setCurrentNodeId(previous.nodeId);
   };
 
   // Handle Restart
   const handleRestart = () => {
+    if (transitionRef.current !== null) clearTimeout(transitionRef.current);
+    transitionRef.current = null;
+    hasNavigatedRef.current = true;
+    setIsLeaving(false);
     setHistory([]);
     setCurrentNodeId(entryId);
   };
@@ -68,20 +91,27 @@ export default function MirrorJourney({ journey }: Props) {
   // Keyboard navigation for choices (1, 2, Enter, Backspace/Esc)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (!currentNode) return;
+      if (!currentNode || isLeaving || e.altKey || e.metaKey || e.ctrlKey || e.repeat) return;
+      // Never hijack keyboard input from buttons, links, form fields or editable content.
+      const target = e.target as HTMLElement | null;
+      if (target?.closest('button, a, input, textarea, select, [contenteditable="true"]')) return;
 
-      if (e.key === 'Escape' || (e.key === 'Backspace' && (e.target as HTMLElement)?.tagName !== 'INPUT')) {
-        if (history.length > 0) handleBack();
+      if (e.key === 'Escape' || e.key === 'Backspace') {
+        if (history.length > 0) { e.preventDefault(); handleBack(); }
+        return;
       }
 
       if (currentNode.type === 'choice' && currentNode.choices) {
         if (e.key === '1' && currentNode.choices[0]) {
+          e.preventDefault();
           handleProceed(currentNode.choices[0].to, currentNode.choices[0].id);
         } else if (e.key === '2' && currentNode.choices[1]) {
+          e.preventDefault();
           handleProceed(currentNode.choices[1].to, currentNode.choices[1].id);
         }
       } else if (currentNode.next) {
         if (e.key === 'Enter') {
+          e.preventDefault();
           handleProceed(currentNode.next);
         }
       }
@@ -89,12 +119,16 @@ export default function MirrorJourney({ journey }: Props) {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentNodeId, history, currentNode]);
+  }, [currentNodeId, history, currentNode, isLeaving]);
 
-  const copyRefToClipboard = (text: string) => {
-    navigator.clipboard.writeText(text);
-    setCopiedToast(true);
-    setTimeout(() => setCopiedToast(false), 2500);
+  const copyRefToClipboard = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopiedToast(true);
+      setTimeout(() => setCopiedToast(false), 2500);
+    } catch {
+      setCopiedToast(false);
+    }
   };
 
   if (!isSceneGraph || !currentNode) {
@@ -114,6 +148,8 @@ export default function MirrorJourney({ journey }: Props) {
   const artImage = currentNode.artwork_ref || journey.artwork_url || '/images/themes/theme_11/slide_1_establishing.jpg';
   const isEnding = currentNode.type === 'ending';
   const pathDepth = history.length + 1;
+  const scenePreset = currentNode.scenePreset || 'gallery-threshold';
+  const motionPreset = currentNode.motionPreset || 'reveal-quiet';
 
   return (
     <div ref={nodeContainerRef} className="relative w-full max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-12">
@@ -163,8 +199,27 @@ export default function MirrorJourney({ journey }: Props) {
         </div>
       </div>
 
-      {/* Main Scene Presentation Area */}
-      <div className="flex flex-col gap-8 sm:gap-10">
+      {/* Trace the actual route taken, without revealing endings or assigning personality labels. */}
+      {history.length > 0 && (
+        <nav aria-label="Các căn phòng đã đi qua" className="flex items-center gap-2 mb-7 overflow-x-auto pb-2 text-[11px] font-sans text-muted">
+          <span className="shrink-0 text-accent uppercase tracking-wider">Lối đã qua</span>
+          {history.slice(-4).map((stop, index) => (
+            <React.Fragment key={index}>
+              <span aria-hidden="true" className="opacity-50">/</span>
+              <span className="shrink-0">{stop.nodeTitle}</span>
+            </React.Fragment>
+          ))}
+        </nav>
+      )}
+
+      {/* Scene presets and motion presets are part of the authored narrative. */}
+      <div
+        key={currentNodeId}
+        data-scene={scenePreset}
+        data-motion={motionPreset}
+        className={`mirror-stage flex flex-col gap-8 sm:gap-10 ${isLeaving ? 'mirror-stage--leaving' : ''}`}
+        aria-busy={isLeaving}
+      >
         
         {/* Artwork Chamber Frame (when artwork is present) */}
         {artImage && (
@@ -172,7 +227,7 @@ export default function MirrorJourney({ journey }: Props) {
             <img
               src={artImage}
               alt={currentNode.title}
-              className="w-full h-full object-cover filter brightness-[0.85] contrast-[1.05]"
+              className="mirror-stage-art w-full h-full object-cover filter brightness-[0.85] contrast-[1.05]"
               loading="eager"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/30 to-transparent" />
@@ -195,7 +250,11 @@ export default function MirrorJourney({ journey }: Props) {
               {currentNode.type === 'counterpoint' && 'PHẢN ĐỀ TỰ VẤN'}
               {currentNode.type === 'ending' && 'KẾT THÚC MỞ'}
             </span>
-            <h1 className="font-display text-2xl sm:text-4xl md:text-5xl text-text font-medium leading-[1.2] text-balance">
+            <h1
+              ref={headingRef}
+              tabIndex={-1}
+              className="font-display text-2xl sm:text-4xl md:text-5xl text-text font-medium leading-[1.2] text-balance focus:outline-none"
+            >
               {currentNode.title}
             </h1>
           </div>
@@ -239,10 +298,9 @@ export default function MirrorJourney({ journey }: Props) {
                   <button
                     key={choice.id}
                     onClick={() => handleProceed(choice.to, choice.id)}
-                    onMouseEnter={() => setHoveredChoice(choice.id)}
-                    onMouseLeave={() => setHoveredChoice(null)}
                     type="button"
-                    className="p-6 text-left border border-border/80 hover:border-accent bg-surface/40 hover:bg-surface transition-all duration-300 flex flex-col justify-between gap-4 group min-h-[140px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                    disabled={isLeaving}
+                    className="mirror-choice p-6 text-left border border-border/80 hover:border-accent bg-surface/40 hover:bg-surface transition-all duration-300 flex flex-col justify-between gap-4 group min-h-[140px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent disabled:opacity-60"
                   >
                     <div className="flex items-center justify-between text-xs font-sans text-muted">
                       <span className="w-6 h-6 border border-border/80 rounded flex items-center justify-center font-semibold text-accent group-hover:border-accent">

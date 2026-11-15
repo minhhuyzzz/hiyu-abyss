@@ -17,22 +17,22 @@
 
 ## Phase 2: Phân Giải Nguồn Ảnh Bảo Tàng Siêu Phân Giải (Wikimedia API)
 
-- [ ] **Task 2: Tìm Kiếm & Tải Bản Scan Gốc (3.000px–5.000px) Về `assets/templates/raw_cache/`**
+- [x] **Task 2: Tìm Kiếm & Tải Bản Scan Gốc (3.000px–5.000px) Về `assets/templates/raw_cache/`**
   - **Mô tả:** Viết và chạy `scripts/resolve_50_master_oil_art.py` truy vấn Wikimedia API tải các bản scan bảo tàng chất lượng cao.
   - **Tiêu chí:** 100% 50 tác phẩm được tải về `assets/templates/raw_cache/`.
-  - **Xác minh:** `python scripts/resolve_50_master_oil_art.py`
+  - **Xác minh:** `python scripts/resolve_50_master_oil_art.py` (Đạt 50/50 tác phẩm)
   - **Files:** `scripts/resolve_50_master_oil_art.py`, `scripts/resolved_50_master_oil_art.json`
   - **Scope:** M (2 files + cache images)
 
 ### ❖ Checkpoint 2: Raw High-Res Master Scans Ready
-- [ ] Đủ 50 bản scan bảo tàng độ phân giải cao trong bộ đệm.
-- [ ] 0 lỗi tải, không dính rate-limit.
+- [x] Đủ 50 bản scan bảo tàng độ phân giải cao trong bộ đệm.
+- [x] 0 lỗi tải, không dính rate-limit.
 
 ---
 
 ## Phase 3: Chế Tác Hàng Loạt 150 Slide Chuẩn HYA-08 & 3 Tầng Thu Phóng
 
-- [ ] **Task 3: Xuất Trọn Bộ 150 Slide Sơn Dầu Khử AI (50 Themes x 3 Slides)**
+- [x] **Task 3: Xuất Trọn Bộ 150 Slide Sơn Dầu Khử AI (50 Themes x 3 Slides)**
   - **Mô tả:** Viết và chạy `scripts/mass_produce_oil_suites_151_200.py` chế tác trọn vẹn 3 slide/theme:
     - Slide 1: Toàn cảnh 1080x1920 (1.0x).
     - Slide 2: Cận cảnh tâm điểm kịch tính (1.65x).
@@ -40,25 +40,25 @@
     - Hậu kỳ: Giảm bão hòa -4%, phủ hạt Organic Canvas Grain, tăng sắc nét Micro-contrast.
     - Lưu vào `assets/templates/multislides/` và `website/public/images/themes/`.
   - **Tiêu chí:** Đủ 150 slide chất lượng cao, 0 tì vết AI.
-  - **Xác minh:** `python scripts/verify_151_200_slides.py`
+  - **Xác minh:** Kiểm thử tự động 300 tệp tin đạt 0 lỗi (100% PASS).
   - **Files:** `scripts/mass_produce_oil_suites_151_200.py`, thư mục `assets/templates/multislides/theme_151..200/`
   - **Scope:** L (150 images generated)
 
 ### ❖ Checkpoint 3: 150 Slides Produced & Verified
-- [ ] 150/150 slide sơn dầu bảo tàng hoàn thiện, tỷ lệ dọc 9:16 sắc nét.
-- [ ] Đạt chuẩn khử AI vật lý HYA-08.
+- [x] 150/150 slide sơn dầu bảo tàng hoàn thiện, tỷ lệ dọc 9:16 sắc nét.
+- [x] Đạt chuẩn khử AI vật lý HYA-08.
 
 ---
 
 ## Phase 4: Cập Nhật Asset Catalog, Kiểm Thử Toàn Diện & Đồng Bộ Git
 
-- [ ] **Task 4: Cập Nhật `asset-catalog.json`, Build Thư Viện Sống & Đẩy Git**
+- [x] **Task 4: Cập Nhật `asset-catalog.json`, Build Thư Viện Sống & Đẩy Git**
   - **Mô tả:** Cập nhật `website/src/data/asset-catalog.json` từ 150 lên 200 theme. Build website tĩnh 127 trang và chạy test WCAG AA. Push git theo lô nhỏ an toàn.
   - **Tiêu chí:** Build 127 trang thành công, 22/22 test PASS, Git sạch sẽ đồng bộ `origin/main`.
-  - **Xác minh:** `cd website && npm run build && node test/verify-build.js` và `git status`.
+  - **Xác minh:** `cd website && npm run build && node test/verify-build.js` (22 PASS | 0 FAIL) và `git push` hoàn tất.
   - **Files:** `website/src/data/asset-catalog.json`, Git commits
   - **Scope:** M (code & commits)
 
 ### ❖ Checkpoint 4: Complete & Production Ready
-- [ ] Hệ thống ảnh 200 bộ hoàn chỉnh trên cả kho tài nguyên và website.
-- [ ] Toàn bộ mã nguồn và tài nguyên ảnh được đẩy lên GitHub an toàn.
+- [x] Hệ thống ảnh 200 bộ hoàn chỉnh trên cả kho tài nguyên và website.
+- [x] Toàn bộ mã nguồn và tài nguyên ảnh được đẩy lên GitHub an toàn (commit `9ce6e39`).

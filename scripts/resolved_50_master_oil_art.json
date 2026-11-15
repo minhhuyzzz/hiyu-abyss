@@ -1,0 +1,452 @@
+{
+  "theme_151": {
+    "theme_id": "theme_151",
+    "title": "File:The Penitent Magdalen MET DT7252.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/The_Penitent_Magdalen_MET_DT7252.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "The Penitent Magdalen MET Georges de La Tour",
+    "artist": "Georges de La Tour",
+    "artwork_title": "The Penitent Magdalen",
+    "cache_file": "assets/templates/raw_cache\\theme_151.jpg"
+  },
+  "theme_152": {
+    "theme_id": "theme_152",
+    "title": "File:Narcissus-Caravaggio (1594-96) edited.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Narcissus-Caravaggio_%281594-96%29_edited.jpg/3840px-Narcissus-Caravaggio_%281594-96%29_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Caravaggio Narcissus Palazzo Barberini",
+    "artist": "Caravaggio",
+    "artwork_title": "Narcissus",
+    "cache_file": "assets/templates/raw_cache\\theme_152.jpg"
+  },
+  "theme_153": {
+    "theme_id": "theme_153",
+    "title": "File:Caravaggio Cardsharps Kimbell detail.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Caravaggio_Cardsharps_Kimbell_detail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Caravaggio The Cardsharps Kimbell",
+    "artist": "Caravaggio",
+    "artwork_title": "The Cardsharps",
+    "cache_file": "assets/templates/raw_cache\\theme_153.jpg"
+  },
+  "theme_154": {
+    "theme_id": "theme_154",
+    "title": "File:John William Waterhouse - La Belle Dame sans Merci (1893).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/John_William_Waterhouse_-_La_Belle_Dame_sans_Merci_%281893%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "John William Waterhouse La Belle Dame sans Merci 1893",
+    "artist": "John William Waterhouse",
+    "artwork_title": "La Belle Dame sans Merci",
+    "cache_file": "assets/templates/raw_cache\\theme_154.jpg"
+  },
+  "theme_155": {
+    "theme_id": "theme_155",
+    "title": "File:Vilhelm Hammershoi - Interieur mit Rueckenansicht einer Frau - 1903-1904 - Randers Kunstmuseum.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Vilhelm_Hammershoi_-_Interieur_mit_Rueckenansicht_einer_Frau_-_1903-1904_-_Randers_Kunstmuseum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Vilhelm Hammershoi Interieur mit Rueckenansicht einer Frau",
+    "artist": "Vilhelm Hammershøi",
+    "artwork_title": "Interior with Young Woman seen from the Back",
+    "cache_file": "assets/templates/raw_cache\\theme_155.jpg"
+  },
+  "theme_156": {
+    "theme_id": "theme_156",
+    "title": "File:Massysm Quentin — The Moneylender and his Wife — 1514.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Massysm_Quentin_%E2%80%94_The_Moneylender_and_his_Wife_%E2%80%94_1514.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Quentin Matsys The Moneylender and his Wife Louvre",
+    "artist": "Quentin Matsys",
+    "artwork_title": "The Moneylender and his Wife",
+    "cache_file": "assets/templates/raw_cache\\theme_156.jpg"
+  },
+  "theme_157": {
+    "theme_id": "theme_157",
+    "title": "File:Francisco de Goya, Saturno devorando a su hijo (1819-1823).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Francisco Goya Saturn Devouring His Son Prado",
+    "artist": "Francisco Goya",
+    "artwork_title": "Saturn Devouring His Son",
+    "cache_file": "assets/templates/raw_cache\\theme_157.jpg"
+  },
+  "theme_158": {
+    "theme_id": "theme_158",
+    "title": "File:Caspar David Friedrich - Monk by the Sea.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Caspar_David_Friedrich_-_Monk_by_the_Sea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Caspar David Friedrich The Monk by the Sea Alte Nationalgalerie",
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "The Monk by the Sea",
+    "cache_file": "assets/templates/raw_cache\\theme_158.jpg"
+  },
+  "theme_159": {
+    "theme_id": "theme_159",
+    "title": "File:Ilia Efimovich Repin (1844-1930) - Volga Boatmen (1870-1873).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Ilia_Efimovich_Repin_%281844-1930%29_-_Volga_Boatmen_%281870-1873%29.jpg/3840px-Ilia_Efimovich_Repin_%281844-1930%29_-_Volga_Boatmen_%281870-1873%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Ilya Repin Barge Haulers on the Volga Russian Museum",
+    "artist": "Ilya Repin",
+    "artwork_title": "Barge Haulers on the Volga",
+    "cache_file": "assets/templates/raw_cache\\theme_159.jpg"
+  },
+  "theme_160": {
+    "theme_id": "theme_160",
+    "title": "File:Caspar David Friedrich - Wanderer above the sea of fog.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Caspar David Friedrich Wanderer above the Sea of Fog Kunsthalle Hamburg",
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "Wanderer above the Sea of Fog",
+    "cache_file": "assets/templates/raw_cache\\theme_160.jpg"
+  },
+  "theme_161": {
+    "theme_id": "theme_161",
+    "title": "File:Honore Daumier The Uprising.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Honore_Daumier_The_Uprising.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Honore Daumier The Uprising Phillips Collection",
+    "artist": "Honoré Daumier",
+    "artwork_title": "The Uprising (L",
+    "cache_file": "assets/templates/raw_cache\\theme_161.jpg"
+  },
+  "theme_162": {
+    "theme_id": "theme_162",
+    "title": "File:El Tres de Mayo, by Francisco de Goya, from Prado thin black margin.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg/3840px-El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Francisco Goya The Third of May 1808 Prado",
+    "artist": "Francisco Goya",
+    "artwork_title": "The Third of May 1808",
+    "cache_file": "assets/templates/raw_cache\\theme_162.jpg"
+  },
+  "theme_163": {
+    "theme_id": "theme_163",
+    "title": "File:Rembrandt - The Anatomy Lesson of Dr Nicolaes Tulp.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Rembrandt_-_The_Anatomy_Lesson_of_Dr_Nicolaes_Tulp.jpg/3840px-Rembrandt_-_The_Anatomy_Lesson_of_Dr_Nicolaes_Tulp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Rembrandt The Anatomy Lesson of Dr Nicolaes Tulp Mauritshuis",
+    "artist": "Rembrandt",
+    "artwork_title": "The Anatomy Lesson of Dr. Nicolaes Tulp",
+    "cache_file": "assets/templates/raw_cache\\theme_163.jpg"
+  },
+  "theme_164": {
+    "theme_id": "theme_164",
+    "title": "File:Pieter Bruegel the Elder (1568) The Blind Leading the Blind.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Pieter_Bruegel_the_Elder_%281568%29_The_Blind_Leading_the_Blind.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Pieter Bruegel the Elder The Blind Leading the Blind Capodimonte",
+    "artist": "Pieter Bruegel the Elder",
+    "artwork_title": "The Blind Leading the Blind",
+    "cache_file": "assets/templates/raw_cache\\theme_164.jpg"
+  },
+  "theme_165": {
+    "theme_id": "theme_165",
+    "title": "File:Slave-ship.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Slave-ship.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "J.M.W. Turner The Slave Ship MFA Boston",
+    "artist": "J.M.W. Turner",
+    "artwork_title": "The Slave Ship",
+    "cache_file": "assets/templates/raw_cache\\theme_165.jpg"
+  },
+  "theme_166": {
+    "theme_id": "theme_166",
+    "title": "File:David - The Death of Socrates.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/David_-_The_Death_of_Socrates.jpg/3840px-David_-_The_Death_of_Socrates.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Jacques-Louis David The Death of Socrates MET",
+    "artist": "Jacques-Louis David",
+    "artwork_title": "The Death of Socrates",
+    "cache_file": "assets/templates/raw_cache\\theme_166.jpg"
+  },
+  "theme_167": {
+    "theme_id": "theme_167",
+    "title": "File:Jan Matejko, Stańczyk.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Jan_Matejko%2C_Sta%C5%84czyk.jpg/3840px-Jan_Matejko%2C_Sta%C5%84czyk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Jan Matejko Stanczyk National Museum Warsaw",
+    "artist": "Jan Matejko",
+    "artwork_title": "Stańczyk",
+    "cache_file": "assets/templates/raw_cache\\theme_167.jpg"
+  },
+  "theme_168": {
+    "theme_id": "theme_168",
+    "title": "File:Edvard Munch - Evening on Karl Johan Street (1892).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Edvard_Munch_-_Evening_on_Karl_Johan_Street_%281892%29.jpg/3840px-Edvard_Munch_-_Evening_on_Karl_Johan_Street_%281892%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Edvard Munch Evening on Karl Johan Street Bergen",
+    "artist": "Edvard Munch",
+    "artwork_title": "Evening on Karl Johan Street",
+    "cache_file": "assets/templates/raw_cache\\theme_168.jpg"
+  },
+  "theme_169": {
+    "theme_id": "theme_169",
+    "title": "File:Christ's Entry into Brussels in 1889.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Christ%27s_Entry_into_Brussels_in_1889.jpg/3840px-Christ%27s_Entry_into_Brussels_in_1889.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "James Ensor Christ's Entry into Brussels Getty",
+    "artist": "James Ensor",
+    "artwork_title": "Christ",
+    "cache_file": "assets/templates/raw_cache\\theme_169.jpg"
+  },
+  "theme_170": {
+    "theme_id": "theme_170",
+    "title": "File:Friedrich - Two Men Contemplating the Moon.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Friedrich_-_Two_Men_Contemplating_the_Moon.jpg/3840px-Friedrich_-_Two_Men_Contemplating_the_Moon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Caspar David Friedrich Two Men Contemplating the Moon MET",
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "Two Men Contemplating the Moon",
+    "cache_file": "assets/templates/raw_cache\\theme_170.jpg"
+  },
+  "theme_171": {
+    "theme_id": "theme_171",
+    "title": "File:The Thinker detail of the Gates of Hell Rodin musée Rodin S.01304 Paris.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/The_Thinker_detail_of_the_Gates_of_Hell_Rodin_mus%C3%A9e_Rodin_S.01304_Paris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Auguste Rodin The Thinker Rodin Museum",
+    "artist": "Auguste Rodin",
+    "artwork_title": "The Thinker",
+    "cache_file": "assets/templates/raw_cache\\theme_171.jpg"
+  },
+  "theme_172": {
+    "theme_id": "theme_172",
+    "title": "File:William Blake - Europe a Prophecy - Creation of the World (1794, mirrored background, 1920 x 1080 px).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/William_Blake_-_Europe_a_Prophecy_-_Creation_of_the_World_%281794%2C_mirrored_background%2C_1920_x_1080_px%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "William Blake The Ancient of Days British Museum",
+    "artist": "William Blake",
+    "artwork_title": "The Ancient of Days",
+    "cache_file": "assets/templates/raw_cache\\theme_172.jpg"
+  },
+  "theme_173": {
+    "theme_id": "theme_173",
+    "title": "File:Edouard Manet, A Bar at the Folies-Bergère.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Edouard_Manet%2C_A_Bar_at_the_Folies-Berg%C3%A8re.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Edouard Manet A Bar at the Folies-Bergere Courtauld",
+    "artist": "Édouard Manet",
+    "artwork_title": "A Bar at the Folies-Bergère",
+    "cache_file": "assets/templates/raw_cache\\theme_173.jpg"
+  },
+  "theme_174": {
+    "theme_id": "theme_174",
+    "title": "File:Edvard Munch, 1893, The Scream, oil, tempera and pastel on cardboard, 91 x 73 cm, National Gallery of Norway.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Edvard Munch The Scream National Gallery Oslo",
+    "artist": "Edvard Munch",
+    "artwork_title": "The Scream",
+    "cache_file": "assets/templates/raw_cache\\theme_174.jpg"
+  },
+  "theme_175": {
+    "theme_id": "theme_175",
+    "title": "File:Fernand Léger, 1919, The City (La Ville), oil on canvas, 231.1 x 298.4 cm, Philadelphia Museum of Art.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Fernand_L%C3%A9ger%2C_1919%2C_The_City_%28La_Ville%29%2C_oil_on_canvas%2C_231.1_x_298.4_cm%2C_Philadelphia_Museum_of_Art.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Fernand Leger The City Philadelphia Museum of Art",
+    "artist": "Fernand Léger",
+    "artwork_title": "The City",
+    "cache_file": "assets/templates/raw_cache\\theme_175.jpg"
+  },
+  "theme_176": {
+    "theme_id": "theme_176",
+    "title": "File:The Garden of Earthly Delights by Bosch High Resolution.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg/3840px-The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Hieronymus Bosch The Garden of Earthly Delights Prado",
+    "artist": "Hieronymus Bosch",
+    "artwork_title": "The Garden of Earthly Delights",
+    "cache_file": "assets/templates/raw_cache\\theme_176.jpg"
+  },
+  "theme_177": {
+    "theme_id": "theme_177",
+    "title": "File:Albrecht Dürer - Melencolia I - Google Art Project (427760).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Albrecht_D%C3%BCrer_-_Melencolia_I_-_Google_Art_Project_%28427760%29.jpg/3840px-Albrecht_D%C3%BCrer_-_Melencolia_I_-_Google_Art_Project_%28427760%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Albrecht Durer Melencolia I engraving",
+    "artist": "Albrecht Dürer",
+    "artwork_title": "Melencolia I",
+    "cache_file": "assets/templates/raw_cache\\theme_177.jpg"
+  },
+  "theme_178": {
+    "theme_id": "theme_178",
+    "title": "File:Caspar David Friedrich - Cross in the Mountains (Tetschen Altar) - WGA08237.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Caspar_David_Friedrich_-_Cross_in_the_Mountains_%28Tetschen_Altar%29_-_WGA08237.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Caspar David Friedrich Tetschen Altar Cross in the Mountains",
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "The Cross into the Mountains",
+    "cache_file": "assets/templates/raw_cache\\theme_178.jpg"
+  },
+  "theme_179": {
+    "theme_id": "theme_179",
+    "title": "File:Dargenta & Salvador Dali The persistance of Memory.png",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Dargenta_%26_Salvador_Dali_The_persistance_of_Memory.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Salvador Dali The Persistence of Memory MoMA",
+    "artist": "Salvador Dalí",
+    "artwork_title": "The Persistence of Memory",
+    "cache_file": "assets/templates/raw_cache\\theme_179.jpg"
+  },
+  "theme_180": {
+    "theme_id": "theme_180",
+    "title": "File:Eugène Delacroix - La liberté guidant le peuple.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Eugene Delacroix Liberty Leading the People Louvre",
+    "artist": "Eugène Delacroix",
+    "artwork_title": "Liberty Leading the People",
+    "cache_file": "assets/templates/raw_cache\\theme_180.jpg"
+  },
+  "theme_181": {
+    "theme_id": "theme_181",
+    "title": "File:Der ungläubige Thomas - Michelangelo Merisi, named Caravaggio.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Der_ungl%C3%A4ubige_Thomas_-_Michelangelo_Merisi%2C_named_Caravaggio.jpg/3840px-Der_ungl%C3%A4ubige_Thomas_-_Michelangelo_Merisi%2C_named_Caravaggio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Caravaggio The Incredulity of Saint Thomas Sanssouci",
+    "artist": "Caravaggio",
+    "artwork_title": "The Incredulity of Saint Thomas",
+    "cache_file": "assets/templates/raw_cache\\theme_181.jpg"
+  },
+  "theme_182": {
+    "theme_id": "theme_182",
+    "title": "File:William Hogarth - A Rake's Progress - Tavern Scene.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/William_Hogarth_-_A_Rake%27s_Progress_-_Tavern_Scene.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "William Hogarth The Rake's Progress Soane",
+    "artist": "William Hogarth",
+    "artwork_title": "The Rake",
+    "cache_file": "assets/templates/raw_cache\\theme_182.jpg"
+  },
+  "theme_183": {
+    "theme_id": "theme_183",
+    "title": "File:Las Meninas, by Diego Velázquez, from Prado in Google Earth.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg/3840px-Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Diego Velazquez Las Meninas Prado",
+    "artist": "Diego Velázquez",
+    "artwork_title": "Las Meninas",
+    "cache_file": "assets/templates/raw_cache\\theme_183.jpg"
+  },
+  "theme_184": {
+    "theme_id": "theme_184",
+    "title": "File:John Everett Millais - Ophelia - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg/3840px-John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "John Everett Millais Ophelia Tate Britain",
+    "artist": "John Everett Millais",
+    "artwork_title": "Ophelia",
+    "cache_file": "assets/templates/raw_cache\\theme_184.jpg"
+  },
+  "theme_185": {
+    "theme_id": "theme_185",
+    "title": "File:Judith Beheading Holofernes - Caravaggio.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Judith_Beheading_Holofernes_-_Caravaggio.jpg/3840px-Judith_Beheading_Holofernes_-_Caravaggio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Artemisia Gentileschi Judith Slaying Holofernes Uffizi",
+    "artist": "Artemisia Gentileschi",
+    "artwork_title": "Judith Slaying Holofernes",
+    "cache_file": "assets/templates/raw_cache\\theme_185.jpg"
+  },
+  "theme_186": {
+    "theme_id": "theme_186",
+    "title": "File:Rembrandt Self-portrait (Kenwood).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Rembrandt_Self-portrait_%28Kenwood%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Rembrandt Self-Portrait with Two Circles Kenwood",
+    "artist": "Rembrandt",
+    "artwork_title": "Self-Portrait with Two Circles",
+    "cache_file": "assets/templates/raw_cache\\theme_186.jpg"
+  },
+  "theme_187": {
+    "theme_id": "theme_187",
+    "title": "File:Johannes Vermeer - The Astronomer - 1668.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Johannes_Vermeer_-_The_Astronomer_-_1668.jpg/3840px-Johannes_Vermeer_-_The_Astronomer_-_1668.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Johannes Vermeer The Astronomer Louvre",
+    "artist": "Johannes Vermeer",
+    "artwork_title": "The Astronomer",
+    "cache_file": "assets/templates/raw_cache\\theme_187.jpg"
+  },
+  "theme_188": {
+    "theme_id": "theme_188",
+    "title": "File:Rembrandt Harmensz van Rijn - Return of the Prodigal Son - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg/3840px-Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Rembrandt The Return of the Prodigal Son Hermitage",
+    "artist": "Rembrandt",
+    "artwork_title": "The Return of the Prodigal Son",
+    "cache_file": "assets/templates/raw_cache\\theme_188.jpg"
+  },
+  "theme_189": {
+    "theme_id": "theme_189",
+    "title": "File:Carl Spitzweg 021-detail.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Carl_Spitzweg_021-detail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Carl Spitzweg The Bookworm Neue Pinakothek",
+    "artist": "Carl Spitzweg",
+    "artwork_title": "The Bookworm",
+    "cache_file": "assets/templates/raw_cache\\theme_189.jpg"
+  },
+  "theme_190": {
+    "theme_id": "theme_190",
+    "title": "File:Titian - Venus with a Mirror - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Titian_-_Venus_with_a_Mirror_-_Google_Art_Project.jpg/3840px-Titian_-_Venus_with_a_Mirror_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Titian Venus with a Mirror National Gallery of Art",
+    "artist": "Titian",
+    "artwork_title": "Venus with a Mirror",
+    "cache_file": "assets/templates/raw_cache\\theme_190.jpg"
+  },
+  "theme_198": {
+    "theme_id": "theme_198",
+    "title": "File:Gustave Courbet - The Wave - WGA5517.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Gustave_Courbet_-_The_Wave_-_WGA5517.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Gustave Courbet The Wave",
+    "artist": "Gustave Courbet",
+    "artwork_title": "The Wave",
+    "cache_file": "assets/templates/raw_cache\\theme_198.jpg"
+  },
+  "theme_199": {
+    "theme_id": "theme_199",
+    "title": "File:The Colossus, Francisco de Goya.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/The_Colossus%2C_Francisco_de_Goya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "query": "Francisco Goya The Colossus",
+    "artist": "Francisco Goya",
+    "artwork_title": "The Colossus",
+    "cache_file": "assets/templates/raw_cache\\theme_199.jpg"
+  },
+  "theme_200": {
+    "theme_id": "theme_200",
+    "title": "File:Caspar David Friedrich - Die Lebensstufen (ca. 1834).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Caspar_David_Friedrich_-_Die_Lebensstufen_%28ca._1834%29.jpg/3840px-Caspar_David_Friedrich_-_Die_Lebensstufen_%28ca._1834%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "query": "Caspar David Friedrich The Stages of Life",
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "The Stages of Life",
+    "cache_file": "assets/templates/raw_cache\\theme_200.jpg"
+  },
+  "theme_191": {
+    "theme_id": "theme_191",
+    "title": "File:Titian - Sisyphus.jpg",
+    "url": "https://commons.wikimedia.org/wiki/theme_191",
+    "query": "Titian Sisyphus",
+    "artist": "Titian",
+    "artwork_title": "Sisyphus",
+    "cache_file": "assets/templates/raw_cache\\theme_191.jpg"
+  },
+  "theme_192": {
+    "theme_id": "theme_192",
+    "title": "File:Vincent van Gogh - Prisoners.jpg",
+    "url": "https://commons.wikimedia.org/wiki/theme_192",
+    "query": "Vincent van Gogh Prisoners",
+    "artist": "Vincent van Gogh",
+    "artwork_title": "Prisoners",
+    "cache_file": "assets/templates/raw_cache\\theme_192.jpg"
+  },
+  "theme_193": {
+    "theme_id": "theme_193",
+    "title": "File:Odilon Redon - The Cyclops.jpg",
+    "url": "https://commons.wikimedia.org/wiki/theme_193",
+    "query": "Odilon Redon The Cyclops",
+    "artist": "Odilon Redon",
+    "artwork_title": "The Cyclops",
+    "cache_file": "assets/templates/raw_cache\\theme_193.jpg"
+  },
+  "theme_194": {
+    "theme_id": "theme_194",
+    "title": "File:Caspar David Friedrich - The Sea of Ice.jpg",
+    "url": "https://commons.wikimedia.org/wiki/theme_194",
+    "query": "Caspar David Friedrich The Sea of Ice",
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "The Sea of Ice",
+    "cache_file": "assets/templates/raw_cache\\theme_194.jpg"
+  },
+  "theme_195": {
+    "theme_id": "theme_195",
+    "title": "File:Claude Monet - Impression, Sunrise.jpg",
+    "url": "https://commons.wikimedia.org/wiki/theme_195",
+    "query": "Claude Monet Impression, Sunrise",
+    "artist": "Claude Monet",
+    "artwork_title": "Impression, Sunrise",
+    "cache_file": "assets/templates/raw_cache\\theme_195.jpg"
+  },
+  "theme_196": {
+    "theme_id": "theme_196",
+    "title": "File:Rembrandt - Jeremiah Lamenting the Destruction of Jerusalem.jpg",
+    "url": "https://commons.wikimedia.org/wiki/theme_196",
+    "query": "Rembrandt Jeremiah Lamenting the Destruction of Jerusalem",
+    "artist": "Rembrandt",
+    "artwork_title": "Jeremiah Lamenting the Destruction of Jerusalem",
+    "cache_file": "assets/templates/raw_cache\\theme_196.jpg"
+  },
+  "theme_197": {
+    "theme_id": "theme_197",
+    "title": "File:J.M.W. Turner - Snow Storm: Steam-Boat off a Harbour.jpg",
+    "url": "https://commons.wikimedia.org/wiki/theme_197",
+    "query": "J.M.W. Turner Snow Storm: Steam-Boat off a Harbour",
+    "artist": "J.M.W. Turner",
+    "artwork_title": "Snow Storm: Steam-Boat off a Harbour",
+    "cache_file": "assets/templates/raw_cache\\theme_197.jpg"
+  }
+}

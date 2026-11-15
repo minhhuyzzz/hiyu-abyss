@@ -1,0 +1,1752 @@
+{
+  "TXT-0151": {
+    "stt": 151,
+    "theme_id": "theme_151",
+    "title": "[Bản Chất Của Gaslighting] Kẻ thao túng không cãi lý với bạn, họ hủy hoại niềm tin vào nhận thức của chính bạn.",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "author": "Kate Abramson",
+    "slide_format": "Carousel 3 trang",
+    "artist": "Georges de La Tour",
+    "artwork_title": "The Penitent Magdalen",
+    "concept": "Ánh nến soi rọi sự thật trong bóng tối mịt mù",
+    "wikimedia_query": "Georges de La Tour The Penitent Magdalen",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Penitent Magdalen' của Georges de La Tour: Ánh nến soi rọi sự thật trong bóng tối mịt mù",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Penitent Magdalen' by Georges de La Tour. Ánh nến soi rọi sự thật trong bóng tối mịt mù. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Penitent Magdalen'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Penitent Magdalen' by Georges de La Tour. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Penitent Magdalen'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Penitent Magdalen' by Georges de La Tour. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0152": {
+    "stt": 152,
+    "theme_id": "theme_152",
+    "title": "[Ái Kỷ Ngấm Ngầm] Kẻ ái kỷ nguy hiểm nhất không phải kẻ khoe khoang, mà là kẻ thích đóng vai nạn nhân.",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "author": "Delroy L. Paulhus & Kevin M. Williams",
+    "slide_format": "Carousel 2 trang",
+    "artist": "Caravaggio",
+    "artwork_title": "Narcissus",
+    "concept": "Bản ngã say sưa soi bóng mình bên làn nước tối",
+    "wikimedia_query": "Caravaggio Narcissus",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Narcissus' của Caravaggio: Bản ngã say sưa soi bóng mình bên làn nước tối",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Narcissus' by Caravaggio. Bản ngã say sưa soi bóng mình bên làn nước tối. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Narcissus'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Narcissus' by Caravaggio. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Narcissus'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Narcissus' by Caravaggio. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0153": {
+    "stt": 153,
+    "theme_id": "theme_153",
+    "title": "[Cái Bẫy Machiavellian] Đừng để lòng tốt của bạn trở thành công cụ miễn phí cho kẻ cơ hội.",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "author": "Richard Christie & Florence Geis",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Caravaggio",
+    "artwork_title": "The Cardsharps",
+    "concept": "Những kẻ gian lận bài trong ánh sáng lừa lọc",
+    "wikimedia_query": "Caravaggio The Cardsharps",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Cardsharps' của Caravaggio: Những kẻ gian lận bài trong ánh sáng lừa lọc",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Cardsharps' by Caravaggio. Những kẻ gian lận bài trong ánh sáng lừa lọc. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Cardsharps'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Cardsharps' by Caravaggio. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Cardsharps'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Cardsharps' by Caravaggio. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0154": {
+    "stt": 154,
+    "theme_id": "theme_154",
+    "title": "[Chiêu Bài Love Bombing] Cơn mưa quà tặng và sự nồng nhiệt bất thường luôn đi kèm một cái giá cắt cổ.",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "author": "Delroy L. Paulhus & Kevin M. Williams",
+    "slide_format": "Carousel 3 trang",
+    "artist": "John William Waterhouse",
+    "artwork_title": "La Belle Dame sans Merci",
+    "concept": "Nàng tiên quyến rũ trói buộc chàng hiệp sĩ si tình",
+    "wikimedia_query": "John William Waterhouse La Belle Dame sans Merci",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'La Belle Dame sans Merci' của John William Waterhouse: Nàng tiên quyến rũ trói buộc chàng hiệp sĩ si tình",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'La Belle Dame sans Merci' by John William Waterhouse. Nàng tiên quyến rũ trói buộc chàng hiệp sĩ si tình. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'La Belle Dame sans Merci'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'La Belle Dame sans Merci' by John William Waterhouse. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'La Belle Dame sans Merci'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'La Belle Dame sans Merci' by John William Waterhouse. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0155": {
+    "stt": 155,
+    "theme_id": "theme_155",
+    "title": "[Bạo Lực Im Lặng] Silent Treatment không phải là sự bình yên, đó là sự trừng phạt tàn nhẫn nhất.",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "author": "George K. Simon",
+    "slide_format": "Carousel 2 trang",
+    "artist": "Vilhelm Hammershøi",
+    "artwork_title": "Interior with Young Woman seen from the Back",
+    "concept": "Sự câm lặng lạnh lẽo trong căn phòng trống",
+    "wikimedia_query": "Vilhelm Hammershøi Interior with Young Woman seen from the Back",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Interior with Young Woman seen from the Back' của Vilhelm Hammershøi: Sự câm lặng lạnh lẽo trong căn phòng trống",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Interior with Young Woman seen from the Back' by Vilhelm Hammershøi. Sự câm lặng lạnh lẽo trong căn phòng trống. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Interior with Young Woman seen from the Back'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Interior with Young Woman seen from the Back' by Vilhelm Hammershøi. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Interior with Young Woman seen from the Back'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Interior with Young Woman seen from the Back' by Vilhelm Hammershøi. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0156": {
+    "stt": 156,
+    "theme_id": "theme_156",
+    "title": "[Nợ Ân Tình Độc Hại] Một ân huệ kèm theo điều kiện ngầm không phải là quà tặng, đó là chiếc xích xiềng.",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "author": "Niccolò Machiavelli",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Quentin Matsys",
+    "artwork_title": "The Moneylender and his Wife",
+    "concept": "Cân đo từng đồng nợ trong ánh mắt tính toán",
+    "wikimedia_query": "Quentin Matsys The Moneylender and his Wife",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Moneylender and his Wife' của Quentin Matsys: Cân đo từng đồng nợ trong ánh mắt tính toán",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Moneylender and his Wife' by Quentin Matsys. Cân đo từng đồng nợ trong ánh mắt tính toán. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Moneylender and his Wife'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Moneylender and his Wife' by Quentin Matsys. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Moneylender and his Wife'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Moneylender and his Wife' by Quentin Matsys. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0157": {
+    "stt": 157,
+    "theme_id": "theme_157",
+    "title": "[Cơn Thịnh Nộ Ái Kỷ] Khi bạn vạch trần chiếc mặt nạ, kẻ thao túng sẽ dùng sự giận dữ để lấp liếm sự nhục nhã.",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "author": "Delroy L. Paulhus & Kevin M. Williams",
+    "slide_format": "Carousel 3 trang",
+    "artist": "Francisco Goya",
+    "artwork_title": "Saturn Devouring His Son",
+    "concept": "Cơn điên cuồng hủy hoại của quyền lực suy đồi",
+    "wikimedia_query": "Francisco Goya Saturn Devouring His Son",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Saturn Devouring His Son' của Francisco Goya: Cơn điên cuồng hủy hoại của quyền lực suy đồi",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Saturn Devouring His Son' by Francisco Goya. Cơn điên cuồng hủy hoại của quyền lực suy đồi. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Saturn Devouring His Son'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Saturn Devouring His Son' by Francisco Goya. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Saturn Devouring His Son'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Saturn Devouring His Son' by Francisco Goya. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0158": {
+    "stt": 158,
+    "theme_id": "theme_158",
+    "title": "[Tội Lỗi Gán Ép] Bạn không có nghĩa vụ phải tự thiêu để giữ ấm cho một người không biết ơn.",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "author": "Martha Stout",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "The Monk by the Sea",
+    "concept": "Con người nhỏ bé đứng trước sự mênh mông vô tận",
+    "wikimedia_query": "Caspar David Friedrich The Monk by the Sea",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Monk by the Sea' của Caspar David Friedrich: Con người nhỏ bé đứng trước sự mênh mông vô tận",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Monk by the Sea' by Caspar David Friedrich. Con người nhỏ bé đứng trước sự mênh mông vô tận. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Monk by the Sea'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Monk by the Sea' by Caspar David Friedrich. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Monk by the Sea'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Monk by the Sea' by Caspar David Friedrich. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0159": {
+    "stt": 159,
+    "theme_id": "theme_159",
+    "title": "[Chiến Thuật Bào Mòn] Sự thỏa hiệp hôm nay là ranh giới bị xâm phạm vào ngày mai.",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "author": "George K. Simon",
+    "slide_format": "Carousel 2 trang",
+    "artist": "Ilya Repin",
+    "artwork_title": "Barge Haulers on the Volga",
+    "concept": "Những kiếp người kéo thuyền nặng nhọc dưới ách áp bức",
+    "wikimedia_query": "Ilya Repin Barge Haulers on the Volga",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Barge Haulers on the Volga' của Ilya Repin: Những kiếp người kéo thuyền nặng nhọc dưới ách áp bức",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Barge Haulers on the Volga' by Ilya Repin. Những kiếp người kéo thuyền nặng nhọc dưới ách áp bức. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Barge Haulers on the Volga'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Barge Haulers on the Volga' by Ilya Repin. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Barge Haulers on the Volga'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Barge Haulers on the Volga' by Ilya Repin. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0160": {
+    "stt": 160,
+    "theme_id": "theme_160",
+    "title": "[Thoát Khỏi Khí Độc] Cách trả thù thanh lịch nhất với kẻ thao túng là sự dửng dưng tuyệt đối.",
+    "topic": "THAO TÚNG (Khí độc & Kiểm soát tâm lý)",
+    "author": "Kate Abramson",
+    "slide_format": "Carousel 3 trang",
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "Wanderer above the Sea of Fog",
+    "concept": "Kẻ lữ hành cô độc đứng trên đỉnh núi nhìn xuống biển sương",
+    "wikimedia_query": "Caspar David Friedrich Wanderer above the Sea of Fog",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Wanderer above the Sea of Fog' của Caspar David Friedrich: Kẻ lữ hành cô độc đứng trên đỉnh núi nhìn xuống biển sương",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Wanderer above the Sea of Fog' by Caspar David Friedrich. Kẻ lữ hành cô độc đứng trên đỉnh núi nhìn xuống biển sương. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Wanderer above the Sea of Fog'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Wanderer above the Sea of Fog' by Caspar David Friedrich. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Wanderer above the Sea of Fog'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Wanderer above the Sea of Fog' by Caspar David Friedrich. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0161": {
+    "stt": 161,
+    "theme_id": "theme_161",
+    "title": "[Ảo Tưởng Của Đám Đông] Trong một bầy cừu cuồng nộ, con cừu đầu đàn chỉ đơn giản là con bị xô đẩy mạnh nhất.",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "author": "Gustave Le Bon",
+    "slide_format": "Carousel 3 trang",
+    "artist": "Honoré Daumier",
+    "artwork_title": "The Uprising (L",
+    "concept": "L'Émeute",
+    "wikimedia_query": "Honoré Daumier The Uprising (L",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Uprising (L' của Honoré Daumier: L'Émeute",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Uprising (L' by Honoré Daumier. L'Émeute. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Uprising (L'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Uprising (L' by Honoré Daumier. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Uprising (L'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Uprising (L' by Honoré Daumier. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0162": {
+    "stt": 162,
+    "theme_id": "theme_162",
+    "title": "[Sự Tầm Thường Của Cái Ác] Tội ác ghê rợn nhất lịch sử không sinh ra từ quái vật, mà từ những kẻ chỉ biết tuân lệnh.",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "author": "Hannah Arendt",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Francisco Goya",
+    "artwork_title": "The Third of May 1808",
+    "concept": "Hàng súng vô cảm chĩa vào người vô tội trong đêm đen",
+    "wikimedia_query": "Francisco Goya The Third of May 1808",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Third of May 1808' của Francisco Goya: Hàng súng vô cảm chĩa vào người vô tội trong đêm đen",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Third of May 1808' by Francisco Goya. Hàng súng vô cảm chĩa vào người vô tội trong đêm đen. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Third of May 1808'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Third of May 1808' by Francisco Goya. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Third of May 1808'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Third of May 1808' by Francisco Goya. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0163": {
+    "stt": 163,
+    "theme_id": "theme_163",
+    "title": "[Thí Nghiệm Milgram] Khi có một kẻ nhân danh quyền lực đứng sau, con người sẵn sàng chà đạp đồng loại.",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "author": "Stanley Milgram",
+    "slide_format": "Carousel 2 trang",
+    "artist": "Rembrandt",
+    "artwork_title": "The Anatomy Lesson of Dr. Nicolaes Tulp",
+    "concept": "Đám đông trí thức quây quanh xác mổ dưới sự chỉ đạo quyền uy",
+    "wikimedia_query": "Rembrandt The Anatomy Lesson of Dr. Nicolaes Tulp",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Anatomy Lesson of Dr. Nicolaes Tulp' của Rembrandt: Đám đông trí thức quây quanh xác mổ dưới sự chỉ đạo quyền uy",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Anatomy Lesson of Dr. Nicolaes Tulp' by Rembrandt. Đám đông trí thức quây quanh xác mổ dưới sự chỉ đạo quyền uy. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Anatomy Lesson of Dr. Nicolaes Tulp'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Anatomy Lesson of Dr. Nicolaes Tulp' by Rembrandt. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Anatomy Lesson of Dr. Nicolaes Tulp'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Anatomy Lesson of Dr. Nicolaes Tulp' by Rembrandt. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0164": {
+    "stt": 164,
+    "theme_id": "theme_164",
+    "title": "[Thí Nghiệm Asch] Người ta thà đồng thuận với điều sai trái còn hơn đứng một mình với sự thật.",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "author": "Solomon E. Asch",
+    "slide_format": "Carousel 3 trang",
+    "artist": "Pieter Bruegel the Elder",
+    "artwork_title": "The Blind Leading the Blind",
+    "concept": "Những kẻ mù dắt nhau ngã xuống hào sâu",
+    "wikimedia_query": "Pieter Bruegel the Elder The Blind Leading the Blind",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Blind Leading the Blind' của Pieter Bruegel the Elder: Những kẻ mù dắt nhau ngã xuống hào sâu",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Blind Leading the Blind' by Pieter Bruegel the Elder. Những kẻ mù dắt nhau ngã xuống hào sâu. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Blind Leading the Blind'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Blind Leading the Blind' by Pieter Bruegel the Elder. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Blind Leading the Blind'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Blind Leading the Blind' by Pieter Bruegel the Elder. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0165": {
+    "stt": 165,
+    "theme_id": "theme_165",
+    "title": "[Hiệu Ứng Bàng Quan] Khi tất cả cùng nhìn, sẽ không có một ai ra tay cứu giúp.",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "author": "John Darley & Bibb Latané",
+    "slide_format": "Carousel 2 trang",
+    "artist": "J.M.W. Turner",
+    "artwork_title": "The Slave Ship",
+    "concept": "Bàn tay tuyệt vọng chìm giữa biển khơi vô cảm",
+    "wikimedia_query": "J.M.W. Turner The Slave Ship",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Slave Ship' của J.M.W. Turner: Bàn tay tuyệt vọng chìm giữa biển khơi vô cảm",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Slave Ship' by J.M.W. Turner. Bàn tay tuyệt vọng chìm giữa biển khơi vô cảm. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Slave Ship'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Slave Ship' by J.M.W. Turner. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Slave Ship'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Slave Ship' by J.M.W. Turner. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0166": {
+    "stt": 166,
+    "theme_id": "theme_166",
+    "title": "[Quyền Lực Của Ngôn Từ Bầy Đàn] Đám đông tha thứ cho sự bạo lực, nhưng không bao giờ tha thứ cho sự khác biệt.",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "author": "Gustave Le Bon",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Jacques-Louis David",
+    "artwork_title": "The Death of Socrates",
+    "concept": "Socrates điềm tĩnh uống chén độc dược trước phán xét đám đông",
+    "wikimedia_query": "Jacques-Louis David The Death of Socrates",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Death of Socrates' của Jacques-Louis David: Socrates điềm tĩnh uống chén độc dược trước phán xét đám đông",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Death of Socrates' by Jacques-Louis David. Socrates điềm tĩnh uống chén độc dược trước phán xét đám đông. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Death of Socrates'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Death of Socrates' by Jacques-Louis David. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Death of Socrates'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Death of Socrates' by Jacques-Louis David. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0167": {
+    "stt": 167,
+    "theme_id": "theme_167",
+    "title": "[Lối Mòn Tư Duy Nhóm] Khi tất cả cùng nghĩ giống nhau, chẳng có ai đang thực sự suy nghĩ.",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "author": "Irving Janis",
+    "slide_format": "Carousel 3 trang",
+    "artist": "Jan Matejko",
+    "artwork_title": "Stańczyk",
+    "concept": "Chàng hề đơn độc trầm tư giữa bữa tiệc xa hoa trụy lạc",
+    "wikimedia_query": "Jan Matejko Stańczyk",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Stańczyk' của Jan Matejko: Chàng hề đơn độc trầm tư giữa bữa tiệc xa hoa trụy lạc",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Stańczyk' by Jan Matejko. Chàng hề đơn độc trầm tư giữa bữa tiệc xa hoa trụy lạc. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Stańczyk'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Stańczyk' by Jan Matejko. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Stańczyk'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Stańczyk' by Jan Matejko. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0168": {
+    "stt": 168,
+    "theme_id": "theme_168",
+    "title": "[Bình Thường Hóa Sự Tàn Nhẫn] Khi thói xấu trở thành thông lệ, người tử tế bỗng biến thành kẻ lập dị.",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "author": "Hannah Arendt",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Edvard Munch",
+    "artwork_title": "Evening on Karl Johan Street",
+    "concept": "Dòng người mặt trắng bệch vô cảm trôi dạt trên phố vắng",
+    "wikimedia_query": "Edvard Munch Evening on Karl Johan Street",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Evening on Karl Johan Street' của Edvard Munch: Dòng người mặt trắng bệch vô cảm trôi dạt trên phố vắng",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Evening on Karl Johan Street' by Edvard Munch. Dòng người mặt trắng bệch vô cảm trôi dạt trên phố vắng. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Evening on Karl Johan Street'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Evening on Karl Johan Street' by Edvard Munch. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Evening on Karl Johan Street'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Evening on Karl Johan Street' by Edvard Munch. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0169": {
+    "stt": 169,
+    "theme_id": "theme_169",
+    "title": "[Hiệu Ứng Vô Danh] Khi khuôn mặt bị che khuất, bóng tối trong tim con người được giải phóng.",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "author": "Philip Zimbardo",
+    "slide_format": "Carousel 2 trang",
+    "artist": "James Ensor",
+    "artwork_title": "Christ",
+    "concept": "Biển mặt nạ ma quái chen chúc trong lễ hội điên loạn",
+    "wikimedia_query": "James Ensor Christ",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Christ' của James Ensor: Biển mặt nạ ma quái chen chúc trong lễ hội điên loạn",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Christ' by James Ensor. Biển mặt nạ ma quái chen chúc trong lễ hội điên loạn. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Christ'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Christ' by James Ensor. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Christ'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Christ' by James Ensor. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0170": {
+    "stt": 170,
+    "theme_id": "theme_170",
+    "title": "[Tự Do Tư Tưởng Tối Thượng] Thà đi lạc trên con đường của chính mình còn hơn đi đúng theo bản đồ của kẻ khác.",
+    "topic": "TÂM LÝ ĐÁM ĐÔNG (Sự thoái hóa của lương tri)",
+    "author": "Gustave Le Bon",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "Two Men Contemplating the Moon",
+    "concept": "Hai người bạn lặng lẽ ngắm trăng giữa rừng thông tĩnh mịch",
+    "wikimedia_query": "Caspar David Friedrich Two Men Contemplating the Moon",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Two Men Contemplating the Moon' của Caspar David Friedrich: Hai người bạn lặng lẽ ngắm trăng giữa rừng thông tĩnh mịch",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Two Men Contemplating the Moon' by Caspar David Friedrich. Hai người bạn lặng lẽ ngắm trăng giữa rừng thông tĩnh mịch. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Two Men Contemplating the Moon'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Two Men Contemplating the Moon' by Caspar David Friedrich. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Two Men Contemplating the Moon'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Two Men Contemplating the Moon' by Caspar David Friedrich. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0171": {
+    "stt": 171,
+    "theme_id": "theme_171",
+    "title": "[Sự Ngụy Tín Của Sartre] Bạn không phải nạn nhân của số phận; bạn chỉ đang đóng vai một kẻ bất lực.",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "author": "Jean-Paul Sartre",
+    "slide_format": "Carousel 3 trang",
+    "artist": "Auguste Rodin",
+    "artwork_title": "The Thinker",
+    "concept": "Người suy ngẫm ngồi trĩu nặng dưới sức nặng của sự tự do ý thức",
+    "wikimedia_query": "Auguste Rodin The Thinker",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Thinker' của Auguste Rodin: Người suy ngẫm ngồi trĩu nặng dưới sức nặng của sự tự do ý thức",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Thinker' by Auguste Rodin. Người suy ngẫm ngồi trĩu nặng dưới sức nặng của sự tự do ý thức. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Thinker'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Thinker' by Auguste Rodin. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Thinker'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Thinker' by Auguste Rodin. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0172": {
+    "stt": 172,
+    "theme_id": "theme_172",
+    "title": "[Trốn Chạy Tự Do] Tự do thực sự quá cô đơn và đáng sợ, nên con người vội vã trao nó cho kẻ độc tài.",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "author": "Erich Fromm",
+    "slide_format": "Carousel 2 trang",
+    "artist": "William Blake",
+    "artwork_title": "The Ancient of Days",
+    "concept": "Đấng tạo hóa vạch compa đo lường trật tự thế gian",
+    "wikimedia_query": "William Blake The Ancient of Days",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Ancient of Days' của William Blake: Đấng tạo hóa vạch compa đo lường trật tự thế gian",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Ancient of Days' by William Blake. Đấng tạo hóa vạch compa đo lường trật tự thế gian. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Ancient of Days'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Ancient of Days' by William Blake. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Ancient of Days'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Ancient of Days' by William Blake. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0173": {
+    "stt": 173,
+    "theme_id": "theme_173",
+    "title": "[Vở Kịch Xã Hội] Đừng để chức danh công việc nuốt chửng linh hồn sống động của bạn.",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "author": "Jean-Paul Sartre",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Édouard Manet",
+    "artwork_title": "A Bar at the Folies-Bergère",
+    "concept": "Cô hầu bàn với ánh mắt u uẩn lạc lõng giữa quán bar rực rỡ",
+    "wikimedia_query": "Édouard Manet A Bar at the Folies-Bergère",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'A Bar at the Folies-Bergère' của Édouard Manet: Cô hầu bàn với ánh mắt u uẩn lạc lõng giữa quán bar rực rỡ",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'A Bar at the Folies-Bergère' by Édouard Manet. Cô hầu bàn với ánh mắt u uẩn lạc lõng giữa quán bar rực rỡ. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'A Bar at the Folies-Bergère'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'A Bar at the Folies-Bergère' by Édouard Manet. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'A Bar at the Folies-Bergère'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'A Bar at the Folies-Bergère' by Édouard Manet. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0174": {
+    "stt": 174,
+    "theme_id": "theme_174",
+    "title": "[Lo Âu Hiện Sinh] Cơn lo âu không phải là bệnh tật, đó là tiếng chuông thức tỉnh của tự do.",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "author": "Søren Kierkegaard",
+    "slide_format": "Carousel 3 trang",
+    "artist": "Edvard Munch",
+    "artwork_title": "The Scream",
+    "concept": "Tiếng thét hiện sinh vang vọng giữa bầu trời đỏ như máu",
+    "wikimedia_query": "Edvard Munch The Scream",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Scream' của Edvard Munch: Tiếng thét hiện sinh vang vọng giữa bầu trời đỏ như máu",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Scream' by Edvard Munch. Tiếng thét hiện sinh vang vọng giữa bầu trời đỏ như máu. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Scream'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Scream' by Edvard Munch. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Scream'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Scream' by Edvard Munch. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0175": {
+    "stt": 175,
+    "theme_id": "theme_175",
+    "title": "[Cỗ Máy Tự Động Hóa] Đừng biến mình thành một chiếc bánh răng hoàn hảo trong cỗ máy của người khác.",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "author": "Erich Fromm",
+    "slide_format": "Carousel 2 trang",
+    "artist": "Fernand Léger",
+    "artwork_title": "The City",
+    "concept": "Những hình khối cơ khí lạnh lẽo trong đô thị công nghiệp",
+    "wikimedia_query": "Fernand Léger The City",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The City' của Fernand Léger: Những hình khối cơ khí lạnh lẽo trong đô thị công nghiệp",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The City' by Fernand Léger. Những hình khối cơ khí lạnh lẽo trong đô thị công nghiệp. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The City'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The City' by Fernand Léger. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The City'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The City' by Fernand Léger. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0176": {
+    "stt": 176,
+    "theme_id": "theme_176",
+    "title": "[Địa Ngục Là Kẻ Khác] Khi bạn để miệng đời định giá, bạn đã tự nộp mình vào chốn ngục tù.",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "author": "Jean-Paul Sartre",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Hieronymus Bosch",
+    "artwork_title": "The Garden of Earthly Delights",
+    "concept": "Cảnh ngục hình kỳ ảo phơi bày sự giam cầm dục vọng",
+    "wikimedia_query": "Hieronymus Bosch The Garden of Earthly Delights",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Garden of Earthly Delights' của Hieronymus Bosch: Cảnh ngục hình kỳ ảo phơi bày sự giam cầm dục vọng",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Garden of Earthly Delights' by Hieronymus Bosch. Cảnh ngục hình kỳ ảo phơi bày sự giam cầm dục vọng. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Garden of Earthly Delights'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Garden of Earthly Delights' by Hieronymus Bosch. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Garden of Earthly Delights'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Garden of Earthly Delights' by Hieronymus Bosch. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0177": {
+    "stt": 177,
+    "theme_id": "theme_177",
+    "title": "[Căn Bệnh Tuyệt Vọng] Cơn tuyệt vọng sâu sắc nhất là không muốn làm chính bản thân mình.",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "author": "Søren Kierkegaard",
+    "slide_format": "Carousel 3 trang",
+    "artist": "Albrecht Dürer",
+    "artwork_title": "Melencolia I",
+    "concept": "Thiên thần trầm mặc giữa những dụng cụ đo lường vô nghĩa",
+    "wikimedia_query": "Albrecht Dürer Melencolia I",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Melencolia I' của Albrecht Dürer: Thiên thần trầm mặc giữa những dụng cụ đo lường vô nghĩa",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Melencolia I' by Albrecht Dürer. Thiên thần trầm mặc giữa những dụng cụ đo lường vô nghĩa. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Melencolia I'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Melencolia I' by Albrecht Dürer. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Melencolia I'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Melencolia I' by Albrecht Dürer. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0178": {
+    "stt": 178,
+    "theme_id": "theme_178",
+    "title": "[Tự Do Hiện Sinh] Không có dấu hiệu nào trên trời chỉ đường; bạn phải tự chịu trách nhiệm cho từng ngã rẽ.",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "author": "Jean-Paul Sartre",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "The Cross into the Mountains",
+    "concept": "Cây thánh giá cô độc trên đỉnh núi đá mờ sương",
+    "wikimedia_query": "Caspar David Friedrich The Cross into the Mountains",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Cross into the Mountains' của Caspar David Friedrich: Cây thánh giá cô độc trên đỉnh núi đá mờ sương",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Cross into the Mountains' by Caspar David Friedrich. Cây thánh giá cô độc trên đỉnh núi đá mờ sương. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Cross into the Mountains'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Cross into the Mountains' by Caspar David Friedrich. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Cross into the Mountains'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Cross into the Mountains' by Caspar David Friedrich. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0179": {
+    "stt": 179,
+    "theme_id": "theme_179",
+    "title": "[Chiếc Bẫy Trì Hoãn] Trì hoãn cuộc sống là hình thức ngụy tín tinh vi nhất.",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "author": "Jean-Paul Sartre",
+    "slide_format": "Carousel 2 trang",
+    "artist": "Salvador Dalí",
+    "artwork_title": "The Persistence of Memory",
+    "concept": "Những chiếc đồng hồ tan chảy trên bãi hoang tàn",
+    "wikimedia_query": "Salvador Dalí The Persistence of Memory",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Persistence of Memory' của Salvador Dalí: Những chiếc đồng hồ tan chảy trên bãi hoang tàn",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Persistence of Memory' by Salvador Dalí. Những chiếc đồng hồ tan chảy trên bãi hoang tàn. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Persistence of Memory'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Persistence of Memory' by Salvador Dalí. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Persistence of Memory'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Persistence of Memory' by Salvador Dalí. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0180": {
+    "stt": 180,
+    "theme_id": "theme_180",
+    "title": "[Phẩm Giá Của Tự Do] Tự do không phải là làm bất cứ điều gì mình thích, mà là không bị ép buộc làm điều mình ghét.",
+    "topic": "NGỤY TÍN (Nỗi sợ tự do & Tự lừa dối)",
+    "author": "Jean-Paul Sartre",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Eugène Delacroix",
+    "artwork_title": "Liberty Leading the People",
+    "concept": "Nữ thần tự do giương cao ngọn cờ dẫn lối",
+    "wikimedia_query": "Eugène Delacroix Liberty Leading the People",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Liberty Leading the People' của Eugène Delacroix: Nữ thần tự do giương cao ngọn cờ dẫn lối",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Liberty Leading the People' by Eugène Delacroix. Nữ thần tự do giương cao ngọn cờ dẫn lối. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Liberty Leading the People'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Liberty Leading the People' by Eugène Delacroix. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Liberty Leading the People'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Liberty Leading the People' by Eugène Delacroix. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0181": {
+    "stt": 181,
+    "theme_id": "theme_181",
+    "title": "[Bất Hòa Nhận Thức] Khi sự thật va chạm với niềm tin, người ta thà bóp méo sự thật hơn là nhận mình sai.",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "author": "Leon Festinger",
+    "slide_format": "Carousel 3 trang",
+    "artist": "Caravaggio",
+    "artwork_title": "The Incredulity of Saint Thomas",
+    "concept": "Ngón tay chọc vào vết thương để kiểm chứng sự thật",
+    "wikimedia_query": "Caravaggio The Incredulity of Saint Thomas",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Incredulity of Saint Thomas' của Caravaggio: Ngón tay chọc vào vết thương để kiểm chứng sự thật",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Incredulity of Saint Thomas' by Caravaggio. Ngón tay chọc vào vết thương để kiểm chứng sự thật. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Incredulity of Saint Thomas'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Incredulity of Saint Thomas' by Caravaggio. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Incredulity of Saint Thomas'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Incredulity of Saint Thomas' by Caravaggio. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0182": {
+    "stt": 182,
+    "theme_id": "theme_182",
+    "title": "[Kim Tự Tháp Lựa Chọn] Một lời bao biện nhỏ hôm nay là khởi đầu của sự tha hóa không đáy ngày mai.",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "author": "Carol Tavris & Elliot Aronson",
+    "slide_format": "Carousel 2 trang",
+    "artist": "William Hogarth",
+    "artwork_title": "The Rake",
+    "concept": "Sự trượt dài từng bước của kẻ tha hóa đạo đức",
+    "wikimedia_query": "William Hogarth The Rake",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Rake' của William Hogarth: Sự trượt dài từng bước của kẻ tha hóa đạo đức",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Rake' by William Hogarth. Sự trượt dài từng bước của kẻ tha hóa đạo đức. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Rake'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Rake' by William Hogarth. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Rake'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Rake' by William Hogarth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0183": {
+    "stt": 183,
+    "theme_id": "theme_183",
+    "title": "[Ảo Tưởng WYSIATI] Đừng vội phán xét một con người chỉ qua vài trang sách bạn tình cờ đọc được.",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "author": "Daniel Kahneman",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Diego Velázquez",
+    "artwork_title": "Las Meninas",
+    "concept": "Những góc nhìn phản chiếu đa tầng qua chiếc gương ẩn khuất",
+    "wikimedia_query": "Diego Velázquez Las Meninas",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Las Meninas' của Diego Velázquez: Những góc nhìn phản chiếu đa tầng qua chiếc gương ẩn khuất",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Las Meninas' by Diego Velázquez. Những góc nhìn phản chiếu đa tầng qua chiếc gương ẩn khuất. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Las Meninas'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Las Meninas' by Diego Velázquez. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Las Meninas'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Las Meninas' by Diego Velázquez. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0184": {
+    "stt": 184,
+    "theme_id": "theme_184",
+    "title": "[Chi Phí Chìm Tình Cảm] Bám víu một mối quan hệ độc hại chỉ vì đã lãng phí quá nhiều năm tháng là sự ngu ngốc tột cùng.",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "author": "Daniel Kahneman",
+    "slide_format": "Carousel 3 trang",
+    "artist": "John Everett Millais",
+    "artwork_title": "Ophelia",
+    "concept": "Nàng Ophelia chìm dần giữa dòng nước hoa dại đầy tiếc nuối",
+    "wikimedia_query": "John Everett Millais Ophelia",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Ophelia' của John Everett Millais: Nàng Ophelia chìm dần giữa dòng nước hoa dại đầy tiếc nuối",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Ophelia' by John Everett Millais. Nàng Ophelia chìm dần giữa dòng nước hoa dại đầy tiếc nuối. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Ophelia'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Ophelia' by John Everett Millais. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Ophelia'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Ophelia' by John Everett Millais. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0185": {
+    "stt": 185,
+    "theme_id": "theme_185",
+    "title": "[Hạ Thấp Nạn Nhân] Kẻ làm tổn thương bạn luôn phải tìm ra khuyết điểm của bạn để lương tâm họ được yên ổn.",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "author": "Carol Tavris & Elliot Aronson",
+    "slide_format": "Carousel 2 trang",
+    "artist": "Artemisia Gentileschi",
+    "artwork_title": "Judith Slaying Holofernes",
+    "concept": "Cú phản kháng đanh thép trước sự bạo tàn áp bức",
+    "wikimedia_query": "Artemisia Gentileschi Judith Slaying Holofernes",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Judith Slaying Holofernes' của Artemisia Gentileschi: Cú phản kháng đanh thép trước sự bạo tàn áp bức",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Judith Slaying Holofernes' by Artemisia Gentileschi. Cú phản kháng đanh thép trước sự bạo tàn áp bức. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Judith Slaying Holofernes'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Judith Slaying Holofernes' by Artemisia Gentileschi. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Judith Slaying Holofernes'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Judith Slaying Holofernes' by Artemisia Gentileschi. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0186": {
+    "stt": 186,
+    "theme_id": "theme_186",
+    "title": "[Thiên Kiến Hồi Tưởng] Đừng dằn vặt bản thân trong quá khứ bằng sự khôn ngoan của ngày hôm nay.",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "author": "Daniel Kahneman",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Rembrandt",
+    "artwork_title": "Self-Portrait with Two Circles",
+    "concept": "Bậc thầy già nua bình thản nhìn lại cuộc đời thăng trầm",
+    "wikimedia_query": "Rembrandt Self-Portrait with Two Circles",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Self-Portrait with Two Circles' của Rembrandt: Bậc thầy già nua bình thản nhìn lại cuộc đời thăng trầm",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Self-Portrait with Two Circles' by Rembrandt. Bậc thầy già nua bình thản nhìn lại cuộc đời thăng trầm. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Self-Portrait with Two Circles'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Self-Portrait with Two Circles' by Rembrandt. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Self-Portrait with Two Circles'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Self-Portrait with Two Circles' by Rembrandt. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0187": {
+    "stt": 187,
+    "theme_id": "theme_187",
+    "title": "[Thiên Kiến Xác Nhận] Người ta chỉ nhìn thấy điều họ muốn thấy và lắng nghe điều họ đã tin sẵn.",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "author": "Leon Festinger",
+    "slide_format": "Carousel 3 trang",
+    "artist": "Johannes Vermeer",
+    "artwork_title": "The Astronomer",
+    "concept": "Nhà thiên văn học đăm chiêu đối chiếu quả địa cầu với tri thức",
+    "wikimedia_query": "Johannes Vermeer The Astronomer",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Astronomer' của Johannes Vermeer: Nhà thiên văn học đăm chiêu đối chiếu quả địa cầu với tri thức",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Astronomer' by Johannes Vermeer. Nhà thiên văn học đăm chiêu đối chiếu quả địa cầu với tri thức. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Astronomer'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Astronomer' by Johannes Vermeer. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Astronomer'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Astronomer' by Johannes Vermeer. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0188": {
+    "stt": 188,
+    "theme_id": "theme_188",
+    "title": "[Lời Xin Lỗi Bị Đánh Cắp] Lời xin lỗi đi kèm chữ 'NHƯNG' chỉ là một lời biện hộ trơ trẽn.",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "author": "Carol Tavris & Elliot Aronson",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Rembrandt",
+    "artwork_title": "The Return of the Prodigal Son",
+    "concept": "Đứa con hoang đàng quỳ gối gục đầu vào lòng cha từ thứ",
+    "wikimedia_query": "Rembrandt The Return of the Prodigal Son",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Return of the Prodigal Son' của Rembrandt: Đứa con hoang đàng quỳ gối gục đầu vào lòng cha từ thứ",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Return of the Prodigal Son' by Rembrandt. Đứa con hoang đàng quỳ gối gục đầu vào lòng cha từ thứ. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Return of the Prodigal Son'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Return of the Prodigal Son' by Rembrandt. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Return of the Prodigal Son'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Return of the Prodigal Son' by Rembrandt. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0189": {
+    "stt": 189,
+    "theme_id": "theme_189",
+    "title": "[Hội Chứng Dunning-Kruger] Kẻ kém cỏi nhất luôn tự tin rằng mình biết tuốt.",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "author": "Daniel Kahneman",
+    "slide_format": "Carousel 2 trang",
+    "artist": "Carl Spitzweg",
+    "artwork_title": "The Bookworm",
+    "concept": "Học giả già đứng trên thang sách say mê giữa thư viện khổng lồ",
+    "wikimedia_query": "Carl Spitzweg The Bookworm",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Bookworm' của Carl Spitzweg: Học giả già đứng trên thang sách say mê giữa thư viện khổng lồ",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Bookworm' by Carl Spitzweg. Học giả già đứng trên thang sách say mê giữa thư viện khổng lồ. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Bookworm'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Bookworm' by Carl Spitzweg. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Bookworm'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Bookworm' by Carl Spitzweg. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0190": {
+    "stt": 190,
+    "theme_id": "theme_190",
+    "title": "[Sự Tự Nhận Thức Khắt Khe] Thách thức lớn nhất không phải lừa dối người khác, mà là không tự lừa dối chính mình.",
+    "topic": "THIEN KIEN (Cơ chế tự biện hộ & Bẫy nhận thức)",
+    "author": "Carol Tavris & Elliot Aronson",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Titian",
+    "artwork_title": "Venus with a Mirror",
+    "concept": "Nữ thần đối diện với sự phản chiếu chân thực của chiếc gương",
+    "wikimedia_query": "Titian Venus with a Mirror",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Venus with a Mirror' của Titian: Nữ thần đối diện với sự phản chiếu chân thực của chiếc gương",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Venus with a Mirror' by Titian. Nữ thần đối diện với sự phản chiếu chân thực của chiếc gương. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Venus with a Mirror'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Venus with a Mirror' by Titian. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Venus with a Mirror'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Venus with a Mirror' by Titian. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0191": {
+    "stt": 191,
+    "theme_id": "theme_191",
+    "title": "[Huyền Thoại Sisyphus] Phải hình dung Sisyphus hạnh phúc khi đẩy tảng đá lên núi.",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "author": "Albert Camus",
+    "slide_format": "Carousel 3 trang",
+    "artist": "Titian",
+    "artwork_title": "Sisyphus",
+    "concept": "Cơ bắp gân guốc oằn mình nâng khối đá khổng lồ trong bóng tối",
+    "wikimedia_query": "Titian Sisyphus",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Sisyphus' của Titian: Cơ bắp gân guốc oằn mình nâng khối đá khổng lồ trong bóng tối",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Sisyphus' by Titian. Cơ bắp gân guốc oằn mình nâng khối đá khổng lồ trong bóng tối. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Sisyphus'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Sisyphus' by Titian. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Sisyphus'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Sisyphus' by Titian. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0192": {
+    "stt": 192,
+    "theme_id": "theme_192",
+    "title": "[Tự Do Tối Thượng Của Frankl] Người ta có thể tước đoạt mọi thứ của bạn, trừ quyền tự chọn thái độ sống.",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "author": "Viktor E. Frankl",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Vincent van Gogh",
+    "artwork_title": "Prisoners",
+    "concept": "Những tù nhân bước vòng tròn trong sân ngục với ánh sáng le lói",
+    "wikimedia_query": "Vincent van Gogh Prisoners",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Prisoners' của Vincent van Gogh: Những tù nhân bước vòng tròn trong sân ngục với ánh sáng le lói",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Prisoners' by Vincent van Gogh. Những tù nhân bước vòng tròn trong sân ngục với ánh sáng le lói. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Prisoners'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Prisoners' by Vincent van Gogh. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Prisoners'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Prisoners' by Vincent van Gogh. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0193": {
+    "stt": 193,
+    "theme_id": "theme_193",
+    "title": "[Lời Cảnh Báo Của Nietzsche] Kẻ chiến đấu với quái vật phải coi chừng kẻo chính mình biến thành quái vật.",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "author": "Friedrich Nietzsche",
+    "slide_format": "Carousel 3 trang",
+    "artist": "Odilon Redon",
+    "artwork_title": "The Cyclops",
+    "concept": "Con quái vật một mắt lén nhìn vẻ đẹp thanh khiết từ khe núi",
+    "wikimedia_query": "Odilon Redon The Cyclops",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Cyclops' của Odilon Redon: Con quái vật một mắt lén nhìn vẻ đẹp thanh khiết từ khe núi",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Cyclops' by Odilon Redon. Con quái vật một mắt lén nhìn vẻ đẹp thanh khiết từ khe núi. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Cyclops'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Cyclops' by Odilon Redon. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Cyclops'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Cyclops' by Odilon Redon. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0194": {
+    "stt": 194,
+    "theme_id": "theme_194",
+    "title": "[Sự Tĩnh Lặng Của Seneca] Chúng ta đau khổ trong tưởng tượng nhiều hơn là trong thực tế.",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "author": "Seneca",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "The Sea of Ice",
+    "concept": "Những tảng băng vỡ vụn kiên cường giữa bắc cực lạnh giá",
+    "wikimedia_query": "Caspar David Friedrich The Sea of Ice",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Sea of Ice' của Caspar David Friedrich: Những tảng băng vỡ vụn kiên cường giữa bắc cực lạnh giá",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Sea of Ice' by Caspar David Friedrich. Những tảng băng vỡ vụn kiên cường giữa bắc cực lạnh giá. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Sea of Ice'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Sea of Ice' by Caspar David Friedrich. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Sea of Ice'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Sea of Ice' by Caspar David Friedrich. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0195": {
+    "stt": 195,
+    "theme_id": "theme_195",
+    "title": "[Mùa Hè Bất Diệt Của Camus] Giữa mùa đông lạnh giá, tôi nhận ra trong mình có một mùa hè bất khả chiến bại.",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "author": "Albert Camus",
+    "slide_format": "Carousel 2 trang",
+    "artist": "Claude Monet",
+    "artwork_title": "Impression, Sunrise",
+    "concept": "Mặt trời đỏ rực hé lộ sau làn sương mù sớm mai",
+    "wikimedia_query": "Claude Monet Impression, Sunrise",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Impression, Sunrise' của Claude Monet: Mặt trời đỏ rực hé lộ sau làn sương mù sớm mai",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Impression, Sunrise' by Claude Monet. Mặt trời đỏ rực hé lộ sau làn sương mù sớm mai. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Impression, Sunrise'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Impression, Sunrise' by Claude Monet. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Impression, Sunrise'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Impression, Sunrise' by Claude Monet. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0196": {
+    "stt": 196,
+    "theme_id": "theme_196",
+    "title": "[Chữ Tại Sao Của Frankl] Người có một lý do để sống có thể chịu đựng hầu hết mọi cách sống.",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "author": "Viktor E. Frankl",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Rembrandt",
+    "artwork_title": "Jeremiah Lamenting the Destruction of Jerusalem",
+    "concept": "Nhà tiên tri đăm chiêu gìn giữ báu vật tinh thần giữa hoang tàn",
+    "wikimedia_query": "Rembrandt Jeremiah Lamenting the Destruction of Jerusalem",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Jeremiah Lamenting the Destruction of Jerusalem' của Rembrandt: Nhà tiên tri đăm chiêu gìn giữ báu vật tinh thần giữa hoang tàn",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Jeremiah Lamenting the Destruction of Jerusalem' by Rembrandt. Nhà tiên tri đăm chiêu gìn giữ báu vật tinh thần giữa hoang tàn. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Jeremiah Lamenting the Destruction of Jerusalem'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Jeremiah Lamenting the Destruction of Jerusalem' by Rembrandt. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Jeremiah Lamenting the Destruction of Jerusalem'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Jeremiah Lamenting the Destruction of Jerusalem' by Rembrandt. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0197": {
+    "stt": 197,
+    "theme_id": "theme_197",
+    "title": "[Lửa Thử Vàng Của Nietzsche] Điều gì không giết được tôi sẽ làm tôi mạnh mẽ hơn.",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "author": "Friedrich Nietzsche",
+    "slide_format": "Carousel 3 trang",
+    "artist": "J.M.W. Turner",
+    "artwork_title": "Snow Storm: Steam-Boat off a Harbour",
+    "concept": "Con tàu kiên cường vượt qua tâm bão tuyết dữ dội",
+    "wikimedia_query": "J.M.W. Turner Snow Storm: Steam-Boat off a Harbour",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Snow Storm: Steam-Boat off a Harbour' của J.M.W. Turner: Con tàu kiên cường vượt qua tâm bão tuyết dữ dội",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Snow Storm: Steam-Boat off a Harbour' by J.M.W. Turner. Con tàu kiên cường vượt qua tâm bão tuyết dữ dội. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Snow Storm: Steam-Boat off a Harbour'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Snow Storm: Steam-Boat off a Harbour' by J.M.W. Turner. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Snow Storm: Steam-Boat off a Harbour'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Snow Storm: Steam-Boat off a Harbour' by J.M.W. Turner. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0198": {
+    "stt": 198,
+    "theme_id": "theme_198",
+    "title": "[Thái Độ Khắc Kỷ Trước Nghịch Cảnh] Cây sồi không trở nên vững chãi nếu không từng đón nhận trăm ngàn cơn gió bão.",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "author": "Seneca",
+    "slide_format": "Single-Punch (1 trang)",
+    "artist": "Gustave Courbet",
+    "artwork_title": "The Wave",
+    "concept": "Ngọn sóng cuộn trào dũng mãnh giữa đại dương bao la",
+    "wikimedia_query": "Gustave Courbet The Wave",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Wave' của Gustave Courbet: Ngọn sóng cuộn trào dũng mãnh giữa đại dương bao la",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Wave' by Gustave Courbet. Ngọn sóng cuộn trào dũng mãnh giữa đại dương bao la. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Wave'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Wave' by Gustave Courbet. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Wave'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Wave' by Gustave Courbet. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0199": {
+    "stt": 199,
+    "theme_id": "theme_199",
+    "title": "[Tinh Thần Nổi Loạn Hiện Sinh] Tôi nổi loạn, vậy nên chúng ta tồn tại.",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "author": "Albert Camus",
+    "slide_format": "Carousel 2 trang",
+    "artist": "Francisco Goya",
+    "artwork_title": "Colossus",
+    "concept": "Người khổng lồ thức tỉnh giữa chân trời u ám",
+    "wikimedia_query": "Francisco Goya Colossus",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'Colossus' của Francisco Goya: Người khổng lồ thức tỉnh giữa chân trời u ám",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'Colossus' by Francisco Goya. Người khổng lồ thức tỉnh giữa chân trời u ám. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'Colossus'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'Colossus' by Francisco Goya. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'Colossus'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'Colossus' by Francisco Goya. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  },
+  "TXT-0200": {
+    "stt": 200,
+    "theme_id": "theme_200",
+    "title": "[Tình Yêu Định Mệnh Amor Fati] Đừng chỉ cam chịu số phận; hãy yêu say đắm từng vết thương định mệnh ban tặng.",
+    "topic": "HIỆN SINH (Sức bật nội tại & Nghịch lý cuộc sống)",
+    "author": "Friedrich Nietzsche",
+    "slide_format": "Carousel 3 trang",
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "The Stages of Life",
+    "concept": "Những con thuyền trở về bến đỗ trong ánh hoàng hôn bình yên",
+    "wikimedia_query": "Caspar David Friedrich The Stages of Life",
+    "slides": [
+      {
+        "slide_index": 1,
+        "role": "Establishing Shot (Toàn cảnh 1.0x)",
+        "concept": "Toàn cảnh kiệt tác 'The Stages of Life' của Caspar David Friedrich: Những con thuyền trở về bến đỗ trong ánh hoàng hôn bình yên",
+        "zoom": 1.0,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Masterpiece 'The Stages of Life' by Caspar David Friedrich. Những con thuyền trở về bến đỗ trong ánh hoàng hôn bình yên. Classical chiaroscuro lighting, subtle muted mineral pigments, rich historical depth. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 2,
+        "role": "Closeup Shot (Cận cảnh 1.65x)",
+        "concept": "Cận cảnh 1.65x vào tâm điểm kịch tính và biểu cảm nhân vật của 'The Stages of Life'",
+        "zoom": 1.65,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Cinematic 1.65x closeup framing on the dramatic focal point and expressive details of 'The Stages of Life' by Caspar David Friedrich. Intense emotional resonance, tactile paint layers. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      },
+      {
+        "slide_index": 3,
+        "role": "Macro Texture Shot (Siêu cận 2.5x)",
+        "concept": "Siêu cận 2.5x vào thớ vải toan dệt hữu cơ, vệt cọ đắp nổi impasto và vết nứt thời gian của 'The Stages of Life'",
+        "zoom": 2.5,
+        "prompt": "Vertical 9:16 classical fine art oil painting, authentic visible heavy impasto brushstrokes, tactile oil canvas weave texture. Extreme 2.5x macro view of physical canvas weave texture, historical craquelure, heavy impasto oil ridges, and deep chiaroscuro brushwork from 'The Stages of Life' by Caspar David Friedrich. Atmospheric fine art composition with quiet, generous negative space in the middle-to-lower third for elegant editorial reading, strictly clean with NO text, NO lettering, NO watermarks, NO digital CGI rendering, traditional museum oil on canvas."
+      }
+    ]
+  }
+}

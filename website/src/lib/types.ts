@@ -98,6 +98,8 @@ export interface SceneNode {
   scenePreset?: string;
   motionPreset?: string;
   artwork_ref?: string;
+  artwork_title?: string;
+  artwork_artist?: string;
   closingQuestion?: string;
   relatedTopic?: string;
   choices?: SceneChoice[];

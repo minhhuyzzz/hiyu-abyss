@@ -16,3 +16,7 @@ yarn-error.log*
 
 # macOS
 .DS_Store
+
+# test artifacts
+test-artifacts/
+

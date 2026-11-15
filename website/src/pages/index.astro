@@ -1,5 +1,5 @@
 ---
-// src/pages/index.astro - Hiyu Abyss Museum Editorial Landing (Masterplan V3)
+// src/pages/index.astro - Hiyu Abyss Museum Editorial Landing (Masterplan V3.1)
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroArtwork from '../components/HeroArtwork.astro';
 import EditorialMosaic from '../components/EditorialMosaic.astro';
@@ -10,14 +10,19 @@ import { getAllPublishedQuotes, getFeaturedQuotes, getAllTopics } from '../lib/c
 const allQuotes = getAllPublishedQuotes();
 const featuredQuotes = getFeaturedQuotes();
 const topics = getAllTopics();
-const primaryHero = featuredQuotes[0] || allQuotes[0];
+
+// Curator Selection Algorithm:
+// Rotates across featured masterpieces (Epictetus, Jung, Nietzsche, Machiavelli, La Rochefoucauld) based on day of year
+const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 1000 / 60 / 60 / 24);
+const featuredPool = featuredQuotes.length > 0 ? featuredQuotes : allQuotes;
+const primaryHero = featuredPool[dayOfYear % featuredPool.length] || allQuotes[0];
 ---
 
 <BaseLayout
   title="Hiyu Abyss — Thư Viện Nghệ Thuật & Triết Học Chiêm Nghiệm"
   description="Thư viện giám tuyển các tác phẩm triết học, tâm lý học hành vi và kiệt tác hội họa bảo tàng cổ điển."
 >
-  <!-- Scene 01: The Entrance / Opening Seal -->
+  <!-- Scene 01: The Entrance / Curator's Masterpiece -->
   {primaryHero && <HeroArtwork quote={primaryHero} />}
 
   <!-- Scene 03: Curator's Selection -->

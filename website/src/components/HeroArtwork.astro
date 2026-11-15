@@ -1,15 +1,18 @@
 ---
-// HeroArtwork.astro - Scene 01: The Entrance (Museum Editorial Architecture)
+// HeroArtwork.astro - Scene 01: The Museum Entrance & Curated Masterpiece (V3.1)
 import ArtworkPlacard from './ArtworkPlacard.astro';
 
 interface Props {
   quote: {
     cleanTitle: string;
     content: string;
+    description?: string;
     author: string;
+    primaryTopicTitle: string;
     quoteTypeLabel: string;
     imageRef: string;
     slug: string;
+    id: string;
     artInfo?: {
       title: string;
       artist: string;
@@ -30,52 +33,69 @@ const artYear = quote.artInfo?.year;
 const artMuseum = quote.artInfo?.museum || "Bảo tàng quốc tế";
 const artLicense = quote.artInfo?.license || "Public Domain / CC0";
 const artAlt = quote.artInfo?.alt_vi || `${artTitle} - ${artArtist}`;
+
+// Check if cleanTitle and content are nearly identical to prevent repetitive echoing
+const normTitle = quote.cleanTitle.toLowerCase().replace(/[^a-z0-9]/g, '');
+const normContent = quote.content.toLowerCase().replace(/[^a-z0-9]/g, '');
+const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.includes(normTitle.slice(0, 20));
+
+// Extract first 1-2 sentences of editorial commentary as curator insight
+let curatorInsight = '';
+if (quote.description) {
+  const sentences = quote.description.split(/(?<=[.?!])\s+/);
+  curatorInsight = sentences.slice(0, 2).join(' ');
+}
+if (!curatorInsight) {
+  curatorInsight = `Một chiêm nghiệm sâu sắc của ${quote.author} về bản ngã và ranh giới tâm lý con người trong thế giới hiện đại.`;
+}
 ---
 
-<section class="relative w-full py-16 sm:py-24 md:py-32 overflow-hidden">
+<section class="relative w-full py-12 sm:py-20 md:py-28 overflow-hidden">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
     <!-- Editorial Split Grid: Asymmetric 7/5 columns -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
       
       <!-- Left Column: Master Typography & Thought (7 cols) -->
-      <div class="lg:col-span-7 flex flex-col gap-6 sm:gap-8 order-2 lg:order-1">
+      <div class="lg:col-span-7 flex flex-col gap-6 sm:gap-7 order-2 lg:order-1">
         
-        <!-- Systematic Header Tag (No White Dashes) -->
-        <div class="flex items-center gap-2 text-xs tracking-[0.25em] uppercase font-sans text-muted">
-          <span class="text-accent font-semibold">01</span>
+        <!-- Systematic Curator Seal Tag -->
+        <div class="flex items-center gap-2.5 text-[11px] tracking-[0.22em] uppercase font-sans text-muted">
+          <span class="text-accent font-semibold font-mono">KIỆT TÁC GIÁM TUYỂN</span>
           <span class="text-muted/30">/</span>
-          <span>{quote.quoteTypeLabel} · {quote.author}</span>
+          <span class="text-text font-medium">#{quote.primaryTopicTitle}</span>
+          <span class="text-muted/30">/</span>
+          <span>{quote.author}</span>
         </div>
 
-        <!-- Master Title / Question -->
-        <h1 class="font-display text-3xl sm:text-5xl md:text-6xl text-text font-medium leading-[1.14] tracking-tight text-balance">
-          {quote.cleanTitle}
+        <!-- Master Title / Monumental Inscription -->
+        <h1 class="font-display text-2xl sm:text-4xl md:text-5xl text-text font-medium leading-[1.2] tracking-tight text-balance">
+          "{quote.content}"
         </h1>
 
-        <!-- Inscription of Truth -->
-        <div class="relative pl-6 py-1 border-l-2 border-accent">
-          <blockquote class="font-serif text-lg sm:text-2xl text-text/90 italic leading-relaxed sm:leading-loose">
-            "{quote.content}"
-          </blockquote>
+        <!-- Inscription of Truth: Curator's Psychological Insight (Non-repetitive) -->
+        <div class="relative pl-5 py-1 border-l-2 border-accent">
+          <p class="font-serif text-base sm:text-lg text-text/85 italic leading-relaxed">
+            {curatorInsight}
+          </p>
         </div>
 
-        <p class="font-sans text-sm sm:text-base text-muted max-w-xl leading-relaxed">
-          Hiyu Abyss là một thư viện tư tưởng và ấn phẩm mỹ thuật sống. Nơi triết học hành vi đối thoại cùng các kiệt tác hội họa qua hàng thế kỷ để khơi gợi sự tự soi chiếu nội tâm.
+        <p class="font-sans text-xs sm:text-sm text-muted max-w-xl leading-relaxed">
+          Hiyu Abyss bảo tồn di sản tư tưởng triết học và mỹ học cổ điển. Nơi tâm lý học hành vi đối thoại cùng các kiệt tác hội họa qua hàng thế kỷ để khơi gợi sự tự soi chiếu nội tâm.
         </p>
 
-        <!-- Museum Editorial Actions (No SaaS Pill Buttons) -->
-        <div class="flex flex-wrap items-center gap-4 pt-2">
+        <!-- Museum Editorial Actions -->
+        <div class="flex flex-wrap items-center gap-3.5 pt-2">
           <a
             href={`/library/${quote.slug}`}
-            class="px-7 py-3.5 bg-accent text-on-accent font-sans text-xs tracking-[0.18em] uppercase font-bold hover:opacity-90 transition-opacity duration-200 min-h-[48px] inline-flex items-center justify-center shadow-sm"
+            class="px-6 py-3 bg-accent text-on-accent font-sans text-xs tracking-[0.16em] uppercase font-bold hover:opacity-90 transition-opacity duration-200 min-h-[44px] inline-flex items-center justify-center shadow-sm"
           >
             Đọc Chiêm Nghiệm
           </a>
 
           <a
             href="/mirror/su-that-va-binh-yen"
-            class="px-6 py-3.5 border border-border/80 bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-[0.18em] uppercase font-semibold transition-colors duration-200 min-h-[48px] inline-flex items-center gap-2"
+            class="px-5 py-3 border border-border/80 bg-surface text-text hover:border-accent hover:text-accent font-sans text-xs tracking-[0.16em] uppercase font-semibold transition-colors duration-200 min-h-[44px] inline-flex items-center gap-2"
           >
             <span>Vào Chiếc Gương Phản Tư</span>
             <span class="text-xs">→</span>
@@ -85,11 +105,11 @@ const artAlt = quote.artInfo?.alt_vi || `${artTitle} - ${artArtist}`;
 
       <!-- Right Column: Classical Artwork Exhibition Frame (5 cols) -->
       <div class="lg:col-span-5 order-1 lg:order-2 flex flex-col gap-3">
-        <div class="relative aspect-[9/16] w-full max-w-sm sm:max-w-md mx-auto overflow-hidden bg-surface border border-border/80 shadow-2xl">
+        <div class="relative aspect-[9/16] w-full max-w-sm sm:max-w-md mx-auto overflow-hidden bg-surface border border-border/80 shadow-2xl group">
           <img
             src={artSrc}
             alt={artAlt}
-            class="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.02]"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
             loading="eager"
             decoding="async"
           />

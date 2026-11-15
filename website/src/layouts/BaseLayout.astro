@@ -1,8 +1,10 @@
 ---
-// BaseLayout.astro - Nền tảng giao diện chuẩn ấn phẩm mỹ thuật
+// BaseLayout.astro - Nền tảng giao diện chuẩn ấn phẩm mỹ thuật (V3.1)
 import '../styles/tokens.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import SavedDrawer from '../components/SavedDrawer.astro';
+import BackToTop from '../components/BackToTop.astro';
 
 interface Props {
   title?: string;
@@ -97,5 +99,11 @@ const siteTitle = title.includes('Hiyu Abyss') ? title : `${title} · Hiyu Abyss
         !hideFooter && <Footer />
       )
     }
+
+    <!-- Personal Saved Archive Drawer -->
+    <SavedDrawer />
+
+    <!-- Floating Action Widget (Back to Top) -->
+    <BackToTop />
   </body>
 </html>

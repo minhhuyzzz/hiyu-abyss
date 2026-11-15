@@ -1,0 +1,106 @@
+// website/src/lib/i18n.ts - Lightweight Bilingual Dictionary & Utilities (VI/EN)
+
+export type Language = 'vi' | 'en';
+
+export const translations = {
+  vi: {
+    nav: {
+      library: 'Thư Viện',
+      mirror: 'Chiếc Gương',
+      themes: 'Chủ Đề',
+      search: 'Tìm Kiếm',
+      saved: 'Kho Lưu Trữ',
+    },
+    header: {
+      tagline: 'The Living Library',
+      savedBadge: 'Kho',
+      themeDark: 'Giao diện Tối',
+      themeLight: 'Giao diện Sáng',
+    },
+    hero: {
+      badge: 'TÁC PHẨM TUYỂN CHỌN TRONG NGÀY',
+      readMore: 'Đọc Chiêm Nghiệm',
+      enterMirror: 'Vào Chiếc Gương Phản Tư',
+      subtext: 'Hiyu Abyss là một bảo tàng tư tưởng và ấn phẩm mỹ thuật sống. Nơi triết học hành vi đối thoại cùng các kiệt tác hội họa qua hàng thế kỷ để khơi gợi sự tự soi chiếu nội tâm.',
+    },
+    savedDrawer: {
+      title: 'Kho Lưu Trữ Cá Nhân',
+      emptyTitle: 'Chưa có tác phẩm nào được lưu',
+      emptyDesc: 'Khi đọc một triết ngôn sâu sắc, hãy nhấn "Lưu Chiêm Nghiệm" để lưu lại vào không gian tĩnh tâm của riêng bạn.',
+      readBtn: 'Đọc sâu',
+      removeBtn: 'Gỡ bỏ',
+      clearAll: 'Xóa toàn bộ kho',
+    },
+    footer: {
+      mission: 'Không gian lưu giữ và giám tuyển tư tưởng triết học, tâm lý học hành vi và mỹ học cổ điển. Nơi câu chữ sâu lắng đối thoại cùng các kiệt tác bảo tàng để khơi gợi sự tự soi chiếu nội tâm.',
+      curatedCount: '100 Tác Phẩm Đã Giám Tuyển · 20 Chủ Đề',
+      navigation: 'Điều Hướng',
+      copyright: 'Bảo tồn di sản tư tưởng & mỹ học cổ điển.',
+      backToTop: 'Lên đầu trang',
+    },
+    detail: {
+      readingTime: 'Khoảng 2 phút chiêm nghiệm',
+      authorLabel: 'Luận điểm khởi xướng',
+      copyBtn: 'Sao Chép Triết Ngôn',
+      copied: 'Đã sao chép ✓',
+      saveBtn: 'Lưu Chiêm Nghiệm',
+      savedBtn: 'Đã Lưu Vào Kho',
+      shareBtn: 'Chia Sẻ',
+      deepAnalysis: 'Bóc Tách Tâm Lý & Chiêm Nghiệm',
+      counterpoint: 'Phản Đề Tự Soi Chiếu',
+      viewArtwork: 'Thưởng Lãm Kiệt Tác Toàn Cảnh',
+      prevWork: 'Tác phẩm trước',
+      nextWork: 'Tác phẩm kế tiếp',
+    },
+  },
+  en: {
+    nav: {
+      library: 'The Library',
+      mirror: 'The Mirror',
+      themes: 'Themes',
+      search: 'Search',
+      saved: 'Saved Archive',
+    },
+    header: {
+      tagline: 'The Living Library',
+      savedBadge: 'Saved',
+      themeDark: 'Dark Archive',
+      themeLight: 'Pale Archive',
+    },
+    hero: {
+      badge: "CURATOR'S MASTERPIECE OF THE DAY",
+      readMore: 'Read Commentary',
+      enterMirror: 'Enter The Mirror',
+      subtext: 'Hiyu Abyss is a living library of philosophical thought and classical art. Where behavioral psychology dialogues with centuries-old museum masterpieces to provoke deep self-examination.',
+    },
+    savedDrawer: {
+      title: 'Personal Saved Archive',
+      emptyTitle: 'No saved works yet',
+      emptyDesc: 'When encountering a profound aphorism, click "Save Aphorism" to preserve it in your contemplative sanctuary.',
+      readBtn: 'Read',
+      removeBtn: 'Remove',
+      clearAll: 'Clear all',
+    },
+    footer: {
+      mission: 'A sanctuary preserving philosophical thought, behavioral psychology, and classical museum aesthetics. Where profound aphorisms dialogue with masterworks to awaken introspection.',
+      curatedCount: '100 Curated Works · 20 Themes',
+      navigation: 'Navigation',
+      copyright: 'Preserving philosophical heritage & classical aesthetics.',
+      backToTop: 'Back to top',
+    },
+    detail: {
+      readingTime: '~2 min contemplation',
+      authorLabel: 'Initiating Mind',
+      copyBtn: 'Copy Aphorism',
+      copied: 'Copied ✓',
+      saveBtn: 'Save Aphorism',
+      savedBtn: 'Saved in Archive',
+      shareBtn: 'Share',
+      deepAnalysis: 'Psychological Commentary & Deconstruction',
+      counterpoint: 'Dialectical Counterpoint',
+      viewArtwork: 'View Masterpiece Fullscreen',
+      prevWork: 'Previous Work',
+      nextWork: 'Next Work',
+    },
+  },
+} as const;

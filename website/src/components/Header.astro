@@ -1,5 +1,5 @@
 ---
-// Header.astro - Floating Island Navigation Header (Bản sắc nhận diện Hiyu Abyss)
+// Header.astro - Refined Lean Floating Navigation Header (Bản sắc nhận diện Hiyu Abyss V3.1)
 import BrandLogo from './BrandLogo.astro';
 import ThemeToggle from './ThemeToggle.astro';
 
@@ -13,50 +13,75 @@ const navLinks = [
 const pathname = Astro.url.pathname;
 ---
 
-<header class="sticky top-3 sm:top-5 z-50 w-full px-3 sm:px-6 pointer-events-none transition-all duration-300">
-  <div class="max-w-5xl mx-auto w-full pointer-events-auto">
-    <!-- Floating Glass Island -->
-    <div class="h-16 sm:h-20 px-4 sm:px-8 rounded-full border border-border/80 bg-surface/90 backdrop-blur-xl shadow-2xl flex items-center justify-between transition-all duration-300 hover:border-accent/40">
+<header class="sticky top-2.5 sm:top-4 z-50 w-full px-2.5 sm:px-4 pointer-events-none transition-all duration-300">
+  <div class="max-w-4xl mx-auto w-full pointer-events-auto">
+    <!-- Lean Floating Glass Island (Refined h-12 sm:h-14) -->
+    <div class="h-12 sm:h-14 px-3 sm:px-5 rounded-full border border-border/70 bg-surface/85 backdrop-blur-md shadow-lg flex items-center justify-between transition-all duration-300 hover:border-accent/30">
       
-      <!-- Brand Logo -->
+      <!-- Brand Logo with Modern Subtle Monogram -->
       <BrandLogo variant="full" />
 
       <!-- Desktop Navigation Links -->
-      <nav class="hidden md:flex items-center gap-1.5 lg:gap-3" aria-label="Điều hướng chính">
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2" aria-label="Điều hướng chính">
         {navLinks.map((link) => {
           const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
           return (
             <a
               href={link.href}
               aria-current={isActive ? 'page' : undefined}
-              class={`relative px-4 py-1.5 rounded-full text-xs uppercase tracking-[0.15em] font-sans transition-all duration-300 ${
+              class={`nav-link-item relative px-3 py-1 rounded-full text-[11px] uppercase tracking-[0.16em] font-sans transition-all duration-200 ${
                 isActive
-                  ? 'bg-accent/15 text-accent font-semibold border border-accent/30 shadow-sm'
-                  : 'text-muted hover:text-text hover:bg-surface-raised/80'
+                  ? 'bg-accent/15 text-accent font-semibold border border-accent/25 shadow-xs'
+                  : 'text-muted hover:text-text hover:bg-surface-raised/70'
               }`}
+              data-href={link.href}
+              data-label-vi={link.label}
+              data-label-en={link.enLabel}
             >
-              <span>{link.label}</span>
+              <span class="nav-label-text">{link.label}</span>
               {isActive && (
-                <span class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-accent" />
+                <span class="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-accent" />
               )}
             </a>
           );
         })}
       </nav>
 
-      <!-- Right Header Actions (Search + Theme Switcher + Mobile Trigger) -->
-      <div class="flex items-center gap-2 sm:gap-3">
-        <!-- Quick Search Icon on mobile -->
-        <a
-          href="/search"
-          class="p-2 text-muted hover:text-text rounded-full hover:bg-surface-raised transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center md:hidden"
-          aria-label="Tìm kiếm"
+      <!-- Right Header Actions (Saved Archive + Language + Theme + Mobile Trigger) -->
+      <div class="flex items-center gap-1.5 sm:gap-2">
+        
+        <!-- Saved Archive Drawer Trigger Button with Dynamic Counter Badge -->
+        <button
+          id="open-saved-drawer-btn"
+          type="button"
+          class="px-2.5 py-1 text-[11px] font-sans text-muted hover:text-accent rounded-full border border-border/60 hover:border-accent/40 bg-surface/50 hover:bg-surface-raised transition-all flex items-center gap-1.5 min-h-[34px]"
+          aria-label="Mở kho tác phẩm đã lưu"
+          title="Kho lưu trữ cá nhân"
         >
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <circle cx="11" cy="11" r="8" stroke-width="1.75" />
-            <path d="m21 21-4.35-4.35" stroke-width="1.75" stroke-linecap="round" />
+          <svg class="w-3.5 h-3.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
           </svg>
-        </a>
+          <span class="hidden sm:inline text-[10px] tracking-wider uppercase font-medium" id="saved-header-label">Kho</span>
+          <span
+            id="saved-count-badge"
+            class="px-1.5 py-0.2 rounded-full text-[9px] font-mono font-semibold bg-accent/20 text-accent border border-accent/30"
+          >
+            0
+          </span>
+        </button>
+
+        <!-- Bilingual Switcher [VI | EN] -->
+        <button
+          id="lang-toggle-btn"
+          type="button"
+          class="px-2 py-1 text-[10px] tracking-widest font-mono font-semibold text-muted hover:text-text rounded-full border border-border/60 hover:border-accent/40 bg-surface/50 hover:bg-surface-raised transition-all min-h-[34px] flex items-center"
+          aria-label="Chuyển đổi ngôn ngữ Tiếng Việt / English"
+          title="Switch language (VI / EN)"
+        >
+          <span id="lang-indicator-vi" class="text-accent font-bold">VI</span>
+          <span class="text-border mx-1">/</span>
+          <span id="lang-indicator-en" class="text-muted/60">EN</span>
+        </button>
 
         <!-- Dual-Theme Switcher -->
         <ThemeToggle />
@@ -65,12 +90,12 @@ const pathname = Astro.url.pathname;
         <button
           id="mobile-menu-btn"
           type="button"
-          class="md:hidden relative w-11 h-11 rounded-full flex flex-col items-center justify-center gap-1.5 p-2 text-muted hover:text-text hover:bg-surface-raised transition-all"
+          class="md:hidden relative w-9 h-9 rounded-full flex flex-col items-center justify-center gap-1.2 p-1.5 text-muted hover:text-text hover:bg-surface-raised transition-all"
           aria-label="Mở danh mục điều hướng"
           aria-expanded="false"
         >
-          <span class="hamburger-bar w-5 h-0.5 bg-current transition-all duration-300 transform origin-center"></span>
-          <span class="hamburger-bar w-5 h-0.5 bg-current transition-all duration-300 transform origin-center"></span>
+          <span class="hamburger-bar w-4 h-0.5 bg-current transition-all duration-300 transform origin-center"></span>
+          <span class="hamburger-bar w-4 h-0.5 bg-current transition-all duration-300 transform origin-center"></span>
         </button>
       </div>
     </div>
@@ -78,22 +103,24 @@ const pathname = Astro.url.pathname;
     <!-- Mobile Drawer Overlay -->
     <div
       id="mobile-menu"
-      class="hidden md:hidden mt-3 p-6 rounded-3xl border border-border/80 bg-surface/98 backdrop-blur-2xl shadow-2xl transition-all duration-300"
+      class="hidden md:hidden mt-2 p-5 rounded-2xl border border-border/80 bg-surface/98 backdrop-blur-2xl shadow-2xl transition-all duration-300"
     >
-      <nav class="flex flex-col gap-2">
+      <nav class="flex flex-col gap-1.5">
         {navLinks.map((link) => {
           const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
           return (
             <a
               href={link.href}
-              class={`flex items-center justify-between px-5 py-3.5 rounded-2xl text-sm uppercase tracking-[0.15em] font-sans transition-all ${
+              class={`nav-mobile-link flex items-center justify-between px-4 py-2.5 rounded-xl text-xs uppercase tracking-[0.15em] font-sans transition-all ${
                 isActive
-                  ? 'bg-accent/15 text-accent font-semibold border border-accent/30'
+                  ? 'bg-accent/15 text-accent font-semibold border border-accent/25'
                   : 'text-text hover:bg-surface-raised'
               }`}
+              data-label-vi={link.label}
+              data-label-en={link.enLabel}
             >
-              <span>{link.label}</span>
-              <span class="text-xs text-muted tracking-widest font-serif lowercase italic">
+              <span class="mobile-label-text">{link.label}</span>
+              <span class="text-[10px] text-muted tracking-widest font-serif lowercase italic">
                 {link.enLabel}
               </span>
             </a>
@@ -105,6 +132,7 @@ const pathname = Astro.url.pathname;
 </header>
 
 <script is:inline>
+  // Mobile Hamburger Toggle
   const menuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   const bars = document.querySelectorAll('.hamburger-bar');
@@ -115,17 +143,15 @@ const pathname = Astro.url.pathname;
       menuBtn.setAttribute('aria-expanded', !isExpanded);
       mobileMenu.classList.toggle('hidden');
 
-      // Morphing hamburger animation
       if (!isExpanded) {
-        if (bars[0]) bars[0].style.transform = 'translateY(4px) rotate(45deg)';
-        if (bars[1]) bars[1].style.transform = 'translateY(-4px) rotate(-45deg)';
+        if (bars[0]) bars[0].style.transform = 'translateY(3px) rotate(45deg)';
+        if (bars[1]) bars[1].style.transform = 'translateY(-3px) rotate(-45deg)';
       } else {
         if (bars[0]) bars[0].style.transform = '';
         if (bars[1]) bars[1].style.transform = '';
       }
     });
 
-    // Close on Escape key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
         menuBtn.setAttribute('aria-expanded', 'false');
@@ -135,4 +161,73 @@ const pathname = Astro.url.pathname;
       }
     });
   }
+
+  // Bilingual Switcher Logic
+  const langToggleBtn = document.getElementById('lang-toggle-btn');
+  const viIndicator = document.getElementById('lang-indicator-vi');
+  const enIndicator = document.getElementById('lang-indicator-en');
+  const savedHeaderLabel = document.getElementById('saved-header-label');
+
+  function updateLanguageUI(lang) {
+    if (viIndicator && enIndicator) {
+      if (lang === 'en') {
+        viIndicator.className = 'text-muted/60';
+        enIndicator.className = 'text-accent font-bold';
+        if (savedHeaderLabel) savedHeaderLabel.textContent = 'Saved';
+      } else {
+        viIndicator.className = 'text-accent font-bold';
+        enIndicator.className = 'text-muted/60';
+        if (savedHeaderLabel) savedHeaderLabel.textContent = 'Kho';
+      }
+    }
+
+    // Update Nav labels
+    document.querySelectorAll('.nav-link-item').forEach((item) => {
+      const labelSpan = item.querySelector('.nav-label-text');
+      if (labelSpan) {
+        labelSpan.textContent = lang === 'en' ? item.getAttribute('data-label-en') : item.getAttribute('data-label-vi');
+      }
+    });
+
+    document.querySelectorAll('.nav-mobile-link').forEach((item) => {
+      const labelSpan = item.querySelector('.mobile-label-text');
+      if (labelSpan) {
+        labelSpan.textContent = lang === 'en' ? item.getAttribute('data-label-en') : item.getAttribute('data-label-vi');
+      }
+    });
+
+    document.documentElement.setAttribute('lang', lang);
+  }
+
+  const currentLang = localStorage.getItem('hiyu_lang') || 'vi';
+  updateLanguageUI(currentLang);
+
+  if (langToggleBtn) {
+    langToggleBtn.addEventListener('click', () => {
+      const activeLang = localStorage.getItem('hiyu_lang') || 'vi';
+      const nextLang = activeLang === 'vi' ? 'en' : 'vi';
+      localStorage.setItem('hiyu_lang', nextLang);
+      updateLanguageUI(nextLang);
+      window.dispatchEvent(new CustomEvent('hiyu-lang-changed', { detail: { lang: nextLang } }));
+    });
+  }
+
+  // Sync Saved Count Badge in Header
+  function syncHeaderSavedBadge() {
+    try {
+      const badge = document.getElementById('saved-count-badge');
+      if (!badge) return;
+      const saved = JSON.parse(localStorage.getItem('hiyu_saved_quotes') || '[]');
+      badge.textContent = saved.length.toString();
+      if (saved.length > 0) {
+        badge.classList.remove('opacity-50');
+      } else {
+        badge.classList.add('opacity-50');
+      }
+    } catch (e) {}
+  }
+
+  syncHeaderSavedBadge();
+  window.addEventListener('storage', syncHeaderSavedBadge);
+  window.addEventListener('hiyu-bookmark-updated', syncHeaderSavedBadge);
 </script>

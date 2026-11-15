@@ -1,7 +1,6 @@
 ---
-// src/pages/search.astro - Instant Vietnamese Full-Text Search (Museum Editorial Architecture)
+// src/pages/search.astro - Instant Vietnamese Full-Text Search (Museum Editorial Architecture V3.1)
 import BaseLayout from '../layouts/BaseLayout.astro';
-import SectionHeader from '../components/SectionHeader.astro';
 import { getAllPublishedQuotes, getAllTopics } from '../lib/content-publisher';
 
 const allQuotes = getAllPublishedQuotes();
@@ -31,21 +30,21 @@ const searchIndex = allQuotes.map((q) => {
   description="Tìm kiếm toàn văn các tác phẩm triết ngôn, danh ngôn tâm lý học và tác phẩm hội họa cổ điển theo từ khóa, tác giả hoặc chủ đề."
 >
   <div class="py-12 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-4xl mx-auto space-y-12">
+    <div class="max-w-4xl mx-auto space-y-10 sm:space-y-12">
       
       <!-- Masthead -->
       <div class="text-center space-y-4">
         <div class="flex items-center justify-center gap-2 text-xs tracking-[0.25em] uppercase font-sans text-muted">
-          <span class="text-accent font-semibold">SEARCH ARCHIVE</span>
+          <span class="text-accent font-semibold font-mono">SEARCH ARCHIVE</span>
           <span class="text-muted/30">/</span>
-          <span>{allQuotes.length} TÁC PHẨM ĐÃ DUYỆT</span>
+          <span>{allQuotes.length} TÁC PHẨM ĐÃ GIÁM TUYỂN</span>
         </div>
 
-        <h1 class="font-display text-4xl sm:text-6xl font-medium tracking-tight text-text">
+        <h1 class="font-display text-3xl sm:text-5xl font-medium tracking-tight text-text">
           Tìm Kiếm Toàn Văn
         </h1>
 
-        <p class="font-serif italic text-base sm:text-xl text-muted max-w-xl mx-auto">
+        <p class="font-serif italic text-sm sm:text-lg text-muted max-w-xl mx-auto">
           Tra cứu theo từ khóa tâm lý, tác giả (Nietzsche, Jung, Freud, Epictetus...) hoặc khái niệm triết học.
         </p>
 
@@ -90,35 +89,117 @@ const searchIndex = allQuotes.map((q) => {
         </div>
       </div>
 
-      <!-- Filters & Results Meta -->
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-4 border-b border-border/70 text-xs font-sans text-muted">
+      <!-- Filters & Results Meta (With Downward-Expanding Custom Dropdowns) -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-4 border-b border-border/70 text-xs font-sans text-muted relative z-20">
         <div id="results-count" class="font-medium text-text/80">
           Đang hiển thị tất cả {allQuotes.length} tác phẩm
         </div>
 
         <div class="flex flex-wrap items-center gap-3">
-          <!-- Topic Dropdown -->
-          <select
-            id="topic-filter"
-            class="bg-surface border border-border/80 text-text px-3.5 py-1.5 text-xs outline-none focus:border-accent transition-colors cursor-pointer"
-          >
-            <option value="">Tất cả chủ đề ({allTopics.length})</option>
-            {allTopics.map((t) => (
-              <option value={t.code}>{t.title} ({t.count})</option>
-            ))}
-          </select>
+          
+          <!-- Custom Topic Dropdown (Always Opens Downward) -->
+          <div class="relative" id="topic-dropdown-wrapper">
+            <input type="hidden" id="topic-filter-val" value="" />
+            <button
+              id="topic-dropdown-trigger"
+              type="button"
+              class="bg-surface border border-border/80 text-text px-3.5 py-1.5 text-xs outline-none hover:border-accent flex items-center justify-between gap-2.5 transition-colors min-h-[34px]"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+            >
+              <span id="topic-dropdown-label">Tất cả chủ đề ({allTopics.length})</span>
+              <svg class="w-3.5 h-3.5 text-muted transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
 
-          <!-- Type Dropdown -->
-          <select
-            id="type-filter"
-            class="bg-surface border border-border/80 text-text px-3.5 py-1.5 text-xs outline-none focus:border-accent transition-colors cursor-pointer"
-          >
-            <option value="">Tất cả phân loại</option>
-            <option value="DIRECT_QUOTE">Trích dẫn đã xác minh</option>
-            <option value="PARAPHRASE">Diễn giải tư tưởng</option>
-            <option value="INSPIRED_ORIGINAL">Sáng tác lấy cảm hứng</option>
-            <option value="INDEPENDENT_ORIGINAL">Sáng tác Hiyu Abyss</option>
-          </select>
+            <!-- Menu listbox: absolute top-full mt-1.5, expands downward -->
+            <div
+              id="topic-dropdown-menu"
+              class="hidden absolute top-full left-0 sm:right-auto mt-1.5 w-72 max-h-64 overflow-y-auto bg-surface border border-border/90 shadow-2xl z-30 py-1 divide-y divide-border/40 font-sans text-xs"
+              role="listbox"
+            >
+              <button
+                type="button"
+                class="topic-dropdown-item w-full text-left px-4 py-2 hover:bg-surface-raised hover:text-accent flex items-center justify-between transition-colors text-accent font-semibold"
+                data-value=""
+              >
+                <span>Tất cả chủ đề ({allTopics.length})</span>
+                <span class="text-[10px]">✓</span>
+              </button>
+              {allTopics.map((t) => (
+                <button
+                  type="button"
+                  class="topic-dropdown-item w-full text-left px-4 py-2 hover:bg-surface-raised hover:text-accent flex items-center justify-between transition-colors text-text/90"
+                  data-value={t.code}
+                >
+                  <span class="truncate">{t.title}</span>
+                  <span class="text-muted text-[11px] font-mono">({t.count})</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <!-- Custom Type Dropdown (Always Opens Downward) -->
+          <div class="relative" id="type-dropdown-wrapper">
+            <input type="hidden" id="type-filter-val" value="" />
+            <button
+              id="type-dropdown-trigger"
+              type="button"
+              class="bg-surface border border-border/80 text-text px-3.5 py-1.5 text-xs outline-none hover:border-accent flex items-center justify-between gap-2.5 transition-colors min-h-[34px]"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+            >
+              <span id="type-dropdown-label">Tất cả phân loại</span>
+              <svg class="w-3.5 h-3.5 text-muted transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <div
+              id="type-dropdown-menu"
+              class="hidden absolute top-full right-0 mt-1.5 w-56 max-h-64 overflow-y-auto bg-surface border border-border/90 shadow-2xl z-30 py-1 divide-y divide-border/40 font-sans text-xs"
+              role="listbox"
+            >
+              <button
+                type="button"
+                class="type-dropdown-item w-full text-left px-4 py-2 hover:bg-surface-raised hover:text-accent flex items-center justify-between transition-colors text-accent font-semibold"
+                data-value=""
+              >
+                <span>Tất cả phân loại</span>
+                <span class="text-[10px]">✓</span>
+              </button>
+              <button
+                type="button"
+                class="type-dropdown-item w-full text-left px-4 py-2 hover:bg-surface-raised hover:text-accent flex items-center justify-between transition-colors text-text/90"
+                data-value="DIRECT_QUOTE"
+              >
+                <span>Trích dẫn đã xác minh</span>
+              </button>
+              <button
+                type="button"
+                class="type-dropdown-item w-full text-left px-4 py-2 hover:bg-surface-raised hover:text-accent flex items-center justify-between transition-colors text-text/90"
+                data-value="PARAPHRASE"
+              >
+                <span>Diễn giải tư tưởng</span>
+              </button>
+              <button
+                type="button"
+                class="type-dropdown-item w-full text-left px-4 py-2 hover:bg-surface-raised hover:text-accent flex items-center justify-between transition-colors text-text/90"
+                data-value="INSPIRED_ORIGINAL"
+              >
+                <span>Sáng tác lấy cảm hứng</span>
+              </button>
+              <button
+                type="button"
+                class="type-dropdown-item w-full text-left px-4 py-2 hover:bg-surface-raised hover:text-accent flex items-center justify-between transition-colors text-text/90"
+                data-value="INDEPENDENT_ORIGINAL"
+              >
+                <span>Sáng tác Hiyu Abyss</span>
+              </button>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -149,7 +230,7 @@ const searchIndex = allQuotes.map((q) => {
   </div>
 
   <!-- Embedded Instant Search Engine Script -->
-  <script is:inline define:vars={{ searchIndex }}>
+  <script is:inline define:vars={{ searchIndex, allTopicsCount: allTopics.length }}>
     function removeVietnameseTones(str) {
       if (!str) return '';
       str = str.toLowerCase();
@@ -160,13 +241,88 @@ const searchIndex = allQuotes.map((q) => {
 
     const searchInput = document.getElementById('search-input');
     const clearBtn = document.getElementById('clear-search-btn');
-    const topicFilter = document.getElementById('topic-filter');
-    const typeFilter = document.getElementById('type-filter');
     const resultsContainer = document.getElementById('search-results');
     const resultsCount = document.getElementById('results-count');
     const emptyState = document.getElementById('empty-state');
     const resetFilterBtn = document.getElementById('reset-filter-btn');
     const quickTags = document.querySelectorAll('.quick-tag');
+
+    // Custom Dropdown Elements
+    const topicTrigger = document.getElementById('topic-dropdown-trigger');
+    const topicMenu = document.getElementById('topic-dropdown-menu');
+    const topicLabel = document.getElementById('topic-dropdown-label');
+    const topicValInput = document.getElementById('topic-filter-val');
+    const topicItems = document.querySelectorAll('.topic-dropdown-item');
+
+    const typeTrigger = document.getElementById('type-dropdown-trigger');
+    const typeMenu = document.getElementById('type-dropdown-menu');
+    const typeLabel = document.getElementById('type-dropdown-label');
+    const typeValInput = document.getElementById('type-filter-val');
+    const typeItems = document.querySelectorAll('.type-dropdown-item');
+
+    function toggleMenu(menu, trigger) {
+      const isClosed = menu.classList.contains('hidden');
+      closeAllMenus();
+      if (isClosed) {
+        menu.classList.remove('hidden');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    function closeAllMenus() {
+      if (topicMenu) topicMenu.classList.add('hidden');
+      if (typeMenu) typeMenu.classList.add('hidden');
+      if (topicTrigger) topicTrigger.setAttribute('aria-expanded', 'false');
+      if (typeTrigger) typeTrigger.setAttribute('aria-expanded', 'false');
+    }
+
+    if (topicTrigger && topicMenu) {
+      topicTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleMenu(topicMenu, topicTrigger);
+      });
+    }
+
+    if (typeTrigger && typeMenu) {
+      typeTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleMenu(typeMenu, typeTrigger);
+      });
+    }
+
+    document.addEventListener('click', () => {
+      closeAllMenus();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeAllMenus();
+    });
+
+    topicItems.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const val = btn.getAttribute('data-value');
+        topicValInput.value = val;
+        topicLabel.textContent = btn.querySelector('span:first-child').textContent;
+        topicItems.forEach((b) => b.classList.remove('text-accent', 'font-semibold'));
+        btn.classList.add('text-accent', 'font-semibold');
+        closeAllMenus();
+        doFilter();
+      });
+    });
+
+    typeItems.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const val = btn.getAttribute('data-value');
+        typeValInput.value = val;
+        typeLabel.textContent = btn.querySelector('span:first-child').textContent;
+        typeItems.forEach((b) => b.classList.remove('text-accent', 'font-semibold'));
+        btn.classList.add('text-accent', 'font-semibold');
+        closeAllMenus();
+        doFilter();
+      });
+    });
 
     function renderResults(quotes, query) {
       if (quotes.length === 0) {
@@ -229,8 +385,8 @@ const searchIndex = allQuotes.map((q) => {
 
     function doFilter() {
       const q = searchInput.value.trim();
-      const topicVal = topicFilter.value;
-      const typeVal = typeFilter.value;
+      const topicVal = topicValInput.value;
+      const typeVal = typeValInput.value;
 
       if (q.length > 0) {
         clearBtn.classList.remove('hidden');
@@ -269,8 +425,6 @@ const searchIndex = allQuotes.map((q) => {
     }
 
     searchInput.addEventListener('input', doFilter);
-    topicFilter.addEventListener('change', doFilter);
-    typeFilter.addEventListener('change', doFilter);
 
     clearBtn.addEventListener('click', () => {
       searchInput.value = '';
@@ -280,8 +434,14 @@ const searchIndex = allQuotes.map((q) => {
 
     resetFilterBtn.addEventListener('click', () => {
       searchInput.value = '';
-      topicFilter.value = '';
-      typeFilter.value = '';
+      topicValInput.value = '';
+      typeValInput.value = '';
+      topicLabel.textContent = `Tất cả chủ đề (${allTopicsCount})`;
+      typeLabel.textContent = 'Tất cả phân loại';
+      topicItems.forEach((b) => b.classList.remove('text-accent', 'font-semibold'));
+      typeItems.forEach((b) => b.classList.remove('text-accent', 'font-semibold'));
+      if (topicItems[0]) topicItems[0].classList.add('text-accent', 'font-semibold');
+      if (typeItems[0]) typeItems[0].classList.add('text-accent', 'font-semibold');
       doFilter();
     });
 

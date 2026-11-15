@@ -1,58 +1,48 @@
 ---
-// Footer.astro
+// Footer.astro - Pure Vietnamese Museum Editorial Footer (V3.1)
 import BrandLogo from './BrandLogo.astro';
 
 const currentYear = new Date().getFullYear();
 ---
 
 <footer class="w-full bg-surface border-t border-border mt-auto transition-colors duration-200">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12">
-      <!-- Brand & Mission Column -->
-      <div class="md:col-span-5 flex flex-col gap-4">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-16 items-start">
+      
+      <!-- Brand & Mission Column (7 cols) -->
+      <div class="md:col-span-7 flex flex-col gap-4">
         <BrandLogo variant="full" />
-        <p class="font-serif text-sm sm:text-base text-muted leading-relaxed max-w-sm mt-2">
+        <p class="font-serif text-sm sm:text-base text-muted leading-relaxed max-w-lg mt-1">
           Không gian lưu giữ và giám tuyển tư tưởng triết học, tâm lý học hành vi và mỹ học cổ điển. 
           Nơi câu chữ sâu lắng đối thoại cùng các kiệt tác bảo tàng để khơi gợi sự tự soi chiếu nội tâm.
         </p>
-        <div class="flex items-center gap-3 text-xs tracking-widest text-muted uppercase mt-2">
+        <div class="flex items-center gap-3 text-xs tracking-widest text-muted uppercase mt-1">
           <span class="inline-block w-2 h-2 rounded-full bg-accent animate-pulse"></span>
           <span>100 Tác Phẩm Đã Giám Tuyển · 20 Chủ Đề</span>
         </div>
       </div>
 
-      <!-- Quick Links Column -->
-      <div class="md:col-span-3 flex flex-col gap-3">
-        <h3 class="font-display text-sm tracking-[0.2em] uppercase font-bold text-text mb-2">
+      <!-- Quick Navigation Links (5 cols) -->
+      <div class="md:col-span-5 flex flex-col gap-3 md:pl-8">
+        <h3 class="font-display text-xs tracking-[0.22em] uppercase font-bold text-text mb-2">
           Điều Hướng
         </h3>
-        <ul class="flex flex-col gap-2.5 text-sm text-muted">
+        <ul class="grid grid-cols-2 gap-3 text-sm text-muted">
           <li>
-            <a href="/library" class="hover:text-accent transition-colors">The Library (Thư Viện)</a>
+            <a href="/library" class="hover:text-accent transition-colors font-medium">Thư Viện</a>
           </li>
           <li>
-            <a href="/mirror" class="hover:text-accent transition-colors">The Mirror (Chiếc Gương)</a>
+            <a href="/mirror" class="hover:text-accent transition-colors font-medium">Chiếc Gương</a>
           </li>
           <li>
-            <a href="/themes" class="hover:text-accent transition-colors">Bản Đồ Chủ Đề</a>
+            <a href="/themes" class="hover:text-accent transition-colors font-medium">Bản Đồ Chủ Đề</a>
           </li>
           <li>
-            <a href="/search" class="hover:text-accent transition-colors">Tìm Kiếm Toàn Văn</a>
+            <a href="/search" class="hover:text-accent transition-colors font-medium">Tìm Kiếm Toàn Văn</a>
           </li>
         </ul>
-      </div>
 
-      <!-- Academic & Visual Provenance -->
-      <div class="md:col-span-4 flex flex-col gap-3">
-        <h3 class="font-display text-sm tracking-[0.2em] uppercase font-bold text-text mb-2">
-          Minh Bạch Xuất Xứ
-        </h3>
-        <p class="font-sans text-xs text-muted leading-relaxed">
-          Tất cả tranh ảnh được khai thác từ bộ sưu tập công cộng (Public Domain / CC0) của các viện bảo tàng quốc tế: 
-          <em>The Met, Musée d'Orsay, Rijksmuseum, Uffizi Gallery</em>. 
-          Mọi trích dẫn tư tưởng đều phân định minh bạch theo chuẩn kiểm chứng học thuật HYA-02.
-        </p>
-        <div class="flex items-center gap-4 mt-2">
+        <div class="pt-4 mt-2 border-t border-border/40 flex items-center gap-4">
           <a
             href="https://www.tiktok.com/@hiyuabyss"
             target="_blank"
@@ -66,19 +56,16 @@ const currentYear = new Date().getFullYear();
           </a>
         </div>
       </div>
+
     </div>
 
     <!-- Bottom Line -->
-    <div class="border-t border-border/50 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted">
+    <div class="border-t border-border/50 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted">
       <p>© {currentYear} Hiyu Abyss. Bảo tồn di sản tư tưởng & mỹ học cổ điển.</p>
-      <div class="flex items-center gap-6">
-        <span class="hover:text-text cursor-default">Black Archive · Pale Archive</span>
-        <a href="#main-content" class="hover:text-accent flex items-center gap-1">
-          <span>Lên đầu trang</span>
-          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-          </svg>
-        </a>
+      <div class="flex items-center gap-4 text-[11px] font-mono tracking-wider">
+        <span>Black Archive</span>
+        <span class="text-border">·</span>
+        <span>Pale Archive</span>
       </div>
     </div>
   </div>

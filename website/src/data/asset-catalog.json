@@ -848,7 +848,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề SOLITUDE (Cô độc & Nỗi sợ tĩnh lặng).",
     "slides": {
-      "slide_1": "/images/themes/theme_91/slide_1.jpg"
+      "slide_1": "/images/themes/theme_91/slide_1.jpg",
+      "slide_2": "/images/themes/theme_91/slide_2.jpg",
+      "slide_3": "/images/themes/theme_91/slide_3.jpg"
     }
   },
   "theme_92": {
@@ -861,7 +863,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề SOLITUDE (Cô độc & Nỗi sợ tĩnh lặng).",
     "slides": {
       "slide_1": "/images/themes/theme_92/slide_1.jpg",
-      "slide_2": "/images/themes/theme_92/slide_2.jpg"
+      "slide_2": "/images/themes/theme_92/slide_2.jpg",
+      "slide_3": "/images/themes/theme_92/slide_3.jpg"
     }
   },
   "theme_93": {
@@ -873,7 +876,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề SOLITUDE (Cô độc & Nỗi sợ tĩnh lặng).",
     "slides": {
-      "slide_1": "/images/themes/theme_93/slide_1.jpg"
+      "slide_1": "/images/themes/theme_93/slide_1.jpg",
+      "slide_2": "/images/themes/theme_93/slide_2.jpg",
+      "slide_3": "/images/themes/theme_93/slide_3.jpg"
     }
   },
   "theme_94": {
@@ -886,7 +891,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề SOLITUDE (Cô độc & Nỗi sợ tĩnh lặng).",
     "slides": {
       "slide_1": "/images/themes/theme_94/slide_1.jpg",
-      "slide_2": "/images/themes/theme_94/slide_2.jpg"
+      "slide_2": "/images/themes/theme_94/slide_2.jpg",
+      "slide_3": "/images/themes/theme_94/slide_3.jpg"
     }
   },
   "theme_95": {
@@ -912,7 +918,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề STATUS (Danh vọng & Khiêm nhường trình diễn).",
     "slides": {
-      "slide_1": "/images/themes/theme_96/slide_1.jpg"
+      "slide_1": "/images/themes/theme_96/slide_1.jpg",
+      "slide_2": "/images/themes/theme_96/slide_2.jpg",
+      "slide_3": "/images/themes/theme_96/slide_3.jpg"
     }
   },
   "theme_97": {
@@ -925,7 +933,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề STATUS (Danh vọng & Khiêm nhường trình diễn).",
     "slides": {
       "slide_1": "/images/themes/theme_97/slide_1.jpg",
-      "slide_2": "/images/themes/theme_97/slide_2.jpg"
+      "slide_2": "/images/themes/theme_97/slide_2.jpg",
+      "slide_3": "/images/themes/theme_97/slide_3.jpg"
     }
   },
   "theme_98": {
@@ -937,7 +946,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề STATUS (Danh vọng & Khiêm nhường trình diễn).",
     "slides": {
-      "slide_1": "/images/themes/theme_98/slide_1.jpg"
+      "slide_1": "/images/themes/theme_98/slide_1.jpg",
+      "slide_2": "/images/themes/theme_98/slide_2.jpg",
+      "slide_3": "/images/themes/theme_98/slide_3.jpg"
     }
   },
   "theme_99": {
@@ -950,7 +961,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề STATUS (Danh vọng & Khiêm nhường trình diễn).",
     "slides": {
       "slide_1": "/images/themes/theme_99/slide_1.jpg",
-      "slide_2": "/images/themes/theme_99/slide_2.jpg"
+      "slide_2": "/images/themes/theme_99/slide_2.jpg",
+      "slide_3": "/images/themes/theme_99/slide_3.jpg"
     }
   },
   "theme_100": {
@@ -977,7 +989,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề RANH GIỚI (Tôn trọng & Bản sắc).",
     "slides": {
       "slide_1": "/images/themes/theme_101/slide_1.jpg",
-      "slide_2": "/images/themes/theme_101/slide_2.jpg"
+      "slide_2": "/images/themes/theme_101/slide_2.jpg",
+      "slide_3": "/images/themes/theme_101/slide_3.jpg"
     }
   },
   "theme_102": {
@@ -989,7 +1002,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề RANH GIỚI (Tự chủ nội tâm).",
     "slides": {
-      "slide_1": "/images/themes/theme_102/slide_1.jpg"
+      "slide_1": "/images/themes/theme_102/slide_1.jpg",
+      "slide_2": "/images/themes/theme_102/slide_2.jpg",
+      "slide_3": "/images/themes/theme_102/slide_3.jpg"
     }
   },
   "theme_103": {
@@ -1002,7 +1017,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề RANH GIỚI (Tĩnh lặng nội tâm).",
     "slides": {
       "slide_1": "/images/themes/theme_103/slide_1.jpg",
-      "slide_2": "/images/themes/theme_103/slide_2.jpg"
+      "slide_2": "/images/themes/theme_103/slide_2.jpg",
+      "slide_3": "/images/themes/theme_103/slide_3.jpg"
     }
   },
   "theme_104": {
@@ -1014,7 +1030,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề RANH GIỚI (Điểm tựa nội tại).",
     "slides": {
-      "slide_1": "/images/themes/theme_104/slide_1.jpg"
+      "slide_1": "/images/themes/theme_104/slide_1.jpg",
+      "slide_2": "/images/themes/theme_104/slide_2.jpg",
+      "slide_3": "/images/themes/theme_104/slide_3.jpg"
     }
   },
   "theme_105": {
@@ -1040,7 +1058,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề RANH GIỚI (Dũng khí từ chối).",
     "slides": {
-      "slide_1": "/images/themes/theme_106/slide_1.jpg"
+      "slide_1": "/images/themes/theme_106/slide_1.jpg",
+      "slide_2": "/images/themes/theme_106/slide_2.jpg",
+      "slide_3": "/images/themes/theme_106/slide_3.jpg"
     }
   },
   "theme_107": {
@@ -1053,7 +1073,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề RANH GIỚI (Tự kiến tạo).",
     "slides": {
       "slide_1": "/images/themes/theme_107/slide_1.jpg",
-      "slide_2": "/images/themes/theme_107/slide_2.jpg"
+      "slide_2": "/images/themes/theme_107/slide_2.jpg",
+      "slide_3": "/images/themes/theme_107/slide_3.jpg"
     }
   },
   "theme_108": {
@@ -1065,7 +1086,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề RANH GIỚI (Độc lập tư duy).",
     "slides": {
-      "slide_1": "/images/themes/theme_108/slide_1.jpg"
+      "slide_1": "/images/themes/theme_108/slide_1.jpg",
+      "slide_2": "/images/themes/theme_108/slide_2.jpg",
+      "slide_3": "/images/themes/theme_108/slide_3.jpg"
     }
   },
   "theme_109": {
@@ -1078,7 +1101,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề THANH THẢN (Bớt tưởng tượng).",
     "slides": {
       "slide_1": "/images/themes/theme_109/slide_1.jpg",
-      "slide_2": "/images/themes/theme_109/slide_2.jpg"
+      "slide_2": "/images/themes/theme_109/slide_2.jpg",
+      "slide_3": "/images/themes/theme_109/slide_3.jpg"
     }
   },
   "theme_110": {
@@ -1090,7 +1114,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề THANH THẢN (Nước trong bùn lắng).",
     "slides": {
-      "slide_1": "/images/themes/theme_110/slide_1.jpg"
+      "slide_1": "/images/themes/theme_110/slide_1.jpg",
+      "slide_2": "/images/themes/theme_110/slide_2.jpg",
+      "slide_3": "/images/themes/theme_110/slide_3.jpg"
     }
   },
   "theme_111": {
@@ -1116,7 +1142,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề THANH THẢN (Tâm thế biết đủ).",
     "slides": {
-      "slide_1": "/images/themes/theme_112/slide_1.jpg"
+      "slide_1": "/images/themes/theme_112/slide_1.jpg",
+      "slide_2": "/images/themes/theme_112/slide_2.jpg",
+      "slide_3": "/images/themes/theme_112/slide_3.jpg"
     }
   },
   "theme_113": {
@@ -1129,7 +1157,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề THANH THẢN (Lối sống tối giản).",
     "slides": {
       "slide_1": "/images/themes/theme_113/slide_1.jpg",
-      "slide_2": "/images/themes/theme_113/slide_2.jpg"
+      "slide_2": "/images/themes/theme_113/slide_2.jpg",
+      "slide_3": "/images/themes/theme_113/slide_3.jpg"
     }
   },
   "theme_114": {
@@ -1141,7 +1170,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề THANH THẢN (Làm chủ góc nhìn).",
     "slides": {
-      "slide_1": "/images/themes/theme_114/slide_1.jpg"
+      "slide_1": "/images/themes/theme_114/slide_1.jpg",
+      "slide_2": "/images/themes/theme_114/slide_2.jpg",
+      "slide_3": "/images/themes/theme_114/slide_3.jpg"
     }
   },
   "theme_115": {
@@ -1154,7 +1185,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề THANH THẢN (Bình yên vững chãi).",
     "slides": {
       "slide_1": "/images/themes/theme_115/slide_1.jpg",
-      "slide_2": "/images/themes/theme_115/slide_2.jpg"
+      "slide_2": "/images/themes/theme_115/slide_2.jpg",
+      "slide_3": "/images/themes/theme_115/slide_3.jpg"
     }
   },
   "theme_116": {
@@ -1166,7 +1198,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề THANH THẢN (Chấp nhận cảm xúc).",
     "slides": {
-      "slide_1": "/images/themes/theme_116/slide_1.jpg"
+      "slide_1": "/images/themes/theme_116/slide_1.jpg",
+      "slide_2": "/images/themes/theme_116/slide_2.jpg",
+      "slide_3": "/images/themes/theme_116/slide_3.jpg"
     }
   },
   "theme_117": {
@@ -1179,7 +1213,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề KIÊN CƯỜNG (Mũi đá trước sóng).",
     "slides": {
       "slide_1": "/images/themes/theme_117/slide_1.jpg",
-      "slide_2": "/images/themes/theme_117/slide_2.jpg"
+      "slide_2": "/images/themes/theme_117/slide_2.jpg",
+      "slide_3": "/images/themes/theme_117/slide_3.jpg"
     }
   },
   "theme_118": {
@@ -1191,7 +1226,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề KIÊN CƯỜNG (Sức mạnh của nước).",
     "slides": {
-      "slide_1": "/images/themes/theme_118/slide_1.jpg"
+      "slide_1": "/images/themes/theme_118/slide_1.jpg",
+      "slide_2": "/images/themes/theme_118/slide_2.jpg",
+      "slide_3": "/images/themes/theme_118/slide_3.jpg"
     }
   },
   "theme_119": {
@@ -1217,7 +1254,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề KIÊN CƯỜNG (Lửa thử vàng).",
     "slides": {
-      "slide_1": "/images/themes/theme_120/slide_1.jpg"
+      "slide_1": "/images/themes/theme_120/slide_1.jpg",
+      "slide_2": "/images/themes/theme_120/slide_2.jpg",
+      "slide_3": "/images/themes/theme_120/slide_3.jpg"
     }
   },
   "theme_121": {
@@ -1230,7 +1269,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề KIÊN CƯỜNG (Đối diện nỗi sợ).",
     "slides": {
       "slide_1": "/images/themes/theme_121/slide_1.jpg",
-      "slide_2": "/images/themes/theme_121/slide_2.jpg"
+      "slide_2": "/images/themes/theme_121/slide_2.jpg",
+      "slide_3": "/images/themes/theme_121/slide_3.jpg"
     }
   },
   "theme_122": {
@@ -1242,7 +1282,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề KIÊN CƯỜNG (Sự trưởng thành sau đau thương).",
     "slides": {
-      "slide_1": "/images/themes/theme_122/slide_1.jpg"
+      "slide_1": "/images/themes/theme_122/slide_1.jpg",
+      "slide_2": "/images/themes/theme_122/slide_2.jpg",
+      "slide_3": "/images/themes/theme_122/slide_3.jpg"
     }
   },
   "theme_123": {
@@ -1255,7 +1297,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề KIÊN CƯỜNG (Tự do tối thượng).",
     "slides": {
       "slide_1": "/images/themes/theme_123/slide_1.jpg",
-      "slide_2": "/images/themes/theme_123/slide_2.jpg"
+      "slide_2": "/images/themes/theme_123/slide_2.jpg",
+      "slide_3": "/images/themes/theme_123/slide_3.jpg"
     }
   },
   "theme_124": {
@@ -1267,7 +1310,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề KIÊN CƯỜNG (Chấp nhận thực tại).",
     "slides": {
-      "slide_1": "/images/themes/theme_124/slide_1.jpg"
+      "slide_1": "/images/themes/theme_124/slide_1.jpg",
+      "slide_2": "/images/themes/theme_124/slide_2.jpg",
+      "slide_3": "/images/themes/theme_124/slide_3.jpg"
     }
   },
   "theme_125": {
@@ -1280,7 +1325,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề KẾT NỐI (Tình yêu trưởng thành).",
     "slides": {
       "slide_1": "/images/themes/theme_125/slide_1.jpg",
-      "slide_2": "/images/themes/theme_125/slide_2.jpg"
+      "slide_2": "/images/themes/theme_125/slide_2.jpg",
+      "slide_3": "/images/themes/theme_125/slide_3.jpg"
     }
   },
   "theme_126": {
@@ -1292,7 +1338,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề KẾT NỐI (Hai cõi cô độc).",
     "slides": {
-      "slide_1": "/images/themes/theme_126/slide_1.jpg"
+      "slide_1": "/images/themes/theme_126/slide_1.jpg",
+      "slide_2": "/images/themes/theme_126/slide_2.jpg",
+      "slide_3": "/images/themes/theme_126/slide_3.jpg"
     }
   },
   "theme_127": {
@@ -1305,7 +1353,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề KẾT NỐI (Nghịch lý tình yêu).",
     "slides": {
       "slide_1": "/images/themes/theme_127/slide_1.jpg",
-      "slide_2": "/images/themes/theme_127/slide_2.jpg"
+      "slide_2": "/images/themes/theme_127/slide_2.jpg",
+      "slide_3": "/images/themes/theme_127/slide_3.jpg"
     }
   },
   "theme_128": {
@@ -1317,7 +1366,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề KẾT NỐI (Phản ứng tâm hồn).",
     "slides": {
-      "slide_1": "/images/themes/theme_128/slide_1.jpg"
+      "slide_1": "/images/themes/theme_128/slide_1.jpg",
+      "slide_2": "/images/themes/theme_128/slide_2.jpg",
+      "slide_3": "/images/themes/theme_128/slide_3.jpg"
     }
   },
   "theme_129": {
@@ -1343,7 +1394,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề KẾT NỐI (Trao đi yêu thương).",
     "slides": {
-      "slide_1": "/images/themes/theme_130/slide_1.jpg"
+      "slide_1": "/images/themes/theme_130/slide_1.jpg",
+      "slide_2": "/images/themes/theme_130/slide_2.jpg",
+      "slide_3": "/images/themes/theme_130/slide_3.jpg"
     }
   },
   "theme_131": {
@@ -1356,7 +1409,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề KẾT NỐI (Khoảng thở tình yêu).",
     "slides": {
       "slide_1": "/images/themes/theme_131/slide_1.jpg",
-      "slide_2": "/images/themes/theme_131/slide_2.jpg"
+      "slide_2": "/images/themes/theme_131/slide_2.jpg",
+      "slide_3": "/images/themes/theme_131/slide_3.jpg"
     }
   },
   "theme_132": {
@@ -1368,7 +1422,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề KẾT NỐI (Thái độ bao dung).",
     "slides": {
-      "slide_1": "/images/themes/theme_132/slide_1.jpg"
+      "slide_1": "/images/themes/theme_132/slide_1.jpg",
+      "slide_2": "/images/themes/theme_132/slide_2.jpg",
+      "slide_3": "/images/themes/theme_132/slide_3.jpg"
     }
   },
   "theme_133": {
@@ -1381,7 +1437,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề BẢN SẮC (Nhìn vào nội tâm).",
     "slides": {
       "slide_1": "/images/themes/theme_133/slide_1.jpg",
-      "slide_2": "/images/themes/theme_133/slide_2.jpg"
+      "slide_2": "/images/themes/theme_133/slide_2.jpg",
+      "slide_3": "/images/themes/theme_133/slide_3.jpg"
     }
   },
   "theme_134": {
@@ -1393,7 +1450,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề BẢN SẮC (Đặc quyền làm chính mình).",
     "slides": {
-      "slide_1": "/images/themes/theme_134/slide_1.jpg"
+      "slide_1": "/images/themes/theme_134/slide_1.jpg",
+      "slide_2": "/images/themes/theme_134/slide_2.jpg",
+      "slide_3": "/images/themes/theme_134/slide_3.jpg"
     }
   },
   "theme_135": {
@@ -1406,7 +1465,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề BẢN SẮC (Sở hữu hay Tồn tại).",
     "slides": {
       "slide_1": "/images/themes/theme_135/slide_1.jpg",
-      "slide_2": "/images/themes/theme_135/slide_2.jpg"
+      "slide_2": "/images/themes/theme_135/slide_2.jpg",
+      "slide_3": "/images/themes/theme_135/slide_3.jpg"
     }
   },
   "theme_136": {
@@ -1418,7 +1478,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề BẢN SẮC (Thấu suốt chính mình).",
     "slides": {
-      "slide_1": "/images/themes/theme_136/slide_1.jpg"
+      "slide_1": "/images/themes/theme_136/slide_1.jpg",
+      "slide_2": "/images/themes/theme_136/slide_2.jpg",
+      "slide_3": "/images/themes/theme_136/slide_3.jpg"
     }
   },
   "theme_137": {
@@ -1431,7 +1493,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề BẢN SẮC (Phòng thí nghiệm nội tâm).",
     "slides": {
       "slide_1": "/images/themes/theme_137/slide_1.jpg",
-      "slide_2": "/images/themes/theme_137/slide_2.jpg"
+      "slide_2": "/images/themes/theme_137/slide_2.jpg",
+      "slide_3": "/images/themes/theme_137/slide_3.jpg"
     }
   },
   "theme_138": {
@@ -1443,7 +1506,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề BẢN SẮC (Chiến thắng trước đồng hóa).",
     "slides": {
-      "slide_1": "/images/themes/theme_138/slide_1.jpg"
+      "slide_1": "/images/themes/theme_138/slide_1.jpg",
+      "slide_2": "/images/themes/theme_138/slide_2.jpg",
+      "slide_3": "/images/themes/theme_138/slide_3.jpg"
     }
   },
   "theme_139": {
@@ -1469,7 +1534,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề BẢN SẮC (Lòng tự trọng tối thượng).",
     "slides": {
-      "slide_1": "/images/themes/theme_140/slide_1.jpg"
+      "slide_1": "/images/themes/theme_140/slide_1.jpg",
+      "slide_2": "/images/themes/theme_140/slide_2.jpg",
+      "slide_3": "/images/themes/theme_140/slide_3.jpg"
     }
   },
   "theme_141": {
@@ -1481,7 +1548,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề BẢN SẮC (Lương tâm thanh sạch).",
     "slides": {
-      "slide_1": "/images/themes/theme_141/slide_1.jpg"
+      "slide_1": "/images/themes/theme_141/slide_1.jpg",
+      "slide_2": "/images/themes/theme_141/slide_2.jpg",
+      "slide_3": "/images/themes/theme_141/slide_3.jpg"
     }
   },
   "theme_142": {
@@ -1494,7 +1563,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề VƯỢT PHÁN XÉT (Quyền từ chối tổn thương).",
     "slides": {
       "slide_1": "/images/themes/theme_142/slide_1.jpg",
-      "slide_2": "/images/themes/theme_142/slide_2.jpg"
+      "slide_2": "/images/themes/theme_142/slide_2.jpg",
+      "slide_3": "/images/themes/theme_142/slide_3.jpg"
     }
   },
   "theme_143": {
@@ -1506,7 +1576,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề VƯỢT PHÁN XÉT (Bớt bận tâm miệng đời).",
     "slides": {
-      "slide_1": "/images/themes/theme_143/slide_1.jpg"
+      "slide_1": "/images/themes/theme_143/slide_1.jpg",
+      "slide_2": "/images/themes/theme_143/slide_2.jpg",
+      "slide_3": "/images/themes/theme_143/slide_3.jpg"
     }
   },
   "theme_144": {
@@ -1532,7 +1604,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề VƯỢT PHÁN XÉT (Vũ khí tự nhận thức).",
     "slides": {
-      "slide_1": "/images/themes/theme_145/slide_1.jpg"
+      "slide_1": "/images/themes/theme_145/slide_1.jpg",
+      "slide_2": "/images/themes/theme_145/slide_2.jpg",
+      "slide_3": "/images/themes/theme_145/slide_3.jpg"
     }
   },
   "theme_146": {
@@ -1545,7 +1619,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề VƯỢT PHÁN XÉT (Chiếc lồng công nhận).",
     "slides": {
       "slide_1": "/images/themes/theme_146/slide_1.jpg",
-      "slide_2": "/images/themes/theme_146/slide_2.jpg"
+      "slide_2": "/images/themes/theme_146/slide_2.jpg",
+      "slide_3": "/images/themes/theme_146/slide_3.jpg"
     }
   },
   "theme_147": {
@@ -1557,7 +1632,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề VƯỢT PHÁN XÉT (Thoát khỏi tâm lý bầy đàn).",
     "slides": {
-      "slide_1": "/images/themes/theme_147/slide_1.jpg"
+      "slide_1": "/images/themes/theme_147/slide_1.jpg",
+      "slide_2": "/images/themes/theme_147/slide_2.jpg",
+      "slide_3": "/images/themes/theme_147/slide_3.jpg"
     }
   },
   "theme_148": {
@@ -1570,7 +1647,8 @@
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề VƯỢT PHÁN XÉT (Gian phòng nội tâm).",
     "slides": {
       "slide_1": "/images/themes/theme_148/slide_1.jpg",
-      "slide_2": "/images/themes/theme_148/slide_2.jpg"
+      "slide_2": "/images/themes/theme_148/slide_2.jpg",
+      "slide_3": "/images/themes/theme_148/slide_3.jpg"
     }
   },
   "theme_149": {
@@ -1582,7 +1660,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề VƯỢT PHÁN XÉT (Bản chất của sự cay nghiệt).",
     "slides": {
-      "slide_1": "/images/themes/theme_149/slide_1.jpg"
+      "slide_1": "/images/themes/theme_149/slide_1.jpg",
+      "slide_2": "/images/themes/theme_149/slide_2.jpg",
+      "slide_3": "/images/themes/theme_149/slide_3.jpg"
     }
   },
   "theme_150": {
@@ -1594,7 +1674,9 @@
     "license": "Public Domain / Hiyu Abyss Canvas Normalized",
     "alt_vi": "Tranh sơn dầu phong cách cổ điển, vân cọ impasto và toan vải hữu cơ cho chủ đề VƯỢT PHÁN XÉT (Tự do tối thượng).",
     "slides": {
-      "slide_1": "/images/themes/theme_150/slide_1.jpg"
+      "slide_1": "/images/themes/theme_150/slide_1.jpg",
+      "slide_2": "/images/themes/theme_150/slide_2.jpg",
+      "slide_3": "/images/themes/theme_150/slide_3.jpg"
     }
   }
 }

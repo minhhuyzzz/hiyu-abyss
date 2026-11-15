@@ -144,10 +144,11 @@ const topics = getAllTopics();
                 <!-- Quick Bookmark Heart Button -->
                 <button
                   type="button"
-                  class="quick-save-card-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-white hover:text-accent hover:border-accent hover:scale-110 flex items-center justify-center transition-all z-10 opacity-0 group-hover:opacity-100 shadow-md"
+                  class="quick-save-card-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-white hover:text-accent hover:border-accent hover:scale-110 flex items-center justify-center transition-all z-10 opacity-90 sm:opacity-0 sm:group-hover:opacity-100 shadow-md"
                   data-id={q.id}
                   title="Lưu vào kho chiêm nghiệm"
                   aria-label="Lưu vào kho"
+                  aria-pressed="false"
                 >
                   <svg class="w-4 h-4 heart-icon transition-colors" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" fill="none">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
@@ -228,10 +229,11 @@ const topics = getAllTopics();
                 <!-- Quick Bookmark Heart Button -->
                 <button
                   type="button"
-                  class="quick-save-card-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-white hover:text-accent hover:border-accent hover:scale-110 flex items-center justify-center transition-all z-10 opacity-0 group-hover:opacity-100 shadow-md"
+                  class="quick-save-card-btn absolute top-3 right-3 w-8 h-8 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-white hover:text-accent hover:border-accent hover:scale-110 flex items-center justify-center transition-all z-10 opacity-90 sm:opacity-0 sm:group-hover:opacity-100 shadow-md"
                   data-id={q.id}
                   title="Lưu vào kho chiêm nghiệm"
                   aria-label="Lưu vào kho"
+                  aria-pressed="false"
                 >
                   <svg class="w-4 h-4 heart-icon transition-colors" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" fill="none">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
@@ -436,12 +438,14 @@ const topics = getAllTopics();
           const isSaved = saved.includes(id);
           const icon = btn.querySelector('.heart-icon');
           if (isSaved) {
-            btn.classList.remove('opacity-0');
+            btn.setAttribute('aria-pressed', 'true');
+            btn.classList.remove('opacity-90', 'sm:opacity-0');
             btn.classList.add('opacity-100', 'text-accent', 'border-accent');
             if (icon) icon.setAttribute('fill', 'currentColor');
           } else {
+            btn.setAttribute('aria-pressed', 'false');
             btn.classList.remove('text-accent', 'border-accent');
-            btn.classList.add('opacity-0');
+            btn.classList.add('opacity-90', 'sm:opacity-0');
             if (icon) icon.setAttribute('fill', 'none');
           }
         });

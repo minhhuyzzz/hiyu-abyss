@@ -204,6 +204,7 @@ export const AtlasMap: React.FC<Props> = ({
         return 'VI · DOLOR ET RATIO';
       case 'region-masks-and-authenticity':
         return 'VII · PERSONA ET VMBRA';
+      case 'region-aesthetic-and-worldview':
       case 'region-aesthetics-and-worldview':
         return 'VIII · AESTHETICA VNIVERSALIS';
       default:
@@ -229,8 +230,8 @@ export const AtlasMap: React.FC<Props> = ({
       }`}
     >
       {/* 1. Ornate Windrose / Compass Rose in Corner */}
-      <div className="absolute top-4 left-4 pointer-events-none z-10 opacity-60 hidden sm:block">
-        <svg width="90" height="90" viewBox="0 0 100 100" className="text-accent stroke-current fill-none">
+      <div className="absolute top-6 left-6 pointer-events-none z-10 opacity-75 hidden sm:block">
+        <svg width="96" height="96" viewBox="-12 -10 124 120" className="text-accent stroke-current fill-none">
           {/* Compass Rings */}
           <circle cx="50" cy="50" r="44" strokeWidth="1" />
           <circle cx="50" cy="50" r="40" strokeWidth="0.5" strokeDasharray="1.5 2" />
@@ -245,10 +246,10 @@ export const AtlasMap: React.FC<Props> = ({
           <path d="M19 81 L46 54 L50 50 L47 56 Z" fill="currentColor" opacity="0.3" />
           <path d="M81 81 L54 54 L50 50 L53 56 Z" fill="currentColor" opacity="0.3" />
           {/* Cardinal Directions */}
-          <text x="50" y="4" textAnchor="middle" fontSize="6.5" fontFamily="Cinzel, Cormorant Garamond, serif" fontWeight="bold" fill="currentColor">N · SEPTENTRIO</text>
-          <text x="97" y="52" textAnchor="middle" fontSize="6.5" fontFamily="Cinzel, Cormorant Garamond, serif" fontWeight="bold" fill="currentColor">E</text>
-          <text x="50" y="100" textAnchor="middle" fontSize="6.5" fontFamily="Cinzel, Cormorant Garamond, serif" fontWeight="bold" fill="currentColor">S · MERIDIES</text>
-          <text x="3" y="52" textAnchor="middle" fontSize="6.5" fontFamily="Cinzel, Cormorant Garamond, serif" fontWeight="bold" fill="currentColor">W</text>
+          <text x="50" y="3" textAnchor="middle" fontSize="6.5" fontFamily="Cinzel, Cormorant Garamond, serif" fontWeight="bold" fill="currentColor">N · SEPTENTRIO</text>
+          <text x="99" y="52" textAnchor="middle" fontSize="6.5" fontFamily="Cinzel, Cormorant Garamond, serif" fontWeight="bold" fill="currentColor">E</text>
+          <text x="50" y="103" textAnchor="middle" fontSize="6.5" fontFamily="Cinzel, Cormorant Garamond, serif" fontWeight="bold" fill="currentColor">S · MERIDIES</text>
+          <text x="1" y="52" textAnchor="middle" fontSize="6.5" fontFamily="Cinzel, Cormorant Garamond, serif" fontWeight="bold" fill="currentColor">W</text>
         </svg>
       </div>
 
@@ -278,7 +279,7 @@ export const AtlasMap: React.FC<Props> = ({
 
       {/* 3. Main SVG Celestial Cartography Plate */}
       <svg
-        viewBox="0 0 1000 1000"
+        viewBox="-60 -50 1120 1100"
         className="w-full h-full will-change-transform"
         style={{
           transform: `translate(${panOffset.x}px, ${panOffset.y}px) scale(${zoomLevel})`,
@@ -310,7 +311,7 @@ export const AtlasMap: React.FC<Props> = ({
         </defs>
 
         {/* 1. Background Plate */}
-        <rect width="1000" height="1000" fill="url(#celestial-plate-glow)" />
+        <rect x="-60" y="-50" width="1120" height="1100" fill="url(#celestial-plate-glow)" />
 
         {/* 2. Authentic Portolan Rhumb Lines (Image 4) */}
         <g className="pointer-events-none opacity-25">
@@ -376,10 +377,20 @@ export const AtlasMap: React.FC<Props> = ({
           </text>
 
           {/* Monumental Renaissance Cartouche Motto (Image 1 & 2) */}
-          <g className="opacity-80 pointer-events-none select-none">
+          <g className="opacity-90 pointer-events-none select-none">
+            {/* Opaque plaque backings prevent meridian line from cutting through text */}
+            <rect
+              x="200"
+              y="44"
+              width="600"
+              height="18"
+              rx="2"
+              fill="var(--bg)"
+              fillOpacity="0.94"
+            />
             <text
               x="500"
-              y="56"
+              y="57"
               textAnchor="middle"
               fontFamily="Cinzel, Cormorant Garamond, serif"
               fontSize="10.5"
@@ -389,15 +400,24 @@ export const AtlasMap: React.FC<Props> = ({
             >
               ✦ PLANISPHAERIUM MENTIS · TABULA TOTIUS MUNDI INTERIORIS ✦
             </text>
+            <rect
+              x="200"
+              y="941"
+              width="600"
+              height="16"
+              rx="2"
+              fill="var(--bg)"
+              fillOpacity="0.94"
+            />
             <text
               x="500"
-              y="952"
+              y="953"
               textAnchor="middle"
               fontFamily="Cinzel, Cormorant Garamond, serif"
               fontSize="8.5"
               letterSpacing="2.5"
               fill="var(--muted)"
-              className="uppercase opacity-70"
+              className="uppercase opacity-85"
             >
               HIYU ABYSS · CARTOGRAPHIA PHILOSOPHICA & PSYCHOLOGICA · ANNO MMXXVI
             </text>
@@ -436,23 +456,23 @@ export const AtlasMap: React.FC<Props> = ({
                 {/* Latin Cartouche Ribbon */}
                 <g className="transition-transform duration-300">
                   <rect
-                    x={region.centerCoordinates.x - 90}
-                    y={region.centerCoordinates.y - 134}
-                    width="180"
-                    height="28"
-                    rx="2"
+                    x={region.centerCoordinates.x - 105}
+                    y={region.centerCoordinates.y - 138}
+                    width="210"
+                    height="32"
+                    rx="3"
                     fill="var(--surface)"
-                    fillOpacity="0.85"
+                    fillOpacity="0.95"
                     stroke={region.colorToken}
-                    strokeWidth="0.6"
-                    strokeOpacity="0.5"
+                    strokeWidth="0.8"
+                    strokeOpacity="0.7"
                   />
                   <text
                     x={region.centerCoordinates.x}
-                    y={region.centerCoordinates.y - 120}
+                    y={region.centerCoordinates.y - 123}
                     textAnchor="middle"
                     fontFamily="Cinzel, Cormorant Garamond, serif"
-                    fontSize="9"
+                    fontSize="9.5"
                     letterSpacing="1.8"
                     fill={region.colorToken}
                     className="font-semibold uppercase select-none"
@@ -461,13 +481,13 @@ export const AtlasMap: React.FC<Props> = ({
                   </text>
                   <text
                     x={region.centerCoordinates.x}
-                    y={region.centerCoordinates.y - 110}
+                    y={region.centerCoordinates.y - 111}
                     textAnchor="middle"
                     fontFamily="Literata, serif"
                     fontSize="8.5"
                     fontStyle="italic"
                     fill="var(--text)"
-                    className="select-none opacity-80"
+                    className="select-none opacity-90"
                   >
                     {region.label}
                   </text>

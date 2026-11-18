@@ -32,7 +32,7 @@ export const AtlasExplorer: React.FC<Props> = ({
   const [isFolioOpen, setIsFolioOpen] = useState(Boolean(initialFocusNodeId));
 
   // Map viewport transform state
-  const [zoomLevel, setZoomLevel] = useState(1.0);
+  const [zoomLevel, setZoomLevel] = useState(0.95);
   const [panOffset, setPanOffset] = useState({ x: 0, y: 0 });
 
   // Bookmarks state (Local storage backed)
@@ -256,7 +256,7 @@ export const AtlasExplorer: React.FC<Props> = ({
   const handleZoomIn = () => setZoomLevel((z) => Math.min(3.0, z * 1.2));
   const handleZoomOut = () => setZoomLevel((z) => Math.max(0.6, z * 0.8));
   const handleResetZoom = () => {
-    setZoomLevel(1.0);
+    setZoomLevel(0.95);
     setPanOffset({ x: 0, y: 0 });
   };
 

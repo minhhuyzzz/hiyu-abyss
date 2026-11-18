@@ -1,5 +1,6 @@
 // website/src/components/atlas/AtlasMap.tsx
-import React, { useRef, useState, useEffect, useCallback } from 'react';
+// Antique Celestial Atlas × Renaissance Portolan Cartography Plate
+import React, { useRef, useState, useEffect, useMemo } from 'react';
 import type { AtlasNode, AtlasEdge, AtlasRegion } from '../../lib/atlas/types';
 
 interface Props {
@@ -14,6 +15,8 @@ interface Props {
   panOffset: { x: number; y: number };
   onPanChange: (offset: { x: number; y: number }) => void;
   onZoomChange: (level: number) => void;
+  userThreadNodeIds?: string[];
+  onClearThread?: () => void;
 }
 
 export const AtlasMap: React.FC<Props> = ({
@@ -28,6 +31,8 @@ export const AtlasMap: React.FC<Props> = ({
   panOffset,
   onPanChange,
   onZoomChange,
+  userThreadNodeIds = [],
+  onClearThread,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -35,14 +40,11 @@ export const AtlasMap: React.FC<Props> = ({
   const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
 
   // Map node lookup by ID
-  const nodeMap = useRef(new Map<string, AtlasNode>());
-  useEffect(() => {
-    nodeMap.current = new Map(nodes.map((n) => [n.id, n]));
-  }, [nodes]);
+  const nodeMap = useMemo(() => new Map(nodes.map((n) => [n.id, n])), [nodes]);
 
   // Identify connected node IDs when a node is hovered or focused
   const activeNodeId = hoveredNodeId || focusedNodeId;
-  const connectedNodeIds = React.useMemo(() => {
+  const connectedNodeIds = useMemo(() => {
     if (!activeNodeId) return new Set<string>();
     const ids = new Set<string>();
     ids.add(activeNodeId);
@@ -76,7 +78,7 @@ export const AtlasMap: React.FC<Props> = ({
   const handleWheel = (e: React.WheelEvent) => {
     e.preventDefault();
     const zoomFactor = e.deltaY < 0 ? 1.12 : 0.88;
-    const newZoom = Math.max(0.6, Math.min(3.0, zoomLevel * zoomFactor));
+    const newZoom = Math.max(0.6, Math.min(3.2, zoomLevel * zoomFactor));
     onZoomChange(newZoom);
   };
 
@@ -115,7 +117,7 @@ export const AtlasMap: React.FC<Props> = ({
         e.touches[0].clientY - e.touches[1].clientY
       );
       const factor = dist / touchStartRef.current.dist;
-      const newZoom = Math.max(0.6, Math.min(3.0, zoomLevel * factor));
+      const newZoom = Math.max(0.6, Math.min(3.2, zoomLevel * factor));
       onZoomChange(newZoom);
       touchStartRef.current.dist = dist;
     }
@@ -126,8 +128,90 @@ export const AtlasMap: React.FC<Props> = ({
     touchStartRef.current = null;
   };
 
-  // Get active hovered node data for tooltip
-  const hoveredNode = hoveredNodeId ? nodeMap.current.get(hoveredNodeId) : null;
+  // Portolan Navigation Rhumb Lines generation (Inspired by authentic 16th-century nautical charts)
+  const rhumbRays = useMemo(() => {
+    const centers = [
+      { x: 500, y: 120 },
+      { x: 768, y: 232 },
+      { x: 880, y: 500 },
+      { x: 768, y: 768 },
+      { x: 500, y: 880 },
+      { x: 232, y: 768 },
+      { x: 120, y: 500 },
+      { x: 232, y: 232 },
+    ];
+    const lines: Array<{ x1: number; y1: number; x2: number; y2: number }> = [];
+    for (let i = 0; i < centers.length; i++) {
+      for (let j = i + 1; j < centers.length; j++) {
+        lines.push({
+          x1: centers[i].x,
+          y1: centers[i].y,
+          x2: centers[j].x,
+          y2: centers[j].y,
+        });
+      }
+      // Line to center
+      lines.push({
+        x1: centers[i].x,
+        y1: centers[i].y,
+        x2: 500,
+        y2: 500,
+      });
+    }
+    return lines;
+  }, []);
+
+  // Build user travel thread path (The Thread)
+  const threadPath = useMemo(() => {
+    if (!userThreadNodeIds || userThreadNodeIds.length < 2) return '';
+    const points = userThreadNodeIds
+      .map((id) => nodeMap.get(id))
+      .filter(Boolean)
+      .map((n) => ({ x: n!.visual.x, y: n!.visual.y }));
+
+    if (points.length < 2) return '';
+    let d = `M ${points[0].x} ${points[0].y}`;
+    for (let i = 1; i < points.length; i++) {
+      const prev = points[i - 1];
+      const curr = points[i];
+      // Subtle bezier curve for organic ink feel
+      const midX = (prev.x + curr.x) / 2;
+      const midY = (prev.y + curr.y) / 2;
+      const dx = curr.x - prev.x;
+      const dy = curr.y - prev.y;
+      const curveOffset = Math.min(20, Math.hypot(dx, dy) * 0.1);
+      const cpX = midX - (dy / (Math.hypot(dx, dy) || 1)) * curveOffset;
+      const cpY = midY + (dx / (Math.hypot(dx, dy) || 1)) * curveOffset;
+      d += ` Q ${cpX} ${cpY} ${curr.x} ${curr.y}`;
+    }
+    return d;
+  }, [userThreadNodeIds, nodeMap]);
+
+  // Latin Realm Banners
+  const getLatinRegionTitle = (id: string) => {
+    switch (id) {
+      case 'region-human-condition':
+        return 'I · NATURA HUMANA';
+      case 'region-ego-and-illusion':
+        return 'II · EGO ET ILLUSIO';
+      case 'region-freedom-and-order':
+        return 'III · LIBERTAS ET ORDO';
+      case 'region-solitude-and-communion':
+        return 'IV · SOLITUDO ET COMMVNIO';
+      case 'region-power-and-machination':
+        return 'V · POTENTIA ET FRAUS';
+      case 'region-suffering-and-purpose':
+        return 'VI · DOLOR ET RATIO';
+      case 'region-masks-and-authenticity':
+        return 'VII · PERSONA ET VMBRA';
+      case 'region-aesthetics-and-worldview':
+        return 'VIII · AESTHETICA VNIVERSALIS';
+      default:
+        return 'TERRA COGNITA';
+    }
+  };
+
+  const hoveredNode = hoveredNodeId ? nodeMap.get(hoveredNodeId) : null;
 
   return (
     <div
@@ -144,76 +228,183 @@ export const AtlasMap: React.FC<Props> = ({
         isDragging ? 'cursor-grabbing' : 'cursor-grab'
       }`}
     >
-      {/* Decorative Vintage Compass Rose Ornament in Corner */}
-      <div className="absolute top-4 left-4 pointer-events-none z-10 opacity-40 hidden sm:block">
-        <svg width="80" height="80" viewBox="0 0 100 100" className="text-accent stroke-current fill-none">
-          <circle cx="50" cy="50" r="42" strokeWidth="0.8" strokeDasharray="2 2" />
-          <circle cx="50" cy="50" r="36" strokeWidth="0.5" />
-          <path d="M50 8 L53 45 L50 50 L47 45 Z" fill="currentColor" opacity="0.8" />
-          <path d="M50 92 L53 55 L50 50 L47 55 Z" fill="currentColor" opacity="0.4" />
-          <path d="M8 50 L45 47 L50 50 L45 53 Z" fill="currentColor" opacity="0.4" />
-          <path d="M92 50 L55 47 L50 50 L55 53 Z" fill="currentColor" opacity="0.4" />
-          <text x="50" y="6" textAnchor="middle" fontSize="6" fontFamily="serif" fill="currentColor">N</text>
-          <text x="96" y="52" textAnchor="middle" fontSize="6" fontFamily="serif" fill="currentColor">E</text>
-          <text x="50" y="99" textAnchor="middle" fontSize="6" fontFamily="serif" fill="currentColor">S</text>
-          <text x="4" y="52" textAnchor="middle" fontSize="6" fontFamily="serif" fill="currentColor">W</text>
+      {/* 1. Ornate Windrose / Compass Rose in Corner */}
+      <div className="absolute top-4 left-4 pointer-events-none z-10 opacity-60 hidden sm:block">
+        <svg width="90" height="90" viewBox="0 0 100 100" className="text-accent stroke-current fill-none">
+          {/* Compass Rings */}
+          <circle cx="50" cy="50" r="44" strokeWidth="1" />
+          <circle cx="50" cy="50" r="40" strokeWidth="0.5" strokeDasharray="1.5 2" />
+          <circle cx="50" cy="50" r="34" strokeWidth="0.5" />
+          {/* 8 Principal Wind Pointers */}
+          <path d="M50 6 L53 45 L50 50 L47 45 Z" fill="currentColor" opacity="0.9" />
+          <path d="M50 94 L53 55 L50 50 L47 55 Z" fill="currentColor" opacity="0.4" />
+          <path d="M6 50 L45 47 L50 50 L45 53 Z" fill="currentColor" opacity="0.4" />
+          <path d="M94 50 L55 47 L50 50 L55 53 Z" fill="currentColor" opacity="0.4" />
+          <path d="M19 19 L46 46 L50 50 L44 47 Z" fill="currentColor" opacity="0.3" />
+          <path d="M81 19 L54 46 L50 50 L56 47 Z" fill="currentColor" opacity="0.3" />
+          <path d="M19 81 L46 54 L50 50 L47 56 Z" fill="currentColor" opacity="0.3" />
+          <path d="M81 81 L54 54 L50 50 L53 56 Z" fill="currentColor" opacity="0.3" />
+          {/* Cardinal Directions */}
+          <text x="50" y="4" textAnchor="middle" fontSize="6.5" fontFamily="Cinzel, Cormorant Garamond, serif" fontWeight="bold" fill="currentColor">N · SEPTENTRIO</text>
+          <text x="97" y="52" textAnchor="middle" fontSize="6.5" fontFamily="Cinzel, Cormorant Garamond, serif" fontWeight="bold" fill="currentColor">E</text>
+          <text x="50" y="100" textAnchor="middle" fontSize="6.5" fontFamily="Cinzel, Cormorant Garamond, serif" fontWeight="bold" fill="currentColor">S · MERIDIES</text>
+          <text x="3" y="52" textAnchor="middle" fontSize="6.5" fontFamily="Cinzel, Cormorant Garamond, serif" fontWeight="bold" fill="currentColor">W</text>
         </svg>
       </div>
 
-      {/* Main SVG Celestial Map Viewport */}
+      {/* 2. Floating User Thread Indicator (The Thread Breadcrumb) */}
+      {userThreadNodeIds && userThreadNodeIds.length >= 2 && (
+        <div className="absolute bottom-5 left-5 z-20 px-3.5 py-2.5 rounded-sm bg-surface/95 border border-accent/40 shadow-xl backdrop-blur-md flex items-center gap-3 animate-fade-in">
+          <div className="w-2.5 h-2.5 rounded-full bg-[#B47862] animate-ping" />
+          <div>
+            <div className="text-[10px] font-mono uppercase tracking-widest text-accent">
+              Sợi Chỉ Tư Tưởng Của Bạn
+            </div>
+            <div className="text-xs font-serif text-text font-medium">
+              Đã khắc {userThreadNodeIds.length} chặng hành trình
+            </div>
+          </div>
+          {onClearThread && (
+            <button
+              onClick={onClearThread}
+              className="ml-2 text-[10px] font-mono text-muted hover:text-text px-2 py-1 rounded bg-bg border border-border transition-colors"
+              title="Xóa dấu vết hành trình"
+            >
+              Làm mới
+            </button>
+          )}
+        </div>
+      )}
+
+      {/* 3. Main SVG Celestial Cartography Plate */}
       <svg
         viewBox="0 0 1000 1000"
-        className="w-full h-full transition-transform duration-75 ease-out will-change-transform"
+        className="w-full h-full will-change-transform"
         style={{
           transform: `translate(${panOffset.x}px, ${panOffset.y}px) scale(${zoomLevel})`,
           transformOrigin: '50% 50%',
+          transition: isDragging ? 'none' : 'transform 0.45s cubic-bezier(0.16, 1, 0.3, 1)',
         }}
       >
         <defs>
           {/* Subtle Celestial Radial Gradients */}
           <radialGradient id="celestial-plate-glow" cx="50%" cy="50%" r="50%">
             <stop offset="0%" stopColor="var(--accent)" stopOpacity="0.08" />
-            <stop offset="60%" stopColor="var(--accent)" stopOpacity="0.02" />
+            <stop offset="65%" stopColor="var(--accent)" stopOpacity="0.02" />
             <stop offset="100%" stopColor="transparent" stopOpacity="0" />
           </radialGradient>
 
           <radialGradient id="node-active-halo" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="var(--accent)" stopOpacity="0.4" />
+            <stop offset="0%" stopColor="var(--accent)" stopOpacity="0.5" />
             <stop offset="100%" stopColor="var(--accent)" stopOpacity="0" />
           </radialGradient>
 
-          {/* Region Halos */}
+          {/* Region Terrains */}
           {regions.map((r) => (
             <radialGradient key={r.id} id={`halo-${r.id}`} cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor={r.colorToken} stopOpacity="0.12" />
-              <stop offset="80%" stopColor={r.colorToken} stopOpacity="0.02" />
-              <stop offset="100%" stopColor={r.colorToken} stopOpacity="0" />
+              <stop offset="0%" stopColor={r.colorToken} stopOpacity="0.14" />
+              <stop offset="70%" stopColor={r.colorToken} stopOpacity="0.03" />
+              <stop offset="100%" stopColor="transparent" stopOpacity="0" />
             </radialGradient>
           ))}
         </defs>
 
-        {/* 1. Background Celestial Plate Grids & Rings */}
+        {/* 1. Background Plate */}
         <rect width="1000" height="1000" fill="url(#celestial-plate-glow)" />
 
-        {/* Antique Concentric Astrolabe Coordinate Rings */}
-        <g className="text-accent/20 stroke-current fill-none pointer-events-none" strokeWidth="0.75">
-          <circle cx="500" cy="500" r="160" strokeDasharray="3 3" />
-          <circle cx="500" cy="500" r="310" strokeDasharray="2 4" />
-          <circle cx="500" cy="500" r="460" strokeWidth="1" />
-          <circle cx="500" cy="500" r="485" strokeWidth="0.5" strokeDasharray="1 2" />
-
-          {/* Crosshair meridians */}
-          <line x1="500" y1="20" x2="500" y2="980" strokeDasharray="4 4" strokeWidth="0.5" />
-          <line x1="20" y1="500" x2="980" y2="500" strokeDasharray="4 4" strokeWidth="0.5" />
-
-          {/* Roman Degree Labels */}
-          <text x="500" y="35" textAnchor="middle" fontSize="9" fontFamily="serif" fill="currentColor">XII · ZENITH</text>
-          <text x="500" y="975" textAnchor="middle" fontSize="9" fontFamily="serif" fill="currentColor">VI · NADIR</text>
-          <text x="965" y="503" textAnchor="end" fontSize="9" fontFamily="serif" fill="currentColor">III · ORIENS</text>
-          <text x="35" y="503" textAnchor="start" fontSize="9" fontFamily="serif" fill="currentColor">IX · OCCIDENS</text>
+        {/* 2. Authentic Portolan Rhumb Lines (Image 4) */}
+        <g className="pointer-events-none opacity-25">
+          {rhumbRays.map((ray, idx) => (
+            <line
+              key={idx}
+              x1={ray.x1}
+              y1={ray.y1}
+              x2={ray.x2}
+              y2={ray.y2}
+              stroke={idx % 2 === 0 ? '#B47862' : '#C29A77'}
+              strokeWidth="0.4"
+              strokeDasharray={idx % 3 === 0 ? '1 3' : undefined}
+            />
+          ))}
         </g>
 
-        {/* 2. 8 Curated Regions: Halos & Constellation Titles */}
+        {/* 3. Celestial Astrolabe Graduations & Great Rings (Image 1) */}
+        <g className="text-accent/25 stroke-current fill-none pointer-events-none">
+          {/* Outer Graduated Frame */}
+          <circle cx="500" cy="500" r="488" strokeWidth="2.5" />
+          <circle cx="500" cy="500" r="480" strokeWidth="0.5" strokeDasharray="1.5 2" />
+          <circle cx="500" cy="500" r="460" strokeWidth="1" />
+          
+          {/* Concentric Coordinate Rings */}
+          <circle cx="500" cy="500" r="330" strokeWidth="0.75" strokeDasharray="4 4" />
+          <circle cx="500" cy="500" r="190" strokeWidth="0.75" strokeDasharray="3 3" />
+          <circle cx="500" cy="500" r="60" strokeWidth="0.5" strokeDasharray="2 2" />
+
+          {/* Equinoctial Colure & Solstitial Meridian */}
+          <line x1="500" y1="12" x2="500" y2="988" strokeWidth="0.6" strokeDasharray="4 4" />
+          <line x1="12" y1="500" x2="988" y2="500" strokeWidth="0.6" strokeDasharray="4 4" />
+
+          {/* Antique Degree Tick Marks on Rim */}
+          {Array.from({ length: 72 }).map((_, i) => {
+            const angle = (i * 5 * Math.PI) / 180;
+            const r1 = i % 6 === 0 ? 472 : 477;
+            const r2 = 480;
+            return (
+              <line
+                key={i}
+                x1={500 + r1 * Math.cos(angle)}
+                y1={500 + r1 * Math.sin(angle)}
+                x2={500 + r2 * Math.cos(angle)}
+                y2={500 + r2 * Math.sin(angle)}
+                strokeWidth={i % 6 === 0 ? '1' : '0.5'}
+              />
+            );
+          })}
+
+          {/* Roman Astronomical Inscriptions */}
+          <text x="500" y="32" textAnchor="middle" fontSize="9.5" fontFamily="Cormorant Garamond, serif" letterSpacing="2.5" fill="currentColor">
+            XII · POLUS ARCTICUS · ZENITH
+          </text>
+          <text x="500" y="980" textAnchor="middle" fontSize="9.5" fontFamily="Cormorant Garamond, serif" letterSpacing="2.5" fill="currentColor">
+            VI · POLUS ANTARCTICUS · NADIR
+          </text>
+          <text x="965" y="504" textAnchor="end" fontSize="9.5" fontFamily="Cormorant Garamond, serif" letterSpacing="2" fill="currentColor">
+            III · ORIENS
+          </text>
+          <text x="35" y="504" textAnchor="start" fontSize="9.5" fontFamily="Cormorant Garamond, serif" letterSpacing="2" fill="currentColor">
+            IX · OCCIDENS
+          </text>
+
+          {/* Monumental Renaissance Cartouche Motto (Image 1 & 2) */}
+          <g className="opacity-80 pointer-events-none select-none">
+            <text
+              x="500"
+              y="56"
+              textAnchor="middle"
+              fontFamily="Cinzel, Cormorant Garamond, serif"
+              fontSize="10.5"
+              letterSpacing="3"
+              fill="var(--accent)"
+              className="font-semibold uppercase"
+            >
+              ✦ PLANISPHAERIUM MENTIS · TABULA TOTIUS MUNDI INTERIORIS ✦
+            </text>
+            <text
+              x="500"
+              y="952"
+              textAnchor="middle"
+              fontFamily="Cinzel, Cormorant Garamond, serif"
+              fontSize="8.5"
+              letterSpacing="2.5"
+              fill="var(--muted)"
+              className="uppercase opacity-70"
+            >
+              HIYU ABYSS · CARTOGRAPHIA PHILOSOPHICA & PSYCHOLOGICA · ANNO MMXXVI
+            </text>
+          </g>
+        </g>
+
+        {/* 4. 8 Curated Regions: Cartographic Terrains & Latin Ribbons (The Entrance) */}
         <g className="pointer-events-none">
           {regions.map((region) => {
             const isRegionSelected = !selectedRegion || selectedRegion === region.id;
@@ -223,60 +414,74 @@ export const AtlasMap: React.FC<Props> = ({
                 className="transition-opacity duration-300"
                 style={{ opacity: isRegionSelected ? 1 : 0.2 }}
               >
-                {/* Region Territory Halo */}
+                {/* Realm Terrain Halo */}
                 <circle
                   cx={region.centerCoordinates.x}
                   cy={region.centerCoordinates.y}
-                  r="180"
+                  r="175"
                   fill={`url(#halo-${region.id})`}
                 />
+                {/* Engraved Realm Frontier Boundary */}
                 <circle
                   cx={region.centerCoordinates.x}
                   cy={region.centerCoordinates.y}
-                  r="180"
+                  r="175"
                   stroke={region.colorToken}
-                  strokeWidth="0.5"
-                  strokeDasharray="4 6"
-                  opacity="0.25"
+                  strokeWidth="0.75"
+                  strokeDasharray="4 8"
+                  opacity="0.3"
                   fill="none"
                 />
 
-                {/* Region Title Plate */}
-                <text
-                  x={region.centerCoordinates.x}
-                  y={region.centerCoordinates.y - 120}
-                  textAnchor="middle"
-                  fontFamily="Cormorant Garamond, serif"
-                  fontSize="13"
-                  letterSpacing="1.5"
-                  fill={region.colorToken}
-                  opacity="0.85"
-                  className="font-medium uppercase"
-                >
-                  {region.astronomyGlyph} {region.label}
-                </text>
-                <text
-                  x={region.centerCoordinates.x}
-                  y={region.centerCoordinates.y - 106}
-                  textAnchor="middle"
-                  fontFamily="Literata, serif"
-                  fontSize="8"
-                  fontStyle="italic"
-                  fill="#9E998F"
-                  opacity="0.6"
-                >
-                  {region.label_en}
-                </text>
+                {/* Latin Cartouche Ribbon */}
+                <g className="transition-transform duration-300">
+                  <rect
+                    x={region.centerCoordinates.x - 90}
+                    y={region.centerCoordinates.y - 134}
+                    width="180"
+                    height="28"
+                    rx="2"
+                    fill="var(--surface)"
+                    fillOpacity="0.85"
+                    stroke={region.colorToken}
+                    strokeWidth="0.6"
+                    strokeOpacity="0.5"
+                  />
+                  <text
+                    x={region.centerCoordinates.x}
+                    y={region.centerCoordinates.y - 120}
+                    textAnchor="middle"
+                    fontFamily="Cinzel, Cormorant Garamond, serif"
+                    fontSize="9"
+                    letterSpacing="1.8"
+                    fill={region.colorToken}
+                    className="font-semibold uppercase select-none"
+                  >
+                    {region.astronomyGlyph} {getLatinRegionTitle(region.id)}
+                  </text>
+                  <text
+                    x={region.centerCoordinates.x}
+                    y={region.centerCoordinates.y - 110}
+                    textAnchor="middle"
+                    fontFamily="Literata, serif"
+                    fontSize="8.5"
+                    fontStyle="italic"
+                    fill="var(--text)"
+                    className="select-none opacity-80"
+                  >
+                    {region.label}
+                  </text>
+                </g>
               </g>
             );
           })}
         </g>
 
-        {/* 3. Constellation Edges (118 Curated Connections) */}
+        {/* 5. Constellation Ink Edges (The Unfolding) */}
         <g>
           {edges.map((edge) => {
-            const source = nodeMap.current.get(edge.from);
-            const target = nodeMap.current.get(edge.to);
+            const source = nodeMap.get(edge.from);
+            const target = nodeMap.get(edge.to);
             if (!source || !target) return null;
 
             const isConnectedToActive =
@@ -284,33 +489,33 @@ export const AtlasMap: React.FC<Props> = ({
             const isFaded = activeNodeId && !isConnectedToActive;
 
             // Stroke styling based on relation
-            let strokeColor = '#C29A77';
+            let strokeColor = 'var(--accent)';
             let strokeDash = undefined;
             if (edge.relation === 'contrasts_with') {
-              strokeColor = '#B47862'; // Oxide
+              strokeColor = 'var(--oxide)'; // Oxide red
               strokeDash = '4 3';
             } else if (edge.relation === 'influenced_by') {
-              strokeColor = '#96A79A'; // Patina
+              strokeColor = 'var(--patina)'; // Patina jade
               strokeDash = '2 2';
             }
 
-            const strokeOpacity = isConnectedToActive ? 0.9 : isFaded ? 0.04 : 0.18;
-            const strokeWidth = isConnectedToActive ? 1.8 : 0.75;
+            const strokeOpacity = isConnectedToActive ? 0.95 : isFaded ? 0.04 : 0.18;
+            const strokeWidth = isConnectedToActive ? 2.0 : 0.75;
 
-            // Slight curve calculation for elegance
+            // Curved Quadratic Bezier Calculation
             const midX = (source.visual.x + target.visual.x) / 2;
             const midY = (source.visual.y + target.visual.y) / 2;
             const dx = target.visual.x - source.visual.x;
             const dy = target.visual.y - source.visual.y;
-            // perpendicular displacement
-            const offsetDist = Math.min(25, Math.hypot(dx, dy) * 0.08);
-            const perpX = midX - (dy / Math.hypot(dx, dy)) * offsetDist;
-            const perpY = midY + (dx / Math.hypot(dx, dy)) * offsetDist;
+            const dist = Math.hypot(dx, dy) || 1;
+            const offsetDist = Math.min(26, dist * 0.08);
+            const perpX = midX - (dy / dist) * offsetDist;
+            const perpY = midY + (dx / dist) * offsetDist;
 
             const pathD = `M ${source.visual.x} ${source.visual.y} Q ${perpX} ${perpY} ${target.visual.x} ${target.visual.y}`;
 
             return (
-              <g key={edge.id} className="transition-all duration-200">
+              <g key={edge.id} className="transition-all duration-300">
                 <path
                   d={pathD}
                   fill="none"
@@ -319,14 +524,14 @@ export const AtlasMap: React.FC<Props> = ({
                   strokeDasharray={strokeDash}
                   strokeOpacity={strokeOpacity}
                 />
-                {/* Active Directional Glow Bead */}
+                {/* Active Directional Gold Ink Bead */}
                 {isConnectedToActive && (
                   <circle
                     cx={perpX}
                     cy={perpY}
                     r="2.5"
                     fill={strokeColor}
-                    opacity="0.85"
+                    opacity="0.9"
                   />
                 )}
               </g>
@@ -334,7 +539,32 @@ export const AtlasMap: React.FC<Props> = ({
           })}
         </g>
 
-        {/* 4. Nodes (86 Curated Celestial Medallions) */}
+        {/* 6. The Thread — Sợi Chỉ Tư Tưởng Cá Nhân (Image 4 & Pillar 04) */}
+        {threadPath && (
+          <g className="pointer-events-none">
+            {/* Glowing Vermilion Thread Background Aura */}
+            <path
+              d={threadPath}
+              fill="none"
+              stroke="#B47862"
+              strokeWidth="4"
+              strokeOpacity="0.25"
+              strokeLinecap="round"
+            />
+            {/* Crisp Ink Core Thread */}
+            <path
+              d={threadPath}
+              fill="none"
+              stroke="#B47862"
+              strokeWidth="1.6"
+              strokeDasharray="4 2"
+              strokeOpacity="0.9"
+              strokeLinecap="round"
+            />
+          </g>
+        )}
+
+        {/* 7. Nodes — Celestial Medallions (The Unfolding & LOD) */}
         <g>
           {nodes.map((node) => {
             const isFocused = node.id === focusedNodeId;
@@ -348,14 +578,28 @@ export const AtlasMap: React.FC<Props> = ({
             const y = node.visual.y;
             const priority = node.visual.priority;
 
-            // Medallion radius based on visual priority
-            const radius = priority >= 9 ? 12 : priority >= 7 ? 8.5 : 6;
+            // In Pillar 01: At zoom 1.0 (The Entrance), nodes are delicate stellar stars, avoiding hundreds of raw dots
+            const isOverviewMode = zoomLevel < 1.3 && !activeNodeId;
+            const radius = isOverviewMode
+              ? priority >= 10
+                ? 8
+                : priority >= 8
+                ? 5
+                : 3.5
+              : priority >= 9
+              ? 12
+              : priority >= 7
+              ? 8.5
+              : 6;
 
-            // Visual glyph inside medallion
+            // Glyphs
             let glyph = node.visual.glyph || '✦';
             if (node.kind === 'artwork') glyph = '❖';
             else if (node.kind === 'thinker') glyph = '☿';
             else if (node.kind === 'quote') glyph = '❧';
+
+            // Check if node is part of the user's thread
+            const threadIndex = userThreadNodeIds ? userThreadNodeIds.indexOf(node.id) : -1;
 
             return (
               <g
@@ -376,8 +620,8 @@ export const AtlasMap: React.FC<Props> = ({
                   }
                 }}
                 style={{
-                  opacity: isDimmed ? 0.18 : 1,
-                  transition: 'opacity 0.25s ease-out, transform 0.25s ease-out',
+                  opacity: isDimmed ? 0.16 : 1,
+                  transition: 'opacity 0.25s ease-out',
                 }}
               >
                 {/* Active / Focused Halo Aura */}
@@ -400,7 +644,7 @@ export const AtlasMap: React.FC<Props> = ({
                   stroke={isFocused ? 'var(--accent)' : isHovered ? 'var(--accent)' : 'var(--muted)'}
                   strokeWidth={isFocused ? '1.5' : '0.6'}
                   strokeDasharray={node.kind === 'thinker' ? '2 2' : undefined}
-                  opacity={isFocused || isHovered ? 1 : 0.4}
+                  opacity={isFocused || isHovered ? 1 : 0.35}
                 />
 
                 {/* Core Medallion Disc */}
@@ -414,21 +658,48 @@ export const AtlasMap: React.FC<Props> = ({
                   className="transition-colors duration-200"
                 />
 
-                {/* Celestial Glyph */}
-                <text
-                  x={x}
-                  y={y + (radius <= 6 ? 2.5 : 3.5)}
-                  textAnchor="middle"
-                  fontSize={radius <= 6 ? '7' : radius <= 8.5 ? '8.5' : '11'}
-                  fontFamily="serif"
-                  fill={isFocused ? 'var(--bg)' : 'var(--accent)'}
-                  className="pointer-events-none select-none font-medium"
-                >
-                  {glyph}
-                </text>
+                {/* Celestial Glyph (visible when expanded) */}
+                {(!isOverviewMode || priority >= 8) && (
+                  <text
+                    x={x}
+                    y={y + (radius <= 6 ? 2.5 : 3.5)}
+                    textAnchor="middle"
+                    fontSize={radius <= 6 ? '7' : radius <= 8.5 ? '8.5' : '11'}
+                    fontFamily="serif"
+                    fill={isFocused ? 'var(--bg)' : 'var(--accent)'}
+                    className="pointer-events-none select-none font-medium"
+                  >
+                    {glyph}
+                  </text>
+                )}
 
-                {/* Semantic Level of Detail (LOD) Label Visibility for pristine Antique Cartography */}
-                {(isFocused || isHovered || priority >= 10 || (zoomLevel >= 1.7 && priority >= 8) || zoomLevel >= 2.2) && (
+                {/* Step badge if visited on User Thread */}
+                {threadIndex >= 0 && (
+                  <g className="pointer-events-none">
+                    <circle
+                      cx={x + radius + 1}
+                      cy={y - radius - 1}
+                      r="6"
+                      fill="#B47862"
+                      stroke="var(--bg)"
+                      strokeWidth="1"
+                    />
+                    <text
+                      x={x + radius + 1}
+                      y={y - radius + 2}
+                      textAnchor="middle"
+                      fontSize="6.5"
+                      fontFamily="mono"
+                      fontWeight="bold"
+                      fill="#FFFFFF"
+                    >
+                      {threadIndex + 1}
+                    </text>
+                  </g>
+                )}
+
+                {/* Semantic Level of Detail (LOD) Label Visibility */}
+                {(isFocused || isHovered || (zoomLevel >= 1.7 && priority >= 8) || zoomLevel >= 2.2) && (
                   <g className="pointer-events-none transition-opacity duration-200">
                     <rect
                       x={x - Math.min(65, Math.max(35, node.label.length * 3.8))}
@@ -472,7 +743,7 @@ export const AtlasMap: React.FC<Props> = ({
         >
           <div className="flex items-center gap-1.5 text-[10px] font-mono text-accent uppercase tracking-wider mb-0.5">
             <span>✦</span>
-            <span>{hoveredNode.kind}</span>
+            <span>{hoveredNode.kind.toUpperCase()}</span>
           </div>
           <h4 className="font-serif font-medium text-sm text-text">
             {hoveredNode.label}

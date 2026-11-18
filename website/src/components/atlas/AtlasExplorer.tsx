@@ -38,16 +38,23 @@ export const AtlasExplorer: React.FC<Props> = ({
   // Bookmarks state (Local storage backed)
   const [bookmarkedNodeIds, setBookmarkedNodeIds] = useState<Set<string>>(new Set());
 
+  // Personal exploration journey thread state (The Thread)
+  const [userThreadNodeIds, setUserThreadNodeIds] = useState<string[]>([]);
+
   // Node lookup map
   const nodeMap = useMemo(() => new Map(nodes.map((n) => [n.id, n])), [nodes]);
   const trailMap = useMemo(() => new Map(trails.map((t) => [t.id, t])), [trails]);
 
-  // Load bookmarks on mount
+  // Load bookmarks & thread on mount
   useEffect(() => {
     try {
       const saved = localStorage.getItem('hiyu_atlas_bookmarks');
       if (saved) {
         setBookmarkedNodeIds(new Set(JSON.parse(saved)));
+      }
+      const savedThread = localStorage.getItem('hiyu_atlas_thread');
+      if (savedThread) {
+        setUserThreadNodeIds(JSON.parse(savedThread));
       }
     } catch (e) {
       // Ignore
@@ -128,12 +135,22 @@ export const AtlasExplorer: React.FC<Props> = ({
     setZoomLevel(1.35);
   }, []);
 
-  // Handle node selection
+  // Handle node selection (with Thread tracking)
   const handleSelectNode = useCallback(
     (nodeId: string) => {
       setFocusedNodeId(nodeId);
       setIsFolioOpen(true);
       updateUrlState(nodeId, activeTrailId, viewMode);
+
+      // Etch step into User's personal exploration Thread
+      setUserThreadNodeIds((prev) => {
+        if (prev.length > 0 && prev[prev.length - 1] === nodeId) return prev;
+        const next = [...prev, nodeId];
+        try {
+          localStorage.setItem('hiyu_atlas_thread', JSON.stringify(next));
+        } catch (e) {}
+        return next;
+      });
 
       const target = nodeMap.get(nodeId);
       if (target && viewMode === 'map') {
@@ -142,6 +159,13 @@ export const AtlasExplorer: React.FC<Props> = ({
     },
     [activeTrailId, viewMode, nodeMap, updateUrlState, centerOnNode]
   );
+
+  const handleClearThread = useCallback(() => {
+    setUserThreadNodeIds([]);
+    try {
+      localStorage.removeItem('hiyu_atlas_thread');
+    } catch (e) {}
+  }, []);
 
   // Handle closing folio
   const handleCloseFolio = useCallback(() => {
@@ -275,6 +299,8 @@ export const AtlasExplorer: React.FC<Props> = ({
             panOffset={panOffset}
             onPanChange={setPanOffset}
             onZoomChange={setZoomLevel}
+            userThreadNodeIds={userThreadNodeIds}
+            onClearThread={handleClearThread}
           />
         ) : (
           <div className="w-full h-full overflow-y-auto">
@@ -310,6 +336,7 @@ export const AtlasExplorer: React.FC<Props> = ({
         onSelectNode={handleSelectNode}
         isBookmarked={focusedNode ? bookmarkedNodeIds.has(focusedNode.id) : false}
         onToggleBookmark={handleToggleBookmark}
+        threadStep={userThreadNodeIds.indexOf(focusedNodeId || '') + 1}
       />
 
       {/* ⌘K Fast Search Modal */}

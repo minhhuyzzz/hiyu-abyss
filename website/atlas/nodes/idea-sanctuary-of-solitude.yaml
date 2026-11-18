@@ -1,0 +1,22 @@
+id: idea-sanctuary-of-solitude
+kind: idea
+status: PUBLISHED
+slug: khoang-lang-co-doc
+label: Khoảng Lặng Thanh Lọc Của Sự Cô Độc
+label_en: Sanctuary of Solitude
+summary: >-
+  Cô độc không phải là sự thiếu vắng người khác, mà là sự hiện diện trọn vẹn của
+  chính bạn với tâm hồn mình.
+topicCodes:
+  - SOLITUDE
+  - SERENITY
+relatedContentIds:
+  - TXT-0009
+artworkId: theme_03
+visual:
+  region: region-solitude-and-communion
+  x: 730
+  'y': 740
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

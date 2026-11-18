@@ -1,0 +1,23 @@
+id: quote-txt-0013
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0013
+label: >-
+  Folio #0013: Sự tử tế không có ranh giới là lời mời gọi cho lòng tham và sự
+  lợi dụng.
+label_en: 'Folio #0013'
+summary: >-
+  Sự tử tế không có ranh giới không phải là đức tính tốt, đó là sự đồng lõa cho
+  lòng tham của kẻ khác.
+topicCodes:
+  - MORALITY
+relatedContentIds:
+  - TXT-0013
+artworkId: theme_13
+visual:
+  region: region-suffering-and-purpose
+  x: 225
+  'y': 725
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

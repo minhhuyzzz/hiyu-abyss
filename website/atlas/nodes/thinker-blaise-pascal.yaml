@@ -1,0 +1,24 @@
+id: thinker-blaise-pascal
+kind: thinker
+status: PUBLISHED
+slug: blaise-pascal
+label: Blaise Pascal (1623–1662)
+label_en: Blaise Pascal
+summary: >-
+  Nhà toán học và tư tưởng gia Pháp. Nổi tiếng với quan sát: mọi bất hạnh của
+  con người bắt nguồn từ việc không thể ngồi yên một mình trong phòng.
+topicCodes:
+  - SOLITUDE
+  - SELF_DECEPTION
+artworkId: theme_07
+sourceRefs:
+  - title: Pensées (Tư Tưởng)
+    author: Blaise Pascal
+    year: '1670'
+visual:
+  region: region-solitude-and-communion
+  x: 770
+  'y': 690
+  priority: 9
+  glyph: ☥
+  cartoucheStyle: medallion

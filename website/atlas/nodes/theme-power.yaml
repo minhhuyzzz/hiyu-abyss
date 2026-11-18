@@ -1,0 +1,23 @@
+id: theme-power
+kind: theme
+status: PUBLISHED
+slug: power
+label: Quyền Lực & Kiểm Soát
+label_en: POWER
+summary: >-
+  Chủ đề hạt nhân Quyền Lực & Kiểm Soát trong kho lưu trữ Hiyu Abyss, kết nối
+  các tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - POWER
+relatedContentIds:
+  - TXT-0036
+  - TXT-0037
+  - TXT-0038
+artworkId: theme_36
+visual:
+  region: region-power-and-machination
+  x: 470
+  'y': 810
+  priority: 9
+  glyph: ◈
+  cartoucheStyle: monument

@@ -1,0 +1,23 @@
+id: theme-double-standard
+kind: theme
+status: PUBLISHED
+slug: double-standard
+label: Tiêu Chuẩn Kép
+label_en: DOUBLE STANDARD
+summary: >-
+  Chủ đề hạt nhân Tiêu Chuẩn Kép trong kho lưu trữ Hiyu Abyss, kết nối các tác
+  phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - DOUBLE_STANDARD
+relatedContentIds:
+  - TXT-0006
+  - TXT-0007
+  - TXT-0008
+artworkId: theme_06
+visual:
+  region: region-power-and-machination
+  x: 420
+  'y': 870
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument

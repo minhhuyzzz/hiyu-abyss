@@ -1,0 +1,23 @@
+id: theme-crowd
+kind: theme
+status: PUBLISHED
+slug: crowd
+label: Tâm Lý Đám Đông
+label_en: CROWD
+summary: >-
+  Chủ đề hạt nhân Tâm Lý Đám Đông trong kho lưu trữ Hiyu Abyss, kết nối các tác
+  phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - CROWD
+relatedContentIds:
+  - TXT-0071
+  - TXT-0072
+  - TXT-0073
+artworkId: theme_71
+visual:
+  region: region-masks-and-authenticity
+  x: 170
+  'y': 530
+  priority: 7
+  glyph: ◈
+  cartoucheStyle: monument

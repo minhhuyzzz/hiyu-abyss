@@ -1,0 +1,20 @@
+id: art-anatomy-lesson
+kind: artwork
+status: PUBLISHED
+slug: tiet-hoc-giai-phau-rembrandt
+label: Tiết Học Giải Phẫu Của Bác Sĩ Tulp (Rembrandt, 1632)
+label_en: The Anatomy Lesson of Dr. Nicolaes Tulp
+summary: >-
+  Bức họa bậc thầy về sự tò mò tri thức, giải phẫu thân xác để thấu hiểu sự sống
+  và đối diện cái chết hữu hạn.
+topicCodes:
+  - STATUS
+  - CROWD
+artworkId: theme_04
+visual:
+  region: region-ego-and-illusion
+  x: 630
+  'y': 270
+  priority: 8
+  glyph: ❖
+  cartoucheStyle: plate

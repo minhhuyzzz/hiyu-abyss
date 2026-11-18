@@ -1,0 +1,24 @@
+id: quote-txt-0015
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0015
+label: >-
+  Folio #0015: Đừng nhầm lẫn giữa lòng vị tha và thói quen dung túng cho sự vô
+  ơn.
+label_en: 'Folio #0015'
+summary: >-
+  Có những người khi nhận lòng tốt của bạn thì nghĩ đó là nghĩa vụ; khi bạn
+  ngừng cho đi, họ không nhớ những gì bạn đã giúp mà chỉ ghi hận việc bạn từ
+  chối.
+topicCodes:
+  - MORALITY
+relatedContentIds:
+  - TXT-0015
+artworkId: theme_15
+visual:
+  region: region-solitude-and-communion
+  x: 785
+  'y': 785
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

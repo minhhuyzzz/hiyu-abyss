@@ -1,0 +1,23 @@
+id: theme-truth
+kind: theme
+status: PUBLISHED
+slug: truth
+label: Sự Thật Mất Lòng
+label_en: TRUTH
+summary: >-
+  Chủ đề hạt nhân Sự Thật Mất Lòng trong kho lưu trữ Hiyu Abyss, kết nối các tác
+  phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - TRUTH
+relatedContentIds:
+  - TXT-0051
+  - TXT-0052
+  - TXT-0053
+artworkId: theme_51
+visual:
+  region: region-human-condition
+  x: 280
+  'y': 220
+  priority: 9
+  glyph: ◈
+  cartoucheStyle: monument

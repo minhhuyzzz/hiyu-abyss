@@ -1,0 +1,25 @@
+id: trail-suffering-and-purpose
+slug: dau-kho-va-y-nghia
+title: Đau Khổ & Ý Nghĩa
+title_en: Suffering & Purpose
+subtitle: Chuyển hóa bi kịch cá nhân thành điểm tựa cho sự trưởng thành.
+description: >-
+  Học thuyết Khắc kỷ của Marcus Aurelius và Dostoevsky về việc gìn giữ phẩm giá
+  và niềm tin giữa nghịch cảnh.
+introPrompt: Khi đau khổ ập đến, ta để nó biến mình thành kẻ cay độc hay là kẻ sâu sắc hơn?
+closingPrompt: >-
+  Đau khổ không có ý nghĩa tự thân; chính thái độ can trường của bạn ban cho nó
+  ý nghĩa.
+themeCode: SUFFERING
+estimatedMinutes: 8
+coverArtworkId: theme_06
+status: PUBLISHED
+orderedNodeIds:
+  - theme-suffering
+  - idea-stoic-resilience
+  - thinker-marcus-aurelius
+  - quote-txt-0013
+  - theme-resilience
+  - idea-tragic-optimism
+  - thinker-fyodor-dostoevsky
+  - theme-serenity

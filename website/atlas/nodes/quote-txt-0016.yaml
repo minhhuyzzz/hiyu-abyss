@@ -1,0 +1,21 @@
+id: quote-txt-0016
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0016
+label: 'Folio #0016: Bản ngã càng lớn thì ngưỡng chịu đựng sự thật càng thấp.'
+label_en: 'Folio #0016'
+summary: >-
+  Kẻ có bản ngã càng lớn thì càng dễ bị tổn thương bởi một sự thật rất đỗi bình
+  thường.
+topicCodes:
+  - EGO
+relatedContentIds:
+  - TXT-0016
+artworkId: theme_16
+visual:
+  region: region-masks-and-authenticity
+  x: 175
+  'y': 465
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

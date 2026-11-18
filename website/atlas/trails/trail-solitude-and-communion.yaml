@@ -1,0 +1,23 @@
+id: trail-solitude-and-communion
+slug: co-doc-va-ket-noi
+title: Cô Độc & Gắn Kết
+title_en: Solitude & Communion
+subtitle: Nghệ thuật ở một mình và nhịp cầu dẫn sang tình yêu trưởng thành.
+description: >-
+  Đi từ nỗi sợ cô đơn đến sự cô độc đĩnh đạc của Pascal và Friedrich, gặp gỡ
+  tình yêu giữa hai tâm hồn tự do.
+introPrompt: Ta tìm đến người khác để lấp đầy khoảng trống, hay để sẻ chia sự vẹn tròn?
+closingPrompt: Chỉ kẻ không sợ cô độc mới có thể yêu thương mà không bóp nghẹt đối phương.
+themeCode: SOLITUDE
+estimatedMinutes: 7
+coverArtworkId: theme_03
+status: PUBLISHED
+orderedNodeIds:
+  - theme-solitude
+  - thinker-blaise-pascal
+  - idea-sanctuary-of-solitude
+  - art-wanderer-fog
+  - quote-txt-0009
+  - theme-connection
+  - idea-mature-love
+  - quote-txt-0015

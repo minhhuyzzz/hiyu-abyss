@@ -1,0 +1,23 @@
+id: quote-txt-0011
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0011
+label: >-
+  Folio #0011: Lòng tốt mà đi kèm với kỳ vọng được tán dương chỉ là một món hàng
+  trao đổi.
+label_en: 'Folio #0011'
+summary: >-
+  Lòng tốt mà đòi hỏi tiếng vỗ tay thì đó không phải là sự thiện lương, đó là
+  một giao dịch mua bán danh tiếng.
+topicCodes:
+  - MORALITY
+relatedContentIds:
+  - TXT-0011
+artworkId: theme_11
+visual:
+  region: region-power-and-machination
+  x: 485
+  'y': 825
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

@@ -5,7 +5,7 @@ import HeroArtwork from '../components/HeroArtwork.astro';
 import CuratorManifesto from '../components/CuratorManifesto.astro';
 import ThemeExhibitionWings from '../components/ThemeExhibitionWings.astro';
 import EditorialMosaic from '../components/EditorialMosaic.astro';
-import MirrorPortalSection from '../components/MirrorPortalSection.astro';
+import AtlasPortalSection from '../components/AtlasPortalSection.astro';
 import ArtProvenanceSection from '../components/ArtProvenanceSection.astro';
 import ClosingInvitation from '../components/ClosingInvitation.astro';
 import { getAllPublishedQuotes, getFeaturedQuotes, getAllTopics } from '../lib/content-publisher';
@@ -36,8 +36,8 @@ const primaryHero = featuredPool[dayOfYear % featuredPool.length] || allQuotes[0
   <!-- Scene 04: Curator's Selection Mosaic -->
   <EditorialMosaic featuredQuotes={featuredQuotes} topics={topics} />
 
-  <!-- Scene 05: The Mirror Portal (Interactive Sanctuary) -->
-  <MirrorPortalSection />
+  <!-- Scene 05: The Atlas Portal (Interactive Celestial Cartography) -->
+  <AtlasPortalSection />
 
   <!-- Scene 06: Art & Provenance (Scholarly & Visual Transparency HYA-02 / HYA-08) -->
   <ArtProvenanceSection />

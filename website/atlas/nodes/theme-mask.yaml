@@ -1,0 +1,23 @@
+id: theme-mask
+kind: theme
+status: PUBLISHED
+slug: mask
+label: Mặt Nạ Xã Hội
+label_en: MASK
+summary: >-
+  Chủ đề hạt nhân Mặt Nạ Xã Hội trong kho lưu trữ Hiyu Abyss, kết nối các tác
+  phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - MASK
+relatedContentIds:
+  - TXT-0031
+  - TXT-0032
+  - TXT-0033
+artworkId: theme_31
+visual:
+  region: region-masks-and-authenticity
+  x: 150
+  'y': 430
+  priority: 9
+  glyph: ◈
+  cartoucheStyle: monument

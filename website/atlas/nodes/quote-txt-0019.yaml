@@ -1,0 +1,21 @@
+id: quote-txt-0019
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0019
+label: 'Folio #0019: Hạ thấp người khác không bao giờ giúp bạn đứng cao hơn.'
+label_en: 'Folio #0019'
+summary: >-
+  Chỉ trích khuyết điểm của người khác không thể bù đắp cho những thiếu hụt
+  trong năng lực của chính bạn.
+topicCodes:
+  - EGO
+relatedContentIds:
+  - TXT-0019
+artworkId: theme_19
+visual:
+  region: region-masks-and-authenticity
+  x: 195
+  'y': 495
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

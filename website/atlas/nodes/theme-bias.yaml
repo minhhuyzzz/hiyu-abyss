@@ -1,0 +1,23 @@
+id: theme-bias
+kind: theme
+status: PUBLISHED
+slug: bias
+label: Thiên Kiến Nhận Thức
+label_en: BIAS
+summary: >-
+  Chủ đề hạt nhân Thiên Kiến Nhận Thức trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - BIAS
+relatedContentIds:
+  - TXT-0181
+  - TXT-0182
+  - TXT-0183
+artworkId: theme_181
+visual:
+  region: region-human-condition
+  x: 220
+  'y': 290
+  priority: 7
+  glyph: ◈
+  cartoucheStyle: monument

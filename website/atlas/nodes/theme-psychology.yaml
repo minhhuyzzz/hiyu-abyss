@@ -1,0 +1,20 @@
+id: theme-psychology
+kind: theme
+status: PUBLISHED
+slug: psychology
+label: Tâm Lý Con Người
+label_en: PSYCHOLOGY
+summary: >-
+  Chủ đề hạt nhân Tâm Lý Con Người trong kho lưu trữ Hiyu Abyss, kết nối các tác
+  phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - PSYCHOLOGY
+relatedContentIds: []
+artworkId: theme_01
+visual:
+  region: region-aesthetic-and-worldview
+  x: 480
+  'y': 440
+  priority: 10
+  glyph: ◈
+  cartoucheStyle: monument

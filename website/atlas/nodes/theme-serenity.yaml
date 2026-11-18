@@ -1,0 +1,23 @@
+id: theme-serenity
+kind: theme
+status: PUBLISHED
+slug: serenity
+label: Thanh Thản & Tĩnh Lặng
+label_en: SERENITY
+summary: >-
+  Chủ đề hạt nhân Thanh Thản & Tĩnh Lặng trong kho lưu trữ Hiyu Abyss, kết nối
+  các tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - SERENITY
+relatedContentIds:
+  - TXT-0109
+  - TXT-0110
+  - TXT-0111
+artworkId: theme_109
+visual:
+  region: region-suffering-and-purpose
+  x: 220
+  'y': 820
+  priority: 7
+  glyph: ◈
+  cartoucheStyle: monument

@@ -1,0 +1,22 @@
+id: idea-social-persona
+kind: idea
+status: PUBLISHED
+slug: mat-na-persona-xa-hoi
+label: Chiếc Mặt Nạ Persona & Sự Kiệt Sức
+label_en: The Social Mask (Persona) & Burnout
+summary: >-
+  Khi đeo mặt nạ quá lâu, bạn sẽ không còn nhận ra đâu là gương mặt thật và đâu
+  là lớp phấn giả trang.
+topicCodes:
+  - MASK
+  - CROWD
+relatedContentIds:
+  - TXT-0017
+artworkId: theme_01
+visual:
+  region: region-masks-and-authenticity
+  x: 140
+  'y': 450
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

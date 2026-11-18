@@ -1,0 +1,24 @@
+id: thinker-michel-de-montaigne
+kind: thinker
+status: PUBLISHED
+slug: michel-de-montaigne
+label: Michel de Montaigne (1533–1592)
+label_en: Michel de Montaigne
+summary: >-
+  Tác giả của bộ "Tiểu Luận" (Essais), bậc thầy tự vấn và hoài nghi triết học
+  với câu hỏi bất hủ: "Tôi biết gì?" (Que sais-je?).
+topicCodes:
+  - BIAS
+  - TRUTH
+artworkId: theme_08
+sourceRefs:
+  - title: Essais (Tiểu Luận)
+    author: Michel de Montaigne
+    year: '1580'
+visual:
+  region: region-human-condition
+  x: 240
+  'y': 210
+  priority: 9
+  glyph: ☥
+  cartoucheStyle: medallion

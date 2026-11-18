@@ -1,0 +1,23 @@
+id: theme-envy
+kind: theme
+status: PUBLISHED
+slug: envy
+label: Đố Kỵ Ngầm
+label_en: ENVY
+summary: >-
+  Chủ đề hạt nhân Đố Kỵ Ngầm trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm
+  văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - ENVY
+relatedContentIds:
+  - TXT-0066
+  - TXT-0067
+  - TXT-0068
+artworkId: theme_66
+visual:
+  region: region-power-and-machination
+  x: 500
+  'y': 910
+  priority: 7
+  glyph: ◈
+  cartoucheStyle: monument

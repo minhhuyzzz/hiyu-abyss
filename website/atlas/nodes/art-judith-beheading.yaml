@@ -1,0 +1,20 @@
+id: art-judith-beheading
+kind: artwork
+status: PUBLISHED
+slug: judith-chem-holofernes-gentileschi
+label: Judith Chém Đầu Holofernes (Gentileschi, 1620)
+label_en: Judith Slaying Holofernes - Artemisia
+summary: >-
+  Bản trường ca thị giác đanh thép về lòng dũng cảm, sự phản kháng trước bạo
+  quyền và dũng khí tự vệ của kẻ bị dồn vào đường cùng.
+topicCodes:
+  - DOUBLE_STANDARD
+  - POWER
+artworkId: theme_02
+visual:
+  region: region-power-and-machination
+  x: 430
+  'y': 820
+  priority: 8
+  glyph: ❖
+  cartoucheStyle: plate

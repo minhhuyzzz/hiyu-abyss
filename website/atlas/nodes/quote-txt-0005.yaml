@@ -1,0 +1,23 @@
+id: quote-txt-0005
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0005
+label: >-
+  Folio #0005: Người ta hăng hái kết tội kẻ khác không phải vì công lý, mà để
+  che giấu vết nhơ của chính mình.
+label_en: 'Folio #0005'
+summary: >-
+  Người ta hăng hái ném đá kẻ khác không phải vì yêu công lý, mà vì sỉ nhục
+  người khác là cách nhanh nhất để cảm thấy bản thân trong sạch.
+topicCodes:
+  - HYPOCRISY
+relatedContentIds:
+  - TXT-0005
+artworkId: theme_05
+visual:
+  region: region-ego-and-illusion
+  x: 685
+  'y': 245
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

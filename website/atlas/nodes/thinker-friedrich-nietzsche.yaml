@@ -1,0 +1,25 @@
+id: thinker-friedrich-nietzsche
+kind: thinker
+status: PUBLISHED
+slug: friedrich-nietzsche
+label: Friedrich Nietzsche (1844–1900)
+label_en: Friedrich Nietzsche
+summary: >-
+  Triết gia bóc trần đạo đức giả tạo và tâm lý bầy đàn. Khởi xướng tư tưởng về
+  Siêu nhân (Übermensch) và Tình yêu Số phận (Amor Fati).
+topicCodes:
+  - FREEDOM
+  - CROWD
+  - TRUTH
+artworkId: theme_06
+sourceRefs:
+  - title: Beyond Good and Evil (Bên Kia Thiện Ác)
+    author: Friedrich Nietzsche
+    year: '1886'
+visual:
+  region: region-freedom-and-order
+  x: 840
+  'y': 410
+  priority: 9
+  glyph: ☥
+  cartoucheStyle: medallion

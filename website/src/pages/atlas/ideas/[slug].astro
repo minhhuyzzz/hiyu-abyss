@@ -1,0 +1,173 @@
+---
+// website/src/pages/atlas/ideas/[slug].astro
+// Static landing folio for each curated node in The Atlas
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getAllAtlasNodes, getArtworkMeta, getAtlasRegionById } from '../../../lib/atlas/loader';
+import { getNodeNeighbors, getRelationLabel } from '../../../lib/atlas/graph-index';
+import type { AtlasNode } from '../../../lib/atlas/types';
+
+export function getStaticPaths() {
+  const nodes = getAllAtlasNodes();
+  return nodes.map((node) => ({
+    params: { slug: node.slug },
+    props: { node },
+  }));
+}
+
+interface Props {
+  node: AtlasNode;
+}
+
+const { node } = Astro.props;
+const region = getAtlasRegionById(node.visual.region);
+const neighbors = getNodeNeighbors(node.id);
+const artworkMeta = getArtworkMeta(node.artworkId);
+
+const pageTitle = `${node.label} · The Atlas`;
+const pageDescription = node.summary;
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  image={artworkMeta ? `/images/themes/${artworkMeta.id}/slide_1_establishing.jpg` : '/images/themes/theme_08/slide_1_establishing.jpg'}
+>
+  <div class="w-full min-h-screen bg-bg text-text py-12 px-4 sm:px-6">
+    <div class="max-w-3xl mx-auto space-y-8 animate-fade-in">
+      <!-- Breadcrumb & Nav -->
+      <div class="flex items-center gap-2 text-xs font-mono text-muted border-b border-border pb-4">
+        <a href="/atlas" class="hover:text-accent transition-colors flex items-center gap-1">
+          <span>← The Atlas</span>
+        </a>
+        <span>/</span>
+        {region && (
+          <span class="text-accent/90">{region.astronomyGlyph} {region.label}</span>
+        )}
+        <span>/</span>
+        <span class="text-text font-medium truncate">{node.label}</span>
+      </div>
+
+      <!-- Header Section -->
+      <div class="space-y-3">
+        <div class="flex items-center gap-2">
+          <span class="font-mono text-[10px] tracking-widest uppercase px-2 py-0.5 rounded bg-surface border border-border text-accent">
+            {node.kind.toUpperCase()}
+          </span>
+          {region && (
+            <span class="font-mono text-xs text-muted">
+              Tọa độ: {region.label} ({node.visual.x}, {node.visual.y})
+            </span>
+          )}
+        </div>
+
+        <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-medium text-text tracking-tight leading-tight">
+          {node.label}
+        </h1>
+
+        {node.label_en && (
+          <p className="font-serif italic text-lg text-muted">
+            {node.label_en}
+          </p>
+        )}
+      </div>
+
+      <!-- Main Open In Atlas CTA -->
+      <div class="p-4 rounded-sm bg-surface-raised border border-accent/40 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-sm">
+        <div>
+          <h4 class="font-serif font-medium text-base text-text">
+            Khám phá trong Bản Đồ The Atlas
+          </h4>
+          <p class="font-sans text-xs text-muted mt-0.5">
+            Xem vị trí không gian và các chùm sao tư tưởng phụ cận trên đĩa thiên văn cổ điển.
+          </p>
+        </div>
+        <a
+          href={`/atlas?focus=${node.slug}`}
+          class="shrink-0 px-4 py-2.5 rounded-sm bg-accent text-on-accent font-sans text-xs uppercase tracking-wider font-semibold hover:brightness-110 transition-all text-center"
+        >
+          Mở Bản Đồ Chiếu Điểm →
+        </a>
+      </div>
+
+      <!-- Museum Artwork Placard (If linked) -->
+      {artworkMeta && (
+        <div class="border border-border bg-surface p-4 rounded-sm space-y-3 shadow-md">
+          <div class="aspect-16/10 overflow-hidden rounded-xs bg-bg relative">
+            <img
+              src={`/images/themes/${artworkMeta.id}/slide_1_establishing.jpg`}
+              alt={artworkMeta.title}
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="pt-1">
+            <div class="flex items-center justify-between text-xs text-muted font-mono">
+              <span class="uppercase tracking-widest">Kiệt Tác Hội Họa Minh Họa</span>
+              <span>{artworkMeta.publicDomain ? 'Public Domain' : 'Museum Archive'}</span>
+            </div>
+            <h3 class="font-serif font-medium text-lg text-text mt-1">
+              {artworkMeta.title}
+            </h3>
+            <p class="font-sans text-xs text-muted">
+              {artworkMeta.artist} ({artworkMeta.period}) · {artworkMeta.museum}
+            </p>
+          </div>
+        </div>
+      )}
+
+      <!-- Editorial Summary -->
+      <div class="p-6 rounded-sm bg-surface border-l-4 border-accent space-y-3">
+        <h3 class="font-mono text-xs uppercase tracking-widest text-accent font-semibold">
+          Luận Điểm & Trọng Tâm Tư Tưởng
+        </h3>
+        <p class="font-serif text-lg text-text leading-relaxed">
+          "{node.summary}"
+        </p>
+      </div>
+
+      <!-- Curator Note -->
+      {node.curatorNote && (
+        <div class="p-5 rounded-sm bg-surface/60 border border-border space-y-2">
+          <h4 class="font-mono text-xs uppercase tracking-widest text-muted flex items-center gap-1.5">
+            <span>✦</span>
+            <span>Ghi Chép Giám Tuyển Hiyu Abyss</span>
+          </h4>
+          <p class="font-sans text-sm text-muted/90 leading-relaxed">
+            {node.curatorNote}
+          </p>
+        </div>
+      )}
+
+      <!-- Connected Relational Neighbors -->
+      <div class="space-y-4 pt-4 border-t border-border">
+        <h3 class="font-mono text-xs uppercase tracking-widest text-text font-semibold">
+          Các Mối Liên Hệ Giám Tuyển ({neighbors.length})
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {neighbors.map(({ node: target, edge }) => (
+            <a
+              href={`/atlas/ideas/${target.slug}`}
+              class="p-4 rounded-sm bg-surface hover:bg-surface-raised border border-border hover:border-accent/50 transition-all flex flex-col justify-between group"
+            >
+              <div>
+                <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-bg text-accent border border-accent/20 mb-2 inline-block">
+                  {getRelationLabel(edge.relation)}
+                </span>
+                <h4 class="font-serif font-medium text-base text-text group-hover:text-accent transition-colors">
+                  {target.label}
+                </h4>
+                <p class="font-sans text-xs text-muted mt-1 leading-normal">
+                  {edge.why}
+                </p>
+              </div>
+              <span class="text-xs text-accent font-mono mt-3 flex items-center gap-1">
+                <span>Xem chi tiết</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

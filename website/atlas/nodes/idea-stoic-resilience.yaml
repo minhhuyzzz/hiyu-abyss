@@ -1,0 +1,23 @@
+id: idea-stoic-resilience
+kind: idea
+status: PUBLISHED
+slug: nghi-luc-khac-ky
+label: Nghị Lực Khắc Kỷ Trước Nghịch Cảnh
+label_en: Stoic Resilience & Inner Citadel
+summary: >-
+  Điều làm tổn thương bạn không phải là biến cố khách quan, mà là cách bạn diễn
+  giải biến cố ấy trong tâm trí.
+topicCodes:
+  - SUFFERING
+  - RESILIENCE
+  - SERENITY
+relatedContentIds:
+  - TXT-0013
+artworkId: theme_08
+visual:
+  region: region-suffering-and-purpose
+  x: 230
+  'y': 730
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

@@ -1,0 +1,23 @@
+id: theme-suffering
+kind: theme
+status: PUBLISHED
+slug: suffering
+label: Vượt Lên Nghịch Cảnh
+label_en: SUFFERING
+summary: >-
+  Chủ đề hạt nhân Vượt Lên Nghịch Cảnh trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - SUFFERING
+relatedContentIds:
+  - TXT-0076
+  - TXT-0077
+  - TXT-0078
+artworkId: theme_76
+visual:
+  region: region-suffering-and-purpose
+  x: 210
+  'y': 710
+  priority: 9
+  glyph: ◈
+  cartoucheStyle: monument

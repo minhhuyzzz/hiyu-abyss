@@ -1,0 +1,22 @@
+id: idea-paradox-of-freedom
+kind: idea
+status: PUBLISHED
+slug: nghich-ly-cua-tu-do
+label: Nghịch Lý Của Tự Do Tự Chủ
+label_en: The Paradox of Freedom
+summary: >-
+  Tự do đích thực bắt đầu từ thời khắc bạn dũng cảm chấp nhận từ bỏ sự bảo bọc
+  dễ dãi của kẻ khác.
+topicCodes:
+  - FREEDOM
+  - BAD_FAITH
+relatedContentIds:
+  - TXT-0006
+artworkId: theme_03
+visual:
+  region: region-freedom-and-order
+  x: 810
+  'y': 460
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

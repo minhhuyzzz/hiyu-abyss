@@ -1,0 +1,28 @@
+id: trail-ego-and-recognition
+slug: ban-nga-va-su-cong-nhan
+label: Bản Ngã & Sự Công Nhận
+title: Bản Ngã & Sự Công Nhận
+title_en: Ego & Recognition
+subtitle: Thoát khỏi chiếc lồng của sự hơn người và nỗi lo âu địa vị.
+description: >-
+  Lần theo dấu vết của ái kỷ bản ngã qua huyền thoại Narcissus, triết học
+  Schopenhauer và bài học về bản sắc chân thật.
+introPrompt: >-
+  Ta đang sống cho chính mình, hay đang trình diễn cho một khán phòng tưởng
+  tượng?
+closingPrompt: >-
+  Khi ánh đèn sân khấu tắt đi, con người thật của bạn có đủ bình yên để ở một
+  mình?
+themeCode: EGO
+estimatedMinutes: 9
+coverArtworkId: theme_01
+status: PUBLISHED
+orderedNodeIds:
+  - theme-ego
+  - idea-inflated-ego
+  - art-narcissus
+  - quote-txt-0004
+  - theme-status
+  - idea-status-anxiety
+  - thinker-arthur-schopenhauer
+  - idea-true-identity

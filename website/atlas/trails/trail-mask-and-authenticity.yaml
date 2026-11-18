@@ -1,0 +1,25 @@
+id: trail-mask-and-authenticity
+slug: mat-na-va-tinh-chan-thuc
+title: Mặt Nạ & Tính Chân Thực
+title_en: Mask & Authenticity
+subtitle: Đối diện bóng tối nội tâm để tìm lại con người chân thật.
+description: >-
+  Hành trình cùng Carl Jung bóc trần chiếc mặt nạ xã hội và hòa giải với phần
+  tối của bản ngã.
+introPrompt: >-
+  Ta sẵn sàng đánh mất bản sắc của mình để đổi lấy sự chấp nhận của đám đông đến
+  bao giờ?
+closingPrompt: Trở nên trọn vẹn quan trọng hơn là tỏ ra hoàn hảo.
+themeCode: MASK
+estimatedMinutes: 8
+coverArtworkId: theme_05
+status: PUBLISHED
+orderedNodeIds:
+  - theme-mask
+  - idea-social-persona
+  - thinker-carl-jung
+  - theme-shadow
+  - idea-jungian-shadow
+  - art-garden-delights
+  - quote-txt-0016
+  - theme-crowd

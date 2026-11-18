@@ -1,0 +1,22 @@
+id: idea-tragic-optimism
+kind: idea
+status: PUBLISHED
+slug: lac-quan-bi-trang
+label: Lạc Quan Bi Tráng & Điểm Tựa Ý Nghĩa
+label_en: Tragic Optimism & Finding Meaning
+summary: >-
+  Ngay cả trong tột cùng khổ đau, con người vẫn giữ quyền tự do cuối cùng: tự do
+  lựa chọn thái độ sống.
+topicCodes:
+  - MEANING
+  - SUFFERING
+relatedContentIds:
+  - TXT-0018
+artworkId: theme_06
+visual:
+  region: region-suffering-and-purpose
+  x: 250
+  'y': 780
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

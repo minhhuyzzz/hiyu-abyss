@@ -1,0 +1,23 @@
+id: quote-txt-0020
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0020
+label: >-
+  Folio #0020: Cơn giận dữ bộc phát thường là tiếng kêu cứu của một bản ngã đang
+  bị đe dọa.
+label_en: 'Folio #0020'
+summary: >-
+  Cơn giận dữ bộc phát hiếm khi vì sự việc quá nghiêm trọng; nó là tiếng thét
+  gào của một bản ngã đang run rẩy vì sợ bị xem thường.
+topicCodes:
+  - EGO
+relatedContentIds:
+  - TXT-0020
+artworkId: theme_20
+visual:
+  region: region-power-and-machination
+  x: 545
+  'y': 845
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

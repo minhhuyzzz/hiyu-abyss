@@ -1,0 +1,23 @@
+id: theme-meaning
+kind: theme
+status: PUBLISHED
+slug: meaning
+label: Ý Nghĩa Cuộc Đời
+label_en: MEANING
+summary: >-
+  Chủ đề hạt nhân Ý Nghĩa Cuộc Đời trong kho lưu trữ Hiyu Abyss, kết nối các tác
+  phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - MEANING
+relatedContentIds:
+  - TXT-0086
+  - TXT-0087
+  - TXT-0088
+artworkId: theme_86
+visual:
+  region: region-suffering-and-purpose
+  x: 260
+  'y': 760
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument

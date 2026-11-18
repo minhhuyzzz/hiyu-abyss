@@ -1,0 +1,23 @@
+id: quote-txt-0002
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0002
+label: >-
+  Folio #0002: Lòng tốt đáng sợ nhất là khoản nợ ngầm bắt bạn phải mang ơn suốt
+  đời.
+label_en: 'Folio #0002'
+summary: >-
+  Lòng tốt đáng sợ nhất là khi người ta giúp bạn một lần, nhưng lại ngầm bắt bạn
+  phải mang ơn và cúi đầu trước họ suốt phần đời còn lại.
+topicCodes:
+  - HYPOCRISY
+relatedContentIds:
+  - TXT-0002
+artworkId: theme_02
+visual:
+  region: region-human-condition
+  x: 235
+  'y': 275
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

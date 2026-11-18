@@ -1,0 +1,20 @@
+id: art-saturn-son
+kind: artwork
+status: PUBLISHED
+slug: saturn-nuot-con-goya
+label: Saturn Nuốt Chửng Con Trai (Goya, 1823)
+label_en: Saturn Devouring His Son - Goya
+summary: >-
+  Bức tranh Đen (Black Painting) kinh điển bóc trần nỗi kinh hoàng tột cùng của
+  quyền lực hoang tưởng và sự tự hủy hoại bản thể.
+topicCodes:
+  - POWER
+  - SHADOW
+artworkId: theme_06
+visual:
+  region: region-power-and-machination
+  x: 490
+  'y': 870
+  priority: 8
+  glyph: ❖
+  cartoucheStyle: plate

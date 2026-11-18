@@ -1,0 +1,142 @@
+- id: region-human-condition
+  slug: ban-chat-con-nguoi
+  label: Bản Chất Con Người
+  label_en: The Human Condition
+  tagline: Sự thật trần trụi, thiên kiến nhận thức và bản thể hiện sinh.
+  description: >-
+    Miền tư tưởng chất vấn những điều con người luôn tìm cách che giấu trước thế
+    giới và chính mình. Nơi ranh giới giữa chân lý và sự tự huyễn hoặc bị thử
+    thách.
+  centerCoordinates:
+    x: 280
+    'y': 260
+  colorToken: '#C29A77'
+  astronomyGlyph: ☉
+  dominantThemes:
+    - TRUTH
+    - SELF_DECEPTION
+    - BIAS
+    - EXISTENCE
+- id: region-ego-and-illusion
+  slug: ban-nga-va-ao-tuong
+  label: Bản Ngã & Sự Công Nhận
+  label_en: Ego & Recognition
+  tagline: Chiếc bẫy của sự hơn người, danh vọng và khao khát khẳng định bản thân.
+  description: >-
+    Miền nghiên cứu sự cọ xát giữa tự trọng chân thật và bản ngã khao khát tán
+    thưởng. Nơi con người tự trói mình vào những cuộc đua địa vị vô hình.
+  centerCoordinates:
+    x: 680
+    'y': 220
+  colorToken: '#B47862'
+  astronomyGlyph: ☽
+  dominantThemes:
+    - EGO
+    - IDENTITY
+    - STATUS
+    - TRANSCENDENCE
+- id: region-freedom-and-order
+  slug: tu-do-va-khuon-kho
+  label: Tự Do & Giới Hạn
+  label_en: Freedom & Boundaries
+  tagline: Cái giá của sự tự chủ, trách nhiệm bản thân và ranh giới luân lý.
+  description: >-
+    Khám phá nghịch lý: tự do không phải là phóng túng vô tận, mà là năng lực tự
+    nguyện chấp nhận kỷ luật và dũng cảm chịu trách nhiệm cho số phận.
+  centerCoordinates:
+    x: 820
+    'y': 480
+  colorToken: '#96A79A'
+  astronomyGlyph: ♄
+  dominantThemes:
+    - FREEDOM
+    - BOUNDARIES
+    - MORALITY
+    - BAD_FAITH
+- id: region-solitude-and-communion
+  slug: co-doc-va-ket-noi
+  label: Cô Độc & Gắn Kết
+  label_en: Solitude & Communion
+  tagline: Sự tĩnh lặng nuôi dưỡng tâm hồn và nghệ thuật thấu cảm chân thành.
+  description: >-
+    Phân định giữa nỗi cô đơn hoảng loạn của kẻ sợ ở một mình và sự cô độc đĩnh
+    đạc của tâm hồn tự chủ. Nhịp cầu dẫn sang tình yêu trưởng thành.
+  centerCoordinates:
+    x: 740
+    'y': 760
+  colorToken: '#A89F91'
+  astronomyGlyph: ☿
+  dominantThemes:
+    - SOLITUDE
+    - CONNECTION
+    - LOVE
+    - LOYALTY
+- id: region-power-and-machination
+  slug: quyen-luc-va-thao-tung
+  label: Quyền Lực & Đạo Đức
+  label_en: Power & Machination
+  tagline: Tâm lý học kiểm soát ngầm, đố kỵ và những chiếc bẫy tội lỗi vô hình.
+  description: >-
+    Giải phẫu các cơ chế phòng vệ và toan tính chi phối trong quan hệ người với
+    người. Bóc trần tiêu chuẩn kép và lòng tốt mang điều kiện ngầm.
+  centerCoordinates:
+    x: 480
+    'y': 840
+  colorToken: '#8E5A3C'
+  astronomyGlyph: ♂
+  dominantThemes:
+    - POWER
+    - MANIPULATION
+    - DOUBLE_STANDARD
+    - ENVY
+- id: region-suffering-and-purpose
+  slug: nghich-canh-va-y-nghia
+  label: Đau Khổ & Ý Nghĩa
+  label_en: Suffering & Purpose
+  tagline: Vượt lên nghịch cảnh, bản lĩnh phục hồi và tìm kiếm lẽ sống.
+  description: >-
+    Nơi triết học Khắc kỷ đối thoại cùng tâm lý học hiện sinh. Chuyển hóa bi
+    kịch cá nhân thành điểm tựa cho sự trưởng thành và bình thản nội tâm.
+  centerCoordinates:
+    x: 220
+    'y': 740
+  colorToken: '#7C8B82'
+  astronomyGlyph: ♃
+  dominantThemes:
+    - SUFFERING
+    - MEANING
+    - RESILIENCE
+    - SERENITY
+- id: region-masks-and-authenticity
+  slug: mat-na-va-chan-tinh
+  label: Mặt Nạ & Tính Chân Thực
+  label_en: Mask & Authenticity
+  tagline: Bóng tối nội tâm, sự kiệt sức của việc gồng mình và dũng khí sống thật.
+  description: >-
+    Hành trình hòa giải với phần tối (Shadow) theo Carl Jung. Nhìn nhận chiếc
+    mặt nạ xã hội (Persona) để không bị nó nuốt chửng bản sắc chân thật.
+  centerCoordinates:
+    x: 160
+    'y': 460
+  colorToken: '#8A7056'
+  astronomyGlyph: ♅
+  dominantThemes:
+    - MASK
+    - SHADOW
+    - CROWD
+    - HYPOCRISY
+- id: region-aesthetic-and-worldview
+  slug: tham-my-va-the-gioi-quan
+  label: Thẩm Mỹ & Thế Giới Quan
+  label_en: Aesthetics & Worldview
+  tagline: Cuộc gặp gỡ giữa kiệt tác hội họa bảo tàng và chiều sâu triết học.
+  description: >-
+    Trung tâm giao hòa của The Atlas. Nơi cái đẹp không chỉ để ngắm nhìn, mà là
+    chiếc kính vạn hoa đánh thức sự tự vấn và thấu tỏ bản ngã.
+  centerCoordinates:
+    x: 480
+    'y': 460
+  colorToken: '#D5B48D'
+  astronomyGlyph: ♀
+  dominantThemes:
+    - PSYCHOLOGY

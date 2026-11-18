@@ -1,0 +1,22 @@
+id: idea-true-identity
+kind: idea
+status: PUBLISHED
+slug: ban-sac-khi-khong-ai-nhin
+label: Bản Sắc Khi Không Có Ai Nhìn
+label_en: Identity When Unobserved
+summary: >-
+  Bạn thật sự là ai trong căn phòng tối, khi mọi danh xưng và vai diễn xã hội
+  đều được trút bỏ?
+topicCodes:
+  - IDENTITY
+  - MASK
+relatedContentIds:
+  - TXT-0010
+artworkId: theme_08
+visual:
+  region: region-ego-and-illusion
+  x: 720
+  'y': 210
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

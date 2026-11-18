@@ -51,6 +51,16 @@ const quotes = getQuotesByTopic(topic.code);
       <p class="font-serif italic text-base sm:text-xl text-muted max-w-3xl leading-relaxed">
         "{topic.description}"
       </p>
+
+      <div class="pt-2 flex items-center gap-3">
+        <a
+          href={`/atlas?focus=theme-${topic.code.toLowerCase().replace(/_/g, '-')}`}
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-sm bg-surface hover:bg-surface-raised border border-accent/40 text-accent font-sans text-xs uppercase tracking-wider font-semibold transition-all shadow-xs"
+        >
+          <span>✦</span>
+          <span>Khám Phá Vị Trí Trên The Atlas</span>
+        </a>
+      </div>
     </div>
 
     <!-- Curated Works Grid (Museum Editorial Layout) -->

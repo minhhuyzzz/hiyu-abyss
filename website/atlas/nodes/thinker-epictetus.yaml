@@ -1,0 +1,24 @@
+id: thinker-epictetus
+kind: thinker
+status: PUBLISHED
+slug: epictetus
+label: Epictetus (50–135)
+label_en: Epictetus
+summary: >-
+  Triết gia Khắc kỷ xuất thân nô lệ. Khởi xướng Phân Định Quyền Kiểm Soát: tự do
+  đích thực nằm ở việc phân biệt điều ta kiểm soát được và điều không thể.
+topicCodes:
+  - BOUNDARIES
+  - RESILIENCE
+artworkId: theme_08
+sourceRefs:
+  - title: Discourses & Enchiridion
+    author: Epictetus
+    year: 108 AD
+visual:
+  region: region-freedom-and-order
+  x: 790
+  'y': 430
+  priority: 9
+  glyph: ☥
+  cartoucheStyle: medallion

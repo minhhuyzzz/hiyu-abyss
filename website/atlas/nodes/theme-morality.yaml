@@ -1,0 +1,23 @@
+id: theme-morality
+kind: theme
+status: PUBLISHED
+slug: morality
+label: Lòng Tốt & Điều Kiện Ngầm
+label_en: MORALITY
+summary: >-
+  Chủ đề hạt nhân Lòng Tốt & Điều Kiện Ngầm trong kho lưu trữ Hiyu Abyss, kết
+  nối các tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - MORALITY
+relatedContentIds:
+  - TXT-0011
+  - TXT-0012
+  - TXT-0013
+artworkId: theme_11
+visual:
+  region: region-freedom-and-order
+  x: 770
+  'y': 510
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument

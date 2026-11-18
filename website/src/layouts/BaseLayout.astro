@@ -91,7 +91,9 @@ const jsonLd = {
     <script is:inline>
       (function () {
         try {
-          const savedTheme = localStorage.getItem('theme');
+          const urlParams = new URLSearchParams(window.location.search);
+          const themeParam = urlParams.get('theme');
+          const savedTheme = themeParam || localStorage.getItem('theme');
           const theme = savedTheme === 'light' ? 'light' : 'dark';
           document.documentElement.setAttribute('data-theme', theme);
         } catch (e) {

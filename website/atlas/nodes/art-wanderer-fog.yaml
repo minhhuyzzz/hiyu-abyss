@@ -1,0 +1,20 @@
+id: art-wanderer-fog
+kind: artwork
+status: PUBLISHED
+slug: ke-lang-du-tren-bien-suong-mu
+label: Kẻ Lãng Du Trên Biển Sương Mù (Friedrich, 1818)
+label_en: Wanderer above the Sea of Fog
+summary: >-
+  Biểu tượng lãng mạn về con người đứng trước sự kỳ vĩ vô tận của vũ trụ và đối
+  diện với vực sâu nội tâm của chính mình.
+topicCodes:
+  - SOLITUDE
+  - EXISTENCE
+artworkId: theme_03
+visual:
+  region: region-solitude-and-communion
+  x: 720
+  'y': 710
+  priority: 8
+  glyph: ❖
+  cartoucheStyle: plate

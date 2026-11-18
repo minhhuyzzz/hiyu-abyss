@@ -1,0 +1,23 @@
+id: theme-identity
+kind: theme
+status: PUBLISHED
+slug: identity
+label: Bản Sắc Cá Nhân
+label_en: IDENTITY
+summary: >-
+  Chủ đề hạt nhân Bản Sắc Cá Nhân trong kho lưu trữ Hiyu Abyss, kết nối các tác
+  phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - IDENTITY
+relatedContentIds:
+  - TXT-0081
+  - TXT-0082
+  - TXT-0083
+artworkId: theme_81
+visual:
+  region: region-ego-and-illusion
+  x: 740
+  'y': 230
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument

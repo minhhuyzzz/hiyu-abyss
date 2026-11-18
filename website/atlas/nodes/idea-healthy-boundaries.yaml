@@ -1,0 +1,22 @@
+id: idea-healthy-boundaries
+kind: idea
+status: PUBLISHED
+slug: dung-khi-lap-ranh-gioi
+label: Dũng Khí Thiết Lập Ranh Giới
+label_en: Courage to Set Healthy Boundaries
+summary: >-
+  Nói "Không" với những đòi hỏi vô lý là hành động tử tế nhất bạn có thể làm cho
+  phẩm giá của mình.
+topicCodes:
+  - BOUNDARIES
+  - FREEDOM
+relatedContentIds:
+  - TXT-0012
+artworkId: theme_05
+visual:
+  region: region-freedom-and-order
+  x: 860
+  'y': 470
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

@@ -1,0 +1,23 @@
+id: quote-txt-0004
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0004
+label: >-
+  Folio #0004: Có những người tha thứ rất nhanh chỉ để tích lũy quyền lực phán
+  xét bạn.
+label_en: 'Folio #0004'
+summary: >-
+  Có những người tha thứ rất nhanh, chỉ để mỗi lần tranh cãi, họ có quyền đem
+  lỗi lầm cũ ra ép bạn phải thấy mình tội lỗi.
+topicCodes:
+  - HYPOCRISY
+relatedContentIds:
+  - TXT-0004
+artworkId: theme_04
+visual:
+  region: region-ego-and-illusion
+  x: 655
+  'y': 195
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

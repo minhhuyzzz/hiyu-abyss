@@ -1,0 +1,23 @@
+id: theme-self-deception
+kind: theme
+status: PUBLISHED
+slug: self-deception
+label: Tự Lừa Dối
+label_en: SELF DECEPTION
+summary: >-
+  Chủ đề hạt nhân Tự Lừa Dối trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm
+  văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - SELF_DECEPTION
+relatedContentIds:
+  - TXT-0021
+  - TXT-0022
+  - TXT-0023
+artworkId: theme_21
+visual:
+  region: region-human-condition
+  x: 330
+  'y': 270
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument

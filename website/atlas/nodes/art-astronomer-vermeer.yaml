@@ -1,0 +1,20 @@
+id: art-astronomer-vermeer
+kind: artwork
+status: PUBLISHED
+slug: nha-thien-van-vermeer
+label: Nhà Thiên Văn Học (Vermeer, 1668)
+label_en: The Astronomer - Vermeer
+summary: >-
+  Ánh sáng êm đềm chiếu vào căn phòng nơi học giả trầm ngâm nghiên cứu quả địa
+  cầu, tượng trưng cho sự kiếm tìm chân lý khoa học.
+topicCodes:
+  - TRUTH
+  - MEANING
+artworkId: theme_07
+visual:
+  region: region-human-condition
+  x: 270
+  'y': 250
+  priority: 8
+  glyph: ❖
+  cartoucheStyle: plate

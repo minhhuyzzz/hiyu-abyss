@@ -1,0 +1,22 @@
+id: idea-inflated-ego
+kind: idea
+status: PUBLISHED
+slug: ban-nga-phong-dai
+label: Bản Ngã Phóng Đại & Nhu Cầu Thắng Cuộc
+label_en: Inflated Ego & The Urge to Win
+summary: >-
+  Khao khát luôn chứng minh mình đúng là biểu hiện rõ nhất của sự bất an sâu kín
+  bên trong.
+topicCodes:
+  - EGO
+  - STATUS
+relatedContentIds:
+  - TXT-0004
+artworkId: theme_01
+visual:
+  region: region-ego-and-illusion
+  x: 650
+  'y': 200
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

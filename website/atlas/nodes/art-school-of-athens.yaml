@@ -1,0 +1,20 @@
+id: art-school-of-athens
+kind: artwork
+status: PUBLISHED
+slug: truong-hoc-athens-raphael
+label: 'Bích Họa: Trường Học Athens (Raphael, 1509)'
+label_en: The School of Athens - Raphael
+summary: >-
+  Kiệt tác bích họa Phục hưng tại Vatican hội tụ các bậc hiền triết Hy Lạp cổ
+  đại, biểu tượng cho khát vọng vươn tới chân lý vĩnh cửu.
+topicCodes:
+  - PSYCHOLOGY
+  - TRUTH
+artworkId: theme_08
+visual:
+  region: region-aesthetic-and-worldview
+  x: 480
+  'y': 420
+  priority: 8
+  glyph: ❖
+  cartoucheStyle: plate

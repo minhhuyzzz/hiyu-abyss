@@ -1,0 +1,25 @@
+id: thinker-carl-jung
+kind: thinker
+status: PUBLISHED
+slug: carl-gustav-jung
+label: Carl Gustav Jung (1875–1961)
+label_en: Carl Gustav Jung
+summary: >-
+  Nhà tâm thần học Thụy Sĩ sáng lập tâm lý học phân tích. Khai phá các khái niệm
+  Bóng tối (Shadow), Mặt nạ (Persona) và Vô thức tập thể.
+topicCodes:
+  - SHADOW
+  - MASK
+  - PSYCHOLOGY
+artworkId: theme_05
+sourceRefs:
+  - title: The Archetypes and the Collective Unconscious
+    author: C. G. Jung
+    year: '1934'
+visual:
+  region: region-masks-and-authenticity
+  x: 120
+  'y': 420
+  priority: 9
+  glyph: ☥
+  cartoucheStyle: medallion

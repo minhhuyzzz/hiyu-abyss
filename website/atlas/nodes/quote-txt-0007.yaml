@@ -1,0 +1,23 @@
+id: quote-txt-0007
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0007
+label: >-
+  Folio #0007: Đừng phán xét sự lựa chọn của người khác khi bạn chưa từng phải
+  chịu đựng sự bế tắc của họ.
+label_en: 'Folio #0007'
+summary: >-
+  Ta rất dễ phán xét người khác, cho đến khi chính bản thân rơi vào hoàn cảnh mà
+  không có lựa chọn nào là trọn vẹn.
+topicCodes:
+  - DOUBLE_STANDARD
+relatedContentIds:
+  - TXT-0007
+artworkId: theme_07
+visual:
+  region: region-freedom-and-order
+  x: 775
+  'y': 505
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

@@ -1,0 +1,23 @@
+id: theme-shadow
+kind: theme
+status: PUBLISHED
+slug: shadow
+label: Bóng Tối Nội Tâm
+label_en: SHADOW
+summary: >-
+  Chủ đề hạt nhân Bóng Tối Nội Tâm trong kho lưu trữ Hiyu Abyss, kết nối các tác
+  phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - SHADOW
+relatedContentIds:
+  - TXT-0026
+  - TXT-0027
+  - TXT-0028
+artworkId: theme_26
+visual:
+  region: region-masks-and-authenticity
+  x: 190
+  'y': 480
+  priority: 9
+  glyph: ◈
+  cartoucheStyle: monument

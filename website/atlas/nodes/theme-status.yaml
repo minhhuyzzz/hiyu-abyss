@@ -1,0 +1,23 @@
+id: theme-status
+kind: theme
+status: PUBLISHED
+slug: status
+label: Danh Vọng & Địa Vị
+label_en: STATUS
+summary: >-
+  Chủ đề hạt nhân Danh Vọng & Địa Vị trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - STATUS
+relatedContentIds:
+  - TXT-0096
+  - TXT-0097
+  - TXT-0098
+artworkId: theme_96
+visual:
+  region: region-ego-and-illusion
+  x: 620
+  'y': 250
+  priority: 7
+  glyph: ◈
+  cartoucheStyle: monument

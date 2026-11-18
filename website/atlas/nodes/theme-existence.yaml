@@ -1,0 +1,23 @@
+id: theme-existence
+kind: theme
+status: PUBLISHED
+slug: existence
+label: Lẽ Sống & Hiện Sinh
+label_en: EXISTENCE
+summary: >-
+  Chủ đề hạt nhân Lẽ Sống & Hiện Sinh trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - EXISTENCE
+relatedContentIds:
+  - TXT-0191
+  - TXT-0192
+  - TXT-0193
+artworkId: theme_191
+visual:
+  region: region-human-condition
+  x: 340
+  'y': 190
+  priority: 7
+  glyph: ◈
+  cartoucheStyle: monument

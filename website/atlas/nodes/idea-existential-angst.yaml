@@ -1,0 +1,22 @@
+id: idea-existential-angst
+kind: idea
+status: PUBLISHED
+slug: lo-au-hien-sinh
+label: Lo Âu Hiện Sinh & Khoảng Trống Bản Thể
+label_en: Existential Dread & The Void
+summary: >-
+  Khi những quy chuẩn xã hội lùi xa, ta bàng hoàng nhận ra mình phải tự gánh vác
+  ý nghĩa cuộc đời mình.
+topicCodes:
+  - EXISTENCE
+  - FREEDOM
+relatedContentIds:
+  - TXT-0008
+artworkId: theme_06
+visual:
+  region: region-human-condition
+  x: 350
+  'y': 210
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

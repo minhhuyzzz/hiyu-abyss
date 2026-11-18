@@ -1,0 +1,24 @@
+id: trail-aesthetics-and-worldview
+slug: tham-my-va-the-gioi-quan
+title: Thẩm Mỹ & Cái Nhìn Thế Giới
+title_en: Aesthetics & Worldview
+subtitle: Nơi kiệt tác mỹ thuật bảo tàng gặp gỡ những câu hỏi nhân văn vĩnh cửu.
+description: >-
+  Khám phá bức bích họa Trường Học Athens của Raphael và cách hội họa cổ điển
+  đánh thức tư duy triết học.
+introPrompt: Một bức tranh có thể thay đổi cách bạn nhìn cuộc đời như thế nào?
+closingPrompt: >-
+  The Atlas không khép lại; mỗi điểm dừng là một lời mời tiếp tục đối thoại và
+  tự vấn.
+themeCode: PSYCHOLOGY
+estimatedMinutes: 7
+coverArtworkId: theme_08
+status: PUBLISHED
+orderedNodeIds:
+  - theme-psychology
+  - idea-museum-dialogue
+  - art-school-of-athens
+  - thinker-friedrich-nietzsche
+  - theme-truth
+  - quote-txt-0001
+  - quote-txt-0008

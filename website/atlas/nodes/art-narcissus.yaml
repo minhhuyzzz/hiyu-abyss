@@ -1,0 +1,20 @@
+id: art-narcissus
+kind: artwork
+status: PUBLISHED
+slug: narcissus-caravaggio
+label: Narcissus Soi Bóng (Caravaggio, 1599)
+label_en: Narcissus - Caravaggio
+summary: >-
+  Ánh sáng chiaroscuro soi rọi chàng Narcissus si mê ảo ảnh phản chiếu của chính
+  mình dưới mặt nước, biểu tượng vĩnh cửu của ái kỷ bản ngã.
+topicCodes:
+  - EGO
+  - SELF_DECEPTION
+artworkId: theme_01
+visual:
+  region: region-ego-and-illusion
+  x: 660
+  'y': 220
+  priority: 8
+  glyph: ❖
+  cartoucheStyle: plate

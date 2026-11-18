@@ -1,0 +1,23 @@
+id: theme-loyalty
+kind: theme
+status: PUBLISHED
+slug: loyalty
+label: Lòng Trung Thành
+label_en: LOYALTY
+summary: >-
+  Chủ đề hạt nhân Lòng Trung Thành trong kho lưu trữ Hiyu Abyss, kết nối các tác
+  phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - LOYALTY
+relatedContentIds:
+  - TXT-0061
+  - TXT-0062
+  - TXT-0063
+artworkId: theme_61
+visual:
+  region: region-solitude-and-communion
+  x: 760
+  'y': 830
+  priority: 7
+  glyph: ◈
+  cartoucheStyle: monument

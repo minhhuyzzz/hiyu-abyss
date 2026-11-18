@@ -1,0 +1,30 @@
+---
+// website/src/pages/atlas/index.astro
+// The Atlas — Bản đồ Tư tưởng (Flagship Interactive Experience)
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { AtlasExplorer } from '../../components/atlas/AtlasExplorer';
+import { getAtlasGraph } from '../../lib/atlas/loader';
+
+const atlasGraph = getAtlasGraph();
+const initialFocusNodeId = Astro.url.searchParams.get('focus') || null;
+const initialTrailId = Astro.url.searchParams.get('trail') || null;
+
+const title = 'The Atlas — Bản Đồ Tư Tưởng & Triết Học Đa Chiều';
+const description = 'Khám phá mạng lưới 86 tư tưởng, triết gia kinh điển và kiệt tác hội họa bảo tàng kết nối đa chiều. Trải nghiệm đồ thị tri thức thiên văn Antique Celestial Atlas.';
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  image="/images/themes/theme_08/slide_1_establishing.jpg"
+>
+  <div class="w-full h-full bg-bg text-text relative flex flex-col">
+    <!-- Interactive Atlas Explorer React Island -->
+    <AtlasExplorer
+      client:load
+      initialGraph={atlasGraph}
+      initialFocusNodeId={initialFocusNodeId}
+      initialTrailId={initialTrailId}
+    />
+  </div>
+</BaseLayout>

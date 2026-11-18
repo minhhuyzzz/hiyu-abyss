@@ -1,0 +1,22 @@
+id: idea-covert-machination
+kind: idea
+status: PUBLISHED
+slug: thao-tung-ngam
+label: Chiếc Bẫy Của Thao Túng Ngầm
+label_en: Covert Manipulation & Control
+summary: >-
+  Kẻ thao túng không tấn công trực diện; họ gieo rắc cảm giác tội lỗi để bạn tự
+  nghi ngờ lương tri của chính mình.
+topicCodes:
+  - MANIPULATION
+  - POWER
+relatedContentIds:
+  - TXT-0011
+artworkId: theme_02
+visual:
+  region: region-power-and-machination
+  x: 490
+  'y': 830
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

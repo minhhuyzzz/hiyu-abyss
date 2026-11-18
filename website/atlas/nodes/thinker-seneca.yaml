@@ -1,0 +1,24 @@
+id: thinker-seneca
+kind: thinker
+status: PUBLISHED
+slug: seneca
+label: Lucius Annaeus Seneca (4 TCN–65)
+label_en: Seneca
+summary: >-
+  Chính khách La Mã và triết gia Khắc kỷ. Bậc thầy phân tích về sự ngắn ngủi của
+  đời người và cách gìn giữ tâm hồn thanh thản giữa giông bão quyền lực.
+topicCodes:
+  - SERENITY
+  - POWER
+artworkId: theme_04
+sourceRefs:
+  - title: Letters from a Stoic (Những Lá Thư Từ Một Nhà Khắc Kỷ)
+    author: Seneca
+    year: 65 AD
+visual:
+  region: region-power-and-machination
+  x: 450
+  'y': 780
+  priority: 9
+  glyph: ☥
+  cartoucheStyle: medallion

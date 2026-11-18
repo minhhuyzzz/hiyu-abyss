@@ -1,0 +1,22 @@
+id: idea-jungian-shadow
+kind: idea
+status: PUBLISHED
+slug: bong-toi-noi-tam-jung
+label: Bóng Tối Nội Tâm & Sự Hòa Giải Tự Thân
+label_en: The Jungian Shadow & Self-Integration
+summary: >-
+  Càng chối bỏ bóng tối nội tâm, nó càng trở nên hung bạo và âm thầm điều khiển
+  số phận của bạn.
+topicCodes:
+  - SHADOW
+  - SELF_DECEPTION
+relatedContentIds:
+  - TXT-0016
+artworkId: theme_05
+visual:
+  region: region-masks-and-authenticity
+  x: 180
+  'y': 460
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

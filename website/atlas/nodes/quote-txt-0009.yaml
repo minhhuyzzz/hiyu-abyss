@@ -1,0 +1,23 @@
+id: quote-txt-0009
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0009
+label: >-
+  Folio #0009: Người đòi hỏi bạn phải thấu hiểu thường là người ít lắng nghe bạn
+  nhất.
+label_en: 'Folio #0009'
+summary: >-
+  Người luôn đòi hỏi sự thấu hiểu lại thường là người ít khi chịu lắng nghe cảm
+  xúc của bạn nhất.
+topicCodes:
+  - DOUBLE_STANDARD
+relatedContentIds:
+  - TXT-0009
+artworkId: theme_09
+visual:
+  region: region-solitude-and-communion
+  x: 735
+  'y': 735
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

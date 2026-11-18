@@ -1,0 +1,23 @@
+id: theme-ego
+kind: theme
+status: PUBLISHED
+slug: ego
+label: Bản Ngã & Hơn Người
+label_en: EGO
+summary: >-
+  Chủ đề hạt nhân Bản Ngã & Hơn Người trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - EGO
+relatedContentIds:
+  - TXT-0016
+  - TXT-0017
+  - TXT-0018
+artworkId: theme_16
+visual:
+  region: region-ego-and-illusion
+  x: 670
+  'y': 180
+  priority: 9
+  glyph: ◈
+  cartoucheStyle: monument

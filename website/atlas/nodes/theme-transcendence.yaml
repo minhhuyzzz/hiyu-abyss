@@ -1,0 +1,23 @@
+id: theme-transcendence
+kind: theme
+status: PUBLISHED
+slug: transcendence
+label: Vượt Lên Phán Xét
+label_en: TRANSCENDENCE
+summary: >-
+  Chủ đề hạt nhân Vượt Lên Phán Xét trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - TRANSCENDENCE
+relatedContentIds:
+  - TXT-0142
+  - TXT-0143
+  - TXT-0145
+artworkId: theme_142
+visual:
+  region: region-ego-and-illusion
+  x: 710
+  'y': 150
+  priority: 7
+  glyph: ◈
+  cartoucheStyle: monument

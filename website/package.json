@@ -3,8 +3,8 @@
   "type": "module",
   "version": "2.1.0",
   "scripts": {
-    "prebuild": "node ../scripts/build-content-cache.mjs",
-    "predev": "node ../scripts/build-content-cache.mjs",
+    "prebuild": "node ../scripts/build-content-cache.mjs && node ../scripts/build-atlas-data.mjs",
+    "predev": "node ../scripts/build-content-cache.mjs && node ../scripts/build-atlas-data.mjs",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",

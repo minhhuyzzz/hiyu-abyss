@@ -1,0 +1,25 @@
+id: thinker-arthur-schopenhauer
+kind: thinker
+status: PUBLISHED
+slug: arthur-schopenhauer
+label: Arthur Schopenhauer (1788–1860)
+label_en: Arthur Schopenhauer
+summary: >-
+  Triết gia xem thế giới như một cuộc đấu tranh không ngừng của Ý Chí (Will), mở
+  đường cho chủ nghĩa hiện sinh và cái nhìn sắc lạnh về bản ngã.
+topicCodes:
+  - EGO
+  - SUFFERING
+  - SOLITUDE
+artworkId: theme_04
+sourceRefs:
+  - title: The World as Will and Representation
+    author: Arthur Schopenhauer
+    year: '1818'
+visual:
+  region: region-ego-and-illusion
+  x: 640
+  'y': 290
+  priority: 9
+  glyph: ☥
+  cartoucheStyle: medallion

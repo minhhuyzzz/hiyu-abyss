@@ -1,0 +1,23 @@
+id: quote-txt-0008
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0008
+label: >-
+  Folio #0008: Quy chuẩn khắt khe người ta đặt ra cho bạn chỉ áp dụng khi bạn là
+  người chịu thiệt.
+label_en: 'Folio #0008'
+summary: >-
+  Quy chuẩn khắt khe người ta đặt ra cho bạn sẽ biến mất ngay khoảnh khắc họ là
+  người vi phạm.
+topicCodes:
+  - DOUBLE_STANDARD
+relatedContentIds:
+  - TXT-0008
+artworkId: theme_08
+visual:
+  region: region-human-condition
+  x: 345
+  'y': 205
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

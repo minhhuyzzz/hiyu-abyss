@@ -1,0 +1,23 @@
+id: theme-freedom
+kind: theme
+status: PUBLISHED
+slug: freedom
+label: Tự Do & Tự Chủ
+label_en: FREEDOM
+summary: >-
+  Chủ đề hạt nhân Tự Do & Tự Chủ trong kho lưu trữ Hiyu Abyss, kết nối các tác
+  phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - FREEDOM
+relatedContentIds:
+  - TXT-0046
+  - TXT-0047
+  - TXT-0048
+artworkId: theme_46
+visual:
+  region: region-freedom-and-order
+  x: 830
+  'y': 440
+  priority: 9
+  glyph: ◈
+  cartoucheStyle: monument

@@ -1,0 +1,23 @@
+id: quote-txt-0012
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0012
+label: >-
+  Folio #0012: Kẻ yếu đuối không dám làm điều ác không có nghĩa họ là người có
+  đạo đức.
+label_en: 'Folio #0012'
+summary: >-
+  Không thể làm điều ác khác hoàn toàn với việc có đủ sức mạnh để tàn nhẫn nhưng
+  vẫn chọn sống tử tế.
+topicCodes:
+  - MORALITY
+relatedContentIds:
+  - TXT-0012
+artworkId: theme_12
+visual:
+  region: region-freedom-and-order
+  x: 865
+  'y': 475
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

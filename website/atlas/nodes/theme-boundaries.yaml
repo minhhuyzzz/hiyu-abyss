@@ -1,0 +1,23 @@
+id: theme-boundaries
+kind: theme
+status: PUBLISHED
+slug: boundaries
+label: Ranh Giới Cá Nhân
+label_en: BOUNDARIES
+summary: >-
+  Chủ đề hạt nhân Ranh Giới Cá Nhân trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - BOUNDARIES
+relatedContentIds:
+  - TXT-0102
+  - TXT-0103
+  - TXT-0104
+artworkId: theme_102
+visual:
+  region: region-freedom-and-order
+  x: 880
+  'y': 490
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument

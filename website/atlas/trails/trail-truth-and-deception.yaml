@@ -1,0 +1,48 @@
+id: trail-truth-and-deception
+slug: su-that-va-tu-lua-doi
+title: Sự Thật & Tự Lừa Dối
+title_en: Truth & Self-Deception
+subtitle: Hành trình giải phẫu chiếc bẫy an toàn tâm lý và dũng khí đối diện thực tại.
+description: >-
+  Từ một câu hỏi nhức nhối về sự thật, lần theo các mối liên hệ giữa thiên kiến
+  nhận thức, sự ngụy biện và lòng dũng cảm tự vấn.
+introPrompt: >-
+  Khi khao khát sự an yên biến thành nhu cầu chối bỏ thực tại, ta sẵn sàng trả
+  giá bằng điều gì?
+closingPrompt: >-
+  Bạn đã đi qua những góc khuất của sự thật. Liệu bạn có dám đặt câu hỏi lại cho
+  niềm tin vững chắc nhất của mình?
+themeCode: TRUTH
+estimatedMinutes: 8
+coverArtworkId: theme_03
+status: PUBLISHED
+orderedNodeIds:
+  - theme-truth
+  - idea-uncomfortable-truth
+  - quote-txt-0001
+  - theme-self-deception
+  - thinker-michel-de-montaigne
+  - idea-confirmation-bias
+  - art-astronomer-vermeer
+stops:
+  - nodeId: theme-truth
+    chapterTitle: 'Chương I: Tiếng Gọi Chân Lý'
+    chapterPrompt: Khởi đầu từ khát vọng hiểu biết trần trụi.
+  - nodeId: idea-uncomfortable-truth
+    chapterTitle: 'Chương II: Cơn Mê Êm Đềm'
+    chapterPrompt: Vì sao ta thích lời dối gian dễ chịu?
+  - nodeId: quote-txt-0001
+    chapterTitle: 'Chương III: Chiếc Gương Dostoevsky'
+    chapterPrompt: Đứng ngoài cuộc thì ai cũng sáng suốt.
+  - nodeId: theme-self-deception
+    chapterTitle: 'Chương IV: Vùng An Toàn Giả Tạo'
+    chapterPrompt: Cái giá của sự chối bỏ.
+  - nodeId: thinker-michel-de-montaigne
+    chapterTitle: 'Chương V: Hoài Nghi Lành Mạnh'
+    chapterPrompt: Tôi thật sự biết được những gì?
+  - nodeId: idea-confirmation-bias
+    chapterTitle: 'Chương VI: Chiếc Kính Màu'
+    chapterPrompt: Ta chỉ thấy điều ta muốn thấy.
+  - nodeId: art-astronomer-vermeer
+    chapterTitle: 'Chương VII: Ngẩng Đầu Lên Bầu Trời'
+    chapterPrompt: Chân lý tĩnh lặng của nhà thiên văn.

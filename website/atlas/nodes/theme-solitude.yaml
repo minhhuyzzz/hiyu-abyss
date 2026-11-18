@@ -1,0 +1,23 @@
+id: theme-solitude
+kind: theme
+status: PUBLISHED
+slug: solitude
+label: Nghệ Thuật Cô Độc
+label_en: SOLITUDE
+summary: >-
+  Chủ đề hạt nhân Nghệ Thuật Cô Độc trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - SOLITUDE
+relatedContentIds:
+  - TXT-0091
+  - TXT-0092
+  - TXT-0093
+artworkId: theme_91
+visual:
+  region: region-solitude-and-communion
+  x: 750
+  'y': 720
+  priority: 9
+  glyph: ◈
+  cartoucheStyle: monument

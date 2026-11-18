@@ -1,0 +1,23 @@
+id: quote-txt-0001
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0001
+label: >-
+  Folio #0001: Kẻ nguy hiểm nhất luôn xuất hiện với vẻ mặt của một vị thánh cứu
+  rỗi.
+label_en: 'Folio #0001'
+summary: >-
+  Kẻ nguy hiểm nhất không phải kẻ ác công khai, mà là người luôn xuất hiện với
+  vẻ mặt của một vị thánh cứu rỗi.
+topicCodes:
+  - HYPOCRISY
+relatedContentIds:
+  - TXT-0001
+artworkId: theme_01
+visual:
+  region: region-human-condition
+  x: 295
+  'y': 235
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

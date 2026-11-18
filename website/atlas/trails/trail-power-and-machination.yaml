@@ -1,0 +1,25 @@
+id: trail-power-and-machination
+slug: quyen-luc-va-dao-duc
+title: Quyền Lực & Đạo Đức
+title_en: Power & Machination
+subtitle: Bóc trần tâm lý học kiểm soát ngầm và chiếc bẫy tội lỗi vô hình.
+description: >-
+  Khảo sát những mưu mô thao túng trong quan hệ thân cận, tiêu chuẩn kép và sự
+  phản kháng vì phẩm giá.
+introPrompt: Đằng sau những lời lẽ đạo lý ngọt ngào, động cơ thật sự là gì?
+closingPrompt: >-
+  Nhận diện chiếc bẫy thao túng là bước đầu tiên để giành lại quyền làm chủ cuộc
+  đời.
+themeCode: POWER
+estimatedMinutes: 8
+coverArtworkId: theme_02
+status: PUBLISHED
+orderedNodeIds:
+  - theme-power
+  - idea-covert-machination
+  - quote-txt-0011
+  - theme-manipulation
+  - art-saturn-son
+  - theme-double-standard
+  - idea-double-morality
+  - art-judith-beheading

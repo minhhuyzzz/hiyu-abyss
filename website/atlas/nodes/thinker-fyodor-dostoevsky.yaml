@@ -1,0 +1,25 @@
+id: thinker-fyodor-dostoevsky
+kind: thinker
+status: PUBLISHED
+slug: fyodor-dostoevsky
+label: Fyodor Dostoevsky (1821–1881)
+label_en: Fyodor Dostoevsky
+summary: >-
+  Đại văn hào Nga đào sâu vào những ngõ ngách u tối và giằng xé dữ dội nhất
+  trong tâm lý con người qua "Tội Ác và Trừng Phạt", "Anh Em Nhà Karamazov".
+topicCodes:
+  - SUFFERING
+  - DOUBLE_STANDARD
+  - MORALITY
+artworkId: theme_02
+sourceRefs:
+  - title: The Brothers Karamazov (Anh Em Nhà Karamazov)
+    author: Fyodor Dostoevsky
+    year: '1880'
+visual:
+  region: region-human-condition
+  x: 320
+  'y': 310
+  priority: 9
+  glyph: ☥
+  cartoucheStyle: medallion

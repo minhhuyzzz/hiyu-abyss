@@ -1,0 +1,22 @@
+id: idea-mature-love
+kind: idea
+status: PUBLISHED
+slug: tinh-yeu-truong-thanh
+label: Tình Yêu Của Hai Tâm Hồn Tự Do
+label_en: Mature Love Between Sovereign Souls
+summary: >-
+  Tình yêu trưởng thành không phải hai kẻ thiếu hụt bấu víu vào nhau, mà là hai
+  thực thể vẹn tròn cùng đồng hành.
+topicCodes:
+  - LOVE
+  - CONNECTION
+relatedContentIds:
+  - TXT-0015
+artworkId: theme_01
+visual:
+  region: region-solitude-and-communion
+  x: 780
+  'y': 790
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

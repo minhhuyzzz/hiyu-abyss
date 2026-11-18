@@ -1,0 +1,22 @@
+id: idea-confirmation-bias
+kind: idea
+status: PUBLISHED
+slug: bay-thien-kien-xac-nhan
+label: Cái Bẫy Thiên Kiến Xác Nhận
+label_en: Confirmation Bias in Daily Judgment
+summary: >-
+  Ta không nhìn thế giới như nó vốn là; ta nhìn thế giới qua những định kiến ta
+  muốn củng cố.
+topicCodes:
+  - BIAS
+  - SELF_DECEPTION
+relatedContentIds:
+  - TXT-0002
+artworkId: theme_07
+visual:
+  region: region-human-condition
+  x: 250
+  'y': 280
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

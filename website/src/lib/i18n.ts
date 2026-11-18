@@ -6,7 +6,8 @@ export const i18nDict: Record<Language, Record<string, string>> = {
   vi: {
     // Navigation
     'nav.library': 'Thư Viện',
-    'nav.mirror': 'The Mirror',
+    'nav.atlas': 'The Atlas',
+    'nav.mirror': 'The Atlas',
     'nav.themes': 'Chủ Đề',
     'nav.search': 'Tìm Kiếm',
     'nav.saved': 'Kho Lưu Trữ',
@@ -15,7 +16,7 @@ export const i18nDict: Record<Language, Record<string, string>> = {
     // Hero
     'hero.badge': 'CÂU NÓI NỔI BẬT',
     'hero.readMore': 'Đọc Thêm',
-    'hero.mirrorBtn': 'The Mirror',
+    'hero.mirrorBtn': 'The Atlas',
     'hero.subtext': 'Hiyu Abyss lưu giữ những câu nói hay, sâu sắc về tâm lý và cuộc đời được biên soạn tinh tế, đồng hành cùng tranh cổ điển chọn lọc.',
 
     // Common Buttons & Actions
@@ -76,7 +77,8 @@ export const i18nDict: Record<Language, Record<string, string>> = {
   en: {
     // Navigation
     'nav.library': 'The Library',
-    'nav.mirror': 'The Mirror',
+    'nav.atlas': 'The Atlas',
+    'nav.mirror': 'The Atlas',
     'nav.themes': 'Themes',
     'nav.search': 'Search',
     'nav.saved': 'Saved Archive',
@@ -85,7 +87,7 @@ export const i18nDict: Record<Language, Record<string, string>> = {
     // Hero
     'hero.badge': 'CURATED MASTERPIECE',
     'hero.readMore': 'Read Commentary',
-    'hero.mirrorBtn': 'The Mirror',
+    'hero.mirrorBtn': 'The Atlas',
     'hero.subtext': 'Hiyu Abyss preserves philosophical heritage and classical museum aesthetics. Where behavioral psychology dialogues with centuries-old masterworks to provoke introspection.',
 
     // Common Buttons & Actions

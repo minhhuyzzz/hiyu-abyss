@@ -1,0 +1,3752 @@
+{
+  "version": "2.1.0",
+  "generatedAt": "2026-11-18T07:54:13.139Z",
+  "regions": [
+    {
+      "id": "region-human-condition",
+      "slug": "ban-chat-con-nguoi",
+      "label": "Bản Chất Con Người",
+      "label_en": "The Human Condition",
+      "tagline": "Sự thật trần trụi, thiên kiến nhận thức và bản thể hiện sinh.",
+      "description": "Miền tư tưởng chất vấn những điều con người luôn tìm cách che giấu trước thế giới và chính mình. Nơi ranh giới giữa chân lý và sự tự huyễn hoặc bị thử thách.",
+      "centerCoordinates": {
+        "x": 280,
+        "y": 260
+      },
+      "colorToken": "#C29A77",
+      "astronomyGlyph": "☉",
+      "dominantThemes": [
+        "TRUTH",
+        "SELF_DECEPTION",
+        "BIAS",
+        "EXISTENCE"
+      ]
+    },
+    {
+      "id": "region-ego-and-illusion",
+      "slug": "ban-nga-va-ao-tuong",
+      "label": "Bản Ngã & Sự Công Nhận",
+      "label_en": "Ego & Recognition",
+      "tagline": "Chiếc bẫy của sự hơn người, danh vọng và khao khát khẳng định bản thân.",
+      "description": "Miền nghiên cứu sự cọ xát giữa tự trọng chân thật và bản ngã khao khát tán thưởng. Nơi con người tự trói mình vào những cuộc đua địa vị vô hình.",
+      "centerCoordinates": {
+        "x": 680,
+        "y": 220
+      },
+      "colorToken": "#B47862",
+      "astronomyGlyph": "☽",
+      "dominantThemes": [
+        "EGO",
+        "IDENTITY",
+        "STATUS",
+        "TRANSCENDENCE"
+      ]
+    },
+    {
+      "id": "region-freedom-and-order",
+      "slug": "tu-do-va-khuon-kho",
+      "label": "Tự Do & Giới Hạn",
+      "label_en": "Freedom & Boundaries",
+      "tagline": "Cái giá của sự tự chủ, trách nhiệm bản thân và ranh giới luân lý.",
+      "description": "Khám phá nghịch lý: tự do không phải là phóng túng vô tận, mà là năng lực tự nguyện chấp nhận kỷ luật và dũng cảm chịu trách nhiệm cho số phận.",
+      "centerCoordinates": {
+        "x": 820,
+        "y": 480
+      },
+      "colorToken": "#96A79A",
+      "astronomyGlyph": "♄",
+      "dominantThemes": [
+        "FREEDOM",
+        "BOUNDARIES",
+        "MORALITY",
+        "BAD_FAITH"
+      ]
+    },
+    {
+      "id": "region-solitude-and-communion",
+      "slug": "co-doc-va-ket-noi",
+      "label": "Cô Độc & Gắn Kết",
+      "label_en": "Solitude & Communion",
+      "tagline": "Sự tĩnh lặng nuôi dưỡng tâm hồn và nghệ thuật thấu cảm chân thành.",
+      "description": "Phân định giữa nỗi cô đơn hoảng loạn của kẻ sợ ở một mình và sự cô độc đĩnh đạc của tâm hồn tự chủ. Nhịp cầu dẫn sang tình yêu trưởng thành.",
+      "centerCoordinates": {
+        "x": 740,
+        "y": 760
+      },
+      "colorToken": "#A89F91",
+      "astronomyGlyph": "☿",
+      "dominantThemes": [
+        "SOLITUDE",
+        "CONNECTION",
+        "LOVE",
+        "LOYALTY"
+      ]
+    },
+    {
+      "id": "region-power-and-machination",
+      "slug": "quyen-luc-va-thao-tung",
+      "label": "Quyền Lực & Đạo Đức",
+      "label_en": "Power & Machination",
+      "tagline": "Tâm lý học kiểm soát ngầm, đố kỵ và những chiếc bẫy tội lỗi vô hình.",
+      "description": "Giải phẫu các cơ chế phòng vệ và toan tính chi phối trong quan hệ người với người. Bóc trần tiêu chuẩn kép và lòng tốt mang điều kiện ngầm.",
+      "centerCoordinates": {
+        "x": 480,
+        "y": 840
+      },
+      "colorToken": "#8E5A3C",
+      "astronomyGlyph": "♂",
+      "dominantThemes": [
+        "POWER",
+        "MANIPULATION",
+        "DOUBLE_STANDARD",
+        "ENVY"
+      ]
+    },
+    {
+      "id": "region-suffering-and-purpose",
+      "slug": "nghich-canh-va-y-nghia",
+      "label": "Đau Khổ & Ý Nghĩa",
+      "label_en": "Suffering & Purpose",
+      "tagline": "Vượt lên nghịch cảnh, bản lĩnh phục hồi và tìm kiếm lẽ sống.",
+      "description": "Nơi triết học Khắc kỷ đối thoại cùng tâm lý học hiện sinh. Chuyển hóa bi kịch cá nhân thành điểm tựa cho sự trưởng thành và bình thản nội tâm.",
+      "centerCoordinates": {
+        "x": 220,
+        "y": 740
+      },
+      "colorToken": "#7C8B82",
+      "astronomyGlyph": "♃",
+      "dominantThemes": [
+        "SUFFERING",
+        "MEANING",
+        "RESILIENCE",
+        "SERENITY"
+      ]
+    },
+    {
+      "id": "region-masks-and-authenticity",
+      "slug": "mat-na-va-chan-tinh",
+      "label": "Mặt Nạ & Tính Chân Thực",
+      "label_en": "Mask & Authenticity",
+      "tagline": "Bóng tối nội tâm, sự kiệt sức của việc gồng mình và dũng khí sống thật.",
+      "description": "Hành trình hòa giải với phần tối (Shadow) theo Carl Jung. Nhìn nhận chiếc mặt nạ xã hội (Persona) để không bị nó nuốt chửng bản sắc chân thật.",
+      "centerCoordinates": {
+        "x": 160,
+        "y": 460
+      },
+      "colorToken": "#8A7056",
+      "astronomyGlyph": "♅",
+      "dominantThemes": [
+        "MASK",
+        "SHADOW",
+        "CROWD",
+        "HYPOCRISY"
+      ]
+    },
+    {
+      "id": "region-aesthetic-and-worldview",
+      "slug": "tham-my-va-the-gioi-quan",
+      "label": "Thẩm Mỹ & Thế Giới Quan",
+      "label_en": "Aesthetics & Worldview",
+      "tagline": "Cuộc gặp gỡ giữa kiệt tác hội họa bảo tàng và chiều sâu triết học.",
+      "description": "Trung tâm giao hòa của The Atlas. Nơi cái đẹp không chỉ để ngắm nhìn, mà là chiếc kính vạn hoa đánh thức sự tự vấn và thấu tỏ bản ngã.",
+      "centerCoordinates": {
+        "x": 480,
+        "y": 460
+      },
+      "colorToken": "#D5B48D",
+      "astronomyGlyph": "♀",
+      "dominantThemes": [
+        "PSYCHOLOGY"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "theme-truth",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "truth",
+      "label": "Sự Thật Mất Lòng",
+      "label_en": "TRUTH",
+      "summary": "Chủ đề hạt nhân Sự Thật Mất Lòng trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "TRUTH"
+      ],
+      "relatedContentIds": [
+        "TXT-0051",
+        "TXT-0052",
+        "TXT-0053"
+      ],
+      "artworkId": "theme_51",
+      "visual": {
+        "region": "region-human-condition",
+        "x": 280,
+        "y": 220,
+        "priority": 9,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-self-deception",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "self-deception",
+      "label": "Tự Lừa Dối",
+      "label_en": "SELF DECEPTION",
+      "summary": "Chủ đề hạt nhân Tự Lừa Dối trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "SELF_DECEPTION"
+      ],
+      "relatedContentIds": [
+        "TXT-0021",
+        "TXT-0022",
+        "TXT-0023"
+      ],
+      "artworkId": "theme_21",
+      "visual": {
+        "region": "region-human-condition",
+        "x": 330,
+        "y": 270,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-bias",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "bias",
+      "label": "Thiên Kiến Nhận Thức",
+      "label_en": "BIAS",
+      "summary": "Chủ đề hạt nhân Thiên Kiến Nhận Thức trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "BIAS"
+      ],
+      "relatedContentIds": [
+        "TXT-0181",
+        "TXT-0182",
+        "TXT-0183"
+      ],
+      "artworkId": "theme_181",
+      "visual": {
+        "region": "region-human-condition",
+        "x": 220,
+        "y": 290,
+        "priority": 7,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-existence",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "existence",
+      "label": "Lẽ Sống & Hiện Sinh",
+      "label_en": "EXISTENCE",
+      "summary": "Chủ đề hạt nhân Lẽ Sống & Hiện Sinh trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "EXISTENCE"
+      ],
+      "relatedContentIds": [
+        "TXT-0191",
+        "TXT-0192",
+        "TXT-0193"
+      ],
+      "artworkId": "theme_191",
+      "visual": {
+        "region": "region-human-condition",
+        "x": 340,
+        "y": 190,
+        "priority": 7,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-ego",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "ego",
+      "label": "Bản Ngã & Hơn Người",
+      "label_en": "EGO",
+      "summary": "Chủ đề hạt nhân Bản Ngã & Hơn Người trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "EGO"
+      ],
+      "relatedContentIds": [
+        "TXT-0016",
+        "TXT-0017",
+        "TXT-0018"
+      ],
+      "artworkId": "theme_16",
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 670,
+        "y": 180,
+        "priority": 9,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-identity",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "identity",
+      "label": "Bản Sắc Cá Nhân",
+      "label_en": "IDENTITY",
+      "summary": "Chủ đề hạt nhân Bản Sắc Cá Nhân trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "IDENTITY"
+      ],
+      "relatedContentIds": [
+        "TXT-0081",
+        "TXT-0082",
+        "TXT-0083"
+      ],
+      "artworkId": "theme_81",
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 740,
+        "y": 230,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-status",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "status",
+      "label": "Danh Vọng & Địa Vị",
+      "label_en": "STATUS",
+      "summary": "Chủ đề hạt nhân Danh Vọng & Địa Vị trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "STATUS"
+      ],
+      "relatedContentIds": [
+        "TXT-0096",
+        "TXT-0097",
+        "TXT-0098"
+      ],
+      "artworkId": "theme_96",
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 620,
+        "y": 250,
+        "priority": 7,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-transcendence",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "transcendence",
+      "label": "Vượt Lên Phán Xét",
+      "label_en": "TRANSCENDENCE",
+      "summary": "Chủ đề hạt nhân Vượt Lên Phán Xét trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "TRANSCENDENCE"
+      ],
+      "relatedContentIds": [
+        "TXT-0142",
+        "TXT-0143",
+        "TXT-0145"
+      ],
+      "artworkId": "theme_142",
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 710,
+        "y": 150,
+        "priority": 7,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-freedom",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "freedom",
+      "label": "Tự Do & Tự Chủ",
+      "label_en": "FREEDOM",
+      "summary": "Chủ đề hạt nhân Tự Do & Tự Chủ trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "FREEDOM"
+      ],
+      "relatedContentIds": [
+        "TXT-0046",
+        "TXT-0047",
+        "TXT-0048"
+      ],
+      "artworkId": "theme_46",
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 830,
+        "y": 440,
+        "priority": 9,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-boundaries",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "boundaries",
+      "label": "Ranh Giới Cá Nhân",
+      "label_en": "BOUNDARIES",
+      "summary": "Chủ đề hạt nhân Ranh Giới Cá Nhân trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "BOUNDARIES"
+      ],
+      "relatedContentIds": [
+        "TXT-0102",
+        "TXT-0103",
+        "TXT-0104"
+      ],
+      "artworkId": "theme_102",
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 880,
+        "y": 490,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-morality",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "morality",
+      "label": "Lòng Tốt & Điều Kiện Ngầm",
+      "label_en": "MORALITY",
+      "summary": "Chủ đề hạt nhân Lòng Tốt & Điều Kiện Ngầm trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "MORALITY"
+      ],
+      "relatedContentIds": [
+        "TXT-0011",
+        "TXT-0012",
+        "TXT-0013"
+      ],
+      "artworkId": "theme_11",
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 770,
+        "y": 510,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-bad-faith",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "bad-faith",
+      "label": "Trốn Tránh Trách Nhiệm",
+      "label_en": "BAD FAITH",
+      "summary": "Chủ đề hạt nhân Trốn Tránh Trách Nhiệm trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "BAD_FAITH"
+      ],
+      "relatedContentIds": [],
+      "artworkId": "theme_01",
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 850,
+        "y": 550,
+        "priority": 7,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-solitude",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "solitude",
+      "label": "Nghệ Thuật Cô Độc",
+      "label_en": "SOLITUDE",
+      "summary": "Chủ đề hạt nhân Nghệ Thuật Cô Độc trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "SOLITUDE"
+      ],
+      "relatedContentIds": [
+        "TXT-0091",
+        "TXT-0092",
+        "TXT-0093"
+      ],
+      "artworkId": "theme_91",
+      "visual": {
+        "region": "region-solitude-and-communion",
+        "x": 750,
+        "y": 720,
+        "priority": 9,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-connection",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "connection",
+      "label": "Kết Nối Sâu Sắc",
+      "label_en": "CONNECTION",
+      "summary": "Chủ đề hạt nhân Kết Nối Sâu Sắc trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "CONNECTION"
+      ],
+      "relatedContentIds": [
+        "TXT-0128",
+        "TXT-0129",
+        "TXT-0130"
+      ],
+      "artworkId": "theme_128",
+      "visual": {
+        "region": "region-solitude-and-communion",
+        "x": 710,
+        "y": 790,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-love",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "love",
+      "label": "Tình Yêu Trưởng Thành",
+      "label_en": "LOVE",
+      "summary": "Chủ đề hạt nhân Tình Yêu Trưởng Thành trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "LOVE"
+      ],
+      "relatedContentIds": [
+        "TXT-0056",
+        "TXT-0057",
+        "TXT-0058"
+      ],
+      "artworkId": "theme_56",
+      "visual": {
+        "region": "region-solitude-and-communion",
+        "x": 800,
+        "y": 770,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-loyalty",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "loyalty",
+      "label": "Lòng Trung Thành",
+      "label_en": "LOYALTY",
+      "summary": "Chủ đề hạt nhân Lòng Trung Thành trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "LOYALTY"
+      ],
+      "relatedContentIds": [
+        "TXT-0061",
+        "TXT-0062",
+        "TXT-0063"
+      ],
+      "artworkId": "theme_61",
+      "visual": {
+        "region": "region-solitude-and-communion",
+        "x": 760,
+        "y": 830,
+        "priority": 7,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-power",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "power",
+      "label": "Quyền Lực & Kiểm Soát",
+      "label_en": "POWER",
+      "summary": "Chủ đề hạt nhân Quyền Lực & Kiểm Soát trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "POWER"
+      ],
+      "relatedContentIds": [
+        "TXT-0036",
+        "TXT-0037",
+        "TXT-0038"
+      ],
+      "artworkId": "theme_36",
+      "visual": {
+        "region": "region-power-and-machination",
+        "x": 470,
+        "y": 810,
+        "priority": 9,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-manipulation",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "manipulation",
+      "label": "Thao Túng Cảm Xúc",
+      "label_en": "MANIPULATION",
+      "summary": "Chủ đề hạt nhân Thao Túng Cảm Xúc trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "MANIPULATION"
+      ],
+      "relatedContentIds": [
+        "TXT-0041",
+        "TXT-0042",
+        "TXT-0043"
+      ],
+      "artworkId": "theme_41",
+      "visual": {
+        "region": "region-power-and-machination",
+        "x": 530,
+        "y": 860,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-double-standard",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "double-standard",
+      "label": "Tiêu Chuẩn Kép",
+      "label_en": "DOUBLE STANDARD",
+      "summary": "Chủ đề hạt nhân Tiêu Chuẩn Kép trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "DOUBLE_STANDARD"
+      ],
+      "relatedContentIds": [
+        "TXT-0006",
+        "TXT-0007",
+        "TXT-0008"
+      ],
+      "artworkId": "theme_06",
+      "visual": {
+        "region": "region-power-and-machination",
+        "x": 420,
+        "y": 870,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-envy",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "envy",
+      "label": "Đố Kỵ Ngầm",
+      "label_en": "ENVY",
+      "summary": "Chủ đề hạt nhân Đố Kỵ Ngầm trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "ENVY"
+      ],
+      "relatedContentIds": [
+        "TXT-0066",
+        "TXT-0067",
+        "TXT-0068"
+      ],
+      "artworkId": "theme_66",
+      "visual": {
+        "region": "region-power-and-machination",
+        "x": 500,
+        "y": 910,
+        "priority": 7,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-suffering",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "suffering",
+      "label": "Vượt Lên Nghịch Cảnh",
+      "label_en": "SUFFERING",
+      "summary": "Chủ đề hạt nhân Vượt Lên Nghịch Cảnh trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "SUFFERING"
+      ],
+      "relatedContentIds": [
+        "TXT-0076",
+        "TXT-0077",
+        "TXT-0078"
+      ],
+      "artworkId": "theme_76",
+      "visual": {
+        "region": "region-suffering-and-purpose",
+        "x": 210,
+        "y": 710,
+        "priority": 9,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-meaning",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "meaning",
+      "label": "Ý Nghĩa Cuộc Đời",
+      "label_en": "MEANING",
+      "summary": "Chủ đề hạt nhân Ý Nghĩa Cuộc Đời trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "MEANING"
+      ],
+      "relatedContentIds": [
+        "TXT-0086",
+        "TXT-0087",
+        "TXT-0088"
+      ],
+      "artworkId": "theme_86",
+      "visual": {
+        "region": "region-suffering-and-purpose",
+        "x": 260,
+        "y": 760,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-resilience",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "resilience",
+      "label": "Kiên Cường Nội Tại",
+      "label_en": "RESILIENCE",
+      "summary": "Chủ đề hạt nhân Kiên Cường Nội Tại trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "RESILIENCE"
+      ],
+      "relatedContentIds": [
+        "TXT-0117",
+        "TXT-0118",
+        "TXT-0119"
+      ],
+      "artworkId": "theme_117",
+      "visual": {
+        "region": "region-suffering-and-purpose",
+        "x": 170,
+        "y": 770,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-serenity",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "serenity",
+      "label": "Thanh Thản & Tĩnh Lặng",
+      "label_en": "SERENITY",
+      "summary": "Chủ đề hạt nhân Thanh Thản & Tĩnh Lặng trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "SERENITY"
+      ],
+      "relatedContentIds": [
+        "TXT-0109",
+        "TXT-0110",
+        "TXT-0111"
+      ],
+      "artworkId": "theme_109",
+      "visual": {
+        "region": "region-suffering-and-purpose",
+        "x": 220,
+        "y": 820,
+        "priority": 7,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-mask",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "mask",
+      "label": "Mặt Nạ Xã Hội",
+      "label_en": "MASK",
+      "summary": "Chủ đề hạt nhân Mặt Nạ Xã Hội trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "MASK"
+      ],
+      "relatedContentIds": [
+        "TXT-0031",
+        "TXT-0032",
+        "TXT-0033"
+      ],
+      "artworkId": "theme_31",
+      "visual": {
+        "region": "region-masks-and-authenticity",
+        "x": 150,
+        "y": 430,
+        "priority": 9,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-shadow",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "shadow",
+      "label": "Bóng Tối Nội Tâm",
+      "label_en": "SHADOW",
+      "summary": "Chủ đề hạt nhân Bóng Tối Nội Tâm trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "SHADOW"
+      ],
+      "relatedContentIds": [
+        "TXT-0026",
+        "TXT-0027",
+        "TXT-0028"
+      ],
+      "artworkId": "theme_26",
+      "visual": {
+        "region": "region-masks-and-authenticity",
+        "x": 190,
+        "y": 480,
+        "priority": 9,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-hypocrisy",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "hypocrisy",
+      "label": "Đạo Đức Giả",
+      "label_en": "HYPOCRISY",
+      "summary": "Chủ đề hạt nhân Đạo Đức Giả trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "HYPOCRISY"
+      ],
+      "relatedContentIds": [
+        "TXT-0001",
+        "TXT-0002",
+        "TXT-0003"
+      ],
+      "artworkId": "theme_01",
+      "visual": {
+        "region": "region-masks-and-authenticity",
+        "x": 110,
+        "y": 490,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-crowd",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "crowd",
+      "label": "Tâm Lý Đám Đông",
+      "label_en": "CROWD",
+      "summary": "Chủ đề hạt nhân Tâm Lý Đám Đông trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "CROWD"
+      ],
+      "relatedContentIds": [
+        "TXT-0071",
+        "TXT-0072",
+        "TXT-0073"
+      ],
+      "artworkId": "theme_71",
+      "visual": {
+        "region": "region-masks-and-authenticity",
+        "x": 170,
+        "y": 530,
+        "priority": 7,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-psychology",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "psychology",
+      "label": "Tâm Lý Con Người",
+      "label_en": "PSYCHOLOGY",
+      "summary": "Chủ đề hạt nhân Tâm Lý Con Người trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "PSYCHOLOGY"
+      ],
+      "relatedContentIds": [],
+      "artworkId": "theme_01",
+      "visual": {
+        "region": "region-aesthetic-and-worldview",
+        "x": 480,
+        "y": 440,
+        "priority": 10,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "idea-uncomfortable-truth",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "su-that-buot-gia",
+      "label": "Sự Thật Buốt Giá & Cơn Mê Êm Đềm",
+      "label_en": "Uncomfortable Truth vs Soothing Illusion",
+      "summary": "Con người thường chọn một lời dối gian dễ chịu hơn là một sự thật làm đổ vỡ niềm tin đã dựng sẵn.",
+      "topicCodes": [
+        "TRUTH",
+        "SELF_DECEPTION"
+      ],
+      "relatedContentIds": [
+        "TXT-0001",
+        "TXT-0003"
+      ],
+      "artworkId": "theme_03",
+      "visual": {
+        "region": "region-human-condition",
+        "x": 310,
+        "y": 240,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-confirmation-bias",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "bay-thien-kien-xac-nhan",
+      "label": "Cái Bẫy Thiên Kiến Xác Nhận",
+      "label_en": "Confirmation Bias in Daily Judgment",
+      "summary": "Ta không nhìn thế giới như nó vốn là; ta nhìn thế giới qua những định kiến ta muốn củng cố.",
+      "topicCodes": [
+        "BIAS",
+        "SELF_DECEPTION"
+      ],
+      "relatedContentIds": [
+        "TXT-0002"
+      ],
+      "artworkId": "theme_07",
+      "visual": {
+        "region": "region-human-condition",
+        "x": 250,
+        "y": 280,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-existential-angst",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "lo-au-hien-sinh",
+      "label": "Lo Âu Hiện Sinh & Khoảng Trống Bản Thể",
+      "label_en": "Existential Dread & The Void",
+      "summary": "Khi những quy chuẩn xã hội lùi xa, ta bàng hoàng nhận ra mình phải tự gánh vác ý nghĩa cuộc đời mình.",
+      "topicCodes": [
+        "EXISTENCE",
+        "FREEDOM"
+      ],
+      "relatedContentIds": [
+        "TXT-0008"
+      ],
+      "artworkId": "theme_06",
+      "visual": {
+        "region": "region-human-condition",
+        "x": 350,
+        "y": 210,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-inflated-ego",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "ban-nga-phong-dai",
+      "label": "Bản Ngã Phóng Đại & Nhu Cầu Thắng Cuộc",
+      "label_en": "Inflated Ego & The Urge to Win",
+      "summary": "Khao khát luôn chứng minh mình đúng là biểu hiện rõ nhất của sự bất an sâu kín bên trong.",
+      "topicCodes": [
+        "EGO",
+        "STATUS"
+      ],
+      "relatedContentIds": [
+        "TXT-0004"
+      ],
+      "artworkId": "theme_01",
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 650,
+        "y": 200,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-status-anxiety",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "lo-au-dia-vi",
+      "label": "Nỗi Lo Âu Về Địa Vị Xã Hội",
+      "label_en": "Status Anxiety & Social Comparison",
+      "summary": "Sự kiệt sức khi biến ánh mắt và sự phán xét của kẻ khác thành chiếc thước đo giá trị bản thân.",
+      "topicCodes": [
+        "STATUS",
+        "EGO"
+      ],
+      "relatedContentIds": [
+        "TXT-0005"
+      ],
+      "artworkId": "theme_04",
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 690,
+        "y": 260,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-true-identity",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "ban-sac-khi-khong-ai-nhin",
+      "label": "Bản Sắc Khi Không Có Ai Nhìn",
+      "label_en": "Identity When Unobserved",
+      "summary": "Bạn thật sự là ai trong căn phòng tối, khi mọi danh xưng và vai diễn xã hội đều được trút bỏ?",
+      "topicCodes": [
+        "IDENTITY",
+        "MASK"
+      ],
+      "relatedContentIds": [
+        "TXT-0010"
+      ],
+      "artworkId": "theme_08",
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 720,
+        "y": 210,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-paradox-of-freedom",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "nghich-ly-cua-tu-do",
+      "label": "Nghịch Lý Của Tự Do Tự Chủ",
+      "label_en": "The Paradox of Freedom",
+      "summary": "Tự do đích thực bắt đầu từ thời khắc bạn dũng cảm chấp nhận từ bỏ sự bảo bọc dễ dãi của kẻ khác.",
+      "topicCodes": [
+        "FREEDOM",
+        "BAD_FAITH"
+      ],
+      "relatedContentIds": [
+        "TXT-0006"
+      ],
+      "artworkId": "theme_03",
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 810,
+        "y": 460,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-toxic-gratitude",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "khoan-no-an-tinh",
+      "label": "Khoản Nợ Ân Tình Độc Hại",
+      "label_en": "Toxic Indebtedness & Manipulation",
+      "summary": "Lòng tốt bị biến tướng thành xiềng xích thao túng khi người cho ngầm đòi hỏi sự phục tùng vô điều kiện.",
+      "topicCodes": [
+        "MORALITY",
+        "MANIPULATION"
+      ],
+      "relatedContentIds": [
+        "TXT-0007"
+      ],
+      "artworkId": "theme_02",
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 790,
+        "y": 520,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-healthy-boundaries",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "dung-khi-lap-ranh-gioi",
+      "label": "Dũng Khí Thiết Lập Ranh Giới",
+      "label_en": "Courage to Set Healthy Boundaries",
+      "summary": "Nói \"Không\" với những đòi hỏi vô lý là hành động tử tế nhất bạn có thể làm cho phẩm giá của mình.",
+      "topicCodes": [
+        "BOUNDARIES",
+        "FREEDOM"
+      ],
+      "relatedContentIds": [
+        "TXT-0012"
+      ],
+      "artworkId": "theme_05",
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 860,
+        "y": 470,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-sanctuary-of-solitude",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "khoang-lang-co-doc",
+      "label": "Khoảng Lặng Thanh Lọc Của Sự Cô Độc",
+      "label_en": "Sanctuary of Solitude",
+      "summary": "Cô độc không phải là sự thiếu vắng người khác, mà là sự hiện diện trọn vẹn của chính bạn với tâm hồn mình.",
+      "topicCodes": [
+        "SOLITUDE",
+        "SERENITY"
+      ],
+      "relatedContentIds": [
+        "TXT-0009"
+      ],
+      "artworkId": "theme_03",
+      "visual": {
+        "region": "region-solitude-and-communion",
+        "x": 730,
+        "y": 740,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-mature-love",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "tinh-yeu-truong-thanh",
+      "label": "Tình Yêu Của Hai Tâm Hồn Tự Do",
+      "label_en": "Mature Love Between Sovereign Souls",
+      "summary": "Tình yêu trưởng thành không phải hai kẻ thiếu hụt bấu víu vào nhau, mà là hai thực thể vẹn tròn cùng đồng hành.",
+      "topicCodes": [
+        "LOVE",
+        "CONNECTION"
+      ],
+      "relatedContentIds": [
+        "TXT-0015"
+      ],
+      "artworkId": "theme_01",
+      "visual": {
+        "region": "region-solitude-and-communion",
+        "x": 780,
+        "y": 790,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-covert-machination",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "thao-tung-ngam",
+      "label": "Chiếc Bẫy Của Thao Túng Ngầm",
+      "label_en": "Covert Manipulation & Control",
+      "summary": "Kẻ thao túng không tấn công trực diện; họ gieo rắc cảm giác tội lỗi để bạn tự nghi ngờ lương tri của chính mình.",
+      "topicCodes": [
+        "MANIPULATION",
+        "POWER"
+      ],
+      "relatedContentIds": [
+        "TXT-0011"
+      ],
+      "artworkId": "theme_02",
+      "visual": {
+        "region": "region-power-and-machination",
+        "x": 490,
+        "y": 830,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-double-morality",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "tieu-chuan-kep-dao-duc",
+      "label": "Tiêu Chuẩn Kép Khi Phán Xét Kẻ Khác",
+      "label_en": "The Micro-Injustice of Double Standards",
+      "summary": "Ta phán xét người khác dựa trên hành vi thô ráp, nhưng lại đòi hỏi người khác nhìn nhận ta qua ý định tốt đẹp.",
+      "topicCodes": [
+        "DOUBLE_STANDARD",
+        "HYPOCRISY"
+      ],
+      "relatedContentIds": [
+        "TXT-0007",
+        "TXT-0014"
+      ],
+      "artworkId": "theme_04",
+      "visual": {
+        "region": "region-power-and-machination",
+        "x": 440,
+        "y": 850,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-stoic-resilience",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "nghi-luc-khac-ky",
+      "label": "Nghị Lực Khắc Kỷ Trước Nghịch Cảnh",
+      "label_en": "Stoic Resilience & Inner Citadel",
+      "summary": "Điều làm tổn thương bạn không phải là biến cố khách quan, mà là cách bạn diễn giải biến cố ấy trong tâm trí.",
+      "topicCodes": [
+        "SUFFERING",
+        "RESILIENCE",
+        "SERENITY"
+      ],
+      "relatedContentIds": [
+        "TXT-0013"
+      ],
+      "artworkId": "theme_08",
+      "visual": {
+        "region": "region-suffering-and-purpose",
+        "x": 230,
+        "y": 730,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-tragic-optimism",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "lac-quan-bi-trang",
+      "label": "Lạc Quan Bi Tráng & Điểm Tựa Ý Nghĩa",
+      "label_en": "Tragic Optimism & Finding Meaning",
+      "summary": "Ngay cả trong tột cùng khổ đau, con người vẫn giữ quyền tự do cuối cùng: tự do lựa chọn thái độ sống.",
+      "topicCodes": [
+        "MEANING",
+        "SUFFERING"
+      ],
+      "relatedContentIds": [
+        "TXT-0018"
+      ],
+      "artworkId": "theme_06",
+      "visual": {
+        "region": "region-suffering-and-purpose",
+        "x": 250,
+        "y": 780,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-jungian-shadow",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "bong-toi-noi-tam-jung",
+      "label": "Bóng Tối Nội Tâm & Sự Hòa Giải Tự Thân",
+      "label_en": "The Jungian Shadow & Self-Integration",
+      "summary": "Càng chối bỏ bóng tối nội tâm, nó càng trở nên hung bạo và âm thầm điều khiển số phận của bạn.",
+      "topicCodes": [
+        "SHADOW",
+        "SELF_DECEPTION"
+      ],
+      "relatedContentIds": [
+        "TXT-0016"
+      ],
+      "artworkId": "theme_05",
+      "visual": {
+        "region": "region-masks-and-authenticity",
+        "x": 180,
+        "y": 460,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-social-persona",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "mat-na-persona-xa-hoi",
+      "label": "Chiếc Mặt Nạ Persona & Sự Kiệt Sức",
+      "label_en": "The Social Mask (Persona) & Burnout",
+      "summary": "Khi đeo mặt nạ quá lâu, bạn sẽ không còn nhận ra đâu là gương mặt thật và đâu là lớp phấn giả trang.",
+      "topicCodes": [
+        "MASK",
+        "CROWD"
+      ],
+      "relatedContentIds": [
+        "TXT-0017"
+      ],
+      "artworkId": "theme_01",
+      "visual": {
+        "region": "region-masks-and-authenticity",
+        "x": 140,
+        "y": 450,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-herd-mentality",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "ao-anh-dam-dong",
+      "label": "Ảo Ảnh Số Đông & Sự Đánh Mất Lương Tri",
+      "label_en": "The Herd Mentality & Moral Abdication",
+      "summary": "Đám đông mang lại cảm giác an toàn giả tạo, nhưng cái giá phải trả là sự triệt tiêu hoàn toàn tư duy độc lập.",
+      "topicCodes": [
+        "CROWD",
+        "TRANSCENDENCE"
+      ],
+      "relatedContentIds": [
+        "TXT-0019"
+      ],
+      "artworkId": "theme_04",
+      "visual": {
+        "region": "region-masks-and-authenticity",
+        "x": 150,
+        "y": 520,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-museum-dialogue",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "my-thuat-doi-thoai-tri-tue",
+      "label": "Hội Họa Bảo Tàng Như Một Tấm Gương Tự Vấn",
+      "label_en": "Museum Art as a Reflective Mirror",
+      "summary": "Kiệt tác hội họa không đơn thuần sao chép tự nhiên; nó là sự cô đọng của những bi kịch và khát vọng nhân tính.",
+      "topicCodes": [
+        "PSYCHOLOGY"
+      ],
+      "relatedContentIds": [
+        "TXT-0001",
+        "TXT-0008"
+      ],
+      "artworkId": "theme_08",
+      "visual": {
+        "region": "region-aesthetic-and-worldview",
+        "x": 480,
+        "y": 470,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "thinker-marcus-aurelius",
+      "kind": "thinker",
+      "status": "PUBLISHED",
+      "slug": "marcus-aurelius",
+      "label": "Marcus Aurelius (121–180)",
+      "label_en": "Marcus Aurelius",
+      "summary": "Hoàng đế La Mã và triết gia Khắc kỷ. Tác giả của \"Trầm Tưởng\" (Meditations), biểu tượng của sự tĩnh tại nội tâm trước biến động.",
+      "topicCodes": [
+        "SERENITY",
+        "RESILIENCE",
+        "DUTY"
+      ],
+      "artworkId": "theme_08",
+      "sourceRefs": [
+        {
+          "title": "Meditations (Trầm Tưởng)",
+          "author": "Marcus Aurelius",
+          "year": "180 AD"
+        }
+      ],
+      "visual": {
+        "region": "region-suffering-and-purpose",
+        "x": 190,
+        "y": 690,
+        "priority": 9,
+        "glyph": "☥",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "thinker-friedrich-nietzsche",
+      "kind": "thinker",
+      "status": "PUBLISHED",
+      "slug": "friedrich-nietzsche",
+      "label": "Friedrich Nietzsche (1844–1900)",
+      "label_en": "Friedrich Nietzsche",
+      "summary": "Triết gia bóc trần đạo đức giả tạo và tâm lý bầy đàn. Khởi xướng tư tưởng về Siêu nhân (Übermensch) và Tình yêu Số phận (Amor Fati).",
+      "topicCodes": [
+        "FREEDOM",
+        "CROWD",
+        "TRUTH"
+      ],
+      "artworkId": "theme_06",
+      "sourceRefs": [
+        {
+          "title": "Beyond Good and Evil (Bên Kia Thiện Ác)",
+          "author": "Friedrich Nietzsche",
+          "year": "1886"
+        }
+      ],
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 840,
+        "y": 410,
+        "priority": 9,
+        "glyph": "☥",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "thinker-carl-jung",
+      "kind": "thinker",
+      "status": "PUBLISHED",
+      "slug": "carl-gustav-jung",
+      "label": "Carl Gustav Jung (1875–1961)",
+      "label_en": "Carl Gustav Jung",
+      "summary": "Nhà tâm thần học Thụy Sĩ sáng lập tâm lý học phân tích. Khai phá các khái niệm Bóng tối (Shadow), Mặt nạ (Persona) và Vô thức tập thể.",
+      "topicCodes": [
+        "SHADOW",
+        "MASK",
+        "PSYCHOLOGY"
+      ],
+      "artworkId": "theme_05",
+      "sourceRefs": [
+        {
+          "title": "The Archetypes and the Collective Unconscious",
+          "author": "C. G. Jung",
+          "year": "1934"
+        }
+      ],
+      "visual": {
+        "region": "region-masks-and-authenticity",
+        "x": 120,
+        "y": 420,
+        "priority": 9,
+        "glyph": "☥",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "thinker-fyodor-dostoevsky",
+      "kind": "thinker",
+      "status": "PUBLISHED",
+      "slug": "fyodor-dostoevsky",
+      "label": "Fyodor Dostoevsky (1821–1881)",
+      "label_en": "Fyodor Dostoevsky",
+      "summary": "Đại văn hào Nga đào sâu vào những ngõ ngách u tối và giằng xé dữ dội nhất trong tâm lý con người qua \"Tội Ác và Trừng Phạt\", \"Anh Em Nhà Karamazov\".",
+      "topicCodes": [
+        "SUFFERING",
+        "DOUBLE_STANDARD",
+        "MORALITY"
+      ],
+      "artworkId": "theme_02",
+      "sourceRefs": [
+        {
+          "title": "The Brothers Karamazov (Anh Em Nhà Karamazov)",
+          "author": "Fyodor Dostoevsky",
+          "year": "1880"
+        }
+      ],
+      "visual": {
+        "region": "region-human-condition",
+        "x": 320,
+        "y": 310,
+        "priority": 9,
+        "glyph": "☥",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "thinker-jean-paul-sartre",
+      "kind": "thinker",
+      "status": "PUBLISHED",
+      "slug": "jean-paul-sartre",
+      "label": "Jean-Paul Sartre (1905–1980)",
+      "label_en": "Jean-Paul Sartre",
+      "summary": "Đại diện tiêu biểu của chủ nghĩa hiện sinh Pháp. Nổi tiếng với luận điểm \"Hiện sinh có trước bản chất\" và phân tích về Sự Ngụy Biện (Bad Faith).",
+      "topicCodes": [
+        "BAD_FAITH",
+        "FREEDOM"
+      ],
+      "artworkId": "theme_07",
+      "sourceRefs": [
+        {
+          "title": "Being and Nothingness (Tồn Tại và Hư Vô)",
+          "author": "Jean-Paul Sartre",
+          "year": "1943"
+        }
+      ],
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 880,
+        "y": 530,
+        "priority": 9,
+        "glyph": "☥",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "thinker-arthur-schopenhauer",
+      "kind": "thinker",
+      "status": "PUBLISHED",
+      "slug": "arthur-schopenhauer",
+      "label": "Arthur Schopenhauer (1788–1860)",
+      "label_en": "Arthur Schopenhauer",
+      "summary": "Triết gia xem thế giới như một cuộc đấu tranh không ngừng của Ý Chí (Will), mở đường cho chủ nghĩa hiện sinh và cái nhìn sắc lạnh về bản ngã.",
+      "topicCodes": [
+        "EGO",
+        "SUFFERING",
+        "SOLITUDE"
+      ],
+      "artworkId": "theme_04",
+      "sourceRefs": [
+        {
+          "title": "The World as Will and Representation",
+          "author": "Arthur Schopenhauer",
+          "year": "1818"
+        }
+      ],
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 640,
+        "y": 290,
+        "priority": 9,
+        "glyph": "☥",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "thinker-blaise-pascal",
+      "kind": "thinker",
+      "status": "PUBLISHED",
+      "slug": "blaise-pascal",
+      "label": "Blaise Pascal (1623–1662)",
+      "label_en": "Blaise Pascal",
+      "summary": "Nhà toán học và tư tưởng gia Pháp. Nổi tiếng với quan sát: mọi bất hạnh của con người bắt nguồn từ việc không thể ngồi yên một mình trong phòng.",
+      "topicCodes": [
+        "SOLITUDE",
+        "SELF_DECEPTION"
+      ],
+      "artworkId": "theme_07",
+      "sourceRefs": [
+        {
+          "title": "Pensées (Tư Tưởng)",
+          "author": "Blaise Pascal",
+          "year": "1670"
+        }
+      ],
+      "visual": {
+        "region": "region-solitude-and-communion",
+        "x": 770,
+        "y": 690,
+        "priority": 9,
+        "glyph": "☥",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "thinker-michel-de-montaigne",
+      "kind": "thinker",
+      "status": "PUBLISHED",
+      "slug": "michel-de-montaigne",
+      "label": "Michel de Montaigne (1533–1592)",
+      "label_en": "Michel de Montaigne",
+      "summary": "Tác giả của bộ \"Tiểu Luận\" (Essais), bậc thầy tự vấn và hoài nghi triết học với câu hỏi bất hủ: \"Tôi biết gì?\" (Que sais-je?).",
+      "topicCodes": [
+        "BIAS",
+        "TRUTH"
+      ],
+      "artworkId": "theme_08",
+      "sourceRefs": [
+        {
+          "title": "Essais (Tiểu Luận)",
+          "author": "Michel de Montaigne",
+          "year": "1580"
+        }
+      ],
+      "visual": {
+        "region": "region-human-condition",
+        "x": 240,
+        "y": 210,
+        "priority": 9,
+        "glyph": "☥",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "thinker-epictetus",
+      "kind": "thinker",
+      "status": "PUBLISHED",
+      "slug": "epictetus",
+      "label": "Epictetus (50–135)",
+      "label_en": "Epictetus",
+      "summary": "Triết gia Khắc kỷ xuất thân nô lệ. Khởi xướng Phân Định Quyền Kiểm Soát: tự do đích thực nằm ở việc phân biệt điều ta kiểm soát được và điều không thể.",
+      "topicCodes": [
+        "BOUNDARIES",
+        "RESILIENCE"
+      ],
+      "artworkId": "theme_08",
+      "sourceRefs": [
+        {
+          "title": "Discourses & Enchiridion",
+          "author": "Epictetus",
+          "year": "108 AD"
+        }
+      ],
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 790,
+        "y": 430,
+        "priority": 9,
+        "glyph": "☥",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "thinker-seneca",
+      "kind": "thinker",
+      "status": "PUBLISHED",
+      "slug": "seneca",
+      "label": "Lucius Annaeus Seneca (4 TCN–65)",
+      "label_en": "Seneca",
+      "summary": "Chính khách La Mã và triết gia Khắc kỷ. Bậc thầy phân tích về sự ngắn ngủi của đời người và cách gìn giữ tâm hồn thanh thản giữa giông bão quyền lực.",
+      "topicCodes": [
+        "SERENITY",
+        "POWER"
+      ],
+      "artworkId": "theme_04",
+      "sourceRefs": [
+        {
+          "title": "Letters from a Stoic (Những Lá Thư Từ Một Nhà Khắc Kỷ)",
+          "author": "Seneca",
+          "year": "65 AD"
+        }
+      ],
+      "visual": {
+        "region": "region-power-and-machination",
+        "x": 450,
+        "y": 780,
+        "priority": 9,
+        "glyph": "☥",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "art-school-of-athens",
+      "kind": "artwork",
+      "status": "PUBLISHED",
+      "slug": "truong-hoc-athens-raphael",
+      "label": "Bích Họa: Trường Học Athens (Raphael, 1509)",
+      "label_en": "The School of Athens - Raphael",
+      "summary": "Kiệt tác bích họa Phục hưng tại Vatican hội tụ các bậc hiền triết Hy Lạp cổ đại, biểu tượng cho khát vọng vươn tới chân lý vĩnh cửu.",
+      "topicCodes": [
+        "PSYCHOLOGY",
+        "TRUTH"
+      ],
+      "artworkId": "theme_08",
+      "visual": {
+        "region": "region-aesthetic-and-worldview",
+        "x": 480,
+        "y": 420,
+        "priority": 8,
+        "glyph": "❖",
+        "cartoucheStyle": "plate"
+      }
+    },
+    {
+      "id": "art-wanderer-fog",
+      "kind": "artwork",
+      "status": "PUBLISHED",
+      "slug": "ke-lang-du-tren-bien-suong-mu",
+      "label": "Kẻ Lãng Du Trên Biển Sương Mù (Friedrich, 1818)",
+      "label_en": "Wanderer above the Sea of Fog",
+      "summary": "Biểu tượng lãng mạn về con người đứng trước sự kỳ vĩ vô tận của vũ trụ và đối diện với vực sâu nội tâm của chính mình.",
+      "topicCodes": [
+        "SOLITUDE",
+        "EXISTENCE"
+      ],
+      "artworkId": "theme_03",
+      "visual": {
+        "region": "region-solitude-and-communion",
+        "x": 720,
+        "y": 710,
+        "priority": 8,
+        "glyph": "❖",
+        "cartoucheStyle": "plate"
+      }
+    },
+    {
+      "id": "art-saturn-son",
+      "kind": "artwork",
+      "status": "PUBLISHED",
+      "slug": "saturn-nuot-con-goya",
+      "label": "Saturn Nuốt Chửng Con Trai (Goya, 1823)",
+      "label_en": "Saturn Devouring His Son - Goya",
+      "summary": "Bức tranh Đen (Black Painting) kinh điển bóc trần nỗi kinh hoàng tột cùng của quyền lực hoang tưởng và sự tự hủy hoại bản thể.",
+      "topicCodes": [
+        "POWER",
+        "SHADOW"
+      ],
+      "artworkId": "theme_06",
+      "visual": {
+        "region": "region-power-and-machination",
+        "x": 490,
+        "y": 870,
+        "priority": 8,
+        "glyph": "❖",
+        "cartoucheStyle": "plate"
+      }
+    },
+    {
+      "id": "art-judith-beheading",
+      "kind": "artwork",
+      "status": "PUBLISHED",
+      "slug": "judith-chem-holofernes-gentileschi",
+      "label": "Judith Chém Đầu Holofernes (Gentileschi, 1620)",
+      "label_en": "Judith Slaying Holofernes - Artemisia",
+      "summary": "Bản trường ca thị giác đanh thép về lòng dũng cảm, sự phản kháng trước bạo quyền và dũng khí tự vệ của kẻ bị dồn vào đường cùng.",
+      "topicCodes": [
+        "DOUBLE_STANDARD",
+        "POWER"
+      ],
+      "artworkId": "theme_02",
+      "visual": {
+        "region": "region-power-and-machination",
+        "x": 430,
+        "y": 820,
+        "priority": 8,
+        "glyph": "❖",
+        "cartoucheStyle": "plate"
+      }
+    },
+    {
+      "id": "art-narcissus",
+      "kind": "artwork",
+      "status": "PUBLISHED",
+      "slug": "narcissus-caravaggio",
+      "label": "Narcissus Soi Bóng (Caravaggio, 1599)",
+      "label_en": "Narcissus - Caravaggio",
+      "summary": "Ánh sáng chiaroscuro soi rọi chàng Narcissus si mê ảo ảnh phản chiếu của chính mình dưới mặt nước, biểu tượng vĩnh cửu của ái kỷ bản ngã.",
+      "topicCodes": [
+        "EGO",
+        "SELF_DECEPTION"
+      ],
+      "artworkId": "theme_01",
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 660,
+        "y": 220,
+        "priority": 8,
+        "glyph": "❖",
+        "cartoucheStyle": "plate"
+      }
+    },
+    {
+      "id": "art-garden-delights",
+      "kind": "artwork",
+      "status": "PUBLISHED",
+      "slug": "khu-vuon-khoai-lac-bosch",
+      "label": "Khu Vườn Khoái Lạc (Bosch, 1500)",
+      "label_en": "The Garden of Earthly Delights - Bosch",
+      "summary": "Bức triptych siêu thực mô tả sự cám dỗ, sa ngã và những chiếc bẫy dục vọng hỗn loạn của bản tính con người.",
+      "topicCodes": [
+        "HYPOCRISY",
+        "MORALITY"
+      ],
+      "artworkId": "theme_05",
+      "visual": {
+        "region": "region-masks-and-authenticity",
+        "x": 160,
+        "y": 490,
+        "priority": 8,
+        "glyph": "❖",
+        "cartoucheStyle": "plate"
+      }
+    },
+    {
+      "id": "art-astronomer-vermeer",
+      "kind": "artwork",
+      "status": "PUBLISHED",
+      "slug": "nha-thien-van-vermeer",
+      "label": "Nhà Thiên Văn Học (Vermeer, 1668)",
+      "label_en": "The Astronomer - Vermeer",
+      "summary": "Ánh sáng êm đềm chiếu vào căn phòng nơi học giả trầm ngâm nghiên cứu quả địa cầu, tượng trưng cho sự kiếm tìm chân lý khoa học.",
+      "topicCodes": [
+        "TRUTH",
+        "MEANING"
+      ],
+      "artworkId": "theme_07",
+      "visual": {
+        "region": "region-human-condition",
+        "x": 270,
+        "y": 250,
+        "priority": 8,
+        "glyph": "❖",
+        "cartoucheStyle": "plate"
+      }
+    },
+    {
+      "id": "art-anatomy-lesson",
+      "kind": "artwork",
+      "status": "PUBLISHED",
+      "slug": "tiet-hoc-giai-phau-rembrandt",
+      "label": "Tiết Học Giải Phẫu Của Bác Sĩ Tulp (Rembrandt, 1632)",
+      "label_en": "The Anatomy Lesson of Dr. Nicolaes Tulp",
+      "summary": "Bức họa bậc thầy về sự tò mò tri thức, giải phẫu thân xác để thấu hiểu sự sống và đối diện cái chết hữu hạn.",
+      "topicCodes": [
+        "STATUS",
+        "CROWD"
+      ],
+      "artworkId": "theme_04",
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 630,
+        "y": 270,
+        "priority": 8,
+        "glyph": "❖",
+        "cartoucheStyle": "plate"
+      }
+    },
+    {
+      "id": "quote-txt-0001",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0001",
+      "label": "Folio #0001: Kẻ nguy hiểm nhất luôn xuất hiện với vẻ mặt của một vị thánh cứu rỗi.",
+      "label_en": "Folio #0001",
+      "summary": "Kẻ nguy hiểm nhất không phải kẻ ác công khai, mà là người luôn xuất hiện với vẻ mặt của một vị thánh cứu rỗi.",
+      "topicCodes": [
+        "HYPOCRISY"
+      ],
+      "relatedContentIds": [
+        "TXT-0001"
+      ],
+      "artworkId": "theme_01",
+      "visual": {
+        "region": "region-human-condition",
+        "x": 295,
+        "y": 235,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0002",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0002",
+      "label": "Folio #0002: Lòng tốt đáng sợ nhất là khoản nợ ngầm bắt bạn phải mang ơn suốt đời.",
+      "label_en": "Folio #0002",
+      "summary": "Lòng tốt đáng sợ nhất là khi người ta giúp bạn một lần, nhưng lại ngầm bắt bạn phải mang ơn và cúi đầu trước họ suốt phần đời còn lại.",
+      "topicCodes": [
+        "HYPOCRISY"
+      ],
+      "relatedContentIds": [
+        "TXT-0002"
+      ],
+      "artworkId": "theme_02",
+      "visual": {
+        "region": "region-human-condition",
+        "x": 235,
+        "y": 275,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0003",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0003",
+      "label": "Folio #0003: Người nói đạo lý càng trơn tru thì khi đụng chạm lợi ích, họ quay xe càng nhanh.",
+      "label_en": "Folio #0003",
+      "summary": "Người nói đạo lý càng trôi chảy thì khi lợi ích bị đụng tới, họ là người quay xe nhanh nhất.",
+      "topicCodes": [
+        "HYPOCRISY"
+      ],
+      "relatedContentIds": [
+        "TXT-0003"
+      ],
+      "artworkId": "theme_03",
+      "visual": {
+        "region": "region-human-condition",
+        "x": 325,
+        "y": 255,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0004",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0004",
+      "label": "Folio #0004: Có những người tha thứ rất nhanh chỉ để tích lũy quyền lực phán xét bạn.",
+      "label_en": "Folio #0004",
+      "summary": "Có những người tha thứ rất nhanh, chỉ để mỗi lần tranh cãi, họ có quyền đem lỗi lầm cũ ra ép bạn phải thấy mình tội lỗi.",
+      "topicCodes": [
+        "HYPOCRISY"
+      ],
+      "relatedContentIds": [
+        "TXT-0004"
+      ],
+      "artworkId": "theme_04",
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 655,
+        "y": 195,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0005",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0005",
+      "label": "Folio #0005: Người ta hăng hái kết tội kẻ khác không phải vì công lý, mà để che giấu vết nhơ của chính mình.",
+      "label_en": "Folio #0005",
+      "summary": "Người ta hăng hái ném đá kẻ khác không phải vì yêu công lý, mà vì sỉ nhục người khác là cách nhanh nhất để cảm thấy bản thân trong sạch.",
+      "topicCodes": [
+        "HYPOCRISY"
+      ],
+      "relatedContentIds": [
+        "TXT-0005"
+      ],
+      "artworkId": "theme_05",
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 685,
+        "y": 245,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0006",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0006",
+      "label": "Folio #0006: Lỗi của người khác ta gọi là bản chất, lỗi của bản thân ta gọi là hoàn cảnh.",
+      "label_en": "Folio #0006",
+      "summary": "Ta gọi lỗi lầm của người khác là bản chất, nhưng lại gọi chính lỗi lầm ấy ở mình là hoàn cảnh bắt buộc.",
+      "topicCodes": [
+        "DOUBLE_STANDARD"
+      ],
+      "relatedContentIds": [
+        "TXT-0006"
+      ],
+      "artworkId": "theme_06",
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 815,
+        "y": 445,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0007",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0007",
+      "label": "Folio #0007: Đừng phán xét sự lựa chọn của người khác khi bạn chưa từng phải chịu đựng sự bế tắc của họ.",
+      "label_en": "Folio #0007",
+      "summary": "Ta rất dễ phán xét người khác, cho đến khi chính bản thân rơi vào hoàn cảnh mà không có lựa chọn nào là trọn vẹn.",
+      "topicCodes": [
+        "DOUBLE_STANDARD"
+      ],
+      "relatedContentIds": [
+        "TXT-0007"
+      ],
+      "artworkId": "theme_07",
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 775,
+        "y": 505,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0008",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0008",
+      "label": "Folio #0008: Quy chuẩn khắt khe người ta đặt ra cho bạn chỉ áp dụng khi bạn là người chịu thiệt.",
+      "label_en": "Folio #0008",
+      "summary": "Quy chuẩn khắt khe người ta đặt ra cho bạn sẽ biến mất ngay khoảnh khắc họ là người vi phạm.",
+      "topicCodes": [
+        "DOUBLE_STANDARD"
+      ],
+      "relatedContentIds": [
+        "TXT-0008"
+      ],
+      "artworkId": "theme_08",
+      "visual": {
+        "region": "region-human-condition",
+        "x": 345,
+        "y": 205,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0009",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0009",
+      "label": "Folio #0009: Người đòi hỏi bạn phải thấu hiểu thường là người ít lắng nghe bạn nhất.",
+      "label_en": "Folio #0009",
+      "summary": "Người luôn đòi hỏi sự thấu hiểu lại thường là người ít khi chịu lắng nghe cảm xúc của bạn nhất.",
+      "topicCodes": [
+        "DOUBLE_STANDARD"
+      ],
+      "relatedContentIds": [
+        "TXT-0009"
+      ],
+      "artworkId": "theme_09",
+      "visual": {
+        "region": "region-solitude-and-communion",
+        "x": 735,
+        "y": 735,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0010",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0010",
+      "label": "Folio #0010: Bản ngã con người thà hạ thấp nỗ lực của kẻ khác chứ không chịu thừa nhận sự kém cỏi của mình.",
+      "label_en": "Folio #0010",
+      "summary": "Khi người khác thành công, ta thường nghĩ do họ may mắn hoặc có bệ đỡ; thà hạ thấp nỗ lực của người khác còn hơn thừa nhận bản thân đang giậm chân tại chỗ.",
+      "topicCodes": [
+        "DOUBLE_STANDARD"
+      ],
+      "relatedContentIds": [
+        "TXT-0010"
+      ],
+      "artworkId": "theme_10",
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 725,
+        "y": 215,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0011",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0011",
+      "label": "Folio #0011: Lòng tốt mà đi kèm với kỳ vọng được tán dương chỉ là một món hàng trao đổi.",
+      "label_en": "Folio #0011",
+      "summary": "Lòng tốt mà đòi hỏi tiếng vỗ tay thì đó không phải là sự thiện lương, đó là một giao dịch mua bán danh tiếng.",
+      "topicCodes": [
+        "MORALITY"
+      ],
+      "relatedContentIds": [
+        "TXT-0011"
+      ],
+      "artworkId": "theme_11",
+      "visual": {
+        "region": "region-power-and-machination",
+        "x": 485,
+        "y": 825,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0012",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0012",
+      "label": "Folio #0012: Kẻ yếu đuối không dám làm điều ác không có nghĩa họ là người có đạo đức.",
+      "label_en": "Folio #0012",
+      "summary": "Không thể làm điều ác khác hoàn toàn với việc có đủ sức mạnh để tàn nhẫn nhưng vẫn chọn sống tử tế.",
+      "topicCodes": [
+        "MORALITY"
+      ],
+      "relatedContentIds": [
+        "TXT-0012"
+      ],
+      "artworkId": "theme_12",
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 865,
+        "y": 475,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0013",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0013",
+      "label": "Folio #0013: Sự tử tế không có ranh giới là lời mời gọi cho lòng tham và sự lợi dụng.",
+      "label_en": "Folio #0013",
+      "summary": "Sự tử tế không có ranh giới không phải là đức tính tốt, đó là sự đồng lõa cho lòng tham của kẻ khác.",
+      "topicCodes": [
+        "MORALITY"
+      ],
+      "relatedContentIds": [
+        "TXT-0013"
+      ],
+      "artworkId": "theme_13",
+      "visual": {
+        "region": "region-suffering-and-purpose",
+        "x": 225,
+        "y": 725,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0014",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0014",
+      "label": "Folio #0014: Hy sinh bản thân để làm hài lòng tất cả là cách nhanh nhất để đánh mất chính mình.",
+      "label_en": "Folio #0014",
+      "summary": "Cố gắng làm vừa lòng tất cả mọi người là cách nhanh nhất để biến mình thành một con rối không có cá tính.",
+      "topicCodes": [
+        "MORALITY"
+      ],
+      "relatedContentIds": [
+        "TXT-0014"
+      ],
+      "artworkId": "theme_14",
+      "visual": {
+        "region": "region-power-and-machination",
+        "x": 435,
+        "y": 855,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0015",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0015",
+      "label": "Folio #0015: Đừng nhầm lẫn giữa lòng vị tha và thói quen dung túng cho sự vô ơn.",
+      "label_en": "Folio #0015",
+      "summary": "Có những người khi nhận lòng tốt của bạn thì nghĩ đó là nghĩa vụ; khi bạn ngừng cho đi, họ không nhớ những gì bạn đã giúp mà chỉ ghi hận việc bạn từ chối.",
+      "topicCodes": [
+        "MORALITY"
+      ],
+      "relatedContentIds": [
+        "TXT-0015"
+      ],
+      "artworkId": "theme_15",
+      "visual": {
+        "region": "region-solitude-and-communion",
+        "x": 785,
+        "y": 785,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0016",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0016",
+      "label": "Folio #0016: Bản ngã càng lớn thì ngưỡng chịu đựng sự thật càng thấp.",
+      "label_en": "Folio #0016",
+      "summary": "Kẻ có bản ngã càng lớn thì càng dễ bị tổn thương bởi một sự thật rất đỗi bình thường.",
+      "topicCodes": [
+        "EGO"
+      ],
+      "relatedContentIds": [
+        "TXT-0016"
+      ],
+      "artworkId": "theme_16",
+      "visual": {
+        "region": "region-masks-and-authenticity",
+        "x": 175,
+        "y": 465,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0017",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0017",
+      "label": "Folio #0017: Nhu cầu chứng minh mình đúng luôn đi kèm với sự bất an sâu thẳm bên trong.",
+      "label_en": "Folio #0017",
+      "summary": "Người luôn cố chứng minh mình đúng thực chất là người đang bất an nhất trước khả năng mình có thể sai lầm.",
+      "topicCodes": [
+        "EGO"
+      ],
+      "relatedContentIds": [
+        "TXT-0017"
+      ],
+      "artworkId": "theme_17",
+      "visual": {
+        "region": "region-masks-and-authenticity",
+        "x": 145,
+        "y": 445,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0018",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0018",
+      "label": "Folio #0018: Càng nhạy cảm và dễ tự ái, chứng tỏ nội tâm bên trong càng bất an.",
+      "label_en": "Folio #0018",
+      "summary": "Kẻ có thực lực không dựng gai nhọn khắp người để tự vệ; chỉ kẻ yếu đuối mới thấy lời nói nào cũng là sự công kích.",
+      "topicCodes": [
+        "EGO"
+      ],
+      "relatedContentIds": [
+        "TXT-0018"
+      ],
+      "artworkId": "theme_18",
+      "visual": {
+        "region": "region-suffering-and-purpose",
+        "x": 245,
+        "y": 775,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0019",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0019",
+      "label": "Folio #0019: Hạ thấp người khác không bao giờ giúp bạn đứng cao hơn.",
+      "label_en": "Folio #0019",
+      "summary": "Chỉ trích khuyết điểm của người khác không thể bù đắp cho những thiếu hụt trong năng lực của chính bạn.",
+      "topicCodes": [
+        "EGO"
+      ],
+      "relatedContentIds": [
+        "TXT-0019"
+      ],
+      "artworkId": "theme_19",
+      "visual": {
+        "region": "region-masks-and-authenticity",
+        "x": 195,
+        "y": 495,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0020",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0020",
+      "label": "Folio #0020: Cơn giận dữ bộc phát thường là tiếng kêu cứu của một bản ngã đang bị đe dọa.",
+      "label_en": "Folio #0020",
+      "summary": "Cơn giận dữ bộc phát hiếm khi vì sự việc quá nghiêm trọng; nó là tiếng thét gào của một bản ngã đang run rẩy vì sợ bị xem thường.",
+      "topicCodes": [
+        "EGO"
+      ],
+      "relatedContentIds": [
+        "TXT-0020"
+      ],
+      "artworkId": "theme_20",
+      "visual": {
+        "region": "region-power-and-machination",
+        "x": 545,
+        "y": 845,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-0001",
+      "from": "theme-truth",
+      "to": "idea-uncomfortable-truth",
+      "relation": "explores",
+      "why": "Khảo sát vì sao con người thường phòng vệ trước sự thật mất lòng.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0002",
+      "from": "theme-self-deception",
+      "to": "idea-uncomfortable-truth",
+      "relation": "shares_question_with",
+      "why": "Tự lừa dối chính là cơ chế bảo vệ trước sự thật trần trụi.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0003",
+      "from": "theme-bias",
+      "to": "idea-confirmation-bias",
+      "relation": "explores",
+      "why": "Thiên kiến xác nhận là biểu hiện tâm lý rõ ràng nhất của định kiến cá nhân.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0004",
+      "from": "theme-existence",
+      "to": "idea-existential-angst",
+      "relation": "explores",
+      "why": "Ý thức về sự hữu hạn và cô đơn hiện sinh thúc đẩy con người tìm kiếm lẽ sống.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0005",
+      "from": "thinker-michel-de-montaigne",
+      "to": "theme-truth",
+      "relation": "influenced_by",
+      "why": "Montaigne đặt nền móng cho tinh thần hoài nghi lành mạnh và lòng dũng cảm tự vấn.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0006",
+      "from": "thinker-michel-de-montaigne",
+      "to": "idea-confirmation-bias",
+      "relation": "contrasts_with",
+      "why": "Khuyên độc giả luôn nghi ngờ sự phán đoán vội vã của chính mình.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0007",
+      "from": "thinker-fyodor-dostoevsky",
+      "to": "idea-uncomfortable-truth",
+      "relation": "explores",
+      "why": "Các nhân vật của Dostoevsky luôn vật lộn giữa sự thật cay đắng và cơn mê tội lỗi.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0008",
+      "from": "art-astronomer-vermeer",
+      "to": "theme-truth",
+      "relation": "illustrated_by",
+      "why": "Hình tượng nhà thiên văn học biểu trưng cho khao khát kiếm tìm chân lý khách quan.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0009",
+      "from": "quote-txt-0001",
+      "to": "idea-uncomfortable-truth",
+      "relation": "explores",
+      "why": "Trực tiếp đúc kết về nghịch lý giữa sự phán xét người khác và sự tự soi mình.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0010",
+      "from": "quote-txt-0002",
+      "to": "idea-confirmation-bias",
+      "relation": "explores",
+      "why": "Phơi bày sự thiên lệch khi đánh giá người khác qua lăng kính tư lợi.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0011",
+      "from": "quote-txt-0003",
+      "to": "theme-self-deception",
+      "relation": "explores",
+      "why": "Giải phẫu việc con người tự ru ngủ mình trong chiếc vỏ bọc an toàn.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0012",
+      "from": "quote-txt-0008",
+      "to": "idea-existential-angst",
+      "relation": "explores",
+      "why": "Câu chiêm nghiệm về khoảng lặng bàng hoàng khi đối diện với chính mình.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0013",
+      "from": "theme-ego",
+      "to": "idea-inflated-ego",
+      "relation": "explores",
+      "why": "Bản ngã càng mong manh thì nhu cầu thể hiện mình hơn người càng dữ dội.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0014",
+      "from": "theme-status",
+      "to": "idea-status-anxiety",
+      "relation": "explores",
+      "why": "Nỗi lo âu địa vị là chiếc bẫy xã hội giam hãm sự thanh thản nội tại.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0015",
+      "from": "theme-identity",
+      "to": "idea-true-identity",
+      "relation": "explores",
+      "why": "Bản sắc cá nhân chỉ bộc lộ khi không còn ánh mắt nào của đám đông quan sát.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0016",
+      "from": "thinker-arthur-schopenhauer",
+      "to": "idea-inflated-ego",
+      "relation": "reframes",
+      "why": "Schopenhauer chỉ ra rằng bản ngã chỉ là con rối của Ý Chí mù quáng.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0017",
+      "from": "thinker-arthur-schopenhauer",
+      "to": "theme-status",
+      "relation": "contrasts_with",
+      "why": "Khuyên con người xem nhẹ đánh giá của kẻ khác để giữ gìn tâm trí độc lập.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0018",
+      "from": "art-narcissus",
+      "to": "idea-inflated-ego",
+      "relation": "illustrated_by",
+      "why": "Huyền thoại Narcissus là lời cảnh báo cổ điển về cái chết vì si mê hình bóng ảo ảnh.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0019",
+      "from": "art-anatomy-lesson",
+      "to": "theme-status",
+      "relation": "illustrated_by",
+      "why": "Sự phô trương danh thế xã hội qua một nghi thức tri thức bảo tàng.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0020",
+      "from": "quote-txt-0004",
+      "to": "idea-inflated-ego",
+      "relation": "explores",
+      "why": "Bóc trần thói quen thích dạy bảo và luôn muốn mình là kẻ sáng suốt hơn.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0021",
+      "from": "quote-txt-0005",
+      "to": "idea-status-anxiety",
+      "relation": "explores",
+      "why": "Chiếc bẫy so sánh danh vọng khiến tâm trí không phút nào bình yên.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0022",
+      "from": "quote-txt-0010",
+      "to": "idea-true-identity",
+      "relation": "explores",
+      "why": "Tự vấn về con người thật khi rèm nhung xã hội buông xuống.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0023",
+      "from": "idea-uncomfortable-truth",
+      "to": "idea-inflated-ego",
+      "relation": "contrasts_with",
+      "why": "Bản ngã thổi phồng thường là bức tường kiên cố nhất ngăn ta tiếp nhận sự thật.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0024",
+      "from": "theme-transcendence",
+      "to": "idea-status-anxiety",
+      "relation": "reframes",
+      "why": "Vượt lên phán xét đòi hỏi sự buông bỏ nhu cầu được tán thưởng địa vị.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0025",
+      "from": "theme-freedom",
+      "to": "idea-paradox-of-freedom",
+      "relation": "explores",
+      "why": "Tự do đích thực đòi hỏi dũng khí buông bỏ sự bảo bọc và chấp nhận cô độc.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0026",
+      "from": "theme-morality",
+      "to": "idea-toxic-gratitude",
+      "relation": "explores",
+      "why": "Lòng tốt độc hại biến sự giúp đỡ thành khoản nợ ràng buộc tự do cá nhân.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0027",
+      "from": "theme-boundaries",
+      "to": "idea-healthy-boundaries",
+      "relation": "explores",
+      "why": "Ranh giới là bức thành lũy bảo vệ phẩm giá và quyền tự quyết của con người.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0028",
+      "from": "theme-bad-faith",
+      "to": "idea-paradox-of-freedom",
+      "relation": "contrasts_with",
+      "why": "Sự ngụy biện là việc tự nguyện thoái thác tự do để đổ lỗi cho hoàn cảnh.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0029",
+      "from": "thinker-jean-paul-sartre",
+      "to": "theme-bad-faith",
+      "relation": "influenced_by",
+      "why": "Khái niệm Bad Faith (Mauvaise Foi) của Sartre giải phẫu sự trốn tránh trách nhiệm.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0030",
+      "from": "thinker-jean-paul-sartre",
+      "to": "idea-paradox-of-freedom",
+      "relation": "influenced_by",
+      "why": "Con người bị kết án là phải tự do và phải tự chịu trách nhiệm cho mọi chọn lựa.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0031",
+      "from": "thinker-friedrich-nietzsche",
+      "to": "theme-freedom",
+      "relation": "influenced_by",
+      "why": "Tự do theo Nietzsche là sức mạnh tự định hình giá trị vượt qua chuẩn mực bầy đàn.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0032",
+      "from": "thinker-epictetus",
+      "to": "idea-healthy-boundaries",
+      "relation": "influenced_by",
+      "why": "Epictetus dạy rằng ranh giới đầu tiên là phân định điều nằm trong quyền kiểm soát.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0033",
+      "from": "quote-txt-0006",
+      "to": "idea-paradox-of-freedom",
+      "relation": "explores",
+      "why": "Đúc kết sắc bén về bản chất của tự do và sự trưởng thành nội tâm.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0034",
+      "from": "quote-txt-0007",
+      "to": "idea-toxic-gratitude",
+      "relation": "explores",
+      "why": "Vạch trần lòng tốt có điều kiện và khoản nợ tình cảm thao túng.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0035",
+      "from": "quote-txt-0012",
+      "to": "idea-healthy-boundaries",
+      "relation": "explores",
+      "why": "Khẳng định giá trị của việc dám nói lời từ chối dứt khoát.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0036",
+      "from": "idea-inflated-ego",
+      "to": "idea-paradox-of-freedom",
+      "relation": "contrasts_with",
+      "why": "Kẻ nô lệ cho bản ngã không bao giờ có được tự do đích thực.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.8
+    },
+    {
+      "id": "edge-0037",
+      "from": "idea-toxic-gratitude",
+      "to": "theme-power",
+      "relation": "shares_question_with",
+      "why": "Cả hai đều sử dụng sự phụ thuộc tâm lý để thiết lập quyền lực vô hình.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0038",
+      "from": "theme-solitude",
+      "to": "idea-sanctuary-of-solitude",
+      "relation": "explores",
+      "why": "Cô độc là nơi chốn tĩnh lặng để tâm hồn tự đối thoại và tái tạo năng lượng.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0039",
+      "from": "theme-love",
+      "to": "idea-mature-love",
+      "relation": "explores",
+      "why": "Tình yêu chín chắn tôn trọng sự độc lập và không gian tự do của người mình yêu.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0040",
+      "from": "theme-connection",
+      "to": "idea-mature-love",
+      "relation": "explores",
+      "why": "Kết nối chân thành chỉ nảy nở giữa những tâm hồn không còn sợ hãi sự cô độc.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0041",
+      "from": "theme-loyalty",
+      "to": "idea-mature-love",
+      "relation": "shares_question_with",
+      "why": "Lòng trung thành đích thực xuất phát từ tự nguyện, không phải từ ép buộc.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.8
+    },
+    {
+      "id": "edge-0042",
+      "from": "thinker-blaise-pascal",
+      "to": "idea-sanctuary-of-solitude",
+      "relation": "influenced_by",
+      "why": "Pascal cảnh báo: không chịu nổi sự cô độc đẩy con người vào những thú vui tiêu khiển vô nghĩa.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0043",
+      "from": "thinker-blaise-pascal",
+      "to": "theme-solitude",
+      "relation": "influenced_by",
+      "why": "Tiểu phẩm tư tưởng về căn phòng trống và sự bình yên nội tại.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0044",
+      "from": "art-wanderer-fog",
+      "to": "idea-sanctuary-of-solitude",
+      "relation": "illustrated_by",
+      "why": "Bức họa lãng mạn khắc họa dáng dấp cô độc đầy kiêu hãnh của con người tự do.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0045",
+      "from": "quote-txt-0009",
+      "to": "idea-sanctuary-of-solitude",
+      "relation": "explores",
+      "why": "Câu nói đúc kết về phẩm giá của việc biết thưởng thức sự cô độc.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0046",
+      "from": "quote-txt-0015",
+      "to": "idea-mature-love",
+      "relation": "explores",
+      "why": "Phân biệt giữa tình yêu chiếm đoạt và tình yêu thấu cảm độc lập.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0047",
+      "from": "idea-paradox-of-freedom",
+      "to": "idea-sanctuary-of-solitude",
+      "relation": "shares_question_with",
+      "why": "Không thể có tự do nếu con người sợ hãi việc ở một mình.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0048",
+      "from": "theme-power",
+      "to": "idea-covert-machination",
+      "relation": "explores",
+      "why": "Quyền lực tinh vi nhất không dùng bạo lực mà dùng cảm giác tội lỗi để điều khiển.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0049",
+      "from": "theme-manipulation",
+      "to": "idea-covert-machination",
+      "relation": "explores",
+      "why": "Thao túng cảm xúc bóp méo nhận thức của nạn nhân về giá trị bản thân.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0050",
+      "from": "theme-double-standard",
+      "to": "idea-double-morality",
+      "relation": "explores",
+      "why": "Tiêu chuẩn kép là công cụ đạo đức giả để duy trì vị thế áp đảo người khác.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0051",
+      "from": "theme-envy",
+      "to": "idea-double-morality",
+      "relation": "shares_question_with",
+      "why": "Đố kỵ ngầm thường ngụy trang dưới danh nghĩa đòi hỏi công bằng đạo đức.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0052",
+      "from": "thinker-seneca",
+      "to": "theme-power",
+      "relation": "influenced_by",
+      "why": "Seneca từng cảnh báo sự nguy hiểm khôn lường của quyền lực mất kiểm soát.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0053",
+      "from": "art-saturn-son",
+      "to": "theme-power",
+      "relation": "illustrated_by",
+      "why": "Hình tượng Saturn là ẩn dụ ghê rợn về quyền lực sợ hãi bị soán ngôi.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0054",
+      "from": "art-judith-beheading",
+      "to": "idea-covert-machination",
+      "relation": "contrasts_with",
+      "why": "Sự phản kháng quyết liệt bẻ gãy ách thống trị tàn bạo của bạo chúa.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0055",
+      "from": "quote-txt-0011",
+      "to": "idea-covert-machination",
+      "relation": "explores",
+      "why": "Nhận diện chiếc bẫy guilt-trip trong những mối quan hệ thân cận.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0056",
+      "from": "quote-txt-0014",
+      "to": "idea-double-morality",
+      "relation": "explores",
+      "why": "Bóc trần sự thiên lệch khi luôn bào chữa cho lỗi lầm của bản thân.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0057",
+      "from": "idea-covert-machination",
+      "to": "idea-inflated-ego",
+      "relation": "shares_question_with",
+      "why": "Khao khát thao túng người khác bắt nguồn từ bản ngã bất an sâu sắc.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0058",
+      "from": "idea-double-morality",
+      "to": "theme-hypocrisy",
+      "relation": "reframes",
+      "why": "Tiêu chuẩn kép là hình thái phổ biến nhất của đạo đức giả thường nhật.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0059",
+      "from": "theme-suffering",
+      "to": "idea-stoic-resilience",
+      "relation": "explores",
+      "why": "Nghịch cảnh là hòn đá thử vàng tôi luyện ý chí và nhân cách con người.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0060",
+      "from": "theme-resilience",
+      "to": "idea-stoic-resilience",
+      "relation": "explores",
+      "why": "Kiên cường không phải là không biết đau, mà là biết đứng dậy sau mỗi lần gục ngã.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0061",
+      "from": "theme-meaning",
+      "to": "idea-tragic-optimism",
+      "relation": "explores",
+      "why": "Ý nghĩa cuộc sống không tự nhiên có sẵn; nó được tạo dựng qua cách ta phản ứng với bi kịch.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0062",
+      "from": "theme-serenity",
+      "to": "idea-stoic-resilience",
+      "relation": "shares_question_with",
+      "why": "Sự thanh thản chỉ đến khi ta ngừng kháng cự những điều bất khả kháng.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0063",
+      "from": "thinker-marcus-aurelius",
+      "to": "idea-stoic-resilience",
+      "relation": "influenced_by",
+      "why": "Triết lý Khắc kỷ trong \"Trầm Tưởng\" dạy cách giữ gìn pháo đài nội tâm.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0064",
+      "from": "thinker-marcus-aurelius",
+      "to": "theme-serenity",
+      "relation": "influenced_by",
+      "why": "Nhìn cuộc đời từ góc nhìn vũ trụ bao la để coi nhẹ những phiền toái thường nhật.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0065",
+      "from": "thinker-fyodor-dostoevsky",
+      "to": "idea-tragic-optimism",
+      "relation": "influenced_by",
+      "why": "Dostoevsky khẳng định: điều đáng sợ nhất không phải là đau khổ, mà là không xứng đáng với đau khổ của mình.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0066",
+      "from": "quote-txt-0013",
+      "to": "idea-stoic-resilience",
+      "relation": "explores",
+      "why": "Đúc kết bài học Khắc kỷ về việc làm chủ phản ứng của tâm trí.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0067",
+      "from": "quote-txt-0018",
+      "to": "idea-tragic-optimism",
+      "relation": "explores",
+      "why": "Lời thức tỉnh về việc tìm kiếm tia hy vọng ngay trong nghịch cảnh tăm tối.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0068",
+      "from": "idea-stoic-resilience",
+      "to": "idea-existential-angst",
+      "relation": "reframes",
+      "why": "Bản lĩnh Khắc kỷ là câu trả lời vững chắc trước nỗi lo âu hiện sinh.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0069",
+      "from": "theme-mask",
+      "to": "idea-social-persona",
+      "relation": "explores",
+      "why": "Chiếc mặt nạ giúp ta thích nghi với xã hội nhưng có thể bóp nghẹt bản ngã thật.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0070",
+      "from": "theme-shadow",
+      "to": "idea-jungian-shadow",
+      "relation": "explores",
+      "why": "Bóng tối nội tâm chứa đựng những phần bị dồn nén cần được nhận diện và thấu hiểu.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0071",
+      "from": "theme-crowd",
+      "to": "idea-herd-mentality",
+      "relation": "explores",
+      "why": "Tâm lý bầy đàn khiến con người tự nguyện từ bỏ tiếng nói lương tri cá nhân.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0072",
+      "from": "theme-hypocrisy",
+      "to": "idea-social-persona",
+      "relation": "shares_question_with",
+      "why": "Đạo đức giả nảy sinh khi chiếc mặt nạ lấn át và thay thế hoàn toàn nhân tính.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0073",
+      "from": "thinker-carl-jung",
+      "to": "idea-jungian-shadow",
+      "relation": "influenced_by",
+      "why": "Học thuyết nền tảng về Archetype Shadow của C. G. Jung.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0074",
+      "from": "thinker-carl-jung",
+      "to": "idea-social-persona",
+      "relation": "influenced_by",
+      "why": "Phân tích về chiếc mặt nạ Persona và con đường cá nhân hóa (Individuation).",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0075",
+      "from": "thinker-friedrich-nietzsche",
+      "to": "idea-herd-mentality",
+      "relation": "contrasts_with",
+      "why": "Nietzsche kịch liệt phê phán đạo đức nô lệ và tâm lý phục tùng số đông.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0076",
+      "from": "art-garden-delights",
+      "to": "idea-jungian-shadow",
+      "relation": "illustrated_by",
+      "why": "Bức tranh của Bosch phơi bày những ham muốn sâu kín và hỗn loạn của tiềm thức.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0077",
+      "from": "quote-txt-0016",
+      "to": "idea-jungian-shadow",
+      "relation": "explores",
+      "why": "Lời cảnh tỉnh về việc đối diện phần tối để không bị nó điều khiển.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0078",
+      "from": "quote-txt-0017",
+      "to": "idea-social-persona",
+      "relation": "explores",
+      "why": "Sự mệt mỏi khi phải liên tục gồng mình diễn trọn vai diễn xã hội.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0079",
+      "from": "quote-txt-0019",
+      "to": "idea-herd-mentality",
+      "relation": "explores",
+      "why": "Cảnh báo về sự nguy hiểm khi mù quáng trôi theo phán xét của đám đông.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0080",
+      "from": "quote-txt-0020",
+      "to": "idea-covert-machination",
+      "relation": "explores",
+      "why": "Bóc trần sự thao túng đội lốt trách nhiệm và kỳ vọng.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0081",
+      "from": "idea-social-persona",
+      "to": "idea-uncomfortable-truth",
+      "relation": "shares_question_with",
+      "why": "Chiếc mặt nạ được tạo ra chính để che giấu những sự thật trần trụi.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0082",
+      "from": "idea-jungian-shadow",
+      "to": "theme-ego",
+      "relation": "contrasts_with",
+      "why": "Bản ngã luôn muốn chối bỏ bóng tối nhưng chính bóng tối định hình sự trọn vẹn.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0083",
+      "from": "theme-psychology",
+      "to": "idea-museum-dialogue",
+      "relation": "explores",
+      "why": "Tâm lý học hành vi gặp gỡ mỹ thuật để khơi mở sự thấu cảm sâu sắc.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0084",
+      "from": "art-school-of-athens",
+      "to": "idea-museum-dialogue",
+      "relation": "illustrated_by",
+      "why": "Bức bích họa của Raphael là trung tâm thị giác hội tụ mọi trường phái tư tưởng.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0085",
+      "from": "art-school-of-athens",
+      "to": "theme-truth",
+      "relation": "shares_question_with",
+      "why": "Plato chỉ tay lên trời, Aristotle hướng lòng bàn tay xuống đất — hai con đường kiếm tìm chân lý.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0086",
+      "from": "idea-museum-dialogue",
+      "to": "idea-uncomfortable-truth",
+      "relation": "reframes",
+      "why": "Mỹ thuật không ve vuốt đôi mắt; nó buộc ta nhìn thẳng vào những điều bất an.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0087",
+      "from": "idea-museum-dialogue",
+      "to": "idea-sanctuary-of-solitude",
+      "relation": "shares_question_with",
+      "why": "Chiêm ngưỡng một bức tranh đòi hỏi một khoảng lặng cô độc đủ sâu.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0088",
+      "from": "thinker-marcus-aurelius",
+      "to": "thinker-epictetus",
+      "relation": "influenced_by",
+      "why": "Marcus Aurelius chịu ảnh hưởng sâu sắc từ tư tưởng tự do nội tâm của Epictetus.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0089",
+      "from": "thinker-friedrich-nietzsche",
+      "to": "thinker-arthur-schopenhauer",
+      "relation": "influenced_by",
+      "why": "Nietzsche chịu ảnh hưởng lớn từ Schopenhauer trước khi phát triển triết thuyết riêng.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0090",
+      "from": "thinker-carl-jung",
+      "to": "thinker-friedrich-nietzsche",
+      "relation": "influenced_by",
+      "why": "Jung coi Nietzsche là bậc thầy tâm lý học đã trực giác được cấu trúc vô thức.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0091",
+      "from": "thinker-fyodor-dostoevsky",
+      "to": "thinker-friedrich-nietzsche",
+      "relation": "shares_question_with",
+      "why": "Nietzsche gọi Dostoevsky là nhà tâm lý học duy nhất mà ông có thể học hỏi.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0092",
+      "from": "thinker-jean-paul-sartre",
+      "to": "thinker-fyodor-dostoevsky",
+      "relation": "influenced_by",
+      "why": "Sartre dẫn lại câu hỏi của Dostoevsky về trách nhiệm đạo đức khi không có chỗ dựa tuyệt đối.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0093",
+      "from": "theme-truth",
+      "to": "theme-freedom",
+      "relation": "shares_question_with",
+      "why": "Chân lý giải phóng con người khỏi những xiềng xích của sự sợ hãi và lừa dối.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0094",
+      "from": "theme-ego",
+      "to": "theme-boundaries",
+      "relation": "contrasts_with",
+      "why": "Bản ngã thích xâm lấn; ranh giới lành mạnh buộc bản ngã phải biết dừng lại.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0095",
+      "from": "theme-power",
+      "to": "theme-boundaries",
+      "relation": "contrasts_with",
+      "why": "Kẻ thao túng quyền lực luôn tìm cách xóa nhòa ranh giới của nạn nhân.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0096",
+      "from": "theme-suffering",
+      "to": "theme-meaning",
+      "relation": "shares_question_with",
+      "why": "Đau khổ mất đi tính hủy diệt khi con người tìm thấy ý nghĩa trong đó.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0097",
+      "from": "theme-solitude",
+      "to": "theme-connection",
+      "relation": "contrasts_with",
+      "why": "Nghịch lý: chỉ kẻ biết trân trọng sự cô độc mới có thể kết nối chân thành.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0098",
+      "from": "theme-mask",
+      "to": "theme-hypocrisy",
+      "relation": "explores",
+      "why": "Đạo đức giả bắt đầu khi chiếc mặt nạ trở thành danh tính duy nhất.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0099",
+      "from": "theme-bias",
+      "to": "theme-double-standard",
+      "relation": "shares_question_with",
+      "why": "Thiên kiến nhận thức nuôi dưỡng tiêu chuẩn kép trong các phán xét xã hội.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0100",
+      "from": "theme-status",
+      "to": "theme-envy",
+      "relation": "explores",
+      "why": "Cuộc đua danh vọng là mảnh đất màu mỡ nhất sản sinh ra sự đố kỵ ngầm.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0101",
+      "from": "theme-resilience",
+      "to": "theme-serenity",
+      "relation": "shares_question_with",
+      "why": "Nghị lực kiên cường là nền tảng để đạt được sự thanh thản vững chãi.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0102",
+      "from": "theme-boundaries",
+      "to": "theme-manipulation",
+      "relation": "contrasts_with",
+      "why": "Thiết lập ranh giới là vũ khí duy nhất để vô hiệu hóa sự thao túng cảm xúc.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0103",
+      "from": "quote-txt-0001",
+      "to": "theme-double-standard",
+      "relation": "explores",
+      "why": "Dostoevsky vạch trần thói quen phán xét người khác khi chưa từng đi trên đôi giày của họ.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0104",
+      "from": "quote-txt-0004",
+      "to": "theme-ego",
+      "relation": "explores",
+      "why": "Bi kịch của kẻ luôn khao khát chứng tỏ mình vượt trội.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0105",
+      "from": "quote-txt-0007",
+      "to": "theme-power",
+      "relation": "explores",
+      "why": "Món nợ ân tình độc hại là một hình thức quyền lực kiểm soát ngầm.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0106",
+      "from": "quote-txt-0011",
+      "to": "theme-boundaries",
+      "relation": "contrasts_with",
+      "why": "Ranh giới lành mạnh là liều thuốc giải cho chiếc bẫy thao túng guilt-trip.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0107",
+      "from": "quote-txt-0013",
+      "to": "theme-serenity",
+      "relation": "explores",
+      "why": "Làm chủ phản ứng của chính mình để gìn giữ sự bình an giữa giông bão.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0108",
+      "from": "quote-txt-0016",
+      "to": "theme-mask",
+      "relation": "contrasts_with",
+      "why": "Dũng cảm đối diện bóng tối thay vì trốn chạy sau chiếc mặt nạ xã hội.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0109",
+      "from": "quote-txt-0018",
+      "to": "theme-resilience",
+      "relation": "explores",
+      "why": "Niềm tin vào ý nghĩa sống nâng đỡ con người qua nghịch cảnh cay đắng.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0110",
+      "from": "quote-txt-0015",
+      "to": "theme-solitude",
+      "relation": "shares_question_with",
+      "why": "Tình yêu giữa hai người tự chủ bắt đầu từ năng lực tự vui sống một mình.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0111",
+      "from": "art-school-of-athens",
+      "to": "theme-psychology",
+      "relation": "explores",
+      "why": "Bức tranh tôn vinh sự hội tụ của triết học và tâm lý học nhân loại.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0112",
+      "from": "art-wanderer-fog",
+      "to": "theme-freedom",
+      "relation": "shares_question_with",
+      "why": "Sự tự do đứng trên đỉnh cao sương mù kèm theo nỗi cô đơn bao la.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0113",
+      "from": "art-narcissus",
+      "to": "theme-self-deception",
+      "relation": "explores",
+      "why": "Ái kỷ là hình thái tột cùng của sự tự lừa dối bản thân.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0114",
+      "from": "art-saturn-son",
+      "to": "idea-covert-machination",
+      "relation": "shares_question_with",
+      "why": "Cơn cuồng loạn muốn triệt tiêu mọi mối đe dọa đến quyền lực thống trị.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0115",
+      "from": "art-judith-beheading",
+      "to": "theme-boundaries",
+      "relation": "illustrated_by",
+      "why": "Hành động ranh giới tối thượng khi phẩm giá bị xâm phạm.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0116",
+      "from": "art-garden-delights",
+      "to": "theme-mask",
+      "relation": "shares_question_with",
+      "why": "Bóc trần sự đối nghịch giữa vẻ ngoan đạo bề mặt và dục vọng bên trong.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0117",
+      "from": "art-astronomer-vermeer",
+      "to": "idea-uncomfortable-truth",
+      "relation": "shares_question_with",
+      "why": "Niềm say mê khoa học tìm kiếm quy luật thật của tự nhiên.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    },
+    {
+      "id": "edge-0118",
+      "from": "art-anatomy-lesson",
+      "to": "theme-ego",
+      "relation": "shares_question_with",
+      "why": "Bức chân dung tập thể phơi bày bản ngã muốn lưu danh hậu thế.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.85
+    }
+  ],
+  "trails": [
+    {
+      "id": "trail-truth-and-deception",
+      "slug": "su-that-va-tu-lua-doi",
+      "title": "Sự Thật & Tự Lừa Dối",
+      "title_en": "Truth & Self-Deception",
+      "subtitle": "Hành trình giải phẫu chiếc bẫy an toàn tâm lý và dũng khí đối diện thực tại.",
+      "description": "Từ một câu hỏi nhức nhối về sự thật, lần theo các mối liên hệ giữa thiên kiến nhận thức, sự ngụy biện và lòng dũng cảm tự vấn.",
+      "introPrompt": "Khi khao khát sự an yên biến thành nhu cầu chối bỏ thực tại, ta sẵn sàng trả giá bằng điều gì?",
+      "closingPrompt": "Bạn đã đi qua những góc khuất của sự thật. Liệu bạn có dám đặt câu hỏi lại cho niềm tin vững chắc nhất của mình?",
+      "themeCode": "TRUTH",
+      "estimatedMinutes": 8,
+      "coverArtworkId": "theme_03",
+      "status": "PUBLISHED",
+      "orderedNodeIds": [
+        "theme-truth",
+        "idea-uncomfortable-truth",
+        "quote-txt-0001",
+        "theme-self-deception",
+        "thinker-michel-de-montaigne",
+        "idea-confirmation-bias",
+        "art-astronomer-vermeer"
+      ],
+      "stops": [
+        {
+          "nodeId": "theme-truth",
+          "chapterTitle": "Chương I: Tiếng Gọi Chân Lý",
+          "chapterPrompt": "Khởi đầu từ khát vọng hiểu biết trần trụi."
+        },
+        {
+          "nodeId": "idea-uncomfortable-truth",
+          "chapterTitle": "Chương II: Cơn Mê Êm Đềm",
+          "chapterPrompt": "Vì sao ta thích lời dối gian dễ chịu?"
+        },
+        {
+          "nodeId": "quote-txt-0001",
+          "chapterTitle": "Chương III: Chiếc Gương Dostoevsky",
+          "chapterPrompt": "Đứng ngoài cuộc thì ai cũng sáng suốt."
+        },
+        {
+          "nodeId": "theme-self-deception",
+          "chapterTitle": "Chương IV: Vùng An Toàn Giả Tạo",
+          "chapterPrompt": "Cái giá của sự chối bỏ."
+        },
+        {
+          "nodeId": "thinker-michel-de-montaigne",
+          "chapterTitle": "Chương V: Hoài Nghi Lành Mạnh",
+          "chapterPrompt": "Tôi thật sự biết được những gì?"
+        },
+        {
+          "nodeId": "idea-confirmation-bias",
+          "chapterTitle": "Chương VI: Chiếc Kính Màu",
+          "chapterPrompt": "Ta chỉ thấy điều ta muốn thấy."
+        },
+        {
+          "nodeId": "art-astronomer-vermeer",
+          "chapterTitle": "Chương VII: Ngẩng Đầu Lên Bầu Trời",
+          "chapterPrompt": "Chân lý tĩnh lặng của nhà thiên văn."
+        }
+      ]
+    },
+    {
+      "id": "trail-ego-and-recognition",
+      "slug": "ban-nga-va-su-cong-nhan",
+      "label": "Bản Ngã & Sự Công Nhận",
+      "title": "Bản Ngã & Sự Công Nhận",
+      "title_en": "Ego & Recognition",
+      "subtitle": "Thoát khỏi chiếc lồng của sự hơn người và nỗi lo âu địa vị.",
+      "description": "Lần theo dấu vết của ái kỷ bản ngã qua huyền thoại Narcissus, triết học Schopenhauer và bài học về bản sắc chân thật.",
+      "introPrompt": "Ta đang sống cho chính mình, hay đang trình diễn cho một khán phòng tưởng tượng?",
+      "closingPrompt": "Khi ánh đèn sân khấu tắt đi, con người thật của bạn có đủ bình yên để ở một mình?",
+      "themeCode": "EGO",
+      "estimatedMinutes": 9,
+      "coverArtworkId": "theme_01",
+      "status": "PUBLISHED",
+      "orderedNodeIds": [
+        "theme-ego",
+        "idea-inflated-ego",
+        "art-narcissus",
+        "quote-txt-0004",
+        "theme-status",
+        "idea-status-anxiety",
+        "thinker-arthur-schopenhauer",
+        "idea-true-identity"
+      ]
+    },
+    {
+      "id": "trail-freedom-and-boundaries",
+      "slug": "tu-do-va-gioi-han",
+      "title": "Tự Do & Giới Hạn",
+      "title_en": "Freedom & Boundaries",
+      "subtitle": "Nghịch lý của sự tự chủ và năng lực tự nguyện chấp nhận kỷ luật.",
+      "description": "Từ sự ngụy biện thoái thác trách nhiệm của Sartre đến dũng khí nói \"Không\" của Epictetus để bảo vệ ranh giới cá nhân.",
+      "introPrompt": "Tự do có phải là muốn làm gì thì làm, hay là biết từ chối những gì làm xói mòn phẩm giá?",
+      "closingPrompt": "Bạn có sẵn sàng trả cái giá của sự tự do bằng việc tự gánh vác mọi quyết định?",
+      "themeCode": "FREEDOM",
+      "estimatedMinutes": 8,
+      "coverArtworkId": "theme_07",
+      "status": "PUBLISHED",
+      "orderedNodeIds": [
+        "theme-freedom",
+        "idea-paradox-of-freedom",
+        "thinker-jean-paul-sartre",
+        "theme-bad-faith",
+        "theme-boundaries",
+        "idea-healthy-boundaries",
+        "thinker-epictetus",
+        "quote-txt-0012"
+      ]
+    },
+    {
+      "id": "trail-solitude-and-communion",
+      "slug": "co-doc-va-ket-noi",
+      "title": "Cô Độc & Gắn Kết",
+      "title_en": "Solitude & Communion",
+      "subtitle": "Nghệ thuật ở một mình và nhịp cầu dẫn sang tình yêu trưởng thành.",
+      "description": "Đi từ nỗi sợ cô đơn đến sự cô độc đĩnh đạc của Pascal và Friedrich, gặp gỡ tình yêu giữa hai tâm hồn tự do.",
+      "introPrompt": "Ta tìm đến người khác để lấp đầy khoảng trống, hay để sẻ chia sự vẹn tròn?",
+      "closingPrompt": "Chỉ kẻ không sợ cô độc mới có thể yêu thương mà không bóp nghẹt đối phương.",
+      "themeCode": "SOLITUDE",
+      "estimatedMinutes": 7,
+      "coverArtworkId": "theme_03",
+      "status": "PUBLISHED",
+      "orderedNodeIds": [
+        "theme-solitude",
+        "thinker-blaise-pascal",
+        "idea-sanctuary-of-solitude",
+        "art-wanderer-fog",
+        "quote-txt-0009",
+        "theme-connection",
+        "idea-mature-love",
+        "quote-txt-0015"
+      ]
+    },
+    {
+      "id": "trail-power-and-machination",
+      "slug": "quyen-luc-va-dao-duc",
+      "title": "Quyền Lực & Đạo Đức",
+      "title_en": "Power & Machination",
+      "subtitle": "Bóc trần tâm lý học kiểm soát ngầm và chiếc bẫy tội lỗi vô hình.",
+      "description": "Khảo sát những mưu mô thao túng trong quan hệ thân cận, tiêu chuẩn kép và sự phản kháng vì phẩm giá.",
+      "introPrompt": "Đằng sau những lời lẽ đạo lý ngọt ngào, động cơ thật sự là gì?",
+      "closingPrompt": "Nhận diện chiếc bẫy thao túng là bước đầu tiên để giành lại quyền làm chủ cuộc đời.",
+      "themeCode": "POWER",
+      "estimatedMinutes": 8,
+      "coverArtworkId": "theme_02",
+      "status": "PUBLISHED",
+      "orderedNodeIds": [
+        "theme-power",
+        "idea-covert-machination",
+        "quote-txt-0011",
+        "theme-manipulation",
+        "art-saturn-son",
+        "theme-double-standard",
+        "idea-double-morality",
+        "art-judith-beheading"
+      ]
+    },
+    {
+      "id": "trail-suffering-and-purpose",
+      "slug": "dau-kho-va-y-nghia",
+      "title": "Đau Khổ & Ý Nghĩa",
+      "title_en": "Suffering & Purpose",
+      "subtitle": "Chuyển hóa bi kịch cá nhân thành điểm tựa cho sự trưởng thành.",
+      "description": "Học thuyết Khắc kỷ của Marcus Aurelius và Dostoevsky về việc gìn giữ phẩm giá và niềm tin giữa nghịch cảnh.",
+      "introPrompt": "Khi đau khổ ập đến, ta để nó biến mình thành kẻ cay độc hay là kẻ sâu sắc hơn?",
+      "closingPrompt": "Đau khổ không có ý nghĩa tự thân; chính thái độ can trường của bạn ban cho nó ý nghĩa.",
+      "themeCode": "SUFFERING",
+      "estimatedMinutes": 8,
+      "coverArtworkId": "theme_06",
+      "status": "PUBLISHED",
+      "orderedNodeIds": [
+        "theme-suffering",
+        "idea-stoic-resilience",
+        "thinker-marcus-aurelius",
+        "quote-txt-0013",
+        "theme-resilience",
+        "idea-tragic-optimism",
+        "thinker-fyodor-dostoevsky",
+        "theme-serenity"
+      ]
+    },
+    {
+      "id": "trail-mask-and-authenticity",
+      "slug": "mat-na-va-tinh-chan-thuc",
+      "title": "Mặt Nạ & Tính Chân Thực",
+      "title_en": "Mask & Authenticity",
+      "subtitle": "Đối diện bóng tối nội tâm để tìm lại con người chân thật.",
+      "description": "Hành trình cùng Carl Jung bóc trần chiếc mặt nạ xã hội và hòa giải với phần tối của bản ngã.",
+      "introPrompt": "Ta sẵn sàng đánh mất bản sắc của mình để đổi lấy sự chấp nhận của đám đông đến bao giờ?",
+      "closingPrompt": "Trở nên trọn vẹn quan trọng hơn là tỏ ra hoàn hảo.",
+      "themeCode": "MASK",
+      "estimatedMinutes": 8,
+      "coverArtworkId": "theme_05",
+      "status": "PUBLISHED",
+      "orderedNodeIds": [
+        "theme-mask",
+        "idea-social-persona",
+        "thinker-carl-jung",
+        "theme-shadow",
+        "idea-jungian-shadow",
+        "art-garden-delights",
+        "quote-txt-0016",
+        "theme-crowd"
+      ]
+    },
+    {
+      "id": "trail-aesthetics-and-worldview",
+      "slug": "tham-my-va-the-gioi-quan",
+      "title": "Thẩm Mỹ & Cái Nhìn Thế Giới",
+      "title_en": "Aesthetics & Worldview",
+      "subtitle": "Nơi kiệt tác mỹ thuật bảo tàng gặp gỡ những câu hỏi nhân văn vĩnh cửu.",
+      "description": "Khám phá bức bích họa Trường Học Athens của Raphael và cách hội họa cổ điển đánh thức tư duy triết học.",
+      "introPrompt": "Một bức tranh có thể thay đổi cách bạn nhìn cuộc đời như thế nào?",
+      "closingPrompt": "The Atlas không khép lại; mỗi điểm dừng là một lời mời tiếp tục đối thoại và tự vấn.",
+      "themeCode": "PSYCHOLOGY",
+      "estimatedMinutes": 7,
+      "coverArtworkId": "theme_08",
+      "status": "PUBLISHED",
+      "orderedNodeIds": [
+        "theme-psychology",
+        "idea-museum-dialogue",
+        "art-school-of-athens",
+        "thinker-friedrich-nietzsche",
+        "theme-truth",
+        "quote-txt-0001",
+        "quote-txt-0008"
+      ]
+    }
+  ]
+}

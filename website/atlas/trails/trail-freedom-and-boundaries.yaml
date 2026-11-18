@@ -1,0 +1,25 @@
+id: trail-freedom-and-boundaries
+slug: tu-do-va-gioi-han
+title: Tự Do & Giới Hạn
+title_en: Freedom & Boundaries
+subtitle: Nghịch lý của sự tự chủ và năng lực tự nguyện chấp nhận kỷ luật.
+description: >-
+  Từ sự ngụy biện thoái thác trách nhiệm của Sartre đến dũng khí nói "Không" của
+  Epictetus để bảo vệ ranh giới cá nhân.
+introPrompt: >-
+  Tự do có phải là muốn làm gì thì làm, hay là biết từ chối những gì làm xói mòn
+  phẩm giá?
+closingPrompt: Bạn có sẵn sàng trả cái giá của sự tự do bằng việc tự gánh vác mọi quyết định?
+themeCode: FREEDOM
+estimatedMinutes: 8
+coverArtworkId: theme_07
+status: PUBLISHED
+orderedNodeIds:
+  - theme-freedom
+  - idea-paradox-of-freedom
+  - thinker-jean-paul-sartre
+  - theme-bad-faith
+  - theme-boundaries
+  - idea-healthy-boundaries
+  - thinker-epictetus
+  - quote-txt-0012

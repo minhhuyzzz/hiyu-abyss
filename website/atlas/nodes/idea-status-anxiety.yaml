@@ -1,0 +1,22 @@
+id: idea-status-anxiety
+kind: idea
+status: PUBLISHED
+slug: lo-au-dia-vi
+label: Nỗi Lo Âu Về Địa Vị Xã Hội
+label_en: Status Anxiety & Social Comparison
+summary: >-
+  Sự kiệt sức khi biến ánh mắt và sự phán xét của kẻ khác thành chiếc thước đo
+  giá trị bản thân.
+topicCodes:
+  - STATUS
+  - EGO
+relatedContentIds:
+  - TXT-0005
+artworkId: theme_04
+visual:
+  region: region-ego-and-illusion
+  x: 690
+  'y': 260
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

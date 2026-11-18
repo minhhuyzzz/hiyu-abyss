@@ -1,0 +1,22 @@
+id: idea-toxic-gratitude
+kind: idea
+status: PUBLISHED
+slug: khoan-no-an-tinh
+label: Khoản Nợ Ân Tình Độc Hại
+label_en: Toxic Indebtedness & Manipulation
+summary: >-
+  Lòng tốt bị biến tướng thành xiềng xích thao túng khi người cho ngầm đòi hỏi
+  sự phục tùng vô điều kiện.
+topicCodes:
+  - MORALITY
+  - MANIPULATION
+relatedContentIds:
+  - TXT-0007
+artworkId: theme_02
+visual:
+  region: region-freedom-and-order
+  x: 790
+  'y': 520
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

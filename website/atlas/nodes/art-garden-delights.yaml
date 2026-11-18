@@ -1,0 +1,20 @@
+id: art-garden-delights
+kind: artwork
+status: PUBLISHED
+slug: khu-vuon-khoai-lac-bosch
+label: Khu Vườn Khoái Lạc (Bosch, 1500)
+label_en: The Garden of Earthly Delights - Bosch
+summary: >-
+  Bức triptych siêu thực mô tả sự cám dỗ, sa ngã và những chiếc bẫy dục vọng hỗn
+  loạn của bản tính con người.
+topicCodes:
+  - HYPOCRISY
+  - MORALITY
+artworkId: theme_05
+visual:
+  region: region-masks-and-authenticity
+  x: 160
+  'y': 490
+  priority: 8
+  glyph: ❖
+  cartoucheStyle: plate

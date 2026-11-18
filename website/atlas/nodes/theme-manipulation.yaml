@@ -1,0 +1,23 @@
+id: theme-manipulation
+kind: theme
+status: PUBLISHED
+slug: manipulation
+label: Thao Túng Cảm Xúc
+label_en: MANIPULATION
+summary: >-
+  Chủ đề hạt nhân Thao Túng Cảm Xúc trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - MANIPULATION
+relatedContentIds:
+  - TXT-0041
+  - TXT-0042
+  - TXT-0043
+artworkId: theme_41
+visual:
+  region: region-power-and-machination
+  x: 530
+  'y': 860
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument

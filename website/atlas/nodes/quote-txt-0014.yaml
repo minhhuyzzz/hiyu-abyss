@@ -1,0 +1,23 @@
+id: quote-txt-0014
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0014
+label: >-
+  Folio #0014: Hy sinh bản thân để làm hài lòng tất cả là cách nhanh nhất để
+  đánh mất chính mình.
+label_en: 'Folio #0014'
+summary: >-
+  Cố gắng làm vừa lòng tất cả mọi người là cách nhanh nhất để biến mình thành
+  một con rối không có cá tính.
+topicCodes:
+  - MORALITY
+relatedContentIds:
+  - TXT-0014
+artworkId: theme_14
+visual:
+  region: region-power-and-machination
+  x: 435
+  'y': 855
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

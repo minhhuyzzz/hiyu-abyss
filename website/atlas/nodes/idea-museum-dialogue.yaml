@@ -1,0 +1,22 @@
+id: idea-museum-dialogue
+kind: idea
+status: PUBLISHED
+slug: my-thuat-doi-thoai-tri-tue
+label: Hội Họa Bảo Tàng Như Một Tấm Gương Tự Vấn
+label_en: Museum Art as a Reflective Mirror
+summary: >-
+  Kiệt tác hội họa không đơn thuần sao chép tự nhiên; nó là sự cô đọng của những
+  bi kịch và khát vọng nhân tính.
+topicCodes:
+  - PSYCHOLOGY
+relatedContentIds:
+  - TXT-0001
+  - TXT-0008
+artworkId: theme_08
+visual:
+  region: region-aesthetic-and-worldview
+  x: 480
+  'y': 470
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

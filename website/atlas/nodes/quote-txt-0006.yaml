@@ -1,0 +1,23 @@
+id: quote-txt-0006
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0006
+label: >-
+  Folio #0006: Lỗi của người khác ta gọi là bản chất, lỗi của bản thân ta gọi là
+  hoàn cảnh.
+label_en: 'Folio #0006'
+summary: >-
+  Ta gọi lỗi lầm của người khác là bản chất, nhưng lại gọi chính lỗi lầm ấy ở
+  mình là hoàn cảnh bắt buộc.
+topicCodes:
+  - DOUBLE_STANDARD
+relatedContentIds:
+  - TXT-0006
+artworkId: theme_06
+visual:
+  region: region-freedom-and-order
+  x: 815
+  'y': 445
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

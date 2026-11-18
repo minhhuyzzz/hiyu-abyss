@@ -1,0 +1,23 @@
+id: theme-resilience
+kind: theme
+status: PUBLISHED
+slug: resilience
+label: Kiên Cường Nội Tại
+label_en: RESILIENCE
+summary: >-
+  Chủ đề hạt nhân Kiên Cường Nội Tại trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - RESILIENCE
+relatedContentIds:
+  - TXT-0117
+  - TXT-0118
+  - TXT-0119
+artworkId: theme_117
+visual:
+  region: region-suffering-and-purpose
+  x: 170
+  'y': 770
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument

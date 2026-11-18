@@ -1,0 +1,23 @@
+id: idea-double-morality
+kind: idea
+status: PUBLISHED
+slug: tieu-chuan-kep-dao-duc
+label: Tiêu Chuẩn Kép Khi Phán Xét Kẻ Khác
+label_en: The Micro-Injustice of Double Standards
+summary: >-
+  Ta phán xét người khác dựa trên hành vi thô ráp, nhưng lại đòi hỏi người khác
+  nhìn nhận ta qua ý định tốt đẹp.
+topicCodes:
+  - DOUBLE_STANDARD
+  - HYPOCRISY
+relatedContentIds:
+  - TXT-0007
+  - TXT-0014
+artworkId: theme_04
+visual:
+  region: region-power-and-machination
+  x: 440
+  'y': 850
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

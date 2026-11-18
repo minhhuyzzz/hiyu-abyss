@@ -1,0 +1,23 @@
+id: theme-connection
+kind: theme
+status: PUBLISHED
+slug: connection
+label: Kết Nối Sâu Sắc
+label_en: CONNECTION
+summary: >-
+  Chủ đề hạt nhân Kết Nối Sâu Sắc trong kho lưu trữ Hiyu Abyss, kết nối các tác
+  phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - CONNECTION
+relatedContentIds:
+  - TXT-0128
+  - TXT-0129
+  - TXT-0130
+artworkId: theme_128
+visual:
+  region: region-solitude-and-communion
+  x: 710
+  'y': 790
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument

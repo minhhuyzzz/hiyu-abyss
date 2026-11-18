@@ -1,0 +1,22 @@
+id: idea-herd-mentality
+kind: idea
+status: PUBLISHED
+slug: ao-anh-dam-dong
+label: Ảo Ảnh Số Đông & Sự Đánh Mất Lương Tri
+label_en: The Herd Mentality & Moral Abdication
+summary: >-
+  Đám đông mang lại cảm giác an toàn giả tạo, nhưng cái giá phải trả là sự triệt
+  tiêu hoàn toàn tư duy độc lập.
+topicCodes:
+  - CROWD
+  - TRANSCENDENCE
+relatedContentIds:
+  - TXT-0019
+artworkId: theme_04
+visual:
+  region: region-masks-and-authenticity
+  x: 150
+  'y': 520
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

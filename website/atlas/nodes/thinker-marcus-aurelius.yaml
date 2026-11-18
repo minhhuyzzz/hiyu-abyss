@@ -1,0 +1,25 @@
+id: thinker-marcus-aurelius
+kind: thinker
+status: PUBLISHED
+slug: marcus-aurelius
+label: Marcus Aurelius (121–180)
+label_en: Marcus Aurelius
+summary: >-
+  Hoàng đế La Mã và triết gia Khắc kỷ. Tác giả của "Trầm Tưởng" (Meditations),
+  biểu tượng của sự tĩnh tại nội tâm trước biến động.
+topicCodes:
+  - SERENITY
+  - RESILIENCE
+  - DUTY
+artworkId: theme_08
+sourceRefs:
+  - title: Meditations (Trầm Tưởng)
+    author: Marcus Aurelius
+    year: 180 AD
+visual:
+  region: region-suffering-and-purpose
+  x: 190
+  'y': 690
+  priority: 9
+  glyph: ☥
+  cartoucheStyle: medallion

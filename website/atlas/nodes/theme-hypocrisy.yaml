@@ -1,0 +1,23 @@
+id: theme-hypocrisy
+kind: theme
+status: PUBLISHED
+slug: hypocrisy
+label: Đạo Đức Giả
+label_en: HYPOCRISY
+summary: >-
+  Chủ đề hạt nhân Đạo Đức Giả trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm
+  văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - HYPOCRISY
+relatedContentIds:
+  - TXT-0001
+  - TXT-0002
+  - TXT-0003
+artworkId: theme_01
+visual:
+  region: region-masks-and-authenticity
+  x: 110
+  'y': 490
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument

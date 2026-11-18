@@ -1,0 +1,23 @@
+id: quote-txt-0018
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0018
+label: >-
+  Folio #0018: Càng nhạy cảm và dễ tự ái, chứng tỏ nội tâm bên trong càng bất
+  an.
+label_en: 'Folio #0018'
+summary: >-
+  Kẻ có thực lực không dựng gai nhọn khắp người để tự vệ; chỉ kẻ yếu đuối mới
+  thấy lời nói nào cũng là sự công kích.
+topicCodes:
+  - EGO
+relatedContentIds:
+  - TXT-0018
+artworkId: theme_18
+visual:
+  region: region-suffering-and-purpose
+  x: 245
+  'y': 775
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

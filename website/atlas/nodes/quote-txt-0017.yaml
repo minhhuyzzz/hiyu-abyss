@@ -1,0 +1,23 @@
+id: quote-txt-0017
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0017
+label: >-
+  Folio #0017: Nhu cầu chứng minh mình đúng luôn đi kèm với sự bất an sâu thẳm
+  bên trong.
+label_en: 'Folio #0017'
+summary: >-
+  Người luôn cố chứng minh mình đúng thực chất là người đang bất an nhất trước
+  khả năng mình có thể sai lầm.
+topicCodes:
+  - EGO
+relatedContentIds:
+  - TXT-0017
+artworkId: theme_17
+visual:
+  region: region-masks-and-authenticity
+  x: 145
+  'y': 445
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

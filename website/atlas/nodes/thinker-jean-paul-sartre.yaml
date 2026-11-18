@@ -1,0 +1,24 @@
+id: thinker-jean-paul-sartre
+kind: thinker
+status: PUBLISHED
+slug: jean-paul-sartre
+label: Jean-Paul Sartre (1905–1980)
+label_en: Jean-Paul Sartre
+summary: >-
+  Đại diện tiêu biểu của chủ nghĩa hiện sinh Pháp. Nổi tiếng với luận điểm "Hiện
+  sinh có trước bản chất" và phân tích về Sự Ngụy Biện (Bad Faith).
+topicCodes:
+  - BAD_FAITH
+  - FREEDOM
+artworkId: theme_07
+sourceRefs:
+  - title: Being and Nothingness (Tồn Tại và Hư Vô)
+    author: Jean-Paul Sartre
+    year: '1943'
+visual:
+  region: region-freedom-and-order
+  x: 880
+  'y': 530
+  priority: 9
+  glyph: ☥
+  cartoucheStyle: medallion

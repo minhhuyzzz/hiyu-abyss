@@ -1,0 +1,20 @@
+id: theme-bad-faith
+kind: theme
+status: PUBLISHED
+slug: bad-faith
+label: Trốn Tránh Trách Nhiệm
+label_en: BAD FAITH
+summary: >-
+  Chủ đề hạt nhân Trốn Tránh Trách Nhiệm trong kho lưu trữ Hiyu Abyss, kết nối
+  các tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - BAD_FAITH
+relatedContentIds: []
+artworkId: theme_01
+visual:
+  region: region-freedom-and-order
+  x: 850
+  'y': 550
+  priority: 7
+  glyph: ◈
+  cartoucheStyle: monument

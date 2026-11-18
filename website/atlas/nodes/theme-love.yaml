@@ -1,0 +1,23 @@
+id: theme-love
+kind: theme
+status: PUBLISHED
+slug: love
+label: Tình Yêu Trưởng Thành
+label_en: LOVE
+summary: >-
+  Chủ đề hạt nhân Tình Yêu Trưởng Thành trong kho lưu trữ Hiyu Abyss, kết nối
+  các tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - LOVE
+relatedContentIds:
+  - TXT-0056
+  - TXT-0057
+  - TXT-0058
+artworkId: theme_56
+visual:
+  region: region-solitude-and-communion
+  x: 800
+  'y': 770
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument

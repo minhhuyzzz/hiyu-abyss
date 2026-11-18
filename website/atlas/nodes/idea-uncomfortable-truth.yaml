@@ -1,0 +1,23 @@
+id: idea-uncomfortable-truth
+kind: idea
+status: PUBLISHED
+slug: su-that-buot-gia
+label: Sự Thật Buốt Giá & Cơn Mê Êm Đềm
+label_en: Uncomfortable Truth vs Soothing Illusion
+summary: >-
+  Con người thường chọn một lời dối gian dễ chịu hơn là một sự thật làm đổ vỡ
+  niềm tin đã dựng sẵn.
+topicCodes:
+  - TRUTH
+  - SELF_DECEPTION
+relatedContentIds:
+  - TXT-0001
+  - TXT-0003
+artworkId: theme_03
+visual:
+  region: region-human-condition
+  x: 310
+  'y': 240
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

@@ -1,0 +1,134 @@
+---
+// website/src/pages/atlas/trails/[slug].astro
+// Static landing exhibition view for each curated trail
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getAllAtlasTrails, getAtlasNodeById } from '../../../lib/atlas/loader';
+import type { AtlasTrail } from '../../../lib/atlas/types';
+
+export function getStaticPaths() {
+  const trails = getAllAtlasTrails();
+  return trails.map((trail) => ({
+    params: { slug: trail.slug },
+    props: { trail },
+  }));
+}
+
+interface Props {
+  trail: AtlasTrail;
+}
+
+const { trail } = Astro.props;
+const orderedNodes = trail.orderedNodeIds
+  .map((id) => getAtlasNodeById(id))
+  .filter(Boolean);
+
+const pageTitle = `Tuyến Khám Phá: ${trail.title} · The Atlas`;
+const pageDescription = trail.description;
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  image={trail.coverArtworkId ? `/images/themes/${trail.coverArtworkId}/slide_1_establishing.jpg` : '/images/themes/theme_08/slide_1_establishing.jpg'}
+>
+  <div class="w-full min-h-screen bg-bg text-text py-12 px-4 sm:px-6">
+    <div class="max-w-3xl mx-auto space-y-8 animate-fade-in">
+      <!-- Breadcrumb -->
+      <div class="flex items-center gap-2 text-xs font-mono text-muted border-b border-border pb-4">
+        <a href="/atlas" class="hover:text-accent transition-colors">← The Atlas</a>
+        <span>/</span>
+        <span class="text-accent">Tuyến Khám Phá</span>
+        <span>/</span>
+        <span class="text-text font-medium truncate">{trail.title}</span>
+      </div>
+
+      <!-- Header Section -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-2 text-xs font-mono text-accent">
+          <span class="uppercase tracking-widest px-2 py-0.5 rounded bg-surface border border-border">
+            {trail.themeCode}
+          </span>
+          <span>·</span>
+          <span>{trail.orderedNodeIds.length} Chặng Dừng</span>
+          <span>·</span>
+          <span>Ước tính {trail.estimatedMinutes} phút chiêm nghiệm</span>
+        </div>
+
+        <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-medium text-text tracking-tight leading-tight">
+          {trail.title}
+        </h1>
+
+        <p class="font-serif italic text-lg text-muted">
+          "{trail.subtitle}"
+        </p>
+
+        <p class="font-sans text-sm text-text/80 leading-relaxed max-w-2xl">
+          {trail.description}
+        </p>
+      </div>
+
+      <!-- Start Trail CTA Button -->
+      <div class="p-6 rounded-sm bg-surface-raised border border-accent/40 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-md">
+        <div>
+          <span className="font-mono text-[10px] uppercase tracking-widest text-accent">Trải nghiệm tương tác</span>
+          <h3 class="font-serif font-medium text-lg text-text mt-0.5">
+            Bắt đầu chuyến thám hiểm trên bản đồ
+          </h3>
+          <p class="font-sans text-xs text-muted mt-1">
+            Bản đồ sẽ tự động định vị và dẫn lối bạn qua từng tọa độ tư tưởng theo thứ tự giám tuyển.
+          </p>
+        </div>
+        <a
+          href={`/atlas?trail=${trail.slug}`}
+          class="shrink-0 px-6 py-3 rounded-sm bg-accent text-on-accent font-sans text-xs uppercase tracking-widest font-semibold hover:brightness-110 transition-all text-center shadow-sm"
+        >
+          Khởi Hành Ngay →
+        </a>
+      </div>
+
+      <!-- Thought Prompt Callout -->
+      {trail.introPrompt && (
+        <div class="p-5 rounded-sm bg-surface border-l-2 border-accent italic font-serif text-base text-text">
+          "{trail.introPrompt}"
+        </div>
+      )}
+
+      <!-- Ordered Stops Exhibition List -->
+      <div class="space-y-4 pt-4 border-t border-border">
+        <h3 class="font-mono text-xs uppercase tracking-widest text-text font-semibold">
+          Lộ Trình Các Chặng Dừng ({orderedNodes.length})
+        </h3>
+
+        <div class="space-y-3">
+          {orderedNodes.map((node, index) => (
+            <div class="p-4 rounded-sm bg-surface border border-border flex items-start gap-4">
+              <span class="font-mono text-sm font-semibold text-accent/80 w-6 pt-0.5 shrink-0">
+                {String(index + 1).padStart(2, '0')}.
+              </span>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="text-[10px] font-mono uppercase px-1.5 py-0.5 rounded bg-bg text-muted border border-border">
+                    {node?.kind.toUpperCase()}
+                  </span>
+                  <h4 class="font-serif font-medium text-base text-text">
+                    {node?.label}
+                  </h4>
+                </div>
+                <p class="font-sans text-xs text-muted leading-relaxed">
+                  {node?.summary}
+                </p>
+              </div>
+              <a
+                href={`/atlas/ideas/${node?.slug}`}
+                class="shrink-0 p-2 text-muted hover:text-accent transition-colors"
+                title="Xem chi tiết tọa độ này"
+              >
+                →
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

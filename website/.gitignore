@@ -23,3 +23,7 @@ test-artifacts/
 # Cloudflare Wrangler
 .wrangler/
 
+# Vercel
+.vercel/
+
+

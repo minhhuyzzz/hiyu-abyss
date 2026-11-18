@@ -50,4 +50,8 @@ assets/templates/raw_cache/
 .env
 .env.*
 
+# Vercel & Deploy
+.vercel/
+website/.vercel/
+
 website/test-artifacts/

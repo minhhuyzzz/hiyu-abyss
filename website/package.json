@@ -3,8 +3,8 @@
   "type": "module",
   "version": "2.1.0",
   "scripts": {
-    "prebuild": "node ../scripts/build-content-cache.mjs && node ../scripts/build-atlas-data.mjs",
-    "predev": "node ../scripts/build-content-cache.mjs && node ../scripts/build-atlas-data.mjs",
+    "prebuild": "node scripts/prebuild.mjs",
+    "predev": "node scripts/prebuild.mjs",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
@@ -14,6 +14,7 @@
   "dependencies": {
     "@astrojs/cloudflare": "^14.4.8",
     "@astrojs/react": "^7.1.9",
+    "@astrojs/vercel": "^11.0.22",
     "@fontsource/be-vietnam-pro": "^5.1.1",
     "@fontsource/cormorant-garamond": "^5.1.1",
     "@fontsource/literata": "^5.1.1",

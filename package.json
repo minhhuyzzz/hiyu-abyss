@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "npm run build --prefix website",
+    "build": "npm run build --prefix website && node scripts/sync-vercel-output.mjs",
     "deploy": "npx wrangler pages deploy website/dist --project-name=hiyu-abyss"
   }
 }

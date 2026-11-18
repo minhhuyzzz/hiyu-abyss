@@ -4,11 +4,12 @@ import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import LibraryComments from '../../../../components/library/LibraryComments';
 import { AgoraService } from '../../../../lib/agora/service';
 import { renderSafeMarkdown } from '../../../../lib/agora/sanitizer';
+import { getCloudflareEnv } from '../../../../lib/cloudflare-env';
 
 export const prerender = false;
 
 const threadId = Astro.params.id;
-const service = new AgoraService(Astro.locals?.runtime?.env);
+const service = new AgoraService(getCloudflareEnv(Astro.locals));
 const thread = threadId ? await service.getThreadById(threadId) : null;
 
 if (!thread) {

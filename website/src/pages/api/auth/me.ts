@@ -2,9 +2,10 @@ export const prerender = false;
 
 import type { APIRoute } from 'astro';
 import { getSession } from '../../../lib/agora/auth';
+import { getCloudflareEnv } from '../../../lib/cloudflare-env';
 
 export const GET: APIRoute = async ({ request, locals }) => {
-  const session = await getSession(request, (locals as any)?.runtime?.env);
+  const session = await getSession(request, getCloudflareEnv(locals));
 
   if (!session) {
     return new Response(

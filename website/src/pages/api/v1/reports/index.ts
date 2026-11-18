@@ -3,13 +3,14 @@ export const prerender = false;
 import type { APIRoute } from 'astro';
 import { AgoraService } from '../../../../lib/agora/service';
 import { createReportSchema } from '../../../../lib/agora/schemas';
+import { getCloudflareEnv } from '../../../../lib/cloudflare-env';
 
 export const POST: APIRoute = async ({ request, locals }) => {
   try {
     const body = await request.json();
     const validated = createReportSchema.parse(body);
 
-    const service = new AgoraService((locals as any)?.runtime?.env);
+    const service = new AgoraService(getCloudflareEnv(locals));
     const reporterId = 'usr_guest_demo';
 
     await service.createReport(validated, reporterId);

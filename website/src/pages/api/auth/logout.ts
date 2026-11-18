@@ -3,13 +3,14 @@ export const prerender = false;
 import type { APIRoute } from 'astro';
 import { parseCookie, SESSION_COOKIE_NAME, getClearSessionCookieHeader, deleteSession } from '../../../lib/agora/auth';
 import { getD1Database } from '../../../lib/agora/db';
+import { getCloudflareEnv } from '../../../lib/cloudflare-env';
 
 export const POST: APIRoute = async ({ request, locals }) => {
   const cookieHeader = request.headers.get('cookie');
   const token = parseCookie(cookieHeader, SESSION_COOKIE_NAME);
 
   if (token) {
-    const db = getD1Database((locals as any)?.runtime?.env);
+    const db = getD1Database(getCloudflareEnv(locals));
     await deleteSession(db, token);
   }
 
@@ -27,7 +28,7 @@ export const GET: APIRoute = async ({ request, locals, redirect }) => {
   const token = parseCookie(cookieHeader, SESSION_COOKIE_NAME);
 
   if (token) {
-    const db = getD1Database((locals as any)?.runtime?.env);
+    const db = getD1Database(getCloudflareEnv(locals));
     await deleteSession(db, token);
   }
 

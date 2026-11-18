@@ -1,33 +1,6 @@
-import fs from 'node:fs';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-import yaml from 'js-yaml';
 import type { PublicQuote, TopicDefinition, QuoteType, MirrorJourneyData, ScholarlySource, VerificationStatus } from './types';
-import artCatalog from '../data/asset-catalog.json';
-
-// Resolving cross-platform relative paths with multiple candidate fallbacks
-const currentDir = path.dirname(fileURLToPath(import.meta.url));
-
-const possibleManifestPaths = [
-  path.resolve(currentDir, '../../publication-manifest.yaml'),
-  path.resolve(process.cwd(), 'publication-manifest.yaml'),
-  path.resolve(process.cwd(), 'website/publication-manifest.yaml'),
-];
-const manifestPath = possibleManifestPaths.find((p) => fs.existsSync(p)) || possibleManifestPaths[0];
-
-const possibleContentDirs = [
-  path.resolve(currentDir, '../../../editorial/content'),
-  path.resolve(process.cwd(), '../editorial/content'),
-  path.resolve(process.cwd(), 'editorial/content'),
-];
-const contentDir = possibleContentDirs.find((p) => fs.existsSync(p)) || possibleContentDirs[0];
-
-const possibleJourneysDirs = [
-  path.resolve(currentDir, '../../journeys'),
-  path.resolve(process.cwd(), 'journeys'),
-  path.resolve(process.cwd(), 'website/journeys'),
-];
-const journeysDir = possibleJourneysDirs.find((p) => fs.existsSync(p)) || possibleJourneysDirs[0];
+import rawQuotes from '../data/published-quotes.json';
+import rawJourneys from '../data/published-journeys.json';
 
 const TOPIC_NAMES: Record<string, { title: string; desc: string }> = {
   HYPOCRISY: { title: 'Đạo Đức Giả & Giả Tạo', desc: 'Nhìn nhận sự khác biệt giữa lời nói đẹp đẽ và những toan tính thật sự bên trong.' },
@@ -61,172 +34,22 @@ const TOPIC_NAMES: Record<string, { title: string; desc: string }> = {
   PSYCHOLOGY: { title: 'Tâm Lý Con Người', desc: 'Khám phá những cơ chế tâm lý điều hướng hành vi trong cuộc sống.' },
 };
 
-const QUOTE_TYPE_LABELS: Record<QuoteType, string> = {
-  DIRECT_QUOTE: 'Trích dẫn nguyên văn',
-  PARAPHRASE: 'Diễn giải & Biên soạn',
-  INSPIRED_ORIGINAL: 'Lấy cảm hứng từ ý tưởng',
-  INDEPENDENT_ORIGINAL: 'Đúc kết Hiyu Abyss',
-};
-
-// Cache to prevent redundant filesystem reads
-let cachedQuotes: PublicQuote[] | null = null;
-
-function getManifestData(): any {
-  if (fs.existsSync(manifestPath)) {
-    const manifestContent = fs.readFileSync(manifestPath, 'utf-8');
-    return (yaml.load(manifestContent) as any) || {};
-  }
-  return {};
-}
-
-function parseMarkdownFile(filePath: string): { frontmatter: any; body: string } {
-  const fileContent = fs.readFileSync(filePath, 'utf-8');
-  const match = fileContent.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
-  if (!match) {
-    return { frontmatter: {}, body: fileContent };
-  }
-  const frontmatter = yaml.load(match[1]) as any;
-  const body = match[2];
-  return { frontmatter, body };
-}
+const quotes: PublicQuote[] = rawQuotes as PublicQuote[];
+const journeys: MirrorJourneyData[] = rawJourneys as MirrorJourneyData[];
 
 export function getAllPublishedQuotes(): PublicQuote[] {
-  if (cachedQuotes) return cachedQuotes;
-
-  // 1. Read Manifest
-  let publicIds: string[] = [];
-  let featuredIds: string[] = [];
-
-  if (fs.existsSync(manifestPath)) {
-    const manifestContent = fs.readFileSync(manifestPath, 'utf-8');
-    const parsed = yaml.load(manifestContent) as any;
-    publicIds = parsed?.public_content_ids || [];
-    featuredIds = parsed?.featured_content_ids || [];
-  }
-
-  // 2. Read Content Files
-  const quotes: PublicQuote[] = [];
-
-  for (const id of publicIds) {
-    const filePath = path.join(contentDir, `${id}.md`);
-    if (!fs.existsSync(filePath)) continue;
-
-    const { frontmatter, body } = parseMarkdownFile(filePath);
-
-    // GATE CHECK: Must be APPROVED, PUBLISHED, or SẴN SÀNG
-    const status = frontmatter?.status?.toUpperCase();
-    if (status !== 'APPROVED' && status !== 'PUBLISHED' && status !== 'SẴN SÀNG' && status !== 'READY') {
-      continue;
-    }
-
-    // Extract content & commentary
-    const quoteMatch = body.match(/^>\s*(.+)$/m);
-    const content = quoteMatch ? quoteMatch[1].trim() : frontmatter?.title || '';
-
-    const descMatch = body.match(/## Diễn Giải & Chiêm Nghiệm Biên Tập\r?\n([\s\S]*?)(?=\r?\n##|$)/);
-    const description = descMatch ? descMatch[1].trim() : '';
-
-    const s1Match = body.match(/- \*\*Trang 1 \(Hook\):\*\* (.+)$/m);
-    const s2Match = body.match(/- \*\*Trang 2 \(Cú lật\):\*\* (.+)$/m);
-    const s3Match = body.match(/- \*\*Trang 3 \(Phản tư\):\*\* (.+)$/m);
-    const s4Match = body.match(/- \*\*Trang 4 \(Đúc kết\):\*\* (.+)$/m);
-
-    // Parse clean title and intent badge
-    const rawTitle = frontmatter?.title || '';
-    let cleanTitle = rawTitle;
-    let intentBadge = '';
-    const bracketMatch = rawTitle.match(/^\[(.*?)\]\s*(.*)$/);
-    if (bracketMatch) {
-      intentBadge = bracketMatch[1];
-      cleanTitle = bracketMatch[2];
-    }
-
-    const topicCodes: string[] = Array.isArray(frontmatter?.topic_codes)
-      ? frontmatter.topic_codes
-      : ['PSYCHOLOGY'];
-    const primaryTopic = topicCodes[0] || 'PSYCHOLOGY';
-    const primaryTopicTitle = TOPIC_NAMES[primaryTopic]?.title || primaryTopic;
-
-    const quoteType: QuoteType = frontmatter?.content_type || 'PARAPHRASE';
-    const imageRef = frontmatter?.image_ref || 'theme_01';
-    const rawArt = (artCatalog as any)[imageRef];
-    const artInfo = rawArt
-      ? {
-          ...rawArt,
-          provenance_type: rawArt.provenance_type || 'TRANSFORMED_PUBLIC_DOMAIN',
-        }
-      : undefined;
-
-    // Academic Rigor: Build ScholarlySource per HYA-02 (P0-01)
-    let verificationStatus: VerificationStatus = 'PENDING_VERIFICATION';
-    if (quoteType === 'INSPIRED_ORIGINAL') {
-      verificationStatus = 'INSPIRED_ORIGINAL';
-    } else if (quoteType === 'INDEPENDENT_ORIGINAL') {
-      verificationStatus = 'INDEPENDENT_ORIGINAL';
-    } else if (frontmatter?.verification_status) {
-      verificationStatus = frontmatter.verification_status;
-    } else if (frontmatter?.source_work && frontmatter?.source_location && frontmatter?.source_url) {
-      verificationStatus = 'VERIFIED_SOURCE';
-    } else {
-      verificationStatus = 'PENDING_VERIFICATION';
-    }
-
-    const scholarlySource: ScholarlySource = {
-      work: frontmatter?.source_work || undefined,
-      work_original: frontmatter?.source_work_original || undefined,
-      location: frontmatter?.source_location || undefined,
-      source_url: frontmatter?.source_url || undefined,
-      original_text: frontmatter?.original_text || undefined,
-      translation_note: frontmatter?.translation_note || undefined,
-      verification_status: verificationStatus,
-      verified_at: frontmatter?.verified_at || undefined,
-    };
-
-    quotes.push({
-      id,
-      slug: id.toLowerCase(),
-      title: rawTitle,
-      cleanTitle,
-      intentBadge,
-      content,
-      description,
-      author: frontmatter?.author_attribution || 'Khuyết danh',
-      quoteType,
-      quoteTypeLabel: QUOTE_TYPE_LABELS[quoteType] || 'Chiêm nghiệm',
-      scholarlySource,
-      topicCodes,
-      primaryTopic,
-      primaryTopicTitle,
-      imageRef,
-      artInfo,
-      slides: {
-        slide_1: s1Match ? s1Match[1].trim() : '-',
-        slide_2: s2Match ? s2Match[1].trim() : '-',
-        slide_3: s3Match ? s3Match[1].trim() : '-',
-        slide_4: s4Match ? s4Match[1].trim() : '-',
-      },
-      slideFormat: frontmatter?.slide_format || 'Carousel',
-      isFeatured: featuredIds.includes(id),
-      publishedAt: frontmatter?.created_at || '2026-11-14',
-    });
-  }
-
-  cachedQuotes = quotes;
-  return cachedQuotes;
+  return quotes;
 }
 
 export function getQuoteBySlug(slug: string): PublicQuote | undefined {
-  const all = getAllPublishedQuotes();
-  return all.find((q) => q.slug === slug.toLowerCase() || q.id.toLowerCase() === slug.toLowerCase());
+  return quotes.find((q) => q.slug === slug.toLowerCase() || q.id.toLowerCase() === slug.toLowerCase());
 }
 
 export function getFeaturedQuotes(): PublicQuote[] {
-  const all = getAllPublishedQuotes();
-  return all.filter((q) => q.isFeatured);
+  return quotes.filter((q) => q.isFeatured);
 }
 
 export function getAllTopics(): TopicDefinition[] {
-  const quotes = getAllPublishedQuotes();
   const counts: Record<string, number> = {};
 
   for (const q of quotes) {
@@ -245,42 +68,19 @@ export function getAllTopics(): TopicDefinition[] {
 }
 
 export function getQuotesByTopic(topicCode: string): PublicQuote[] {
-  const all = getAllPublishedQuotes();
   const upper = topicCode.toUpperCase().replace(/-/g, '_');
-  return all.filter((q) => q.topicCodes.map((c) => c.toUpperCase()).includes(upper));
+  return quotes.filter((q) => q.topicCodes.map((c) => c.toUpperCase()).includes(upper));
 }
 
 export function getRandomQuote(): PublicQuote {
-  const all = getAllPublishedQuotes();
-  const idx = Math.floor(Math.random() * all.length);
-  return all[idx];
+  const idx = Math.floor(Math.random() * quotes.length);
+  return quotes[idx];
 }
 
 export function getPublicJourneys(): MirrorJourneyData[] {
-  const manifest = getManifestData();
-  const journeyIds = manifest.public_journey_ids || [];
-  const journeys: MirrorJourneyData[] = [];
-
-  for (const id of journeyIds) {
-    const journeyFile = path.join(journeysDir, `${id}.yaml`);
-    if (fs.existsSync(journeyFile)) {
-      try {
-        const raw = fs.readFileSync(journeyFile, 'utf-8');
-        const data = yaml.load(raw) as MirrorJourneyData;
-        if (data && data.id) {
-          journeys.push(data);
-        }
-      } catch (e) {
-        console.error(`Failed to parse journey ${id}:`, e);
-      }
-    }
-  }
-
   return journeys;
 }
 
 export function getJourneyBySlug(slug: string): MirrorJourneyData | undefined {
-  const journeys = getPublicJourneys();
   return journeys.find((j) => j.slug === slug || j.id.toLowerCase() === slug.toLowerCase());
 }
-

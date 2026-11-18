@@ -3,11 +3,13 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { AgoraService } from '../../lib/agora/service';
 import { getSession } from '../../lib/agora/auth';
+import { getCloudflareEnv } from '../../lib/cloudflare-env';
 
 export const prerender = false;
 
-const session = await getSession(Astro.request, Astro.locals?.runtime?.env);
-const service = new AgoraService(Astro.locals?.runtime?.env);
+const env = getCloudflareEnv(Astro.locals);
+const session = await getSession(Astro.request, env);
+const service = new AgoraService(env);
 const categories = await service.getCategories();
 const preselectedCat = Astro.url.searchParams.get('category') || categories[0]?.id;
 ---

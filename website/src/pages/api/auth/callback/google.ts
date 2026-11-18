@@ -11,9 +11,10 @@ import {
   createSession,
 } from '../../../../lib/agora/auth';
 import { getD1Database } from '../../../../lib/agora/db';
+import { getCloudflareEnv } from '../../../../lib/cloudflare-env';
 
 export const GET: APIRoute = async ({ request, locals, redirect }) => {
-  const env = (locals as any)?.runtime?.env || {};
+  const env = getCloudflareEnv(locals);
   const clientId = env.GOOGLE_CLIENT_ID || import.meta.env.GOOGLE_CLIENT_ID || process.env.GOOGLE_CLIENT_ID;
   const clientSecret = env.GOOGLE_CLIENT_SECRET || import.meta.env.GOOGLE_CLIENT_SECRET || process.env.GOOGLE_CLIENT_SECRET;
 

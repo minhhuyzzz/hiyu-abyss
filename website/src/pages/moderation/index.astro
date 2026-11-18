@@ -2,10 +2,11 @@
 // src/pages/moderation/index.astro - Moderator & Admin Control Center
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getD1Database } from '../../lib/agora/db';
+import { getCloudflareEnv } from '../../lib/cloudflare-env';
 
 export const prerender = false;
 
-const db = getD1Database(Astro.locals?.runtime?.env);
+const db = getD1Database(getCloudflareEnv(Astro.locals));
 const reportsRes = await db
   .prepare('SELECT * FROM reports ORDER BY created_at DESC LIMIT 50')
   .all();

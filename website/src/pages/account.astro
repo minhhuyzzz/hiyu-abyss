@@ -2,10 +2,11 @@
 // src/pages/account.astro - Account & Authentication Hub
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getSession } from '../lib/agora/auth';
+import { getCloudflareEnv } from '../lib/cloudflare-env';
 
 export const prerender = false;
 
-const session = await getSession(Astro.request, Astro.locals?.runtime?.env);
+const session = await getSession(Astro.request, getCloudflareEnv(Astro.locals));
 const status = Astro.url.searchParams.get('status');
 const errorMsg = Astro.url.searchParams.get('error');
 const redirectTo = Astro.url.searchParams.get('redirect') || '/account';

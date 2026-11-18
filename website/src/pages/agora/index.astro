@@ -2,8 +2,9 @@
 // src/pages/agora/index.astro - The Agora Main Forum Hub
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { AgoraService } from '../../lib/agora/service';
+import { getCloudflareEnv } from '../../lib/cloudflare-env';
 
-const service = new AgoraService(Astro.locals?.runtime?.env);
+const service = new AgoraService(getCloudflareEnv(Astro.locals));
 const categories = await service.getCategories();
 const threads = await service.getThreads({ limit: 20 });
 const spotlightThread = threads.find((t) => t.pinned) || threads[0];

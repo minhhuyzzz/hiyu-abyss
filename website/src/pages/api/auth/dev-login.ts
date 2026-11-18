@@ -3,9 +3,18 @@ export const prerender = false;
 import type { APIRoute } from 'astro';
 import { getSessionCookieHeader, upsertDevUser, createSession } from '../../../lib/agora/auth';
 import { getD1Database } from '../../../lib/agora/db';
+import { getCloudflareEnv } from '../../../lib/cloudflare-env';
 
 export const POST: APIRoute = async ({ request, locals, redirect }) => {
-  const env = (locals as any)?.runtime?.env;
+  // P0 Security Gate (Spec §14): Strictly ban dev-login in public / production deployments
+  if (import.meta.env.PROD || (typeof process !== 'undefined' && process.env.NODE_ENV === 'production')) {
+    return new Response(
+      JSON.stringify({ error: 'Endpoint is disabled in public environments per security gate §14' }),
+      { status: 403, headers: { 'Content-Type': 'application/json' } }
+    );
+  }
+
+  const env = getCloudflareEnv(locals);
   const db = getD1Database(env);
 
   let body: any = {};
@@ -43,23 +52,34 @@ export const POST: APIRoute = async ({ request, locals, redirect }) => {
 };
 
 export const GET: APIRoute = async ({ request, locals, redirect }) => {
-  const env = (locals as any)?.runtime?.env;
+  // P0 Security Gate (Spec §14): Strictly ban dev-login in public / production deployments
+  if (import.meta.env.PROD || (typeof process !== 'undefined' && process.env.NODE_ENV === 'production')) {
+    return new Response(
+      JSON.stringify({ error: 'Endpoint is disabled in public environments per security gate §14' }),
+      { status: 403, headers: { 'Content-Type': 'application/json' } }
+    );
+  }
+
+  const env = getCloudflareEnv(locals);
   const db = getD1Database(env);
 
   const url = new URL(request.url);
   const redirectTo = url.searchParams.get('redirect') || '/account';
-  const handle = url.searchParams.get('handle') || 'nguoi_dong_hanh';
-  const name = url.searchParams.get('name') || 'Người Đồng Hành';
-  const email = `${handle}@hiyuabyss.com`;
 
-  const user = await upsertDevUser(db, { name, handle, email, role: 'MEMBER' });
+  const user = await upsertDevUser(db, {
+    name: 'Người Đồng Hành',
+    handle: 'nguoi_dong_hanh',
+    email: 'donghanh@hiyuabyss.com',
+    role: 'MEMBER',
+  });
+
   const userAgent = request.headers.get('user-agent') || '';
   const ip = request.headers.get('cf-connecting-ip') || '';
   const session = await createSession(db, user.id, userAgent, ip);
 
-  const headers = new Headers();
-  headers.set('Location', redirectTo);
-  headers.append('Set-Cookie', getSessionCookieHeader(session.token));
-
-  return new Response(null, { status: 302, headers });
+  return redirect(redirectTo, {
+    headers: {
+      'Set-Cookie': getSessionCookieHeader(session.token),
+    },
+  });
 };

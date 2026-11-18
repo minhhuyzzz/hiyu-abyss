@@ -2,6 +2,7 @@ export const prerender = false;
 
 import type { APIRoute } from 'astro';
 import { AgoraService } from '../../../../lib/agora/service';
+import { getCloudflareEnv } from '../../../../lib/cloudflare-env';
 
 export const GET: APIRoute = async ({ params, locals }) => {
   try {
@@ -13,7 +14,7 @@ export const GET: APIRoute = async ({ params, locals }) => {
       });
     }
 
-    const service = new AgoraService((locals as any)?.runtime?.env);
+    const service = new AgoraService(getCloudflareEnv(locals));
     const thread = await service.getThreadById(threadId);
 
     if (!thread) {

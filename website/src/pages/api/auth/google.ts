@@ -2,9 +2,10 @@ export const prerender = false;
 
 import type { APIRoute } from 'astro';
 import { OAUTH_STATE_COOKIE_NAME, OAUTH_REDIRECT_COOKIE_NAME, getAppOrigin } from '../../../lib/agora/auth';
+import { getCloudflareEnv } from '../../../lib/cloudflare-env';
 
 export const GET: APIRoute = async ({ request, locals, redirect }) => {
-  const env = (locals as any)?.runtime?.env || {};
+  const env = getCloudflareEnv(locals);
   const clientId = env.GOOGLE_CLIENT_ID || import.meta.env.GOOGLE_CLIENT_ID || process.env.GOOGLE_CLIENT_ID;
 
   const url = new URL(request.url);

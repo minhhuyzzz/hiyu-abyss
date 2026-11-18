@@ -2,11 +2,12 @@
 // src/pages/agora/c/[slug].astro - Category Discussion Stream
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { AgoraService } from '../../../lib/agora/service';
+import { getCloudflareEnv } from '../../../lib/cloudflare-env';
 
 export const prerender = false;
 
 const slug = Astro.params.slug;
-const service = new AgoraService(Astro.locals?.runtime?.env);
+const service = new AgoraService(getCloudflareEnv(Astro.locals));
 const category = slug ? await service.getCategoryBySlug(slug) : null;
 
 if (!category) {

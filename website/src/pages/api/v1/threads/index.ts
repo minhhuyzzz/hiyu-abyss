@@ -4,6 +4,7 @@ import type { APIRoute } from 'astro';
 import { AgoraService } from '../../../../lib/agora/service';
 import { createThreadSchema } from '../../../../lib/agora/schemas';
 import { getSession } from '../../../../lib/agora/auth';
+import { getCloudflareEnv } from '../../../../lib/cloudflare-env';
 
 export const GET: APIRoute = async ({ request, locals }) => {
   try {
@@ -12,7 +13,7 @@ export const GET: APIRoute = async ({ request, locals }) => {
     const filter = (url.searchParams.get('filter') as any) || undefined;
     const limit = Number(url.searchParams.get('limit')) || 20;
 
-    const service = new AgoraService((locals as any)?.runtime?.env);
+    const service = new AgoraService(getCloudflareEnv(locals));
     const threads = await service.getThreads({ categoryId, filter, limit });
 
     return new Response(JSON.stringify({ success: true, data: threads }), {
@@ -32,8 +33,9 @@ export const GET: APIRoute = async ({ request, locals }) => {
 
 export const POST: APIRoute = async ({ request, locals }) => {
   try {
+    const env = getCloudflareEnv(locals);
     // 1. Enforce Authentication Check
-    const session = await getSession(request, (locals as any)?.runtime?.env);
+    const session = await getSession(request, env);
     if (!session) {
       return new Response(
         JSON.stringify({
@@ -47,7 +49,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
     const body = await request.json();
     const validated = createThreadSchema.parse(body);
 
-    const service = new AgoraService((locals as any)?.runtime?.env);
+    const service = new AgoraService(env);
     const author = {
       id: session.user.id,
       handle: session.user.handle,

@@ -74,12 +74,29 @@ export const AtlasMap: React.FC<Props> = ({
     setIsDragging(false);
   };
 
-  // Wheel zoom handler
+  // Canvas Wheel Pan & Zoom Handler (Figma, Miro & Mapbox standard)
   const handleWheel = (e: React.WheelEvent) => {
     e.preventDefault();
-    const zoomFactor = e.deltaY < 0 ? 1.12 : 0.88;
-    const newZoom = Math.max(0.6, Math.min(3.2, zoomLevel * zoomFactor));
-    onZoomChange(newZoom);
+
+    // 1. Intentional Zoom: Trackpad pinch gesture (browser emits ctrlKey=true) OR holding Ctrl/Cmd while scrolling
+    if (e.ctrlKey || e.metaKey) {
+      // Smooth continuous exponential scaling (no jarring jumps)
+      const zoomDelta = -e.deltaY * 0.0035;
+      const newZoom = Math.max(0.6, Math.min(3.2, zoomLevel * Math.exp(zoomDelta)));
+      onZoomChange(newZoom);
+      return;
+    }
+
+    // 2. Natural Canvas Pan: Trackpad two-finger swipe or mouse wheel scroll
+    // Scrolling or swiping down ("kéo xuống") pans the map down smoothly without any sudden zoom!
+    // Shift+scroll translates to horizontal pan
+    const dx = e.shiftKey && e.deltaX === 0 ? e.deltaY : e.deltaX;
+    const dy = e.shiftKey ? 0 : e.deltaY;
+
+    onPanChange({
+      x: panOffset.x - dx,
+      y: panOffset.y - dy,
+    });
   };
 
   // Touch pan & pinch zoom handlers

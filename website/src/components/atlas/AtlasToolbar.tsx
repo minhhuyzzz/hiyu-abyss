@@ -158,21 +158,21 @@ export const AtlasToolbar: React.FC<Props> = ({
             <button
               onClick={onZoomIn}
               className="p-1 text-muted hover:text-text hover:bg-surface rounded-xs transition-colors"
-              title="Phóng to"
+              title="Phóng to (+) · Hoặc giữ Ctrl + cuộn chuột / kẹp 2 ngón"
             >
               <ZoomIn className="w-3.5 h-3.5" />
             </button>
             <button
               onClick={onZoomOut}
               className="p-1 text-muted hover:text-text hover:bg-surface rounded-xs transition-colors"
-              title="Thu nhỏ"
+              title="Thu nhỏ (-) · Hoặc giữ Ctrl + cuộn chuột / kẹp 2 ngón"
             >
               <ZoomOut className="w-3.5 h-3.5" />
             </button>
             <button
               onClick={onResetZoom}
               className="p-1 text-muted hover:text-text hover:bg-surface rounded-xs transition-colors"
-              title="Đặt lại góc nhìn"
+              title="Đặt lại góc nhìn (0)"
             >
               <RotateCcw className="w-3.5 h-3.5" />
             </button>

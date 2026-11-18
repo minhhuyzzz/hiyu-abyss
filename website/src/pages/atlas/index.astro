@@ -17,8 +17,9 @@ const description = 'Khám phá mạng lưới 86 tư tưởng, triết gia kinh
   title={title}
   description={description}
   image="/images/themes/theme_08/slide_1_establishing.jpg"
+  hideFooter={true}
 >
-  <div class="w-full h-full bg-bg text-text relative flex flex-col">
+  <div class="w-full h-full bg-bg text-text relative flex flex-col overflow-hidden">
     <!-- Interactive Atlas Explorer React Island -->
     <AtlasExplorer
       client:load
@@ -28,3 +29,29 @@ const description = 'Khám phá mạng lưới 86 tư tưởng, triết gia kinh
     />
   </div>
 </BaseLayout>
+
+<style is:global>
+  /* Lock viewport on The Atlas to prevent window scrolling and header collision */
+  html,
+  body {
+    height: 100% !important;
+    max-height: 100dvh !important;
+    overflow: hidden !important;
+  }
+
+  /* Main container fills remaining viewport space below floating header */
+  #main-content {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 1 0% !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    padding-top: 0.5rem !important;
+  }
+
+  @media (min-width: 640px) {
+    #main-content {
+      padding-top: 0.75rem !important;
+    }
+  }
+</style>

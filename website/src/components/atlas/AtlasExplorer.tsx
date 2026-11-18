@@ -190,12 +190,28 @@ export const AtlasExplorer: React.FC<Props> = ({
     });
   }, []);
 
-  // Keyboard shortcut (⌘K or Ctrl+K for search)
+  // Keyboard shortcuts (⌘K for search, + / - / 0 for zoom)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      // Don't trigger shortcuts if user is typing in an input or textarea
+      const target = e.target as HTMLElement;
+      if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable) {
+        return;
+      }
+
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault();
         setSearchOpen((prev) => !prev);
+      } else if (e.key === '+' || e.key === '=') {
+        e.preventDefault();
+        setZoomLevel((z) => Math.min(3.0, z * 1.2));
+      } else if (e.key === '-' || e.key === '_') {
+        e.preventDefault();
+        setZoomLevel((z) => Math.max(0.6, z * 0.8));
+      } else if (e.key === '0') {
+        e.preventDefault();
+        setZoomLevel(0.95);
+        setPanOffset({ x: 0, y: 0 });
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -263,7 +279,7 @@ export const AtlasExplorer: React.FC<Props> = ({
   const focusedNode = focusedNodeId ? nodeMap.get(focusedNodeId) || null : null;
 
   return (
-    <div className="relative w-full h-[calc(100vh-64px)] flex flex-col bg-bg text-text overflow-hidden">
+    <div className="relative w-full h-full flex-1 flex flex-col bg-bg text-text overflow-hidden">
       {/* Top Instrument Toolbar */}
       <AtlasToolbar
         regions={regions}

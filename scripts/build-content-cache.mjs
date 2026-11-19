@@ -44,6 +44,13 @@ const TOPIC_NAMES = {
   BAD_FAITH: { title: 'Trốn Tránh Trách Nhiệm', desc: 'Nhìn nhận thói quen đổ lỗi cho hoàn cảnh để không phải thay đổi.' },
   BIAS: { title: 'Thiên Kiến & Tự Biện Hộ', desc: 'Những chiếc bẫy nhận thức và sự ngụy biện xoa dịu bản ngã.' },
   PSYCHOLOGY: { title: 'Tâm Lý Con Người', desc: 'Khám phá những cơ chế tâm lý điều hướng hành vi trong cuộc sống.' },
+  COMMUNICATION: { title: 'Giao Tiếp & Thấu Cảm', desc: 'Nghệ thuật đối thoại chân thành, tháo gỡ hiểu lầm và vượt qua sự thoái thác cảm xúc.' },
+  EXPECTATION: { title: 'Kỳ Vọng & Thất Vọng', desc: 'Nhìn nhận khoảng cách giữa kỳ vọng chủ quan và thực tế đời sống.' },
+  ATTRACTION: { title: 'Sức Hút & Tâm Lý Tình Cảm', desc: 'Khám phá các quy luật tâm lý trong sự thu hút, gắn bó và ranh giới tình cảm.' },
+  SELF_COMPASSION: { title: 'Tự Trắc Ẩn & Bao Dung', desc: 'Học cách hòa giải với chính mình và tha thứ cho những bất toàn nội tâm.' },
+  STOIC_SERENITY: { title: 'Khắc Kỷ & Định Tâm', desc: 'Bình thản trước nghịch cảnh và tập trung vào những điều ta có thể kiểm soát.' },
+  AUTHENTIC_CONNECTION: { title: 'Gắn Kết Chân Thật', desc: 'Xây dựng những mối quan hệ sâu sắc không vụ lợi hay giả tạo.' },
+  MEANING_RESILIENCE: { title: 'Lẽ Sống & Phục Hồi', desc: 'Vượt qua chông gai, tìm kiếm ý nghĩa và thắp sáng nội lực bản thân.' },
 };
 
 const QUOTE_TYPE_LABELS = {

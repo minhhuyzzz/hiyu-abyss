@@ -1,0 +1,992 @@
+{
+  "theme_251_slide_1": {
+    "slide_key": "theme_251_slide_1",
+    "theme_id": "theme_251",
+    "slide_index": 1,
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "Woman at a Window",
+    "wikimedia_title": "File:Caspar David Friedrich - Frau am Fenster - Google Art Project.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Caspar_David_Friedrich_-_Frau_am_Fenster_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_251_slide_1.jpg"
+  },
+  "theme_251_slide_2": {
+    "slide_key": "theme_251_slide_2",
+    "theme_id": "theme_251",
+    "slide_index": 2,
+    "artist": "Claude Monet",
+    "artwork_title": "Morning on the Seine, Clear Weather",
+    "wikimedia_title": "File:Matinée sur la Seine, temps net (1897) Claude Monet (W 1480).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Matin%C3%A9e_sur_la_Seine%2C_temps_net_%281897%29_Claude_Monet_%28W_1480%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_251_slide_2.jpg"
+  },
+  "theme_251_slide_3": {
+    "slide_key": "theme_251_slide_3",
+    "theme_id": "theme_251",
+    "slide_index": 3,
+    "artist": "Pierre-Auguste Renoir",
+    "artwork_title": "Woman with a Parasol in a Garden",
+    "wikimedia_title": "File:Pierre-Auguste Renoir - Femme avec parasol dans un jardin - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Pierre-Auguste_Renoir_-_Femme_avec_parasol_dans_un_jardin_-_Google_Art_Project.jpg/3840px-Pierre-Auguste_Renoir_-_Femme_avec_parasol_dans_un_jardin_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_251_slide_3.jpg"
+  },
+  "theme_252_slide_1": {
+    "slide_key": "theme_252_slide_1",
+    "theme_id": "theme_252",
+    "slide_index": 1,
+    "artist": "Vilhelm Hammershøi",
+    "artwork_title": "Interior with a Woman Reading",
+    "wikimedia_title": "File:Woman Reading in an Interior.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Woman_Reading_in_an_Interior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_252_slide_1.jpg"
+  },
+  "theme_252_slide_2": {
+    "slide_key": "theme_252_slide_2",
+    "theme_id": "theme_252",
+    "slide_index": 2,
+    "artist": "John Singer Sargent",
+    "artwork_title": "Carnation, Lily, Lily, Rose",
+    "wikimedia_title": "File:John Singer Sargent - Carnation, Lily, Lily, Rose - Google Art Project.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/John_Singer_Sargent_-_Carnation%2C_Lily%2C_Lily%2C_Rose_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_252_slide_2.jpg"
+  },
+  "theme_253_slide_1": {
+    "slide_key": "theme_253_slide_1",
+    "theme_id": "theme_253",
+    "slide_index": 1,
+    "artist": "Claude Monet",
+    "artwork_title": "Water Lilies (The Clouds)",
+    "wikimedia_title": "File:WLA moma Monet Reflections of Clouds on the Water-Lily Pond.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/WLA_moma_Monet_Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg/3840px-WLA_moma_Monet_Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_253_slide_1.jpg"
+  },
+  "theme_254_slide_3": {
+    "slide_key": "theme_254_slide_3",
+    "theme_id": "theme_254",
+    "slide_index": 3,
+    "artist": "Jean-Baptiste-Camille Corot",
+    "artwork_title": "Souvenir de Mortefontaine",
+    "wikimedia_title": "File:Souvenir de Mortefontaine - Jean-Baptiste Camille Corot - Musée du Louvre Peintures MI 692 bis - photo 2.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Souvenir_de_Mortefontaine_-_Jean-Baptiste_Camille_Corot_-_Mus%C3%A9e_du_Louvre_Peintures_MI_692_bis_-_photo_2.jpg/3840px-Souvenir_de_Mortefontaine_-_Jean-Baptiste_Camille_Corot_-_Mus%C3%A9e_du_Louvre_Peintures_MI_692_bis_-_photo_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_254_slide_3.jpg"
+  },
+  "theme_255_slide_1": {
+    "slide_key": "theme_255_slide_1",
+    "theme_id": "theme_255",
+    "slide_index": 1,
+    "artist": "Berthe Morisot",
+    "artwork_title": "The Cradle",
+    "wikimedia_title": "File:Berthe Morisot - The Cradle - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Berthe_Morisot_-_The_Cradle_-_Google_Art_Project.jpg/3840px-Berthe_Morisot_-_The_Cradle_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_255_slide_1.jpg"
+  },
+  "theme_255_slide_2": {
+    "slide_key": "theme_255_slide_2",
+    "theme_id": "theme_255",
+    "slide_index": 2,
+    "artist": "Mary Cassatt",
+    "artwork_title": "Mother and Child",
+    "wikimedia_title": "File:Mother and Child - Cassatt 1905.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Mother_and_Child_-_Cassatt_1905.jpg/3840px-Mother_and_Child_-_Cassatt_1905.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_255_slide_2.jpg"
+  },
+  "theme_257_slide_1": {
+    "slide_key": "theme_257_slide_1",
+    "theme_id": "theme_257",
+    "slide_index": 1,
+    "artist": "Thomas Cole",
+    "artwork_title": "The Arcadian State",
+    "wikimedia_title": "File:Cole Thomas The Course of Empire The Arcadian or Pastoral State 1836.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Cole_Thomas_The_Course_of_Empire_The_Arcadian_or_Pastoral_State_1836.jpg/3840px-Cole_Thomas_The_Course_of_Empire_The_Arcadian_or_Pastoral_State_1836.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_257_slide_1.jpg"
+  },
+  "theme_257_slide_2": {
+    "slide_key": "theme_257_slide_2",
+    "theme_id": "theme_257",
+    "slide_index": 2,
+    "artist": "Asher Brown Durand",
+    "artwork_title": "Kindred Spirits",
+    "wikimedia_title": "File:Kindred Spirits by Asher Brown Durand, 1849.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Kindred_Spirits_by_Asher_Brown_Durand%2C_1849.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_257_slide_2.jpg"
+  },
+  "theme_258_slide_1": {
+    "slide_key": "theme_258_slide_1",
+    "theme_id": "theme_258",
+    "slide_index": 1,
+    "artist": "Carl Larsson",
+    "artwork_title": "Breakfast Under the Big Birch",
+    "wikimedia_title": "File:Frukost under stora björken av Carl Larsson 1896.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Frukost_under_stora_bj%C3%B6rken_av_Carl_Larsson_1896.jpg/3840px-Frukost_under_stora_bj%C3%B6rken_av_Carl_Larsson_1896.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_258_slide_1.jpg"
+  },
+  "theme_258_slide_3": {
+    "slide_key": "theme_258_slide_3",
+    "theme_id": "theme_258",
+    "slide_index": 3,
+    "artist": "Claude Monet",
+    "artwork_title": "The Water-Lily Pond",
+    "wikimedia_title": "File:Claude Monet, The Water Lily Pond, c. 1917-19, frame cropped, Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Claude_Monet%2C_The_Water_Lily_Pond%2C_c._1917-19%2C_frame_cropped%2C_Google_Art_Project.jpg/3840px-Claude_Monet%2C_The_Water_Lily_Pond%2C_c._1917-19%2C_frame_cropped%2C_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_258_slide_3.jpg"
+  },
+  "theme_259_slide_1": {
+    "slide_key": "theme_259_slide_1",
+    "theme_id": "theme_259",
+    "slide_index": 1,
+    "artist": "John Frederick Kensett",
+    "artwork_title": "Lake George",
+    "wikimedia_title": "File:Lake George MET DT84.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Lake_George_MET_DT84.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_259_slide_1.jpg"
+  },
+  "theme_260_slide_1": {
+    "slide_key": "theme_260_slide_1",
+    "theme_id": "theme_260",
+    "slide_index": 1,
+    "artist": "Sanford Robinson Gifford",
+    "artwork_title": "A Gorge in the Mountains",
+    "wikimedia_title": "File:Gifford Sanford Robinson A Gorge In The Mountains.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Gifford_Sanford_Robinson_A_Gorge_In_The_Mountains.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_260_slide_1.jpg"
+  },
+  "theme_260_slide_2": {
+    "slide_key": "theme_260_slide_2",
+    "theme_id": "theme_260",
+    "slide_index": 2,
+    "artist": "Jean-Baptiste-Camille Corot",
+    "artwork_title": "A Morning, Dance of the Nymphs",
+    "wikimedia_title": "File:Camille Corot - A Morning. The Dance of the Nymphs - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Camille_Corot_-_A_Morning._The_Dance_of_the_Nymphs_-_Google_Art_Project.jpg/3840px-Camille_Corot_-_A_Morning._The_Dance_of_the_Nymphs_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_260_slide_2.jpg"
+  },
+  "theme_261_slide_1": {
+    "slide_key": "theme_261_slide_1",
+    "theme_id": "theme_261",
+    "slide_index": 1,
+    "artist": "Camille Pissarro",
+    "artwork_title": "Landscape at Valhermeil",
+    "wikimedia_title": "File:Camille Pissarro - Paysage à Chaponval - 1880.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Camille_Pissarro_-_Paysage_%C3%A0_Chaponval_-_1880.jpg/3840px-Camille_Pissarro_-_Paysage_%C3%A0_Chaponval_-_1880.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_261_slide_1.jpg"
+  },
+  "theme_261_slide_2": {
+    "slide_key": "theme_261_slide_2",
+    "theme_id": "theme_261",
+    "slide_index": 2,
+    "artist": "Pierre-Auguste Renoir",
+    "artwork_title": "Springtime Landscape",
+    "wikimedia_title": "File:Catalog of Copyright Entries 1974 Works of Art Jan-June Renewals.djvu",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Catalog_of_Copyright_Entries_1974_Works_of_Art_Jan-June_Renewals.djvu/page1-500px-Catalog_of_Copyright_Entries_1974_Works_of_Art_Jan-June_Renewals.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_261_slide_2.jpg"
+  },
+  "theme_261_slide_3": {
+    "slide_key": "theme_261_slide_3",
+    "theme_id": "theme_261",
+    "slide_index": 3,
+    "artist": "Claude Monet",
+    "artwork_title": "Field of Poppies near Giverny",
+    "wikimedia_title": "File:Claude Monet - Poppy Field in a Hollow near Giverny - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Claude_Monet_-_Poppy_Field_in_a_Hollow_near_Giverny_-_Google_Art_Project.jpg/3840px-Claude_Monet_-_Poppy_Field_in_a_Hollow_near_Giverny_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_261_slide_3.jpg"
+  },
+  "theme_262_slide_1": {
+    "slide_key": "theme_262_slide_1",
+    "theme_id": "theme_262",
+    "slide_index": 1,
+    "artist": "Albert Bierstadt",
+    "artwork_title": "Sunlight and Shadow",
+    "wikimedia_title": "File:Albert Bierstadt - Sunlight and Shadow.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Albert_Bierstadt_-_Sunlight_and_Shadow.jpg/3840px-Albert_Bierstadt_-_Sunlight_and_Shadow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_262_slide_1.jpg"
+  },
+  "theme_263_slide_2": {
+    "slide_key": "theme_263_slide_2",
+    "theme_id": "theme_263",
+    "slide_index": 2,
+    "artist": "Pierre-Auguste Renoir",
+    "artwork_title": "The Reader (La Liseuse)",
+    "wikimedia_title": "File:Renoir - La liseuse verte, vers 1894.gif",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Renoir_-_La_liseuse_verte%2C_vers_1894.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_263_slide_2.jpg"
+  },
+  "theme_264_slide_1": {
+    "slide_key": "theme_264_slide_1",
+    "theme_id": "theme_264",
+    "slide_index": 1,
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "Wanderer above the Sea of Fog",
+    "wikimedia_title": "File:Caspar David Friedrich - Wanderer above the sea of fog.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_264_slide_1.jpg"
+  },
+  "theme_265_slide_1": {
+    "slide_key": "theme_265_slide_1",
+    "theme_id": "theme_265",
+    "slide_index": 1,
+    "artist": "J.M.W. Turner",
+    "artwork_title": "Sun Rising through Vapour",
+    "wikimedia_title": "File:Joseph Mallord William Turner 049.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Joseph_Mallord_William_Turner_049.jpg/3840px-Joseph_Mallord_William_Turner_049.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_265_slide_1.jpg"
+  },
+  "theme_265_slide_2": {
+    "slide_key": "theme_265_slide_2",
+    "theme_id": "theme_265",
+    "slide_index": 2,
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "The Solitary Tree",
+    "wikimedia_title": "File:Caspar David Friedrich - Der einsame Baum - Google Art Project.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Caspar_David_Friedrich_-_Der_einsame_Baum_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_265_slide_2.jpg"
+  },
+  "theme_266_slide_1": {
+    "slide_key": "theme_266_slide_1",
+    "theme_id": "theme_266",
+    "slide_index": 1,
+    "artist": "George Inness",
+    "artwork_title": "The Home of the Heron",
+    "wikimedia_title": "File:George Inness - The Home of the Heron - 1911.31 - Art Institute of Chicago.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/George_Inness_-_The_Home_of_the_Heron_-_1911.31_-_Art_Institute_of_Chicago.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_266_slide_1.jpg"
+  },
+  "theme_267_slide_1": {
+    "slide_key": "theme_267_slide_1",
+    "theme_id": "theme_267",
+    "slide_index": 1,
+    "artist": "J.M.W. Turner",
+    "artwork_title": "The Fighting Temeraire",
+    "wikimedia_title": "File:The Fighting Temeraire, JMW Turner, National Gallery.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/3840px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_267_slide_1.jpg"
+  },
+  "theme_267_slide_2": {
+    "slide_key": "theme_267_slide_2",
+    "theme_id": "theme_267",
+    "slide_index": 2,
+    "artist": "Frederic Edwin Church",
+    "artwork_title": "Twilight in the Wilderness",
+    "wikimedia_title": "File:Twilight in the Wilderness by Frederic Edwin Church (3).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Twilight_in_the_Wilderness_by_Frederic_Edwin_Church_%283%29.jpg/3840px-Twilight_in_the_Wilderness_by_Frederic_Edwin_Church_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_267_slide_2.jpg"
+  },
+  "theme_267_slide_3": {
+    "slide_key": "theme_267_slide_3",
+    "theme_id": "theme_267",
+    "slide_index": 3,
+    "artist": "Claude Monet",
+    "artwork_title": "Haystacks, Sunset",
+    "wikimedia_title": "File:Monet haystacks-at-sunset-frosty-weather-1891 W1282.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Monet_haystacks-at-sunset-frosty-weather-1891_W1282.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_267_slide_3.jpg"
+  },
+  "theme_268_slide_1": {
+    "slide_key": "theme_268_slide_1",
+    "theme_id": "theme_268",
+    "slide_index": 1,
+    "artist": "John Singer Sargent",
+    "artwork_title": "The Fountain, Villa Torlonia",
+    "wikimedia_title": "File:John Singer Sargent - The Fountain, Villa Torlonia, Frascati, Italy - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/John_Singer_Sargent_-_The_Fountain%2C_Villa_Torlonia%2C_Frascati%2C_Italy_-_Google_Art_Project.jpg/3840px-John_Singer_Sargent_-_The_Fountain%2C_Villa_Torlonia%2C_Frascati%2C_Italy_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_268_slide_1.jpg"
+  },
+  "theme_268_slide_2": {
+    "slide_key": "theme_268_slide_2",
+    "theme_id": "theme_268",
+    "slide_index": 2,
+    "artist": "Thomas Cole",
+    "artwork_title": "Home in the Woods",
+    "wikimedia_title": "File:Cole Thomas Home in the Woods 1847.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Cole_Thomas_Home_in_the_Woods_1847.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_268_slide_2.jpg"
+  },
+  "theme_269_slide_1": {
+    "slide_key": "theme_269_slide_1",
+    "theme_id": "theme_269",
+    "slide_index": 1,
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "Giant Mountains",
+    "wikimedia_title": "File:Caspar David Friedrich Paysage de Riesengebirge avec la brume montante.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Caspar_David_Friedrich_Paysage_de_Riesengebirge_avec_la_brume_montante.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_269_slide_1.jpg"
+  },
+  "theme_270_slide_1": {
+    "slide_key": "theme_270_slide_1",
+    "theme_id": "theme_270",
+    "slide_index": 1,
+    "artist": "Vilhelm Hammershøi",
+    "artwork_title": "Sunshine in the Drawing Room",
+    "wikimedia_title": "File:Sunshine in the Drawing Room by Vilhelm Hammershøi.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Sunshine_in_the_Drawing_Room_by_Vilhelm_Hammersh%C3%B8i.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_270_slide_1.jpg"
+  },
+  "theme_270_slide_2": {
+    "slide_key": "theme_270_slide_2",
+    "theme_id": "theme_270",
+    "slide_index": 2,
+    "artist": "Carl Larsson",
+    "artwork_title": "Flowers on the Windowsill",
+    "wikimedia_title": "File:Blomsterfönstret av Carl Larsson 1894.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Blomsterf%C3%B6nstret_av_Carl_Larsson_1894.jpg/3840px-Blomsterf%C3%B6nstret_av_Carl_Larsson_1894.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_270_slide_2.jpg"
+  },
+  "theme_270_slide_3": {
+    "slide_key": "theme_270_slide_3",
+    "theme_id": "theme_270",
+    "slide_index": 3,
+    "artist": "Albert Bierstadt",
+    "artwork_title": "Looking Down Yosemite Valley",
+    "wikimedia_title": "File:Looking Down Yosemite-Valley.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Looking_Down_Yosemite-Valley.jpg/3840px-Looking_Down_Yosemite-Valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_270_slide_3.jpg"
+  },
+  "theme_271_slide_1": {
+    "slide_key": "theme_271_slide_1",
+    "theme_id": "theme_271",
+    "slide_index": 1,
+    "artist": "Claude Monet",
+    "artwork_title": "Grainstacks at the End of Summer",
+    "wikimedia_title": "File:The Red Kerchief, by Claude Monet, Cleveland Museum of Art, 1958.39.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/The_Red_Kerchief%2C_by_Claude_Monet%2C_Cleveland_Museum_of_Art%2C_1958.39.jpg/3840px-The_Red_Kerchief%2C_by_Claude_Monet%2C_Cleveland_Museum_of_Art%2C_1958.39.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_271_slide_1.jpg"
+  },
+  "theme_271_slide_2": {
+    "slide_key": "theme_271_slide_2",
+    "theme_id": "theme_271",
+    "slide_index": 2,
+    "artist": "Camille Pissarro",
+    "artwork_title": "Sunset at Saint-Charles, Eragny",
+    "wikimedia_title": "File:Camille Pissarro - Landscape at Saint-Charles, near Gisors, Sunset - 1955.524 - Clark Art Institute.tiff",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Camille_Pissarro_-_Landscape_at_Saint-Charles%2C_near_Gisors%2C_Sunset_-_1955.524_-_Clark_Art_Institute.tiff/lossy-page1-3840px-Camille_Pissarro_-_Landscape_at_Saint-Charles%2C_near_Gisors%2C_Sunset_-_1955.524_-_Clark_Art_Institute.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_271_slide_2.jpg"
+  },
+  "theme_272_slide_1": {
+    "slide_key": "theme_272_slide_1",
+    "theme_id": "theme_272",
+    "slide_index": 1,
+    "artist": "John Frederick Kensett",
+    "artwork_title": "Sunset on the Sea",
+    "wikimedia_title": "File:Sunset on the Sea MET DT226485.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Sunset_on_the_Sea_MET_DT226485.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_272_slide_1.jpg"
+  },
+  "theme_273_slide_1": {
+    "slide_key": "theme_273_slide_1",
+    "theme_id": "theme_273",
+    "slide_index": 1,
+    "artist": "John Singer Sargent",
+    "artwork_title": "A Gust of Wind",
+    "wikimedia_title": "File:A Gust of Wind.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/A_Gust_of_Wind.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_273_slide_1.jpg"
+  },
+  "theme_273_slide_2": {
+    "slide_key": "theme_273_slide_2",
+    "theme_id": "theme_273",
+    "slide_index": 2,
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "Morning in the Mountains",
+    "wikimedia_title": "File:Friedrich, Caspar David - Morning in the Mountains.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Friedrich%2C_Caspar_David_-_Morning_in_the_Mountains.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_273_slide_2.jpg"
+  },
+  "theme_274_slide_1": {
+    "slide_key": "theme_274_slide_1",
+    "theme_id": "theme_274",
+    "slide_index": 1,
+    "artist": "Jean-Baptiste-Camille Corot",
+    "artwork_title": "The Lake at Ville-d'Avray",
+    "wikimedia_title": "File:Jean-Baptiste Camille Corot - Ville d'Avray, un coin d'étang.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Jean-Baptiste_Camille_Corot_-_Ville_d%27Avray%2C_un_coin_d%27%C3%A9tang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_274_slide_1.jpg"
+  },
+  "theme_274_slide_2": {
+    "slide_key": "theme_274_slide_2",
+    "theme_id": "theme_274",
+    "slide_index": 2,
+    "artist": "Claude Monet",
+    "artwork_title": "The Artist's Garden at Giverny",
+    "wikimedia_title": "File:Claude Monet - Jardin à Sainte-Adresse.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Claude_Monet_-_Jardin_%C3%A0_Sainte-Adresse.jpg/3840px-Claude_Monet_-_Jardin_%C3%A0_Sainte-Adresse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_274_slide_2.jpg"
+  },
+  "theme_274_slide_3": {
+    "slide_key": "theme_274_slide_3",
+    "theme_id": "theme_274",
+    "slide_index": 3,
+    "artist": "George Inness",
+    "artwork_title": "Peace and Plenty",
+    "wikimedia_title": "File:Peace and Plenty MET DP159755.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Peace_and_Plenty_MET_DP159755.jpg/3840px-Peace_and_Plenty_MET_DP159755.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_274_slide_3.jpg"
+  },
+  "theme_275_slide_1": {
+    "slide_key": "theme_275_slide_1",
+    "theme_id": "theme_275",
+    "slide_index": 1,
+    "artist": "Albert Bierstadt",
+    "artwork_title": "Among the Sierra Nevada Mountains",
+    "wikimedia_title": "File:Albert Bierstadt - Among the Sierra Nevada, California - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Albert_Bierstadt_-_Among_the_Sierra_Nevada%2C_California_-_Google_Art_Project.jpg/3840px-Albert_Bierstadt_-_Among_the_Sierra_Nevada%2C_California_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_275_slide_1.jpg"
+  },
+  "theme_276_slide_1": {
+    "slide_key": "theme_276_slide_1",
+    "theme_id": "theme_276",
+    "slide_index": 1,
+    "artist": "Mary Cassatt",
+    "artwork_title": "The Tea",
+    "wikimedia_title": "File:Mary Cassatt - The Tea - MFA Boston 42.178.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Mary_Cassatt_-_The_Tea_-_MFA_Boston_42.178.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_276_slide_1.jpg"
+  },
+  "theme_276_slide_2": {
+    "slide_key": "theme_276_slide_2",
+    "theme_id": "theme_276",
+    "slide_index": 2,
+    "artist": "John Singer Sargent",
+    "artwork_title": "A Dinner Table at Night",
+    "wikimedia_title": "File:John Singer Sargent - Le verre de porto (A Dinner Table at Night) - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/John_Singer_Sargent_-_Le_verre_de_porto_%28A_Dinner_Table_at_Night%29_-_Google_Art_Project.jpg/3840px-John_Singer_Sargent_-_Le_verre_de_porto_%28A_Dinner_Table_at_Night%29_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_276_slide_2.jpg"
+  },
+  "theme_276_slide_3": {
+    "slide_key": "theme_276_slide_3",
+    "theme_id": "theme_276",
+    "slide_index": 3,
+    "artist": "Camille Pissarro",
+    "artwork_title": "The Garden at Eragny",
+    "wikimedia_title": "File:Maisons à Bougival, automne, par Camille Pissarro, Getty Museum, edited.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Maisons_%C3%A0_Bougival%2C_automne%2C_par_Camille_Pissarro%2C_Getty_Museum%2C_edited.jpg/3840px-Maisons_%C3%A0_Bougival%2C_automne%2C_par_Camille_Pissarro%2C_Getty_Museum%2C_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_276_slide_3.jpg"
+  },
+  "theme_279_slide_1": {
+    "slide_key": "theme_279_slide_1",
+    "theme_id": "theme_279",
+    "slide_index": 1,
+    "artist": "Pierre-Auguste Renoir",
+    "artwork_title": "The Luncheon of the Boating Party",
+    "wikimedia_title": "File:Pierre-Auguste Renoir - Luncheon of the Boating Party - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg/3840px-Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_279_slide_1.jpg"
+  },
+  "theme_279_slide_2": {
+    "slide_key": "theme_279_slide_2",
+    "theme_id": "theme_279",
+    "slide_index": 2,
+    "artist": "Joaquín Sorolla",
+    "artwork_title": "Walk on the Beach",
+    "wikimedia_title": "File:Joaquín Sorolla y Bastida - Strolling along the Seashore - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Joaqu%C3%ADn_Sorolla_y_Bastida_-_Strolling_along_the_Seashore_-_Google_Art_Project.jpg/3840px-Joaqu%C3%ADn_Sorolla_y_Bastida_-_Strolling_along_the_Seashore_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_279_slide_2.jpg"
+  },
+  "theme_279_slide_3": {
+    "slide_key": "theme_279_slide_3",
+    "theme_id": "theme_279",
+    "slide_index": 3,
+    "artist": "Claude Monet",
+    "artwork_title": "The Garden of Monet at Argenteuil",
+    "wikimedia_title": "File:Claude Monet - Jardin à Sainte-Adresse.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Claude_Monet_-_Jardin_%C3%A0_Sainte-Adresse.jpg/3840px-Claude_Monet_-_Jardin_%C3%A0_Sainte-Adresse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_279_slide_3.jpg"
+  },
+  "theme_282_slide_1": {
+    "slide_key": "theme_282_slide_1",
+    "theme_id": "theme_282",
+    "slide_index": 1,
+    "artist": "John Singer Sargent",
+    "artwork_title": "Monet Painting by the Edge of a Wood",
+    "wikimedia_title": "File:John Singer Sargent - Claude Monet Painting by the Edge of a Wood - N04103 - National Gallery.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/John_Singer_Sargent_-_Claude_Monet_Painting_by_the_Edge_of_a_Wood_-_N04103_-_National_Gallery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_282_slide_1.jpg"
+  },
+  "theme_282_slide_2": {
+    "slide_key": "theme_282_slide_2",
+    "theme_id": "theme_282",
+    "slide_index": 2,
+    "artist": "Claude Monet",
+    "artwork_title": "Camille Monet in the Garden at Argenteuil",
+    "wikimedia_title": "File:Claude Monet - Camille Monet in the Garden at Argenteuil.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Claude_Monet_-_Camille_Monet_in_the_Garden_at_Argenteuil.jpg/3840px-Claude_Monet_-_Camille_Monet_in_the_Garden_at_Argenteuil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_282_slide_2.jpg"
+  },
+  "theme_282_slide_3": {
+    "slide_key": "theme_282_slide_3",
+    "theme_id": "theme_282",
+    "slide_index": 3,
+    "artist": "Frederic Edwin Church",
+    "artwork_title": "The Heart of the Andes",
+    "wikimedia_title": "File:Church Heart of the Andes.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Church_Heart_of_the_Andes.jpg/3840px-Church_Heart_of_the_Andes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_282_slide_3.jpg"
+  },
+  "theme_283_slide_1": {
+    "slide_key": "theme_283_slide_1",
+    "theme_id": "theme_283",
+    "slide_index": 1,
+    "artist": "Joaquín Sorolla",
+    "artwork_title": "Valencia Fishermen",
+    "wikimedia_title": "File:Joaquín Sorolla y Bastida - The Beach, Valencia (Fishermen) - A211 - Hispanic Society of America.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Joaqu%C3%ADn_Sorolla_y_Bastida_-_The_Beach%2C_Valencia_%28Fishermen%29_-_A211_-_Hispanic_Society_of_America.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_283_slide_1.jpg"
+  },
+  "theme_283_slide_2": {
+    "slide_key": "theme_283_slide_2",
+    "theme_id": "theme_283",
+    "slide_index": 2,
+    "artist": "Pierre-Auguste Renoir",
+    "artwork_title": "A Bouquet of Roses",
+    "wikimedia_title": "File:Pierre-Auguste Renoir - Bouquet de roses.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Pierre-Auguste_Renoir_-_Bouquet_de_roses.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_283_slide_2.jpg"
+  },
+  "theme_284_slide_1": {
+    "slide_key": "theme_284_slide_1",
+    "theme_id": "theme_284",
+    "slide_index": 1,
+    "artist": "Jean-Baptiste-Camille Corot",
+    "artwork_title": "Morning with Nymphs",
+    "wikimedia_title": "File:Camille Corot - A Morning. The Dance of the Nymphs - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Camille_Corot_-_A_Morning._The_Dance_of_the_Nymphs_-_Google_Art_Project.jpg/3840px-Camille_Corot_-_A_Morning._The_Dance_of_the_Nymphs_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_284_slide_1.jpg"
+  },
+  "theme_285_slide_1": {
+    "slide_key": "theme_285_slide_1",
+    "theme_id": "theme_285",
+    "slide_index": 1,
+    "artist": "John Singer Sargent",
+    "artwork_title": "Morning Walk",
+    "wikimedia_title": "File:John Singer Sargent - Morning Walk.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/John_Singer_Sargent_-_Morning_Walk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_285_slide_1.jpg"
+  },
+  "theme_285_slide_2": {
+    "slide_key": "theme_285_slide_2",
+    "theme_id": "theme_285",
+    "slide_index": 2,
+    "artist": "Camille Pissarro",
+    "artwork_title": "Morning, Sunlight, Eragny",
+    "wikimedia_title": "File:Camille Pissarro - Morning Sunlight Effect, Eragny - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Camille_Pissarro_-_Morning_Sunlight_Effect%2C_Eragny_-_Google_Art_Project.jpg/3840px-Camille_Pissarro_-_Morning_Sunlight_Effect%2C_Eragny_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_285_slide_2.jpg"
+  },
+  "theme_285_slide_3": {
+    "slide_key": "theme_285_slide_3",
+    "theme_id": "theme_285",
+    "slide_index": 3,
+    "artist": "Mary Cassatt",
+    "artwork_title": "Breakfast in Bed",
+    "wikimedia_title": "File:Breakfast in Bed (1897) by Mary Cassatt, Huntington Library.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Breakfast_in_Bed_%281897%29_by_Mary_Cassatt%2C_Huntington_Library.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_285_slide_3.jpg"
+  },
+  "theme_286_slide_1": {
+    "slide_key": "theme_286_slide_1",
+    "theme_id": "theme_286",
+    "slide_index": 1,
+    "artist": "Pierre-Auguste Renoir",
+    "artwork_title": "The Skiff (La Yole)",
+    "wikimedia_title": "File:Pierre-Auguste Renoir - La Yole.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Pierre-Auguste_Renoir_-_La_Yole.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_286_slide_1.jpg"
+  },
+  "theme_286_slide_2": {
+    "slide_key": "theme_286_slide_2",
+    "theme_id": "theme_286",
+    "slide_index": 2,
+    "artist": "Claude Monet",
+    "artwork_title": "Antibes Seen from the Salis Gardens",
+    "wikimedia_title": "File:The Red Kerchief, by Claude Monet, Cleveland Museum of Art, 1958.39.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/The_Red_Kerchief%2C_by_Claude_Monet%2C_Cleveland_Museum_of_Art%2C_1958.39.jpg/3840px-The_Red_Kerchief%2C_by_Claude_Monet%2C_Cleveland_Museum_of_Art%2C_1958.39.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_286_slide_2.jpg"
+  },
+  "theme_287_slide_1": {
+    "slide_key": "theme_287_slide_1",
+    "theme_id": "theme_287",
+    "slide_index": 1,
+    "artist": "Carl Larsson",
+    "artwork_title": "Around the Lamp",
+    "wikimedia_title": "File:Strindberg the Man (1920).djvu",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Strindberg_the_Man_%281920%29.djvu/page1-1280px-Strindberg_the_Man_%281920%29.djvu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_287_slide_1.jpg"
+  },
+  "theme_288_slide_2": {
+    "slide_key": "theme_288_slide_2",
+    "theme_id": "theme_288",
+    "slide_index": 2,
+    "artist": "John Singer Sargent",
+    "artwork_title": "Dolce Far Niente",
+    "wikimedia_title": "File:Brooklyn Museum - Dolce Far Niente - John Singer Sargent - overall.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Brooklyn_Museum_-_Dolce_Far_Niente_-_John_Singer_Sargent_-_overall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_288_slide_2.jpg"
+  },
+  "theme_288_slide_3": {
+    "slide_key": "theme_288_slide_3",
+    "theme_id": "theme_288",
+    "slide_index": 3,
+    "artist": "Joaquín Sorolla",
+    "artwork_title": "The Bathing Hour",
+    "wikimedia_title": "File:NIÑA ENTRANDO EN EL BAÑO (THE BATHING HOUR).PNG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/NI%C3%91A_ENTRANDO_EN_EL_BA%C3%91O_%28THE_BATHING_HOUR%29.PNG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_288_slide_3.jpg"
+  },
+  "theme_289_slide_1": {
+    "slide_key": "theme_289_slide_1",
+    "theme_id": "theme_289",
+    "slide_index": 1,
+    "artist": "Viktor Frankl / Classical Homage",
+    "artwork_title": "The Dawn After Darkness",
+    "wikimedia_title": "File:Bastei at Sunrise (28674563593).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Bastei_at_Sunrise_%2828674563593%29.jpg/3840px-Bastei_at_Sunrise_%2828674563593%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_289_slide_1.jpg"
+  },
+  "theme_289_slide_2": {
+    "slide_key": "theme_289_slide_2",
+    "theme_id": "theme_289",
+    "slide_index": 2,
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "The Cross in the Mountains",
+    "wikimedia_title": "File:Caspar David Friedrich - Cross in the Mountains (Tetschen Altar) - WGA08237.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Caspar_David_Friedrich_-_Cross_in_the_Mountains_%28Tetschen_Altar%29_-_WGA08237.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_289_slide_2.jpg"
+  },
+  "theme_289_slide_3": {
+    "slide_key": "theme_289_slide_3",
+    "theme_id": "theme_289",
+    "slide_index": 3,
+    "artist": "Albert Bierstadt",
+    "artwork_title": "A Storm in the Rocky Mountains",
+    "wikimedia_title": "File:1866-Bierstadt-storm-in-the-rocky-mountains.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/1866-Bierstadt-storm-in-the-rocky-mountains.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_289_slide_3.jpg"
+  },
+  "theme_290_slide_2": {
+    "slide_key": "theme_290_slide_2",
+    "theme_id": "theme_290",
+    "slide_index": 2,
+    "artist": "Frederic Edwin Church",
+    "artwork_title": "Twilight in the Wilderness",
+    "wikimedia_title": "File:Twilight in the Wilderness by Frederic Edwin Church (3).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Twilight_in_the_Wilderness_by_Frederic_Edwin_Church_%283%29.jpg/3840px-Twilight_in_the_Wilderness_by_Frederic_Edwin_Church_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_290_slide_2.jpg"
+  },
+  "theme_291_slide_1": {
+    "slide_key": "theme_291_slide_1",
+    "theme_id": "theme_291",
+    "slide_index": 1,
+    "artist": "J.M.W. Turner",
+    "artwork_title": "Norham Castle, Sunrise",
+    "wikimedia_title": "File:Joseph Mallord William Turner - Norham Castle, Sunrise - WGA23182.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Joseph_Mallord_William_Turner_-_Norham_Castle%2C_Sunrise_-_WGA23182.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_291_slide_1.jpg"
+  },
+  "theme_292_slide_1": {
+    "slide_key": "theme_292_slide_1",
+    "theme_id": "theme_292",
+    "slide_index": 1,
+    "artist": "Claude Monet",
+    "artwork_title": "Poplars on the Epte",
+    "wikimedia_title": "File:Monet Poplars on the River Epte.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Monet_Poplars_on_the_River_Epte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_292_slide_1.jpg"
+  },
+  "theme_292_slide_2": {
+    "slide_key": "theme_292_slide_2",
+    "theme_id": "theme_292",
+    "slide_index": 2,
+    "artist": "Thomas Cole",
+    "artwork_title": "The Oxbow",
+    "wikimedia_title": "File:Thomas Cole - The Oxbow (Met).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Thomas_Cole_-_The_Oxbow_%28Met%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_292_slide_2.jpg"
+  },
+  "theme_292_slide_3": {
+    "slide_key": "theme_292_slide_3",
+    "theme_id": "theme_292",
+    "slide_index": 3,
+    "artist": "George Inness",
+    "artwork_title": "Peace and Plenty",
+    "wikimedia_title": "File:Peace and Plenty MET DP159755.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Peace_and_Plenty_MET_DP159755.jpg/3840px-Peace_and_Plenty_MET_DP159755.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_292_slide_3.jpg"
+  },
+  "theme_293_slide_2": {
+    "slide_key": "theme_293_slide_2",
+    "theme_id": "theme_293",
+    "slide_index": 2,
+    "artist": "Frederic Edwin Church",
+    "artwork_title": "Aurora Borealis",
+    "wikimedia_title": "File:Frederic Edwin Church - Aurora Borealis - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Frederic_Edwin_Church_-_Aurora_Borealis_-_Google_Art_Project.jpg/3840px-Frederic_Edwin_Church_-_Aurora_Borealis_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_293_slide_2.jpg"
+  },
+  "theme_294_slide_1": {
+    "slide_key": "theme_294_slide_1",
+    "theme_id": "theme_294",
+    "slide_index": 1,
+    "artist": "J.M.W. Turner",
+    "artwork_title": "Light and Colour (Goethe's Theory)",
+    "wikimedia_title": "File:William Turner, Light and Colour (Goethe's Theory).JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/William_Turner%2C_Light_and_Colour_%28Goethe%27s_Theory%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_294_slide_1.jpg"
+  },
+  "theme_295_slide_1": {
+    "slide_key": "theme_295_slide_1",
+    "theme_id": "theme_295",
+    "slide_index": 1,
+    "artist": "Claude Monet",
+    "artwork_title": "The Cliff at Étretat, Sunset",
+    "wikimedia_title": "File:Monet - Sonnenaufgang bei Etretat.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Monet_-_Sonnenaufgang_bei_Etretat.jpg/3840px-Monet_-_Sonnenaufgang_bei_Etretat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_295_slide_1.jpg"
+  },
+  "theme_295_slide_2": {
+    "slide_key": "theme_295_slide_2",
+    "theme_id": "theme_295",
+    "slide_index": 2,
+    "artist": "Albert Bierstadt",
+    "artwork_title": "Emerald Pool, Yellowstone",
+    "wikimedia_title": "File:The Emerald Pool (1870) by Albert Bierstadt.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/The_Emerald_Pool_%281870%29_by_Albert_Bierstadt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_295_slide_2.jpg"
+  },
+  "theme_296_slide_2": {
+    "slide_key": "theme_296_slide_2",
+    "theme_id": "theme_296",
+    "slide_index": 2,
+    "artist": "Albert Camus / Master Homage",
+    "artwork_title": "The Invincible Summer Within",
+    "wikimedia_title": "File:Monet, Lavacourt-Sunshine-and-Snow.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Monet%2C_Lavacourt-Sunshine-and-Snow.jpg/3840px-Monet%2C_Lavacourt-Sunshine-and-Snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_296_slide_2.jpg"
+  },
+  "theme_296_slide_3": {
+    "slide_key": "theme_296_slide_3",
+    "theme_id": "theme_296",
+    "slide_index": 3,
+    "artist": "Pierre-Auguste Renoir",
+    "artwork_title": "Bal du moulin de la Galette",
+    "wikimedia_title": "File:Renoir, Pierre-Auguste - Dance at Le Moulin de la Galette, 1876.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg/3840px-Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_296_slide_3.jpg"
+  },
+  "theme_297_slide_1": {
+    "slide_key": "theme_297_slide_1",
+    "theme_id": "theme_297",
+    "slide_index": 1,
+    "artist": "Frederic Edwin Church",
+    "artwork_title": "Cotopaxi",
+    "wikimedia_title": "File:Frederic Edwin Church - Cotopaxi - 76.89 - Detroit Institute of Arts.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Frederic_Edwin_Church_-_Cotopaxi_-_76.89_-_Detroit_Institute_of_Arts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_297_slide_1.jpg"
+  },
+  "theme_298_slide_1": {
+    "slide_key": "theme_298_slide_1",
+    "theme_id": "theme_298",
+    "slide_index": 1,
+    "artist": "Claude Monet",
+    "artwork_title": "San Giorgio Maggiore at Dusk",
+    "wikimedia_title": "File:Claude Monet, Saint-Georges majeur au crépuscule.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Claude_Monet%2C_Saint-Georges_majeur_au_cr%C3%A9puscule.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_298_slide_1.jpg"
+  },
+  "theme_299_slide_2": {
+    "slide_key": "theme_299_slide_2",
+    "theme_id": "theme_299",
+    "slide_index": 2,
+    "artist": "Jean-Baptiste-Camille Corot",
+    "artwork_title": "The Bridge at Narni",
+    "wikimedia_title": "File:Corot - The Bridge at Narni, 1827.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Corot_-_The_Bridge_at_Narni%2C_1827.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_299_slide_2.jpg"
+  },
+  "theme_299_slide_3": {
+    "slide_key": "theme_299_slide_3",
+    "theme_id": "theme_299",
+    "slide_index": 3,
+    "artist": "J.M.W. Turner",
+    "artwork_title": "The Morning after the Deluge",
+    "wikimedia_title": "File:Joseph Mallord William Turner - The Morning after the Deluge - WGA23180.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Joseph_Mallord_William_Turner_-_The_Morning_after_the_Deluge_-_WGA23180.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_299_slide_3.jpg"
+  },
+  "theme_300_slide_1": {
+    "slide_key": "theme_300_slide_1",
+    "theme_id": "theme_300",
+    "slide_index": 1,
+    "artist": "Marcus Aurelius & Carl Rogers / Master Homage",
+    "artwork_title": "The Luminous Horizon at 300",
+    "wikimedia_title": "File:Caspar David Friedrich - Gebirgslandschaft mit Regenbogen.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Caspar_David_Friedrich_-_Gebirgslandschaft_mit_Regenbogen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_300_slide_1.jpg"
+  },
+  "theme_300_slide_2": {
+    "slide_key": "theme_300_slide_2",
+    "theme_id": "theme_300",
+    "slide_index": 2,
+    "artist": "Claude Monet",
+    "artwork_title": "Water Lilies (Harmony in Blue and Gold)",
+    "wikimedia_title": "File:Claude Monet 044.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Claude_Monet_044.jpg/3840px-Claude_Monet_044.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_300_slide_2.jpg"
+  },
+  "theme_300_slide_3": {
+    "slide_key": "theme_300_slide_3",
+    "theme_id": "theme_300",
+    "slide_index": 3,
+    "artist": "Albert Bierstadt & Frederic Edwin Church",
+    "artwork_title": "The Summit of Wisdom and Compassion",
+    "wikimedia_title": "File:Albert Bierstadt - Sunrise in the Sierras (c. 1872).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Albert_Bierstadt_-_Sunrise_in_the_Sierras_%28c._1872%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_300_slide_3.jpg"
+  },
+  "theme_254_slide_1": {
+    "slide_key": "theme_254_slide_1",
+    "theme_id": "theme_254",
+    "slide_index": 1,
+    "artist": "Camille Pissarro",
+    "artwork_title": "The Garden of the Tuileries on a Winter Morning",
+    "wikimedia_title": "File:Camille Pissarro - Le Jardin des Tuileries et le pavillon de Flore, matin, printemps (PD 1318).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Camille_Pissarro_-_Le_Jardin_des_Tuileries_et_le_pavillon_de_Flore%2C_matin%2C_printemps_%28PD_1318%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_254_slide_1.jpg"
+  },
+  "theme_254_slide_2": {
+    "slide_key": "theme_254_slide_2",
+    "theme_id": "theme_254",
+    "slide_index": 2,
+    "artist": "Claude Monet",
+    "artwork_title": "Path through the Corn at Pourville",
+    "wikimedia_title": "File:The Red Kerchief, by Claude Monet, Cleveland Museum of Art, 1958.39.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/The_Red_Kerchief%2C_by_Claude_Monet%2C_Cleveland_Museum_of_Art%2C_1958.39.jpg/3840px-The_Red_Kerchief%2C_by_Claude_Monet%2C_Cleveland_Museum_of_Art%2C_1958.39.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_254_slide_2.jpg"
+  },
+  "theme_256_slide_1": {
+    "slide_key": "theme_256_slide_1",
+    "theme_id": "theme_256",
+    "slide_index": 1,
+    "artist": "Caspar David Friedrich",
+    "artwork_title": "The Morning Star",
+    "wikimedia_title": "File:Caspar David Friedrich - Wanderer above the sea of fog.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_256_slide_1.jpg"
+  },
+  "theme_258_slide_2": {
+    "slide_key": "theme_258_slide_2",
+    "theme_id": "theme_258",
+    "slide_index": 2,
+    "artist": "Joaquín Sorolla",
+    "artwork_title": "Sunlight in the Garden",
+    "wikimedia_title": "File:Joaquín Sorolla y Bastida - Triste Herencia (1899).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Joaqu%C3%ADn_Sorolla_y_Bastida_-_Triste_Herencia_%281899%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_258_slide_2.jpg"
+  },
+  "theme_263_slide_1": {
+    "slide_key": "theme_263_slide_1",
+    "theme_id": "theme_263",
+    "slide_index": 1,
+    "artist": "Henri Le Sidaner",
+    "artwork_title": "The Table by the Window",
+    "wikimedia_title": "File:Bemberg Fondation - La Table de la mer, Villefranche-sur-Mer 1920 - Henri Le sidaner 61.4x50.2.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Bemberg_Fondation_-_La_Table_de_la_mer%2C_Villefranche-sur-Mer_1920_-_Henri_Le_sidaner_61.4x50.2.jpg/3840px-Bemberg_Fondation_-_La_Table_de_la_mer%2C_Villefranche-sur-Mer_1920_-_Henri_Le_sidaner_61.4x50.2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_263_slide_1.jpg"
+  },
+  "theme_264_slide_3": {
+    "slide_key": "theme_264_slide_3",
+    "theme_id": "theme_264",
+    "slide_index": 3,
+    "artist": "Claude Monet",
+    "artwork_title": "Cliffs at Pourville in the Fog",
+    "wikimedia_title": "File:The Red Kerchief, by Claude Monet, Cleveland Museum of Art, 1958.39.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/The_Red_Kerchief%2C_by_Claude_Monet%2C_Cleveland_Museum_of_Art%2C_1958.39.jpg/3840px-The_Red_Kerchief%2C_by_Claude_Monet%2C_Cleveland_Museum_of_Art%2C_1958.39.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_264_slide_3.jpg"
+  },
+  "theme_277_slide_1": {
+    "slide_key": "theme_277_slide_1",
+    "theme_id": "theme_277",
+    "slide_index": 1,
+    "artist": "Vilhelm Hammershøi",
+    "artwork_title": "Interior, Ray of Sunlight",
+    "wikimedia_title": "File:Vilhelm Hammershøi, Landscape, 1900, 118, Thielska Galleriet.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Vilhelm_Hammersh%C3%B8i%2C_Landscape%2C_1900%2C_118%2C_Thielska_Galleriet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_277_slide_1.jpg"
+  },
+  "theme_277_slide_2": {
+    "slide_key": "theme_277_slide_2",
+    "theme_id": "theme_277",
+    "slide_index": 2,
+    "artist": "Carl Larsson",
+    "artwork_title": "Quiet Afternoon",
+    "wikimedia_title": "File:Carl Larsson - Open-Air Painter. Winter-Motif from Åsögatan 145, Stockholm - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Carl_Larsson_-_Open-Air_Painter._Winter-Motif_from_%C3%85s%C3%B6gatan_145%2C_Stockholm_-_Google_Art_Project.jpg/3840px-Carl_Larsson_-_Open-Air_Painter._Winter-Motif_from_%C3%85s%C3%B6gatan_145%2C_Stockholm_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_277_slide_2.jpg"
+  },
+  "theme_278_slide_1": {
+    "slide_key": "theme_278_slide_1",
+    "theme_id": "theme_278",
+    "slide_index": 1,
+    "artist": "Berthe Morisot",
+    "artwork_title": "Reading in the Garden",
+    "wikimedia_title": "File:Berthe Morisot - Dans les blés.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Berthe_Morisot_-_Dans_les_bl%C3%A9s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_278_slide_1.jpg"
+  },
+  "theme_280_slide_1": {
+    "slide_key": "theme_280_slide_1",
+    "theme_id": "theme_280",
+    "slide_index": 1,
+    "artist": "Mary Cassatt",
+    "artwork_title": "Young Woman in a Green Outdoor Vest",
+    "wikimedia_title": "File:Blondelle Malone - Blondelle Malone, oil, garden with water lillies and fountain, important Southern artist, Impressionist style, on canvas, image area 45.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Blondelle_Malone_-_Blondelle_Malone%2C_oil%2C_garden_with_water_lillies_and_fountain%2C_important_Southern_artist%2C_Impressionist_style%2C_on_canvas%2C_image_area_45.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_280_slide_1.jpg"
+  },
+  "theme_280_slide_2": {
+    "slide_key": "theme_280_slide_2",
+    "theme_id": "theme_280",
+    "slide_index": 2,
+    "artist": "Henri Le Sidaner",
+    "artwork_title": "The White Tablecloth",
+    "wikimedia_title": "File:Henri Le Sidaner Le Pont, Chacé-Varrains 1915.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Henri_Le_Sidaner_Le_Pont%2C_Chac%C3%A9-Varrains_1915.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_280_slide_2.jpg"
+  },
+  "theme_281_slide_1": {
+    "slide_key": "theme_281_slide_1",
+    "theme_id": "theme_281",
+    "slide_index": 1,
+    "artist": "Carl Larsson",
+    "artwork_title": "The Sun Bath",
+    "wikimedia_title": "File:Carl Larsson - Open-Air Painter. Winter-Motif from Åsögatan 145, Stockholm - Google Art Project.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Carl_Larsson_-_Open-Air_Painter._Winter-Motif_from_%C3%85s%C3%B6gatan_145%2C_Stockholm_-_Google_Art_Project.jpg/3840px-Carl_Larsson_-_Open-Air_Painter._Winter-Motif_from_%C3%85s%C3%B6gatan_145%2C_Stockholm_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_281_slide_1.jpg"
+  },
+  "theme_288_slide_1": {
+    "slide_key": "theme_288_slide_1",
+    "theme_id": "theme_288",
+    "slide_index": 1,
+    "artist": "Henri Le Sidaner",
+    "artwork_title": "Evening Light in the Courtyard",
+    "wikimedia_title": "File:Henri Le Sidaner Le Pont, Chacé-Varrains 1915.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Henri_Le_Sidaner_Le_Pont%2C_Chac%C3%A9-Varrains_1915.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_288_slide_1.jpg"
+  },
+  "theme_296_slide_1": {
+    "slide_key": "theme_296_slide_1",
+    "theme_id": "theme_296",
+    "slide_index": 1,
+    "artist": "Camille Pissarro",
+    "artwork_title": "The Garden of the Tuileries on a Winter Morning",
+    "wikimedia_title": "File:Maisons à Bougival, automne, par Camille Pissarro, Getty Museum, edited.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Maisons_%C3%A0_Bougival%2C_automne%2C_par_Camille_Pissarro%2C_Getty_Museum%2C_edited.jpg/3840px-Maisons_%C3%A0_Bougival%2C_automne%2C_par_Camille_Pissarro%2C_Getty_Museum%2C_edited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "cache_file": "assets/templates/raw_cache\\theme_296_slide_1.jpg"
+  },
+  "theme_298_slide_2": {
+    "slide_key": "theme_298_slide_2",
+    "theme_id": "theme_298",
+    "slide_index": 2,
+    "artist": "Albert Bierstadt",
+    "artwork_title": "Rainbow over the Sierra Nevada",
+    "wikimedia_title": "File:Albert Bierstadt - Seal Rock, California.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Albert_Bierstadt_-_Seal_Rock%2C_California.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "cache_file": "assets/templates/raw_cache\\theme_298_slide_2.jpg"
+  }
+}

@@ -2746,5 +2746,658 @@
       "slide_2": "/images/themes/theme_200/slide_2.jpg",
       "slide_3": "/images/themes/theme_200/slide_3.jpg"
     }
+  },
+  "theme_251": {
+    "art_id": "ART-0251",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caspar David Friedrich - Woman at a Window, Claude Monet - Morning on the Seine, Clear Weather, Pierre-Auguste Renoir - Woman with a Parasol in a Garden",
+    "artist": "Caspar David Friedrich & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (TỰ TRẮC ẨN (Chữa lành & Hòa giải)): Caspar David Friedrich - Woman at a Window, Claude Monet - Morning on the Seine, Clear Weather, Pierre-Auguste Renoir - Woman with a Parasol in a Garden.",
+    "slides": {
+      "slide_1": "/images/themes/theme_251/slide_1.jpg",
+      "slide_2": "/images/themes/theme_251/slide_2.jpg",
+      "slide_3": "/images/themes/theme_251/slide_3.jpg"
+    }
+  },
+  "theme_252": {
+    "art_id": "ART-0252",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Vilhelm Hammershøi - Interior with a Woman Reading, John Singer Sargent - Carnation, Lily, Lily, Rose",
+    "artist": "Vilhelm Hammershøi & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (TỰ TRẮC ẨN (Chữa lành & Hòa giải)): Vilhelm Hammershøi - Interior with a Woman Reading, John Singer Sargent - Carnation, Lily, Lily, Rose.",
+    "slides": {
+      "slide_1": "/images/themes/theme_252/slide_1.jpg",
+      "slide_2": "/images/themes/theme_252/slide_2.jpg"
+    }
+  },
+  "theme_253": {
+    "art_id": "ART-0253",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Claude Monet - Water Lilies (The Clouds)",
+    "artist": "Claude Monet & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (TỰ TRẮC ẨN (Chữa lành & Hòa giải)): Claude Monet - Water Lilies (The Clouds).",
+    "slides": {
+      "slide_1": "/images/themes/theme_253/slide_1.jpg"
+    }
+  },
+  "theme_254": {
+    "art_id": "ART-0254",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Camille Pissarro - The Garden of the Tuileries on a Winter Morning, Claude Monet - Path through the Corn at Pourville, Jean-Baptiste-Camille Corot - Souvenir de Mortefontaine",
+    "artist": "Camille Pissarro & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (TỰ TRẮC ẨN (Chữa lành & Hòa giải)): Camille Pissarro - The Garden of the Tuileries on a Winter Morning, Claude Monet - Path through the Corn at Pourville, Jean-Baptiste-Camille Corot - Souvenir de Mortefontaine.",
+    "slides": {
+      "slide_1": "/images/themes/theme_254/slide_1.jpg",
+      "slide_2": "/images/themes/theme_254/slide_2.jpg",
+      "slide_3": "/images/themes/theme_254/slide_3.jpg"
+    }
+  },
+  "theme_255": {
+    "art_id": "ART-0255",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Berthe Morisot - The Cradle, Mary Cassatt - Mother and Child",
+    "artist": "Berthe Morisot & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (TỰ TRẮC ẨN (Chữa lành & Hòa giải)): Berthe Morisot - The Cradle, Mary Cassatt - Mother and Child.",
+    "slides": {
+      "slide_1": "/images/themes/theme_255/slide_1.jpg",
+      "slide_2": "/images/themes/theme_255/slide_2.jpg"
+    }
+  },
+  "theme_256": {
+    "art_id": "ART-0256",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caspar David Friedrich - The Morning Star",
+    "artist": "Caspar David Friedrich & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (TỰ TRẮC ẨN (Chữa lành & Hòa giải)): Caspar David Friedrich - The Morning Star.",
+    "slides": {
+      "slide_1": "/images/themes/theme_256/slide_1.jpg"
+    }
+  },
+  "theme_257": {
+    "art_id": "ART-0257",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Thomas Cole - The Arcadian State, Asher Brown Durand - Kindred Spirits",
+    "artist": "Thomas Cole & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (TỰ TRẮC ẨN (Chữa lành & Hòa giải)): Thomas Cole - The Arcadian State, Asher Brown Durand - Kindred Spirits.",
+    "slides": {
+      "slide_1": "/images/themes/theme_257/slide_1.jpg",
+      "slide_2": "/images/themes/theme_257/slide_2.jpg"
+    }
+  },
+  "theme_258": {
+    "art_id": "ART-0258",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Carl Larsson - Breakfast Under the Big Birch, Joaquín Sorolla - Sunlight in the Garden, Claude Monet - The Water-Lily Pond",
+    "artist": "Carl Larsson & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (TỰ TRẮC ẨN (Chữa lành & Hòa giải)): Carl Larsson - Breakfast Under the Big Birch, Joaquín Sorolla - Sunlight in the Garden, Claude Monet - The Water-Lily Pond.",
+    "slides": {
+      "slide_1": "/images/themes/theme_258/slide_1.jpg",
+      "slide_2": "/images/themes/theme_258/slide_2.jpg",
+      "slide_3": "/images/themes/theme_258/slide_3.jpg"
+    }
+  },
+  "theme_259": {
+    "art_id": "ART-0259",
+    "title": "Bộ kiệt tác sơn dầu độc bản: John Frederick Kensett - Lake George",
+    "artist": "John Frederick Kensett & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (TỰ TRẮC ẨN (Chữa lành & Hòa giải)): John Frederick Kensett - Lake George.",
+    "slides": {
+      "slide_1": "/images/themes/theme_259/slide_1.jpg"
+    }
+  },
+  "theme_260": {
+    "art_id": "ART-0260",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Sanford Robinson Gifford - A Gorge in the Mountains, Jean-Baptiste-Camille Corot - A Morning, Dance of the Nymphs",
+    "artist": "Sanford Robinson Gifford & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (TỰ TRẮC ẨN (Chữa lành & Hòa giải)): Sanford Robinson Gifford - A Gorge in the Mountains, Jean-Baptiste-Camille Corot - A Morning, Dance of the Nymphs.",
+    "slides": {
+      "slide_1": "/images/themes/theme_260/slide_1.jpg",
+      "slide_2": "/images/themes/theme_260/slide_2.jpg"
+    }
+  },
+  "theme_261": {
+    "art_id": "ART-0261",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Camille Pissarro - Landscape at Valhermeil, Pierre-Auguste Renoir - Springtime Landscape, Claude Monet - Field of Poppies near Giverny",
+    "artist": "Camille Pissarro & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (TỰ TRẮC ẨN (Chữa lành & Hòa giải)): Camille Pissarro - Landscape at Valhermeil, Pierre-Auguste Renoir - Springtime Landscape, Claude Monet - Field of Poppies near Giverny.",
+    "slides": {
+      "slide_1": "/images/themes/theme_261/slide_1.jpg",
+      "slide_2": "/images/themes/theme_261/slide_2.jpg",
+      "slide_3": "/images/themes/theme_261/slide_3.jpg"
+    }
+  },
+  "theme_262": {
+    "art_id": "ART-0262",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Albert Bierstadt - Sunlight and Shadow",
+    "artist": "Albert Bierstadt & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (TỰ TRẮC ẨN (Chữa lành & Hòa giải)): Albert Bierstadt - Sunlight and Shadow.",
+    "slides": {
+      "slide_1": "/images/themes/theme_262/slide_1.jpg"
+    }
+  },
+  "theme_263": {
+    "art_id": "ART-0263",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Henri Le Sidaner - The Table by the Window, Pierre-Auguste Renoir - The Reader (La Liseuse)",
+    "artist": "Henri Le Sidaner & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (TỰ TRẮC ẨN (Chữa lành & Hòa giải)): Henri Le Sidaner - The Table by the Window, Pierre-Auguste Renoir - The Reader (La Liseuse).",
+    "slides": {
+      "slide_1": "/images/themes/theme_263/slide_1.jpg",
+      "slide_2": "/images/themes/theme_263/slide_2.jpg"
+    }
+  },
+  "theme_264": {
+    "art_id": "ART-0264",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caspar David Friedrich - Wanderer above the Sea of Fog, Thomas Cole - Morning over the Kaaterskill Clove, Claude Monet - Cliffs at Pourville in the Fog",
+    "artist": "Caspar David Friedrich & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (KHẮC KỶ (Bình thản & Tự chủ)): Caspar David Friedrich - Wanderer above the Sea of Fog, Thomas Cole - Morning over the Kaaterskill Clove, Claude Monet - Cliffs at Pourville in the Fog.",
+    "slides": {
+      "slide_1": "/images/themes/theme_264/slide_1.jpg",
+      "slide_2": "/images/themes/theme_264/slide_2.jpg",
+      "slide_3": "/images/themes/theme_264/slide_3.jpg"
+    }
+  },
+  "theme_265": {
+    "art_id": "ART-0265",
+    "title": "Bộ kiệt tác sơn dầu độc bản: J.M.W. Turner - Sun Rising through Vapour, Caspar David Friedrich - The Solitary Tree",
+    "artist": "J.M.W. Turner & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (KHẮC KỶ (Bình thản & Tự chủ)): J.M.W. Turner - Sun Rising through Vapour, Caspar David Friedrich - The Solitary Tree.",
+    "slides": {
+      "slide_1": "/images/themes/theme_265/slide_1.jpg",
+      "slide_2": "/images/themes/theme_265/slide_2.jpg"
+    }
+  },
+  "theme_266": {
+    "art_id": "ART-0266",
+    "title": "Bộ kiệt tác sơn dầu độc bản: George Inness - The Home of the Heron",
+    "artist": "George Inness & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (KHẮC KỶ (Bình thản & Tự chủ)): George Inness - The Home of the Heron.",
+    "slides": {
+      "slide_1": "/images/themes/theme_266/slide_1.jpg"
+    }
+  },
+  "theme_267": {
+    "art_id": "ART-0267",
+    "title": "Bộ kiệt tác sơn dầu độc bản: J.M.W. Turner - The Fighting Temeraire, Frederic Edwin Church - Twilight in the Wilderness, Claude Monet - Haystacks, Sunset",
+    "artist": "J.M.W. Turner & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (KHẮC KỶ (Bình thản & Tự chủ)): J.M.W. Turner - The Fighting Temeraire, Frederic Edwin Church - Twilight in the Wilderness, Claude Monet - Haystacks, Sunset.",
+    "slides": {
+      "slide_1": "/images/themes/theme_267/slide_1.jpg",
+      "slide_2": "/images/themes/theme_267/slide_2.jpg",
+      "slide_3": "/images/themes/theme_267/slide_3.jpg"
+    }
+  },
+  "theme_268": {
+    "art_id": "ART-0268",
+    "title": "Bộ kiệt tác sơn dầu độc bản: John Singer Sargent - The Fountain, Villa Torlonia, Thomas Cole - Home in the Woods",
+    "artist": "John Singer Sargent & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (KHẮC KỶ (Bình thản & Tự chủ)): John Singer Sargent - The Fountain, Villa Torlonia, Thomas Cole - Home in the Woods.",
+    "slides": {
+      "slide_1": "/images/themes/theme_268/slide_1.jpg",
+      "slide_2": "/images/themes/theme_268/slide_2.jpg"
+    }
+  },
+  "theme_269": {
+    "art_id": "ART-0269",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caspar David Friedrich - Giant Mountains",
+    "artist": "Caspar David Friedrich & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (KHẮC KỶ (Bình thản & Tự chủ)): Caspar David Friedrich - Giant Mountains.",
+    "slides": {
+      "slide_1": "/images/themes/theme_269/slide_1.jpg"
+    }
+  },
+  "theme_270": {
+    "art_id": "ART-0270",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Vilhelm Hammershøi - Sunshine in the Drawing Room, Carl Larsson - Flowers on the Windowsill, Albert Bierstadt - Looking Down Yosemite Valley",
+    "artist": "Vilhelm Hammershøi & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (KHẮC KỶ (Bình thản & Tự chủ)): Vilhelm Hammershøi - Sunshine in the Drawing Room, Carl Larsson - Flowers on the Windowsill, Albert Bierstadt - Looking Down Yosemite Valley.",
+    "slides": {
+      "slide_1": "/images/themes/theme_270/slide_1.jpg",
+      "slide_2": "/images/themes/theme_270/slide_2.jpg",
+      "slide_3": "/images/themes/theme_270/slide_3.jpg"
+    }
+  },
+  "theme_271": {
+    "art_id": "ART-0271",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Claude Monet - Grainstacks at the End of Summer, Camille Pissarro - Sunset at Saint-Charles, Eragny",
+    "artist": "Claude Monet & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (KHẮC KỶ (Bình thản & Tự chủ)): Claude Monet - Grainstacks at the End of Summer, Camille Pissarro - Sunset at Saint-Charles, Eragny.",
+    "slides": {
+      "slide_1": "/images/themes/theme_271/slide_1.jpg",
+      "slide_2": "/images/themes/theme_271/slide_2.jpg"
+    }
+  },
+  "theme_272": {
+    "art_id": "ART-0272",
+    "title": "Bộ kiệt tác sơn dầu độc bản: John Frederick Kensett - Sunset on the Sea",
+    "artist": "John Frederick Kensett & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (KHẮC KỶ (Bình thản & Tự chủ)): John Frederick Kensett - Sunset on the Sea.",
+    "slides": {
+      "slide_1": "/images/themes/theme_272/slide_1.jpg"
+    }
+  },
+  "theme_273": {
+    "art_id": "ART-0273",
+    "title": "Bộ kiệt tác sơn dầu độc bản: John Singer Sargent - A Gust of Wind, Caspar David Friedrich - Morning in the Mountains",
+    "artist": "John Singer Sargent & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (KHẮC KỶ (Bình thản & Tự chủ)): John Singer Sargent - A Gust of Wind, Caspar David Friedrich - Morning in the Mountains.",
+    "slides": {
+      "slide_1": "/images/themes/theme_273/slide_1.jpg",
+      "slide_2": "/images/themes/theme_273/slide_2.jpg"
+    }
+  },
+  "theme_274": {
+    "art_id": "ART-0274",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Jean-Baptiste-Camille Corot - The Lake at Ville-d'Avray, Claude Monet - The Artist's Garden at Giverny, George Inness - Peace and Plenty",
+    "artist": "Jean-Baptiste-Camille Corot & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (KHẮC KỶ (Bình thản & Tự chủ)): Jean-Baptiste-Camille Corot - The Lake at Ville-d'Avray, Claude Monet - The Artist's Garden at Giverny, George Inness - Peace and Plenty.",
+    "slides": {
+      "slide_1": "/images/themes/theme_274/slide_1.jpg",
+      "slide_2": "/images/themes/theme_274/slide_2.jpg",
+      "slide_3": "/images/themes/theme_274/slide_3.jpg"
+    }
+  },
+  "theme_275": {
+    "art_id": "ART-0275",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Albert Bierstadt - Among the Sierra Nevada Mountains",
+    "artist": "Albert Bierstadt & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (KHẮC KỶ (Bình thản & Tự chủ)): Albert Bierstadt - Among the Sierra Nevada Mountains.",
+    "slides": {
+      "slide_1": "/images/themes/theme_275/slide_1.jpg"
+    }
+  },
+  "theme_276": {
+    "art_id": "ART-0276",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Mary Cassatt - The Tea, John Singer Sargent - A Dinner Table at Night, Camille Pissarro - The Garden at Eragny",
+    "artist": "Mary Cassatt & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (KẾT NỐI LÀNH MẠNH (Giao tiếp & Thấu cảm)): Mary Cassatt - The Tea, John Singer Sargent - A Dinner Table at Night, Camille Pissarro - The Garden at Eragny.",
+    "slides": {
+      "slide_1": "/images/themes/theme_276/slide_1.jpg",
+      "slide_2": "/images/themes/theme_276/slide_2.jpg",
+      "slide_3": "/images/themes/theme_276/slide_3.jpg"
+    }
+  },
+  "theme_277": {
+    "art_id": "ART-0277",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Vilhelm Hammershøi - Interior, Ray of Sunlight, Carl Larsson - Quiet Afternoon",
+    "artist": "Vilhelm Hammershøi & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (KẾT NỐI LÀNH MẠNH (Giao tiếp & Thấu cảm)): Vilhelm Hammershøi - Interior, Ray of Sunlight, Carl Larsson - Quiet Afternoon.",
+    "slides": {
+      "slide_1": "/images/themes/theme_277/slide_1.jpg",
+      "slide_2": "/images/themes/theme_277/slide_2.jpg"
+    }
+  },
+  "theme_278": {
+    "art_id": "ART-0278",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Berthe Morisot - Reading in the Garden",
+    "artist": "Berthe Morisot & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (KẾT NỐI LÀNH MẠNH (Giao tiếp & Thấu cảm)): Berthe Morisot - Reading in the Garden.",
+    "slides": {
+      "slide_1": "/images/themes/theme_278/slide_1.jpg"
+    }
+  },
+  "theme_279": {
+    "art_id": "ART-0279",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Pierre-Auguste Renoir - The Luncheon of the Boating Party, Joaquín Sorolla - Walk on the Beach, Claude Monet - The Garden of Monet at Argenteuil",
+    "artist": "Pierre-Auguste Renoir & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (KẾT NỐI LÀNH MẠNH (Giao tiếp & Thấu cảm)): Pierre-Auguste Renoir - The Luncheon of the Boating Party, Joaquín Sorolla - Walk on the Beach, Claude Monet - The Garden of Monet at Argenteuil.",
+    "slides": {
+      "slide_1": "/images/themes/theme_279/slide_1.jpg",
+      "slide_2": "/images/themes/theme_279/slide_2.jpg",
+      "slide_3": "/images/themes/theme_279/slide_3.jpg"
+    }
+  },
+  "theme_280": {
+    "art_id": "ART-0280",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Mary Cassatt - Young Woman in a Green Outdoor Vest, Henri Le Sidaner - The White Tablecloth",
+    "artist": "Mary Cassatt & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (KẾT NỐI LÀNH MẠNH (Giao tiếp & Thấu cảm)): Mary Cassatt - Young Woman in a Green Outdoor Vest, Henri Le Sidaner - The White Tablecloth.",
+    "slides": {
+      "slide_1": "/images/themes/theme_280/slide_1.jpg",
+      "slide_2": "/images/themes/theme_280/slide_2.jpg"
+    }
+  },
+  "theme_281": {
+    "art_id": "ART-0281",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Carl Larsson - The Sun Bath",
+    "artist": "Carl Larsson & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (KẾT NỐI LÀNH MẠNH (Giao tiếp & Thấu cảm)): Carl Larsson - The Sun Bath.",
+    "slides": {
+      "slide_1": "/images/themes/theme_281/slide_1.jpg"
+    }
+  },
+  "theme_282": {
+    "art_id": "ART-0282",
+    "title": "Bộ kiệt tác sơn dầu độc bản: John Singer Sargent - Monet Painting by the Edge of a Wood, Claude Monet - Camille Monet in the Garden at Argenteuil, Frederic Edwin Church - The Heart of the Andes",
+    "artist": "John Singer Sargent & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (KẾT NỐI LÀNH MẠNH (Giao tiếp & Thấu cảm)): John Singer Sargent - Monet Painting by the Edge of a Wood, Claude Monet - Camille Monet in the Garden at Argenteuil, Frederic Edwin Church - The Heart of the Andes.",
+    "slides": {
+      "slide_1": "/images/themes/theme_282/slide_1.jpg",
+      "slide_2": "/images/themes/theme_282/slide_2.jpg",
+      "slide_3": "/images/themes/theme_282/slide_3.jpg"
+    }
+  },
+  "theme_283": {
+    "art_id": "ART-0283",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Joaquín Sorolla - Valencia Fishermen, Pierre-Auguste Renoir - A Bouquet of Roses",
+    "artist": "Joaquín Sorolla & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (KẾT NỐI LÀNH MẠNH (Giao tiếp & Thấu cảm)): Joaquín Sorolla - Valencia Fishermen, Pierre-Auguste Renoir - A Bouquet of Roses.",
+    "slides": {
+      "slide_1": "/images/themes/theme_283/slide_1.jpg",
+      "slide_2": "/images/themes/theme_283/slide_2.jpg"
+    }
+  },
+  "theme_284": {
+    "art_id": "ART-0284",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Jean-Baptiste-Camille Corot - Morning with Nymphs",
+    "artist": "Jean-Baptiste-Camille Corot & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (KẾT NỐI LÀNH MẠNH (Giao tiếp & Thấu cảm)): Jean-Baptiste-Camille Corot - Morning with Nymphs.",
+    "slides": {
+      "slide_1": "/images/themes/theme_284/slide_1.jpg"
+    }
+  },
+  "theme_285": {
+    "art_id": "ART-0285",
+    "title": "Bộ kiệt tác sơn dầu độc bản: John Singer Sargent - Morning Walk, Camille Pissarro - Morning, Sunlight, Eragny, Mary Cassatt - Breakfast in Bed",
+    "artist": "John Singer Sargent & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (KẾT NỐI LÀNH MẠNH (Giao tiếp & Thấu cảm)): John Singer Sargent - Morning Walk, Camille Pissarro - Morning, Sunlight, Eragny, Mary Cassatt - Breakfast in Bed.",
+    "slides": {
+      "slide_1": "/images/themes/theme_285/slide_1.jpg",
+      "slide_2": "/images/themes/theme_285/slide_2.jpg",
+      "slide_3": "/images/themes/theme_285/slide_3.jpg"
+    }
+  },
+  "theme_286": {
+    "art_id": "ART-0286",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Pierre-Auguste Renoir - The Skiff (La Yole), Claude Monet - Antibes Seen from the Salis Gardens",
+    "artist": "Pierre-Auguste Renoir & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (KẾT NỐI LÀNH MẠNH (Giao tiếp & Thấu cảm)): Pierre-Auguste Renoir - The Skiff (La Yole), Claude Monet - Antibes Seen from the Salis Gardens.",
+    "slides": {
+      "slide_1": "/images/themes/theme_286/slide_1.jpg",
+      "slide_2": "/images/themes/theme_286/slide_2.jpg"
+    }
+  },
+  "theme_287": {
+    "art_id": "ART-0287",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Carl Larsson - Around the Lamp",
+    "artist": "Carl Larsson & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (KẾT NỐI LÀNH MẠNH (Giao tiếp & Thấu cảm)): Carl Larsson - Around the Lamp.",
+    "slides": {
+      "slide_1": "/images/themes/theme_287/slide_1.jpg"
+    }
+  },
+  "theme_288": {
+    "art_id": "ART-0288",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Henri Le Sidaner - Evening Light in the Courtyard, John Singer Sargent - Dolce Far Niente, Joaquín Sorolla - The Bathing Hour",
+    "artist": "Henri Le Sidaner & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (KẾT NỐI LÀNH MẠNH (Giao tiếp & Thấu cảm)): Henri Le Sidaner - Evening Light in the Courtyard, John Singer Sargent - Dolce Far Niente, Joaquín Sorolla - The Bathing Hour.",
+    "slides": {
+      "slide_1": "/images/themes/theme_288/slide_1.jpg",
+      "slide_2": "/images/themes/theme_288/slide_2.jpg",
+      "slide_3": "/images/themes/theme_288/slide_3.jpg"
+    }
+  },
+  "theme_289": {
+    "art_id": "ART-0289",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Viktor Frankl / Classical Homage - The Dawn After Darkness, Caspar David Friedrich - The Cross in the Mountains, Albert Bierstadt - A Storm in the Rocky Mountains",
+    "artist": "Viktor Frankl / Classical Homage & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (Ý NGHĨA SỐNG (Sức bật sau nghịch cảnh)): Viktor Frankl / Classical Homage - The Dawn After Darkness, Caspar David Friedrich - The Cross in the Mountains, Albert Bierstadt - A Storm in the Rocky Mountains.",
+    "slides": {
+      "slide_1": "/images/themes/theme_289/slide_1.jpg",
+      "slide_2": "/images/themes/theme_289/slide_2.jpg",
+      "slide_3": "/images/themes/theme_289/slide_3.jpg"
+    }
+  },
+  "theme_290": {
+    "art_id": "ART-0290",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Japanese Kintsugi / Master Homage - Golden Seams of Healing, Frederic Edwin Church - Twilight in the Wilderness",
+    "artist": "Japanese Kintsugi / Master Homage & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (Ý NGHĨA SỐNG (Sức bật sau nghịch cảnh)): Japanese Kintsugi / Master Homage - Golden Seams of Healing, Frederic Edwin Church - Twilight in the Wilderness.",
+    "slides": {
+      "slide_1": "/images/themes/theme_290/slide_1.jpg",
+      "slide_2": "/images/themes/theme_290/slide_2.jpg"
+    }
+  },
+  "theme_291": {
+    "art_id": "ART-0291",
+    "title": "Bộ kiệt tác sơn dầu độc bản: J.M.W. Turner - Norham Castle, Sunrise",
+    "artist": "J.M.W. Turner & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (Ý NGHĨA SỐNG (Sức bật sau nghịch cảnh)): J.M.W. Turner - Norham Castle, Sunrise.",
+    "slides": {
+      "slide_1": "/images/themes/theme_291/slide_1.jpg"
+    }
+  },
+  "theme_292": {
+    "art_id": "ART-0292",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Claude Monet - Poplars on the Epte, Thomas Cole - The Oxbow, George Inness - Peace and Plenty",
+    "artist": "Claude Monet & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (Ý NGHĨA SỐNG (Sức bật sau nghịch cảnh)): Claude Monet - Poplars on the Epte, Thomas Cole - The Oxbow, George Inness - Peace and Plenty.",
+    "slides": {
+      "slide_1": "/images/themes/theme_292/slide_1.jpg",
+      "slide_2": "/images/themes/theme_292/slide_2.jpg",
+      "slide_3": "/images/themes/theme_292/slide_3.jpg"
+    }
+  },
+  "theme_293": {
+    "art_id": "ART-0293",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Leonard Cohen / Master Homage - The Crack Where Light Enters, Frederic Edwin Church - Aurora Borealis",
+    "artist": "Leonard Cohen / Master Homage & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (Ý NGHĨA SỐNG (Sức bật sau nghịch cảnh)): Leonard Cohen / Master Homage - The Crack Where Light Enters, Frederic Edwin Church - Aurora Borealis.",
+    "slides": {
+      "slide_1": "/images/themes/theme_293/slide_1.jpg",
+      "slide_2": "/images/themes/theme_293/slide_2.jpg"
+    }
+  },
+  "theme_294": {
+    "art_id": "ART-0294",
+    "title": "Bộ kiệt tác sơn dầu độc bản: J.M.W. Turner - Light and Colour (Goethe's Theory)",
+    "artist": "J.M.W. Turner & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (Ý NGHĨA SỐNG (Sức bật sau nghịch cảnh)): J.M.W. Turner - Light and Colour (Goethe's Theory).",
+    "slides": {
+      "slide_1": "/images/themes/theme_294/slide_1.jpg"
+    }
+  },
+  "theme_295": {
+    "art_id": "ART-0295",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Claude Monet - The Cliff at Étretat, Sunset, Albert Bierstadt - Emerald Pool, Yellowstone",
+    "artist": "Claude Monet & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (Ý NGHĨA SỐNG (Sức bật sau nghịch cảnh)): Claude Monet - The Cliff at Étretat, Sunset, Albert Bierstadt - Emerald Pool, Yellowstone.",
+    "slides": {
+      "slide_1": "/images/themes/theme_295/slide_1.jpg",
+      "slide_2": "/images/themes/theme_295/slide_2.jpg"
+    }
+  },
+  "theme_296": {
+    "art_id": "ART-0296",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Camille Pissarro - The Garden of the Tuileries on a Winter Morning, Albert Camus / Master Homage - The Invincible Summer Within, Pierre-Auguste Renoir - Bal du moulin de la Galette",
+    "artist": "Camille Pissarro & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (Ý NGHĨA SỐNG (Sức bật sau nghịch cảnh)): Camille Pissarro - The Garden of the Tuileries on a Winter Morning, Albert Camus / Master Homage - The Invincible Summer Within, Pierre-Auguste Renoir - Bal du moulin de la Galette.",
+    "slides": {
+      "slide_1": "/images/themes/theme_296/slide_1.jpg",
+      "slide_2": "/images/themes/theme_296/slide_2.jpg",
+      "slide_3": "/images/themes/theme_296/slide_3.jpg"
+    }
+  },
+  "theme_297": {
+    "art_id": "ART-0297",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Frederic Edwin Church - Cotopaxi",
+    "artist": "Frederic Edwin Church & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Single-Punch (1 trang) (Ý NGHĨA SỐNG (Sức bật sau nghịch cảnh)): Frederic Edwin Church - Cotopaxi.",
+    "slides": {
+      "slide_1": "/images/themes/theme_297/slide_1.jpg"
+    }
+  },
+  "theme_298": {
+    "art_id": "ART-0298",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Claude Monet - San Giorgio Maggiore at Dusk, Albert Bierstadt - Rainbow over the Sierra Nevada",
+    "artist": "Claude Monet & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 2 trang (Ý NGHĨA SỐNG (Sức bật sau nghịch cảnh)): Claude Monet - San Giorgio Maggiore at Dusk, Albert Bierstadt - Rainbow over the Sierra Nevada.",
+    "slides": {
+      "slide_1": "/images/themes/theme_298/slide_1.jpg",
+      "slide_2": "/images/themes/theme_298/slide_2.jpg"
+    }
+  },
+  "theme_299": {
+    "art_id": "ART-0299",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Lewis Smedes / Master Homage - Unchaining the Prisoner, Jean-Baptiste-Camille Corot - The Bridge at Narni, J.M.W. Turner - The Morning after the Deluge",
+    "artist": "Lewis Smedes / Master Homage & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (Ý NGHĨA SỐNG (Sức bật sau nghịch cảnh)): Lewis Smedes / Master Homage - Unchaining the Prisoner, Jean-Baptiste-Camille Corot - The Bridge at Narni, J.M.W. Turner - The Morning after the Deluge.",
+    "slides": {
+      "slide_1": "/images/themes/theme_299/slide_1.jpg",
+      "slide_2": "/images/themes/theme_299/slide_2.jpg",
+      "slide_3": "/images/themes/theme_299/slide_3.jpg"
+    }
+  },
+  "theme_300": {
+    "art_id": "ART-0300",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Marcus Aurelius & Carl Rogers / Master Homage - The Luminous Horizon at 300, Claude Monet - Water Lilies (Harmony in Blue and Gold), Albert Bierstadt & Frederic Edwin Church - The Summit of Wisdom and Compassion",
+    "artist": "Marcus Aurelius & Carl Rogers / Master Homage & các bậc thầy Ấn tượng/Lãng mạn",
+    "year": "Thế kỷ XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho Carousel 3 trang (Ý NGHĨA SỐNG (Sức bật sau nghịch cảnh)): Marcus Aurelius & Carl Rogers / Master Homage - The Luminous Horizon at 300, Claude Monet - Water Lilies (Harmony in Blue and Gold), Albert Bierstadt & Frederic Edwin Church - The Summit of Wisdom and Compassion.",
+    "slides": {
+      "slide_1": "/images/themes/theme_300/slide_1.jpg",
+      "slide_2": "/images/themes/theme_300/slide_2.jpg",
+      "slide_3": "/images/themes/theme_300/slide_3.jpg"
+    }
   }
 }

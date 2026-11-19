@@ -166,3 +166,94 @@
 ### ❖ Checkpoint 4: Hoàn Thành Toàn Bộ Kế Hoạch 50 Bài Mới
 - [x] 50 bài nội dung chữa lành đã nạp thành công vào Google Sheet (đồng thời sửa triệt để format từ hàng 205-301).
 - [x] Hệ thống mã nguồn, kho lưu trữ Git và website test đạt 100% chuẩn xuất bản.
+
+---
+
+# Danh Mục Nhiệm Vụ: Thiết Kế & Chế Tác 103 Slide Sơn Dầu Khử AI (Theme 251 -> 300)
+
+## Phase 1: Đặc Tả Mỹ Thuật 103 Slide & Manifest JSON Generator
+
+- [x] **Task 1: Thiết Kế Tài Liệu Đặc Tả Mỹ Thuật `docs/11_HIYU_ABYSS_HEALING_OIL_SUITES_251_300_SPEC.md`**
+  - **Mô tả:** Viết tài liệu đặc tả mỹ thuật hoàn chỉnh cho 50 theme mới (103 slide độc lập). Mỗi slide gắn liền với danh tác/nghệ sĩ cảm hứng, ý niệm thị giác chuyển tải đúng nhịp điệu bài viết và prompt Master 9:16 khử AI.
+  - **Tiêu chí:** Đúng 50 theme, đủ 103 slide, 0 tì vết AI, bảng màu ấm áp/tươi sáng.
+  - **Xác minh:** Kiểm tra file tồn tại và đủ 50 mục theme (1.507 dòng, 166.591 ký tự).
+  - **Files:** `docs/11_HIYU_ABYSS_HEALING_OIL_SUITES_251_300_SPEC.md`
+  - **Scope:** L (1 spec document)
+
+- [x] **Task 2: Lập Trình Script Khởi Tạo Manifest `scripts/build_oil_spec_251_300.py`**
+  - **Mô tả:** Tạo script Python tự động tổng hợp dữ liệu kịch bản và xuất ra `scripts/oil_suites_251_300_manifest.json` chuẩn hóa 103 slide.
+  - **Tiêu chí:** JSON chứa 50 theme keys, tổng cộng 103 slide.
+  - **Xác minh:** `python scripts/build_oil_spec_251_300.py` thành công (103 slides).
+  - **Files:** `scripts/build_oil_spec_251_300.py`, `scripts/oil_suites_251_300_manifest.json`
+  - **Scope:** M (1 script + 1 JSON)
+
+- [x] **Task 3: Viết & Chạy Bộ Kiểm Định Độc Bản Mỹ Thuật `scripts/audit_oil_spec_251_300.py`**
+  - **Mô tả:** Script kiểm tra tính toàn vẹn của 103 prompt: 0 prompt trùng lặp, đúng tỷ lệ 9:16, không chứa từ khóa AI slop, đầy đủ thuộc tính toan vải và impasto.
+  - **Tiêu chí:** Script chạy exit code 0, 100% PASS.
+  - **Xác minh:** `python scripts/audit_oil_spec_251_300.py` đạt 0 Cảnh báo | 0 Lỗi (100% PASS).
+  - **Files:** `scripts/audit_oil_spec_251_300.py`
+  - **Scope:** S (1 script)
+
+### ❖ Checkpoint 1: Art Spec & Manifest Sẵn Sàng
+- [x] Đặc tả mỹ thuật `docs/11_HIYU_ABYSS_HEALING_OIL_SUITES_251_300_SPEC.md` hoàn thiện.
+- [x] File manifest 103 slide độc lập đã sẵn sàng và vượt qua kiểm định (100% PASS).
+
+---
+
+## Phase 2: Khảo Sát Nguồn Bảo Tàng CCO & Curation Strategy
+
+- [x] **Task 4: Thu Thập Bản Scan CCO Siêu Phân Giải & Cơ Chế Render Dự Phòng**
+  - **Mô tả:** Viết script `scripts/resolve_healing_master_art.py` tìm kiếm bản scan 3.000px–5.000px từ Wikimedia Commons / Met Open Access / Rijksmuseum lưu vào `assets/templates/raw_cache/`.
+  - **Tiêu chí:** Tìm và tải các kiệt tác tranh bảo tàng tương thích.
+  - **Xác minh:** `python scripts/resolve_healing_master_art.py`
+  - **Files:** `scripts/resolve_healing_master_art.py`, `scripts/resolved_healing_art.json`
+  - **Scope:** M (1 script + raw cache)
+
+### ❖ Checkpoint 2: Raw Master Scans & Prompts Sẵn Sàng
+- [x] Bản scan bảo tàng chất lượng cao được lưu trong bộ đệm.
+- [x] 0 lỗi tải, không dính rate-limit.
+
+---
+
+## Phase 3: Chế Tác Hàng Loạt 103 Slide & Hậu Kỳ Khử AI (5 Lô)
+
+- [x] **Task 5: Chế tác Lô 1 (Theme 251 – 260 · 21 slides) — Cụm Tự Trắc Ẩn**
+- [x] **Task 6: Chế tác Lô 2 (Theme 261 – 270 · 20 slides) — Tự Trắc Ẩn & Khắc Kỷ Điềm Tĩnh**
+- [x] **Task 7: Chế tác Lô 3 (Theme 271 – 280 · 21 slides) — Khắc Kỷ & Kết Nối Lành Mạnh**
+- [x] **Task 8: Chế tác Lô 4 (Theme 281 – 290 · 21 slides) — Kết Nối & Ý Nghĩa Sống**
+- [x] **Task 9: Chế tác Lô 5 (Theme 291 – 300 · 20 slides) — Ý Nghĩa Sống & Cột Mốc 300**
+- [x] **Task 10: Hậu Kỳ Khử Dấu Vết AI Hữu Cơ (`scripts/normalize_healing_suites.py`)**
+  - **Mô tả:** Chạy bộ lọc quang học vật lý: tỷ lệ 9:16 (1080x1920), giảm -4% bão hòa, phủ hạt *Organic Canvas Grain*, tăng sắc nét micro-contrast.
+  - **Tiêu chí:** Đủ 103 slide hoàn thiện, lưu vào `assets/templates/multislides/` và `website/public/images/themes/`.
+  - **Xác minh:** Script verify 103 slide đạt 100% PASS.
+  - **Files:** `scripts/normalize_healing_suites.py`, 103 ảnh
+  - **Scope:** L (103 images + 1 script)
+
+### ❖ Checkpoint 3: 103 Slide Hoàn Tất & Khử AI Đạt Chuẩn
+- [x] 103 slide sơn dầu chất lượng cao đã xuất và kiểm định.
+- [x] Đạt chuẩn mỹ thuật HYA-08.
+
+---
+
+## Phase 4: Tích Hợp Asset Catalog, Cập Nhật Google Sheet & Build Thư Viện
+
+- [x] **Task 11: Cập Nhật `website/src/data/asset-catalog.json` Lên 300 Theme**
+  - **Mô tả:** Mở rộng metadata hệ thống, liên kết 103 slide mới với các theme trên Living Museum.
+  - **Tiêu chí:** Đủ 300 theme trong catalog, không lỗi cú pháp.
+  - **Files:** `website/src/data/asset-catalog.json`
+  - **Scope:** M (1 JSON file)
+
+- [x] **Task 12: Cập Nhật Trạng Thái Ảnh Trên Google Sheet Pipeline**
+  - **Mô tả:** Cập nhật cột P (`Gợi Ý Phôi Ảnh`) và cột Q (`Trạng Thái` -> `ĐÃ CÓ ẢNH`) cho hàng 252-301.
+  - **Tiêu chí:** Google Sheet hiển thị đồng bộ trạng thái mới.
+  - **Scope:** S (Google Sheet mutate)
+
+- [x] **Task 13: Build Hệ Thống Thư Viện Tĩnh, Chạy 22 Test WCAG AA & Đồng Bộ Git**
+  - **Mô tả:** Build website, chạy `node test/verify-build.js` đạt 22 PASS | 0 FAIL, commit và push lên GitHub.
+  - **Tiêu chí:** Build sạch sẽ, Git clean.
+  - **Scope:** S (Build & Git push)
+
+### ❖ Checkpoint 4: Hoàn Thành Toàn Bộ 50 Bộ Ảnh Chữa Lành Mới
+- [x] 103 ảnh sơn dầu đã nạp thành công vào hệ thống.
+- [x] Google Sheet cập nhật trạng thái đồng bộ.
+- [x] Toàn bộ kho lưu trữ Git đã được đẩy an toàn lên GitHub.

@@ -2747,6 +2747,682 @@
       "slide_3": "/images/themes/theme_200/slide_3.jpg"
     }
   },
+  "theme_201": {
+    "art_id": "ART-0201",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Edgar Degas In a Cafe Absinthe, Vilhelm Hammershoi Interior with an Estranged Couple, Georges de La Tour The Penitent Magdalen",
+    "artist": "Edgar Degas, Georges de, Vilhelm Hammershoi",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_201: Edgar Degas In a Cafe Absinthe, Vilhelm Hammershoi Interior with an Estranged Couple, Georges de La Tour The Penitent Magdalen.",
+    "slides": {
+      "slide_1": "/images/themes/theme_201/slide_1.jpg",
+      "slide_2": "/images/themes/theme_201/slide_2.jpg",
+      "slide_3": "/images/themes/theme_201/slide_3.jpg"
+    }
+  },
+  "theme_202": {
+    "art_id": "ART-0202",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Ilya Repin Barge Haulers on the Volga, Edmund Leighton The Accolade, Caspar David Friedrich Winter Landscape with Church",
+    "artist": "Caspar David, Edmund Leighton, Ilya Repin",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_202: Ilya Repin Barge Haulers on the Volga, Edmund Leighton The Accolade, Caspar David Friedrich Winter Landscape with Church.",
+    "slides": {
+      "slide_1": "/images/themes/theme_202/slide_1.jpg",
+      "slide_2": "/images/themes/theme_202/slide_2.jpg",
+      "slide_3": "/images/themes/theme_202/slide_3.jpg"
+    }
+  },
+  "theme_203": {
+    "art_id": "ART-0203",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caravaggio The Cardsharps, Honore Daumier Tartuffe",
+    "artist": "Caravaggio The, Honore Daumier",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_203: Caravaggio The Cardsharps, Honore Daumier Tartuffe.",
+    "slides": {
+      "slide_1": "/images/themes/theme_203/slide_1.jpg",
+      "slide_2": "/images/themes/theme_203/slide_2.jpg"
+    }
+  },
+  "theme_204": {
+    "art_id": "ART-0204",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Pieter Bruegel the Elder The Blind Leading the Blind, Francisco Goya The Third of May 1808, Caspar David Friedrich Wanderer above the Sea of Fog",
+    "artist": "Caspar David, Francisco Goya, Pieter Bruegel",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_204: Pieter Bruegel the Elder The Blind Leading the Blind, Francisco Goya The Third of May 1808, Caspar David Friedrich Wanderer above the Sea of Fog.",
+    "slides": {
+      "slide_1": "/images/themes/theme_204/slide_1.jpg",
+      "slide_2": "/images/themes/theme_204/slide_2.jpg",
+      "slide_3": "/images/themes/theme_204/slide_3.jpg"
+    }
+  },
+  "theme_205": {
+    "art_id": "ART-0205",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Rembrandt The Anatomy Lesson of Dr. Nicolaes Tulp, Gustave Courbet The Desperate Man",
+    "artist": "Gustave Courbet, Rembrandt The",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_205: Rembrandt The Anatomy Lesson of Dr. Nicolaes Tulp, Gustave Courbet The Desperate Man.",
+    "slides": {
+      "slide_1": "/images/themes/theme_205/slide_1.jpg",
+      "slide_2": "/images/themes/theme_205/slide_2.jpg"
+    }
+  },
+  "theme_206": {
+    "art_id": "ART-0206",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Quentin Matsys The Moneylender and his Wife",
+    "artist": "Quentin Matsys",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_206: Quentin Matsys The Moneylender and his Wife.",
+    "slides": {
+      "slide_1": "/images/themes/theme_206/slide_1.jpg"
+    }
+  },
+  "theme_207": {
+    "art_id": "ART-0207",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caravaggio The Incredulity of Saint Thomas, Francisco Goya Saturn Devouring His Son, Artemisia Gentileschi Allegory of Inclination",
+    "artist": "Artemisia Gentileschi, Caravaggio The, Francisco Goya",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_207: Caravaggio The Incredulity of Saint Thomas, Francisco Goya Saturn Devouring His Son, Artemisia Gentileschi Allegory of Inclination.",
+    "slides": {
+      "slide_1": "/images/themes/theme_207/slide_1.jpg",
+      "slide_2": "/images/themes/theme_207/slide_2.jpg",
+      "slide_3": "/images/themes/theme_207/slide_3.jpg"
+    }
+  },
+  "theme_208": {
+    "art_id": "ART-0208",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Bouguereau The Broken Pitcher, Dante Gabriel Rossetti Proserpine",
+    "artist": "Bouguereau The, Dante Gabriel",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_208: Bouguereau The Broken Pitcher, Dante Gabriel Rossetti Proserpine.",
+    "slides": {
+      "slide_1": "/images/themes/theme_208/slide_1.jpg",
+      "slide_2": "/images/themes/theme_208/slide_2.jpg"
+    }
+  },
+  "theme_209": {
+    "art_id": "ART-0209",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Edward Burne-Jones The Depths of the Sea, Caspar David Friedrich The Sea of Ice, Claude Monet Sunflowers",
+    "artist": "Caspar David, Claude Monet, Edward Burne-Jones",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_209: Edward Burne-Jones The Depths of the Sea, Caspar David Friedrich The Sea of Ice, Claude Monet Sunflowers.",
+    "slides": {
+      "slide_1": "/images/themes/theme_209/slide_1.jpg",
+      "slide_2": "/images/themes/theme_209/slide_2.jpg",
+      "slide_3": "/images/themes/theme_209/slide_3.jpg"
+    }
+  },
+  "theme_210": {
+    "art_id": "ART-0210",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Jacques-Louis David The Death of Marat",
+    "artist": "Jacques-Louis David",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_210: Jacques-Louis David The Death of Marat.",
+    "slides": {
+      "slide_1": "/images/themes/theme_210/slide_1.jpg"
+    }
+  },
+  "theme_211": {
+    "art_id": "ART-0211",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Diego Velazquez Las Meninas, Jan Steen The Dissolute Household, Johannes Vermeer Woman Holding a Balance",
+    "artist": "Diego Velazquez, Jan Steen, Johannes Vermeer",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_211: Diego Velazquez Las Meninas, Jan Steen The Dissolute Household, Johannes Vermeer Woman Holding a Balance.",
+    "slides": {
+      "slide_1": "/images/themes/theme_211/slide_1.jpg",
+      "slide_2": "/images/themes/theme_211/slide_2.jpg",
+      "slide_3": "/images/themes/theme_211/slide_3.jpg"
+    }
+  },
+  "theme_212": {
+    "art_id": "ART-0212",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Auguste Rodin The Thinker, Eugene Delacroix Liberty Leading the People",
+    "artist": "Auguste Rodin, Eugene Delacroix",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_212: Auguste Rodin The Thinker, Eugene Delacroix Liberty Leading the People.",
+    "slides": {
+      "slide_1": "/images/themes/theme_212/slide_1.jpg",
+      "slide_2": "/images/themes/theme_212/slide_2.jpg"
+    }
+  },
+  "theme_213": {
+    "art_id": "ART-0213",
+    "title": "Bộ kiệt tác sơn dầu độc bản: John William Waterhouse The Lady of Shalott, Caravaggio Boy with a Basket of Fruit, Vilhelm Hammershoi Dust Motes Dancing in Sunbeams",
+    "artist": "Caravaggio Boy, John William, Vilhelm Hammershoi",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_213: John William Waterhouse The Lady of Shalott, Caravaggio Boy with a Basket of Fruit, Vilhelm Hammershoi Dust Motes Dancing in Sunbeams.",
+    "slides": {
+      "slide_1": "/images/themes/theme_213/slide_1.jpg",
+      "slide_2": "/images/themes/theme_213/slide_2.jpg",
+      "slide_3": "/images/themes/theme_213/slide_3.jpg"
+    }
+  },
+  "theme_214": {
+    "art_id": "ART-0214",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Lord Frederic Leighton Solitude, J.M.W. Turner The Slave Ship, Camille Corot Souvenir de Mortefontaine",
+    "artist": "Camille Corot, J.M.W. Turner, Lord Frederic",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_214: Lord Frederic Leighton Solitude, J.M.W. Turner The Slave Ship, Camille Corot Souvenir de Mortefontaine.",
+    "slides": {
+      "slide_1": "/images/themes/theme_214/slide_1.jpg",
+      "slide_2": "/images/themes/theme_214/slide_2.jpg",
+      "slide_3": "/images/themes/theme_214/slide_3.jpg"
+    }
+  },
+  "theme_215": {
+    "art_id": "ART-0215",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Paul Cezanne The Card Players, Francisco Goya Duel with Cudgels, Rembrandt The Return of the Prodigal Son",
+    "artist": "Francisco Goya, Paul Cezanne, Rembrandt The",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_215: Paul Cezanne The Card Players, Francisco Goya Duel with Cudgels, Rembrandt The Return of the Prodigal Son.",
+    "slides": {
+      "slide_1": "/images/themes/theme_215/slide_1.jpg",
+      "slide_2": "/images/themes/theme_215/slide_2.jpg",
+      "slide_3": "/images/themes/theme_215/slide_3.jpg"
+    }
+  },
+  "theme_216": {
+    "art_id": "ART-0216",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Saturn Devouring His Son Goya, Winslow Homer The Gulf Stream",
+    "artist": "Saturn Devouring, Winslow Homer",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_216: Saturn Devouring His Son Goya, Winslow Homer The Gulf Stream.",
+    "slides": {
+      "slide_1": "/images/themes/theme_216/slide_1.jpg",
+      "slide_2": "/images/themes/theme_216/slide_2.jpg"
+    }
+  },
+  "theme_217": {
+    "art_id": "ART-0217",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Honore Daumier The Third-Class Carriage, Edvard Munch The Scream, Albrecht Durer Saint Jerome in His Study",
+    "artist": "Albrecht Durer, Edvard Munch, Honore Daumier",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_217: Honore Daumier The Third-Class Carriage, Edvard Munch The Scream, Albrecht Durer Saint Jerome in His Study.",
+    "slides": {
+      "slide_1": "/images/themes/theme_217/slide_1.jpg",
+      "slide_2": "/images/themes/theme_217/slide_2.jpg",
+      "slide_3": "/images/themes/theme_217/slide_3.jpg"
+    }
+  },
+  "theme_218": {
+    "art_id": "ART-0218",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Theodore Gericault The Raft of the Medusa",
+    "artist": "Theodore Gericault",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_218: Theodore Gericault The Raft of the Medusa.",
+    "slides": {
+      "slide_1": "/images/themes/theme_218/slide_1.jpg"
+    }
+  },
+  "theme_219": {
+    "art_id": "ART-0219",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Waterhouse Circe Offering the Cup to Ulysses, Claude Monet Rocks at Belle-Ile",
+    "artist": "Claude Monet, Waterhouse Circe",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_219: Waterhouse Circe Offering the Cup to Ulysses, Claude Monet Rocks at Belle-Ile.",
+    "slides": {
+      "slide_1": "/images/themes/theme_219/slide_1.jpg",
+      "slide_2": "/images/themes/theme_219/slide_2.jpg"
+    }
+  },
+  "theme_220": {
+    "art_id": "ART-0220",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Peter Paul Rubens The Fall of Phaeton, Hieronymus Bosch The Ship of Fools, Caspar David Friedrich Abbey in the Oak Forest",
+    "artist": "Caspar David, Hieronymus Bosch, Peter Paul",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_220: Peter Paul Rubens The Fall of Phaeton, Hieronymus Bosch The Ship of Fools, Caspar David Friedrich Abbey in the Oak Forest.",
+    "slides": {
+      "slide_1": "/images/themes/theme_220/slide_1.jpg",
+      "slide_2": "/images/themes/theme_220/slide_2.jpg",
+      "slide_3": "/images/themes/theme_220/slide_3.jpg"
+    }
+  },
+  "theme_221": {
+    "art_id": "ART-0221",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Jean-Leon Gerome Pollice Verso",
+    "artist": "Jean-Leon Gerome",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_221: Jean-Leon Gerome Pollice Verso.",
+    "slides": {
+      "slide_1": "/images/themes/theme_221/slide_1.jpg"
+    }
+  },
+  "theme_222": {
+    "art_id": "ART-0222",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Marinus van Reymerswaele The Moneychanger and his Wife, Caravaggio David with the Head of Goliath",
+    "artist": "Caravaggio David, Marinus van",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_222: Marinus van Reymerswaele The Moneychanger and his Wife, Caravaggio David with the Head of Goliath.",
+    "slides": {
+      "slide_1": "/images/themes/theme_222/slide_1.jpg",
+      "slide_2": "/images/themes/theme_222/slide_2.jpg"
+    }
+  },
+  "theme_223": {
+    "art_id": "ART-0223",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Titian The Flaying of Marsyas, Jacques-Louis David The Death of Socrates, Cổ điển số 223 - Slide 3",
+    "artist": "Cổ điển, Jacques-Louis David, Titian The",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_223: Titian The Flaying of Marsyas, Jacques-Louis David The Death of Socrates, Cổ điển số 223 - Slide 3.",
+    "slides": {
+      "slide_1": "/images/themes/theme_223/slide_1.jpg",
+      "slide_2": "/images/themes/theme_223/slide_2.jpg",
+      "slide_3": "/images/themes/theme_223/slide_3.jpg"
+    }
+  },
+  "theme_224": {
+    "art_id": "ART-0224",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Theodore Chasseriau The Toilette of Esther, Degas Little Dancer Aged Fourteen, Henri Fantin-Latour White Roses",
+    "artist": "Degas Little, Henri Fantin-Latour, Theodore Chasseriau",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_224: Theodore Chasseriau The Toilette of Esther, Degas Little Dancer Aged Fourteen, Henri Fantin-Latour White Roses.",
+    "slides": {
+      "slide_1": "/images/themes/theme_224/slide_1.jpg",
+      "slide_2": "/images/themes/theme_224/slide_2.jpg",
+      "slide_3": "/images/themes/theme_224/slide_3.jpg"
+    }
+  },
+  "theme_225": {
+    "art_id": "ART-0225",
+    "title": "Bộ kiệt tác sơn dầu độc bản: John Everett Millais Ophelia, Winslow Homer Breezing Up A Fair Wind, Cổ điển số 225 - Slide 3",
+    "artist": "Cổ điển, John Everett, Winslow Homer",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_225: John Everett Millais Ophelia, Winslow Homer Breezing Up A Fair Wind, Cổ điển số 225 - Slide 3.",
+    "slides": {
+      "slide_1": "/images/themes/theme_225/slide_1.jpg",
+      "slide_2": "/images/themes/theme_225/slide_2.jpg",
+      "slide_3": "/images/themes/theme_225/slide_3.jpg"
+    }
+  },
+  "theme_226": {
+    "art_id": "ART-0226",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caspar David Friedrich The Monk by the Sea",
+    "artist": "Caspar David",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_226: Caspar David Friedrich The Monk by the Sea.",
+    "slides": {
+      "slide_1": "/images/themes/theme_226/slide_1.jpg"
+    }
+  },
+  "theme_227": {
+    "art_id": "ART-0227",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Johannes Vermeer Girl Reading a Letter at an Open Window, Domenico Fetti The Parable of the Mote and the Beam, Camille Pissarro Boulevard Montmartre at Night",
+    "artist": "Camille Pissarro, Domenico Fetti, Johannes Vermeer",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_227: Johannes Vermeer Girl Reading a Letter at an Open Window, Domenico Fetti The Parable of the Mote and the Beam, Camille Pissarro Boulevard Montmartre at Night.",
+    "slides": {
+      "slide_1": "/images/themes/theme_227/slide_1.jpg",
+      "slide_2": "/images/themes/theme_227/slide_2.jpg",
+      "slide_3": "/images/themes/theme_227/slide_3.jpg"
+    }
+  },
+  "theme_228": {
+    "art_id": "ART-0228",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Alfred Stevens The Psyche, Caravaggio Narcissus",
+    "artist": "Alfred Stevens, Caravaggio Narcissus",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_228: Alfred Stevens The Psyche, Caravaggio Narcissus.",
+    "slides": {
+      "slide_1": "/images/themes/theme_228/slide_1.jpg",
+      "slide_2": "/images/themes/theme_228/slide_2.jpg"
+    }
+  },
+  "theme_229": {
+    "art_id": "ART-0229",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Jean-Baptiste Greuze The Broken Eggs, William Hogarth Marriage A-la-Mode The Tete a Tete, Claude Monet Water Lilies",
+    "artist": "Claude Monet, Jean-Baptiste Greuze, William Hogarth",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_229: Jean-Baptiste Greuze The Broken Eggs, William Hogarth Marriage A-la-Mode The Tete a Tete, Claude Monet Water Lilies.",
+    "slides": {
+      "slide_1": "/images/themes/theme_229/slide_1.jpg",
+      "slide_2": "/images/themes/theme_229/slide_2.jpg",
+      "slide_3": "/images/themes/theme_229/slide_3.jpg"
+    }
+  },
+  "theme_230": {
+    "art_id": "ART-0230",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caspar David Friedrich Chalk Cliffs on Rugen, Cổ điển số 230 - Slide 2",
+    "artist": "Caspar David, Cổ điển",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_230: Caspar David Friedrich Chalk Cliffs on Rugen, Cổ điển số 230 - Slide 2.",
+    "slides": {
+      "slide_1": "/images/themes/theme_230/slide_1.jpg",
+      "slide_2": "/images/themes/theme_230/slide_2.jpg"
+    }
+  },
+  "theme_231": {
+    "art_id": "ART-0231",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Jean-Simeon Chardin The Soap Bubble, Gerrit van Honthorst The Matchmaker, Pierre-Auguste Renoir Luncheon of the Boating Party",
+    "artist": "Gerrit van, Jean-Simeon Chardin, Pierre-Auguste Renoir",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_231: Jean-Simeon Chardin The Soap Bubble, Gerrit van Honthorst The Matchmaker, Pierre-Auguste Renoir Luncheon of the Boating Party.",
+    "slides": {
+      "slide_1": "/images/themes/theme_231/slide_1.jpg",
+      "slide_2": "/images/themes/theme_231/slide_2.jpg",
+      "slide_3": "/images/themes/theme_231/slide_3.jpg"
+    }
+  },
+  "theme_232": {
+    "art_id": "ART-0232",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Rembrandt Philosopher in Meditation, Edouard Manet A Bar at the Folies-Bergere",
+    "artist": "Edouard Manet, Rembrandt Philosopher",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_232: Rembrandt Philosopher in Meditation, Edouard Manet A Bar at the Folies-Bergere.",
+    "slides": {
+      "slide_1": "/images/themes/theme_232/slide_1.jpg",
+      "slide_2": "/images/themes/theme_232/slide_2.jpg"
+    }
+  },
+  "theme_233": {
+    "art_id": "ART-0233",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Lawrence Alma-Tadema The Roses of Heliogabalus, Gustave Caillebotte Paris Street Rainy Day, Albert Bierstadt Sierra Nevada",
+    "artist": "Albert Bierstadt, Gustave Caillebotte, Lawrence Alma-Tadema",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_233: Lawrence Alma-Tadema The Roses of Heliogabalus, Gustave Caillebotte Paris Street Rainy Day, Albert Bierstadt Sierra Nevada.",
+    "slides": {
+      "slide_1": "/images/themes/theme_233/slide_1.jpg",
+      "slide_2": "/images/themes/theme_233/slide_2.jpg",
+      "slide_3": "/images/themes/theme_233/slide_3.jpg"
+    }
+  },
+  "theme_234": {
+    "art_id": "ART-0234",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Francisco Goya The Sleep of Reason Produces Monsters, J.M.W. Turner Rain Steam and Speed, Cổ điển số 234 - Slide 3",
+    "artist": "Cổ điển, Francisco Goya, J.M.W. Turner",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_234: Francisco Goya The Sleep of Reason Produces Monsters, J.M.W. Turner Rain Steam and Speed, Cổ điển số 234 - Slide 3.",
+    "slides": {
+      "slide_1": "/images/themes/theme_234/slide_1.jpg",
+      "slide_2": "/images/themes/theme_234/slide_2.jpg",
+      "slide_3": "/images/themes/theme_234/slide_3.jpg"
+    }
+  },
+  "theme_235": {
+    "art_id": "ART-0235",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Harmen Steenwijck Vanitas Still Life, Cổ điển số 235 - Slide 2",
+    "artist": "Cổ điển, Harmen Steenwijck",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_235: Harmen Steenwijck Vanitas Still Life, Cổ điển số 235 - Slide 2.",
+    "slides": {
+      "slide_1": "/images/themes/theme_235/slide_1.jpg",
+      "slide_2": "/images/themes/theme_235/slide_2.jpg"
+    }
+  },
+  "theme_236": {
+    "art_id": "ART-0236",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Georges de La Tour The Flea Catcher, Edgar Degas Place de la Concorde, Claude Monet Impression Sunrise",
+    "artist": "Claude Monet, Edgar Degas, Georges de",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_236: Georges de La Tour The Flea Catcher, Edgar Degas Place de la Concorde, Claude Monet Impression Sunrise.",
+    "slides": {
+      "slide_1": "/images/themes/theme_236/slide_1.jpg",
+      "slide_2": "/images/themes/theme_236/slide_2.jpg",
+      "slide_3": "/images/themes/theme_236/slide_3.jpg"
+    }
+  },
+  "theme_237": {
+    "art_id": "ART-0237",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Diego Velazquez The Waterseller of Seville, Caravaggio The Entombment of Christ, Cổ điển số 237 - Slide 3",
+    "artist": "Caravaggio The, Cổ điển, Diego Velazquez",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_237: Diego Velazquez The Waterseller of Seville, Caravaggio The Entombment of Christ, Cổ điển số 237 - Slide 3.",
+    "slides": {
+      "slide_1": "/images/themes/theme_237/slide_1.jpg",
+      "slide_2": "/images/themes/theme_237/slide_2.jpg",
+      "slide_3": "/images/themes/theme_237/slide_3.jpg"
+    }
+  },
+  "theme_238": {
+    "art_id": "ART-0238",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Thomas Cole Course of Empire Desolation, Caspar David Friedrich Two Men Contemplating the Moon, Johannes Vermeer The Milkmaid",
+    "artist": "Caspar David, Johannes Vermeer, Thomas Cole",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_238: Thomas Cole Course of Empire Desolation, Caspar David Friedrich Two Men Contemplating the Moon, Johannes Vermeer The Milkmaid.",
+    "slides": {
+      "slide_1": "/images/themes/theme_238/slide_1.jpg",
+      "slide_2": "/images/themes/theme_238/slide_2.jpg",
+      "slide_3": "/images/themes/theme_238/slide_3.jpg"
+    }
+  },
+  "theme_239": {
+    "art_id": "ART-0239",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Anthony van Dyck Charles I at the Hunt, Francisco de Zurbaran Agnus Dei, Cổ điển số 239 - Slide 3",
+    "artist": "Anthony van, Cổ điển, Francisco de",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_239: Anthony van Dyck Charles I at the Hunt, Francisco de Zurbaran Agnus Dei, Cổ điển số 239 - Slide 3.",
+    "slides": {
+      "slide_1": "/images/themes/theme_239/slide_1.jpg",
+      "slide_2": "/images/themes/theme_239/slide_2.jpg",
+      "slide_3": "/images/themes/theme_239/slide_3.jpg"
+    }
+  },
+  "theme_240": {
+    "art_id": "ART-0240",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Jean-Leon Gerome The Carpet Merchant, Camille Corot Bridge at Narni, Titian Bacchus and Ariadne",
+    "artist": "Camille Corot, Jean-Leon Gerome, Titian Bacchus",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_240: Jean-Leon Gerome The Carpet Merchant, Camille Corot Bridge at Narni, Titian Bacchus and Ariadne.",
+    "slides": {
+      "slide_1": "/images/themes/theme_240/slide_1.jpg",
+      "slide_2": "/images/themes/theme_240/slide_2.jpg",
+      "slide_3": "/images/themes/theme_240/slide_3.jpg"
+    }
+  },
+  "theme_241": {
+    "art_id": "ART-0241",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Edouard Manet Execution of Emperor Maximilian, Rembrandt Self-Portrait with Two Circles",
+    "artist": "Edouard Manet, Rembrandt Self-Portrait",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_241: Edouard Manet Execution of Emperor Maximilian, Rembrandt Self-Portrait with Two Circles.",
+    "slides": {
+      "slide_1": "/images/themes/theme_241/slide_1.jpg",
+      "slide_2": "/images/themes/theme_241/slide_2.jpg"
+    }
+  },
+  "theme_242": {
+    "art_id": "ART-0242",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Gustave Moreau Saint George and the Dragon, Cổ điển số 242 - Slide 2, Cổ điển số 242 - Slide 3",
+    "artist": "Cổ điển, Gustave Moreau",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_242: Gustave Moreau Saint George and the Dragon, Cổ điển số 242 - Slide 2, Cổ điển số 242 - Slide 3.",
+    "slides": {
+      "slide_1": "/images/themes/theme_242/slide_1.jpg",
+      "slide_2": "/images/themes/theme_242/slide_2.jpg",
+      "slide_3": "/images/themes/theme_242/slide_3.jpg"
+    }
+  },
+  "theme_243": {
+    "art_id": "ART-0243",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caravaggio David with the Head of Goliath, Pieter Bruegel the Elder The Peasant Wedding, Rembrandt Aristotle Contemplating a Bust of Homer",
+    "artist": "Caravaggio David, Pieter Bruegel, Rembrandt Aristotle",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_243: Caravaggio David with the Head of Goliath, Pieter Bruegel the Elder The Peasant Wedding, Rembrandt Aristotle Contemplating a Bust of Homer.",
+    "slides": {
+      "slide_1": "/images/themes/theme_243/slide_1.jpg",
+      "slide_2": "/images/themes/theme_243/slide_2.jpg",
+      "slide_3": "/images/themes/theme_243/slide_3.jpg"
+    }
+  },
+  "theme_244": {
+    "art_id": "ART-0244",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Thomas Eakins The Gross Clinic, Honore Daumier The Chess Players, Cổ điển số 244 - Slide 3",
+    "artist": "Cổ điển, Honore Daumier, Thomas Eakins",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_244: Thomas Eakins The Gross Clinic, Honore Daumier The Chess Players, Cổ điển số 244 - Slide 3.",
+    "slides": {
+      "slide_1": "/images/themes/theme_244/slide_1.jpg",
+      "slide_2": "/images/themes/theme_244/slide_2.jpg",
+      "slide_3": "/images/themes/theme_244/slide_3.jpg"
+    }
+  },
+  "theme_245": {
+    "art_id": "ART-0245",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Titian Sisyphus, Peter Paul Rubens Prometheus Bound, Claude Monet Poplars on the Epte",
+    "artist": "Claude Monet, Peter Paul, Titian Sisyphus",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_245: Titian Sisyphus, Peter Paul Rubens Prometheus Bound, Claude Monet Poplars on the Epte.",
+    "slides": {
+      "slide_1": "/images/themes/theme_245/slide_1.jpg",
+      "slide_2": "/images/themes/theme_245/slide_2.jpg",
+      "slide_3": "/images/themes/theme_245/slide_3.jpg"
+    }
+  },
+  "theme_246": {
+    "art_id": "ART-0246",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Hyacinthe Rigaud Portrait of Louis XIV, Jean-Baptiste-Simeon Chardin The Silver Goblet",
+    "artist": "Hyacinthe Rigaud, Jean-Baptiste-Simeon Chardin",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_246: Hyacinthe Rigaud Portrait of Louis XIV, Jean-Baptiste-Simeon Chardin The Silver Goblet.",
+    "slides": {
+      "slide_1": "/images/themes/theme_246/slide_1.jpg",
+      "slide_2": "/images/themes/theme_246/slide_2.jpg"
+    }
+  },
+  "theme_247": {
+    "art_id": "ART-0247",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Hubert Robert Fountain, Goya The Forge, John Singer Sargent Carnation Lily Lily Rose",
+    "artist": "Goya The, Hubert Robert, John Singer",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_247: Hubert Robert Fountain, Goya The Forge, John Singer Sargent Carnation Lily Lily Rose.",
+    "slides": {
+      "slide_1": "/images/themes/theme_247/slide_1.jpg",
+      "slide_2": "/images/themes/theme_247/slide_2.jpg",
+      "slide_3": "/images/themes/theme_247/slide_3.jpg"
+    }
+  },
+  "theme_248": {
+    "art_id": "ART-0248",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Ilya Repin Sadko in the Underwater Kingdom, Winslow Homer The Life Line",
+    "artist": "Ilya Repin, Winslow Homer",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_248: Ilya Repin Sadko in the Underwater Kingdom, Winslow Homer The Life Line.",
+    "slides": {
+      "slide_1": "/images/themes/theme_248/slide_1.jpg",
+      "slide_2": "/images/themes/theme_248/slide_2.jpg"
+    }
+  },
+  "theme_249": {
+    "art_id": "ART-0249",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Edward Burne-Jones The Wheel of Fortune, Caspar David Friedrich The Stages of Life, Odilon Redon The Golden Cell",
+    "artist": "Caspar David, Edward Burne-Jones, Odilon Redon",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_249: Edward Burne-Jones The Wheel of Fortune, Caspar David Friedrich The Stages of Life, Odilon Redon The Golden Cell.",
+    "slides": {
+      "slide_1": "/images/themes/theme_249/slide_1.jpg",
+      "slide_2": "/images/themes/theme_249/slide_2.jpg",
+      "slide_3": "/images/themes/theme_249/slide_3.jpg"
+    }
+  },
+  "theme_250": {
+    "art_id": "ART-0250",
+    "title": "Bộ kiệt tác sơn dầu độc bản: Caspar David Friedrich Morning in the Riesengebirge, Rembrandt Moses with the Ten Commandments, Marcus Aurelius equestrian statue Piazza del Campidoglio",
+    "artist": "Caspar David, Marcus Aurelius, Rembrandt Moses",
+    "year": "Thế kỷ XVII - XIX / Phục dựng Hiyu Abyss 2026",
+    "museum": "Bộ sưu tập Kiệt tác Hội họa Hiyu Abyss & Wikimedia Public Domain",
+    "license": "Public Domain / HYA-08 Canvas Normalized",
+    "alt_vi": "Bộ tác phẩm sơn dầu cổ điển bảo tàng độc bản cho theme_250: Caspar David Friedrich Morning in the Riesengebirge, Rembrandt Moses with the Ten Commandments, Marcus Aurelius equestrian statue Piazza del Campidoglio.",
+    "slides": {
+      "slide_1": "/images/themes/theme_250/slide_1.jpg",
+      "slide_2": "/images/themes/theme_250/slide_2.jpg",
+      "slide_3": "/images/themes/theme_250/slide_3.jpg"
+    }
+  },
   "theme_251": {
     "art_id": "ART-0251",
     "title": "Bộ kiệt tác sơn dầu độc bản: Caspar David Friedrich - Woman at a Window, Claude Monet - Morning on the Seine, Clear Weather, Pierre-Auguste Renoir - Woman with a Parasol in a Garden",

@@ -1,0 +1,312 @@
+{
+  "requests": [
+    {
+      "copyPaste": {
+        "source": {
+          "sheetId": 0,
+          "startRowIndex": 203,
+          "endRowIndex": 204,
+          "startColumnIndex": 0,
+          "endColumnIndex": 17
+        },
+        "destination": {
+          "sheetId": 0,
+          "startRowIndex": 204,
+          "endRowIndex": 301,
+          "startColumnIndex": 0,
+          "endColumnIndex": 17
+        },
+        "pasteType": "PASTE_FORMAT"
+      }
+    },
+    {
+      "copyPaste": {
+        "source": {
+          "sheetId": 0,
+          "startRowIndex": 203,
+          "endRowIndex": 204,
+          "startColumnIndex": 16,
+          "endColumnIndex": 17
+        },
+        "destination": {
+          "sheetId": 0,
+          "startRowIndex": 204,
+          "endRowIndex": 301,
+          "startColumnIndex": 16,
+          "endColumnIndex": 17
+        },
+        "pasteType": "PASTE_DATA_VALIDATION"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 0,
+          "startRowIndex": 1,
+          "endRowIndex": 301,
+          "startColumnIndex": 0,
+          "endColumnIndex": 17
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "verticalAlignment": "MIDDLE",
+            "wrapStrategy": "WRAP",
+            "textFormat": {
+              "fontFamily": "Roboto",
+              "fontSize": 9
+            }
+          }
+        },
+        "fields": "userEnteredFormat(verticalAlignment,wrapStrategy,textFormat)"
+      }
+    },
+    {
+      "autoResizeDimensions": {
+        "dimensions": {
+          "sheetId": 0,
+          "dimension": "ROWS",
+          "startIndex": 204,
+          "endIndex": 301
+        }
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 0,
+          "endIndex": 1
+        },
+        "properties": {
+          "pixelSize": 60
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 1,
+          "endIndex": 2
+        },
+        "properties": {
+          "pixelSize": 95
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 2,
+          "endIndex": 3
+        },
+        "properties": {
+          "pixelSize": 280
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 3,
+          "endIndex": 4
+        },
+        "properties": {
+          "pixelSize": 380
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 4,
+          "endIndex": 5
+        },
+        "properties": {
+          "pixelSize": 180
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 5,
+          "endIndex": 6
+        },
+        "properties": {
+          "pixelSize": 230
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 6,
+          "endIndex": 7
+        },
+        "properties": {
+          "pixelSize": 160
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 7,
+          "endIndex": 8
+        },
+        "properties": {
+          "pixelSize": 260
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 8,
+          "endIndex": 9
+        },
+        "properties": {
+          "pixelSize": 260
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 9,
+          "endIndex": 10
+        },
+        "properties": {
+          "pixelSize": 260
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 10,
+          "endIndex": 11
+        },
+        "properties": {
+          "pixelSize": 260
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 11,
+          "endIndex": 12
+        },
+        "properties": {
+          "pixelSize": 320
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 12,
+          "endIndex": 13
+        },
+        "properties": {
+          "pixelSize": 200
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 13,
+          "endIndex": 14
+        },
+        "properties": {
+          "pixelSize": 140
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 14,
+          "endIndex": 15
+        },
+        "properties": {
+          "pixelSize": 130
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 15,
+          "endIndex": 16
+        },
+        "properties": {
+          "pixelSize": 220
+        },
+        "fields": "pixelSize"
+      }
+    },
+    {
+      "updateDimensionProperties": {
+        "range": {
+          "sheetId": 0,
+          "dimension": "COLUMNS",
+          "startIndex": 16,
+          "endIndex": 17
+        },
+        "properties": {
+          "pixelSize": 130
+        },
+        "fields": "pixelSize"
+      }
+    }
+  ]
+}

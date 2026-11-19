@@ -84,3 +84,85 @@
 ### ❖ Checkpoint 4: Complete & Production Ready
 - [x] Hệ thống ảnh 200 bộ hoàn chỉnh trên cả kho tài nguyên và website.
 - [x] Toàn bộ mã nguồn và tài nguyên ảnh được đẩy lên GitHub an toàn (commit `9ce6e39`).
+
+
+---
+
+# Danh Mục Nhiệm Vụ: 50 Bài Nội Dung Chữa Lành, Ánh Sáng & Sức Bật Nội Tâm (STT 251 -> 300)
+
+## Phase 1: Đặc Tả Tri Thức & Khởi Tạo Kịch Bản
+
+- [x] **Task 1: Xây Dựng Tập Dữ Liệu Kịch Bản 50 Bài Chuẩn (`scripts/build_50_healing_posts_251_300.py`)**
+  - **Mô tả:** Viết script Python chứa toàn bộ 50 kịch bản chi tiết với 17 trường thông tin chuẩn theo 4 cụm chủ đề chữa lành & sức bật tinh thần.
+  - **Tiêu chí:** Đủ 50 bài STT 251-300, đa dạng slide, 100% caption bespoke, concept tranh ánh sáng/ấm áp.
+  - **Xác minh:** `python scripts/build_50_healing_posts_251_300.py` xuất ra `scripts/posts_251_300.json`.
+  - **Files:** `scripts/build_50_healing_posts_251_300.py`, `scripts/posts_251_300.json`
+  - **Scope:** M (1 script + 1 JSON)
+
+- [x] **Task 2: Sinh 50 Tệp Markdown Lưu Trữ Chuẩn HYA-04 (`TXT-0251.md` đến `TXT-0300.md`)**
+  - **Mô tả:** Tạo 50 file độc lập tại `editorial/content/` với YAML frontmatter chuẩn và nội dung đầy đủ.
+  - **Tiêu chí:** 50 file hợp lệ, không lỗi YAML.
+  - **Xác minh:** Kiểm tra 50 file tồn tại trong `editorial/content/`.
+  - **Files:** `editorial/content/TXT-0251.md` -> `TXT-0300.md`
+  - **Scope:** L (50 markdown files)
+
+### ❖ Checkpoint 1: Kịch Bản & Lưu Trữ Đã Sẵn Sàng
+- [x] File `scripts/posts_251_300.json` tồn tại đủ 50 bài.
+- [x] 50 file Markdown đã tạo thành công trong `editorial/content/` (đồng thời bổ sung đầy đủ `TXT-0201.md` -> `TXT-0250.md` đạt 300/300 file).
+
+---
+
+## Phase 2: Kiểm Định Chất Lượng Biên Tập & Độc Bản Ngữ Nghĩa
+
+- [x] **Task 3: Chạy Bộ Kiểm Định Toàn Diện (`scripts/audit_posts_251_300.py`)**
+  - **Mô tả:** Viết script kiểm tra 0 trùng lặp mở đầu với 250 bài trước, 0 sáo ngữ AI, kiểm tra độ dài caption và tác giả học thuật xác thực.
+  - **Tiêu chí:** 100% PASS kiểm định G1, G2, HYA-03.
+  - **Xác minh:** `python scripts/audit_posts_251_300.py` exit code 0.
+  - **Files:** `scripts/audit_posts_251_300.py`
+  - **Scope:** S (1 script)
+
+### ❖ Checkpoint 2: Vượt Qua Cổng Kiểm Định Chất Lượng
+- [x] 100% không trùng lặp mở đầu bài viết.
+- [x] 100% caption bespoke đạt chuẩn độ dài và văn phong.
+
+---
+
+## Phase 3: Cập Nhật Dữ Liệu & Nạp Google Sheet Pipeline
+
+- [x] **Task 4: Mở Rộng Dữ Liệu CSV Lên 300 Hàng**
+  - **Mô tả:** Cập nhật `scripts/tiktok_200_posts.csv` thành 300 dòng và tạo `scripts/tiktok_300_posts.csv`.
+  - **Tiêu chí:** CSV chứa đúng 301 dòng.
+  - **Xác minh:** Kiểm tra 301 dòng trong CSV (`scripts/live_sheet_300.csv` và `scripts/tiktok_300_posts.csv`).
+  - **Files:** `scripts/tiktok_200_posts.csv`, `scripts/tiktok_300_posts.csv`
+  - **Scope:** S (2 CSV files)
+
+- [x] **Task 5: Nạp Đồng Bộ Hàng Loạt Vào Google Sheet (Hàng 252 – 301)**
+  - **Mô tả:** Ghi 50 hàng vào Google Sheet tab `Kế Hoạch 200 Bài (TikTok Pipeline)` range `A252:Q301`. Đồng bộ định dạng Roboto 9pt, Wrap Text, căn Middle và menu Trạng Thái.
+  - **Tiêu chí:** Dữ liệu hiển thị đẹp mắt, không tràn dòng, không co dòng.
+  - **Xác minh:** Đọc lại các hàng 252, 275, 301 bằng `gsheets readonly read`. Đã sửa triệt để lỗi mất format từ hàng 205 trở xuống.
+  - **Files:** `scripts/upload_and_polish_posts_251_300.py`, `scripts/batch_write_251_300.json`, `scripts/polish_sheet_205_301.json`
+  - **Scope:** M (1 script + 2 JSON + Google Sheet sync)
+
+### ❖ Checkpoint 3: Google Sheet Cập Nhật Hoàn Hảo Đến Bài 300
+- [x] Dữ liệu 50 bài hiển thị đầy đủ trên Google Sheet từ hàng 252 đến 301.
+- [x] Định dạng ô đồng nhất với các bài trước (khắc phục toàn diện hàng 205-301).
+
+---
+
+## Phase 4: Kiểm Thử Toàn Diện Website & Đồng Bộ Git
+
+- [x] **Task 6: Kiểm Thử Build Hệ Thống Thư Viện Tĩnh & WCAG AA**
+  - **Mô tả:** Build website và chạy bộ kiểm định tính toàn vẹn 22 PASS | 0 FAIL.
+  - **Tiêu chí:** Build sạch, không lỗi schema.
+  - **Xác minh:** `cd website && npm run build && node test/verify-build.js` đạt 22 PASS | 0 FAIL.
+  - **Scope:** S (Test verification)
+
+- [x] **Task 7: Đồng Bộ Git Lên Nhánh `main` & GitHub Remote**
+  - **Mô tả:** Stage toàn bộ các file mới, tạo commit rõ ràng và push lên GitHub.
+  - **Tiêu chí:** Working tree sạch sẽ, commit đẩy lên GitHub an toàn.
+  - **Xác minh:** `git status` clean, commit hoàn tất.
+  - **Scope:** S (Git push)
+
+### ❖ Checkpoint 4: Hoàn Thành Toàn Bộ Kế Hoạch 50 Bài Mới
+- [x] 50 bài nội dung chữa lành đã nạp thành công vào Google Sheet (đồng thời sửa triệt để format từ hàng 205-301).
+- [x] Hệ thống mã nguồn, kho lưu trữ Git và website test đạt 100% chuẩn xuất bản.

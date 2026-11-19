@@ -1,78 +1,142 @@
-# Kế Hoạch Triển Khai: Chế Tác 50 Bộ Ảnh Sơn Dầu Cổ Điển Bảo Tàng (Theme 151 -> 200)
+# Kế Hoạch Triển Khai: 50 Bài Nội Dung Chữa Lành, Ánh Sáng & Sức Bật Nội Tâm (STT 251 -> 300)
 
-> **Căn cứ:** Nhiệm vụ mở rộng quy mô từ bài 151 đến 200 (`TXT-0151` $\rightarrow$ `TXT-0200`).  
-> **Mục tiêu:** Chế tác trọn vẹn **50 bộ ảnh sơn dầu bảo tàng mới (`theme_151` $\rightarrow$ `theme_200`)**, mỗi bộ gồm đủ **3 slide dọc 9:16 (`1080x1920`)** đạt chuẩn **HYA-08 Anti-AI Standard**:
-> - Slide 1: Toàn cảnh tác phẩm sơn dầu (Establishing Shot 1.0x).
-> - Slide 2: Cận cảnh tâm điểm nghệ thuật & biểu cảm (Closeup Shot 1.65x).
-> - Slide 3: Siêu cận thớ vải toan, vệt cọ impasto & chiaroscuro (Macro Shot 2.5x).  
-> **Tổng sản lượng:** Đúng **150 slide hoàn chỉnh** (50 themes x 3 slides), đồng bộ 100% vào `assets/templates/multislides/` và `website/public/images/themes/`.
+> **Mục tiêu:** Sản xuất và đồng bộ 50 kịch bản bài đăng mới (STT 251 – 300 / mã `TXT-0251` $\rightarrow$ `TXT-0300`) vào Google Sheet tab `Kế Hoạch 200 Bài (TikTok Pipeline)` (hàng 252 – 301).  
+> **Cương lĩnh tư tưởng:** Bước chuyển tông (*Tonal Shift*) từ bóc tách độc hại/bóng tối sang **Tâm lý học Chữa Lành, Tự Trắc Ẩn, Bình Thản Khắc Kỷ & Sức Bật Sau Nghịch Cảnh**.  
+> **Tiêu chuẩn chất lượng:** Tuân thủ `HYA-01` (triết lý sâu sắc), `HYA-02` (nguồn học thuật xác thực), `HYA-03` (văn phong nén, không sáo rỗng, không toxic positivity), `HYA-04` (mô hình dữ liệu YAML chuẩn) và `HYA-06` (6 Hard Gates).  
+> **Phạm vi hiện tại:** Tập trung 100% vào nội dung chữ (Kịch bản, Slide, Caption bespoke, Hashtags, Metadata). Khâu tạo ảnh sẽ thực hiện ở giai đoạn tiếp theo.
 
 ---
 
-## 1. Nguyên Tắc Mỹ Thuật Bắt Buộc (HYA-08 Anti-AI Standard)
+## 1. Kiến Trúc 4 Cụm Chủ Đề Trọng Tâm (50 Bài)
 
-1. **100% Danh Tác Cổ Điển Đích Thực:** Sử dụng nguồn tranh công khai (Public Domain / CC0) từ các bảo tàng lớn qua Wikimedia Commons & Google Art Project (Louvre, Rijksmuseum, Prado, Hermitage, National Gallery...).
-2. **Khử Triệt Để Tì Vết AI (Banned AI Artifacts):**
-   - Không bề mặt nhựa/sáp CGI (`NO 3D plastic/waxy sheen`).
-   - Không ánh sáng neon phát quang ảo (`NO airbrushed glow / fantasy sparkles`).
-   - Không ký tự hay hoa văn nguệch ngoạc giả tạo (`NO pseudo-text / runes`).
-   - Tỷ lệ cơ thể và giải phẫu tự nhiên theo trường phái cổ điển.
-3. **Quy Trình Hậu Kỳ Khử AI Vật Lý (Organic Canvas Normalization):**
-   - Cắt chuẩn dọc 9:16 (1080x1920) bằng thuật toán Lanczos.
-   - Cân bằng màu khoáng tự nhiên: Giảm nhẹ độ bão hòa (-4%) trở về màu đất son, hổ phách, xanh Prussian, đỏ thẫm.
-   - Phủ lớp hạt vải toan vi mô (*Organic Canvas Grain*) phá vỡ bề mặt nhẵn bóng kỹ thuật số.
-   - Tinh chỉnh *Micro-contrast Unsharp Mask* làm nổi rõ thớ vải toan và gờ sơn dầu impasto vật lý.
-4. **Chuẩn Hóa Bộ 3 Slide Đa Tầng Thu Phóng (3-Slide Visual Progression):**
-   Mỗi chủ đề đều có trọn vẹn 3 slide để phục vụ đăng TikTok dạng Carousel hoặc Single-Punch mà không bao giờ bị thiếu ảnh.
+| Cụm Chủ Đề | Dải STT | Quy Mô | Tác Giả Học Thuật Cốt Lõi | Thông Điệp Tâm Lý Trọng Tâm |
+|---|:---:|:---:|---|---|
+| **Cụm 1: Tự Trắc Ẩn & Hòa Giải Với Bản Thân** (*Self-Compassion & Radical Self-Acceptance*) | 251 – 263 | 13 bài | **Kristin Neff**, **Carl Rogers**, **Tara Brach**, **Thích Nhất Hạnh**, **Brené Brown** | Buông bỏ chiếc roi phán xét nội tâm; tha thứ cho phiên bản chưa hoàn hảo trong quá khứ; dũng cảm đón nhận sự mong manh (*vulnerability*); yêu thương đứa trẻ tổn thương bên trong. |
+| **Cụm 2: Bình Thản Khắc Kỷ & Làm Chủ Tâm Trí** (*Stoic Serenity & Dichotomy of Control*) | 264 – 275 | 12 bài | **Marcus Aurelius**, **Epictetus**, **Seneca**, **Ryan Holiday** | Phân định rạch ròi giữa điều kiểm soát được và không kiểm soát được; bình thản trước thị phi và phán xét; xây dựng pháo đài tâm trí bất khả xâm phạm; tình yêu định mệnh (*Amor Fati*). |
+| **Cụm 3: Kết Nối Lành Mạnh & Giao Tiếp Thấu Cảm** (*Authentic Connection & Compassionate Communication*) | 276 – 288 | 13 bài | **Marshall Rosenberg (NVC)**, **John Gottman**, **Harriet Lerner**, **Erich Fromm** | Nghệ thuật lắng nghe không phán xét; dũng khí cất lời chân thật; thiết lập ranh giới an toàn; cho đi từ chiếc ly đầy; nuôi dưỡng sự gắn kết an toàn (*Secure Attachment*). |
+| **Cụm 4: Ý Nghĩa Sống & Sức Bật Sau Nghịch Cảnh** (*Meaning, Flow & Post-Traumatic Growth*) | 289 – 300 | 12 bài | **Viktor Frankl**, **Martin Seligman**, **Mihaly Csikszentmihalyi**, **Abraham Maslow** | Tìm thấy ý nghĩa cuộc đời giữa nghịch cảnh (*Man's Search for Meaning*); sự trưởng thành vượt bậc sau tổn thương; trạng thái dòng chảy (*Flow*); niềm lạc quan có cơ sở; tự hiện thực hóa bản thân. |
 
 ---
 
-## 2. Danh Mục 5 Cụm Chủ Đề & 50 Kiệt Tác Giám Tuyển
+## 2. Quy Trình Kỹ Thuật 4 Pha (Vertical Slicing)
 
-| Cụm Chủ Đề (10 theme/cụm) | Dải Theme | Phong Cách Mỹ Thuật | Danh Họa & Tác Phẩm Tiêu Biểu |
-|---|---|---|---|
-| **1. Thao Túng Tâm Lý & Khí Độc Quan Hệ** | `theme_151` $\rightarrow$ `theme_160` | Chiaroscuro u tối, ánh nến le lói giữa đêm đen, ánh mắt toan tính, phản chiếu gương. | Georges de La Tour (*The Penitent Magdalen*), Caravaggio (*Narcissus*, *The Cardsharps*), John William Waterhouse, Francisco Goya (*Saturn*), Vilhelm Hammershøi, Quentin Matsys. |
-| **2. Tâm Lý Đám Đông & Thoái Hóa Lương Tri** | `theme_161` $\rightarrow$ `theme_170` | Biển người cuồng loạn, hàng súng vô cảm, người mù dắt nhau, chàng hề trầm tư giữa dạ tiệc. | Honoré Daumier (*The Uprising*), Francisco Goya (*The Third of May 1808*), Rembrandt (*Dr. Nicolaes Tulp*), Pieter Bruegel (*The Blind*), J.M.W. Turner (*The Slave Ship*), Jacques-Louis David, Jan Matejko (*Stańczyk*), Edvard Munch, James Ensor. |
-| **3. Ngụy Tín & Nỗi Sợ Tự Do** | `theme_171` $\rightarrow$ `theme_180` | Người suy ngẫm trĩu nặng, ánh mắt u uẩn của cô hầu bàn, thiên thần u uất giữa dụng cụ vô nghĩa, tiếng thét hiện sinh. | Auguste Rodin (*The Thinker*), William Blake, Édouard Manet (*A Bar at the Folies-Bergère*), Edvard Munch (*The Scream*), Fernand Léger, Hieronymus Bosch, Albrecht Dürer (*Melencolia I*), Caspar David Friedrich, Salvador Dalí, Eugène Delacroix. |
-| **4. Thiên Kiến Nhận Thức & Tự Biện Hộ** | `theme_181` $\rightarrow$ `theme_190` | Ngón tay hoài nghi kiểm chứng vết thương, chiếc gương soi phản chiếu, học giả giữa kho tàng tri thức, đứa con hoang đàng hối cải, nàng Ophelia chìm trong tiếc nuối. | Caravaggio (*The Incredulity of Saint Thomas*), William Hogarth, Diego Velázquez (*Las Meninas*), John Everett Millais (*Ophelia*), Artemisia Gentileschi, Rembrandt (*Self-Portrait*, *The Prodigal Son*), Johannes Vermeer (*The Astronomer*), Carl Spitzweg, Titian. |
-| **5. Nghịch Lý Hiện Sinh & Sức Bật Nội Tại** | `theme_191` $\rightarrow$ `theme_200` | Sisyphus oằn mình nâng khối đá, con tàu vượt qua tâm bão tuyết dữ dội, người khổng lồ thức tỉnh giữa chân trời, con thuyền trở về bến đỗ hoàng hôn (Amor Fati). | Titian (*Sisyphus*), Vincent van Gogh (*Prisoners' Round*), Odilon Redon, Caspar David Friedrich (*The Sea of Ice*, *The Stages of Life*), Claude Monet (*Impression, Sunrise*), Rembrandt (*Jeremiah*), J.M.W. Turner (*Snow Storm*), Gustave Courbet (*The Wave*), Francisco Goya (*Colossus*). |
-
----
-
-## 3. Lộ Trình Triển Khai 4 Pha Chi Tiết
-
-### Phase 1: Đặc Tả Mỹ Thuật HYA-08 & Manifest 50 Danh Tác
-- [ ] **Task 1: Tạo Đặc Tả Mỹ Thuật `docs/10_HIYU_ABYSS_OIL_PAINTING_SUITES_151_200_SPEC.md` & Manifest JSON**
-  - Viết kịch bản `scripts/build_oil_spec_151_200.py` xuất đặc tả đầy đủ 50 theme và `scripts/oil_suites_151_200_prompts_manifest.json`.
-  - **Tiêu chí:** Đúng 50 mục, có tên tranh, tác giả, năm, bảo tàng, ý niệm thị giác và prompt chuẩn.
-
-### Phase 2: Phân Giải Nguồn Ảnh Bảo Tàng Siêu Phân Giải (Wikimedia Commons API)
-- [ ] **Task 2: Tìm Kiếm & Tải Bản Scan Gốc (3.000px–5.000px) Về `assets/templates/raw_cache/`**
-  - Viết và chạy `scripts/resolve_50_master_oil_art.py` truy vấn Wikimedia API (User-Agent chuẩn, delay 0.5s).
-  - Tải và lưu các bản scan độ phân giải cao vào bộ đệm cache.
-  - **Tiêu chí:** 100% 50 tác phẩm được phân giải và tải về đầy đủ.
-
-### Phase 3: Chế Tác Hàng Loạt 150 Slide Chuẩn HYA-08 & 3 Tầng Thu Phóng
-- [ ] **Task 3: Xuất Trọn Bộ 150 Slide Sơn Dầu Khử AI (50 Themes x 3 Slides)**
-  - Viết và chạy `scripts/mass_produce_oil_suites_151_200.py`:
-    - Slide 1: Toàn cảnh 1080x1920 (1.0x).
-    - Slide 2: Cận cảnh tâm điểm kịch tính (1.65x).
-    - Slide 3: Siêu cận thớ toan và vết cọ impasto (2.5x).
-    - Khử bão hòa -4%, phủ Organic Canvas Grain, tăng sắc nét Micro-contrast.
-    - Lưu vào `assets/templates/multislides/theme_151..200/` và `website/public/images/themes/theme_151..200/`.
-  - **Tiêu chí:** Đúng 150 file JPG chất lượng cao, 0 tì vết AI.
-
-### Phase 4: Cập Nhật Asset Catalog, Kiểm Thử Toàn Diện & Đồng Bộ Git
-- [ ] **Task 4: Cập Nhật `asset-catalog.json`, Build Thư Viện Sống & Đẩy Git**
-  - Cập nhật thông tin tác phẩm bảo tàng vào `website/src/data/asset-catalog.json`.
-  - Chạy `npm run build && node test/verify-build.js` (đảm bảo 22 PASS).
-  - Đẩy Git theo các gói chia nhỏ an toàn lên `origin main`.
-  - **Tiêu chí:** Website cập nhật đủ 200 theme, git sạch sẽ.
+```mermaid
+flowchart TD
+    A["Xác Nhận Mục Tiêu (Statement of Intent)"] --> B["Pha 1: Xây Dựng Kịch Bản 50 Bài & Khởi Tạo 50 File Markdown"]
+    B --> C["Pha 2: Kiểm Định Chất Lượng Độc Bản (Audit 0 Sáo Ngữ, G1, G2)"]
+    C --> D["Pha 3: Cập Nhật CSV (300 bài) & Đồng Bộ Google Sheet (Hàng 252-301)"]
+    D --> E["Pha 4: Kiểm Thử Build Website (WCAG AA 22/22) & Push Git An Toàn"]
+```
 
 ---
 
-## 4. Quản Lý Rủi Ro Kỹ Thuật
+## 3. Danh Mục Nhiệm Vụ Chi Tiết (Task Breakdown)
 
-1. **Lỗi Rate Limit / Chặn IP từ Wikimedia Commons:** Giữ User-Agent định danh rõ ràng kèm email liên hệ, thêm độ trễ 0.5s - 1.0s giữa các lượt tải và cơ chế thử lại (exponential backoff 3 lần).
-2. **Ảnh scan gốc bị thiếu hoặc sai tên:** Thiết lập cơ chế fallback với danh mục tác phẩm thay thế cùng chủ đề và thời kỳ của danh họa.
-3. **Lỗi timeout HTTP 408 khi đẩy Git:** Chia nhỏ lệnh commit/push thành các lô 10-15 theme (~8-10MB mỗi lô).
+### Pha 1: Đặc Tả Tri Thức & Khởi Tạo Dữ Liệu Kịch Bản
+
+#### Task 1: Xây dựng Tập dữ liệu Kịch bản 50 bài chuẩn (`scripts/build_50_healing_posts_251_300.py`)
+- **Mô tả:** Viết script Python chứa toàn bộ 50 kịch bản chi tiết với 17 trường thông tin chuẩn (STT, Mã ID, Tiêu đề dưới 90 từ, Caption TikTok bespoke 50-80 từ, Tác giả học thuật, Hashtags SEO, Định dạng Slide linh hoạt, Trang 1..4, Chủ đề hạt nhân, Khung giờ vàng, Ý niệm thị giác tranh ánh sáng/ấm áp, Trạng thái).
+- **Tiêu chí nghiệm thu:**
+  - Đủ 50 bài từ STT 251 đến 300 (mã `TXT-0251` $\rightarrow$ `TXT-0300`).
+  - Đa dạng định dạng slide: Single-Punch (đanh thép), Carousel 2 trang (Tension $\rightarrow$ Growth), Carousel 3 trang (Hiện tượng $\rightarrow$ Khơi thông $\rightarrow$ Ánh sáng).
+  - 100% Caption bespoke, mở đầu bằng trích dẫn tác giả học thuật và kết thúc bằng câu hỏi tự vấn lay động.
+  - Concept tranh tập trung vào trường phái Ấn tượng/Ánh sáng tự nhiên (Monet, Renoir, Corot, Friedrich đón bình minh) thay cho chiaroscuro tăm tối.
+- **Xác minh:** `python scripts/build_50_healing_posts_251_300.py` xuất ra `scripts/posts_251_300.json` thành công.
+- **Files liên quan:** `scripts/build_50_healing_posts_251_300.py`, `scripts/posts_251_300.json`.
+- **Scope:** M (1 script + 1 JSON).
+
+#### Task 2: Sinh 50 Tệp Markdown Lưu Trữ Chuẩn HYA-04 (`TXT-0251.md` đến `TXT-0300.md`)
+- **Mô tả:** Tạo 50 file độc lập tại `editorial/content/` với YAML frontmatter chuẩn (`id`, `title`, `content_type`, `author_attribution`, `topic_codes`, `image_ref`, `slide_format`, `status: APPROVED`).
+- **Tiêu chí nghiệm thu:**
+  - 50 file tồn tại, không lỗi cú pháp YAML.
+  - Nội dung bao gồm Tiêu đề, Trích dẫn, Diễn giải & Chiêm nghiệm biên tập, Cấu trúc Slides đa nhịp, Từ khóa & Hashtags.
+- **Xác minh:** Kiểm tra số lượng `ls editorial/content/TXT-02[5-9]*.md editorial/content/TXT-0300.md` = 50 files.
+- **Files liên quan:** `editorial/content/TXT-0251.md` $\rightarrow$ `TXT-0300.md`.
+- **Scope:** L (50 markdown files).
+
+---
+
+### ❖ Checkpoint 1: Kịch Bản & Lưu Trữ Đã Sẵn Sàng
+- [ ] File `scripts/posts_251_300.json` tồn tại đủ 50 bài.
+- [ ] 50 file Markdown đã tạo thành công trong `editorial/content/`.
+
+---
+
+### Pha 2: Kiểm Định Chất Lượng Biên Tập & Độc Bản Ngữ Nghĩa
+
+#### Task 3: Chạy Bộ Kiểm Định Toàn Diện (`scripts/audit_posts_251_300.py`)
+- **Mô tả:** Viết script tự động kiểm tra 50 bài mới:
+  - 0 câu mở đầu trùng lặp với 250 bài trước.
+  - 0 sáo ngữ AI (loại bỏ hoàn toàn các từ rỗng như "ngọn hải đăng", "cán cân công lý", "bức tranh muôn màu", "hành trình vạn dặm").
+  - Kiểm tra độ dài Caption (nằm trong khoảng 45 - 85 từ).
+  - Kiểm tra tính xác thực của tác giả (Hard Gate G1).
+  - Kiểm tra tính mới ngữ nghĩa và tính tươi sáng/chữa lành (Hard Gate G2).
+- **Tiêu chí nghiệm thu:** Audit đạt 100% PASS, không có bất kỳ cảnh báo lỗi trùng lặp hay sáo rỗng.
+- **Xác minh:** `python scripts/audit_posts_251_300.py` exit code 0.
+- **Files liên quan:** `scripts/audit_posts_251_300.py`.
+- **Scope:** S (1 script).
+
+---
+
+### ❖ Checkpoint 2: Vượt Qua Cổng Kiểm Định Chất Lượng
+- [ ] 100% không trùng lặp mở đầu bài viết.
+- [ ] 100% caption bespoke đạt chuẩn độ dài và văn phong.
+
+---
+
+### Pha 3: Cập Nhật Dữ Liệu & Nạp Google Sheet Pipeline
+
+#### Task 4: Mở rộng Dữ liệu CSV lên 300 Hàng
+- **Mô tả:** Cập nhật `scripts/tiktok_200_posts.csv` thành 300 dòng và tạo `scripts/tiktok_300_posts.csv`.
+- **Tiêu chí nghiệm thu:** File CSV chứa đúng 301 dòng (1 dòng tiêu đề + 300 dòng nội dung).
+- **Xác minh:** `wc -l scripts/tiktok_300_posts.csv` hoặc Python test kiểm tra 301 dòng.
+- **Files liên quan:** `scripts/tiktok_200_posts.csv`, `scripts/tiktok_300_posts.csv`.
+- **Scope:** S (2 CSV files).
+
+#### Task 5: Nạp Đồng Bộ Hàng Loạt Vào Google Sheet (Hàng 252 – 301)
+- **Mô tả:** Sử dụng `gsheets mutate batch` nạp 50 dòng mới vào khoảng `'Kế Hoạch 200 Bài (TikTok Pipeline)'!A252:Q301`. Đồng bộ toàn diện font chữ **Roboto 9pt**, **Text Wrap**, căn lề `Middle` và menu thả xuống cột Trạng Thái (`SẴN SÀNG`).
+- **Tiêu chí nghiệm thu:**
+  - Hàng 252 là STT 251 (`TXT-0251`).
+  - Hàng 301 là STT 300 (`TXT-0300`).
+  - Toàn bộ dữ liệu hiển thị xuống dòng thoáng đãng, không tràn dòng, không co dòng.
+- **Xác minh:** Chạy `gsheets readonly read` đọc lại các hàng 252, 275, 301 xác nhận dữ liệu đã cập nhật chuẩn xác.
+- **Files liên quan:** `scripts/prepare_sheet_batch_251_300.py`, `scripts/sheet_batch_251_300.json`.
+- **Scope:** M (1 script + 1 JSON + Google Sheet sync).
+
+---
+
+### ❖ Checkpoint 3: Google Sheet Cập Nhật Hoàn Hảo Đến Bài 300
+- [ ] Dữ liệu 50 bài hiển thị đầy đủ trên Google Sheet từ hàng 252 đến 301.
+- [ ] Định dạng ô đồng nhất với các bài trước.
+
+---
+
+### Pha 4: Kiểm Thử Toàn Diện Website & Đồng Bộ Git
+
+#### Task 6: Kiểm Thử Build Hệ Thống Thư Viện Tĩnh & WCAG AA
+- **Mô tả:** Chạy `npm run build` trong thư mục `website` và chạy bộ test `test/verify-build.js` để đảm bảo 50 file markdown mới không làm gãy schema nội dung.
+- **Tiêu chí nghiệm thu:** Build Astro thành công, bộ kiểm định WCAG AA và tính toàn vẹn đạt 22 PASS | 0 FAIL.
+- **Xác minh:** `cd website && npm run build && node test/verify-build.js`.
+- **Scope:** S (Test verification).
+
+#### Task 7: Đồng Bộ Git Lên Nhánh `feat/the-agora-forum-v2`
+- **Mô tả:** Stage toàn bộ các file mới (Markdown, CSV, JSON, Scripts), tạo commit rõ ràng và push lên GitHub.
+- **Tiêu chí nghiệm thu:** Working tree sạch sẽ, commit đã được đẩy lên `origin/feat/the-agora-forum-v2`.
+- **Xác minh:** `git status` trả về clean.
+- **Scope:** S (Git push).
+
+---
+
+### ❖ Checkpoint 4: Hoàn Thành Toàn Bộ Kế Hoạch 50 Bài Mới
+- [ ] 50 bài nội dung chữa lành đã nạp thành công vào Google Sheet.
+- [ ] Hệ thống mã nguồn và kho lưu trữ Git đã được đồng bộ an toàn.
+
+---
+
+## 4. Quản Trị Rủi Ro (Risks & Mitigations)
+
+| Rủi Ro | Mức Độ | Biện Pháp Kiểm Soát & Khắc Phục |
+|---|:---:|---|
+| **Bẫy Tích Cực Độc Hại (*Toxic Positivity*)** | Cao | Kiểm soát chặt chẽ bằng nguyên tắc: Luôn công nhận nỗi đau thực tế trước khi đưa ra lối thoát tâm lý; không khuyên "hãy luôn vui vẻ", mà hướng dẫn "ôm ấp sự mong manh và xây dựng sức bật kiên cường". |
+| **Lệch Định Dạng Trên Google Sheet (Co dòng, tràn text)** | Trung bình | Kế thừa trực tiếp quy trình `copyPaste` format và `autoResizeDimensions` từ bài 205-250 đã được kiểm chứng, áp dụng ngay khi ghi dữ liệu vào A252:Q301. |
+| **Trùng Lặp Ý Niệm Với 250 Bài Cũ** | Trung bình | Sử dụng ma trận tác giả hoàn toàn mới (Kristin Neff, Tara Brach, Marshall Rosenberg, Mihaly Csikszentmihalyi) để mở ra những góc nhìn nhận thức tươi mới. |

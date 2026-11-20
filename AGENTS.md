@@ -30,6 +30,7 @@ Agent phải kích hoạt chính xác kỹ năng theo đúng pha nhiệm vụ, k
 | | `philosophical-argument-mapping`| Phân tích tiền đề, kết luận, phản đề của luận điểm | `CON-xxxx` |
 | **3. Sáng tác & Chế tác ngôn từ** | `aphorism-writing` | Chuyển hóa ý tưởng thành câu triết ngôn tiếng Việt | `TXT-xxxx` (DRAFT) |
 | | `metaphor-and-subtext` | Thiết kế ẩn dụ ngầm (mặt nạ, món nợ, chiếc lồng) | Phương án ẩn dụ chức năng |
+| | `humanizer` | Khử các cấu trúc sáo rỗng/khuôn mẫu của AI (not-X-but-Y, triad khiên cưỡng, đao to búa lớn), giữ giọng văn tự nhiên | Bản thảo tự nhiên, không mùi AI |
 | **4. Thẩm định & Vận hành kho** | `editorial-critique` | Chấm điểm 6 chiều, phản biện câu sáo rỗng/giáo điều | Đề xuất PASS/REVISE/REJECT |
 | | `semantic-novelty-review` | Soát trùng lặp ý tưởng với kho nội dung hiện hữu | Đánh giá tính mới (G2) |
 | | `content-lifecycle` | Tạo/sửa file YAML, đồng bộ bảng chỉ mục, kiểm ID | Bảng index & file hợp lệ |

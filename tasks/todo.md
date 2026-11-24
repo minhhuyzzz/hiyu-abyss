@@ -347,14 +347,17 @@
 # Danh Mục Nhiệm Vụ: Chế Tác 200 Bộ Ảnh Sơn Dầu Cổ Điển Tươi Sáng & Chân Dung Triết Gia (Themes 301 -> 500)
 
 ## Phase 1: Nền Tảng Đặc Tả Mỹ Thuật & Manifest 431 Slide
-- [ ] **Task 1: Biên Soạn Tài Liệu Đặc Tả `docs/12_HIYU_ABYSS_OIL_PAINTING_SUITES_301_500_SPEC.md`**
+- [x] **Task 1: Biên Soạn Tài Liệu Đặc Tả `docs/12_HIYU_ABYSS_OIL_PAINTING_SUITES_301_500_SPEC.md`**
   - Đặc tả chi tiết 200 theme (431 slide độc lập), tích hợp danh họa cổ điển, bảng màu tươi sáng ấm áp và chân dung chuẩn xác của 8+ triết gia lịch sử.
-- [ ] **Task 2: Lập Trình Script Khởi Tạo Manifest `scripts/build_oil_spec_301_500.py`**
+- [x] **Task 2: Lập Trình Script Khởi Tạo Manifest `scripts/build_oil_spec_301_500.py`**
   - Tự động đọc dữ liệu 200 bài viết (301-500) để xuất `scripts/oil_suites_301_500_manifest.json` chứa 431 slide.
-- [ ] **Task 3: Viết & Chạy Bộ Kiểm Định Tự Động `scripts/audit_oil_spec_301_500.py`**
-  - Kiểm tra 100% prompt không dính từ cấm AI, đúng tỷ lệ 9:16, đủ vệt toan canvas và text safe zone.
+- [x] **Task 3: Viết & Chạy Bộ Kiểm Định Tự Động `scripts/audit_oil_spec_301_500.py`**
+  - Kiểm tra 100% prompt không dính từ cấm AI, đúng tỷ lệ 9:16, đủ vệt toan canvas và text safe zone (Đạt 431/431 slides 100% PASS).
 
-### ❖ Checkpoint 1: Art Spec & Manifest Ready (431 Slides)
+### ❖ Checkpoint 1: Art Spec & Manifest Ready (431 Slides) [HOÀN TẤT]
+- [x] 100% 431 slides độc bản, 0 trùng lặp.
+- [x] Tích hợp 139 slide chân dung danh tác triết gia chuẩn bảo tàng.
+- [x] Tài liệu đặc tả 5.935 dòng và manifest JSON đầy đủ.
 
 ## Phase 2: Chế Tác Lô 1 (Themes 301–340 · 40 Themes · 86 Slides) — Lưu Đồ Tâm Lý & Ranh Giới
 - [ ] **Task 4: Chế Tác & Render 86 Slide Sơn Dầu Lô 1 (`assets/templates/multislides/theme_301..340/`)**

@@ -1,0 +1,3621 @@
+[
+  {
+    "artist": "Rembrandt van Rijn",
+    "title": "The Night Watch",
+    "museum": "Rijksmuseum",
+    "year": "1642",
+    "query": "Rembrandt van Rijn The Night Watch Rijksmuseum"
+  },
+  {
+    "artist": "Rembrandt van Rijn",
+    "title": "The Anatomy Lesson of Dr. Nicolaes Tulp",
+    "museum": "Mauritshuis",
+    "year": "1632",
+    "query": "Rembrandt Anatomy Lesson Nicolaes Tulp Mauritshuis"
+  },
+  {
+    "artist": "Rembrandt van Rijn",
+    "title": "The Jewish Bride",
+    "museum": "Rijksmuseum",
+    "year": "1667",
+    "query": "Rembrandt The Jewish Bride Rijksmuseum"
+  },
+  {
+    "artist": "Rembrandt van Rijn",
+    "title": "Self-Portrait with Two Circles",
+    "museum": "Kenwood House",
+    "year": "1665",
+    "query": "Rembrandt Self-Portrait Two Circles Kenwood"
+  },
+  {
+    "artist": "Rembrandt van Rijn",
+    "title": "The Return of the Prodigal Son",
+    "museum": "Hermitage Museum",
+    "year": "1669",
+    "query": "Rembrandt Return of the Prodigal Son Hermitage"
+  },
+  {
+    "artist": "Rembrandt van Rijn",
+    "title": "Bathsheba at Her Bath",
+    "museum": "Louvre Museum",
+    "year": "1654",
+    "query": "Rembrandt Bathsheba at Her Bath Louvre"
+  },
+  {
+    "artist": "Rembrandt van Rijn",
+    "title": "The Syndics of the Drapers' Guild",
+    "museum": "Rijksmuseum",
+    "year": "1662",
+    "query": "Rembrandt Syndics Drapers Guild Rijksmuseum"
+  },
+  {
+    "artist": "Rembrandt van Rijn",
+    "title": "Danaë",
+    "museum": "Hermitage Museum",
+    "year": "1636",
+    "query": "Rembrandt Danae Hermitage"
+  },
+  {
+    "artist": "Rembrandt van Rijn",
+    "title": "Belshazzar's Feast",
+    "museum": "National Gallery London",
+    "year": "1635",
+    "query": "Rembrandt Belshazzars Feast National Gallery"
+  },
+  {
+    "artist": "Rembrandt van Rijn",
+    "title": "Flora",
+    "museum": "Hermitage Museum",
+    "year": "1634",
+    "query": "Rembrandt Flora Hermitage"
+  },
+  {
+    "artist": "Rembrandt van Rijn",
+    "title": "The Mill",
+    "museum": "National Gallery of Art",
+    "year": "1648",
+    "query": "Rembrandt The Mill National Gallery of Art"
+  },
+  {
+    "artist": "Rembrandt van Rijn",
+    "title": "A Woman Bathing in a Stream",
+    "museum": "National Gallery London",
+    "year": "1654",
+    "query": "Rembrandt Woman Bathing in a Stream"
+  },
+  {
+    "artist": "Rembrandt van Rijn",
+    "title": "Self-Portrait at the Age of 63",
+    "museum": "National Gallery London",
+    "year": "1669",
+    "query": "Rembrandt Self-Portrait Age 63 National Gallery"
+  },
+  {
+    "artist": "Rembrandt van Rijn",
+    "title": "Man in Oriental Costume",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1632",
+    "query": "Rembrandt Man in Oriental Costume MET"
+  },
+  {
+    "artist": "Rembrandt van Rijn",
+    "title": "The Blinding of Samson",
+    "museum": "Städel Museum",
+    "year": "1636",
+    "query": "Rembrandt Blinding of Samson Stadel"
+  },
+  {
+    "artist": "Johannes Vermeer",
+    "title": "The Milkmaid",
+    "museum": "Rijksmuseum",
+    "year": "1658",
+    "query": "Johannes Vermeer The Milkmaid Rijksmuseum"
+  },
+  {
+    "artist": "Johannes Vermeer",
+    "title": "Girl with a Pearl Earring",
+    "museum": "Mauritshuis",
+    "year": "1665",
+    "query": "Johannes Vermeer Girl with a Pearl Earring Mauritshuis"
+  },
+  {
+    "artist": "Johannes Vermeer",
+    "title": "The Art of Painting",
+    "museum": "Kunsthistorisches Museum",
+    "year": "1666",
+    "query": "Johannes Vermeer The Art of Painting Vienna"
+  },
+  {
+    "artist": "Johannes Vermeer",
+    "title": "View of Delft",
+    "museum": "Mauritshuis",
+    "year": "1661",
+    "query": "Johannes Vermeer View of Delft Mauritshuis"
+  },
+  {
+    "artist": "Johannes Vermeer",
+    "title": "Woman Holding a Balance",
+    "museum": "National Gallery of Art",
+    "year": "1664",
+    "query": "Johannes Vermeer Woman Holding a Balance NGA"
+  },
+  {
+    "artist": "Johannes Vermeer",
+    "title": "The Geographer",
+    "museum": "Städel Museum",
+    "year": "1669",
+    "query": "Johannes Vermeer The Geographer Stadel"
+  },
+  {
+    "artist": "Johannes Vermeer",
+    "title": "The Astronomer",
+    "museum": "Louvre Museum",
+    "year": "1668",
+    "query": "Johannes Vermeer The Astronomer Louvre"
+  },
+  {
+    "artist": "Johannes Vermeer",
+    "title": "The Little Street",
+    "museum": "Rijksmuseum",
+    "year": "1658",
+    "query": "Johannes Vermeer The Little Street Rijksmuseum"
+  },
+  {
+    "artist": "Johannes Vermeer",
+    "title": "Girl with a Red Hat",
+    "museum": "National Gallery of Art",
+    "year": "1665",
+    "query": "Johannes Vermeer Girl with a Red Hat NGA"
+  },
+  {
+    "artist": "Johannes Vermeer",
+    "title": "Woman Reading a Letter",
+    "museum": "Rijksmuseum",
+    "year": "1663",
+    "query": "Johannes Vermeer Woman Reading a Letter Rijksmuseum"
+  },
+  {
+    "artist": "Caravaggio",
+    "title": "The Calling of Saint Matthew",
+    "museum": "San Luigi dei Francesi",
+    "year": "1600",
+    "query": "Caravaggio Calling of Saint Matthew Rome"
+  },
+  {
+    "artist": "Caravaggio",
+    "title": "The Incredulity of Saint Thomas",
+    "museum": "Sanssouci Potsdam",
+    "year": "1602",
+    "query": "Caravaggio Incredulity of Saint Thomas Potsdam"
+  },
+  {
+    "artist": "Caravaggio",
+    "title": "Judith Beheading Holofernes",
+    "museum": "Galleria Nazionale d'Arte Antica",
+    "year": "1599",
+    "query": "Caravaggio Judith Beheading Holofernes Rome"
+  },
+  {
+    "artist": "Caravaggio",
+    "title": "Saint Jerome Writing",
+    "museum": "Borghese Gallery",
+    "year": "1606",
+    "query": "Caravaggio Saint Jerome Writing Borghese"
+  },
+  {
+    "artist": "Caravaggio",
+    "title": "David with the Head of Goliath",
+    "museum": "Borghese Gallery",
+    "year": "1610",
+    "query": "Caravaggio David with Head of Goliath Borghese"
+  },
+  {
+    "artist": "Caravaggio",
+    "title": "The Supper at Emmaus",
+    "museum": "National Gallery London",
+    "year": "1601",
+    "query": "Caravaggio Supper at Emmaus National Gallery"
+  },
+  {
+    "artist": "Caravaggio",
+    "title": "The Entombment of Christ",
+    "museum": "Vatican Museums",
+    "year": "1603",
+    "query": "Caravaggio Entombment of Christ Vatican"
+  },
+  {
+    "artist": "Caravaggio",
+    "title": "The Conversion of Saint Paul",
+    "museum": "Santa Maria del Popolo",
+    "year": "1601",
+    "query": "Caravaggio Conversion of Saint Paul Cerasi"
+  },
+  {
+    "artist": "Caravaggio",
+    "title": "The Crucifixion of Saint Peter",
+    "museum": "Santa Maria del Popolo",
+    "year": "1601",
+    "query": "Caravaggio Crucifixion of Saint Peter Cerasi"
+  },
+  {
+    "artist": "Caravaggio",
+    "title": "Bacchus",
+    "museum": "Uffizi Gallery",
+    "year": "1596",
+    "query": "Caravaggio Bacchus Uffizi"
+  },
+  {
+    "artist": "Caravaggio",
+    "title": "Boy with a Basket of Fruit",
+    "museum": "Borghese Gallery",
+    "year": "1593",
+    "query": "Caravaggio Boy with a Basket of Fruit Borghese"
+  },
+  {
+    "artist": "Caravaggio",
+    "title": "The Cardsharps",
+    "museum": "Kimbell Art Museum",
+    "year": "1594",
+    "query": "Caravaggio The Cardsharps Kimbell"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "Las Meninas",
+    "museum": "Museo del Prado",
+    "year": "1656",
+    "query": "Diego Velazquez Las Meninas Prado"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "The Surrender of Breda",
+    "museum": "Museo del Prado",
+    "year": "1635",
+    "query": "Diego Velazquez Surrender of Breda Prado"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "The Rokeby Venus",
+    "museum": "National Gallery London",
+    "year": "1647",
+    "query": "Diego Velazquez Rokeby Venus National Gallery"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "Portrait of Pope Innocent X",
+    "museum": "Doria Pamphilj Gallery",
+    "year": "1650",
+    "query": "Diego Velazquez Portrait of Innocent X Doria"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "The Waterseller of Seville",
+    "museum": "Apsley House",
+    "year": "1620",
+    "query": "Diego Velazquez Waterseller of Seville Apsley"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "The Spinners",
+    "museum": "Museo del Prado",
+    "year": "1657",
+    "query": "Diego Velazquez The Spinners Prado"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "The Triumph of Bacchus",
+    "museum": "Museo del Prado",
+    "year": "1628",
+    "query": "Diego Velazquez Triumph of Bacchus Prado"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "Apollo in the Forge of Vulcan",
+    "museum": "Museo del Prado",
+    "year": "1630",
+    "query": "Diego Velazquez Apollo Forge of Vulcan Prado"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "Portrait of Juan de Pareja",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1650",
+    "query": "Diego Velazquez Juan de Pareja MET"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "The Jester Don Sebastián de Morra",
+    "museum": "Museo del Prado",
+    "year": "1645",
+    "query": "Diego Velazquez Sebastian de Morra Prado"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "Infanta Margarita Teresa in a Blue Dress",
+    "museum": "Kunsthistorisches Museum",
+    "year": "1659",
+    "query": "Velazquez Infanta Margarita Blue Dress Vienna"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "Old Woman Frying Eggs",
+    "museum": "Scottish National Gallery",
+    "year": "1618",
+    "query": "Velazquez Old Woman Frying Eggs Edinburgh"
+  },
+  {
+    "artist": "Peter Paul Rubens",
+    "title": "The Fall of Phaeton",
+    "museum": "National Gallery of Art",
+    "year": "1604",
+    "query": "Peter Paul Rubens Fall of Phaeton NGA"
+  },
+  {
+    "artist": "Peter Paul Rubens",
+    "title": "Massacre of the Innocents",
+    "museum": "Art Gallery of Ontario",
+    "year": "1612",
+    "query": "Peter Paul Rubens Massacre of the Innocents Ontario"
+  },
+  {
+    "artist": "Peter Paul Rubens",
+    "title": "The Judgment of Paris",
+    "museum": "National Gallery London",
+    "year": "1636",
+    "query": "Peter Paul Rubens Judgment of Paris National Gallery"
+  },
+  {
+    "artist": "Peter Paul Rubens",
+    "title": "Samson and Delilah",
+    "museum": "National Gallery London",
+    "year": "1609",
+    "query": "Peter Paul Rubens Samson and Delilah National Gallery"
+  },
+  {
+    "artist": "Peter Paul Rubens",
+    "title": "The Descent from the Cross",
+    "museum": "Cathedral of Our Lady Antwerp",
+    "year": "1612",
+    "query": "Peter Paul Rubens Descent from the Cross Antwerp"
+  },
+  {
+    "artist": "Peter Paul Rubens",
+    "title": "The Elevation of the Cross",
+    "museum": "Cathedral of Our Lady Antwerp",
+    "year": "1610",
+    "query": "Peter Paul Rubens Elevation of the Cross Antwerp"
+  },
+  {
+    "artist": "Peter Paul Rubens",
+    "title": "The Garden of Love",
+    "museum": "Museo del Prado",
+    "year": "1633",
+    "query": "Peter Paul Rubens Garden of Love Prado"
+  },
+  {
+    "artist": "Peter Paul Rubens",
+    "title": "The Three Graces",
+    "museum": "Museo del Prado",
+    "year": "1635",
+    "query": "Peter Paul Rubens Three Graces Prado"
+  },
+  {
+    "artist": "Peter Paul Rubens",
+    "title": "The Rainbow Landscape",
+    "museum": "Wallace Collection",
+    "year": "1636",
+    "query": "Peter Paul Rubens Rainbow Landscape Wallace"
+  },
+  {
+    "artist": "Peter Paul Rubens",
+    "title": "Prometheus Bound",
+    "museum": "Philadelphia Museum of Art",
+    "year": "1612",
+    "query": "Peter Paul Rubens Prometheus Bound Philadelphia"
+  },
+  {
+    "artist": "Caspar David Friedrich",
+    "title": "The Monk by the Sea",
+    "museum": "Alte Nationalgalerie",
+    "year": "1809",
+    "query": "Caspar David Friedrich The Monk by the Sea Berlin"
+  },
+  {
+    "artist": "Caspar David Friedrich",
+    "title": "Abbey in the Oak Forest",
+    "museum": "Alte Nationalgalerie",
+    "year": "1810",
+    "query": "Caspar David Friedrich Abbey in the Oak Forest Berlin"
+  },
+  {
+    "artist": "Caspar David Friedrich",
+    "title": "Two Men Contemplating the Moon",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1825",
+    "query": "Caspar David Friedrich Two Men Contemplating the Moon MET"
+  },
+  {
+    "artist": "Caspar David Friedrich",
+    "title": "The Sea of Ice",
+    "museum": "Hamburger Kunsthalle",
+    "year": "1824",
+    "query": "Caspar David Friedrich The Sea of Ice Hamburg"
+  },
+  {
+    "artist": "Caspar David Friedrich",
+    "title": "Chalk Cliffs on Rügen",
+    "museum": "Kunst Museum Winterthur",
+    "year": "1818",
+    "query": "Caspar David Friedrich Chalk Cliffs on Rugen Winterthur"
+  },
+  {
+    "artist": "Caspar David Friedrich",
+    "title": "Wanderer above the Sea of Fog",
+    "museum": "Hamburger Kunsthalle",
+    "year": "1818",
+    "query": "Caspar David Friedrich Wanderer above the Sea of Fog Hamburg"
+  },
+  {
+    "artist": "Caspar David Friedrich",
+    "title": "The Tree of Crows",
+    "museum": "Louvre Museum",
+    "year": "1822",
+    "query": "Caspar David Friedrich The Tree of Crows Louvre"
+  },
+  {
+    "artist": "Caspar David Friedrich",
+    "title": "Cross in the Mountains",
+    "museum": "Galerie Neue Meister Dresden",
+    "year": "1808",
+    "query": "Caspar David Friedrich Cross in the Mountains Dresden"
+  },
+  {
+    "artist": "Caspar David Friedrich",
+    "title": "Moonrise over the Sea",
+    "museum": "Alte Nationalgalerie",
+    "year": "1822",
+    "query": "Caspar David Friedrich Moonrise over the Sea Berlin"
+  },
+  {
+    "artist": "Caspar David Friedrich",
+    "title": "Morning in the Riesengebirge",
+    "museum": "Alte Nationalgalerie",
+    "year": "1811",
+    "query": "Caspar David Friedrich Morning Riesengebirge Berlin"
+  },
+  {
+    "artist": "Caspar David Friedrich",
+    "title": "The Stages of Life",
+    "museum": "Museum der bildenden Künste Leipzig",
+    "year": "1835",
+    "query": "Caspar David Friedrich Stages of Life Leipzig"
+  },
+  {
+    "artist": "Caspar David Friedrich",
+    "title": "Gazebo in Greifswald",
+    "museum": "Alte Nationalgalerie",
+    "year": "1818",
+    "query": "Caspar David Friedrich Gazebo in Greifswald Berlin"
+  },
+  {
+    "artist": "J.M.W. Turner",
+    "title": "The Fighting Temeraire",
+    "museum": "National Gallery London",
+    "year": "1839",
+    "query": "JMW Turner The Fighting Temeraire National Gallery"
+  },
+  {
+    "artist": "J.M.W. Turner",
+    "title": "Rain, Steam and Speed",
+    "museum": "National Gallery London",
+    "year": "1844",
+    "query": "JMW Turner Rain Steam and Speed National Gallery"
+  },
+  {
+    "artist": "J.M.W. Turner",
+    "title": "Snow Storm: Steam-Boat off a Harbour's Mouth",
+    "museum": "Tate Britain",
+    "year": "1842",
+    "query": "JMW Turner Snow Storm Steam-Boat Tate"
+  },
+  {
+    "artist": "J.M.W. Turner",
+    "title": "The Slave Ship",
+    "museum": "Museum of Fine Arts Boston",
+    "year": "1840",
+    "query": "JMW Turner The Slave Ship Boston"
+  },
+  {
+    "artist": "J.M.W. Turner",
+    "title": "Dido Building Carthage",
+    "museum": "National Gallery London",
+    "year": "1815",
+    "query": "JMW Turner Dido Building Carthage National Gallery"
+  },
+  {
+    "artist": "J.M.W. Turner",
+    "title": "The Shipwreck",
+    "museum": "Tate Britain",
+    "year": "1805",
+    "query": "JMW Turner The Shipwreck Tate Britain"
+  },
+  {
+    "artist": "J.M.W. Turner",
+    "title": "Crossing the Brook",
+    "museum": "Tate Britain",
+    "year": "1815",
+    "query": "JMW Turner Crossing the Brook Tate"
+  },
+  {
+    "artist": "J.M.W. Turner",
+    "title": "Ulysses Deriding Polyphemus",
+    "museum": "National Gallery London",
+    "year": "1829",
+    "query": "JMW Turner Ulysses Deriding Polyphemus National Gallery"
+  },
+  {
+    "artist": "J.M.W. Turner",
+    "title": "Peace - Burial at Sea",
+    "museum": "Tate Britain",
+    "year": "1842",
+    "query": "JMW Turner Peace Burial at Sea Tate"
+  },
+  {
+    "artist": "J.M.W. Turner",
+    "title": "The Burning of the Houses of Lords and Commons",
+    "museum": "Philadelphia Museum of Art",
+    "year": "1835",
+    "query": "Turner Burning Houses of Lords and Commons Philadelphia"
+  },
+  {
+    "artist": "J.M.W. Turner",
+    "title": "Modern Rome - Campo Vaccino",
+    "museum": "J. Paul Getty Museum",
+    "year": "1839",
+    "query": "JMW Turner Modern Rome Campo Vaccino Getty"
+  },
+  {
+    "artist": "J.M.W. Turner",
+    "title": "Venice, The Grand Canal",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1835",
+    "query": "JMW Turner Venice The Grand Canal MET"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "Impression, Sunrise",
+    "museum": "Musée Marmottan Monet",
+    "year": "1872",
+    "query": "Claude Monet Impression Sunrise Marmottan"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "Woman with a Parasol",
+    "museum": "National Gallery of Art",
+    "year": "1875",
+    "query": "Claude Monet Woman with a Parasol NGA"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "The Magpie",
+    "museum": "Musée d'Orsay",
+    "year": "1869",
+    "query": "Claude Monet The Magpie Musee dOrsay"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "Rouen Cathedral, Façade (Sunset)",
+    "museum": "Musée Marmottan Monet",
+    "year": "1894",
+    "query": "Claude Monet Rouen Cathedral Sunset Marmottan"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "Bridge over a Pond of Water Lilies",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1899",
+    "query": "Claude Monet Bridge over a Pond of Water Lilies MET"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "Poppy Field",
+    "museum": "Musée d'Orsay",
+    "year": "1873",
+    "query": "Claude Monet Poppy Field Musee dOrsay"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "La Grenouillère",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1869",
+    "query": "Claude Monet La Grenouillere MET"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "Gare Saint-Lazare",
+    "museum": "Musée d'Orsay",
+    "year": "1877",
+    "query": "Claude Monet Gare Saint-Lazare Musee dOrsay"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "Water Lilies 1906",
+    "museum": "Art Institute of Chicago",
+    "year": "1906",
+    "query": "Claude Monet Water Lilies 1906 Chicago"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "The Cliff Walk at Pourville",
+    "museum": "Art Institute of Chicago",
+    "year": "1882",
+    "query": "Claude Monet Cliff Walk at Pourville Chicago"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "San Giorgio Maggiore at Dusk",
+    "museum": "National Museum Cardiff",
+    "year": "1912",
+    "query": "Claude Monet San Giorgio Maggiore at Dusk Cardiff"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "The Luncheon",
+    "museum": "Städel Museum",
+    "year": "1868",
+    "query": "Claude Monet The Luncheon Stadel Museum"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "Houses of Parliament, Sunset",
+    "museum": "National Gallery of Art",
+    "year": "1903",
+    "query": "Claude Monet Houses of Parliament Sunset NGA"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "Terrace at Sainte-Adresse",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1867",
+    "query": "Claude Monet Terrace at Sainte-Adresse MET"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "Grainstacks, Snow Effect, Sunlight",
+    "museum": "National Gallery of Scotland",
+    "year": "1891",
+    "query": "Claude Monet Grainstacks Snow Effect Edinburgh"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "The Starry Night",
+    "museum": "Museum of Modern Art",
+    "year": "1889",
+    "query": "Vincent van Gogh The Starry Night MoMA"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "Sunflowers",
+    "museum": "National Gallery London",
+    "year": "1888",
+    "query": "Vincent van Gogh Sunflowers National Gallery London"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "Café Terrace at Night",
+    "museum": "Kröller-Müller Museum",
+    "year": "1888",
+    "query": "Vincent van Gogh Cafe Terrace at Night Kroller-Muller"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "The Potato Eaters",
+    "museum": "Van Gogh Museum",
+    "year": "1885",
+    "query": "Vincent van Gogh The Potato Eaters Amsterdam"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "Wheatfield with Crows",
+    "museum": "Van Gogh Museum",
+    "year": "1890",
+    "query": "Vincent van Gogh Wheatfield with Crows Amsterdam"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "Almond Blossoms",
+    "museum": "Van Gogh Museum",
+    "year": "1890",
+    "query": "Vincent van Gogh Almond Blossoms Amsterdam"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "Bedroom in Arles",
+    "museum": "Van Gogh Museum",
+    "year": "1888",
+    "query": "Vincent van Gogh Bedroom in Arles Amsterdam"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "Irises",
+    "museum": "J. Paul Getty Museum",
+    "year": "1889",
+    "query": "Vincent van Gogh Irises Getty Museum"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "Portrait of Dr. Gachet",
+    "museum": "Musée d'Orsay",
+    "year": "1890",
+    "query": "Vincent van Gogh Portrait of Dr Gachet dOrsay"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "The Yellow House",
+    "museum": "Van Gogh Museum",
+    "year": "1888",
+    "query": "Vincent van Gogh The Yellow House Amsterdam"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "Starry Night Over the Rhône",
+    "museum": "Musée d'Orsay",
+    "year": "1888",
+    "query": "Vincent van Gogh Starry Night Over the Rhone dOrsay"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "Self-Portrait with Bandaged Ear",
+    "museum": "Courtauld Gallery",
+    "year": "1889",
+    "query": "Vincent van Gogh Self-Portrait Bandaged Ear Courtauld"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "The Night Café",
+    "museum": "Yale University Art Gallery",
+    "year": "1888",
+    "query": "Vincent van Gogh The Night Cafe Yale"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "The Church at Auvers",
+    "museum": "Musée d'Orsay",
+    "year": "1890",
+    "query": "Vincent van Gogh The Church at Auvers dOrsay"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "Wheat Field with Cypresses",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1889",
+    "query": "Vincent van Gogh Wheat Field with Cypresses MET"
+  },
+  {
+    "artist": "Paul Cézanne",
+    "title": "The Basket of Apples",
+    "museum": "Art Institute of Chicago",
+    "year": "1895",
+    "query": "Paul Cezanne The Basket of Apples Chicago"
+  },
+  {
+    "artist": "Paul Cézanne",
+    "title": "The Card Players",
+    "museum": "Musée d'Orsay",
+    "year": "1895",
+    "query": "Paul Cezanne The Card Players Musee dOrsay"
+  },
+  {
+    "artist": "Paul Cézanne",
+    "title": "Mont Sainte-Victoire seen from Bellevue",
+    "museum": "Barnes Foundation",
+    "year": "1885",
+    "query": "Paul Cezanne Mont Sainte-Victoire Bellevue Barnes"
+  },
+  {
+    "artist": "Paul Cézanne",
+    "title": "Pyramid of Skulls",
+    "museum": "Kunstmuseum Basel",
+    "year": "1901",
+    "query": "Paul Cezanne Pyramid of Skulls Basel"
+  },
+  {
+    "artist": "Paul Cézanne",
+    "title": "The Large Bathers",
+    "museum": "Philadelphia Museum of Art",
+    "year": "1906",
+    "query": "Paul Cezanne The Large Bathers Philadelphia"
+  },
+  {
+    "artist": "Paul Cézanne",
+    "title": "Curtain, Jug and Fruit Bowl",
+    "museum": "Whitney Museum of American Art",
+    "year": "1894",
+    "query": "Paul Cezanne Curtain Jug and Fruit Bowl"
+  },
+  {
+    "artist": "Paul Cézanne",
+    "title": "Madame Cézanne in a Red Dress",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1890",
+    "query": "Paul Cezanne Madame Cezanne Red Dress MET"
+  },
+  {
+    "artist": "Paul Cézanne",
+    "title": "Boy in a Red Waistcoat",
+    "museum": "National Gallery of Art",
+    "year": "1890",
+    "query": "Paul Cezanne Boy in a Red Waistcoat NGA"
+  },
+  {
+    "artist": "Paul Cézanne",
+    "title": "Still Life with Plaster Cupid",
+    "museum": "Courtauld Gallery",
+    "year": "1895",
+    "query": "Paul Cezanne Still Life with Plaster Cupid Courtauld"
+  },
+  {
+    "artist": "Paul Cézanne",
+    "title": "L'Estaque, Melting Snow",
+    "museum": "Private Collection",
+    "year": "1871",
+    "query": "Paul Cezanne LEstaque Melting Snow"
+  },
+  {
+    "artist": "Edgar Degas",
+    "title": "The Ballet Class",
+    "museum": "Musée d'Orsay",
+    "year": "1874",
+    "query": "Edgar Degas The Ballet Class Musee dOrsay"
+  },
+  {
+    "artist": "Edgar Degas",
+    "title": "In a Café (The Absinthe Drinker)",
+    "museum": "Musée d'Orsay",
+    "year": "1876",
+    "query": "Edgar Degas In a Cafe Absinthe Musee dOrsay"
+  },
+  {
+    "artist": "Edgar Degas",
+    "title": "Place de la Concorde",
+    "museum": "Hermitage Museum",
+    "year": "1875",
+    "query": "Edgar Degas Place de la Concorde Hermitage"
+  },
+  {
+    "artist": "Edgar Degas",
+    "title": "The Bellelli Family",
+    "museum": "Musée d'Orsay",
+    "year": "1867",
+    "query": "Edgar Degas The Bellelli Family Musee dOrsay"
+  },
+  {
+    "artist": "Edgar Degas",
+    "title": "Dancers Bending Down",
+    "museum": "Musée d'Orsay",
+    "year": "1885",
+    "query": "Edgar Degas Dancers Bending Down dOrsay"
+  },
+  {
+    "artist": "Edgar Degas",
+    "title": "At the Races in the Countryside",
+    "museum": "Museum of Fine Arts Boston",
+    "year": "1869",
+    "query": "Edgar Degas At the Races in the Countryside Boston"
+  },
+  {
+    "artist": "Edgar Degas",
+    "title": "The Millinery Shop",
+    "museum": "Art Institute of Chicago",
+    "year": "1885",
+    "query": "Edgar Degas The Millinery Shop Chicago"
+  },
+  {
+    "artist": "Edgar Degas",
+    "title": "A Cotton Office in New Orleans",
+    "museum": "Musée des Beaux-Arts Pau",
+    "year": "1873",
+    "query": "Edgar Degas Cotton Office in New Orleans Pau"
+  },
+  {
+    "artist": "Edgar Degas",
+    "title": "Blue Dancers",
+    "museum": "Pushkin Museum",
+    "year": "1897",
+    "query": "Edgar Degas Blue Dancers Pushkin Museum"
+  },
+  {
+    "artist": "Edgar Degas",
+    "title": "The Tub",
+    "museum": "Musée d'Orsay",
+    "year": "1886",
+    "query": "Edgar Degas The Tub Musee dOrsay"
+  },
+  {
+    "artist": "Pierre-Auguste Renoir",
+    "title": "Bal du moulin de la Galette",
+    "museum": "Musée d'Orsay",
+    "year": "1876",
+    "query": "Pierre-Auguste Renoir Bal du moulin de la Galette dOrsay"
+  },
+  {
+    "artist": "Pierre-Auguste Renoir",
+    "title": "Luncheon of the Boating Party",
+    "museum": "The Phillips Collection",
+    "year": "1881",
+    "query": "Pierre-Auguste Renoir Luncheon Boating Party Phillips"
+  },
+  {
+    "artist": "Pierre-Auguste Renoir",
+    "title": "The Swing",
+    "museum": "Musée d'Orsay",
+    "year": "1876",
+    "query": "Pierre-Auguste Renoir The Swing Musee dOrsay"
+  },
+  {
+    "artist": "Pierre-Auguste Renoir",
+    "title": "Dance at Bougival",
+    "museum": "Museum of Fine Arts Boston",
+    "year": "1883",
+    "query": "Pierre-Auguste Renoir Dance at Bougival Boston"
+  },
+  {
+    "artist": "Pierre-Auguste Renoir",
+    "title": "Two Sisters (On the Terrace)",
+    "museum": "Art Institute of Chicago",
+    "year": "1881",
+    "query": "Pierre-Auguste Renoir Two Sisters On the Terrace Chicago"
+  },
+  {
+    "artist": "Pierre-Auguste Renoir",
+    "title": "The Umbrellas",
+    "museum": "National Gallery London",
+    "year": "1886",
+    "query": "Pierre-Auguste Renoir The Umbrellas National Gallery"
+  },
+  {
+    "artist": "Pierre-Auguste Renoir",
+    "title": "The Skiff (La Yole)",
+    "museum": "National Gallery London",
+    "year": "1875",
+    "query": "Pierre-Auguste Renoir The Skiff La Yole National Gallery"
+  },
+  {
+    "artist": "Pierre-Auguste Renoir",
+    "title": "The Large Bathers",
+    "museum": "Philadelphia Museum of Art",
+    "year": "1887",
+    "query": "Pierre-Auguste Renoir The Large Bathers Philadelphia"
+  },
+  {
+    "artist": "Pierre-Auguste Renoir",
+    "title": "Girl with a Watering Can",
+    "museum": "National Gallery of Art",
+    "year": "1876",
+    "query": "Pierre-Auguste Renoir Girl with a Watering Can NGA"
+  },
+  {
+    "artist": "Pierre-Auguste Renoir",
+    "title": "Portrait of Madame Charpentier and Her Children",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1878",
+    "query": "Renoir Madame Charpentier and Her Children MET"
+  },
+  {
+    "artist": "Édouard Manet",
+    "title": "A Bar at the Folies-Bergère",
+    "museum": "Courtauld Gallery",
+    "year": "1882",
+    "query": "Edouard Manet A Bar at the Folies-Bergere Courtauld"
+  },
+  {
+    "artist": "Édouard Manet",
+    "title": "Le Déjeuner sur l'herbe",
+    "museum": "Musée d'Orsay",
+    "year": "1863",
+    "query": "Edouard Manet Le Dejeuner sur lherbe Musee dOrsay"
+  },
+  {
+    "artist": "Édouard Manet",
+    "title": "Olympia",
+    "museum": "Musée d'Orsay",
+    "year": "1863",
+    "query": "Edouard Manet Olympia Musee dOrsay"
+  },
+  {
+    "artist": "Édouard Manet",
+    "title": "The Balcony",
+    "museum": "Musée d'Orsay",
+    "year": "1868",
+    "query": "Edouard Manet The Balcony Musee dOrsay"
+  },
+  {
+    "artist": "Édouard Manet",
+    "title": "The Fifer",
+    "museum": "Musée d'Orsay",
+    "year": "1866",
+    "query": "Edouard Manet The Fifer Musee dOrsay"
+  },
+  {
+    "artist": "Édouard Manet",
+    "title": "Music in the Tuileries",
+    "museum": "National Gallery London",
+    "year": "1862",
+    "query": "Edouard Manet Music in the Tuileries National Gallery"
+  },
+  {
+    "artist": "Édouard Manet",
+    "title": "Berthe Morisot with a Bouquet of Violets",
+    "museum": "Musée d'Orsay",
+    "year": "1872",
+    "query": "Edouard Manet Berthe Morisot with Bouquet of Violets"
+  },
+  {
+    "artist": "Édouard Manet",
+    "title": "Boating",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1874",
+    "query": "Edouard Manet Boating MET"
+  },
+  {
+    "artist": "Édouard Manet",
+    "title": "The Railway",
+    "museum": "National Gallery of Art",
+    "year": "1873",
+    "query": "Edouard Manet The Railway National Gallery of Art"
+  },
+  {
+    "artist": "Édouard Manet",
+    "title": "The Execution of Emperor Maximilian",
+    "museum": "Kunsthalle Mannheim",
+    "year": "1868",
+    "query": "Edouard Manet Execution of Emperor Maximilian Mannheim"
+  },
+  {
+    "artist": "Francisco Goya",
+    "title": "The Third of May 1808",
+    "museum": "Museo del Prado",
+    "year": "1814",
+    "query": "Francisco Goya The Third of May 1808 Prado"
+  },
+  {
+    "artist": "Francisco Goya",
+    "title": "The Second of May 1808",
+    "museum": "Museo del Prado",
+    "year": "1814",
+    "query": "Francisco Goya The Second of May 1808 Prado"
+  },
+  {
+    "artist": "Francisco Goya",
+    "title": "Saturn Devouring His Son",
+    "museum": "Museo del Prado",
+    "year": "1823",
+    "query": "Francisco Goya Saturn Devouring His Son Prado"
+  },
+  {
+    "artist": "Francisco Goya",
+    "title": "The Clothed Maja",
+    "museum": "Museo del Prado",
+    "year": "1805",
+    "query": "Francisco Goya The Clothed Maja Prado"
+  },
+  {
+    "artist": "Francisco Goya",
+    "title": "Witches' Flight",
+    "museum": "Museo del Prado",
+    "year": "1798",
+    "query": "Francisco Goya Witches Flight Prado"
+  },
+  {
+    "artist": "Francisco Goya",
+    "title": "The Dog",
+    "museum": "Museo del Prado",
+    "year": "1823",
+    "query": "Francisco Goya The Dog Prado"
+  },
+  {
+    "artist": "Francisco Goya",
+    "title": "The Colossus",
+    "museum": "Museo del Prado",
+    "year": "1812",
+    "query": "Francisco Goya The Colossus Prado"
+  },
+  {
+    "artist": "Francisco Goya",
+    "title": "Charles IV of Spain and His Family",
+    "museum": "Museo del Prado",
+    "year": "1800",
+    "query": "Francisco Goya Charles IV of Spain and His Family Prado"
+  },
+  {
+    "artist": "Francisco Goya",
+    "title": "The Parasol",
+    "museum": "Museo del Prado",
+    "year": "1777",
+    "query": "Francisco Goya The Parasol Prado"
+  },
+  {
+    "artist": "Francisco Goya",
+    "title": "Witches' Sabbath (The Great He-Goat)",
+    "museum": "Museo del Prado",
+    "year": "1823",
+    "query": "Francisco Goya Witches Sabbath Prado"
+  },
+  {
+    "artist": "John Singer Sargent",
+    "title": "Madame X",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1884",
+    "query": "John Singer Sargent Madame X MET"
+  },
+  {
+    "artist": "John Singer Sargent",
+    "title": "Carnation, Lily, Lily, Rose",
+    "museum": "Tate Britain",
+    "year": "1886",
+    "query": "John Singer Sargent Carnation Lily Lily Rose Tate"
+  },
+  {
+    "artist": "John Singer Sargent",
+    "title": "Lady Agnew of Lochnaw",
+    "museum": "Scottish National Gallery",
+    "year": "1892",
+    "query": "John Singer Sargent Lady Agnew of Lochnaw Edinburgh"
+  },
+  {
+    "artist": "John Singer Sargent",
+    "title": "The Daughters of Edward Darley Boit",
+    "museum": "Museum of Fine Arts Boston",
+    "year": "1882",
+    "query": "John Singer Sargent Daughters of Edward Darley Boit Boston"
+  },
+  {
+    "artist": "John Singer Sargent",
+    "title": "El Jaleo",
+    "museum": "Isabella Stewart Gardner Museum",
+    "year": "1882",
+    "query": "John Singer Sargent El Jaleo Isabella Stewart Gardner"
+  },
+  {
+    "artist": "John Singer Sargent",
+    "title": "Portrait of Robert Louis Stevenson and His Wife",
+    "museum": "Bentonville Art Museum",
+    "year": "1885",
+    "query": "John Singer Sargent Robert Louis Stevenson and His Wife"
+  },
+  {
+    "artist": "John Singer Sargent",
+    "title": "Gassed",
+    "museum": "Imperial War Museum",
+    "year": "1919",
+    "query": "John Singer Sargent Gassed Imperial War Museum"
+  },
+  {
+    "artist": "John Singer Sargent",
+    "title": "Repose (Nonchaloir)",
+    "museum": "National Gallery of Art",
+    "year": "1911",
+    "query": "John Singer Sargent Repose Nonchaloir NGA"
+  },
+  {
+    "artist": "John Singer Sargent",
+    "title": "Street in Venice",
+    "museum": "National Gallery of Art",
+    "year": "1882",
+    "query": "John Singer Sargent Street in Venice NGA"
+  },
+  {
+    "artist": "John Singer Sargent",
+    "title": "Dr. Pozzi at Home",
+    "museum": "Hammer Museum",
+    "year": "1881",
+    "query": "John Singer Sargent Dr Pozzi at Home Hammer"
+  },
+  {
+    "artist": "Winslow Homer",
+    "title": "The Gulf Stream",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1899",
+    "query": "Winslow Homer The Gulf Stream MET"
+  },
+  {
+    "artist": "Winslow Homer",
+    "title": "Fox Hunt",
+    "museum": "Pennsylvania Academy of the Fine Arts",
+    "year": "1893",
+    "query": "Winslow Homer Fox Hunt PAFA"
+  },
+  {
+    "artist": "Winslow Homer",
+    "title": "The Fog Warning",
+    "museum": "Museum of Fine Arts Boston",
+    "year": "1885",
+    "query": "Winslow Homer The Fog Warning Boston"
+  },
+  {
+    "artist": "Winslow Homer",
+    "title": "Breezing Up",
+    "museum": "National Gallery of Art",
+    "year": "1876",
+    "query": "Winslow Homer Breezing Up NGA"
+  },
+  {
+    "artist": "Winslow Homer",
+    "title": "Eight Bells",
+    "museum": "Addison Gallery of American Art",
+    "year": "1886",
+    "query": "Winslow Homer Eight Bells Addison Gallery"
+  },
+  {
+    "artist": "Winslow Homer",
+    "title": "Northeaster",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1895",
+    "query": "Winslow Homer Northeaster MET"
+  },
+  {
+    "artist": "Winslow Homer",
+    "title": "Snap the Whip",
+    "museum": "Butler Institute of American Art",
+    "year": "1872",
+    "query": "Winslow Homer Snap the Whip Butler"
+  },
+  {
+    "artist": "Winslow Homer",
+    "title": "The Life Line",
+    "museum": "Philadelphia Museum of Art",
+    "year": "1884",
+    "query": "Winslow Homer The Life Line Philadelphia"
+  },
+  {
+    "artist": "Winslow Homer",
+    "title": "Prisoners from the Front",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1866",
+    "query": "Winslow Homer Prisoners from the Front MET"
+  },
+  {
+    "artist": "Winslow Homer",
+    "title": "Summer Night",
+    "museum": "Musée d'Orsay",
+    "year": "1890",
+    "query": "Winslow Homer Summer Night Musee dOrsay"
+  },
+  {
+    "artist": "Vilhelm Hammershøi",
+    "title": "Interior with Young Man Reading",
+    "museum": "Ny Carlsberg Glyptotek",
+    "year": "1898",
+    "query": "Vilhelm Hammershoi Interior Young Man Reading Glyptotek"
+  },
+  {
+    "artist": "Vilhelm Hammershøi",
+    "title": "Dust Motes Dancing in Sunbeams",
+    "museum": "Ordrupgaard",
+    "year": "1900",
+    "query": "Vilhelm Hammershoi Dust Motes Dancing in Sunbeams Ordrupgaard"
+  },
+  {
+    "artist": "Vilhelm Hammershøi",
+    "title": "Interior Strandgade 30",
+    "museum": "Städel Museum",
+    "year": "1901",
+    "query": "Vilhelm Hammershoi Interior Strandgade 30 Stadel"
+  },
+  {
+    "artist": "Vilhelm Hammershøi",
+    "title": "Sunshine in the Quiet Room",
+    "museum": "Davids Samling",
+    "year": "1903",
+    "query": "Vilhelm Hammershoi Sunshine in the Quiet Room Davids Samling"
+  },
+  {
+    "artist": "Vilhelm Hammershøi",
+    "title": "Interior with an Easel",
+    "museum": "Statens Museum for Kunst",
+    "year": "1910",
+    "query": "Vilhelm Hammershoi Interior with an Easel Copenhagen"
+  },
+  {
+    "artist": "Vilhelm Hammershøi",
+    "title": "The Tall Windows",
+    "museum": "Ordrupgaard",
+    "year": "1900",
+    "query": "Vilhelm Hammershoi The Tall Windows Ordrupgaard"
+  },
+  {
+    "artist": "Vilhelm Hammershøi",
+    "title": "Rest",
+    "museum": "Musée d'Orsay",
+    "year": "1905",
+    "query": "Vilhelm Hammershoi Rest Musee dOrsay"
+  },
+  {
+    "artist": "Vilhelm Hammershøi",
+    "title": "Landscape from Virum",
+    "museum": "Statens Museum for Kunst",
+    "year": "1888",
+    "query": "Vilhelm Hammershoi Landscape from Virum Copenhagen"
+  },
+  {
+    "artist": "Edward Hopper",
+    "title": "Nighthawks",
+    "museum": "Art Institute of Chicago",
+    "year": "1942",
+    "query": "Edward Hopper Nighthawks Art Institute Chicago"
+  },
+  {
+    "artist": "Edward Hopper",
+    "title": "Automat",
+    "museum": "Des Moines Art Center",
+    "year": "1927",
+    "query": "Edward Hopper Automat Des Moines Art Center"
+  },
+  {
+    "artist": "Edward Hopper",
+    "title": "Chop Suey",
+    "museum": "Private Collection",
+    "year": "1929",
+    "query": "Edward Hopper Chop Suey 1929"
+  },
+  {
+    "artist": "Edward Hopper",
+    "title": "Early Sunday Morning",
+    "museum": "Whitney Museum of American Art",
+    "year": "1930",
+    "query": "Edward Hopper Early Sunday Morning Whitney"
+  },
+  {
+    "artist": "Edward Hopper",
+    "title": "Gas",
+    "museum": "Museum of Modern Art",
+    "year": "1940",
+    "query": "Edward Hopper Gas MoMA"
+  },
+  {
+    "artist": "Edward Hopper",
+    "title": "Morning Sun",
+    "museum": "Columbus Museum of Art",
+    "year": "1952",
+    "query": "Edward Hopper Morning Sun Columbus Museum"
+  },
+  {
+    "artist": "Edward Hopper",
+    "title": "Rooms by the Sea",
+    "museum": "Yale University Art Gallery",
+    "year": "1951",
+    "query": "Edward Hopper Rooms by the Sea Yale"
+  },
+  {
+    "artist": "Edward Hopper",
+    "title": "Office in a Small City",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1953",
+    "query": "Edward Hopper Office in a Small City MET"
+  },
+  {
+    "artist": "Gustav Klimt",
+    "title": "The Kiss",
+    "museum": "Belvedere Vienna",
+    "year": "1908",
+    "query": "Gustav Klimt The Kiss Belvedere Vienna"
+  },
+  {
+    "artist": "Gustav Klimt",
+    "title": "Portrait of Adele Bloch-Bauer I",
+    "museum": "Neue Galerie New York",
+    "year": "1907",
+    "query": "Gustav Klimt Adele Bloch-Bauer I Neue Galerie"
+  },
+  {
+    "artist": "Gustav Klimt",
+    "title": "Judith and the Head of Holofernes",
+    "museum": "Belvedere Vienna",
+    "year": "1901",
+    "query": "Gustav Klimt Judith and the Head of Holofernes Belvedere"
+  },
+  {
+    "artist": "Gustav Klimt",
+    "title": "Danaë",
+    "museum": "Leopold Museum Vienna",
+    "year": "1907",
+    "query": "Gustav Klimt Danae Leopold Museum Vienna"
+  },
+  {
+    "artist": "Gustav Klimt",
+    "title": "Death and Life",
+    "museum": "Leopold Museum Vienna",
+    "year": "1915",
+    "query": "Gustav Klimt Death and Life Leopold Museum"
+  },
+  {
+    "artist": "Gustav Klimt",
+    "title": "The Three Ages of Woman",
+    "museum": "Galleria Nazionale d'Arte Moderna Rome",
+    "year": "1905",
+    "query": "Gustav Klimt Three Ages of Woman Rome"
+  },
+  {
+    "artist": "Gustav Klimt",
+    "title": "Beethoven Frieze",
+    "museum": "Secession Building Vienna",
+    "year": "1902",
+    "query": "Gustav Klimt Beethoven Frieze Vienna"
+  },
+  {
+    "artist": "Gustav Klimt",
+    "title": "The Tree of Life, Stoclet Frieze",
+    "museum": "Museum of Applied Arts Vienna",
+    "year": "1909",
+    "query": "Gustav Klimt Tree of Life Stoclet Frieze Vienna"
+  },
+  {
+    "artist": "John William Waterhouse",
+    "title": "The Lady of Shalott",
+    "museum": "Tate Britain",
+    "year": "1888",
+    "query": "John William Waterhouse Lady of Shalott Tate Britain"
+  },
+  {
+    "artist": "John William Waterhouse",
+    "title": "Hylas and the Nymphs",
+    "museum": "Manchester Art Gallery",
+    "year": "1896",
+    "query": "John William Waterhouse Hylas and the Nymphs Manchester"
+  },
+  {
+    "artist": "John William Waterhouse",
+    "title": "Circe Offering the Cup to Ulysses",
+    "museum": "Oldham Art Gallery",
+    "year": "1891",
+    "query": "Waterhouse Circe Offering Cup to Ulysses Oldham"
+  },
+  {
+    "artist": "John William Waterhouse",
+    "title": "Boreas",
+    "museum": "Private Collection",
+    "year": "1903",
+    "query": "John William Waterhouse Boreas 1903"
+  },
+  {
+    "artist": "John William Waterhouse",
+    "title": "Ophelia",
+    "museum": "Private Collection",
+    "year": "1894",
+    "query": "John William Waterhouse Ophelia 1894"
+  },
+  {
+    "artist": "John William Waterhouse",
+    "title": "The Soul of the Rose",
+    "museum": "Private Collection",
+    "year": "1908",
+    "query": "John William Waterhouse The Soul of the Rose"
+  },
+  {
+    "artist": "John William Waterhouse",
+    "title": "Sleep and His Half-Brother Death",
+    "museum": "Private Collection",
+    "year": "1874",
+    "query": "Waterhouse Sleep and His Half-Brother Death"
+  },
+  {
+    "artist": "John William Waterhouse",
+    "title": "Miranda - The Tempest",
+    "museum": "Private Collection",
+    "year": "1916",
+    "query": "John William Waterhouse Miranda The Tempest"
+  },
+  {
+    "artist": "John William Waterhouse",
+    "title": "La Belle Dame sans Merci",
+    "museum": "Hessisches Landesmuseum Darmstadt",
+    "year": "1893",
+    "query": "Waterhouse La Belle Dame sans Merci Darmstadt"
+  },
+  {
+    "artist": "John William Waterhouse",
+    "title": "A Tale from the Decameron",
+    "museum": "Lady Lever Art Gallery",
+    "year": "1916",
+    "query": "Waterhouse A Tale from the Decameron Lady Lever"
+  },
+  {
+    "artist": "Dante Gabriel Rossetti",
+    "title": "Beata Beatrix",
+    "museum": "Tate Britain",
+    "year": "1870",
+    "query": "Dante Gabriel Rossetti Beata Beatrix Tate Britain"
+  },
+  {
+    "artist": "Dante Gabriel Rossetti",
+    "title": "Proserpine",
+    "museum": "Tate Britain",
+    "year": "1874",
+    "query": "Dante Gabriel Rossetti Proserpine Tate Britain"
+  },
+  {
+    "artist": "Dante Gabriel Rossetti",
+    "title": "Lady Lilith",
+    "museum": "Delaware Art Museum",
+    "year": "1868",
+    "query": "Dante Gabriel Rossetti Lady Lilith Delaware"
+  },
+  {
+    "artist": "Dante Gabriel Rossetti",
+    "title": "The Beloved (The Bride)",
+    "museum": "Tate Britain",
+    "year": "1865",
+    "query": "Dante Gabriel Rossetti The Beloved Bride Tate"
+  },
+  {
+    "artist": "Dante Gabriel Rossetti",
+    "title": "Monna Vanna",
+    "museum": "Tate Britain",
+    "year": "1866",
+    "query": "Dante Gabriel Rossetti Monna Vanna Tate Britain"
+  },
+  {
+    "artist": "Dante Gabriel Rossetti",
+    "title": "Bocca Baciata",
+    "museum": "Museum of Fine Arts Boston",
+    "year": "1859",
+    "query": "Dante Gabriel Rossetti Bocca Baciata Boston"
+  },
+  {
+    "artist": "John Everett Millais",
+    "title": "Ophelia",
+    "museum": "Tate Britain",
+    "year": "1851",
+    "query": "John Everett Millais Ophelia Tate Britain"
+  },
+  {
+    "artist": "John Everett Millais",
+    "title": "The Blind Girl",
+    "museum": "Birmingham Museum and Art Gallery",
+    "year": "1856",
+    "query": "John Everett Millais The Blind Girl Birmingham"
+  },
+  {
+    "artist": "John Everett Millais",
+    "title": "Christ in the House of His Parents",
+    "museum": "Tate Britain",
+    "year": "1850",
+    "query": "Millais Christ in the House of His Parents Tate"
+  },
+  {
+    "artist": "John Everett Millais",
+    "title": "Autumn Leaves",
+    "museum": "Manchester Art Gallery",
+    "year": "1856",
+    "query": "John Everett Millais Autumn Leaves Manchester"
+  },
+  {
+    "artist": "John Everett Millais",
+    "title": "The Order of Release 1746",
+    "museum": "Tate Britain",
+    "year": "1852",
+    "query": "John Everett Millais The Order of Release Tate"
+  },
+  {
+    "artist": "John Everett Millais",
+    "title": "Mariana",
+    "museum": "Tate Britain",
+    "year": "1851",
+    "query": "John Everett Millais Mariana Tate Britain"
+  },
+  {
+    "artist": "Edward Burne-Jones",
+    "title": "The Golden Stairs",
+    "museum": "Tate Britain",
+    "year": "1880",
+    "query": "Edward Burne-Jones The Golden Stairs Tate Britain"
+  },
+  {
+    "artist": "Edward Burne-Jones",
+    "title": "King Cophetua and the Beggar Maid",
+    "museum": "Tate Britain",
+    "year": "1884",
+    "query": "Burne-Jones King Cophetua Beggar Maid Tate Britain"
+  },
+  {
+    "artist": "Edward Burne-Jones",
+    "title": "The Beguiling of Merlin",
+    "museum": "Lady Lever Art Gallery",
+    "year": "1874",
+    "query": "Burne-Jones Beguiling of Merlin Lady Lever"
+  },
+  {
+    "artist": "Edward Burne-Jones",
+    "title": "Pygmalion and the Image - The Soul Attains",
+    "museum": "Birmingham Museum and Art Gallery",
+    "year": "1878",
+    "query": "Burne-Jones Pygmalion The Soul Attains Birmingham"
+  },
+  {
+    "artist": "Edward Burne-Jones",
+    "title": "The Depths of the Sea",
+    "museum": "Private Collection",
+    "year": "1886",
+    "query": "Edward Burne-Jones The Depths of the Sea"
+  },
+  {
+    "artist": "Edward Burne-Jones",
+    "title": "The Star of Bethlehem",
+    "museum": "Birmingham Museum and Art Gallery",
+    "year": "1890",
+    "query": "Burne-Jones Star of Bethlehem Birmingham"
+  },
+  {
+    "artist": "Ilya Repin",
+    "title": "Barge Haulers on the Volga",
+    "museum": "State Russian Museum",
+    "year": "1873",
+    "query": "Ilya Repin Barge Haulers on the Volga Russian Museum"
+  },
+  {
+    "artist": "Ilya Repin",
+    "title": "Ivan the Terrible and His Son Ivan",
+    "museum": "Tretyakov Gallery",
+    "year": "1885",
+    "query": "Ilya Repin Ivan the Terrible and His Son Ivan Tretyakov"
+  },
+  {
+    "artist": "Ilya Repin",
+    "title": "Reply of the Zaporozhian Cossacks",
+    "museum": "State Russian Museum",
+    "year": "1891",
+    "query": "Ilya Repin Reply of Zaporozhian Cossacks Russian Museum"
+  },
+  {
+    "artist": "Ilya Repin",
+    "title": "Religious Procession in Kursk Governorate",
+    "museum": "Tretyakov Gallery",
+    "year": "1883",
+    "query": "Ilya Repin Religious Procession Kursk Tretyakov"
+  },
+  {
+    "artist": "Ilya Repin",
+    "title": "They Did Not Expect Him",
+    "museum": "Tretyakov Gallery",
+    "year": "1888",
+    "query": "Ilya Repin They Did Not Expect Him Tretyakov"
+  },
+  {
+    "artist": "Ilya Repin",
+    "title": "Sadko in the Underwater Kingdom",
+    "museum": "State Russian Museum",
+    "year": "1876",
+    "query": "Ilya Repin Sadko Underwater Kingdom Russian Museum"
+  },
+  {
+    "artist": "Ilya Repin",
+    "title": "Portrait of Modest Mussorgsky",
+    "museum": "Tretyakov Gallery",
+    "year": "1881",
+    "query": "Ilya Repin Portrait of Modest Mussorgsky Tretyakov"
+  },
+  {
+    "artist": "Ilya Repin",
+    "title": "Dragonfly",
+    "museum": "Tretyakov Gallery",
+    "year": "1884",
+    "query": "Ilya Repin Dragonfly Tretyakov"
+  },
+  {
+    "artist": "Ivan Shishkin",
+    "title": "Morning in a Pine Forest",
+    "museum": "Tretyakov Gallery",
+    "year": "1889",
+    "query": "Ivan Shishkin Morning in a Pine Forest Tretyakov"
+  },
+  {
+    "artist": "Ivan Shishkin",
+    "title": "Rye",
+    "museum": "Tretyakov Gallery",
+    "year": "1878",
+    "query": "Ivan Shishkin Rye Tretyakov Gallery"
+  },
+  {
+    "artist": "Ivan Shishkin",
+    "title": "In the Wild North",
+    "museum": "Museum of Russian Art Kyiv",
+    "year": "1891",
+    "query": "Ivan Shishkin In the Wild North"
+  },
+  {
+    "artist": "Ivan Shishkin",
+    "title": "Rain in an Oak Forest",
+    "museum": "Tretyakov Gallery",
+    "year": "1891",
+    "query": "Ivan Shishkin Rain in an Oak Forest Tretyakov"
+  },
+  {
+    "artist": "Ivan Shishkin",
+    "title": "Mast-Tree Grove",
+    "museum": "State Russian Museum",
+    "year": "1898",
+    "query": "Ivan Shishkin Mast-Tree Grove Russian Museum"
+  },
+  {
+    "artist": "Ivan Shishkin",
+    "title": "Oaks in Sunbeams",
+    "museum": "Tretyakov Gallery",
+    "year": "1887",
+    "query": "Ivan Shishkin Oaks in Sunbeams Tretyakov"
+  },
+  {
+    "artist": "Ivan Shishkin",
+    "title": "View on the Island of Valaam",
+    "museum": "State Russian Museum",
+    "year": "1858",
+    "query": "Ivan Shishkin View Island of Valaam Russian Museum"
+  },
+  {
+    "artist": "Ivan Shishkin",
+    "title": "A Walk in the Forest",
+    "museum": "Tretyakov Gallery",
+    "year": "1869",
+    "query": "Ivan Shishkin A Walk in the Forest Tretyakov"
+  },
+  {
+    "artist": "Isaac Levitan",
+    "title": "Over Eternal Peace",
+    "museum": "Tretyakov Gallery",
+    "year": "1894",
+    "query": "Isaac Levitan Over Eternal Peace Tretyakov"
+  },
+  {
+    "artist": "Isaac Levitan",
+    "title": "Golden Autumn",
+    "museum": "Tretyakov Gallery",
+    "year": "1895",
+    "query": "Isaac Levitan Golden Autumn Tretyakov Gallery"
+  },
+  {
+    "artist": "Isaac Levitan",
+    "title": "Vladimirka",
+    "museum": "Tretyakov Gallery",
+    "year": "1892",
+    "query": "Isaac Levitan Vladimirka Tretyakov Gallery"
+  },
+  {
+    "artist": "Isaac Levitan",
+    "title": "Evening Bells",
+    "museum": "Tretyakov Gallery",
+    "year": "1892",
+    "query": "Isaac Levitan Evening Bells Tretyakov Gallery"
+  },
+  {
+    "artist": "Isaac Levitan",
+    "title": "The Lake. Rus",
+    "museum": "State Russian Museum",
+    "year": "1900",
+    "query": "Isaac Levitan The Lake Rus Russian Museum"
+  },
+  {
+    "artist": "Isaac Levitan",
+    "title": "March",
+    "museum": "Tretyakov Gallery",
+    "year": "1895",
+    "query": "Isaac Levitan March Tretyakov Gallery"
+  },
+  {
+    "artist": "Isaac Levitan",
+    "title": "Autumn Day. Sokolniki",
+    "museum": "Tretyakov Gallery",
+    "year": "1879",
+    "query": "Isaac Levitan Autumn Day Sokolniki Tretyakov"
+  },
+  {
+    "artist": "Isaac Levitan",
+    "title": "Birch Grove",
+    "museum": "Tretyakov Gallery",
+    "year": "1889",
+    "query": "Isaac Levitan Birch Grove Tretyakov Gallery"
+  },
+  {
+    "artist": "Ivan Aivazovsky",
+    "title": "The Ninth Wave",
+    "museum": "State Russian Museum",
+    "year": "1850",
+    "query": "Ivan Aivazovsky The Ninth Wave Russian Museum"
+  },
+  {
+    "artist": "Ivan Aivazovsky",
+    "title": "Rainbow",
+    "museum": "Tretyakov Gallery",
+    "year": "1873",
+    "query": "Ivan Aivazovsky Rainbow Tretyakov Gallery"
+  },
+  {
+    "artist": "Ivan Aivazovsky",
+    "title": "Storm over the Black Sea",
+    "museum": "Tretyakov Gallery",
+    "year": "1893",
+    "query": "Ivan Aivazovsky Storm over Black Sea Tretyakov"
+  },
+  {
+    "artist": "Ivan Aivazovsky",
+    "title": "Brig 'Mercury' Attacked by Two Turkish Ships",
+    "museum": "State Russian Museum",
+    "year": "1892",
+    "query": "Ivan Aivazovsky Brig Mercury Attacked Russian Museum"
+  },
+  {
+    "artist": "Ivan Aivazovsky",
+    "title": "Pushkin's Farewell to the Sea",
+    "museum": "All-Russian Pushkin Museum",
+    "year": "1877",
+    "query": "Ivan Aivazovsky Pushkins Farewell to the Sea"
+  },
+  {
+    "artist": "Ivan Aivazovsky",
+    "title": "Chaos (Creation)",
+    "museum": "San Lazzaro degli Armeni Venice",
+    "year": "1841",
+    "query": "Ivan Aivazovsky Chaos Creation Venice"
+  },
+  {
+    "artist": "Ivan Aivazovsky",
+    "title": "Ship in the Stormy Sea at Sunset",
+    "museum": "Tretyakov Gallery",
+    "year": "1890",
+    "query": "Ivan Aivazovsky Ship in Stormy Sea Sunset"
+  },
+  {
+    "artist": "Ivan Aivazovsky",
+    "title": "View of Tiflis",
+    "museum": "Tretyakov Gallery",
+    "year": "1869",
+    "query": "Ivan Aivazovsky View of Tiflis Tretyakov"
+  },
+  {
+    "artist": "Arkhip Kuindzhi",
+    "title": "Moonlit Night on the Dnieper",
+    "museum": "State Russian Museum",
+    "year": "1880",
+    "query": "Arkhip Kuindzhi Moonlit Night on the Dnieper"
+  },
+  {
+    "artist": "Arkhip Kuindzhi",
+    "title": "Birch Grove",
+    "museum": "Tretyakov Gallery",
+    "year": "1879",
+    "query": "Arkhip Kuindzhi Birch Grove Tretyakov"
+  },
+  {
+    "artist": "Arkhip Kuindzhi",
+    "title": "Red Sunset on the Dnieper",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1908",
+    "query": "Arkhip Kuindzhi Red Sunset on the Dnieper MET"
+  },
+  {
+    "artist": "Arkhip Kuindzhi",
+    "title": "After a Thunderstorm",
+    "museum": "Tretyakov Gallery",
+    "year": "1879",
+    "query": "Arkhip Kuindzhi After a Thunderstorm Tretyakov"
+  },
+  {
+    "artist": "Arkhip Kuindzhi",
+    "title": "Elbrus in the Evening",
+    "museum": "State Russian Museum",
+    "year": "1908",
+    "query": "Arkhip Kuindzhi Elbrus in the Evening Russian Museum"
+  },
+  {
+    "artist": "Arkhip Kuindzhi",
+    "title": "Night on the Don",
+    "museum": "State Russian Museum",
+    "year": "1882",
+    "query": "Arkhip Kuindzhi Night on the Don Russian Museum"
+  },
+  {
+    "artist": "Anders Zorn",
+    "title": "Midsummer Dance",
+    "museum": "Nationalmuseum Stockholm",
+    "year": "1897",
+    "query": "Anders Zorn Midsummer Dance Stockholm"
+  },
+  {
+    "artist": "Anders Zorn",
+    "title": "Self-Portrait with Fur Coat",
+    "museum": "Zorn Museum",
+    "year": "1915",
+    "query": "Anders Zorn Self-Portrait with Fur Coat"
+  },
+  {
+    "artist": "Anders Zorn",
+    "title": "Girls from Dalarna Having a Bath",
+    "museum": "Nationalmuseum Stockholm",
+    "year": "1906",
+    "query": "Anders Zorn Girls from Dalarna Having a Bath"
+  },
+  {
+    "artist": "Anders Zorn",
+    "title": "Omnibus",
+    "museum": "Isabella Stewart Gardner Museum",
+    "year": "1892",
+    "query": "Anders Zorn Omnibus Isabella Stewart Gardner"
+  },
+  {
+    "artist": "Anders Zorn",
+    "title": "Gopsmor Cottage",
+    "museum": "Zorn Museum",
+    "year": "1914",
+    "query": "Anders Zorn Gopsmor Cottage"
+  },
+  {
+    "artist": "Anders Zorn",
+    "title": "Reel (Dans i Gopsmor)",
+    "museum": "Zorn Museum",
+    "year": "1906",
+    "query": "Anders Zorn Dans i Gopsmor"
+  },
+  {
+    "artist": "Peder Severin Krøyer",
+    "title": "Summer Evening on Skagen's Southern Beach",
+    "museum": "Skagens Museum",
+    "year": "1893",
+    "query": "Peder Severin Kroyer Summer Evening Skagens Museum"
+  },
+  {
+    "artist": "Peder Severin Krøyer",
+    "title": "Hip, Hip, Hurrah!",
+    "museum": "Gothenburg Museum of Art",
+    "year": "1888",
+    "query": "Peder Severin Kroyer Hip Hip Hurrah Gothenburg"
+  },
+  {
+    "artist": "Peder Severin Krøyer",
+    "title": "Summer Evening at Skagen Beach - The Artist and His Wife",
+    "museum": "Hirschsprung Collection",
+    "year": "1899",
+    "query": "Peder Severin Kroyer Artist and His Wife Hirschsprung"
+  },
+  {
+    "artist": "Peder Severin Krøyer",
+    "title": "Boys Bathing at Skagen, Summer Evening",
+    "museum": "Statens Museum for Kunst",
+    "year": "1899",
+    "query": "Peder Severin Kroyer Boys Bathing Skagen Copenhagen"
+  },
+  {
+    "artist": "Peder Severin Krøyer",
+    "title": "Fishermen on Skagen Beach",
+    "museum": "Statens Museum for Kunst",
+    "year": "1883",
+    "query": "Peder Severin Kroyer Fishermen Skagen Beach"
+  },
+  {
+    "artist": "Peder Severin Krøyer",
+    "title": "Midsummer Eve Bonfire on Skagen Beach",
+    "museum": "Skagens Museum",
+    "year": "1906",
+    "query": "Peder Severin Kroyer Midsummer Eve Bonfire Skagen"
+  },
+  {
+    "artist": "Carl Larsson",
+    "title": "A Studio Idyll",
+    "museum": "Nationalmuseum Stockholm",
+    "year": "1885",
+    "query": "Carl Larsson A Studio Idyll Nationalmuseum"
+  },
+  {
+    "artist": "Carl Larsson",
+    "title": "Breakfast Under the Big Birch",
+    "museum": "Nationalmuseum Stockholm",
+    "year": "1896",
+    "query": "Carl Larsson Breakfast Under the Big Birch Nationalmuseum"
+  },
+  {
+    "artist": "Carl Larsson",
+    "title": "Midvinterblot",
+    "museum": "Nationalmuseum Stockholm",
+    "year": "1915",
+    "query": "Carl Larsson Midvinterblot Nationalmuseum"
+  },
+  {
+    "artist": "Carl Larsson",
+    "title": "The Kitchen",
+    "museum": "Nationalmuseum Stockholm",
+    "year": "1898",
+    "query": "Carl Larsson The Kitchen Nationalmuseum"
+  },
+  {
+    "artist": "Carl Larsson",
+    "title": "Around the Lamp at Evening",
+    "museum": "Nationalmuseum Stockholm",
+    "year": "1900",
+    "query": "Carl Larsson Around the Lamp at Evening"
+  },
+  {
+    "artist": "Carl Larsson",
+    "title": "Cosy Corner (Lathörnet)",
+    "museum": "Nationalmuseum Stockholm",
+    "year": "1894",
+    "query": "Carl Larsson Lathornet Nationalmuseum Stockholm"
+  },
+  {
+    "artist": "Albert Bierstadt",
+    "title": "Among the Sierra Nevada Mountains",
+    "museum": "Smithsonian American Art Museum",
+    "year": "1868",
+    "query": "Albert Bierstadt Among the Sierra Nevada Mountains SAAM"
+  },
+  {
+    "artist": "Albert Bierstadt",
+    "title": "The Rocky Mountains, Lander's Peak",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1863",
+    "query": "Albert Bierstadt Rocky Mountains Landers Peak MET"
+  },
+  {
+    "artist": "Albert Bierstadt",
+    "title": "Storm in the Rocky Mountains, Mount Rosalie",
+    "museum": "Brooklyn Museum",
+    "year": "1866",
+    "query": "Albert Bierstadt Storm in Rocky Mountains Brooklyn"
+  },
+  {
+    "artist": "Albert Bierstadt",
+    "title": "Valley of the Yosemite",
+    "museum": "Museum of Fine Arts Boston",
+    "year": "1864",
+    "query": "Albert Bierstadt Valley of the Yosemite Boston"
+  },
+  {
+    "artist": "Albert Bierstadt",
+    "title": "Looking Down Yosemite Valley, California",
+    "museum": "Birmingham Museum of Art",
+    "year": "1865",
+    "query": "Albert Bierstadt Looking Down Yosemite Valley"
+  },
+  {
+    "artist": "Albert Bierstadt",
+    "title": "A Storm in the Rocky Mountains",
+    "museum": "Brooklyn Museum",
+    "year": "1866",
+    "query": "Albert Bierstadt Mount Rosalie Brooklyn Museum"
+  },
+  {
+    "artist": "Albert Bierstadt",
+    "title": "Puget Sound on the Pacific Coast",
+    "museum": "Seattle Art Museum",
+    "year": "1870",
+    "query": "Albert Bierstadt Puget Sound on Pacific Coast Seattle"
+  },
+  {
+    "artist": "Albert Bierstadt",
+    "title": "Sunrise in the Sierras",
+    "museum": "Smithsonian American Art Museum",
+    "year": "1872",
+    "query": "Albert Bierstadt Sunrise in the Sierras SAAM"
+  },
+  {
+    "artist": "Thomas Cole",
+    "title": "The Oxbow",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1836",
+    "query": "Thomas Cole The Oxbow MET"
+  },
+  {
+    "artist": "Thomas Cole",
+    "title": "The Course of Empire: The Savage State",
+    "museum": "New-York Historical Society",
+    "year": "1834",
+    "query": "Thomas Cole Course of Empire Savage State"
+  },
+  {
+    "artist": "Thomas Cole",
+    "title": "The Course of Empire: The Arcadian State",
+    "museum": "New-York Historical Society",
+    "year": "1834",
+    "query": "Thomas Cole Course of Empire Arcadian State"
+  },
+  {
+    "artist": "Thomas Cole",
+    "title": "The Course of Empire: Consummation",
+    "museum": "New-York Historical Society",
+    "year": "1836",
+    "query": "Thomas Cole Course of Empire Consummation"
+  },
+  {
+    "artist": "Thomas Cole",
+    "title": "The Course of Empire: Destruction",
+    "museum": "New-York Historical Society",
+    "year": "1836",
+    "query": "Thomas Cole Course of Empire Destruction"
+  },
+  {
+    "artist": "Thomas Cole",
+    "title": "The Course of Empire: Desolation",
+    "museum": "New-York Historical Society",
+    "year": "1836",
+    "query": "Thomas Cole Course of Empire Desolation"
+  },
+  {
+    "artist": "Thomas Cole",
+    "title": "The Voyage of Life: Childhood",
+    "museum": "National Gallery of Art",
+    "year": "1842",
+    "query": "Thomas Cole Voyage of Life Childhood NGA"
+  },
+  {
+    "artist": "Thomas Cole",
+    "title": "The Voyage of Life: Youth",
+    "museum": "National Gallery of Art",
+    "year": "1842",
+    "query": "Thomas Cole Voyage of Life Youth NGA"
+  },
+  {
+    "artist": "Frederic Edwin Church",
+    "title": "The Heart of the Andes",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1859",
+    "query": "Frederic Edwin Church Heart of the Andes MET"
+  },
+  {
+    "artist": "Frederic Edwin Church",
+    "title": "Niagara",
+    "museum": "National Gallery of Art",
+    "year": "1857",
+    "query": "Frederic Edwin Church Niagara National Gallery"
+  },
+  {
+    "artist": "Frederic Edwin Church",
+    "title": "The Icebergs",
+    "museum": "Dallas Museum of Art",
+    "year": "1861",
+    "query": "Frederic Edwin Church The Icebergs Dallas"
+  },
+  {
+    "artist": "Frederic Edwin Church",
+    "title": "Cotopaxi",
+    "museum": "Detroit Institute of Arts",
+    "year": "1862",
+    "query": "Frederic Edwin Church Cotopaxi Detroit"
+  },
+  {
+    "artist": "Frederic Edwin Church",
+    "title": "Twilight in the Wilderness",
+    "museum": "Cleveland Museum of Art",
+    "year": "1860",
+    "query": "Frederic Edwin Church Twilight in the Wilderness Cleveland"
+  },
+  {
+    "artist": "Frederic Edwin Church",
+    "title": "Morning in the Tropics",
+    "museum": "National Gallery of Art",
+    "year": "1877",
+    "query": "Frederic Edwin Church Morning in the Tropics NGA"
+  },
+  {
+    "artist": "George Inness",
+    "title": "The Lackawanna Valley",
+    "museum": "National Gallery of Art",
+    "year": "1855",
+    "query": "George Inness Lackawanna Valley National Gallery"
+  },
+  {
+    "artist": "George Inness",
+    "title": "The Home of the Heron",
+    "museum": "Art Institute of Chicago",
+    "year": "1893",
+    "query": "George Inness Home of the Heron Chicago"
+  },
+  {
+    "artist": "George Inness",
+    "title": "Peace and Plenty",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1865",
+    "query": "George Inness Peace and Plenty MET"
+  },
+  {
+    "artist": "George Inness",
+    "title": "Sunset at Montclair",
+    "museum": "Private Collection",
+    "year": "1892",
+    "query": "George Inness Sunset at Montclair 1892"
+  },
+  {
+    "artist": "George Inness",
+    "title": "Early Autumn, Montclair",
+    "museum": "Delaware Art Museum",
+    "year": "1888",
+    "query": "George Inness Early Autumn Montclair Delaware"
+  },
+  {
+    "artist": "George Inness",
+    "title": "The Valley of the Shadow of Death",
+    "museum": "Frances Lehman Loeb Art Center",
+    "year": "1867",
+    "query": "George Inness Valley Shadow of Death Vassar"
+  },
+  {
+    "artist": "Jean-François Millet",
+    "title": "The Gleaners",
+    "museum": "Musée d'Orsay",
+    "year": "1857",
+    "query": "Jean-Francois Millet The Gleaners Musee dOrsay"
+  },
+  {
+    "artist": "Jean-François Millet",
+    "title": "The Angelus",
+    "museum": "Musée d'Orsay",
+    "year": "1859",
+    "query": "Jean-Francois Millet The Angelus Musee dOrsay"
+  },
+  {
+    "artist": "Jean-François Millet",
+    "title": "The Sower",
+    "museum": "Museum of Fine Arts Boston",
+    "year": "1850",
+    "query": "Jean-Francois Millet The Sower Boston"
+  },
+  {
+    "artist": "Jean-François Millet",
+    "title": "Man with a Hoe",
+    "museum": "J. Paul Getty Museum",
+    "year": "1862",
+    "query": "Jean-Francois Millet Man with a Hoe Getty"
+  },
+  {
+    "artist": "Jean-François Millet",
+    "title": "Haystacks: Autumn",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1874",
+    "query": "Jean-Francois Millet Haystacks Autumn MET"
+  },
+  {
+    "artist": "Jean-François Millet",
+    "title": "Spring (Printemps)",
+    "museum": "Musée d'Orsay",
+    "year": "1873",
+    "query": "Jean-Francois Millet Printemps Musee dOrsay"
+  },
+  {
+    "artist": "Gustave Courbet",
+    "title": "The Stone Breakers",
+    "museum": "Gemäldegalerie Dresden",
+    "year": "1849",
+    "query": "Gustave Courbet The Stone Breakers Dresden"
+  },
+  {
+    "artist": "Gustave Courbet",
+    "title": "A Burial at Ornans",
+    "museum": "Musée d'Orsay",
+    "year": "1850",
+    "query": "Gustave Courbet Burial at Ornans Musee dOrsay"
+  },
+  {
+    "artist": "Gustave Courbet",
+    "title": "The Desperate Man",
+    "museum": "Private Collection",
+    "year": "1845",
+    "query": "Gustave Courbet The Desperate Man 1845"
+  },
+  {
+    "artist": "Gustave Courbet",
+    "title": "The Painter's Studio",
+    "museum": "Musée d'Orsay",
+    "year": "1855",
+    "query": "Gustave Courbet The Painters Studio Musee dOrsay"
+  },
+  {
+    "artist": "Gustave Courbet",
+    "title": "The Wave",
+    "museum": "Nationalgalerie Berlin",
+    "year": "1870",
+    "query": "Gustave Courbet The Wave Berlin"
+  },
+  {
+    "artist": "Gustave Courbet",
+    "title": "The Sleepers (Le Sommeil)",
+    "museum": "Petit Palais Paris",
+    "year": "1866",
+    "query": "Gustave Courbet Le Sommeil Petit Palais"
+  },
+  {
+    "artist": "Camille Corot",
+    "title": "Souvenir de Mortefontaine",
+    "museum": "Louvre Museum",
+    "year": "1864",
+    "query": "Camille Corot Souvenir de Mortefontaine Louvre"
+  },
+  {
+    "artist": "Camille Corot",
+    "title": "The Bridge at Narni",
+    "museum": "Louvre Museum",
+    "year": "1826",
+    "query": "Camille Corot Bridge at Narni Louvre"
+  },
+  {
+    "artist": "Camille Corot",
+    "title": "Ville-d'Avray",
+    "museum": "National Gallery of Art",
+    "year": "1867",
+    "query": "Camille Corot Ville-dAvray National Gallery"
+  },
+  {
+    "artist": "Camille Corot",
+    "title": "A Woman with a Pearl",
+    "museum": "Louvre Museum",
+    "year": "1869",
+    "query": "Camille Corot Woman with a Pearl Louvre"
+  },
+  {
+    "artist": "Camille Corot",
+    "title": "The Forum Seen from the Farnese Gardens",
+    "museum": "Louvre Museum",
+    "year": "1826",
+    "query": "Camille Corot Forum Farnese Gardens Louvre"
+  },
+  {
+    "artist": "Camille Corot",
+    "title": "Morning, the Dance of the Nymphs",
+    "museum": "Musée d'Orsay",
+    "year": "1850",
+    "query": "Camille Corot Dance of the Nymphs dOrsay"
+  },
+  {
+    "artist": "Honoré Daumier",
+    "title": "The Third-Class Carriage",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1864",
+    "query": "Honore Daumier Third-Class Carriage MET"
+  },
+  {
+    "artist": "Honoré Daumier",
+    "title": "The Laundress",
+    "museum": "Musée d'Orsay",
+    "year": "1863",
+    "query": "Honore Daumier The Laundress Musee dOrsay"
+  },
+  {
+    "artist": "Honoré Daumier",
+    "title": "Crispin and Scapin",
+    "museum": "Musée d'Orsay",
+    "year": "1864",
+    "query": "Honore Daumier Crispin and Scapin dOrsay"
+  },
+  {
+    "artist": "Honoré Daumier",
+    "title": "Don Quixote and Sancho Panza",
+    "museum": "Neue Pinakothek Munich",
+    "year": "1868",
+    "query": "Honore Daumier Don Quixote Neue Pinakothek"
+  },
+  {
+    "artist": "Eugène Delacroix",
+    "title": "Liberty Leading the People",
+    "museum": "Louvre Museum",
+    "year": "1830",
+    "query": "Eugene Delacroix Liberty Leading the People Louvre"
+  },
+  {
+    "artist": "Eugène Delacroix",
+    "title": "The Barque of Dante",
+    "museum": "Louvre Museum",
+    "year": "1822",
+    "query": "Eugene Delacroix The Barque of Dante Louvre"
+  },
+  {
+    "artist": "Eugène Delacroix",
+    "title": "The Death of Sardanapalus",
+    "museum": "Louvre Museum",
+    "year": "1827",
+    "query": "Eugene Delacroix Death of Sardanapalus Louvre"
+  },
+  {
+    "artist": "Eugène Delacroix",
+    "title": "Massacre at Chios",
+    "museum": "Louvre Museum",
+    "year": "1824",
+    "query": "Eugene Delacroix Massacre at Chios Louvre"
+  },
+  {
+    "artist": "Eugène Delacroix",
+    "title": "Lion Hunt",
+    "museum": "Art Institute of Chicago",
+    "year": "1861",
+    "query": "Eugene Delacroix Lion Hunt Chicago"
+  },
+  {
+    "artist": "Eugène Delacroix",
+    "title": "Women of Algiers in Their Apartment",
+    "museum": "Louvre Museum",
+    "year": "1834",
+    "query": "Eugene Delacroix Women of Algiers Louvre"
+  },
+  {
+    "artist": "Théodore Géricault",
+    "title": "The Raft of the Medusa",
+    "museum": "Louvre Museum",
+    "year": "1819",
+    "query": "Theodore Gericault Raft of the Medusa Louvre"
+  },
+  {
+    "artist": "Théodore Géricault",
+    "title": "The Charging Chasseur",
+    "museum": "Louvre Museum",
+    "year": "1812",
+    "query": "Theodore Gericault Charging Chasseur Louvre"
+  },
+  {
+    "artist": "Théodore Géricault",
+    "title": "The Wounded Cuirassier",
+    "museum": "Louvre Museum",
+    "year": "1814",
+    "query": "Theodore Gericault Wounded Cuirassier Louvre"
+  },
+  {
+    "artist": "Théodore Géricault",
+    "title": "Portrait of a Kleptomaniac",
+    "museum": "Museum of Fine Arts Ghent",
+    "year": "1822",
+    "query": "Theodore Gericault Portrait of a Kleptomaniac Ghent"
+  },
+  {
+    "artist": "Jacques-Louis David",
+    "title": "The Death of Socrates",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1787",
+    "query": "Jacques-Louis David Death of Socrates MET"
+  },
+  {
+    "artist": "Jacques-Louis David",
+    "title": "Oath of the Horatii",
+    "museum": "Louvre Museum",
+    "year": "1784",
+    "query": "Jacques-Louis David Oath of the Horatii Louvre"
+  },
+  {
+    "artist": "Jacques-Louis David",
+    "title": "The Death of Marat",
+    "museum": "Royal Museums of Fine Arts of Belgium",
+    "year": "1793",
+    "query": "Jacques-Louis David Death of Marat Brussels"
+  },
+  {
+    "artist": "Jacques-Louis David",
+    "title": "Napoleon Crossing the Alps",
+    "museum": "Château de Malmaison",
+    "year": "1801",
+    "query": "Jacques-Louis David Napoleon Crossing the Alps Malmaison"
+  },
+  {
+    "artist": "Jacques-Louis David",
+    "title": "The Coronation of Napoleon",
+    "museum": "Louvre Museum",
+    "year": "1807",
+    "query": "Jacques-Louis David Coronation of Napoleon Louvre"
+  },
+  {
+    "artist": "Jacques-Louis David",
+    "title": "Leonidas at Thermopylae",
+    "museum": "Louvre Museum",
+    "year": "1814",
+    "query": "Jacques-Louis David Leonidas at Thermopylae Louvre"
+  },
+  {
+    "artist": "Jean-Auguste-Dominique Ingres",
+    "title": "The Grand Odalisque",
+    "museum": "Louvre Museum",
+    "year": "1814",
+    "query": "Ingres Grand Odalisque Louvre"
+  },
+  {
+    "artist": "Jean-Auguste-Dominique Ingres",
+    "title": "Oedipus and the Sphinx",
+    "museum": "Louvre Museum",
+    "year": "1808",
+    "query": "Ingres Oedipus and Sphinx Louvre"
+  },
+  {
+    "artist": "Jean-Auguste-Dominique Ingres",
+    "title": "The Apotheosis of Homer",
+    "museum": "Louvre Museum",
+    "year": "1827",
+    "query": "Ingres Apotheosis of Homer Louvre"
+  },
+  {
+    "artist": "Jean-Auguste-Dominique Ingres",
+    "title": "Portrait of Monsieur Bertin",
+    "museum": "Louvre Museum",
+    "year": "1832",
+    "query": "Ingres Portrait of Monsieur Bertin Louvre"
+  },
+  {
+    "artist": "Jean-Auguste-Dominique Ingres",
+    "title": "The Valpinçon Bather",
+    "museum": "Louvre Museum",
+    "year": "1808",
+    "query": "Ingres Valpincon Bather Louvre"
+  },
+  {
+    "artist": "Jean-Auguste-Dominique Ingres",
+    "title": "The Source (La Source)",
+    "museum": "Musée d'Orsay",
+    "year": "1856",
+    "query": "Ingres La Source Musee dOrsay"
+  },
+  {
+    "artist": "Sandro Botticelli",
+    "title": "The Birth of Venus",
+    "museum": "Uffizi Gallery",
+    "year": "1485",
+    "query": "Sandro Botticelli Birth of Venus Uffizi"
+  },
+  {
+    "artist": "Sandro Botticelli",
+    "title": "Primavera",
+    "museum": "Uffizi Gallery",
+    "year": "1482",
+    "query": "Sandro Botticelli Primavera Uffizi"
+  },
+  {
+    "artist": "Sandro Botticelli",
+    "title": "Pallas and the Centaur",
+    "museum": "Uffizi Gallery",
+    "year": "1482",
+    "query": "Sandro Botticelli Pallas and the Centaur Uffizi"
+  },
+  {
+    "artist": "Sandro Botticelli",
+    "title": "The Mystical Nativity",
+    "museum": "National Gallery London",
+    "year": "1500",
+    "query": "Sandro Botticelli Mystical Nativity National Gallery"
+  },
+  {
+    "artist": "Leonardo da Vinci",
+    "title": "Mona Lisa",
+    "museum": "Louvre Museum",
+    "year": "1503",
+    "query": "Leonardo da Vinci Mona Lisa Louvre"
+  },
+  {
+    "artist": "Leonardo da Vinci",
+    "title": "Lady with an Ermine",
+    "museum": "Czartoryski Museum",
+    "year": "1489",
+    "query": "Leonardo da Vinci Lady with an Ermine Krakow"
+  },
+  {
+    "artist": "Leonardo da Vinci",
+    "title": "Ginevra de' Benci",
+    "museum": "National Gallery of Art",
+    "year": "1474",
+    "query": "Leonardo da Vinci Ginevra de Benci NGA"
+  },
+  {
+    "artist": "Leonardo da Vinci",
+    "title": "Saint John the Baptist",
+    "museum": "Louvre Museum",
+    "year": "1513",
+    "query": "Leonardo da Vinci Saint John Baptist Louvre"
+  },
+  {
+    "artist": "Michelangelo",
+    "title": "Doni Tondo",
+    "museum": "Uffizi Gallery",
+    "year": "1507",
+    "query": "Michelangelo Doni Tondo Uffizi"
+  },
+  {
+    "artist": "Michelangelo",
+    "title": "The Manchester Madonna",
+    "museum": "National Gallery London",
+    "year": "1497",
+    "query": "Michelangelo Manchester Madonna National Gallery"
+  },
+  {
+    "artist": "Michelangelo",
+    "title": "The Entombment",
+    "museum": "National Gallery London",
+    "year": "1500",
+    "query": "Michelangelo The Entombment National Gallery London"
+  },
+  {
+    "artist": "Michelangelo",
+    "title": "The Creation of Adam (fresco study)",
+    "museum": "Vatican Museums",
+    "year": "1512",
+    "query": "Michelangelo Creation of Adam Vatican"
+  },
+  {
+    "artist": "Raphael",
+    "title": "The School of Athens",
+    "museum": "Vatican Museums",
+    "year": "1511",
+    "query": "Raphael School of Athens Vatican"
+  },
+  {
+    "artist": "Raphael",
+    "title": "Portrait of Baldassare Castiglione",
+    "museum": "Louvre Museum",
+    "year": "1515",
+    "query": "Raphael Portrait of Baldassare Castiglione Louvre"
+  },
+  {
+    "artist": "Raphael",
+    "title": "The Sistine Madonna",
+    "museum": "Gemäldegalerie Alte Meister Dresden",
+    "year": "1512",
+    "query": "Raphael Sistine Madonna Dresden"
+  },
+  {
+    "artist": "Raphael",
+    "title": "The Transfiguration",
+    "museum": "Vatican Museums",
+    "year": "1520",
+    "query": "Raphael The Transfiguration Vatican"
+  },
+  {
+    "artist": "Raphael",
+    "title": "The Triumph of Galatea",
+    "museum": "Villa Farnesina",
+    "year": "1512",
+    "query": "Raphael Triumph of Galatea Villa Farnesina"
+  },
+  {
+    "artist": "Raphael",
+    "title": "Portrait of Bindo Altoviti",
+    "museum": "National Gallery of Art",
+    "year": "1515",
+    "query": "Raphael Portrait of Bindo Altoviti NGA"
+  },
+  {
+    "artist": "Titian",
+    "title": "Bacchus and Ariadne",
+    "museum": "National Gallery London",
+    "year": "1523",
+    "query": "Titian Bacchus and Ariadne National Gallery"
+  },
+  {
+    "artist": "Titian",
+    "title": "Diana and Actaeon",
+    "museum": "National Gallery of Scotland",
+    "year": "1559",
+    "query": "Titian Diana and Actaeon National Gallery"
+  },
+  {
+    "artist": "Titian",
+    "title": "Assumption of the Virgin",
+    "museum": "Santa Maria Gloriosa dei Frari",
+    "year": "1518",
+    "query": "Titian Assumption of the Virgin Frari Venice"
+  },
+  {
+    "artist": "Titian",
+    "title": "The Flaying of Marsyas",
+    "museum": "Kroměříž Archbishop's Palace",
+    "year": "1576",
+    "query": "Titian Flaying of Marsyas Kromeriz"
+  },
+  {
+    "artist": "Titian",
+    "title": "Man with a Glove",
+    "museum": "Louvre Museum",
+    "year": "1520",
+    "query": "Titian Man with a Glove Louvre"
+  },
+  {
+    "artist": "Titian",
+    "title": "Aretino",
+    "museum": "Palazzo Pitti",
+    "year": "1545",
+    "query": "Titian Portrait of Pietro Aretino Pitti"
+  },
+  {
+    "artist": "Titian",
+    "title": "Venus of Urbino",
+    "museum": "Uffizi Gallery",
+    "year": "1538",
+    "query": "Titian Venus of Urbino Uffizi"
+  },
+  {
+    "artist": "Titian",
+    "title": "The Death of Actaeon",
+    "museum": "National Gallery London",
+    "year": "1575",
+    "query": "Titian Death of Actaeon National Gallery"
+  },
+  {
+    "artist": "Pieter Bruegel the Elder",
+    "title": "The Tower of Babel",
+    "museum": "Kunsthistorisches Museum",
+    "year": "1563",
+    "query": "Pieter Bruegel Tower of Babel Vienna"
+  },
+  {
+    "artist": "Pieter Bruegel the Elder",
+    "title": "The Harvesters",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1565",
+    "query": "Pieter Bruegel The Harvesters MET"
+  },
+  {
+    "artist": "Pieter Bruegel the Elder",
+    "title": "The Triumph of Death",
+    "museum": "Museo del Prado",
+    "year": "1562",
+    "query": "Pieter Bruegel Triumph of Death Prado"
+  },
+  {
+    "artist": "Pieter Bruegel the Elder",
+    "title": "Netherlandish Proverbs",
+    "museum": "Gemäldegalerie Berlin",
+    "year": "1559",
+    "query": "Pieter Bruegel Netherlandish Proverbs Berlin"
+  },
+  {
+    "artist": "Pieter Bruegel the Elder",
+    "title": "The Peasant Wedding",
+    "museum": "Kunsthistorisches Museum",
+    "year": "1567",
+    "query": "Pieter Bruegel Peasant Wedding Vienna"
+  },
+  {
+    "artist": "Pieter Bruegel the Elder",
+    "title": "The Fall of the Rebel Angels",
+    "museum": "Royal Museums of Fine Arts of Belgium",
+    "year": "1562",
+    "query": "Pieter Bruegel Fall of the Rebel Angels Brussels"
+  },
+  {
+    "artist": "Hieronymus Bosch",
+    "title": "The Garden of Earthly Delights",
+    "museum": "Museo del Prado",
+    "year": "1500",
+    "query": "Hieronymus Bosch Garden of Earthly Delights Prado"
+  },
+  {
+    "artist": "Hieronymus Bosch",
+    "title": "Ship of Fools",
+    "museum": "Louvre Museum",
+    "year": "1500",
+    "query": "Hieronymus Bosch Ship of Fools Louvre"
+  },
+  {
+    "artist": "Hieronymus Bosch",
+    "title": "The Haywain Triptych",
+    "museum": "Museo del Prado",
+    "year": "1516",
+    "query": "Hieronymus Bosch The Haywain Prado"
+  },
+  {
+    "artist": "Hieronymus Bosch",
+    "title": "The Temptation of Saint Anthony",
+    "museum": "Museu Nacional de Arte Antiga Lisbon",
+    "year": "1501",
+    "query": "Hieronymus Bosch Temptation of Saint Anthony Lisbon"
+  },
+  {
+    "artist": "Albrecht Dürer",
+    "title": "Self-Portrait at Twenty-Eight",
+    "museum": "Alte Pinakothek",
+    "year": "1500",
+    "query": "Albrecht Durer Self-Portrait at 28 Munich"
+  },
+  {
+    "artist": "Albrecht Dürer",
+    "title": "Knight, Death and the Devil",
+    "museum": "Städel Museum",
+    "year": "1513",
+    "query": "Albrecht Durer Knight Death and Devil"
+  },
+  {
+    "artist": "Albrecht Dürer",
+    "title": "Saint Jerome in His Study",
+    "museum": "Albertina",
+    "year": "1514",
+    "query": "Albrecht Durer Saint Jerome in His Study Albertina"
+  },
+  {
+    "artist": "Albrecht Dürer",
+    "title": "Melencolia I",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1514",
+    "query": "Albrecht Durer Melencolia I MET"
+  },
+  {
+    "artist": "Albrecht Dürer",
+    "title": "Praying Hands",
+    "museum": "Albertina",
+    "year": "1508",
+    "query": "Albrecht Durer Praying Hands Albertina"
+  },
+  {
+    "artist": "Albrecht Dürer",
+    "title": "Young Hare",
+    "museum": "Albertina",
+    "year": "1502",
+    "query": "Albrecht Durer Young Hare Albertina"
+  },
+  {
+    "artist": "Hans Holbein the Younger",
+    "title": "The Ambassadors",
+    "museum": "National Gallery London",
+    "year": "1533",
+    "query": "Hans Holbein The Ambassadors National Gallery"
+  },
+  {
+    "artist": "Hans Holbein the Younger",
+    "title": "Portrait of Desiderius Erasmus",
+    "museum": "National Gallery London",
+    "year": "1523",
+    "query": "Hans Holbein Erasmus National Gallery London"
+  },
+  {
+    "artist": "Hans Holbein the Younger",
+    "title": "Portrait of Sir Thomas More",
+    "museum": "Frick Collection",
+    "year": "1527",
+    "query": "Hans Holbein Sir Thomas More Frick"
+  },
+  {
+    "artist": "Hans Holbein the Younger",
+    "title": "The Body of the Dead Christ in the Tomb",
+    "museum": "Kunstmuseum Basel",
+    "year": "1521",
+    "query": "Hans Holbein Dead Christ in the Tomb Basel"
+  },
+  {
+    "artist": "Georges de La Tour",
+    "title": "The Penitent Magdalen",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1640",
+    "query": "Georges de La Tour Penitent Magdalen MET"
+  },
+  {
+    "artist": "Georges de La Tour",
+    "title": "Joseph the Carpenter",
+    "museum": "Louvre Museum",
+    "year": "1642",
+    "query": "Georges de La Tour Joseph the Carpenter Louvre"
+  },
+  {
+    "artist": "Georges de La Tour",
+    "title": "The Fortune Teller",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1630",
+    "query": "Georges de La Tour Fortune Teller MET"
+  },
+  {
+    "artist": "Georges de La Tour",
+    "title": "The Newborn Christ",
+    "museum": "Musée des Beaux-Arts de Rennes",
+    "year": "1645",
+    "query": "Georges de La Tour The Newborn Christ Rennes"
+  },
+  {
+    "artist": "Artemisia Gentileschi",
+    "title": "Judith Slaying Holofernes",
+    "museum": "Uffizi Gallery",
+    "year": "1620",
+    "query": "Artemisia Gentileschi Judith Slaying Holofernes Uffizi"
+  },
+  {
+    "artist": "Artemisia Gentileschi",
+    "title": "Self-Portrait as the Allegory of Painting",
+    "museum": "Royal Collection",
+    "year": "1638",
+    "query": "Artemisia Gentileschi Allegory of Painting Windsor"
+  },
+  {
+    "artist": "Artemisia Gentileschi",
+    "title": "Susanna and the Elders",
+    "museum": "Schloss Weißenstein",
+    "year": "1610",
+    "query": "Artemisia Gentileschi Susanna and the Elders Weissenstein"
+  },
+  {
+    "artist": "Artemisia Gentileschi",
+    "title": "Jael and Sisera",
+    "museum": "Museum of Fine Arts Budapest",
+    "year": "1620",
+    "query": "Artemisia Gentileschi Jael and Sisera Budapest"
+  },
+  {
+    "artist": "Paul Gauguin",
+    "title": "Where Do We Come From? What Are We? Where Are We Going?",
+    "museum": "Museum of Fine Arts Boston",
+    "year": "1897",
+    "query": "Paul Gauguin Where Do We Come From Boston"
+  },
+  {
+    "artist": "Paul Gauguin",
+    "title": "Vision After the Sermon",
+    "museum": "National Gallery of Scotland",
+    "year": "1888",
+    "query": "Paul Gauguin Vision After the Sermon Edinburgh"
+  },
+  {
+    "artist": "Paul Gauguin",
+    "title": "The Yellow Christ",
+    "museum": "Albright-Knox Art Gallery",
+    "year": "1889",
+    "query": "Paul Gauguin The Yellow Christ Albright-Knox"
+  },
+  {
+    "artist": "Paul Gauguin",
+    "title": "Tahitian Women on the Beach",
+    "museum": "Musée d'Orsay",
+    "year": "1891",
+    "query": "Paul Gauguin Tahitian Women on the Beach dOrsay"
+  },
+  {
+    "artist": "Paul Gauguin",
+    "title": "Manao Tupapau (The Spirit of the Dead Keeps Watch)",
+    "museum": "Albright-Knox Art Gallery",
+    "year": "1892",
+    "query": "Paul Gauguin Spirit of the Dead Keeps Watch"
+  },
+  {
+    "artist": "Paul Gauguin",
+    "title": "Nevermore",
+    "museum": "Courtauld Gallery",
+    "year": "1897",
+    "query": "Paul Gauguin Nevermore Courtauld"
+  },
+  {
+    "artist": "Georges Seurat",
+    "title": "A Sunday on La Grande Jatte",
+    "museum": "Art Institute of Chicago",
+    "year": "1886",
+    "query": "Georges Seurat Sunday on La Grande Jatte Chicago"
+  },
+  {
+    "artist": "Georges Seurat",
+    "title": "Bathers at Asnières",
+    "museum": "National Gallery London",
+    "year": "1884",
+    "query": "Georges Seurat Bathers at Asnieres National Gallery"
+  },
+  {
+    "artist": "Georges Seurat",
+    "title": "The Circus",
+    "museum": "Musée d'Orsay",
+    "year": "1891",
+    "query": "Georges Seurat The Circus Musee dOrsay"
+  },
+  {
+    "artist": "Georges Seurat",
+    "title": "Young Woman Powdering Herself",
+    "museum": "Courtauld Gallery",
+    "year": "1890",
+    "query": "Georges Seurat Young Woman Powdering Herself Courtauld"
+  },
+  {
+    "artist": "Paul Signac",
+    "title": "The Port of Saint-Tropez",
+    "museum": "Musée de l'Annonciade",
+    "year": "1901",
+    "query": "Paul Signac Port of Saint-Tropez"
+  },
+  {
+    "artist": "Paul Signac",
+    "title": "The Town Beach, Collioure",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1887",
+    "query": "Paul Signac Town Beach Collioure MET"
+  },
+  {
+    "artist": "Camille Pissarro",
+    "title": "The Boulevard Montmartre at Night",
+    "museum": "National Gallery London",
+    "year": "1897",
+    "query": "Camille Pissarro Boulevard Montmartre at Night London"
+  },
+  {
+    "artist": "Camille Pissarro",
+    "title": "Jalais Hill, Pontoise",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1867",
+    "query": "Camille Pissarro Jalais Hill Pontoise MET"
+  },
+  {
+    "artist": "Camille Pissarro",
+    "title": "Red Roofs, Corner of a Village",
+    "museum": "Musée d'Orsay",
+    "year": "1877",
+    "query": "Camille Pissarro Red Roofs Musee dOrsay"
+  },
+  {
+    "artist": "Camille Pissarro",
+    "title": "Place du Théâtre-Français, Spring",
+    "museum": "Hermitage Museum",
+    "year": "1898",
+    "query": "Camille Pissarro Place du Theatre-Francais Hermitage"
+  },
+  {
+    "artist": "Camille Pissarro",
+    "title": "Landscape at Chaponval",
+    "museum": "Musée d'Orsay",
+    "year": "1880",
+    "query": "Camille Pissarro Landscape at Chaponval dOrsay"
+  },
+  {
+    "artist": "Camille Pissarro",
+    "title": "The Harvest",
+    "museum": "Musée d'Orsay",
+    "year": "1882",
+    "query": "Camille Pissarro The Harvest Musee dOrsay"
+  },
+  {
+    "artist": "Alfred Sisley",
+    "title": "Bridge at Villeneuve-la-Garenne",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1872",
+    "query": "Alfred Sisley Bridge Villeneuve-la-Garenne MET"
+  },
+  {
+    "artist": "Alfred Sisley",
+    "title": "Flood at Port-Marly",
+    "museum": "Musée d'Orsay",
+    "year": "1876",
+    "query": "Alfred Sisley Flood at Port-Marly Musee dOrsay"
+  },
+  {
+    "artist": "Alfred Sisley",
+    "title": "Fog, Voisins",
+    "museum": "Musée d'Orsay",
+    "year": "1874",
+    "query": "Alfred Sisley Fog Voisins Musee dOrsay"
+  },
+  {
+    "artist": "Alfred Sisley",
+    "title": "Meadow at Moret",
+    "museum": "Musée des Beaux-Arts Lyon",
+    "year": "1888",
+    "query": "Alfred Sisley Meadow at Moret Lyon"
+  },
+  {
+    "artist": "Alfred Sisley",
+    "title": "The Seine at Bougival",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1876",
+    "query": "Alfred Sisley The Seine at Bougival MET"
+  },
+  {
+    "artist": "Alfred Sisley",
+    "title": "Snow on the Road, Louveciennes",
+    "museum": "Musée d'Orsay",
+    "year": "1874",
+    "query": "Alfred Sisley Snow on the Road Louveciennes dOrsay"
+  },
+  {
+    "artist": "Gustave Caillebotte",
+    "title": "The Floor Scrapers",
+    "museum": "Musée d'Orsay",
+    "year": "1875",
+    "query": "Gustave Caillebotte The Floor Scrapers dOrsay"
+  },
+  {
+    "artist": "Gustave Caillebotte",
+    "title": "Young Man at His Window",
+    "museum": "J. Paul Getty Museum",
+    "year": "1876",
+    "query": "Gustave Caillebotte Young Man at His Window Getty"
+  },
+  {
+    "artist": "Gustave Caillebotte",
+    "title": "The Pont de l'Europe",
+    "museum": "Musée du Petit Palais Geneva",
+    "year": "1876",
+    "query": "Gustave Caillebotte Pont de lEurope Geneva"
+  },
+  {
+    "artist": "Gustave Caillebotte",
+    "title": "Oarsmen on the Yerres",
+    "museum": "Private Collection",
+    "year": "1877",
+    "query": "Gustave Caillebotte Oarsmen on the Yerres"
+  },
+  {
+    "artist": "Gustave Caillebotte",
+    "title": "Rooftops in the Snow",
+    "museum": "Musée d'Orsay",
+    "year": "1878",
+    "query": "Gustave Caillebotte Rooftops in the Snow dOrsay"
+  },
+  {
+    "artist": "Gustave Caillebotte",
+    "title": "Fruit Displayed on a Stand",
+    "museum": "Museum of Fine Arts Boston",
+    "year": "1882",
+    "query": "Gustave Caillebotte Fruit Displayed on a Stand Boston"
+  },
+  {
+    "artist": "Odilon Redon",
+    "title": "The Cyclops",
+    "museum": "Kröller-Müller Museum",
+    "year": "1914",
+    "query": "Odilon Redon The Cyclops Kroller-Muller"
+  },
+  {
+    "artist": "Odilon Redon",
+    "title": "Ophelia",
+    "museum": "National Gallery of Canada",
+    "year": "1905",
+    "query": "Odilon Redon Ophelia National Gallery Canada"
+  },
+  {
+    "artist": "Odilon Redon",
+    "title": "The Buddha in His Youth",
+    "museum": "Musée d'Orsay",
+    "year": "1905",
+    "query": "Odilon Redon Buddha in His Youth dOrsay"
+  },
+  {
+    "artist": "Odilon Redon",
+    "title": "Wildflowers in a Vase",
+    "museum": "Museum of Fine Arts Boston",
+    "year": "1905",
+    "query": "Odilon Redon Wildflowers in a Vase Boston"
+  },
+  {
+    "artist": "Arnold Böcklin",
+    "title": "Isle of the Dead",
+    "museum": "Alte Nationalgalerie",
+    "year": "1883",
+    "query": "Arnold Bocklin Isle of the Dead Alte Nationalgalerie"
+  },
+  {
+    "artist": "Arnold Böcklin",
+    "title": "Self-Portrait with Death Playing the Fiddle",
+    "museum": "Alte Nationalgalerie",
+    "year": "1872",
+    "query": "Arnold Bocklin Self-Portrait with Death Berlin"
+  },
+  {
+    "artist": "Franz von Stuck",
+    "title": "Sin",
+    "museum": "Neue Pinakothek",
+    "year": "1893",
+    "query": "Franz von Stuck The Sin Neue Pinakothek Munich"
+  },
+  {
+    "artist": "Franz von Stuck",
+    "title": "Lucifer",
+    "museum": "National Gallery for Foreign Art Sofia",
+    "year": "1890",
+    "query": "Franz von Stuck Lucifer Sofia Gallery"
+  },
+  {
+    "artist": "William-Adolphe Bouguereau",
+    "title": "The Birth of Venus",
+    "museum": "Musée d'Orsay",
+    "year": "1879",
+    "query": "William-Adolphe Bouguereau Birth of Venus Musee dOrsay"
+  },
+  {
+    "artist": "William-Adolphe Bouguereau",
+    "title": "Dante and Virgil",
+    "museum": "Musée d'Orsay",
+    "year": "1850",
+    "query": "William-Adolphe Bouguereau Dante and Virgil dOrsay"
+  },
+  {
+    "artist": "William-Adolphe Bouguereau",
+    "title": "The Shepherdess",
+    "museum": "Philbrook Museum of Art",
+    "year": "1889",
+    "query": "William-Adolphe Bouguereau The Shepherdess Philbrook"
+  },
+  {
+    "artist": "William-Adolphe Bouguereau",
+    "title": "The First Mourning",
+    "museum": "Museo Nacional de Bellas Artes",
+    "year": "1888",
+    "query": "William-Adolphe Bouguereau First Mourning Buenos Aires"
+  },
+  {
+    "artist": "William-Adolphe Bouguereau",
+    "title": "Song of the Angels",
+    "museum": "Forest Lawn Memorial Park",
+    "year": "1881",
+    "query": "William-Adolphe Bouguereau Song of the Angels"
+  },
+  {
+    "artist": "William-Adolphe Bouguereau",
+    "title": "Nymphs and Satyr",
+    "museum": "Clark Art Institute",
+    "year": "1873",
+    "query": "William-Adolphe Bouguereau Nymphs and Satyr Clark"
+  },
+  {
+    "artist": "Jean-Léon Gérôme",
+    "title": "Pollice Verso",
+    "museum": "Phoenix Art Museum",
+    "year": "1872",
+    "query": "Jean-Leon Gerome Pollice Verso Phoenix"
+  },
+  {
+    "artist": "Jean-Léon Gérôme",
+    "title": "The Snake Charmer",
+    "museum": "Clark Art Institute",
+    "year": "1879",
+    "query": "Jean-Leon Gerome The Snake Charmer Clark Art"
+  },
+  {
+    "artist": "Jean-Léon Gérôme",
+    "title": "Pygmalion and Galatea",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1890",
+    "query": "Jean-Leon Gerome Pygmalion and Galatea MET"
+  },
+  {
+    "artist": "Jean-Léon Gérôme",
+    "title": "The Carpet Merchant",
+    "museum": "Minneapolis Institute of Art",
+    "year": "1887",
+    "query": "Jean-Leon Gerome The Carpet Merchant Minneapolis"
+  },
+  {
+    "artist": "Jean-Léon Gérôme",
+    "title": "Truth Coming Out of Her Well",
+    "museum": "Musée Anne de Beaujeu",
+    "year": "1896",
+    "query": "Jean-Leon Gerome Truth Coming Out of Her Well"
+  },
+  {
+    "artist": "Jean-Léon Gérôme",
+    "title": "Bonaparte Before the Sphinx",
+    "museum": "Hearst Castle",
+    "year": "1886",
+    "query": "Jean-Leon Gerome Bonaparte Before the Sphinx Hearst"
+  },
+  {
+    "artist": "Lawrence Alma-Tadema",
+    "title": "The Roses of Heliogabalus",
+    "museum": "Private Collection",
+    "year": "1888",
+    "query": "Lawrence Alma-Tadema Roses of Heliogabalus 1888"
+  },
+  {
+    "artist": "Lawrence Alma-Tadema",
+    "title": "A Coign of Vantage",
+    "museum": "Private Collection",
+    "year": "1895",
+    "query": "Lawrence Alma-Tadema Coign of Vantage 1895"
+  },
+  {
+    "artist": "Lawrence Alma-Tadema",
+    "title": "Spring",
+    "museum": "J. Paul Getty Museum",
+    "year": "1894",
+    "query": "Lawrence Alma-Tadema Spring Getty"
+  },
+  {
+    "artist": "Lawrence Alma-Tadema",
+    "title": "Silver Favourites",
+    "museum": "Manchester Art Gallery",
+    "year": "1903",
+    "query": "Lawrence Alma-Tadema Silver Favourites Manchester"
+  },
+  {
+    "artist": "Lawrence Alma-Tadema",
+    "title": "The Finding of Moses",
+    "museum": "Private Collection",
+    "year": "1904",
+    "query": "Lawrence Alma-Tadema Finding of Moses 1904"
+  },
+  {
+    "artist": "Lawrence Alma-Tadema",
+    "title": "Unconscious Rivals",
+    "museum": "Bristol Museum & Art Gallery",
+    "year": "1893",
+    "query": "Lawrence Alma-Tadema Unconscious Rivals Bristol"
+  },
+  {
+    "artist": "Frederic Leighton",
+    "title": "Flaming June",
+    "museum": "Museo de Arte de Ponce",
+    "year": "1895",
+    "query": "Frederic Leighton Flaming June Ponce"
+  },
+  {
+    "artist": "Frederic Leighton",
+    "title": "Pavonia",
+    "museum": "Royal Collection",
+    "year": "1859",
+    "query": "Frederic Leighton Pavonia Royal Collection"
+  },
+  {
+    "artist": "Frederic Leighton",
+    "title": "The Bath of Psyche",
+    "museum": "Tate Britain",
+    "year": "1890",
+    "query": "Frederic Leighton The Bath of Psyche Tate"
+  },
+  {
+    "artist": "Frederic Leighton",
+    "title": "An Athlete Wrestling with a Python",
+    "museum": "Tate Britain",
+    "year": "1877",
+    "query": "Frederic Leighton Athlete Wrestling Python Tate"
+  },
+  {
+    "artist": "Frederic Leighton",
+    "title": "Clytie",
+    "museum": "Leighton House Museum",
+    "year": "1896",
+    "query": "Frederic Leighton Clytie Leighton House"
+  },
+  {
+    "artist": "Frederic Leighton",
+    "title": "Idyll",
+    "museum": "Private Collection",
+    "year": "1881",
+    "query": "Frederic Leighton Idyll 1881"
+  },
+  {
+    "artist": "John Constable",
+    "title": "The Hay Wain",
+    "museum": "National Gallery London",
+    "year": "1821",
+    "query": "John Constable The Hay Wain National Gallery"
+  },
+  {
+    "artist": "John Constable",
+    "title": "Salisbury Cathedral from the Bishop's Grounds",
+    "museum": "Victoria and Albert Museum",
+    "year": "1823",
+    "query": "John Constable Salisbury Cathedral Bishops Grounds V&A"
+  },
+  {
+    "artist": "John Constable",
+    "title": "Dedham Vale",
+    "museum": "National Gallery of Scotland",
+    "year": "1828",
+    "query": "John Constable Dedham Vale Edinburgh"
+  },
+  {
+    "artist": "John Constable",
+    "title": "The Cornfield",
+    "museum": "National Gallery London",
+    "year": "1826",
+    "query": "John Constable The Cornfield National Gallery"
+  },
+  {
+    "artist": "John Constable",
+    "title": "Wivenhoe Park",
+    "museum": "National Gallery of Art",
+    "year": "1816",
+    "query": "John Constable Wivenhoe Park NGA"
+  },
+  {
+    "artist": "John Constable",
+    "title": "Weymouth Bay: Bowleaze Cove",
+    "museum": "National Gallery London",
+    "year": "1816",
+    "query": "John Constable Weymouth Bay Bowleaze Cove National Gallery"
+  },
+  {
+    "artist": "James McNeill Whistler",
+    "title": "Whistler's Mother",
+    "museum": "Musée d'Orsay",
+    "year": "1871",
+    "query": "Whistlers Mother Arrangement in Grey and Black dOrsay"
+  },
+  {
+    "artist": "James McNeill Whistler",
+    "title": "Nocturne in Black and Gold",
+    "museum": "Detroit Institute of Arts",
+    "year": "1875",
+    "query": "Whistler Nocturne in Black and Gold Detroit"
+  },
+  {
+    "artist": "James McNeill Whistler",
+    "title": "Symphony in White, No. 1",
+    "museum": "National Gallery of Art",
+    "year": "1862",
+    "query": "Whistler Symphony in White No 1 NGA"
+  },
+  {
+    "artist": "James McNeill Whistler",
+    "title": "Nocturne: Blue and Gold - Old Battersea Bridge",
+    "museum": "Tate Britain",
+    "year": "1875",
+    "query": "Whistler Nocturne Blue and Gold Old Battersea Bridge Tate"
+  },
+  {
+    "artist": "Berthe Morisot",
+    "title": "The Cradle",
+    "museum": "Musée d'Orsay",
+    "year": "1872",
+    "query": "Berthe Morisot The Cradle Musee dOrsay"
+  },
+  {
+    "artist": "Berthe Morisot",
+    "title": "In the Dining Room",
+    "museum": "National Gallery of Art",
+    "year": "1886",
+    "query": "Berthe Morisot In the Dining Room NGA"
+  },
+  {
+    "artist": "Berthe Morisot",
+    "title": "Eugene Manet and His Daughter at Bougival",
+    "museum": "Musée Marmottan Monet",
+    "year": "1881",
+    "query": "Berthe Morisot Eugene Manet and Daughter Marmottan"
+  },
+  {
+    "artist": "Mary Cassatt",
+    "title": "The Child's Bath",
+    "museum": "Art Institute of Chicago",
+    "year": "1893",
+    "query": "Mary Cassatt The Childs Bath Chicago"
+  },
+  {
+    "artist": "Mary Cassatt",
+    "title": "Little Girl in a Blue Armchair",
+    "museum": "National Gallery of Art",
+    "year": "1878",
+    "query": "Mary Cassatt Little Girl in a Blue Armchair NGA"
+  },
+  {
+    "artist": "Mary Cassatt",
+    "title": "The Boating Party",
+    "museum": "National Gallery of Art",
+    "year": "1893",
+    "query": "Mary Cassatt The Boating Party NGA"
+  },
+  {
+    "artist": "Henri de Toulouse-Lautrec",
+    "title": "At the Moulin Rouge",
+    "museum": "Art Institute of Chicago",
+    "year": "1895",
+    "query": "Toulouse-Lautrec At the Moulin Rouge Chicago"
+  },
+  {
+    "artist": "Henri de Toulouse-Lautrec",
+    "title": "Jane Avril Dancing",
+    "museum": "Musée d'Orsay",
+    "year": "1892",
+    "query": "Toulouse-Lautrec Jane Avril Dancing dOrsay"
+  },
+  {
+    "artist": "Henri de Toulouse-Lautrec",
+    "title": "The Bed (Le Lit)",
+    "museum": "Musée d'Orsay",
+    "year": "1892",
+    "query": "Toulouse-Lautrec Le Lit Musee dOrsay"
+  },
+  {
+    "artist": "Henri de Toulouse-Lautrec",
+    "title": "In the Salon of the Rue des Moulins",
+    "museum": "Musée Toulouse-Lautrec Albi",
+    "year": "1894",
+    "query": "Toulouse-Lautrec Salon Rue des Moulins Albi"
+  },
+  {
+    "artist": "Edvard Munch",
+    "title": "The Scream",
+    "museum": "National Gallery Oslo",
+    "year": "1893",
+    "query": "Edvard Munch The Scream National Gallery Oslo"
+  },
+  {
+    "artist": "Edvard Munch",
+    "title": "Madonna",
+    "museum": "Munch Museum Oslo",
+    "year": "1894",
+    "query": "Edvard Munch Madonna Munch Museum Oslo"
+  },
+  {
+    "artist": "Edvard Munch",
+    "title": "The Dance of Life",
+    "museum": "National Gallery Oslo",
+    "year": "1899",
+    "query": "Edvard Munch The Dance of Life National Gallery Oslo"
+  },
+  {
+    "artist": "Edvard Munch",
+    "title": "Girls on the Bridge",
+    "museum": "National Gallery Oslo",
+    "year": "1901",
+    "query": "Edvard Munch Girls on the Bridge Oslo"
+  },
+  {
+    "artist": "Egon Schiele",
+    "title": "Self-Portrait with Physalis",
+    "museum": "Leopold Museum Vienna",
+    "year": "1912",
+    "query": "Egon Schiele Self-Portrait with Physalis Leopold"
+  },
+  {
+    "artist": "Egon Schiele",
+    "title": "Death and the Maiden",
+    "museum": "Belvedere Vienna",
+    "year": "1915",
+    "query": "Egon Schiele Death and the Maiden Belvedere Vienna"
+  },
+  {
+    "artist": "Egon Schiele",
+    "title": "Portrait of Wally Neuzil",
+    "museum": "Leopold Museum Vienna",
+    "year": "1912",
+    "query": "Egon Schiele Portrait of Wally Neuzil Leopold"
+  },
+  {
+    "artist": "Egon Schiele",
+    "title": "Four Trees",
+    "museum": "Belvedere Vienna",
+    "year": "1917",
+    "query": "Egon Schiele Four Trees Belvedere Vienna"
+  },
+  {
+    "artist": "Henri Rousseau",
+    "title": "The Sleeping Gypsy",
+    "museum": "Museum of Modern Art",
+    "year": "1897",
+    "query": "Henri Rousseau The Sleeping Gypsy MoMA"
+  },
+  {
+    "artist": "Henri Rousseau",
+    "title": "The Dream",
+    "museum": "Museum of Modern Art",
+    "year": "1910",
+    "query": "Henri Rousseau The Dream MoMA"
+  },
+  {
+    "artist": "Henri Rousseau",
+    "title": "Tiger in a Tropical Storm (Surprised!)",
+    "museum": "National Gallery London",
+    "year": "1891",
+    "query": "Henri Rousseau Tiger in a Tropical Storm National Gallery"
+  },
+  {
+    "artist": "Henri Rousseau",
+    "title": "The Snake Charmer",
+    "museum": "Musée d'Orsay",
+    "year": "1907",
+    "query": "Henri Rousseau The Snake Charmer Musee dOrsay"
+  },
+  {
+    "artist": "Joaquín Sorolla",
+    "title": "Walk on the Beach",
+    "museum": "Sorolla Museum Madrid",
+    "year": "1909",
+    "query": "Joaquin Sorolla Walk on the Beach Madrid"
+  },
+  {
+    "artist": "Joaquín Sorolla",
+    "title": "Sad Inheritance",
+    "museum": "Bancaja Collection",
+    "year": "1899",
+    "query": "Joaquin Sorolla Sad Inheritance"
+  },
+  {
+    "artist": "Joaquín Sorolla",
+    "title": "Sewing the Sail",
+    "museum": "Museum of Fine Arts Valencia",
+    "year": "1896",
+    "query": "Joaquin Sorolla Sewing the Sail Valencia"
+  },
+  {
+    "artist": "Joaquín Sorolla",
+    "title": "Boys on the Beach",
+    "museum": "Museo del Prado",
+    "year": "1910",
+    "query": "Joaquin Sorolla Boys on the Beach Prado"
+  },
+  {
+    "artist": "Joaquín Sorolla",
+    "title": "The Horse's Bath",
+    "museum": "Sorolla Museum Madrid",
+    "year": "1909",
+    "query": "Joaquin Sorolla The Horses Bath Madrid"
+  },
+  {
+    "artist": "Joaquín Sorolla",
+    "title": "My Children",
+    "museum": "Museo del Prado",
+    "year": "1904",
+    "query": "Joaquin Sorolla My Children Prado"
+  }
+]

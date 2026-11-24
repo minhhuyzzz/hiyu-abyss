@@ -1,0 +1,569 @@
+[
+  {
+    "artist": "Albrecht Dürer",
+    "title": "Feast of the Rosary",
+    "museum": "National Gallery Prague",
+    "year": "1506",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Albrecht_D%C3%BCrer_-_Das_Rosenkranzfest_%281506%29.jpg",
+    "size_kb": 102019,
+    "safe_filename": "final_art_001_feast_of_the_rosary.jpg"
+  },
+  {
+    "artist": "Albrecht Dürer",
+    "title": "Self-Portrait at 28",
+    "museum": "Alte Pinakothek, Munich",
+    "year": "1500",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Albrecht_D%C3%BCrer_-_1500_self-portrait_%28High_resolution_and_detail%29.jpg",
+    "size_kb": 3338,
+    "safe_filename": "final_art_002_self-portrait_at_28.jpg"
+  },
+  {
+    "artist": "Lucas Cranach the Elder",
+    "title": "The Judgment of Paris",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1528",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/The_Judgment_of_Paris_MET_DP842205.jpg",
+    "size_kb": 4147,
+    "safe_filename": "final_art_003_the_judgment_of_paris.jpg"
+  },
+  {
+    "artist": "Hans Holbein the Younger",
+    "title": "The Ambassadors",
+    "museum": "National Gallery, London",
+    "year": "1533",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg",
+    "size_kb": 220803,
+    "safe_filename": "final_art_004_the_ambassadors.jpg"
+  },
+  {
+    "artist": "Hans Holbein the Younger",
+    "title": "Portrait of Henry VIII",
+    "museum": "Galleria Nazionale d Arte Antica",
+    "year": "1540",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Portrait_of_Henry_VIII_of_England_%28Holbein%29.jpg",
+    "size_kb": 14854,
+    "safe_filename": "final_art_005_portrait_of_henry_viii.jpg"
+  },
+  {
+    "artist": "Lorenzo Lotto",
+    "title": "Portrait of a Young Man",
+    "museum": "Uffizi Gallery, Florence",
+    "year": "1505",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Portrait_of_young_man_by_Sandro_Botticelli_-_Louvre.jpg",
+    "size_kb": 11134,
+    "safe_filename": "final_art_006_portrait_of_a_young_man.jpg"
+  },
+  {
+    "artist": "Bronzino",
+    "title": "Portrait of Eleonora of Toledo",
+    "museum": "Uffizi Gallery, Florence",
+    "year": "1545",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Eleanor_of_Toledo_with_her_son_Giovanni_de%27_Medici_by_Agnolo_Bronzino.jpg",
+    "size_kb": 50736,
+    "safe_filename": "final_art_007_portrait_of_eleonora_of_t.jpg"
+  },
+  {
+    "artist": "Pieter Brueghel the Younger",
+    "title": "The Village Lawyer",
+    "museum": "Museum of Fine Arts, Ghent",
+    "year": "1621",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Detail_from_Pieter_II_Brueghel%27s_Village_Lawyer.jpg",
+    "size_kb": 4968,
+    "safe_filename": "final_art_008_the_village_lawyer.jpg"
+  },
+  {
+    "artist": "Hendrick Avercamp",
+    "title": "A Scene on the Ice near a Town",
+    "museum": "National Gallery, London",
+    "year": "1615",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/A_Scene_on_the_Ice_near_a_Town_-_Avercamp.jpg",
+    "size_kb": 8683,
+    "safe_filename": "final_art_009_a_scene_on_the_ice_near_a.jpg"
+  },
+  {
+    "artist": "Rachel Ruysch",
+    "title": "Flowers in a Glass Vase",
+    "museum": "Mauritshuis, The Hague",
+    "year": "1700",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Rachel_Ruysch_-_Summer_flowers_in_a_vase.jpg",
+    "size_kb": 2184,
+    "safe_filename": "final_art_010_flowers_in_a_glass_vase.jpg"
+  },
+  {
+    "artist": "Willem Kalf",
+    "title": "Still Life with a Chinese Bowl",
+    "museum": "Gemaldegalerie, Berlin",
+    "year": "1662",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Willem_Kalf_%281619_-_1693%29_-_Still_life_with_a_Chinese_porcelain_box_-_948F_-_Gem%C3%A4ldegalerie.jpg",
+    "size_kb": 3086,
+    "safe_filename": "final_art_011_still_life_with_a_chinese.jpg"
+  },
+  {
+    "artist": "Joshua Reynolds",
+    "title": "The Age of Innocence",
+    "museum": "Tate Britain, London",
+    "year": "1788",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/The_Age_of_Innocence_-_ReynoldsFXD.jpg",
+    "size_kb": 380,
+    "safe_filename": "final_art_012_the_age_of_innocence.jpg"
+  },
+  {
+    "artist": "Joshua Reynolds",
+    "title": "Sarah Siddons as the Tragic Muse",
+    "museum": "Huntington Library",
+    "year": "1784",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Mrs._Siddons_as_the_Tragic_Muse_%283051182537%29.jpg",
+    "size_kb": 478,
+    "safe_filename": "final_art_013_sarah_siddons_as_the_trag.jpg"
+  },
+  {
+    "artist": "George Stubbs",
+    "title": "Whistlejacket",
+    "museum": "National Gallery, London",
+    "year": "1762",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Whistlejacket_by_George_Stubbs_edit.jpg",
+    "size_kb": 5189,
+    "safe_filename": "final_art_014_whistlejacket.jpg"
+  },
+  {
+    "artist": "John Martin",
+    "title": "The Great Day of His Wrath",
+    "museum": "Tate Britain, London",
+    "year": "1851-1853",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/John_Martin_-_The_Great_Day_of_His_Wrath_-_Google_Art_Project.jpg",
+    "size_kb": 3515,
+    "safe_filename": "final_art_015_the_great_day_of_his_wrat.jpg"
+  },
+  {
+    "artist": "Caspar David Friedrich",
+    "title": "Chalk Cliffs on Rugen",
+    "museum": "Museum Oskar Reinhart",
+    "year": "1818",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Caspar_David_Friedrich_Chalk_Cliffs_on_R%C3%BCgen.jpg",
+    "size_kb": 2938,
+    "safe_filename": "final_art_016_chalk_cliffs_on_rugen.jpg"
+  },
+  {
+    "artist": "Caspar David Friedrich",
+    "title": "The Abbey in the Oakwood",
+    "museum": "Alte Nationalgalerie, Berlin",
+    "year": "1809-1810",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Caspar_David_Friedrich_-_Abtei_im_Eichwald_-_Google_Art_Project.jpg",
+    "size_kb": 3909,
+    "safe_filename": "final_art_017_the_abbey_in_the_oakwood.jpg"
+  },
+  {
+    "artist": "Carl Blechen",
+    "title": "The Forest Path",
+    "museum": "Alte Nationalgalerie, Berlin",
+    "year": "1835",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Carl_Blechen_-_Waldweg_bei_Spandau_-_Google_Art_Project.jpg",
+    "size_kb": 6137,
+    "safe_filename": "final_art_018_the_forest_path.jpg"
+  },
+  {
+    "artist": "Thomas Cole",
+    "title": "The Voyage of Life Youth",
+    "museum": "National Gallery of Art, Washington",
+    "year": "1842",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Thomas_Cole_-_The_Voyage_of_Life_Childhood%2C_1842_%28National_Gallery_of_Art%29.jpg",
+    "size_kb": 10766,
+    "safe_filename": "final_art_019_the_voyage_of_life_youth.jpg"
+  },
+  {
+    "artist": "Frederic Edwin Church",
+    "title": "Niagara",
+    "museum": "National Gallery of Art, Washington",
+    "year": "1857",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Frederic_Edwin_Church_-_Niagara_Falls_-_WGA04867.jpg",
+    "size_kb": 82400,
+    "safe_filename": "final_art_020_niagara.jpg"
+  },
+  {
+    "artist": "Frederic Edwin Church",
+    "title": "Twilight in the Wilderness",
+    "museum": "Cleveland Museum of Art",
+    "year": "1860",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Twilight_in_the_Wilderness_by_Frederic_Edwin_Church_%283%29.jpg",
+    "size_kb": 8093,
+    "safe_filename": "final_art_021_twilight_in_the_wildernes.jpg"
+  },
+  {
+    "artist": "Albert Bierstadt",
+    "title": "The Rocky Mountains, Lander Peak",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1863",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Anonymous%2C_after_Albert_Bierstadt_-_The_Rocky_Mountains%2C_Lander%27s_Peak.jpg",
+    "size_kb": 8804,
+    "safe_filename": "final_art_022_the_rocky_mountains,_land.jpg"
+  },
+  {
+    "artist": "Albert Bierstadt",
+    "title": "Storm in the Mountains",
+    "museum": "Museum of Fine Arts, Boston",
+    "year": "1870",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Albert_Bierstadt_-_A_Storm_in_the_Rocky_Mountains%2C_Mt._Rosalie_-_Google_Art_Project.jpg",
+    "size_kb": 5736,
+    "safe_filename": "final_art_023_storm_in_the_mountains.jpg"
+  },
+  {
+    "artist": "Martin Johnson Heade",
+    "title": "Approaching Thunder Storm",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1859",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Martin_Johnson_Heade_Approaching_Thunderstorm_ATC.jpg",
+    "size_kb": 2633,
+    "safe_filename": "final_art_024_approaching_thunder_storm.jpg"
+  },
+  {
+    "artist": "Sanford Robinson Gifford",
+    "title": "A Gorge in the Mountains",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1862",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Gifford_Sanford_Robinson_A_Gorge_In_The_Mountains.jpg",
+    "size_kb": 3877,
+    "safe_filename": "final_art_025_a_gorge_in_the_mountains.jpg"
+  },
+  {
+    "artist": "John Frederick Kensett",
+    "title": "Eatons Neck, Long Island",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1872",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/John_Frederick_Kensett_-_Eaton%27s_Neck%2C_Long_Island_-_74.29_-_Metropolitan_Museum_of_Art.jpg",
+    "size_kb": 1215,
+    "safe_filename": "final_art_026_eatons_neck,_long_island.jpg"
+  },
+  {
+    "artist": "George Inness",
+    "title": "The Lackawanna Valley",
+    "museum": "National Gallery of Art, Washington",
+    "year": "1855",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/George_Inness%2C_The_Lackawanna_Valley%2C_c._1856%2C_NGA_30776.jpg",
+    "size_kb": 9097,
+    "safe_filename": "final_art_027_the_lackawanna_valley.jpg"
+  },
+  {
+    "artist": "Winslow Homer",
+    "title": "Snap the Whip",
+    "museum": "Butler Institute of American Art",
+    "year": "1872",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/06_18_2022_Winslow_Homer_Snap_the_Whip_frame_MET.jpg",
+    "size_kb": 9413,
+    "safe_filename": "final_art_028_snap_the_whip.jpg"
+  },
+  {
+    "artist": "Winslow Homer",
+    "title": "The Life Line",
+    "museum": "Philadelphia Museum of Art",
+    "year": "1884",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/WinslowHomer-Eight_Bells_1886.jpg",
+    "size_kb": 6104,
+    "safe_filename": "final_art_029_the_life_line.jpg"
+  },
+  {
+    "artist": "Thomas Eakins",
+    "title": "The Champion Single Sculls",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1871",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/The_Champion_Single_Sculls_%28Max_Schmitt_in_a_Single_Scull%29_MET_DT355586.jpg",
+    "size_kb": 3722,
+    "safe_filename": "final_art_030_the_champion_single_scull.jpg"
+  },
+  {
+    "artist": "Childe Hassam",
+    "title": "The Avenue in the Rain",
+    "museum": "White House Collection",
+    "year": "1917",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/The_Avenue_in_the_Rain_Frederick_Childe_Hassam_1917.jpeg",
+    "size_kb": 992,
+    "safe_filename": "final_art_031_the_avenue_in_the_rain.jpg"
+  },
+  {
+    "artist": "Childe Hassam",
+    "title": "Boston Common at Twilight",
+    "museum": "Museum of Fine Arts, Boston",
+    "year": "1885-1886",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Childe_Hassam%2C_%27Boston_Common_at_Twilight%27%2C_1885%E2%80%9386.jpg",
+    "size_kb": 1030,
+    "safe_filename": "final_art_032_boston_common_at_twilight.jpg"
+  },
+  {
+    "artist": "Mary Cassatt",
+    "title": "Mother and Child",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1890",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Mother_and_Child_MET_DT203413.jpg",
+    "size_kb": 3700,
+    "safe_filename": "final_art_033_mother_and_child.jpg"
+  },
+  {
+    "artist": "John Singer Sargent",
+    "title": "Lady Agnew of Lochnaw",
+    "museum": "Scottish National Gallery",
+    "year": "1892",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/John_Singer_Sargent_-_Lady_Agnew_of_Lochnaw.jpg",
+    "size_kb": 23307,
+    "safe_filename": "final_art_034_lady_agnew_of_lochnaw.jpg"
+  },
+  {
+    "artist": "John Singer Sargent",
+    "title": "The Daughters of Edward Darley Boit",
+    "museum": "Museum of Fine Arts, Boston",
+    "year": "1882",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/The_Daughters_of_Edward_Darley_Boit%2C_John_Singer_Sargent%2C_1882_%28unfree_frame_crop%29.jpg",
+    "size_kb": 1014,
+    "safe_filename": "final_art_035_the_daughters_of_edward_d.jpg"
+  },
+  {
+    "artist": "James Tissot",
+    "title": "The Shop Girl",
+    "museum": "Art Gallery of Ontario",
+    "year": "1883-1885",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/James_Tissot_-_La_demoiselle_de_magasin_-_Google_Art_Project.jpg",
+    "size_kb": 12913,
+    "safe_filename": "final_art_036_the_shop_girl.jpg"
+  },
+  {
+    "artist": "Arthur Hughes",
+    "title": "April Love",
+    "museum": "Tate Britain, London",
+    "year": "1855-1856",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Arthur_Hughes_-_April_Love_-_Google_Art_Project.jpg",
+    "size_kb": 21827,
+    "safe_filename": "final_art_037_april_love.jpg"
+  },
+  {
+    "artist": "Ford Madox Brown",
+    "title": "The Last of England",
+    "museum": "Birmingham Museum and Art Gallery",
+    "year": "1855",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Ford_Madox_Brown_-_The_Last_of_England_-_Google_Art_Project.jpg",
+    "size_kb": 23841,
+    "safe_filename": "final_art_038_the_last_of_england.jpg"
+  },
+  {
+    "artist": "William Holman Hunt",
+    "title": "The Awakening Conscience",
+    "museum": "Tate Britain, London",
+    "year": "1853",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/The_Awakening_Conscience_by_William_Holman_Hunt.jpg",
+    "size_kb": 13909,
+    "safe_filename": "final_art_039_the_awakening_conscience.jpg"
+  },
+  {
+    "artist": "Puvis de Chavannes",
+    "title": "The Poor Fisherman",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1881",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Pierre_Puvis_de_Chavannes_-_The_Poor_Fisherman_-_Google_Art_Project.jpg",
+    "size_kb": 7496,
+    "safe_filename": "final_art_040_the_poor_fisherman.jpg"
+  },
+  {
+    "artist": "Arnold Böcklin",
+    "title": "Self-Portrait with Death Playing the Fiddle",
+    "museum": "Alte Nationalgalerie, Berlin",
+    "year": "1872",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Arnold_Boecklin-fiedelnder_Tod.jpg",
+    "size_kb": 4246,
+    "safe_filename": "final_art_041_self-portrait_with_death_.jpg"
+  },
+  {
+    "artist": "Fernand Khnopff",
+    "title": "The Caress",
+    "museum": "Royal Museums of Fine Arts of Belgium",
+    "year": "1896",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/L%27Art_de_Fernand_Khnopff_%28Petit_Palais%2C_Paris%29_%2846652612984%29.jpg",
+    "size_kb": 8300,
+    "safe_filename": "final_art_042_the_caress.jpg"
+  },
+  {
+    "artist": "Franz von Stuck",
+    "title": "The Sin",
+    "museum": "Neue Pinakothek, Munich",
+    "year": "1893",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Franz_von_Stuck_-_Die_S%C3%BCnde_%281893%29.jpg",
+    "size_kb": 1128,
+    "safe_filename": "final_art_043_the_sin.jpg"
+  },
+  {
+    "artist": "Gustav Klimt",
+    "title": "Judith and the Head of Holofernes",
+    "museum": "Belvedere, Vienna",
+    "year": "1901",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/%28Venice%29_Judith_with_the_head_of_Holofernes_by_Jacopo_Amigoni.jpg",
+    "size_kb": 23472,
+    "safe_filename": "final_art_044_judith_and_the_head_of_ho.jpg"
+  },
+  {
+    "artist": "Gustav Klimt",
+    "title": "Death and Life",
+    "museum": "Leopold Museum, Vienna",
+    "year": "1915",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Death_and_Life_-_Gustav_Klimt.jpg",
+    "size_kb": 429624,
+    "safe_filename": "final_art_045_death_and_life.jpg"
+  },
+  {
+    "artist": "Egon Schiele",
+    "title": "Self-Portrait with Chinese Lantern Plant",
+    "museum": "Leopold Museum, Vienna",
+    "year": "1912",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Egon_Schiele_-_Self-Portrait_with_Physalis_-_Google_Art_Project.jpg",
+    "size_kb": 4972,
+    "safe_filename": "final_art_046_self-portrait_with_chines.jpg"
+  },
+  {
+    "artist": "Edvard Munch",
+    "title": "Madonna",
+    "museum": "Munch Museum, Oslo",
+    "year": "1894-1895",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Edvard_Munch_-_Madonna_%281894-1895%29.jpg",
+    "size_kb": 12054,
+    "safe_filename": "final_art_047_madonna.jpg"
+  },
+  {
+    "artist": "Edvard Munch",
+    "title": "Vampire",
+    "museum": "Munch Museum, Oslo",
+    "year": "1893-1895",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Edvard_Munch_Vampire.jpg",
+    "size_kb": 4137,
+    "safe_filename": "final_art_048_vampire.jpg"
+  },
+  {
+    "artist": "Henri de Toulouse-Lautrec",
+    "title": "Jane Avril",
+    "museum": "Museum of Modern Art, New York",
+    "year": "1893",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/%28Albi%29_Jane_Avril_-_La_m%C3%A9linite_dansant_Toulouse-Lautrec_%281892%29_MTL.148.jpg",
+    "size_kb": 48460,
+    "safe_filename": "final_art_049_jane_avril.jpg"
+  },
+  {
+    "artist": "Pierre Bonnard",
+    "title": "The Dining Room in the Country",
+    "museum": "Minneapolis Institute of Art",
+    "year": "1913",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Study_for_%22Dining_Room_in_the_Country%22%2C_1913_-_1.jpg",
+    "size_kb": 2082,
+    "safe_filename": "final_art_050_the_dining_room_in_the_co.jpg"
+  },
+  {
+    "artist": "Édouard Vuillard",
+    "title": "The Seamstress",
+    "museum": "Metropolitan Museum of Art",
+    "year": "1893",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/%C3%89douard_Vuillard%2C_Mme_Vuillard_Sewing_by_the_Window%2C_rue_Truffaut%2C_ca._1899.jpg",
+    "size_kb": 3628,
+    "safe_filename": "final_art_051_the_seamstress.jpg"
+  },
+  {
+    "artist": "Felix Vallotton",
+    "title": "The Ball",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1899",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Times_Square_Ball_from_above.jpg",
+    "size_kb": 18454,
+    "safe_filename": "final_art_052_the_ball.jpg"
+  },
+  {
+    "artist": "Odilon Redon",
+    "title": "Buddha",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1904",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Kargah_Buddha_%28cropped%29.jpg",
+    "size_kb": 6200,
+    "safe_filename": "final_art_053_buddha.jpg"
+  },
+  {
+    "artist": "Vasily Surikov",
+    "title": "Boyarynya Morozova",
+    "museum": "Tretyakov Gallery, Moscow",
+    "year": "1887",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Surikov_Boyarynya_Morozova_gtg.jpg",
+    "size_kb": 952,
+    "safe_filename": "final_art_054_boyarynya_morozova.jpg"
+  },
+  {
+    "artist": "Viktor Vasnetsov",
+    "title": "Alyonushka",
+    "museum": "Tretyakov Gallery, Moscow",
+    "year": "1881",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/1881_Vasnetsov_Alenuschka_anagoria.JPG",
+    "size_kb": 5650,
+    "safe_filename": "final_art_055_alyonushka.jpg"
+  },
+  {
+    "artist": "Arkhip Kuindzhi",
+    "title": "After a Rain",
+    "museum": "Tretyakov Gallery, Moscow",
+    "year": "1879",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Kuindzhi_After_a_rain_1879.jpg",
+    "size_kb": 482,
+    "safe_filename": "final_art_056_after_a_rain.jpg"
+  },
+  {
+    "artist": "Isaac Levitan",
+    "title": "Over Eternal Peace",
+    "museum": "Tretyakov Gallery, Moscow",
+    "year": "1894",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Isaac_Levitan_-_Au-dessus_du_repos_%C3%A9ternel.jpg",
+    "size_kb": 904,
+    "safe_filename": "final_art_057_over_eternal_peace.jpg"
+  },
+  {
+    "artist": "Mikhail Vrubel",
+    "title": "The Demon Seated",
+    "museum": "Tretyakov Gallery, Moscow",
+    "year": "1890",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Mikhail_Vrubel_-_the_Seated_Demon_%28fragment%29.jpg",
+    "size_kb": 3077,
+    "safe_filename": "final_art_058_the_demon_seated.jpg"
+  },
+  {
+    "artist": "Valentin Serov",
+    "title": "Girl with Peaches",
+    "museum": "Tretyakov Gallery, Moscow",
+    "year": "1887",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Valentin_Serov_-_%D0%94%D0%B5%D0%B2%D0%BE%D1%87%D0%BA%D0%B0_%D1%81_%D0%BF%D0%B5%D1%80%D1%81%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8._%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%92.%D0%A1.%D0%9C%D0%B0%D0%BC%D0%BE%D0%BD%D1%82%D0%BE%D0%B2%D0%BE%D0%B9_-_Google_Art_Project.jpg",
+    "size_kb": 7668,
+    "safe_filename": "final_art_059_girl_with_peaches.jpg"
+  },
+  {
+    "artist": "Konstantin Korovin",
+    "title": "In the Boat",
+    "museum": "Tretyakov Gallery, Moscow",
+    "year": "1888",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Pilot_boat_at_Landsort_April_2012.jpg",
+    "size_kb": 4855,
+    "safe_filename": "final_art_060_in_the_boat.jpg"
+  },
+  {
+    "artist": "Anders Zorn",
+    "title": "Midsummer Dance",
+    "museum": "Nationalmuseum, Stockholm",
+    "year": "1897",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Zorn_-_Midsummer_Dance.jpg",
+    "size_kb": 2705,
+    "safe_filename": "final_art_061_midsummer_dance.jpg"
+  },
+  {
+    "artist": "Carl Larsson",
+    "title": "A Studio Idyll",
+    "museum": "Nationalmuseum, Stockholm",
+    "year": "1885",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Atelje-idyll_Konstn%C3%A4rens_hustru_med_dottern_Suzanne_av_Carl_Larsson_1885.jpg",
+    "size_kb": 4621,
+    "safe_filename": "final_art_062_a_studio_idyll.jpg"
+  },
+  {
+    "artist": "Vilhelm Hammershøi",
+    "title": "Interior with Young Man Reading",
+    "museum": "Hirschsprung Collection",
+    "year": "1898",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Interi%C3%B8r_med_ung_l%C3%A6sende_mand.jpg",
+    "size_kb": 14769,
+    "safe_filename": "final_art_063_interior_with_young_man_r.jpg"
+  }
+]

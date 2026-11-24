@@ -47,6 +47,11 @@ Thumbs.db
 tmp/
 *.tmp
 assets/templates/raw_cache/
+assets/templates/raw_cache_101_300/
+assets/templates/fresh_cache_151/
+assets/templates/final_fresh_cache/
+assets/templates/fresh_cache_test/
+assets/templates/iconic_four/
 .env
 .env.*
 

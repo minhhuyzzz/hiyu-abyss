@@ -1,0 +1,1442 @@
+[
+  {
+    "artist": "Leonardo da Vinci",
+    "title": "Ginevra de Benci",
+    "museum": "National Gallery of Art, Washington",
+    "year": "1474-1478",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Ginevra_de%27_Benci_-_National_Gallery_of_Art.jpg",
+    "size_kb": 105647,
+    "safe_filename": "fresh_art_001_ginevra_de_benci.jpg"
+  },
+  {
+    "artist": "Leonardo da Vinci",
+    "title": "St. John the Baptist",
+    "museum": "Louvre Museum, Paris",
+    "year": "1513-1516",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg",
+    "size_kb": 92292,
+    "safe_filename": "fresh_art_002_st._john_the_baptist.jpg"
+  },
+  {
+    "artist": "Michelangelo",
+    "title": "The Torment of Saint Anthony",
+    "museum": "Kimbell Art Museum",
+    "year": "1487-1488",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Michelangelo_Buonarroti_-_The_Torment_of_Saint_Anthony_-_Google_Art_Project.jpg",
+    "size_kb": 5008,
+    "safe_filename": "fresh_art_003_the_torment_of_saint_anth.jpg"
+  },
+  {
+    "artist": "Raphael",
+    "title": "Portrait of Baldassare Castiglione",
+    "museum": "Louvre Museum, Paris",
+    "year": "1514-1515",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Baldassare_Castiglione%2C_by_Raffaello_Sanzio%2C_from_C2RMF_retouched.jpg",
+    "size_kb": 98442,
+    "safe_filename": "fresh_art_004_portrait_of_baldassare_ca.jpg"
+  },
+  {
+    "artist": "Raphael",
+    "title": "Madonna of the Meadow",
+    "museum": "Kunsthistorisches Museum, Vienna",
+    "year": "1506",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Raphael_-_Madonna_in_the_Meadow_-_Google_Art_Project.jpg",
+    "size_kb": 8302,
+    "safe_filename": "fresh_art_005_madonna_of_the_meadow.jpg"
+  },
+  {
+    "artist": "Titian",
+    "title": "Equestrian Portrait of Charles V",
+    "museum": "Prado Museum, Madrid",
+    "year": "1548",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Carlos_V_en_M%C3%BChlberg%2C_by_Titian%2C_from_Prado_in_Google_Earth.jpg",
+    "size_kb": 194608,
+    "safe_filename": "fresh_art_006_equestrian_portrait_of_ch.jpg"
+  },
+  {
+    "artist": "Titian",
+    "title": "The Entombment of Christ",
+    "museum": "Prado Museum, Madrid",
+    "year": "1559",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Entierro_de_Cristo_%28Tiziano%29.jpg",
+    "size_kb": 762,
+    "safe_filename": "fresh_art_007_the_entombment_of_christ.jpg"
+  },
+  {
+    "artist": "Tintoretto",
+    "title": "The Miracle of the Slave",
+    "museum": "Gallerie dell Accademia, Venice",
+    "year": "1548",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Tintoretto_-_Miracle_of_the_Slave.jpg",
+    "size_kb": 22722,
+    "safe_filename": "fresh_art_008_the_miracle_of_the_slave.jpg"
+  },
+  {
+    "artist": "Tintoretto",
+    "title": "The Origin of the Milky Way",
+    "museum": "National Gallery, London",
+    "year": "1575",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Jacopo_Tintoretto_-_The_Origin_of_the_Milky_Way_-_Google_Art_Project.jpg",
+    "size_kb": 4063,
+    "safe_filename": "fresh_art_009_the_origin_of_the_milky_w.jpg"
+  },
+  {
+    "artist": "Paolo Veronese",
+    "title": "The Wedding at Cana",
+    "museum": "Louvre Museum, Paris",
+    "year": "1562-1563",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Les_Noces_de_Cana_-_Paolo_Veronese_-_Mus%C3%A9e_du_Louvre_Peintures_INV_142_%3B_MR_384.jpg",
+    "size_kb": 15824,
+    "safe_filename": "fresh_art_010_the_wedding_at_cana.jpg"
+  },
+  {
+    "artist": "Paolo Veronese",
+    "title": "The Feast in the House of Levi",
+    "museum": "Gallerie dell Accademia, Venice",
+    "year": "1573",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/The_Feast_in_the_House_of_Levi_by_Paolo_Veronese_%28edited_2%29.jpg",
+    "size_kb": 19163,
+    "safe_filename": "fresh_art_011_the_feast_in_the_house_of.jpg"
+  },
+  {
+    "artist": "Caravaggio",
+    "title": "Boy with a Basket of Fruit",
+    "museum": "Galleria Borghese, Rome",
+    "year": "1593",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Boy_with_a_Basket_of_Fruit_by_Caravaggio.jpg",
+    "size_kb": 13916,
+    "safe_filename": "fresh_art_012_boy_with_a_basket_of_frui.jpg"
+  },
+  {
+    "artist": "Caravaggio",
+    "title": "The Incredulity of Saint Thomas",
+    "museum": "Sanssouci, Potsdam",
+    "year": "1601-1602",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Der_ungl%C3%A4ubige_Thomas_-_Michelangelo_Merisi%2C_named_Caravaggio.jpg",
+    "size_kb": 266220,
+    "safe_filename": "fresh_art_013_the_incredulity_of_saint_.jpg"
+  },
+  {
+    "artist": "Artemisia Gentileschi",
+    "title": "Self-Portrait as the Allegory of Painting",
+    "museum": "Royal Collection, UK",
+    "year": "1638-1639",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Self-Portrait_as_the_Allegory_of_Painting_%28La_Pittura%29_-_Artemisia_Gentileschi.jpg",
+    "size_kb": 364473,
+    "safe_filename": "fresh_art_014_self-portrait_as_the_alle.jpg"
+  },
+  {
+    "artist": "Annibale Carracci",
+    "title": "The Bean Eater",
+    "museum": "Galleria Colonna, Rome",
+    "year": "1584-1585",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Carracci_-_Der_Bohnenesser.jpeg",
+    "size_kb": 4985,
+    "safe_filename": "fresh_art_015_the_bean_eater.jpg"
+  },
+  {
+    "artist": "Annibale Carracci",
+    "title": "The Flight into Egypt",
+    "museum": "Doria Pamphilj Gallery, Rome",
+    "year": "1603",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Annibale_Carracci_-_Rest_on_Flight_into_Egypt_-_WGA4438.jpg",
+    "size_kb": 1452,
+    "safe_filename": "fresh_art_016_the_flight_into_egypt.jpg"
+  },
+  {
+    "artist": "Guido Reni",
+    "title": "Saint Michael the Archangel",
+    "museum": "Santa Maria della Concezione dei Cappuccini, Rome",
+    "year": "1636",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Faithful_copy_of_The_Archangel_Michael_defeating_Satan_by_Guido_Reni.jpg",
+    "size_kb": 6587,
+    "safe_filename": "fresh_art_017_saint_michael_the_archang.jpg"
+  },
+  {
+    "artist": "Guido Reni",
+    "title": "Atalanta and Hippomenes",
+    "museum": "Prado Museum, Madrid",
+    "year": "1618-1619",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Guido_Reni_-_Atalanta_and_Hippomenes_-_Google_Art_Project.jpg",
+    "size_kb": 3158,
+    "safe_filename": "fresh_art_018_atalanta_and_hippomenes.jpg"
+  },
+  {
+    "artist": "Guercino",
+    "title": "Et in Arcadia ego",
+    "museum": "Galleria Nazionale d Arte Antica, Rome",
+    "year": "1618-1622",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Guercino_Et_in_Arcadia_ego_%28detail%29.jpg",
+    "size_kb": 608,
+    "safe_filename": "fresh_art_019_et_in_arcadia_ego.jpg"
+  },
+  {
+    "artist": "Sandro Botticelli",
+    "title": "Primavera",
+    "museum": "Uffizi Gallery, Florence",
+    "year": "1480",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Galer%C3%ADa_Uffizi%2C_Florencia%2C_Italia%2C_2022-09-18%2C_DD_39.jpg",
+    "size_kb": 9774,
+    "safe_filename": "fresh_art_020_primavera.jpg"
+  },
+  {
+    "artist": "Sandro Botticelli",
+    "title": "Pallas and the Centaur",
+    "museum": "Uffizi Gallery, Florence",
+    "year": "1482",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Pallade_col_Centauro%2C_Sandro_Botticelli_%281482%29.jpg",
+    "size_kb": 35535,
+    "safe_filename": "fresh_art_021_pallas_and_the_centaur.jpg"
+  },
+  {
+    "artist": "Parmigianino",
+    "title": "Self-portrait in a Convex Mirror",
+    "museum": "Kunsthistorisches Museum, Vienna",
+    "year": "1524",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Francesco_Mazzola%2C_called_Parmigianino_-_Self-Portrait_in_a_Convex_Mirror_-_Google_Art_ProjectFXD.jpg",
+    "size_kb": 2667,
+    "safe_filename": "fresh_art_022_self-portrait_in_a_convex.jpg"
+  },
+  {
+    "artist": "Bronzino",
+    "title": "Venus, Cupid, Folly and Time",
+    "museum": "National Gallery, London",
+    "year": "1545",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Angelo_Bronzino_-_Venus%2C_Cupid%2C_Folly_and_Time_-_National_Gallery%2C_London.jpg",
+    "size_kb": 4527,
+    "safe_filename": "fresh_art_023_venus,_cupid,_folly_and_t.jpg"
+  },
+  {
+    "artist": "Canaletto",
+    "title": "The Stonemason Yard",
+    "museum": "National Gallery, London",
+    "year": "1725",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Canaletto_-_The_Stonemason%27s_Yard.jpg",
+    "size_kb": 13467,
+    "safe_filename": "fresh_art_024_the_stonemason_yard.jpg"
+  },
+  {
+    "artist": "Tiepolo",
+    "title": "The Banquet of Cleopatra",
+    "museum": "National Gallery of Victoria, Melbourne",
+    "year": "1744",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/The_Banquet_of_Cleopatra_%28Tiepolo_paintings%29_-_Stockholms_universitet.jpg",
+    "size_kb": 22742,
+    "safe_filename": "fresh_art_025_the_banquet_of_cleopatra.jpg"
+  },
+  {
+    "artist": "Rembrandt",
+    "title": "The Storm on the Sea of Galilee",
+    "museum": "Isabella Stewart Gardner Museum",
+    "year": "1633",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Rembrandt_Christ_in_the_Storm_on_the_Lake_of_Galilee.jpg",
+    "size_kb": 6012,
+    "safe_filename": "fresh_art_026_the_storm_on_the_sea_of_g.jpg"
+  },
+  {
+    "artist": "Rembrandt",
+    "title": "Belshazzar Feast",
+    "museum": "National Gallery, London",
+    "year": "1635",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Belshazzar%E2%80%99s_feast%2C_by_Rembrandt.jpg",
+    "size_kb": 15244,
+    "safe_filename": "fresh_art_027_belshazzar_feast.jpg"
+  },
+  {
+    "artist": "Rembrandt",
+    "title": "The Blinding of Samson",
+    "museum": "Stadel Museum, Frankfurt",
+    "year": "1636",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Rembrandt_Harmensz._van_Rijn_-_The_Blinding_of_Samson_-_Google_Art_Project.jpg",
+    "size_kb": 4939,
+    "safe_filename": "fresh_art_028_the_blinding_of_samson.jpg"
+  },
+  {
+    "artist": "Rembrandt",
+    "title": "The Return of the Prodigal Son",
+    "museum": "Hermitage Museum, Saint Petersburg",
+    "year": "1669",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg",
+    "size_kb": 256207,
+    "safe_filename": "fresh_art_029_the_return_of_the_prodiga.jpg"
+  },
+  {
+    "artist": "Rembrandt",
+    "title": "Danae",
+    "museum": "Hermitage Museum, Saint Petersburg",
+    "year": "1636",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Hermitage_hall_254_-_Danae_by_Rembrandt.jpg",
+    "size_kb": 8917,
+    "safe_filename": "fresh_art_030_danae.jpg"
+  },
+  {
+    "artist": "Rembrandt",
+    "title": "Syndics of the Drapers Guild",
+    "museum": "Rijksmuseum, Amsterdam",
+    "year": "1662",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Rembrandt_-_De_Staalmeesters-_het_college_van_staalmeesters_%28waardijns%29_van_het_Amsterdamse_lakenbereidersgilde_-_Google_Art_Project.jpg",
+    "size_kb": 12961,
+    "safe_filename": "fresh_art_031_syndics_of_the_drapers_gu.jpg"
+  },
+  {
+    "artist": "Johannes Vermeer",
+    "title": "The Milkmaid",
+    "museum": "Rijksmuseum, Amsterdam",
+    "year": "1658-1659",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.jpg",
+    "size_kb": 10959,
+    "safe_filename": "fresh_art_032_the_milkmaid.jpg"
+  },
+  {
+    "artist": "Johannes Vermeer",
+    "title": "View of Delft",
+    "museum": "Mauritshuis, The Hague",
+    "year": "1660-1661",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/View_of_Delft%2C_by_Johannes_Vermeer.jpg",
+    "size_kb": 17908,
+    "safe_filename": "fresh_art_033_view_of_delft.jpg"
+  },
+  {
+    "artist": "Johannes Vermeer",
+    "title": "The Little Street",
+    "museum": "Rijksmuseum, Amsterdam",
+    "year": "1657-1658",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Johannes_Vermeer_-_Gezicht_op_huizen_in_Delft%2C_bekend_als_%27Het_straatje%27_-_Google_Art_Project.jpg",
+    "size_kb": 11577,
+    "safe_filename": "fresh_art_034_the_little_street.jpg"
+  },
+  {
+    "artist": "Johannes Vermeer",
+    "title": "The Music Lesson",
+    "museum": "Royal Collection, UK",
+    "year": "1662-1665",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Johannes_Vermeer_-_Lady_at_the_Virginal_with_a_Gentleman%2C_%27The_Music_Lesson%27_-_Google_Art_ProjectFXD.jpg",
+    "size_kb": 12595,
+    "safe_filename": "fresh_art_035_the_music_lesson.jpg"
+  },
+  {
+    "artist": "Johannes Vermeer",
+    "title": "The Geographer",
+    "museum": "Stadel Museum, Frankfurt",
+    "year": "1668-1669",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Johannes_Vermeer_-_The_Geographer_-_Google_Art_Project.jpg",
+    "size_kb": 22683,
+    "safe_filename": "fresh_art_036_the_geographer.jpg"
+  },
+  {
+    "artist": "Frans Hals",
+    "title": "Malle Babbe",
+    "museum": "Gemaldegalerie, Berlin",
+    "year": "1633-1635",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Frans_Hals_Malle_Babbe_about_1640-1646_Gem%C3%A4ldegalerie_Berlin_9387.jpg",
+    "size_kb": 28513,
+    "safe_filename": "fresh_art_037_malle_babbe.jpg"
+  },
+  {
+    "artist": "Frans Hals",
+    "title": "Gypsy Girl",
+    "museum": "Louvre Museum, Paris",
+    "year": "1628-1630",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Frans_Hals_008.jpg",
+    "size_kb": 1955,
+    "safe_filename": "fresh_art_038_gypsy_girl.jpg"
+  },
+  {
+    "artist": "Jan Steen",
+    "title": "The Feast of Saint Nicholas",
+    "museum": "Rijksmuseum, Amsterdam",
+    "year": "1665-1668",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Jan_Havicksz._Steen_%E2%80%93_Het_Sint-Nicolaasfeest_%E2%80%93_Google_Art_Project.jpg",
+    "size_kb": 7587,
+    "safe_filename": "fresh_art_039_the_feast_of_saint_nichol.jpg"
+  },
+  {
+    "artist": "Jan Steen",
+    "title": "The Dissolute Household",
+    "museum": "Apsley House, London",
+    "year": "1663-1664",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/The_Dissolute_Household_MET_DP146465.jpg",
+    "size_kb": 2335,
+    "safe_filename": "fresh_art_040_the_dissolute_household.jpg"
+  },
+  {
+    "artist": "Pieter de Hooch",
+    "title": "Courtyard of a House in Delft",
+    "museum": "National Gallery, London",
+    "year": "1658",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Pieter_de_hooch%2C_cortile_di_una_casa_a_delft%2C_1658.jpg",
+    "size_kb": 7224,
+    "safe_filename": "fresh_art_041_courtyard_of_a_house_in_d.jpg"
+  },
+  {
+    "artist": "Jacob van Ruisdael",
+    "title": "The Windmill at Wijk bij Duurstede",
+    "museum": "Rijksmuseum, Amsterdam",
+    "year": "1670",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/The_Windmill_at_Wijk_bij_Duurstede_1670_Ruisdael.jpg",
+    "size_kb": 6416,
+    "safe_filename": "fresh_art_042_the_windmill_at_wijk_bij_.jpg"
+  },
+  {
+    "artist": "Jacob van Ruisdael",
+    "title": "The Jewish Cemetery",
+    "museum": "Gemaldegalerie Alte Meister, Dresden",
+    "year": "1655-1657",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Jacob_Isaackszoon_van_Ruisdael_-_The_Jewish_Cemetery_%281654_or_1655%29.jpg",
+    "size_kb": 2237,
+    "safe_filename": "fresh_art_043_the_jewish_cemetery.jpg"
+  },
+  {
+    "artist": "Meindert Hobbema",
+    "title": "The Avenue at Middelharnis",
+    "museum": "National Gallery, London",
+    "year": "1689",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Meindert_Hobbema_001.jpg",
+    "size_kb": 11238,
+    "safe_filename": "fresh_art_044_the_avenue_at_middelharni.jpg"
+  },
+  {
+    "artist": "Aelbert Cuyp",
+    "title": "The Maas at Dordrecht",
+    "museum": "National Gallery of Art, Washington",
+    "year": "1650",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Aelbert_Cuyp_-_The_Maas_at_Dordrecht_-_Google_Art_Project.jpg",
+    "size_kb": 9956,
+    "safe_filename": "fresh_art_045_the_maas_at_dordrecht.jpg"
+  },
+  {
+    "artist": "Peter Paul Rubens",
+    "title": "The Descent from the Cross",
+    "museum": "Cathedral of Our Lady, Antwerp",
+    "year": "1612-1614",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Peter_Paul_Rubens_-_Descent_from_the_Cross_-_WGA20212.jpg",
+    "size_kb": 14897,
+    "safe_filename": "fresh_art_046_the_descent_from_the_cros.jpg"
+  },
+  {
+    "artist": "Peter Paul Rubens",
+    "title": "The Garden of Love",
+    "museum": "Prado Museum, Madrid",
+    "year": "1633",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/El_Jard%C3%ADn_del_Amor_%28Rubens%29.jpg",
+    "size_kb": 10977,
+    "safe_filename": "fresh_art_047_the_garden_of_love.jpg"
+  },
+  {
+    "artist": "Peter Paul Rubens",
+    "title": "The Judgment of Paris",
+    "museum": "National Gallery, London",
+    "year": "1636",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Juicio_de_Par%C3%ADs_de_Rubens%2C_Galer%C3%ADa_Nacional%2C_Londres%2C_Inglaterra%2C_2014-08-11%2C_DD_175.JPG",
+    "size_kb": 8297,
+    "safe_filename": "fresh_art_048_the_judgment_of_paris.jpg"
+  },
+  {
+    "artist": "Peter Paul Rubens",
+    "title": "Samson and Delilah",
+    "museum": "National Gallery, London",
+    "year": "1609-1610",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Peter_Paul_Rubens_-_Samson_and_Delilah_-_Google_Art_Project.jpg",
+    "size_kb": 6045,
+    "safe_filename": "fresh_art_049_samson_and_delilah.jpg"
+  },
+  {
+    "artist": "Anthony van Dyck",
+    "title": "Equestrian Portrait of Charles I",
+    "museum": "National Gallery, London",
+    "year": "1637-1638",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Anthonis_van_Dyck_-_Equestrian_Portrait_of_Charles_I_-_National_Gallery%2C_London.jpg",
+    "size_kb": 6891,
+    "safe_filename": "fresh_art_050_equestrian_portrait_of_ch.jpg"
+  },
+  {
+    "artist": "Anthony van Dyck",
+    "title": "Cupid and Psyche",
+    "museum": "Royal Collection, UK",
+    "year": "1638-1640",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Anthony_van_Dyck_%281599-1641%29_-_Cupid_and_Psyche_-_RCIN_405571_-_Royal_Collection.jpg",
+    "size_kb": 3438,
+    "safe_filename": "fresh_art_051_cupid_and_psyche.jpg"
+  },
+  {
+    "artist": "Anthony van Dyck",
+    "title": "Self-Portrait with a Sunflower",
+    "museum": "Private Collection",
+    "year": "1633",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Sir_Anthony_Van_Dyck_-_Charles_I_%281600-49%29_-_Google_Art_Project.jpg",
+    "size_kb": 12132,
+    "safe_filename": "fresh_art_052_self-portrait_with_a_sunf.jpg"
+  },
+  {
+    "artist": "Pieter Bruegel the Elder",
+    "title": "The Fall of the Rebel Angels",
+    "museum": "Royal Museums of Fine Arts of Belgium",
+    "year": "1562",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Pieter_Bruegel_the_Elder_-_The_Fall_of_the_Rebel_Angels_-_Google_Art_Project.jpg",
+    "size_kb": 229069,
+    "safe_filename": "fresh_art_053_the_fall_of_the_rebel_ang.jpg"
+  },
+  {
+    "artist": "Pieter Bruegel the Elder",
+    "title": "The Peasant Wedding",
+    "museum": "Kunsthistorisches Museum, Vienna",
+    "year": "1567",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Pieter_Bruegel_the_Elder_-_Peasant_Wedding_-_Google_Art_Project_2.jpg",
+    "size_kb": 13101,
+    "safe_filename": "fresh_art_054_the_peasant_wedding.jpg"
+  },
+  {
+    "artist": "Pieter Bruegel the Elder",
+    "title": "Children Games",
+    "museum": "Kunsthistorisches Museum, Vienna",
+    "year": "1560",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Children%27s_Games_%28Bruegel%29.jpg",
+    "size_kb": 249447,
+    "safe_filename": "fresh_art_055_children_games.jpg"
+  },
+  {
+    "artist": "Pieter Bruegel the Elder",
+    "title": "The Netherlandish Proverbs",
+    "museum": "Gemaldegalerie, Berlin",
+    "year": "1559",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Pieter_Bruegel_the_Elder_Netherlandish_Proverbs_1559_Gem%C3%A4ldegalerie_Berlin_9359.jpg",
+    "size_kb": 28176,
+    "safe_filename": "fresh_art_056_the_netherlandish_proverb.jpg"
+  },
+  {
+    "artist": "Hieronymus Bosch",
+    "title": "The Haywain Triptych",
+    "museum": "Prado Museum, Madrid",
+    "year": "1516",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bosch_-_Haywain_Triptych.jpg",
+    "size_kb": 12959,
+    "safe_filename": "fresh_art_057_the_haywain_triptych.jpg"
+  },
+  {
+    "artist": "Hieronymus Bosch",
+    "title": "Ship of Fools",
+    "museum": "Louvre Museum, Paris",
+    "year": "1490-1500",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/The_Ship_of_Fools_by_Hieronymus_Bosch_%28Vermeylen_1939%29.jpg",
+    "size_kb": 3052,
+    "safe_filename": "fresh_art_058_ship_of_fools.jpg"
+  },
+  {
+    "artist": "Rogier van der Weyden",
+    "title": "The Descent from the Cross",
+    "museum": "Prado Museum, Madrid",
+    "year": "1435",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/El_Descendimiento%2C_by_Rogier_van_der_Weyden%2C_from_Prado_in_Google_Earth.jpg",
+    "size_kb": 202987,
+    "safe_filename": "fresh_art_059_the_descent_from_the_cros.jpg"
+  },
+  {
+    "artist": "Jan van Eyck",
+    "title": "The Arnolfini Portrait",
+    "museum": "National Gallery, London",
+    "year": "1434",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Eyck%2C_Jan_van_-_Arnolfini_Portrait_-_NG.jpg",
+    "size_kb": 14005,
+    "safe_filename": "fresh_art_060_the_arnolfini_portrait.jpg"
+  },
+  {
+    "artist": "Jan van Eyck",
+    "title": "Madonna of Chancellor Rolin",
+    "museum": "Louvre Museum, Paris",
+    "year": "1435",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/La_Vierge_du_chancelier_Rolin_-_Jan_van_Eyck_-_Mus%C3%A9e_du_Louvre_Peintures_INV_1271_%3B_MR_705.jpg",
+    "size_kb": 22236,
+    "safe_filename": "fresh_art_061_madonna_of_chancellor_rol.jpg"
+  },
+  {
+    "artist": "Judith Leyster",
+    "title": "The Proposition",
+    "museum": "Mauritshuis, The Hague",
+    "year": "1631",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Judith_Leyster_-_Man_Offering_Money_to_a_Young_Woman_-_564_-_Mauritshuis.jpg",
+    "size_kb": 7593,
+    "safe_filename": "fresh_art_062_the_proposition.jpg"
+  },
+  {
+    "artist": "Judith Leyster",
+    "title": "Self-Portrait",
+    "museum": "National Gallery of Art, Washington",
+    "year": "1630",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Judith_Leyster_-_Self-Portrait_-_Google_Art_Project.jpg",
+    "size_kb": 18536,
+    "safe_filename": "fresh_art_063_self-portrait.jpg"
+  },
+  {
+    "artist": "Gerrit Dou",
+    "title": "The Astronomer",
+    "museum": "National Gallery, London",
+    "year": "1650",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/G._Dou_-_De_astroloog_-_B_565_-_Museum_De_Lakenhal.jpg",
+    "size_kb": 627,
+    "safe_filename": "fresh_art_064_the_astronomer.jpg"
+  },
+  {
+    "artist": "Hendrick Avercamp",
+    "title": "Winter Landscape with Ice Skaters",
+    "museum": "Rijksmuseum, Amsterdam",
+    "year": "1608",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Hendrick_Avercamp_-_Ijs_landschap_%28ca.1610%29.jpg",
+    "size_kb": 4193,
+    "safe_filename": "fresh_art_065_winter_landscape_with_ice.jpg"
+  },
+  {
+    "artist": "Willem Claesz Heda",
+    "title": "Still Life with Gilded Cup",
+    "museum": "Rijksmuseum, Amsterdam",
+    "year": "1635",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Pieter_van_Overschee_%28active_1660-70s%29_-_Still_Life_with_a_Fruit_Pie_-_RCIN_406126_-_Royal_Collection.jpg",
+    "size_kb": 1589,
+    "safe_filename": "fresh_art_066_still_life_with_gilded_cu.jpg"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "The Triumph of Bacchus",
+    "museum": "Prado Museum, Madrid",
+    "year": "1628-1629",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Vel%C3%A1zquez_-_El_Triunfo_de_Baco_o_Los_Borrachos_%28Museo_del_Prado%2C_1628-29%29.jpg",
+    "size_kb": 2069,
+    "safe_filename": "fresh_art_067_the_triumph_of_bacchus.jpg"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "The Surrender of Breda",
+    "museum": "Prado Museum, Madrid",
+    "year": "1634-1635",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Velazquez-The_Surrender_of_Breda.jpg",
+    "size_kb": 9056,
+    "safe_filename": "fresh_art_068_the_surrender_of_breda.jpg"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "Apollo in the Forge of Vulcan",
+    "museum": "Prado Museum, Madrid",
+    "year": "1630",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Diego_Velasquez%2C_The_Forge_of_Vulcan.jpg",
+    "size_kb": 2632,
+    "safe_filename": "fresh_art_069_apollo_in_the_forge_of_vu.jpg"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "Portrait of Innocent X",
+    "museum": "Doria Pamphilj Gallery, Rome",
+    "year": "1650",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Portrait_of_Innocentius_X_by_Diego_Vel%C3%A1zquez_in_Galleria_Doria_Pamphilj_%28Rome%29.jpg",
+    "size_kb": 22731,
+    "safe_filename": "fresh_art_070_portrait_of_innocent_x.jpg"
+  },
+  {
+    "artist": "Diego Velázquez",
+    "title": "The Spinners",
+    "museum": "Prado Museum, Madrid",
+    "year": "1657",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Velazquez-las_hilanderas.jpg",
+    "size_kb": 7255,
+    "safe_filename": "fresh_art_071_the_spinners.jpg"
+  },
+  {
+    "artist": "Francisco Goya",
+    "title": "The Third of May 1808",
+    "museum": "Prado Museum, Madrid",
+    "year": "1814",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_in_Google_Earth.jpg",
+    "size_kb": 189094,
+    "safe_filename": "fresh_art_072_the_third_of_may_1808.jpg"
+  },
+  {
+    "artist": "Francisco Goya",
+    "title": "The Parasol",
+    "museum": "Prado Museum, Madrid",
+    "year": "1777",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/El_quitasol%2C_Francisco_Goya.jpg",
+    "size_kb": 1327,
+    "safe_filename": "fresh_art_073_the_parasol.jpg"
+  },
+  {
+    "artist": "Francisco Goya",
+    "title": "Witches Flight",
+    "museum": "Prado Museum, Madrid",
+    "year": "1798",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Francisco_de_Goya_-_Vuelo_de_brujas_%281798%29.jpg",
+    "size_kb": 5686,
+    "safe_filename": "fresh_art_074_witches_flight.jpg"
+  },
+  {
+    "artist": "Francisco Goya",
+    "title": "Duel with Cudgels",
+    "museum": "Prado Museum, Madrid",
+    "year": "1820-1823",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Francisco_de_Goya_y_Lucientes_-_Duelo_a_garrotazos.jpg",
+    "size_kb": 6275,
+    "safe_filename": "fresh_art_075_duel_with_cudgels.jpg"
+  },
+  {
+    "artist": "El Greco",
+    "title": "The Burial of the Count of Orgaz",
+    "museum": "Santo Tome, Toledo",
+    "year": "1586-1588",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/El_Greco_-_The_Burial_of_the_Count_of_Orgaz.JPG",
+    "size_kb": 1348,
+    "safe_filename": "fresh_art_076_the_burial_of_the_count_o.jpg"
+  },
+  {
+    "artist": "El Greco",
+    "title": "View of Toledo",
+    "museum": "Metropolitan Museum of Art, New York",
+    "year": "1596-1600",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Saint_Paul%2C_detail._El_Greco_Museum%2C_Toledo._Spain.jpg",
+    "size_kb": 9919,
+    "safe_filename": "fresh_art_077_view_of_toledo.jpg"
+  },
+  {
+    "artist": "El Greco",
+    "title": "The Disrobing of Christ",
+    "museum": "Toledo Cathedral",
+    "year": "1577-1579",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/The_Disrobing_of_Christ_-_El_Greco.jpg",
+    "size_kb": 26972,
+    "safe_filename": "fresh_art_078_the_disrobing_of_christ.jpg"
+  },
+  {
+    "artist": "Bartolomé Esteban Murillo",
+    "title": "The Young Beggar",
+    "museum": "Louvre Museum, Paris",
+    "year": "1645-1650",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Bartolom%C3%A9_Esteban_Murillo_-_Joven_mendigo_%281645-50%29.jpg",
+    "size_kb": 2917,
+    "safe_filename": "fresh_art_079_the_young_beggar.jpg"
+  },
+  {
+    "artist": "Bartolomé Esteban Murillo",
+    "title": "Two Women at a Window",
+    "museum": "National Gallery of Art, Washington",
+    "year": "1655-1660",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Bartolom%C3%A9_Esteban_Perez_Murillo_014.jpg",
+    "size_kb": 99154,
+    "safe_filename": "fresh_art_080_two_women_at_a_window.jpg"
+  },
+  {
+    "artist": "Jusepe de Ribera",
+    "title": "The Clubfoot",
+    "museum": "Louvre Museum, Paris",
+    "year": "1642",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/The_Clubfoot_by_Jusepe_de_Ribera_%282%29.jpg",
+    "size_kb": 10773,
+    "safe_filename": "fresh_art_081_the_clubfoot.jpg"
+  },
+  {
+    "artist": "Francisco de Zurbarán",
+    "title": "Saint Serapion",
+    "museum": "Wadsworth Atheneum, Hartford",
+    "year": "1628",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Saint_Serapion_%28%3F%29._Engraving_by_Colombo%2C_1791._Wellcome_V0032979.jpg",
+    "size_kb": 4094,
+    "safe_filename": "fresh_art_082_saint_serapion.jpg"
+  },
+  {
+    "artist": "Nicolas Poussin",
+    "title": "Landscape with the Funeral of Phocion",
+    "museum": "National Museum Cardiff",
+    "year": "1648",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Nicolas_Poussin_-_The_Burial_of_Phocion.jpg",
+    "size_kb": 464,
+    "safe_filename": "fresh_art_083_landscape_with_the_funera.jpg"
+  },
+  {
+    "artist": "Nicolas Poussin",
+    "title": "The Abduction of the Sabine Women",
+    "museum": "Louvre Museum, Paris",
+    "year": "1637-1638",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/The_Abduction_of_the_Sabine_Women_MET_46.160_3.jpg",
+    "size_kb": 10873,
+    "safe_filename": "fresh_art_084_the_abduction_of_the_sabi.jpg"
+  },
+  {
+    "artist": "Claude Lorrain",
+    "title": "Seaport with the Embarkation of Queen of Sheba",
+    "museum": "National Gallery, London",
+    "year": "1648",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Claude_Lorrain_008.jpg",
+    "size_kb": 11637,
+    "safe_filename": "fresh_art_085_seaport_with_the_embarkat.jpg"
+  },
+  {
+    "artist": "Claude Lorrain",
+    "title": "Pastoral Landscape",
+    "museum": "Louvre Museum, Paris",
+    "year": "1638",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/La_campi%C3%B1a_romana%2C1639%2C_Claude_Lorrain.jpg",
+    "size_kb": 1560,
+    "safe_filename": "fresh_art_086_pastoral_landscape.jpg"
+  },
+  {
+    "artist": "Georges de La Tour",
+    "title": "Joseph the Carpenter",
+    "museum": "Louvre Museum, Paris",
+    "year": "1642",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Saint_Joseph_Charpentier.jpg",
+    "size_kb": 6396,
+    "safe_filename": "fresh_art_087_joseph_the_carpenter.jpg"
+  },
+  {
+    "artist": "Georges de La Tour",
+    "title": "The Penitent Magdalene",
+    "museum": "Metropolitan Museum of Art, New York",
+    "year": "1640",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Georges_de_La_Tour_009.jpg",
+    "size_kb": 2013,
+    "safe_filename": "fresh_art_088_the_penitent_magdalene.jpg"
+  },
+  {
+    "artist": "Jean-Antoine Watteau",
+    "title": "The Embarkation for Cythera",
+    "museum": "Louvre Museum, Paris",
+    "year": "1717",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/L%27Embarquement_pour_Cyth%C3%A8re%2C_by_Antoine_Watteau%2C_from_C2RMF_retouched.jpg",
+    "size_kb": 91400,
+    "safe_filename": "fresh_art_089_the_embarkation_for_cythe.jpg"
+  },
+  {
+    "artist": "Jean-Antoine Watteau",
+    "title": "Pierrot",
+    "museum": "Louvre Museum, Paris",
+    "year": "1718-1719",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Jean-antoine_watteau%2C_pierrot%2C_detto_anche_gilles%2C_1718-1719_ca._01.jpg",
+    "size_kb": 3141,
+    "safe_filename": "fresh_art_090_pierrot.jpg"
+  },
+  {
+    "artist": "François Boucher",
+    "title": "The Toilette of Venus",
+    "museum": "Metropolitan Museum of Art, New York",
+    "year": "1751",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/The_Toilette_of_Venus_MET_DP-411-01.jpg",
+    "size_kb": 4240,
+    "safe_filename": "fresh_art_091_the_toilette_of_venus.jpg"
+  },
+  {
+    "artist": "François Boucher",
+    "title": "Diana Leaving the Bath",
+    "museum": "Louvre Museum, Paris",
+    "year": "1742",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Diane_sortant_du_bain_-_Fran%C3%A7ois_Boucher_-_Mus%C3%A9e_du_Louvre_Peintures_INV_2712.jpg",
+    "size_kb": 27153,
+    "safe_filename": "fresh_art_092_diana_leaving_the_bath.jpg"
+  },
+  {
+    "artist": "Jean-Honoré Fragonard",
+    "title": "The Swing",
+    "museum": "Wallace Collection, London",
+    "year": "1767",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Joean_Honor%C3%A9_Fragonard_-_The_Swing.jpg",
+    "size_kb": 2885,
+    "safe_filename": "fresh_art_093_the_swing.jpg"
+  },
+  {
+    "artist": "Jean-Honoré Fragonard",
+    "title": "The Reader",
+    "museum": "National Gallery of Art, Washington",
+    "year": "1770-1772",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Fragonard%2C_The_Reader.jpg",
+    "size_kb": 5314,
+    "safe_filename": "fresh_art_094_the_reader.jpg"
+  },
+  {
+    "artist": "Jean-Baptiste-Siméon Chardin",
+    "title": "The Ray",
+    "museum": "Louvre Museum, Paris",
+    "year": "1728",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/La_Raie_-_Jean_Baptiste_Sim%C3%A9on_Chardin_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3197.jpg",
+    "size_kb": 3414,
+    "safe_filename": "fresh_art_095_the_ray.jpg"
+  },
+  {
+    "artist": "Jean-Baptiste-Siméon Chardin",
+    "title": "The Soap Bubble",
+    "museum": "National Gallery of Art, Washington",
+    "year": "1733-1734",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Jean_Sim%C3%A9on_Chardin_-_Soap_Bubbles_-_Google_Art_Project.jpg",
+    "size_kb": 17804,
+    "safe_filename": "fresh_art_096_the_soap_bubble.jpg"
+  },
+  {
+    "artist": "Jacques-Louis David",
+    "title": "The Death of Marat",
+    "museum": "Royal Museums of Fine Arts of Belgium",
+    "year": "1793",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Jacques-Louis_David_-_Marat_assassinated_-_Google_Art_Project_2.jpg",
+    "size_kb": 89476,
+    "safe_filename": "fresh_art_097_the_death_of_marat.jpg"
+  },
+  {
+    "artist": "Jacques-Louis David",
+    "title": "Oath of the Horatii",
+    "museum": "Louvre Museum, Paris",
+    "year": "1784",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Jacques-Louis_David_-_Oath_of_the_Horatii_-_Google_Art_Project.jpg",
+    "size_kb": 5637,
+    "safe_filename": "fresh_art_098_oath_of_the_horatii.jpg"
+  },
+  {
+    "artist": "Jacques-Louis David",
+    "title": "The Death of Socrates",
+    "museum": "Metropolitan Museum of Art, New York",
+    "year": "1787",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/David_-_The_Death_of_Socrates.jpg",
+    "size_kb": 5405,
+    "safe_filename": "fresh_art_099_the_death_of_socrates.jpg"
+  },
+  {
+    "artist": "Jacques-Louis David",
+    "title": "Napoleon Crossing the Alps",
+    "museum": "Chateau de Malmaison",
+    "year": "1801",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Napoleon_at_the_Great_St._Bernard_-_Jacques-Louis_David_-_Google_Cultural_Institute.jpg",
+    "size_kb": 12265,
+    "safe_filename": "fresh_art_100_napoleon_crossing_the_alp.jpg"
+  },
+  {
+    "artist": "Jean-Auguste-Dominique Ingres",
+    "title": "The Valpinçon Bather",
+    "museum": "Louvre Museum, Paris",
+    "year": "1808",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Jean-Auguste-Dominique_Ingres_-_La_Baigneuse_Valpin%C3%A7on.jpg",
+    "size_kb": 3338,
+    "safe_filename": "fresh_art_101_the_valpinçon_bather.jpg"
+  },
+  {
+    "artist": "Jean-Auguste-Dominique Ingres",
+    "title": "Jupiter and Thetis",
+    "museum": "Musee Granet, Aix-en-Provence",
+    "year": "1811",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Jupiter_and_Thetis_%28Ingres%29.jpg",
+    "size_kb": 14147,
+    "safe_filename": "fresh_art_102_jupiter_and_thetis.jpg"
+  },
+  {
+    "artist": "Eugène Delacroix",
+    "title": "Liberty Leading the People",
+    "museum": "Louvre Museum, Paris",
+    "year": "1830",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg",
+    "size_kb": 30455,
+    "safe_filename": "fresh_art_103_liberty_leading_the_peopl.jpg"
+  },
+  {
+    "artist": "Eugène Delacroix",
+    "title": "The Massacre at Chios",
+    "museum": "Louvre Museum, Paris",
+    "year": "1824",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Sc%C3%A8ne_des_massacres_de_Scio.jpg",
+    "size_kb": 46174,
+    "safe_filename": "fresh_art_104_the_massacre_at_chios.jpg"
+  },
+  {
+    "artist": "Théodore Géricault",
+    "title": "The Raft of the Medusa",
+    "museum": "Louvre Museum, Paris",
+    "year": "1818-1819",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_%28Museo_del_Louvre%2C_1818-19%29.jpg",
+    "size_kb": 16542,
+    "safe_filename": "fresh_art_105_the_raft_of_the_medusa.jpg"
+  },
+  {
+    "artist": "Gustave Courbet",
+    "title": "The Painters Studio",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1855",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Courbet_LAtelier_du_peintre.jpg",
+    "size_kb": 69302,
+    "safe_filename": "fresh_art_106_the_painters_studio.jpg"
+  },
+  {
+    "artist": "Gustave Courbet",
+    "title": "The Desperate Man",
+    "museum": "Private Collection",
+    "year": "1843-1845",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Gustave_Courbet_auto-retrato.jpg",
+    "size_kb": 804,
+    "safe_filename": "fresh_art_107_the_desperate_man.jpg"
+  },
+  {
+    "artist": "Jean-François Millet",
+    "title": "The Angelus",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1857-1859",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Jean-Fran%C3%A7ois_Millet_%28II%29_001.jpg",
+    "size_kb": 5766,
+    "safe_filename": "fresh_art_108_the_angelus.jpg"
+  },
+  {
+    "artist": "Jean-François Millet",
+    "title": "The Gleaners",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1857",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg",
+    "size_kb": 15668,
+    "safe_filename": "fresh_art_109_the_gleaners.jpg"
+  },
+  {
+    "artist": "Jean-François Millet",
+    "title": "The Sower",
+    "museum": "Museum of Fine Arts, Boston",
+    "year": "1850",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Jean-Fran%C3%A7ois_Millet_-_The_Sower_-_Google_Art_Project.jpg",
+    "size_kb": 6654,
+    "safe_filename": "fresh_art_110_the_sower.jpg"
+  },
+  {
+    "artist": "Camille Corot",
+    "title": "Souvenir de Mortefontaine",
+    "museum": "Louvre Museum, Paris",
+    "year": "1864",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Souvenir_de_Mortefontaine_-_Jean-Baptiste_Camille_Corot_-_Mus%C3%A9e_du_Louvre_Peintures_MI_692_bis_-_photo_2.jpg",
+    "size_kb": 30386,
+    "safe_filename": "fresh_art_111_souvenir_de_mortefontaine.jpg"
+  },
+  {
+    "artist": "Camille Corot",
+    "title": "Bridge at Narni",
+    "museum": "Louvre Museum, Paris",
+    "year": "1826",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Le_pont_de_Narni_-_Jean-Baptiste_Camille_Corot_-_Mus%C3%A9e_du_Louvre_Peintures_RF_1613_-_photo_2.jpg",
+    "size_kb": 22709,
+    "safe_filename": "fresh_art_112_bridge_at_narni.jpg"
+  },
+  {
+    "artist": "Honoré Daumier",
+    "title": "The Third-Class Carriage",
+    "museum": "Metropolitan Museum of Art, New York",
+    "year": "1862-1864",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Honor%C3%A9_Daumier_%28French%2C_Marseilles_1808%E2%80%931879_Valmondois%29_-_The_Third-Class_Carriage_-_Google_Art_Project.jpg",
+    "size_kb": 4668,
+    "safe_filename": "fresh_art_113_the_third-class_carriage.jpg"
+  },
+  {
+    "artist": "Honoré Daumier",
+    "title": "Don Quixote",
+    "museum": "Neue Pinakothek, Munich",
+    "year": "1868",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Don_Quichotte_Honor%C3%A9_Daumier.jpg",
+    "size_kb": 11230,
+    "safe_filename": "fresh_art_114_don_quixote.jpg"
+  },
+  {
+    "artist": "Caspar David Friedrich",
+    "title": "The Sea of Ice",
+    "museum": "Kunsthalle Hamburg",
+    "year": "1823-1824",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Caspar_David_Friedrich_-_Das_Eismeer_-_Hamburger_Kunsthalle_-_02.jpg",
+    "size_kb": 842,
+    "safe_filename": "fresh_art_115_the_sea_of_ice.jpg"
+  },
+  {
+    "artist": "Arnold Böcklin",
+    "title": "Isle of the Dead",
+    "museum": "Kunstmuseum Basel",
+    "year": "1880",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Arnold_B%C3%B6cklin_-_The_Isle_of_the_Dead_-_1883_8901.jpg",
+    "size_kb": 32469,
+    "safe_filename": "fresh_art_116_isle_of_the_dead.jpg"
+  },
+  {
+    "artist": "Henry Fuseli",
+    "title": "The Nightmare",
+    "museum": "Detroit Institute of Arts",
+    "year": "1781",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Henry_Fuseli_%281741%E2%80%931825%29%2C_The_Nightmare%2C_1781.jpg",
+    "size_kb": 2248,
+    "safe_filename": "fresh_art_117_the_nightmare.jpg"
+  },
+  {
+    "artist": "William Blake",
+    "title": "The Ancient of Days",
+    "museum": "British Museum, London",
+    "year": "1794",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Oberhausen_-_Gasometer_-_Der_sch%C3%B6ne_Schein_-_The_Ancient_of_Days_%28William_Blake%29_03_ies.jpg",
+    "size_kb": 18899,
+    "safe_filename": "fresh_art_118_the_ancient_of_days.jpg"
+  },
+  {
+    "artist": "J.M.W. Turner",
+    "title": "The Fighting Temeraire",
+    "museum": "National Gallery, London",
+    "year": "1839",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg",
+    "size_kb": 8240,
+    "safe_filename": "fresh_art_119_the_fighting_temeraire.jpg"
+  },
+  {
+    "artist": "J.M.W. Turner",
+    "title": "Rain, Steam and Speed",
+    "museum": "National Gallery, London",
+    "year": "1844",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Rain_Steam_and_Speed_the_Great_Western_Railway.jpg",
+    "size_kb": 7189,
+    "safe_filename": "fresh_art_120_rain,_steam_and_speed.jpg"
+  },
+  {
+    "artist": "J.M.W. Turner",
+    "title": "The Slave Ship",
+    "museum": "Museum of Fine Arts, Boston",
+    "year": "1840",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Slave-ship.jpg",
+    "size_kb": 454,
+    "safe_filename": "fresh_art_121_the_slave_ship.jpg"
+  },
+  {
+    "artist": "John Constable",
+    "title": "The Hay Wain",
+    "museum": "National Gallery, London",
+    "year": "1821",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/John-constable-the-hay-wain.jpg",
+    "size_kb": 9656,
+    "safe_filename": "fresh_art_122_the_hay_wain.jpg"
+  },
+  {
+    "artist": "John Constable",
+    "title": "Salisbury Cathedral from the Bishops Grounds",
+    "museum": "Victoria and Albert Museum, London",
+    "year": "1823",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/John_Constable_-_Salisbury_Cathedral_from_the_Bishop%27s_Garden_-_Google_Art_Project.jpg",
+    "size_kb": 18909,
+    "safe_filename": "fresh_art_123_salisbury_cathedral_from_.jpg"
+  },
+  {
+    "artist": "Thomas Gainsborough",
+    "title": "The Blue Boy",
+    "museum": "Huntington Library, San Marino",
+    "year": "1770",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Thomas_Gainsborough_-_The_Blue_Boy_%281770%29.jpg",
+    "size_kb": 1880,
+    "safe_filename": "fresh_art_124_the_blue_boy.jpg"
+  },
+  {
+    "artist": "Thomas Gainsborough",
+    "title": "Mr and Mrs Andrews",
+    "museum": "National Gallery, London",
+    "year": "1750",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Thomas_Gainsborough_-_Mr._und_Mrs._Andrews_%28c._1750%29.jpg",
+    "size_kb": 6809,
+    "safe_filename": "fresh_art_125_mr_and_mrs_andrews.jpg"
+  },
+  {
+    "artist": "William Hogarth",
+    "title": "Marriage A-la-Mode The Tête à Tête",
+    "museum": "National Gallery, London",
+    "year": "1743",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Marriage_A-la-Mode_2%2C_The_T%C3%AAte_%C3%A0_T%C3%AAte_-_William_Hogarth.jpg",
+    "size_kb": 9509,
+    "safe_filename": "fresh_art_126_marriage_a-la-mode_the_tê.jpg"
+  },
+  {
+    "artist": "George Stubbs",
+    "title": "Whistlejacket",
+    "museum": "National Gallery, London",
+    "year": "1762",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Whistlejacket_by_George_Stubbs_edit.jpg",
+    "size_kb": 5189,
+    "safe_filename": "fresh_art_127_whistlejacket.jpg"
+  },
+  {
+    "artist": "John William Waterhouse",
+    "title": "The Lady of Shalott",
+    "museum": "Tate Britain, London",
+    "year": "1888",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/W.E.F._Britten_-_The_Early_Poems_of_Alfred%2C_Lord_Tennyson_-_The_Lady_of_Shalott.jpg",
+    "size_kb": 20527,
+    "safe_filename": "fresh_art_128_the_lady_of_shalott.jpg"
+  },
+  {
+    "artist": "John William Waterhouse",
+    "title": "Hylas and the Nymphs",
+    "museum": "Manchester Art Gallery",
+    "year": "1896",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Waterhouse_Hylas_and_the_Nymphs_Manchester_Art_Gallery_1896.15.jpg",
+    "size_kb": 1285,
+    "safe_filename": "fresh_art_129_hylas_and_the_nymphs.jpg"
+  },
+  {
+    "artist": "John William Waterhouse",
+    "title": "Miranda The Tempest",
+    "museum": "Art Gallery of Ontario",
+    "year": "1916",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Miranda_-_The_Tempest_JWW.jpg",
+    "size_kb": 1886,
+    "safe_filename": "fresh_art_130_miranda_the_tempest.jpg"
+  },
+  {
+    "artist": "Dante Gabriel Rossetti",
+    "title": "Beata Beatrix",
+    "museum": "Tate Britain, London",
+    "year": "1864-1870",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Dante_Gabriel_Rossetti_-_Beata_Beatrix_-_Google_Art_Project.jpg",
+    "size_kb": 10279,
+    "safe_filename": "fresh_art_131_beata_beatrix.jpg"
+  },
+  {
+    "artist": "Dante Gabriel Rossetti",
+    "title": "Lady Lilith",
+    "museum": "Delaware Art Museum",
+    "year": "1866-1868",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Lady_Lilith%2C_by_Dante_Gabriel_Rossetti.jpg",
+    "size_kb": 1148,
+    "safe_filename": "fresh_art_132_lady_lilith.jpg"
+  },
+  {
+    "artist": "John Everett Millais",
+    "title": "Ophelia",
+    "museum": "Tate Britain, London",
+    "year": "1851-1852",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg",
+    "size_kb": 22949,
+    "safe_filename": "fresh_art_133_ophelia.jpg"
+  },
+  {
+    "artist": "John Everett Millais",
+    "title": "The Blind Girl",
+    "museum": "Birmingham Museum and Art Gallery",
+    "year": "1856",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/John_Everett_Millais_-_The_Blind_Girl%2C_1854-56.jpg",
+    "size_kb": 23101,
+    "safe_filename": "fresh_art_134_the_blind_girl.jpg"
+  },
+  {
+    "artist": "Edward Burne-Jones",
+    "title": "The Beguiling of Merlin",
+    "museum": "Lady Lever Art Gallery, Port Sunlight",
+    "year": "1874",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/BURNE-Jones%2C_Edward_Beguiling_of_Merlin%2C_1874.jpg",
+    "size_kb": 2466,
+    "safe_filename": "fresh_art_135_the_beguiling_of_merlin.jpg"
+  },
+  {
+    "artist": "Ford Madox Brown",
+    "title": "Work",
+    "museum": "Manchester Art Gallery",
+    "year": "1852-1865",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Ford_Madox_Brown_-_The_Last_of_England_-_Google_Art_Project.jpg",
+    "size_kb": 23841,
+    "safe_filename": "fresh_art_136_work.jpg"
+  },
+  {
+    "artist": "William Holman Hunt",
+    "title": "The Light of the World",
+    "museum": "Keble College, Oxford",
+    "year": "1853-1854",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Hunt-light-of-the-world.jpeg",
+    "size_kb": 7668,
+    "safe_filename": "fresh_art_137_the_light_of_the_world.jpg"
+  },
+  {
+    "artist": "Édouard Manet",
+    "title": "Le Dejeuner sur l herbe",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1863",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Edouard_Manet_-_Luncheon_on_the_Grass_-_Google_Art_Project.jpg",
+    "size_kb": 3805,
+    "safe_filename": "fresh_art_138_le_dejeuner_sur_l_herbe.jpg"
+  },
+  {
+    "artist": "Édouard Manet",
+    "title": "Olympia",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1863",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Edouard_Manet_-_Olympia_-_Google_Art_Project_3.jpg",
+    "size_kb": 5211,
+    "safe_filename": "fresh_art_139_olympia.jpg"
+  },
+  {
+    "artist": "Édouard Manet",
+    "title": "A Bar at the Folies-Bergere",
+    "museum": "Courtauld Gallery, London",
+    "year": "1882",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg",
+    "size_kb": 38784,
+    "safe_filename": "fresh_art_140_a_bar_at_the_folies-berge.jpg"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "Impression, Sunrise",
+    "museum": "Musee Marmottan Monet, Paris",
+    "year": "1872",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Monet_-_Impression%2C_Sunrise.jpg",
+    "size_kb": 6939,
+    "safe_filename": "fresh_art_141_impression,_sunrise.jpg"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "Woman with a Parasol",
+    "museum": "National Gallery of Art, Washington",
+    "year": "1875",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Claude_Monet%2C_Woman_with_a_Parasol_-_Madame_Monet_and_Her_Son%2C_1875%2C_NGA_61379.jpg",
+    "size_kb": 19815,
+    "safe_filename": "fresh_art_142_woman_with_a_parasol.jpg"
+  },
+  {
+    "artist": "Claude Monet",
+    "title": "The Rue Montorgueil in Paris",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1878",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Claude_Monet_-_The_Rue_Montorgueil_in_Paris._Celebration_of_June_30%2C_1878_-_Google_Art_Project_color_curves_adj.jpg",
+    "size_kb": 57876,
+    "safe_filename": "fresh_art_143_the_rue_montorgueil_in_pa.jpg"
+  },
+  {
+    "artist": "Pierre-Auguste Renoir",
+    "title": "Bal du moulin de la Galette",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1876",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg",
+    "size_kb": 734583,
+    "safe_filename": "fresh_art_144_bal_du_moulin_de_la_galet.jpg"
+  },
+  {
+    "artist": "Pierre-Auguste Renoir",
+    "title": "Luncheon of the Boating Party",
+    "museum": "The Phillips Collection, Washington",
+    "year": "1881",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg",
+    "size_kb": 19797,
+    "safe_filename": "fresh_art_145_luncheon_of_the_boating_p.jpg"
+  },
+  {
+    "artist": "Pierre-Auguste Renoir",
+    "title": "The Large Bathers",
+    "museum": "Philadelphia Museum of Art",
+    "year": "1884-1887",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Pierre-Auguste_Renoir%2C_French_-_The_Large_Bathers_-_Google_Art_Project.jpg",
+    "size_kb": 6863,
+    "safe_filename": "fresh_art_146_the_large_bathers.jpg"
+  },
+  {
+    "artist": "Edgar Degas",
+    "title": "L Absinthe",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1876",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/In_a_Cafe_aka_Absinthe_by_Edgar_Degas_%2852256229739%29.jpg",
+    "size_kb": 11538,
+    "safe_filename": "fresh_art_147_l_absinthe.jpg"
+  },
+  {
+    "artist": "Edgar Degas",
+    "title": "The Bellelli Family",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1858-1867",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Edgar_Degas_-_The_Bellelli_Family_-_Google_Art_Project.jpg",
+    "size_kb": 5863,
+    "safe_filename": "fresh_art_148_the_bellelli_family.jpg"
+  },
+  {
+    "artist": "Camille Pissarro",
+    "title": "Boulevard Montmartre, Spring",
+    "museum": "Private Collection",
+    "year": "1897",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Camille_Pissarro_-_Boulevard_Montmartre%2C_Spring_-_Google_Art_Project.jpg",
+    "size_kb": 4011,
+    "safe_filename": "fresh_art_149_boulevard_montmartre,_spr.jpg"
+  },
+  {
+    "artist": "Berthe Morisot",
+    "title": "The Cradle",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1872",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Berthe_Morisot_-_The_Cradle_-_Google_Art_Project.jpg",
+    "size_kb": 11485,
+    "safe_filename": "fresh_art_150_the_cradle.jpg"
+  },
+  {
+    "artist": "Mary Cassatt",
+    "title": "Little Girl in a Blue Armchair",
+    "museum": "National Gallery of Art, Washington",
+    "year": "1878",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Cassat_-_Blue_Armchair_NGA.jpg",
+    "size_kb": 142476,
+    "safe_filename": "fresh_art_151_little_girl_in_a_blue_arm.jpg"
+  },
+  {
+    "artist": "Mary Cassatt",
+    "title": "The Child Bath",
+    "museum": "Art Institute of Chicago",
+    "year": "1893",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Mary_Cassatt_-_The_Child%27s_Bath_-_1893.jpeg",
+    "size_kb": 3315,
+    "safe_filename": "fresh_art_152_the_child_bath.jpg"
+  },
+  {
+    "artist": "Gustave Caillebotte",
+    "title": "Paris Street Rainy Day",
+    "museum": "Art Institute of Chicago",
+    "year": "1877",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Gustave_Caillebotte_-_Paris_Street%3B_Rainy_Day_-_Google_Art_Project.jpg",
+    "size_kb": 5244,
+    "safe_filename": "fresh_art_153_paris_street_rainy_day.jpg"
+  },
+  {
+    "artist": "Gustave Caillebotte",
+    "title": "The Floor Scrapers",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1875",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/The_Floor_Scrapers_by_Gustave_Caillebotte_%2852255968468%29.jpg",
+    "size_kb": 13056,
+    "safe_filename": "fresh_art_154_the_floor_scrapers.jpg"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "Starry Night Over the Rhone",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1888",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/The_Starry_Night_by_Vincent_Van_Gogh_%2852254965920%29.jpg",
+    "size_kb": 11887,
+    "safe_filename": "fresh_art_155_starry_night_over_the_rho.jpg"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "Wheatfield with Crows",
+    "museum": "Van Gogh Museum, Amsterdam",
+    "year": "1890",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Korenveld_met_kraaien_-_s0149V1962_-_Van_Gogh_Museum.jpg",
+    "size_kb": 26825,
+    "safe_filename": "fresh_art_156_wheatfield_with_crows.jpg"
+  },
+  {
+    "artist": "Vincent van Gogh",
+    "title": "The Bedroom",
+    "museum": "Van Gogh Museum, Amsterdam",
+    "year": "1888",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg",
+    "size_kb": 258429,
+    "safe_filename": "fresh_art_157_the_bedroom.jpg"
+  },
+  {
+    "artist": "Paul Cézanne",
+    "title": "The Large Bathers",
+    "museum": "Philadelphia Museum of Art",
+    "year": "1898-1905",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Paul_C%C3%A9zanne%2C_French_-_The_Large_Bathers_-_Google_Art_Project.jpg",
+    "size_kb": 8570,
+    "safe_filename": "fresh_art_158_the_large_bathers.jpg"
+  },
+  {
+    "artist": "Paul Cézanne",
+    "title": "The Card Players",
+    "museum": "Musee d Orsay, Paris",
+    "year": "1894-1895",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg",
+    "size_kb": 12496,
+    "safe_filename": "fresh_art_159_the_card_players.jpg"
+  },
+  {
+    "artist": "Paul Gauguin",
+    "title": "Where Do We Come From",
+    "museum": "Museum of Fine Arts, Boston",
+    "year": "1897-1898",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Gauguin_-_Where_Do_We_Come_From%3F_What_Are_We%3F_Where_Are_We_Going%3F_%281897-98%29.jpg",
+    "size_kb": 3283,
+    "safe_filename": "fresh_art_160_where_do_we_come_from.jpg"
+  }
+]

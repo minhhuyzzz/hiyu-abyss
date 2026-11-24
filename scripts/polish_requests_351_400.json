@@ -1,0 +1,64 @@
+{
+  "requests": [
+    {
+      "copyPaste": {
+        "source": {
+          "sheetId": 0,
+          "startRowIndex": 203,
+          "endRowIndex": 204,
+          "startColumnIndex": 0,
+          "endColumnIndex": 17
+        },
+        "destination": {
+          "sheetId": 0,
+          "startRowIndex": 351,
+          "endRowIndex": 401,
+          "startColumnIndex": 0,
+          "endColumnIndex": 17
+        },
+        "pasteType": "PASTE_FORMAT"
+      }
+    },
+    {
+      "copyPaste": {
+        "source": {
+          "sheetId": 0,
+          "startRowIndex": 203,
+          "endRowIndex": 204,
+          "startColumnIndex": 16,
+          "endColumnIndex": 17
+        },
+        "destination": {
+          "sheetId": 0,
+          "startRowIndex": 351,
+          "endRowIndex": 401,
+          "startColumnIndex": 16,
+          "endColumnIndex": 17
+        },
+        "pasteType": "PASTE_DATA_VALIDATION"
+      }
+    },
+    {
+      "repeatCell": {
+        "range": {
+          "sheetId": 0,
+          "startRowIndex": 351,
+          "endRowIndex": 401,
+          "startColumnIndex": 0,
+          "endColumnIndex": 17
+        },
+        "cell": {
+          "userEnteredFormat": {
+            "wrapStrategy": "WRAP",
+            "verticalAlignment": "MIDDLE",
+            "textFormat": {
+              "fontFamily": "Roboto",
+              "fontSize": 9
+            }
+          }
+        },
+        "fields": "userEnteredFormat.wrapStrategy,userEnteredFormat.verticalAlignment,userEnteredFormat.textFormat.fontFamily,userEnteredFormat.textFormat.fontSize"
+      }
+    }
+  ]
+}

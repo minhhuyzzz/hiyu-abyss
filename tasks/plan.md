@@ -1,172 +1,113 @@
-# Kế Hoạch Triển Khai: Thiết Kế Ảnh Sơn Dầu Khử AI Cho Từng Trang Của 50 Bộ Bài Chữa Lành (Theme 251 -> 300)
+# Kế Hoạch Sản Xuất: 50 Bài Triết Ngôn Tâm Lý Ngắn Gọn, Đời Thực & Chuẩn Ngữ Việt (STT 351 -> 400)
 
-> **Mục tiêu:** Thiết kế, giám tuyển và lập trình pipeline chế tác mỹ thuật tranh sơn dầu chuẩn bảo tàng `HYA-08` cho trọn vẹn **50 theme mới (Theme 251 đến 300)**, với tổng cộng **103 slide độc lập** tương ứng chính xác với từng trang nội dung của mỗi bài.  
-> **Cương lĩnh mỹ thuật:** Chuyển đổi toàn diện từ Chiaroscuro tăm tối/u uất sang **Ấn tượng Ánh sáng & Bình thản Khắc kỷ (Impressionism, Romanticism, Barbizon, Hudson River School)** — ấm áp, tràn ngập ánh nắng bình minh, thiên nhiên tĩnh tại và chiều sâu chiêm nghiệm.  
-> **Nguyên tắc bất biến:** Tuân thủ quy chuẩn `AGENTS.md` (Section 4) — **Mỗi slide là một tác phẩm độc lập**, không crop/zoom lặp ảnh cũ; 100% khử dấu vết AI (không da nhựa 3D, không hào quang neon, không chữ giả, tỷ lệ dọc 9:16).
-
----
-
-## 1. Phân Bổ Quy Mô 103 Slide Theo Định Dạng Bài
-
-Dựa trên dữ liệu kịch bản 50 bài tại `scripts/posts_251_300.json`, quy mô sản xuất ảnh được phân bổ chi tiết:
-
-| Định Dạng Bài | Số Lượng Bài | Số Slide / Bài | Tổng Số Slide Mỹ Thuật | Chức Năng Từng Trang |
-|---|:---:|:---:|:---:|---|
-| **Single-Punch (1 trang)** | 15 bài | 1 slide | **15 slides** | Một tác phẩm đanh thép, tĩnh tại, mang tính đúc kết triết học cao độ |
-| **Carousel 2 trang** | 17 bài | 2 slides | **34 slides** | - Slide 1: Hiện tượng / Nút thắt tâm lý<br>- Slide 2: Cú lật bóc trần / Ánh sáng thấu suốt |
-| **Carousel 3 trang** | 18 bài | 3 slides | **54 slides** | - Slide 1: Hiện tượng đời thường / Nỗi trăn trở<br>- Slide 2: Căn nguyên / Cú lật nhận thức<br>- Slide 3: Chiếc gương phản tư / Sự hòa giải & Bình an |
-| **TỔNG CỘNG** | **50 bài** | - | **103 slides độc lập** | **103 tác phẩm tranh sơn dầu riêng biệt** |
+> **Mục tiêu:** Sản xuất 50 bài nội dung mới (STT 351 đến 400 / `TXT-0351` đến `TXT-0400`) nạp lên tab `Kế Hoạch Đăng Bài (TikTok Pipeline)` trên Google Sheet.  
+> **Định hướng biên tập:** Câu chữ **ngắn gọn, cô đọng, nén chặt, đủ ý chính**, đánh trúng điều người đọc thật sự muốn nghe; ngôn ngữ thuần Việt sắc sảo, tự nhiên, dễ hiểu ngay lập tức; xóa bỏ hoàn toàn văn phong dài dòng, gượng gạo hoặc mang tính kỹ năng mềm giáo điều.
 
 ---
 
-## 2. Bảng Màu & Trường Phái Cảm Hứng Theo 4 Cụm Chủ Đề
+## 1. Tiêu Chuẩn Nén Chữ & Chuẩn Hóa Ngôn Ngữ Thuần Việt
 
-| Cụm Chủ Đề (STT) | Tinh Thần Tư Tưởng | Danh Họa & Trường Phái Cảm Hứng | Bảng Màu Mỹ Thuật Cốt Lõi |
-|---|---|---|---|
-| **Cụm 1: Tự Trắc Ẩn** (Theme 251–263 · 27 slides) | Ôm ấp sự mong manh, tha thứ cho chính mình, chữa lành đứa trẻ bên trong | **Claude Monet**, **Pierre-Auguste Renoir**, **Camille Pissarro** (Ấn tượng Pháp) | Vàng mật ong, hồng phấn cổ điển, xanh ngọc bích, ánh nắng sớm xuyên qua sương mai, vườn hoa thanh bình |
-| **Cụm 2: Bình Thản Khắc Kỷ** (Theme 264–275 · 24 slides) | Phân biệt kiểm soát, pháo đài nội tâm, bình thản trước thị phi, Amor Fati | **Caspar David Friedrich** (bình minh), **Thomas Cole**, **Jean-Baptiste-Camille Corot** | Xanh lam trời rạng đông, xám đá hoa cương ấm, vàng hoàng hôn dịu, vách đá sừng sững, mặt hồ phẳng lặng |
-| **Cụm 3: Kết Nối Lành Mạnh** (Theme 276–288 · 27 slides) | Giao tiếp trắc ẩn (NVC), ranh giới yêu thương, lắng nghe thấu cảm | **Joaquín Sorolla**, **John Singer Sargent**, **Mary Cassatt** | Trắng ngọc trai, cam đất nung ấm áp, xanh ô liu, bờ biển ngập nắng vàng, ánh nến bàn trà ấm cúng |
-| **Cụm 4: Ý Nghĩa Sống & Sức Bật** (Theme 289–300 · 25 slides) | Vượt qua bóng tối, trưởng thành sau sang chấn, tự do nội tâm, cột mốc 300 | **J.M.W. Turner** (bình minh vàng), **Albert Bierstadt**, **Frederic Edwin Church** | Vàng hổ phách rực rỡ, ánh sáng rọi xuyên kẽ đá hang sâu, đỉnh núi đón bình minh rạng ngời, thung lũng xanh ngát |
+Dựa trên phản hồi của người dùng về việc *"câu hiện tại hơi dài, cần ngắn gọn, đủ ý chính và sang tiếng Việt chuẩn hóa dễ hiểu"*:
+
+| Vị Trí Slide | Giới Hạn Từ | Phong Cách Diễn Đạt | Ví Dụ Chuyển Đổi (Dài $\rightarrow$ Ngắn Gọn Sắc Nét) |
+|---|:---:|---|---|
+| **Trang 1 (Hook)** | **Dưới 8–10 từ** | Gián đoạn suy nghĩ, đánh thẳng vào nỗi đau / thắc mắc thực tế, kết thúc bằng `...` | *Dài:* "Khi một người vừa gặp đã coi bạn là tri kỷ duy nhất..."<br>$\rightarrow$ *Ngắn:* **"Vừa gặp đã vội coi bạn là tri kỷ......"** (8 từ) |
+| **Trang 2 (Cú lật / Bóc trần)** | **15 – 22 từ** (1–2 câu ngắn) | Bóc trần động cơ vô thức hoặc nghịch lý trần trụi, từ ngữ bình dân nhưng sâu sắc | *Dài:* "Họ săn đón dồn dập, biến bạn thành trung tâm vũ trụ trong chớp mắt. Nhưng quy luật tâm lý chỉ ra: Càng nâng bạn lên mây nhanh bao nhiêu, họ càng dễ đạp bạn xuống đất bấy nhiêu." (37 từ)<br>$\rightarrow$ *Ngắn:* **"Nhiệt tình dồn dập chỉ là chiếc bẫy. Kẻ nâng bạn lên mây nhanh nhất cũng là kẻ đạp bạn xuống đất tàn nhẫn nhất."** (21 từ) |
+| **Trang 3 (Chiếc gương / Đúc kết)** | **15 – 22 từ** (1–2 câu ngắn) | Soi chiếu bản lĩnh, đọng lại dư ba thức tỉnh, không giảng đạo lý | *Dài:* "Thứ tình cảm đến dồn dập như bão táp thường rút đi để lại một bãi hoang tàn. Tình thương lành mạnh cần thời gian để bén rễ sâu, không cần pháo hoa che mắt." (32 từ)<br>$\rightarrow$ *Ngắn:* **"Tình cảm chân thành cần thời gian bén rễ. Đừng vội tin vào pháo hoa rực rỡ chỉ sáng trong chớp mắt."** (19 từ) |
+| **Trang 4 (Nếu có)** | **12 – 18 từ** | Đúc kết triết học tinh hoa Khắc kỷ / Ranh giới | **"Tỉnh táo bước đi. Người thật lòng thương bạn không bao giờ bắt bạn phải đoán mò."** (14 từ) |
+| **Single-Punch** | **15 – 20 từ** | 1 câu duy nhất, nhát kiếm đanh thép, đọc 3 giây là nhớ mãi | **"Nể mặt một kẻ trơ trẽn chính là tàn nhẫn với sự bình yên của bản thân."** (14 từ) |
 
 ---
 
-## 3. Kiến Trúc Kỹ Thuật 4 Pha (Vertical Slicing)
+## 2. Bảng Phân Bổ 4 Cụm Chủ Đề Thực Tế (STT 351 -> 400 · 50 Bài)
 
-```mermaid
-flowchart TD
-    A["Pha 1: Đặc Tả Mỹ Thuật 103 Slide & Manifest Generator"] --> B["Pha 2: Khảo Sát Nguồn Bảo Tàng CCO & Curation Strategy"]
-    B --> C["Pha 3: Chế Tác & Hậu Kỳ Khử Dấu Vết AI Hữu Cơ (5 Lô)"]
-    C --> D["Pha 4: Cập Nhật Asset Catalog, Google Sheet & Build Kiểm Định"]
+```
+[ CỤM 1: Thấu Thị Thói Đời & Mặt Nạ Xã Giao (STT 351–363 · 13 bài) ]
+  • Đạo đức giả bọc đường, kẻ thích dạy đời, người diễn vai nạn nhân, sự tử tế có tính toán
+                  │
+                  ▼
+[ CỤM 2: Ranh Giới Thép & Nghệ Thuật Đoạn Tuyệt (STT 364–375 · 12 bài) ]
+  • Bớt nể nang, tuyệt tình đúng lúc, ranh giới tiền bạc, đối phó kẻ trơ trẽn, im lặng thu hồi năng lượng
+                  │
+                  ▼
+[ CỤM 3: Nội Tâm Tỉnh Thức & Giải Mã Vết Thương (STT 376–388 · 13 bài) ]
+  • Chữa lành không sáo rỗng, bớt tự dằn vặt, nhận thức giá trị tự thân, buông bỏ so sánh
+                  │
+                  ▼
+[ CỤM 4: Trí Tuệ Khắc Kỷ & Bản Lĩnh Trưởng Thành (STT 389–400 · 12 bài) ]
+  • Tâm bất biến giữa thị phi, bình thản trước được mất, buông chuyện bao đồng, cột mốc 400 bài
 ```
 
----
+### Danh Mục 50 Ý Tưởng Cốt Lõi (Đời Thực & Sâu Cay):
 
-## 4. Danh Mục Nhiệm Vụ Chi Tiết (Task Breakdown)
-
-### Pha 1: Đặc Tả Mỹ Thuật 103 Slide & Manifest JSON Generator
-
-#### Task 1: Thiết kế tài liệu đặc tả mỹ thuật chi tiết `docs/11_HIYU_ABYSS_HEALING_OIL_SUITES_251_300_SPEC.md`
-- **Mô tả:** Viết đặc tả hoàn chỉnh cho 50 theme, từng slide có tên danh tác/nghệ sĩ cảm hứng, ý niệm thị giác khớp 100% với nội dung từng trang, và prompt Master sơn dầu tỷ lệ dọc 9:16.
-- **Tiêu chí nghiệm thu:**
-  - Đủ đúng 50 theme và 103 slide chi tiết.
-  - Mỗi slide có prompt riêng biệt, tuân thủ bảng màu ấm áp/tươi sáng.
-  - Cấm triệt để từ khóa AI slop (3D render, smooth plastic, CGI, neon, text, letters).
-- **Files:** `docs/11_HIYU_ABYSS_HEALING_OIL_SUITES_251_300_SPEC.md`.
-- **Scope:** L (1 spec document).
-
-#### Task 2: Xây dựng script sinh Manifest `scripts/build_oil_spec_251_300.py`
-- **Mô tả:** Lập trình script Python tự động tổng hợp thông tin từ `scripts/posts_251_300.json` và xuất ra `scripts/oil_suites_251_300_manifest.json` chuẩn hóa 103 slide.
-- **Tiêu chí nghiệm thu:**
-  - File JSON chứa đủ 50 keys (`TXT-0251` đến `TXT-0300`), tổng số phần tử `slides` đúng bằng 103.
-- **Files:** `scripts/build_oil_spec_251_300.py`, `scripts/oil_suites_251_300_manifest.json`.
-- **Scope:** M (1 script + 1 JSON).
-
-#### Task 3: Viết và chạy bộ kiểm định độc bản mỹ thuật `scripts/audit_oil_spec_251_300.py`
-- **Mô tả:** Script kiểm tra tính toàn vẹn của 103 prompt: 0 prompt trùng lặp, đúng tỷ lệ 9:16, không chứa từ khóa AI slop, đầy đủ thuộc tính toan vải và impasto.
-- **Tiêu chí nghiệm thu:** Script chạy exit code 0, 100% PASS.
-- **Files:** `scripts/audit_oil_spec_251_300.py`.
-- **Scope:** S (1 script).
-
----
-
-### ❖ Checkpoint 1: Art Spec & Manifest Ready
-- [x] Tài liệu đặc tả `docs/11_HIYU_ABYSS_HEALING_OIL_SUITES_251_300_SPEC.md` hoàn tất.
-- [x] Manifest JSON chứa đúng 103 slide độc lập sẵn sàng.
-- [x] Bộ kiểm định độc bản mỹ thuật đạt 100% PASS.
-
----
-
-### Pha 2: Khảo Sát Nguồn Bảo Tàng CCO & Curation Strategy
-
-#### Task 4: Giám tuyển nguồn tranh CCO độ phân giải cao & cơ chế Render dự phòng
-- **Mô tả:** Lập trình script `scripts/resolve_healing_master_art.py` tìm kiếm và tải các bản scan bảo tàng độ phân giải cao (3.000px–5.000px) từ Wikimedia Commons / Met Open Access / Rijksmuseum vào `assets/templates/raw_cache/`.
-- **Tiêu chí nghiệm thu:**
-  - Ánh xạ tối đa các kiệt tác cổ điển phù hợp với từng slide.
-  - Thiết lập cơ chế fallback sinh ảnh sơn dầu thuần chất bằng AI subagent với phong cách khử AI cho các concept cần bám sát câu thoại.
-- **Files:** `scripts/resolve_healing_master_art.py`, `scripts/resolved_healing_art.json`.
-- **Scope:** M (1 script + cache).
-
----
-
-### ❖ Checkpoint 2: Raw High-Res Scans & Fallback Ready
-- [x] Bản scan bảo tàng chất lượng cao được lưu trong bộ đệm.
-- [x] 0 lỗi tải, không dính rate-limit.
-
----
-
-### Pha 3: Chế Tác Hàng Loạt 103 Slide Theo 5 Lô & Hậu Kỳ Khử AI
-
-#### Task 5: Chế tác Lô 1 — Theme 251 đến 260 (Cụm Tự Trắc Ẩn · 21 slides)
-#### Task 6: Chế tác Lô 2 — Theme 261 đến 270 (Tự Trắc Ẩn & Khắc Kỷ · 20 slides)
-#### Task 7: Chế tác Lô 3 — Theme 271 đến 280 (Khắc Kỷ & Kết Nối Lành Mạnh · 21 slides)
-#### Task 8: Chế tác Lô 4 — Theme 281 đến 290 (Kết Nối & Ý Nghĩa Sống · 21 slides)
-#### Task 9: Chế tác Lô 5 — Theme 291 đến 300 (Ý Nghĩa Sống & Cột Mốc 300 · 20 slides)
-- **Mô tả chung cho Tasks 5–9:** Xuất ảnh theo từng slide thực tế của bài vào thư mục `assets/templates/multislides/theme_XXX/` và `website/public/images/themes/theme_XXX/`.
-- **Tiêu chuẩn slide:**
-  - Single-Punch (1 trang): `slide_1.png`
-  - Carousel 2 trang: `slide_1.png`, `slide_2.png`
-  - Carousel 3 trang: `slide_1.png`, `slide_2.png`, `slide_3.png`
-
-#### Task 10: Quy trình Hậu kỳ Khử Dấu Vết AI Hữu Cơ (`scripts/normalize_healing_suites.py`)
-- **Mô tả:** Chuẩn hóa toàn bộ 103 slide qua bộ lọc quang học vật lý:
-  - Cắt chuẩn tỷ lệ dọc 9:16 (1080x1920) bằng thuật toán Lanczos.
-  - Cân bằng màu: Giảm nhẹ bão hòa (-4%) để sắc tố trở về màu khoáng tự nhiên (đất son, hổ phách, lam ngọc, xanh rêu).
-  - Phủ hạt hữu cơ *Organic Canvas Grain* phá vỡ bề mặt nhẵn bóng nhân tạo.
-  - Tinh chỉnh *Micro-contrast Unsharp Mask* làm nổi bật vệt sơn dầu đắp nổi impasto.
-- **Tiêu chí nghiệm thu:** Đủ 103 slide đạt chuẩn khử AI vật lý.
-- **Files:** `scripts/normalize_healing_suites.py`, 103 tệp ảnh.
-- **Scope:** L (1 script + 103 images).
+1. **351:** Kẻ thích dạy đời thường là người có cuộc sống riêng nát nhất.
+2. **352:** Vừa gặp đã vội coi bạn là tri kỷ: Cảnh giác đòn dội bom cảm xúc.
+3. **353:** Bớt tò mò chuyện thiên hạ là bạn đã bớt được 90% muộn phiền.
+4. **354:** Người thật lòng thương bạn không bao giờ bắt bạn phải đoán mò.
+5. **355:** Nể mặt kẻ trơ trẽn là tàn nhẫn với sự bình yên của chính mình.
+6. **356:** Kẻ càng yếu thế lại càng thích tự ái vặt.
+7. **357:** Sự tử tế không có nanh vuốt chỉ là miếng mồi ngon cho sự lợi dụng.
+8. **358:** Đừng làm thùng rác cho những kẻ chỉ nhớ đến bạn khi cần than thở.
+9. **359:** Cách một người cư xử khi bạn hết giá trị lợi dụng bộc lộ nhân cách thật của họ.
+10. **360:** Người khôn ngoan không bao giờ tranh cãi với kẻ say và kẻ cố chấp.
+11. **361:** Đằng sau câu nói 'Mình đùa tí thôi' luôn là một mũi dao hạ bệ thật lòng.
+12. **362:** Kẻ đóng vai người hòa giải thường là kẻ đứng ngoài vỗ tay to nhất.
+13. **363:** Thà bị ghét vì sống thật còn hơn được thương hại vì đeo mặt nạ ngoan ngoãn.
+14. **364:** Lời từ chối dứt khoát là sự tử tế cao nhất dành cho cả hai bên.
+15. **365:** Cho mượn tiền vì cả nể: Vừa mất tiền, vừa mang thêm cục tức.
+16. **366:** Không phải ai cùng huyết thống cũng xứng đáng được bước vào đời tư của bạn.
+17. **367:** Khi bạn bắt đầu có ranh giới, kẻ bòn rút sẽ bảo bạn thay đổi và khó gần.
+18. **368:** Tuyệt tình đúng lúc là liều thuốc giải cứu vớt phần đời còn lại.
+19. **369:** Chốn công sở: Làm việc bằng văn bản, đừng làm việc bằng lòng tin mù quáng.
+20. **370:** Người hủy hẹn phút chót lần thứ ba vốn dĩ chưa từng coi trọng bạn.
+21. **371:** Đừng thanh minh với người đã có chủ đích không muốn hiểu.
+22. **372:** Khoảng cách an toàn tạo nên sự tôn trọng bền vững.
+23. **373:** Ngừng đóng vai cứu rỗi cuộc đời người khác; hãy tự cứu lấy mình trước.
+24. **374:** Im lặng rút lui là câu trả lời lạnh lùng nhất cho kẻ coi thường bạn.
+25. **375:** Dám mang tiếng khó tính để đổi lấy sự thanh thản trọn vẹn.
+26. **376:** Đừng để những bi kịch lúc nửa đêm đánh lừa sự tỉnh táo của bạn.
+27. **377:** Tự trách mình không làm bạn tốt hơn; nó chỉ biến bạn thành kẻ bất lực.
+28. **378:** So sánh hậu trường của mình với sân khấu kẻ khác là tự chuốc lấy cay đắng.
+29. **379:** Nỗi giận dữ là lớp vỏ bọc che đậy nỗi sợ hãi bên trong.
+30. **380:** Chữa lành không phải là ép mình mỉm cười; mà là dám ôm lấy vết thương.
+31. **381:** Người khác chậm trả lời tin nhắn không có nghĩa là trời sắp sập.
+32. **382:** Tự nuông chiều làm bạn u mê; tự trắc ẩn cho bạn sức mạnh bước tiếp.
+33. **383:** Nỗi sợ mình không đủ giỏi là cái giá của một tâm hồn cầu thị.
+34. **384:** Bớt kỳ vọng vào lòng người, tự khắc lòng sẽ nhẹ tênh.
+35. **385:** Ghen tị là chất độc nếu căm ghét, nhưng là la bàn nếu biết học hỏi.
+36. **386:** Tha thứ không phải là làm hòa; tha thứ là buông bỏ gánh nặng oán hờn.
+37. **387:** Bạn yêu người đó hay bạn chỉ đang sợ cảm giác một mình?
+38. **388:** Nỗi cô đơn chất lượng cao quý hơn vạn lần sự náo nhiệt gượng gạo.
+39. **389:** Việc không nằm trong tay ta thì buông bỏ, đừng rước bực vào thân.
+40. **390:** Kẻ xúc phạm bạn tự làm bẩn miệng họ, không thể làm vấy bẩn phẩm giá của bạn.
+41. **391:** Sự phớt lờ đĩnh đạc làm kẻ gây sự bẽ bàng hơn ngàn lời cãi vã.
+42. **392:** Nước đục để yên sẽ tự trong; thị phi không đáp trả tự khắc tiêu biến.
+43. **393:** Nghịch cảnh là người thầy nghiêm khắc nhất rèn giũa bản lĩnh của bạn.
+44. **394:** Chọn bạn đồng hành: Thà ít mà trung kiên, còn hơn đông mà xu nịnh.
+45. **395:** Vấp ngã là bài học dữ liệu; chỉ có buông xuôi đổ lỗi mới biến bạn thành kẻ thất bại.
+46. **396:** Tiếc nuối quá khứ là cách nhanh nhất để chôn vùi tương lai.
+47. **397:** Đời là hữu hạn, hà tất phải bận lòng vì những lời chê bai vu vơ.
+48. **398:** Kẻ yếu luôn tỏ ra hung dữ; người có nội lực thâm hậu luôn ung dung dịu dàng.
+49. **399:** Làm chủ cảm xúc là đỉnh cao của mọi thành công trên đời.
+50. **400:** Chạm mốc 400 bài: Đi qua tận cùng bóng tối để sống bao dung nhưng không nhu nhược.
 
 ---
 
-### ❖ Checkpoint 3: 103 Slides Produced & Normalized
-- [x] 103/103 slide hoàn thiện, tỷ lệ 9:16 sắc nét.
-- [x] Vượt qua kiểm định chất lượng mỹ thuật HYA-08.
+## 3. Kiến Trúc Kỹ Thuật & Danh Mục Nhiệm Vụ (Task Breakdown)
 
----
+### Phase 1: Tạo Script Sinh Kịch Bản Nén Gọn (`scripts/build_50_short_punchy_posts_351_400.py`)
+- **Nội dung:** Lập trình tạo 50 bài kịch bản chuẩn cấu trúc 17 trường, ép chặt số từ (Hook < 10 từ, Slide < 25 từ).
+- **Tiêu chí:** Đúng 50 phần tử STT 351–400, 0 lỗi ký tự, 0 từ 'bước 1, 2', ngôn ngữ thuần Việt gãy gọn.
+- **Đầu ra:** `scripts/posts_351_400.json`.
 
-### Pha 4: Tích Hợp Thư Viện Sống, Cập Nhật Google Sheet & Build Kiểm Định
+### Phase 2: Kiểm Định Chất Lượng Tự Động (`scripts/audit_posts_351_400.py`)
+- **Nội dung:** Kiểm tra độ dài từng slide (Hook < 10 từ, thân slide < 25 từ), kiểm tra 5 hashtag chuẩn SEO, kiểm tra không trùng lặp tiêu đề, và kiểm tra tuân thủ `humanizer`.
+- **Tiêu chí:** 100% PASS (0 lỗi).
 
-#### Task 11: Cập nhật Asset Catalog hệ thống (`website/src/data/asset-catalog.json`)
-- **Mô tả:** Khai báo 50 theme mới (251–300) với đầy đủ thông tin danh tác, tác giả, bảo tàng, phong cách và đường dẫn ảnh vào catalog để phục vụ giao diện Living Museum.
-- **Tiêu chí nghiệm thu:** Catalog có đủ 300 themes, không lỗi schema.
-- **Files:** `website/src/data/asset-catalog.json`.
-- **Scope:** M (1 JSON file).
+### Phase 3: Nạp Dữ Liệu Lên Google Sheet (Dải A352:Q401)
+- **Nội dung:** Ghi 50 hàng vào tab `Kế Hoạch Đăng Bài (TikTok Pipeline)`, áp dụng định dạng `wrapStrategy: WRAP`, phông chữ `Roboto 9pt`, căn lề `MIDDLE`, sao chép data validation cột Q.
+- **Tiêu chí:** Ghi thành công, không lỗi định dạng.
 
-#### Task 12: Cập nhật đường dẫn ảnh và trạng thái trên Google Sheet
-- **Mô tả:** Cập nhật cột P (`Gợi Ý Phôi Ảnh`) và cột Q (`Trạng Thái` $\rightarrow$ `ĐÃ CÓ ẢNH`) cho hàng 252–301 trên Google Sheet.
-- **Tiêu chí nghiệm thu:** Google Sheet phản ánh chính xác trạng thái sẵn sàng của 50 bộ ảnh mới.
-- **Scope:** S (Google Sheet mutate).
-
-#### Task 13: Build website tĩnh, kiểm định WCAG AA (22/22 PASS) & Đồng bộ Git
-- **Mô tả:** Chạy `npm run build` và `node test/verify-build.js`, commit sạch sẽ và push lên GitHub.
-- **Tiêu chí nghiệm thu:** 22/22 PASS, Git clean.
-- **Scope:** S (Build & Git push).
-
----
-
-### ❖ Checkpoint 4: Complete & Production Ready
-- [x] Toàn bộ 103 ảnh sơn dầu đã tích hợp vào kho và website.
-- [x] Google Sheet hiển thị đầy đủ trạng thái.
-- [x] Hệ thống mã nguồn và ảnh được đồng bộ an toàn lên GitHub.
-
----
-
-## 5. Ma Trận Quản Trị Rủi Ro
-
-| Rủi Ro Nhận Diện | Mức Độ | Biện Pháp Kiểm Soát & Giảm Thiểu |
-|---|:---:|---|
-| **Rate limit hoặc lỗi mạng khi tải từ Wikimedia Commons** | Cao | Thêm exponential backoff, giãn cách `time.sleep(1.5)` giữa các lượt tải, khai báo User-Agent riêng biệt. |
-| **Trùng lặp ý tưởng thị giác giữa các slide trong cùng một bài** | Trung bình | Kiểm tra chéo bằng script audit; ép buộc mỗi slide có một vai trò triết học khác biệt (Hiện tượng $\rightarrow$ Cú lật $\rightarrow$ Chiếc gương). |
-| **Ảnh sinh ra bị dính tì vết AI (da sáp, neon)** | Cao | Tích hợp từ khóa âm tính nghiêm ngặt (`--no plastic, 3D, CGI, smooth skin`) và chạy bộ lọc hậu kỳ phủ hạt canvas hữu cơ bắt buộc. |
-| **Kích thước file ảnh đẩy Git quá lớn gây lỗi HTTP 408** | Trung bình | Tối ưu hóa nén webp/png dưới 1.2MB/ảnh; thực hiện git commit và push chia nhỏ theo từng lô 10 theme. |
-
----
-
-## 6. Câu Hỏi Cần Xác Nhận (Open Questions)
-
-1. Bạn có muốn duyệt trước file đặc tả mỹ thuật [docs/11_HIYU_ABYSS_HEALING_OIL_SUITES_251_300_SPEC.md](file:///c:/hiyuabyss/docs/11_HIYU_ABYSS_HEALING_OIL_SUITES_251_300_SPEC.md) và danh mục 103 ý niệm thị giác trước khi chạy render, hay tiến hành xuất file và bắt đầu tìm nguồn tranh ngay?
-2. Về phong cách hình ảnh, bạn muốn ưu tiên:
-   - **(A - Khuyến nghị) Tranh bảo tàng CCO thực tế:** Tải các bản scan kiệt tác cổ điển của Monet, Corot, Friedrich, Turner từ viện bảo tàng (vừa xác thực lịch sử mỹ thuật, vừa 100% không tì vết AI).
-   - **(B) Sơn dầu sinh bởi AI hữu cơ:** Dùng AI vẽ tranh sơn dầu mới bám sát 100% từng câu thoại chi tiết, sau đó chạy qua bộ lọc khử AI vật lý.
-   - **(C) Kết hợp linh hoạt:** Ưu tiên tranh bảo tàng cho các slide phản tư/cảnh quan, và sinh ảnh AI khử dấu vết cho các cảnh nhân vật/hành vi đặc thù.
+### Phase 4: Kiểm Thử Thực Tế & Đồng Bộ Git
+- **Nội dung:** Đọc kiểm tra trực tiếp dải ô trên Google Sheet, commit và push lên GitHub `origin/main`.
+- **Tiêu chí:** Working tree clean, remote synced.

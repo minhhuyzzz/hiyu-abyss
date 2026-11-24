@@ -285,3 +285,33 @@
 - [x] **Task 4: Commit & Push Hệ Thống Lên GitHub**
   - **Mô tả:** Đẩy toàn bộ mã nguồn script, dữ liệu JSON và tài liệu kế hoạch lên GitHub `origin/main`.
 
+---
+
+# Danh Mục Nhiệm Vụ: 50 Bài Triết Ngôn Nén Gọn, Đời Thực & Chuẩn Ngữ Việt (STT 351 -> 400)
+
+## Phase 1: Xây Dựng Kịch Bản Nén Gọn & Chuẩn Ngôn Ngữ Thuần Việt
+- [x] **Task 1: Tạo Script Sinh Kịch Bản Nén Gọn (`scripts/build_50_short_punchy_posts_351_400.py`)**
+  - **Mô tả:** Viết script Python sinh trọn vẹn 50 kịch bản nén chặt: Hook < 10 từ (kèm `......`), thân slide 15-24 từ, Single-Punch 15-22 từ, 0 lỗi "bước 1, 2", 0 lỗi escape LaTeX, áp dụng triệt để `humanizer`.
+  - **Tiêu chí:** Đúng 50 bài STT 351-400 (`TXT-0351` đến `TXT-0400`), đa dạng định dạng (16 Single-Punch, 16 Carousel 2 trang, 17 Carousel 3 trang, 1 Carousel 4 trang).
+  - **Xác minh:** `python scripts/build_50_short_punchy_posts_351_400.py` xuất ra `scripts/posts_351_400.json`.
+  - **Files:** `scripts/build_50_short_punchy_posts_351_400.py`, `scripts/posts_351_400.json`
+
+## Phase 2: Kiểm Định Chất Lượng Tự Động & Độ Dài Câu
+- [x] **Task 2: Kiểm Định Nghiêm Ngặt 50 Bài Nén Gọn (`scripts/audit_posts_351_400.py`)**
+  - **Mô tả:** Script kiểm tra tự động giới hạn độ dài từng slide (Hook <= 10 từ, thân slide <= 25 từ), kiểm tra 5 hashtag chuẩn SEO, kiểm tra không trùng lặp tiêu đề, và kiểm tra tuân thủ danh sách từ cấm `humanizer`.
+  - **Tiêu chí:** 100% PASS (0 lỗi).
+  - **Xác minh:** `python scripts/audit_posts_351_400.py` (Đạt 50/50 bài 100% PASS).
+  - **Files:** `scripts/audit_posts_351_400.py`
+
+## Phase 3: Nạp Google Sheet & Chuẩn Hóa Định Dạng
+- [x] **Task 3: Nạp 50 Bài & Đồng Bộ Định Dạng Google Sheet (`scripts/upload_and_polish_posts_351_400.py`)**
+  - **Mô tả:** Ghi 50 hàng vào dải `'Kế Hoạch Đăng Bài (TikTok Pipeline)'!A352:Q401`, sao chép định dạng và dropdown menu từ hàng 204, ép chuẩn `wrapStrategy: WRAP`, phông chữ `Roboto 9pt`, căn giữa `MIDDLE`.
+  - **Tiêu chí:** Ghi thành công, định dạng bảng tính hiển thị hoàn hảo.
+  - **Xác minh:** Script `scripts/verify_live_351_400.py` đọc trực tiếp các hàng 352, 375, 401 trên Google Sheet.
+  - **Files:** `scripts/upload_and_polish_posts_351_400.py`, `scripts/verify_live_351_400.py`
+
+## Phase 4: Đồng Bộ Git & Bàn Giao
+- [x] **Task 4: Commit & Push Hệ Thống Lên GitHub**
+  - **Mô tả:** Đẩy toàn bộ mã nguồn script, dữ liệu JSON, báo cáo kiểm định và kế hoạch lên GitHub `origin/main`.
+
+

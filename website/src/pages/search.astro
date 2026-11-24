@@ -349,13 +349,17 @@ const searchIndex = allQuotes.map((q) => {
         // Optional Artwork Image
         if (q.imageRef) {
           const imgContainer = document.createElement('div');
-          imgContainer.className = 'w-full sm:w-36 h-28 sm:h-36 flex-shrink-0 overflow-hidden bg-surface border border-border/60';
+          imgContainer.className = 'w-28 sm:w-36 h-28 sm:h-36 aspect-square flex-shrink-0 overflow-hidden bg-surface border border-border/60 rounded-xs';
 
           const img = document.createElement('img');
           img.src = q.imageRef;
           img.alt = q.title || 'Artwork thumbnail';
           img.className = 'w-full h-full object-cover filter brightness-90 hover:scale-105 transition-all duration-500';
           img.loading = 'lazy';
+          img.onerror = function() {
+            this.onerror = null;
+            this.src = '/images/themes/theme_01/slide_1_establishing.jpg';
+          };
           imgContainer.appendChild(img);
           row.appendChild(imgContainer);
         }

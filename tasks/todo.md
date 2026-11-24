@@ -314,4 +314,33 @@
 - [x] **Task 4: Commit & Push Hệ Thống Lên GitHub**
   - **Mô tả:** Đẩy toàn bộ mã nguồn script, dữ liệu JSON, báo cáo kiểm định và kế hoạch lên GitHub `origin/main`.
 
+---
+
+# Danh Mục Nhiệm Vụ: 100 Bài Triết Học Tài Chính, Tâm Lý Đời Thực & Chạm Mốc 500 Bài (STT 401 -> 500)
+
+## Phase 1: Thu Thập Văn Bản Gốc Từ Archive.org & Thiết Kế Kế Hoạch 100 Bài
+- [x] **Task 1: Cào Dữ Liệu Văn Bản Gốc Triết Học Tài Chính Từ Archive.org**
+  - Tải và cài đặt skill `ia`, cấu hình chứng chỉ API, truy vấn và lưu văn bản gốc của Schopenhauer, Seneca, Veblen, Benjamin Franklin, Epictetus vào `data/harvested_financial_primary_sources.json`.
+- [x] **Task 2: Lập Kế Hoạch Masterplan 100 Bài Chạm Mốc 500 Bài**
+  - Đã xuất bản kế hoạch chi tiết tại `tasks/plan.md` và artifact `plan_100_posts_401_500.md`.
+
+## Phase 2: Triển Khai Lô 1 (STT 401 -> 450)
+- [x] **Task 3: Sinh Kịch Bản & Khử Sáo Ngữ Lô 1 (`scripts/build_posts_401_450.py`, `scripts/apply_fixes_401_450.py`)**
+  - 50 bài STT 401-450 với Hook ngắn < 10 từ, thân slide < 25 từ, 0 lỗi escape/đánh số, 5 hashtag chuẩn SEO.
+- [x] **Task 4: Kiểm Định Chất Lượng Toàn Diện Lô 1 (`scripts/audit_posts_401_450.py`)**
+  - 100% PASS (0 lỗi).
+- [x] **Task 5: Nạp Google Sheet & Chuẩn Hóa Định Dạng Lô 1 (`scripts/upload_and_polish_posts_401_450.py`)**
+  - Ghi thành công vào `'Kế Hoạch Đăng Bài (TikTok Pipeline)'!A402:Q451`.
+
+## Phase 3: Triển Khai Lô 2 (STT 451 -> 500) Chạm Cột Mốc 500 Bài
+- [x] **Task 6: Sinh Kịch Bản & Khử Sáo Ngữ Lô 2 (`scripts/build_posts_451_500.py`, `scripts/apply_fixes_451_500.py`)**
+  - 50 bài STT 451-500 hoàn thiện, nén chặt tư tưởng triết học và tâm lý tài chính.
+- [x] **Task 7: Kiểm Định Chất Lượng Toàn Diện Lô 2 (`scripts/audit_posts_451_500.py`)**
+  - 100% PASS (0 lỗi).
+- [x] **Task 8: Nạp Google Sheet & Chuẩn Hóa Định Dạng Lô 2 (`scripts/upload_and_polish_posts_451_500.py`)**
+  - Ghi thành công vào `'Kế Hoạch Đăng Bài (TikTok Pipeline)'!A452:Q501`.
+- [x] **Task 9: Kiểm Tra Trực Tiếp Trực Tuyến & Xác Minh Cột Mốc 500 Bài (`scripts/verify_live_451_500.py`)**
+  - Đã xác minh trực tiếp các hàng 452, 475, 501 trên Google Sheet hoạt động hoàn hảo.
+
+
 

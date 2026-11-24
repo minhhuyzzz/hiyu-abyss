@@ -127,8 +127,8 @@ const allAtlasNodes = getAllAtlasNodes();
         grid.innerHTML = savedQuotes.map(q => `
           <article class="p-5 bg-surface/40 border border-border/70 hover:border-accent rounded-sm transition-all flex flex-col justify-between space-y-4 group">
             <div class="space-y-3">
-              <a href="/library/${q.slug}" class="relative aspect-[16/10] overflow-hidden bg-surface rounded-sm border border-border/40 block">
-                <img src="${q.image}" alt="${q.title}" class="w-full h-full object-cover filter brightness-[0.9] group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <a href="/library/${q.slug}" class="relative aspect-square overflow-hidden bg-surface rounded-sm border border-border/40 block">
+                <img src="${q.image}" alt="${q.title}" class="w-full h-full object-cover filter brightness-[0.9] group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null; this.src='/images/themes/theme_01/slide_1_establishing.jpg'" />
                 <span class="absolute top-2 left-2 px-2 py-0.5 text-[9px] font-mono tracking-wider uppercase bg-bg/90 text-accent border border-border/60">
                   ${q.id}
                 </span>
@@ -139,9 +139,6 @@ const allAtlasNodes = getAllAtlasNodes();
                   <a href="/library/${q.slug}">${q.title}</a>
                 </h3>
               </div>
-              <p class="font-serif italic text-xs text-text/80 leading-relaxed line-clamp-3">
-                "${q.content}"
-              </p>
             </div>
             <div class="pt-3 border-t border-border/40 flex items-center justify-between text-xs font-sans">
               <a href="/library/${q.slug}" class="text-accent hover:underline font-semibold uppercase tracking-wider text-[11px]">

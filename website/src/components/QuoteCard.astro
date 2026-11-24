@@ -16,14 +16,15 @@ const artSrc = quote.artInfo?.slides?.slide_1 || `/images/themes/${quote.imageRe
 >
   <div class="rounded-[calc(1rem-0.125rem)] overflow-hidden bg-bg/90 flex-1 flex flex-col justify-between">
     
-    <!-- Card Header Artwork Thumbnail -->
-    <a href={`/library/${quote.slug}`} class="relative w-full aspect-[16/10] overflow-hidden bg-surface block">
+    <!-- Card Header Artwork Thumbnail (Square 1:1 Gallery Aspect) -->
+    <a href={`/library/${quote.slug}`} class="relative w-full aspect-square overflow-hidden bg-surface block">
       <img
         src={artSrc}
         alt={quote.artInfo?.alt_vi || quote.cleanTitle}
         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-95 group-hover:brightness-100"
         loading="lazy"
         decoding="async"
+        onerror="this.onerror=null; this.src='/images/themes/theme_01/slide_1_establishing.jpg'"
       />
       <div class="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent opacity-70"></div>
       
@@ -41,15 +42,11 @@ const artSrc = quote.artInfo?.slides?.slide_1 || `/images/themes/${quote.imageRe
           <span class="text-[10px] uppercase tracking-wider text-muted/70">{quote.quoteTypeLabel}</span>
         </div>
 
-        <h3 class="font-display text-xl text-text font-medium group-hover:text-accent transition-colors leading-snug">
+        <h3 class="font-display text-lg sm:text-xl text-text font-medium group-hover:text-accent transition-colors leading-snug">
           <a href={`/library/${quote.slug}`}>
             {quote.cleanTitle}
           </a>
         </h3>
-
-        <p class="font-serif text-sm text-text/85 line-clamp-3 italic leading-relaxed pt-1">
-          "{quote.content}"
-        </p>
       </div>
 
       <!-- Card Footer (Clean Horizontal Alignment) -->

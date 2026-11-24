@@ -167,8 +167,8 @@ const quotesMap = Object.fromEntries(
         <article class="p-3.5 border border-border/70 bg-surface-raised/40 hover:border-accent/60 transition-all flex items-start gap-3.5 rounded-sm">
           ${
             item.imageRef
-              ? `<div class="w-14 h-18 flex-shrink-0 overflow-hidden bg-surface border border-border/60">
-                  <img src="${item.imageRef}" alt="${item.title}" class="w-full h-full object-cover" loading="lazy" />
+              ? `<div class="w-14 h-14 aspect-square flex-shrink-0 overflow-hidden bg-surface border border-border/60 rounded-xs">
+                  <img src="${item.imageRef}" alt="${item.title}" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null; this.src='/images/themes/theme_01/slide_1_establishing.jpg'" />
                  </div>`
               : ''
           }

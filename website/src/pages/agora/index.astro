@@ -209,6 +209,7 @@ const spotlightThread = threads.find((t) => t.pinned) || threads[0];
                   alt={cat.title}
                   class="w-full h-full object-cover filter brightness-[0.88] group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
+                  onerror="this.onerror=null; this.src='/images/themes/theme_01/slide_1_establishing.jpg'"
                 />
                 <span class="absolute bottom-2 left-2 px-2.5 py-0.5 text-[10px] font-mono uppercase bg-bg/90 text-accent border border-border/60">
                   {cat.cover_art_title}

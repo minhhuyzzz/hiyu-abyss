@@ -4,7 +4,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const distDir = path.resolve(__dirname, '../dist');
+const baseDist = path.resolve(__dirname, '../dist');
+const distDir = fs.existsSync(path.join(baseDist, 'client')) ? path.join(baseDist, 'client') : baseDist;
 const websiteDir = path.resolve(__dirname, '..');
 
 console.log('====================================================');

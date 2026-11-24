@@ -33,7 +33,7 @@ export const POST: APIRoute = async ({ request, locals, redirect }) => {
   const user = await upsertDevUser(db, { name, handle, email, role });
   const userAgent = request.headers.get('user-agent') || '';
   const ip = request.headers.get('cf-connecting-ip') || '';
-  const session = await createSession(db, user.id, userAgent, ip);
+  const session = await createSession(db, user.id, userAgent, ip, user);
 
   return new Response(
     JSON.stringify({

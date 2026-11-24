@@ -46,19 +46,40 @@ export default function LibraryComments({ quoteId, quoteTitle, categorySlug, con
   const [submitting, setSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
-  // Check auth state on mount
+  // Check auth state on mount and listen to global auth event
   useEffect(() => {
+    if (typeof window !== 'undefined' && (window as any).__HIYU_USER) {
+      setCurrentUser((window as any).__HIYU_USER);
+      setCheckingAuth(false);
+    }
+
+    const onAuthLoaded = (e: any) => {
+      if (e.detail?.user) {
+        setCurrentUser(e.detail.user);
+      } else {
+        setCurrentUser(null);
+      }
+      setCheckingAuth(false);
+    };
+    window.addEventListener('hiyu-auth-loaded', onAuthLoaded);
+
     fetch('/api/auth/me')
       .then((r) => r.json())
       .then((data) => {
         if (data.authenticated && data.user) {
           setCurrentUser(data.user);
+          if (typeof window !== 'undefined') (window as any).__HIYU_USER = data.user;
         } else {
           setCurrentUser(null);
+          if (typeof window !== 'undefined') (window as any).__HIYU_USER = null;
         }
       })
       .catch(() => setCurrentUser(null))
       .finally(() => setCheckingAuth(false));
+
+    return () => {
+      window.removeEventListener('hiyu-auth-loaded', onAuthLoaded);
+    };
   }, []);
 
   // Fetch comments on mount

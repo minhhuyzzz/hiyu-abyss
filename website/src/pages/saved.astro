@@ -64,24 +64,6 @@ const allAtlasNodes = getAllAtlasNodes();
         </div>
       </div>
 
-      <div id="auth-required-state" class="hidden py-16 text-center border border-border/70 bg-surface/30 rounded-xl space-y-4 max-w-md mx-auto">
-        <div class="w-12 h-12 rounded-full bg-accent/15 border border-accent/40 flex items-center justify-center text-accent text-xl mx-auto">
-          🔒
-        </div>
-        <p class="font-serif italic text-lg text-text">
-          Đăng nhập để xem kho lưu trữ
-        </p>
-        <p class="text-xs font-sans text-muted max-w-sm mx-auto leading-relaxed">
-          Kho lưu trữ cá nhân chỉ khả dụng cho độc giả đã đăng nhập để bảo toàn và đồng bộ hóa chiêm nghiệm.
-        </p>
-        <a
-          href="/account?redirect=/saved"
-          class="mt-3 inline-flex items-center gap-2.5 px-6 py-2.5 bg-white hover:bg-neutral-100 text-neutral-900 border border-neutral-300 font-sans text-xs uppercase tracking-wider font-bold rounded-full shadow-sm"
-        >
-          <span>Đăng nhập bằng Google</span>
-        </a>
-      </div>
-
       <div id="empty-state" class="hidden py-16 text-center border border-border/50 bg-surface/20 rounded-sm space-y-3">
         <p class="font-serif italic text-lg text-text/80">
           Kho lưu trữ của bạn đang trống.
@@ -113,30 +95,6 @@ const allAtlasNodes = getAllAtlasNodes();
     const clearBtn = document.getElementById('clear-all-btn');
 
     async function renderSaved() {
-      let user = window.__HIYU_USER;
-      if (user === undefined) {
-        try {
-          const res = await fetch('/api/auth/me');
-          const data = await res.json();
-          user = data.authenticated ? data.user : null;
-          window.__HIYU_USER = user;
-        } catch (e) {
-          user = null;
-        }
-      }
-
-      const authRequired = document.getElementById('auth-required-state');
-      if (!user) {
-        if (grid) grid.innerHTML = '';
-        if (atlasGrid) atlasGrid.innerHTML = '';
-        if (emptyState) emptyState.classList.add('hidden');
-        if (authRequired) authRequired.classList.remove('hidden');
-        if (countBadge) countBadge.textContent = '0';
-        if (atlasBadge) atlasBadge.textContent = '0';
-        return;
-      }
-      if (authRequired) authRequired.classList.add('hidden');
-
       let savedIds = [];
       try {
         savedIds = JSON.parse(localStorage.getItem('hiyu_saved_quotes') || '[]');

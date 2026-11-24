@@ -311,7 +311,10 @@ class MemoryD1Fallback implements D1DatabaseLike {
       async run(): Promise<D1Response> {
         const clean = sql.trim().toUpperCase();
 
-        if (clean.startsWith('INSERT INTO SESSION')) {
+        if (clean.includes('INTO SESSION')) {
+          const sessId = boundParams[0];
+          const token = boundParams[2];
+          self.sessions = self.sessions.filter((s) => s.id !== sessId && s.token !== token);
           self.sessions.push({
             id: boundParams[0],
             expiresAt: boundParams[1],
@@ -331,7 +334,9 @@ class MemoryD1Fallback implements D1DatabaseLike {
           return { success: true };
         }
 
-        if (clean.startsWith('INSERT INTO USER')) {
+        if (clean.includes('INTO USER')) {
+          const uid = boundParams[0];
+          self.users = self.users.filter((u) => u.id !== uid);
           self.users.push({
             id: boundParams[0],
             name: boundParams[1],
@@ -356,7 +361,9 @@ class MemoryD1Fallback implements D1DatabaseLike {
           return { success: true };
         }
 
-        if (clean.startsWith('INSERT INTO MEMBER_PROFILES')) {
+        if (clean.includes('INTO MEMBER_PROFILES')) {
+          const uid = boundParams[0];
+          self.member_profiles = self.member_profiles.filter((p) => p.user_id !== uid);
           self.member_profiles.push({
             user_id: boundParams[0],
             handle: boundParams[1],

@@ -70,7 +70,7 @@ export const GET: APIRoute = async ({ request, locals, redirect }) => {
     // 4. Create session
     const userAgent = request.headers.get('user-agent') || '';
     const ip = request.headers.get('cf-connecting-ip') || '';
-    const session = await createSession(db, user.id, userAgent, ip);
+    const session = await createSession(db, user.id, userAgent, ip, user);
 
     // 5. Set session cookie and clear state cookies
     const headers = new Headers();

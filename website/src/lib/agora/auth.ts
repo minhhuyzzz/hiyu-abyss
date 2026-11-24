@@ -59,14 +59,166 @@ export function getAppOrigin(request: Request): string {
   return url.origin;
 }
 
+interface SessionPayload {
+  sessionId: string;
+  userId: string;
+  email: string;
+  name: string;
+  handle: string;
+  displayName: string;
+  avatarUrl?: string;
+  role: 'GUEST' | 'MEMBER' | 'MODERATOR' | 'ADMIN';
+  bio?: string;
+  createdAt: number;
+  expiresAt: number;
+}
+
+const SESSION_HMAC_SECRET =
+  (typeof process !== 'undefined' && (process.env.SESSION_SECRET || process.env.GOOGLE_CLIENT_SECRET)) ||
+  'hiyu-abyss-session-crypto-v2-d9f7a8b3c4e1';
+
+function toBase64Url(bytes: Uint8Array): string {
+  let binary = '';
+  for (let i = 0; i < bytes.byteLength; i++) {
+    binary += String.fromCharCode(bytes[i]);
+  }
+  return btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
+function fromBase64Url(str: string): Uint8Array {
+  str = str.replace(/-/g, '+').replace(/_/g, '/');
+  while (str.length % 4) str += '=';
+  const binary = atob(str);
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) {
+    bytes[i] = binary.charCodeAt(i);
+  }
+  return bytes;
+}
+
+async function signSessionPayload(payload: SessionPayload): Promise<string> {
+  const enc = new TextEncoder();
+  const payloadStr = JSON.stringify(payload);
+  const payloadB64 = toBase64Url(enc.encode(payloadStr));
+
+  const key = await crypto.subtle.importKey(
+    'raw',
+    enc.encode(SESSION_HMAC_SECRET),
+    { name: 'HMAC', hash: 'SHA-256' },
+    false,
+    ['sign']
+  );
+
+  const sig = await crypto.subtle.sign('HMAC', key, enc.encode(payloadB64));
+  const sigB64 = toBase64Url(new Uint8Array(sig));
+  return `${payloadB64}.${sigB64}`;
+}
+
+async function verifySessionToken(token: string): Promise<SessionPayload | null> {
+  try {
+    const parts = token.split('.');
+    if (parts.length !== 2) return null;
+    const [payloadB64, sigB64] = parts;
+    if (!payloadB64 || !sigB64) return null;
+
+    const enc = new TextEncoder();
+    const key = await crypto.subtle.importKey(
+      'raw',
+      enc.encode(SESSION_HMAC_SECRET),
+      { name: 'HMAC', hash: 'SHA-256' },
+      false,
+      ['verify']
+    );
+
+    const sigBytes = fromBase64Url(sigB64);
+    const valid = await crypto.subtle.verify('HMAC', key, sigBytes, enc.encode(payloadB64));
+    if (!valid) return null;
+
+    const dec = new TextDecoder();
+    const payloadStr = dec.decode(fromBase64Url(payloadB64));
+    const payload = JSON.parse(payloadStr) as SessionPayload;
+    const now = Math.floor(Date.now() / 1000);
+    if (payload.expiresAt <= now) return null;
+
+    return payload;
+  } catch (err) {
+    return null;
+  }
+}
+
 export async function getSession(request: Request, runtimeEnv?: any): Promise<AuthSession | null> {
   const cookieHeader = request.headers.get('cookie');
   const token = parseCookie(cookieHeader, SESSION_COOKIE_NAME);
   if (!token) return null;
 
-  const db = getD1Database(runtimeEnv);
   const now = Math.floor(Date.now() / 1000);
 
+  // 1. Check if token is a stateless signed token (contains '.')
+  if (token.includes('.')) {
+    const verified = await verifySessionToken(token);
+    if (verified && verified.expiresAt > now) {
+      const authUser: AuthUser = {
+        id: verified.userId,
+        email: verified.email,
+        name: verified.name,
+        handle: verified.handle,
+        displayName: verified.displayName,
+        avatarUrl: verified.avatarUrl,
+        role: verified.role,
+        bio: verified.bio || '',
+        createdAt: verified.createdAt,
+      };
+
+      // Hydrate DB memory so downstream SQL operations in this lambda find this user
+      const db = getD1Database(runtimeEnv);
+      try {
+        await db
+          .prepare(
+            `INSERT INTO session (id, expiresAt, token, createdAt, updatedAt, ipAddress, userAgent, userId)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+          )
+          .bind(verified.sessionId, verified.expiresAt, token, verified.createdAt, verified.createdAt, '', '', verified.userId)
+          .run();
+
+        await db
+          .prepare(
+            `INSERT INTO user (id, name, email, emailVerified, image, createdAt, updatedAt)
+             VALUES (?, ?, ?, ?, ?, ?, ?)`
+          )
+          .bind(verified.userId, verified.name, verified.email, 1, verified.avatarUrl || null, verified.createdAt, verified.createdAt)
+          .run();
+
+        await db
+          .prepare(
+            `INSERT INTO member_profiles (user_id, handle, display_name, bio, avatar_preset, avatar_url, role, state, created_at, updated_at)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+          )
+          .bind(
+            verified.userId,
+            verified.handle,
+            verified.displayName,
+            verified.bio || '',
+            'google',
+            verified.avatarUrl || null,
+            verified.role,
+            'ACTIVE',
+            verified.createdAt,
+            verified.createdAt
+          )
+          .run();
+      } catch {}
+
+      return {
+        id: verified.sessionId,
+        token: token,
+        expiresAt: verified.expiresAt,
+        user: authUser,
+      };
+    }
+  }
+
+  // 2. Fallback to direct DB query (for legacy opaque tokens)
+  const db = getD1Database(runtimeEnv);
   try {
     const row = await db
       .prepare(
@@ -109,24 +261,74 @@ export async function createSession(
   db: D1DatabaseLike,
   userId: string,
   userAgent: string = '',
-  ipAddress: string = ''
+  ipAddress: string = '',
+  authUser?: AuthUser
 ): Promise<{ token: string; expiresAt: number }> {
-  // Generate high-entropy 64-character token
-  const randomBytes = new Uint8Array(32);
-  crypto.getRandomValues(randomBytes);
-  const token = Array.from(randomBytes, (b) => b.toString(16).padStart(2, '0')).join('');
-
   const id = 'sess_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 7);
   const now = Math.floor(Date.now() / 1000);
   const expiresAt = now + 30 * 24 * 60 * 60; // 30 days session
 
-  await db
-    .prepare(
-      `INSERT INTO session (id, expiresAt, token, createdAt, updatedAt, ipAddress, userAgent, userId)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
-    )
-    .bind(id, expiresAt, token, now, now, ipAddress, userAgent, userId)
-    .run();
+  let user = authUser;
+  if (!user) {
+    try {
+      const u = await db
+        .prepare(
+          `SELECT u.id, u.email, u.name, u.image,
+                  p.handle, p.display_name, p.role, p.bio, p.avatar_url, p.created_at
+           FROM user u
+           LEFT JOIN member_profiles p ON p.user_id = u.id
+           WHERE u.id = ?`
+        )
+        .bind(userId)
+        .first<any>();
+      if (u) {
+        user = {
+          id: u.id,
+          email: u.email,
+          name: u.name,
+          handle: u.handle || (u.email ? u.email.split('@')[0] : 'member'),
+          displayName: u.display_name || u.name,
+          avatarUrl: u.avatar_url || u.image || undefined,
+          role: u.role || 'MEMBER',
+          bio: u.bio || '',
+          createdAt: u.created_at || now,
+        };
+      }
+    } catch {}
+  }
+
+  let token: string;
+  if (user) {
+    token = await signSessionPayload({
+      sessionId: id,
+      userId: user.id,
+      email: user.email,
+      name: user.name,
+      handle: user.handle,
+      displayName: user.displayName,
+      avatarUrl: user.avatarUrl,
+      role: user.role,
+      bio: user.bio,
+      createdAt: user.createdAt,
+      expiresAt,
+    });
+  } else {
+    const randomBytes = new Uint8Array(32);
+    crypto.getRandomValues(randomBytes);
+    token = Array.from(randomBytes, (b) => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  try {
+    await db
+      .prepare(
+        `INSERT INTO session (id, expiresAt, token, createdAt, updatedAt, ipAddress, userAgent, userId)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+      )
+      .bind(id, expiresAt, token, now, now, ipAddress, userAgent, userId)
+      .run();
+  } catch (err) {
+    console.error('Failed to insert session in db:', err);
+  }
 
   return { token, expiresAt };
 }

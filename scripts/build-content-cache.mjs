@@ -51,6 +51,7 @@ const TOPIC_NAMES = {
   STOIC_SERENITY: { title: 'Khắc Kỷ & Định Tâm', desc: 'Bình thản trước nghịch cảnh và tập trung vào những điều ta có thể kiểm soát.' },
   AUTHENTIC_CONNECTION: { title: 'Gắn Kết Chân Thật', desc: 'Xây dựng những mối quan hệ sâu sắc không vụ lợi hay giả tạo.' },
   MEANING_RESILIENCE: { title: 'Lẽ Sống & Phục Hồi', desc: 'Vượt qua chông gai, tìm kiếm ý nghĩa và thắp sáng nội lực bản thân.' },
+  MONEY_PSYCHOLOGY: { title: 'Tâm Lý Học Tiền Bạc', desc: 'Tư duy tài chính tỉnh thức, tự do đích thực và bẫy thể diện tiêu dùng.' },
 };
 
 const QUOTE_TYPE_LABELS = {

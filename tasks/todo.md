@@ -359,13 +359,17 @@
 - [x] Tích hợp 139 slide chân dung danh tác triết gia chuẩn bảo tàng.
 - [x] Tài liệu đặc tả 5.935 dòng và manifest JSON đầy đủ.
 
-## Phase 2: Chế Tác Lô 1 (Themes 301–340 · 40 Themes · 86 Slides) — Lưu Đồ Tâm Lý & Ranh Giới
-- [ ] **Task 4: Chế Tác & Render 86 Slide Sơn Dầu Lô 1 (`assets/templates/multislides/theme_301..340/`)**
+## Phase 2: Chế Tác Lô 1 (Themes 301–340 · 40 Themes · 102 Slides) — Lưu Đồ Tâm Lý & Ranh Giới
+- [x] **Task 4: Chế Tác & Render 102 Slide Sơn Dầu Lô 1 (`assets/templates/multislides/theme_301..340/`)**
   - Chuyển dịch lưu đồ tâm lý sang hoạt cảnh hội họa cổ điển: Daumier, Hammershøi, Sargent.
-- [ ] **Task 5: Hậu Kỳ Khử Dấu Vết AI Hữu Cơ Lô 1 (`scripts/normalize_suites_301_340.py`)**
+- [x] **Task 5: Hậu Kỳ Khử Dấu Vết AI Hữu Cơ Lô 1 (`scripts/mass_produce_suites_301_340.py`)**
   - Chuẩn hóa 9:16, giảm -4% bão hòa, phủ hạt Organic Canvas Grain, tăng sắc nét micro-contrast thớ toan.
 
-### ❖ Checkpoint 2: Batch 1 (301–340) Complete & Verified
+### ❖ Checkpoint 2: Batch 1 (301–340) Complete & Verified [HOÀN TẤT]
+- [x] Đủ 102/102 file trong `assets/templates/multislides/`.
+- [x] Đủ 102/102 file trong `website/public/images/themes/`.
+- [x] 100% kích thước dọc 1080x1920 (9:16).
+- [x] Đạt chuẩn khử AI vật lý HYA-08.
 
 ## Phase 3: Chế Tác Lô 2 (Themes 341–380 · 40 Themes · 86 Slides) — Trí Tuệ Khắc Kỷ & Xung Đột
 - [ ] **Task 6: Chế Tác & Render 86 Slide Sơn Dầu Lô 2 (`assets/templates/multislides/theme_341..380/`)**

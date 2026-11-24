@@ -1,0 +1,694 @@
+{
+  "THEME_301": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Vilhelm Hammershøi",
+      "target_file": "assets/templates/raw_cache\\theme_301_slide_1_raw.jpg",
+      "source": "wikimedia: File:Hammershoi - Sunshine in the Drawingroom III.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Edward Hopper",
+      "target_file": "assets/templates/raw_cache\\theme_301_slide_2_raw.jpg",
+      "source": "fallback_cache: theme_100_slide_3_raw.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Caspar David Friedrich",
+      "target_file": "assets/templates/raw_cache\\theme_301_slide_3_raw.jpg",
+      "source": "wikimedia: File:Caspar David Friedrich - Wanderer above the sea of fog.jpg"
+    }
+  ],
+  "THEME_302": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Childe Hassam",
+      "target_file": "assets/templates/raw_cache\\theme_302_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_101_slide_2_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "John Singer Sargent",
+      "target_file": "assets/templates/raw_cache\\theme_302_slide_2_raw.jpg",
+      "source": "wikimedia: File:John Singer Sargent - Mrs. Fiske Warren (Gretchen Osgood) and Her Daughter Rachel - Google Art Project.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Claude Monet",
+      "target_file": "assets/templates/raw_cache\\theme_302_slide_3_raw.jpg",
+      "source": "wikimedia: File:Paysage de matin (1888) Claude Monet (W1205).jpg"
+    }
+  ],
+  "THEME_303": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Edgar Degas",
+      "target_file": "assets/templates/raw_cache\\theme_303_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_103_slide_2_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Pierre-Auguste Renoir",
+      "target_file": "assets/templates/raw_cache\\theme_303_slide_2_raw.jpg",
+      "source": "wikimedia: File:Pierre-Auguste Renoir - Two Sisters (On the Terrace) - Google Art Project.jpg"
+    }
+  ],
+  "THEME_304": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Rembrandt",
+      "target_file": "assets/templates/raw_cache\\theme_304_slide_1_raw.jpg",
+      "source": "wikimedia: File:Rembrandt van Rijn - Self-Portrait - Google Art Project.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Georges de La Tour",
+      "target_file": "assets/templates/raw_cache\\theme_304_slide_2_raw.jpg",
+      "source": "wikimedia: File:1168-11-Georges-de-La-Tour-A-Girl-Blowing-.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Jean-François Millet",
+      "target_file": "assets/templates/raw_cache\\theme_304_slide_3_raw.jpg",
+      "source": "wikimedia: File:Jean-François Millet - The Potato Harvest - Walters 37115.jpg"
+    },
+    {
+      "slide_index": 4,
+      "artist": "Claude Monet",
+      "target_file": "assets/templates/raw_cache\\theme_304_slide_4_raw.jpg",
+      "source": "wikimedia: File:Paysage de matin (1888) Claude Monet (W1205).jpg"
+    }
+  ],
+  "THEME_305": [
+    {
+      "slide_index": 1,
+      "artist": "Édouard Manet",
+      "target_file": "assets/templates/raw_cache\\theme_305_slide_1_raw.jpg",
+      "source": "wikimedia: File:Edouard Manet - Olympia - Google Art ProjectFXD.jpg"
+    }
+  ],
+  "THEME_306": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Ilya Repin",
+      "target_file": "assets/templates/raw_cache\\theme_306_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_107_slide_2_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Camille Pissarro",
+      "target_file": "assets/templates/raw_cache\\theme_306_slide_2_raw.jpg",
+      "source": "wikimedia: File:Camille Pissarro - Pommiers en fleurs.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Thomas Cole",
+      "target_file": "assets/templates/raw_cache\\theme_306_slide_3_raw.jpg",
+      "source": "fallback_cache: theme_109_slide_1_raw.jpg"
+    }
+  ],
+  "THEME_307": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Gustav Klimt (phong cách sơn dầu cổ điển)",
+      "target_file": "assets/templates/raw_cache\\theme_307_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_109_slide_2_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "John William Waterhouse",
+      "target_file": "assets/templates/raw_cache\\theme_307_slide_2_raw.jpg",
+      "source": "wikimedia: File:John William Waterhouse - A Roman Offering.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Caspar David Friedrich",
+      "target_file": "assets/templates/raw_cache\\theme_307_slide_3_raw.jpg",
+      "source": "wikimedia: File:Caspar David Friedrich - Wanderer above the sea of fog.jpg"
+    }
+  ],
+  "THEME_308": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Gustave Courbet",
+      "target_file": "assets/templates/raw_cache\\theme_308_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_111_slide_2_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Jean-Baptiste-Camille Corot",
+      "target_file": "assets/templates/raw_cache\\theme_308_slide_2_raw.jpg",
+      "source": "wikimedia: File:Lesendes Mädchen in rotem Trikot Jean-Baptiste-Camille Corot (Kunsthaus Zürich).jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Camille Pissarro",
+      "target_file": "assets/templates/raw_cache\\theme_308_slide_3_raw.jpg",
+      "source": "wikimedia: File:Camille Pissarro - Pommiers en fleurs.jpg"
+    }
+  ],
+  "THEME_309": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Paul Cézanne",
+      "target_file": "assets/templates/raw_cache\\theme_309_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_113_slide_1_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Joaquín Sorolla",
+      "target_file": "assets/templates/raw_cache\\theme_309_slide_2_raw.jpg",
+      "source": "wikimedia: File:Joaquín Sorolla y Bastida - Triste Herencia (1899).jpg"
+    }
+  ],
+  "THEME_310": [
+    {
+      "slide_index": 1,
+      "artist": "Rembrandt",
+      "target_file": "assets/templates/raw_cache\\theme_310_slide_1_raw.jpg",
+      "source": "wikimedia: File:Rembrandt van Rijn - Self-Portrait - Google Art Project.jpg"
+    }
+  ],
+  "THEME_311": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Odilon Redon",
+      "target_file": "assets/templates/raw_cache\\theme_311_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_115_slide_1_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "John Singer Sargent",
+      "target_file": "assets/templates/raw_cache\\theme_311_slide_2_raw.jpg",
+      "source": "wikimedia: File:John Singer Sargent - Mrs. Fiske Warren (Gretchen Osgood) and Her Daughter Rachel - Google Art Project.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Claude Monet",
+      "target_file": "assets/templates/raw_cache\\theme_311_slide_3_raw.jpg",
+      "source": "wikimedia: File:Paysage de matin (1888) Claude Monet (W1205).jpg"
+    }
+  ],
+  "THEME_312": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Honoré Daumier",
+      "target_file": "assets/templates/raw_cache\\theme_312_slide_1_raw.jpg",
+      "source": "wikimedia: File:Bemberg Fondation Toulouse - Les collectionneurs d'estampes - Honoré Daumier Inv.2197.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Caspar David Friedrich",
+      "target_file": "assets/templates/raw_cache\\theme_312_slide_2_raw.jpg",
+      "source": "wikimedia: File:Caspar David Friedrich - Wanderer above the sea of fog.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Albert Bierstadt",
+      "target_file": "assets/templates/raw_cache\\theme_312_slide_3_raw.jpg",
+      "source": "fallback_cache: theme_118_slide_1_raw.jpg"
+    }
+  ],
+  "THEME_313": [
+    {
+      "slide_index": 1,
+      "artist": "Rembrandt",
+      "target_file": "assets/templates/raw_cache\\theme_313_slide_1_raw.jpg",
+      "source": "wikimedia: File:Rembrandt van Rijn - Self-Portrait - Google Art Project.jpg"
+    }
+  ],
+  "THEME_314": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Mary Cassatt",
+      "target_file": "assets/templates/raw_cache\\theme_314_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_119_slide_2_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Camille Corot",
+      "target_file": "assets/templates/raw_cache\\theme_314_slide_2_raw.jpg",
+      "source": "wikimedia: File:Lesendes Mädchen in rotem Trikot Jean-Baptiste-Camille Corot (Kunsthaus Zürich).jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Claude Monet",
+      "target_file": "assets/templates/raw_cache\\theme_314_slide_3_raw.jpg",
+      "source": "wikimedia: File:Paysage de matin (1888) Claude Monet (W1205).jpg"
+    }
+  ],
+  "THEME_315": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Honoré Daumier",
+      "target_file": "assets/templates/raw_cache\\theme_315_slide_1_raw.jpg",
+      "source": "wikimedia: File:Bemberg Fondation Toulouse - Les collectionneurs d'estampes - Honoré Daumier Inv.2197.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Edward Hopper",
+      "target_file": "assets/templates/raw_cache\\theme_315_slide_2_raw.jpg",
+      "source": "fallback_cache: theme_121_slide_2_raw.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "John Singer Sargent",
+      "target_file": "assets/templates/raw_cache\\theme_315_slide_3_raw.jpg",
+      "source": "wikimedia: File:John Singer Sargent - Mrs. Fiske Warren (Gretchen Osgood) and Her Daughter Rachel - Google Art Project.jpg"
+    }
+  ],
+  "THEME_316": [
+    {
+      "slide_index": 1,
+      "artist": "Rembrandt",
+      "target_file": "assets/templates/raw_cache\\theme_316_slide_1_raw.jpg",
+      "source": "wikimedia: File:Rembrandt van Rijn - Self-Portrait - Google Art Project.jpg"
+    }
+  ],
+  "THEME_317": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Vilhelm Hammershøi",
+      "target_file": "assets/templates/raw_cache\\theme_317_slide_1_raw.jpg",
+      "source": "wikimedia: File:Hammershoi - Sunshine in the Drawingroom III.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Paul Cézanne",
+      "target_file": "assets/templates/raw_cache\\theme_317_slide_2_raw.jpg",
+      "source": "wikimedia: File:Paul Cézanne, French - Portrait of Madame Cézanne - Google Art Project.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Camille Corot",
+      "target_file": "assets/templates/raw_cache\\theme_317_slide_3_raw.jpg",
+      "source": "wikimedia: File:Lesendes Mädchen in rotem Trikot Jean-Baptiste-Camille Corot (Kunsthaus Zürich).jpg"
+    },
+    {
+      "slide_index": 4,
+      "artist": "Caspar David Friedrich",
+      "target_file": "assets/templates/raw_cache\\theme_317_slide_4_raw.jpg",
+      "source": "wikimedia: File:Caspar David Friedrich - Wanderer above the sea of fog.jpg"
+    }
+  ],
+  "THEME_318": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Edgar Degas",
+      "target_file": "assets/templates/raw_cache\\theme_318_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_126_slide_1_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "John Singer Sargent",
+      "target_file": "assets/templates/raw_cache\\theme_318_slide_2_raw.jpg",
+      "source": "wikimedia: File:John Singer Sargent - Mrs. Fiske Warren (Gretchen Osgood) and Her Daughter Rachel - Google Art Project.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Claude Monet",
+      "target_file": "assets/templates/raw_cache\\theme_318_slide_3_raw.jpg",
+      "source": "wikimedia: File:Paysage de matin (1888) Claude Monet (W1205).jpg"
+    }
+  ],
+  "THEME_319": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Childe Hassam",
+      "target_file": "assets/templates/raw_cache\\theme_319_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_128_slide_1_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Camille Pissarro",
+      "target_file": "assets/templates/raw_cache\\theme_319_slide_2_raw.jpg",
+      "source": "wikimedia: File:Camille Pissarro - Pommiers en fleurs.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Joaquín Sorolla",
+      "target_file": "assets/templates/raw_cache\\theme_319_slide_3_raw.jpg",
+      "source": "wikimedia: File:Joaquín Sorolla y Bastida - Triste Herencia (1899).jpg"
+    }
+  ],
+  "THEME_320": [
+    {
+      "slide_index": 1,
+      "artist": "Thomas Cole",
+      "target_file": "assets/templates/raw_cache\\theme_320_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_129_slide_3_raw.jpg"
+    }
+  ],
+  "THEME_321": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Rembrandt",
+      "target_file": "assets/templates/raw_cache\\theme_321_slide_1_raw.jpg",
+      "source": "wikimedia: File:Rembrandt van Rijn - Self-Portrait - Google Art Project.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Jean-François Millet",
+      "target_file": "assets/templates/raw_cache\\theme_321_slide_2_raw.jpg",
+      "source": "wikimedia: File:Jean-François Millet - The Potato Harvest - Walters 37115.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Francisco Goya",
+      "target_file": "assets/templates/raw_cache\\theme_321_slide_3_raw.jpg",
+      "source": "wikimedia: File:FRANCISCO GOYA PORTRAIT OF MARIANO GOYA, THE ARTIST'S GRANDSON.jpg"
+    },
+    {
+      "slide_index": 4,
+      "artist": "Albert Bierstadt",
+      "target_file": "assets/templates/raw_cache\\theme_321_slide_4_raw.jpg",
+      "source": "fallback_cache: theme_132_slide_1_raw.jpg"
+    }
+  ],
+  "THEME_322": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Quentin Matsys",
+      "target_file": "assets/templates/raw_cache\\theme_322_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_133_slide_1_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Jean-Baptiste-Camille Corot",
+      "target_file": "assets/templates/raw_cache\\theme_322_slide_2_raw.jpg",
+      "source": "wikimedia: File:Lesendes Mädchen in rotem Trikot Jean-Baptiste-Camille Corot (Kunsthaus Zürich).jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Claude Monet",
+      "target_file": "assets/templates/raw_cache\\theme_322_slide_3_raw.jpg",
+      "source": "wikimedia: File:Paysage de matin (1888) Claude Monet (W1205).jpg"
+    }
+  ],
+  "THEME_323": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Gustave Caillebotte",
+      "target_file": "assets/templates/raw_cache\\theme_323_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_135_slide_1_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Pierre-Auguste Renoir",
+      "target_file": "assets/templates/raw_cache\\theme_323_slide_2_raw.jpg",
+      "source": "wikimedia: File:Pierre-Auguste Renoir - Two Sisters (On the Terrace) - Google Art Project.jpg"
+    }
+  ],
+  "THEME_324": [
+    {
+      "slide_index": 1,
+      "artist": "Caspar David Friedrich",
+      "target_file": "assets/templates/raw_cache\\theme_324_slide_1_raw.jpg",
+      "source": "wikimedia: File:Caspar David Friedrich - Wanderer above the sea of fog.jpg"
+    }
+  ],
+  "THEME_325": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Rembrandt",
+      "target_file": "assets/templates/raw_cache\\theme_325_slide_1_raw.jpg",
+      "source": "wikimedia: File:Rembrandt van Rijn - Self-Portrait - Google Art Project.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Johannes Vermeer",
+      "target_file": "assets/templates/raw_cache\\theme_325_slide_2_raw.jpg",
+      "source": "wikimedia: File:Johannes Vermeer - Woman with a Lute near a Window (detail) - WGA24656.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Camille Pissarro",
+      "target_file": "assets/templates/raw_cache\\theme_325_slide_3_raw.jpg",
+      "source": "wikimedia: File:Camille Pissarro - Pommiers en fleurs.jpg"
+    }
+  ],
+  "THEME_326": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Francisco Goya",
+      "target_file": "assets/templates/raw_cache\\theme_326_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_139_slide_1_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Edward Hopper",
+      "target_file": "assets/templates/raw_cache\\theme_326_slide_2_raw.jpg",
+      "source": "fallback_cache: theme_139_slide_2_raw.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Vilhelm Hammershøi",
+      "target_file": "assets/templates/raw_cache\\theme_326_slide_3_raw.jpg",
+      "source": "wikimedia: File:Hammershoi - Sunshine in the Drawingroom III.jpg"
+    },
+    {
+      "slide_index": 4,
+      "artist": "Claude Monet",
+      "target_file": "assets/templates/raw_cache\\theme_326_slide_4_raw.jpg",
+      "source": "wikimedia: File:Paysage de matin (1888) Claude Monet (W1205).jpg"
+    }
+  ],
+  "THEME_327": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: J.M.W. Turner",
+      "target_file": "assets/templates/raw_cache\\theme_327_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_141_slide_1_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Caspar David Friedrich",
+      "target_file": "assets/templates/raw_cache\\theme_327_slide_2_raw.jpg",
+      "source": "wikimedia: File:Caspar David Friedrich - Wanderer above the sea of fog.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Albert Bierstadt",
+      "target_file": "assets/templates/raw_cache\\theme_327_slide_3_raw.jpg",
+      "source": "fallback_cache: theme_142_slide_2_raw.jpg"
+    }
+  ],
+  "THEME_328": [
+    {
+      "slide_index": 1,
+      "artist": "Vincent van Gogh (phong cách bảo tàng CCO)",
+      "target_file": "assets/templates/raw_cache\\theme_328_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_143_slide_1_raw.jpg"
+    }
+  ],
+  "THEME_329": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Odilon Redon",
+      "target_file": "assets/templates/raw_cache\\theme_329_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_144_slide_1_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Paul Cézanne",
+      "target_file": "assets/templates/raw_cache\\theme_329_slide_2_raw.jpg",
+      "source": "wikimedia: File:Paul Cézanne, French - Portrait of Madame Cézanne - Google Art Project.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Camille Corot",
+      "target_file": "assets/templates/raw_cache\\theme_329_slide_3_raw.jpg",
+      "source": "wikimedia: File:Lesendes Mädchen in rotem Trikot Jean-Baptiste-Camille Corot (Kunsthaus Zürich).jpg"
+    }
+  ],
+  "THEME_330": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Henri de Toulouse-Lautrec",
+      "target_file": "assets/templates/raw_cache\\theme_330_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_145_slide_1_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Mary Cassatt",
+      "target_file": "assets/templates/raw_cache\\theme_330_slide_2_raw.jpg",
+      "source": "fallback_cache: theme_146_slide_1_raw.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Pierre-Auguste Renoir",
+      "target_file": "assets/templates/raw_cache\\theme_330_slide_3_raw.jpg",
+      "source": "wikimedia: File:Pierre-Auguste Renoir - Two Sisters (On the Terrace) - Google Art Project.jpg"
+    }
+  ],
+  "THEME_331": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Jean-Baptiste Greuze",
+      "target_file": "assets/templates/raw_cache\\theme_331_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_147_slide_1_raw.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Rembrandt",
+      "target_file": "assets/templates/raw_cache\\theme_331_slide_2_raw.jpg",
+      "source": "wikimedia: File:Rembrandt van Rijn - Self-Portrait - Google Art Project.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Claude Monet",
+      "target_file": "assets/templates/raw_cache\\theme_331_slide_3_raw.jpg",
+      "source": "wikimedia: File:Paysage de matin (1888) Claude Monet (W1205).jpg"
+    }
+  ],
+  "THEME_332": [
+    {
+      "slide_index": 1,
+      "artist": "Edgar Degas",
+      "target_file": "assets/templates/raw_cache\\theme_332_slide_1_raw.jpg",
+      "source": "wikimedia: File:Edgar Germain Hilaire Degas 021.jpg"
+    }
+  ],
+  "THEME_333": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Caspar David Friedrich",
+      "target_file": "assets/templates/raw_cache\\theme_333_slide_1_raw.jpg",
+      "source": "wikimedia: File:Caspar David Friedrich - Wanderer above the sea of fog.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Camille Corot",
+      "target_file": "assets/templates/raw_cache\\theme_333_slide_2_raw.jpg",
+      "source": "wikimedia: File:Lesendes Mädchen in rotem Trikot Jean-Baptiste-Camille Corot (Kunsthaus Zürich).jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Pierre-Auguste Renoir",
+      "target_file": "assets/templates/raw_cache\\theme_333_slide_3_raw.jpg",
+      "source": "wikimedia: File:Pierre-Auguste Renoir - Two Sisters (On the Terrace) - Google Art Project.jpg"
+    },
+    {
+      "slide_index": 4,
+      "artist": "Claude Monet",
+      "target_file": "assets/templates/raw_cache\\theme_333_slide_4_raw.jpg",
+      "source": "wikimedia: File:Paysage de matin (1888) Claude Monet (W1205).jpg"
+    }
+  ],
+  "THEME_334": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Rembrandt",
+      "target_file": "assets/templates/raw_cache\\theme_334_slide_1_raw.jpg",
+      "source": "wikimedia: File:Rembrandt van Rijn - Self-Portrait - Google Art Project.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "John Singer Sargent",
+      "target_file": "assets/templates/raw_cache\\theme_334_slide_2_raw.jpg",
+      "source": "wikimedia: File:John Singer Sargent - Mrs. Fiske Warren (Gretchen Osgood) and Her Daughter Rachel - Google Art Project.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Thomas Cole",
+      "target_file": "assets/templates/raw_cache\\theme_334_slide_3_raw.jpg",
+      "source": "fallback_cache: theme_152_slide_1.jpg"
+    }
+  ],
+  "THEME_335": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Vilhelm Hammershøi",
+      "target_file": "assets/templates/raw_cache\\theme_335_slide_1_raw.jpg",
+      "source": "wikimedia: File:Hammershoi - Sunshine in the Drawingroom III.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Claude Monet",
+      "target_file": "assets/templates/raw_cache\\theme_335_slide_2_raw.jpg",
+      "source": "wikimedia: File:Paysage de matin (1888) Claude Monet (W1205).jpg"
+    }
+  ],
+  "THEME_336": [
+    {
+      "slide_index": 1,
+      "artist": "Caspar David Friedrich",
+      "target_file": "assets/templates/raw_cache\\theme_336_slide_1_raw.jpg",
+      "source": "wikimedia: File:Caspar David Friedrich - Wanderer above the sea of fog.jpg"
+    }
+  ],
+  "THEME_337": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Henri Rousseau",
+      "target_file": "assets/templates/raw_cache\\theme_337_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_154.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Paul Cézanne",
+      "target_file": "assets/templates/raw_cache\\theme_337_slide_2_raw.jpg",
+      "source": "wikimedia: File:Paul Cézanne, French - Portrait of Madame Cézanne - Google Art Project.jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Albert Bierstadt",
+      "target_file": "assets/templates/raw_cache\\theme_337_slide_3_raw.jpg",
+      "source": "fallback_cache: theme_154_slide_2.jpg"
+    }
+  ],
+  "THEME_338": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Pierre-Auguste Renoir",
+      "target_file": "assets/templates/raw_cache\\theme_338_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_154_slide_3.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Joaquín Sorolla",
+      "target_file": "assets/templates/raw_cache\\theme_338_slide_2_raw.jpg",
+      "source": "wikimedia: File:Joaquín Sorolla y Bastida - Triste Herencia (1899).jpg"
+    }
+  ],
+  "THEME_339": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Caspar David Friedrich",
+      "target_file": "assets/templates/raw_cache\\theme_339_slide_1_raw.jpg",
+      "source": "wikimedia: File:Caspar David Friedrich - Wanderer above the sea of fog.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Jean-Baptiste-Camille Corot",
+      "target_file": "assets/templates/raw_cache\\theme_339_slide_2_raw.jpg",
+      "source": "wikimedia: File:Lesendes Mädchen in rotem Trikot Jean-Baptiste-Camille Corot (Kunsthaus Zürich).jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Claude Monet",
+      "target_file": "assets/templates/raw_cache\\theme_339_slide_3_raw.jpg",
+      "source": "wikimedia: File:Paysage de matin (1888) Claude Monet (W1205).jpg"
+    }
+  ],
+  "THEME_340": [
+    {
+      "slide_index": 1,
+      "artist": "Slide 1: Jacques-Louis David",
+      "target_file": "assets/templates/raw_cache\\theme_340_slide_1_raw.jpg",
+      "source": "fallback_cache: theme_156_slide_1.jpg"
+    },
+    {
+      "slide_index": 2,
+      "artist": "Jean-Baptiste-Camille Corot",
+      "target_file": "assets/templates/raw_cache\\theme_340_slide_2_raw.jpg",
+      "source": "wikimedia: File:Lesendes Mädchen in rotem Trikot Jean-Baptiste-Camille Corot (Kunsthaus Zürich).jpg"
+    },
+    {
+      "slide_index": 3,
+      "artist": "Albert Bierstadt",
+      "target_file": "assets/templates/raw_cache\\theme_340_slide_3_raw.jpg",
+      "source": "fallback_cache: theme_157_slide_1.jpg"
+    }
+  ]
+}

@@ -342,5 +342,70 @@
 - [x] **Task 9: Kiểm Tra Trực Tiếp Trực Tuyến & Xác Minh Cột Mốc 500 Bài (`scripts/verify_live_451_500.py`)**
   - Đã xác minh trực tiếp các hàng 452, 475, 501 trên Google Sheet hoạt động hoàn hảo.
 
+---
+
+# Danh Mục Nhiệm Vụ: Chế Tác 200 Bộ Ảnh Sơn Dầu Cổ Điển Tươi Sáng & Chân Dung Triết Gia (Themes 301 -> 500)
+
+## Phase 1: Nền Tảng Đặc Tả Mỹ Thuật & Manifest 431 Slide
+- [ ] **Task 1: Biên Soạn Tài Liệu Đặc Tả `docs/12_HIYU_ABYSS_OIL_PAINTING_SUITES_301_500_SPEC.md`**
+  - Đặc tả chi tiết 200 theme (431 slide độc lập), tích hợp danh họa cổ điển, bảng màu tươi sáng ấm áp và chân dung chuẩn xác của 8+ triết gia lịch sử.
+- [ ] **Task 2: Lập Trình Script Khởi Tạo Manifest `scripts/build_oil_spec_301_500.py`**
+  - Tự động đọc dữ liệu 200 bài viết (301-500) để xuất `scripts/oil_suites_301_500_manifest.json` chứa 431 slide.
+- [ ] **Task 3: Viết & Chạy Bộ Kiểm Định Tự Động `scripts/audit_oil_spec_301_500.py`**
+  - Kiểm tra 100% prompt không dính từ cấm AI, đúng tỷ lệ 9:16, đủ vệt toan canvas và text safe zone.
+
+### ❖ Checkpoint 1: Art Spec & Manifest Ready (431 Slides)
+
+## Phase 2: Chế Tác Lô 1 (Themes 301–340 · 40 Themes · 86 Slides) — Lưu Đồ Tâm Lý & Ranh Giới
+- [ ] **Task 4: Chế Tác & Render 86 Slide Sơn Dầu Lô 1 (`assets/templates/multislides/theme_301..340/`)**
+  - Chuyển dịch lưu đồ tâm lý sang hoạt cảnh hội họa cổ điển: Daumier, Hammershøi, Sargent.
+- [ ] **Task 5: Hậu Kỳ Khử Dấu Vết AI Hữu Cơ Lô 1 (`scripts/normalize_suites_301_340.py`)**
+  - Chuẩn hóa 9:16, giảm -4% bão hòa, phủ hạt Organic Canvas Grain, tăng sắc nét micro-contrast thớ toan.
+
+### ❖ Checkpoint 2: Batch 1 (301–340) Complete & Verified
+
+## Phase 3: Chế Tác Lô 2 (Themes 341–380 · 40 Themes · 86 Slides) — Trí Tuệ Khắc Kỷ & Xung Đột
+- [ ] **Task 6: Chế Tác & Render 86 Slide Sơn Dầu Lô 2 (`assets/templates/multislides/theme_341..380/`)**
+  - Tích hợp chân dung Marcus Aurelius (Delacroix), Seneca (Manuel Domínguez Sánchez), Caspar David Friedrich, Monet.
+- [ ] **Task 7: Hậu Kỳ Khử Dấu Vết AI Hữu Cơ Lô 2 (`scripts/normalize_suites_341_380.py`)**
+  - Chuẩn hóa 9:16, cân bằng màu khoáng tự nhiên, kiểm tra 86 slide đạt 100% chuẩn HYA-08.
+
+### ❖ Checkpoint 3: Batch 2 (341–380) Complete & Verified
+
+## Phase 4: Chế Tác Lô 3 (Themes 381–420 · 40 Themes · 86 Slides) — Triết Ngôn Nén & Thấu Thị Xã Hội
+- [ ] **Task 8: Chế Tác & Render 86 Slide Sơn Dầu Lô 3 (`assets/templates/multislides/theme_381..420/`)**
+  - Tích hợp chân dung Friedrich Nietzsche (Munch hoàng hôn Alps), Epictetus (Baroque study gậy gỗ), Machiavelli (Santi di Tito), Rembrandt.
+- [ ] **Task 9: Hậu Kỳ Khử Dấu Vết AI Hữu Cơ Lô 3 (`scripts/normalize_suites_381_420.py`)**
+  - Chuẩn hóa 9:16, cân bằng màu khoáng tự nhiên, kiểm tra 86 slide đạt 100% chuẩn HYA-08.
+
+### ❖ Checkpoint 4: Batch 3 (381–420) Complete & Verified
+
+## Phase 5: Chế Tác Lô 4 (Themes 421–460 · 40 Themes · 86 Slides) — Tâm Lý Học Tiền Bạc & Tự Do
+- [ ] **Task 10: Chế Tác & Render 86 Slide Sơn Dầu Lô 4 (`assets/templates/multislides/theme_421..460/`)**
+  - Tích hợp chân dung Benjamin Franklin (Duplessis áo cổ lông), Thorstein Veblen (vũ hội Gilded Age), Thomas Cole, Camille Pissarro.
+- [ ] **Task 11: Hậu Kỳ Khử Dấu Vết AI Hữu Cơ Lô 4 (`scripts/normalize_suites_421_460.py`)**
+  - Chuẩn hóa 9:16, cân bằng màu khoáng tự nhiên, kiểm tra 86 slide đạt 100% chuẩn HYA-08.
+
+### ❖ Checkpoint 5: Batch 4 (421–460) Complete & Verified
+
+## Phase 6: Chế Tác Lô 5 (Themes 461–500 · 40 Themes · 87 Slides) — Chữa Lành, Tự Trắc Ẩn & Cột Mốc 500
+- [ ] **Task 12: Chế Tác & Render 87 Slide Sơn Dầu Lô 5 (`assets/templates/multislides/theme_461..500/`)**
+  - Tích hợp chân dung Lão Tử (Trương Lộ cưỡi trâu), Carl Jung (tháp đá Bollingen), Viktor Frankl, Renoir, Albert Bierstadt.
+- [ ] **Task 13: Hậu Kỳ Khử Dấu Vết AI Hữu Cơ Lô 5 (`scripts/normalize_suites_461_500.py`)**
+  - Chuẩn hóa 9:16, cân bằng màu khoáng tự nhiên, kiểm tra 87 slide đạt 100% chuẩn HYA-08.
+
+### ❖ Checkpoint 6: Batch 5 (461–500) Complete & All 431 Slides Ready
+
+## Phase 7: Tích Hợp Bảo Tàng Sống, Cập Nhật Google Sheet & Build Toàn Diện
+- [ ] **Task 14: Cập Nhật `website/src/data/asset-catalog.json` Lên 500 Themes**
+  - Đăng ký toàn bộ 200 theme mới và đường dẫn 431 slide vào catalog.
+- [ ] **Task 15: Cập Nhật Trạng Thái Ảnh Trên Google Sheet Pipeline (Hàng 302 -> 501)**
+  - Cập nhật cột P (`Gợi Ý Phôi Ảnh`) và chuyển đổi cột Q (`Trạng Thái` $\rightarrow$ `ĐÃ CÓ ẢNH`).
+- [ ] **Task 16: Build Toàn Diện Website Astro, Kiểm Thử WCAG AA & Đồng Bộ Git**
+  - Chạy `npm run build`, `node test/verify-build.js` đạt 100% PASS, commit và push lên `origin/main`.
+
+### ❖ Checkpoint 7: Final Delivery & 500-Post Living Museum Achieved
+
+
 
 

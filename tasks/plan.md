@@ -1,170 +1,170 @@
-# Kế Hoạch Sản Xuất: 100 Bài Triết Ngôn Tâm Lý & Tài Chính Tỉnh Thức (STT 401 -> 500)
+# Kế Hoạch Chiến Lược: Chế Tác & Render 200 Bộ Tranh Sơn Dầu Cổ Điển HYA-08 & Chân Dung Triết Gia (Themes 301 -> 500)
 
-> **Mục tiêu chiến lược:** Mở rộng và đa dạng hóa kho tri thức Hiyu Abyss, hoàn tất cột mốc **500 bài triết ngôn xuất bản** trên Google Sheet Pipeline (`A402:Q501`).  
-> **Định hướng nội dung:** Tích hợp chủ đề **Tâm lý học Tiền bạc & Tư duy Tài chính Tỉnh thức** (Morgan Housel, Naval Ravikant, Seneca, Schopenhauer) hòa quyện cùng các chủ đề bản quyền của Hiyu Abyss (Thao túng, Ranh giới, Chữa lành nội tâm và Khắc kỷ).  
-> **Tiêu chuẩn kỹ thuật & văn phong:** Nén chặt độ dài, thuần Việt sắc bén, 0 lỗi AI, 0 sáo ngữ, 100% bespoke tranh sơn dầu cổ điển.
+> **Mục tiêu chiến lược:** Hoàn tất toàn bộ 200 bộ tranh sơn dầu độc lập (`THEME_301` đến `THEME_500`), tương ứng với 200 bài viết từ `TXT-0301` đến `TXT-0500`, đưa Hiyu Abyss trở thành Bảo Tàng Tư Tưởng Sống (*Digital Living Museum*) quy mô 500 tác phẩm hoàn chỉnh trên cả Website và TikTok Pipeline.  
+> **Tổng quy mô chế tác:** Đúng **431 slide tranh sơn dầu độc lập** (75 bài x 3 slide + 62 bài x 1 slide + 54 bài x 2 slide + 9 bài x 4 slide = 431 slides).  
+> **Cương lĩnh mỹ thuật:** Chuẩn `HYA-08` kết hợp nghiên cứu bảo tàng đích thực:
+> 1. **Phong cách tươi sáng, ấm áp & giàu sức gợi:** Bảng màu khoáng tự nhiên (vàng hổ phách, xanh Phổ, cam đất nung, ánh sáng ban mai xua tan màn sương mù), loại bỏ triệt để bóng tối tiêu cực hoặc u uất.
+> 2. **Chân dung triết gia chuẩn tác phẩm danh họa:** Các câu trích dẫn của triết gia lịch sử được tái hiện với diện mạo, thần thái, trang phục và bối cảnh chuẩn xác theo các bức họa bảo tàng kinh điển.
+> 3. **Khử hoàn toàn dấu vết AI (Anti-AI Slop):** 0 da sáp nhựa 3D, 0 ánh sáng neon rực rỡ, 0 chữ/ký tự giả mạo, 0 dị tật giải phẫu; toan vải dệt hữu cơ (*tactile canvas weave*) và vệt sơn đắp nổi (*heavy impasto*).
+> 4. **Tỷ lệ dọc 9:16 (1080x1920) & Vùng an toàn chữ 40%:** Bố cục thoáng đãng ở 1/3 phía dưới để đặt phụ đề và văn bản đọc trên TikTok.
 
 ---
 
-## 1. Ma Trận Phân Bổ 5 Cụm Chủ Đề (100 Bài · STT 401 -> 500)
+## 1. Ma Trận Nghiên Cứu Chân Dung Triết Gia Bảo Tàng (Author Portraits Registry)
+
+Dựa trên kết quả tra cứu từ Wikimedia Commons, The Met, Prado và Städel Museum:
+
+| Triết gia / Tác giả | Danh tác đối chiếu & Nghệ sĩ | Bảo tàng hiện lưu trữ | Đặc trưng diện mạo & Không khí ánh sáng |
+| :--- | :--- | :--- | :--- |
+| **Marcus Aurelius** | *Dernières paroles de l'empereur Marc-Aurèle* — **Eugène Delacroix** (1844) | Musée des Beaux-Arts de Lyon | Hoàng đế - triết gia quấn áo choàng La Mã đỏ thẫm/vàng đồng, ánh đuốc vàng ấm áp rọi bóng cột đá cẩm thạch, thần thái kiên định phi phàm. |
+| **Seneca** | *El suicidio de Séneca* — **Manuel Domínguez Sánchez** (1871) & **Peter Paul Rubens** (1612) | Museo del Prado / Alte Pinakothek | Trí giả Khắc kỷ thanh thản trong phòng tắm La Mã cổ kính, ánh sáng xiên rạng ngời từ cửa vòm, áo choàng đỏ gạch và đá cẩm thạch trắng. |
+| **Arthur Schopenhauer** | *Bildnis des Philosophen Arthur Schopenhauer* — **Jules Lunteschütz** (1855) | Städel Museum, Frankfurt | Chân dung Rembrandt chiaroscuro ấm áp, mái tóc bạc hoang dại, áo choàng đen Prussian, cravat ngà, ánh mắt thấu suốt bản chất thế giới. |
+| **Friedrich Nietzsche** | *Friedrich Nietzsche* — **Edvard Munch** (1906) | Thielska Galleriet, Stockholm | Vóc dáng hiên ngang bên lan can ngắm thung lũng tuyết Sils Maria, ria mép rậm biểu tượng, bầu trời hoàng hôn cam cháy và tím thẫm rực rỡ. |
+| **Epictetus** | *Epicteti Enchiridion* — **William Sonmans & Michael Burghers** (1715) | Oxford / Boston Public Library | Trí giả áo vải thô với cây gậy gỗ bên bàn viết mộc mạc, ánh đèn dầu ấm áp, gương mặt khắc khổ nhưng ánh lên phẩm giá tự do tuyệt đối. |
+| **Lao Tzu (Lão Tử)** | *Laozi Riding an Ox* — **Zhang Lu (Trương Lộ)** (c. 1500) | National Palace Museum, Taipei | Bậc hiền triết cưỡi trâu nước đi qua ải Hàm Cốc giữa sương sớm bồng bềnh, râu tóc bạc phơ bay nhẹ, áo bào thanh thoát, ánh nắng mai dát vàng. |
+| **Niccolò Machiavelli** | *Ritratto di Niccolò Machiavelli* — **Santi di Tito** (c. 1560) | Palazzo Vecchio, Florence | Học giả áo nhung đen viền đỏ son rực rỡ, ánh sáng xiên kiểu Phục Hưng rọi lên vầng trán thông tuệ và nụ cười kín đáo sâu xa. |
+| **Benjamin Franklin** | *Benjamin Franklin (Fur Collar)* — **Joseph Duplessis** (1778) | The Metropolitan Museum of Art | Áo khoác nâu đỏ cổ lông ấm áp, tóc dài tự nhiên không đội tóc giả, ánh sáng dịu hiền soi rọi đôi mắt hóm hỉnh và trí tuệ Khai Sáng. |
+| **Carl Jung** | *Tháp Đá Bollingen & Nghiên Cứu Chiều Sâu* | Zurich, Thụy Sĩ | Phòng đọc sách bằng đá thô mộc, ánh lửa lò sưởi bập bùng, bàn gỗ gụ đầy bản thảo giả kim thuật, tẩu thuốc và ánh hoàng hôn hồ Zurich. |
+| **Viktor Frankl** | *Khát Vọng Sống & Bản Lĩnh Núi Cao* | Vienna / Dãy Alps | Trí giả với nụ cười điềm tĩnh, chiếc áo khoác len sờn đứng trên vách đá ngắm bình minh băng tuyết rạng rỡ, biểu tượng cho sức bật tinh thần. |
+
+---
+
+## 2. Lộ Trình Triển Khai 7 Pha (The 7-Phase Execution Framework)
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
-│ CỤM 1: TÂM LÝ HỌC TIỀN BẠC & NĂNG LỰC TÀI CHÍNH TỈNH THỨC (STT 401–420)│
-│  • Tư duy tài sản vs tiêu sản, trì hoãn thỏa mãn, tiền mua thời gian   │
+│ PHA 1: NỀN TẢNG ĐẶC TẢ MỸ THUẬT & MANIFEST 431 SLIDE (THEMES 301–500)  │
+│  • docs/12_SPEC.md • scripts/build_oil_spec_301_500.py • audit 100%   │
 └───────────────────────────────────┬────────────────────────────────────┘
                                     │
-┌───────────────────────────────────▼────────────────────────────────────┐
-│ CỤM 2: THẤU THỊ XÃ HỘI & CẠM BẪY QUYỀN LỰC ĐỜI THỰC (STT 421–440)      │
-│  • Bóc trần toan tính công sở, quà tặng có điều kiện, kịch bản hạ bệ   │
+    ┌───────────────────────────────┴───────────────────────────────┐
+    ▼                                                               ▼
+┌──────────────────────────────────────┐  ┌──────────────────────────────────────┐
+│ PHA 2: CHẾ TÁC LÔ 1 (THEMES 301–340) │  │ PHA 3: CHẾ TÁC LÔ 2 (THEMES 341–380) │
+│  • Lưu đồ tâm lý & Ranh giới thép    │  │  • Trí tuệ Khắc kỷ & Xung đột        │
+│  • 40 themes · 86 slides · Hậu kỳ    │  │  • 40 themes · 86 slides · Hậu kỳ    │
+└──────────────────┬───────────────────┘  └──────────────────┬───────────────────┘
+                   │                                         │
+    ┌──────────────┴─────────────────────────────────────────┘
+    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│ PHA 4: CHẾ TÁC LÔ 3 (THEMES 381–420) — TRIẾT NGÔN NÉN & THẤU THỊ XÃ HỘI│
+│  • 40 themes · 86 slides · Nietzsche, Machiavelli, Epictetus           │
 └───────────────────────────────────┬────────────────────────────────────┘
                                     │
-┌───────────────────────────────────▼────────────────────────────────────┐
-│ CỤM 3: RANH GIỚI THÉP & NGHỆ THUẬT ỨNG XỬ ĐỈNH CAO (STT 441–460)       │
-│  • Bớt nể nang, ranh giới tiền bạc bạn bè, nghệ thuật từ chối dứt khoát │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    │
-┌───────────────────────────────────▼────────────────────────────────────┐
-│ CỤM 4: GIẢI MÃ NỘI TÂM, TỰ TRẮC ẨN & CHỮA LÀNH CHIỀU SÂU (STT 461–480) │
-│  • Đứa trẻ bên trong, chữa lành vết thương bản ngã, vượt qua tự phán xét│
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    │
-┌───────────────────────────────────▼────────────────────────────────────┐
-│ CỤM 5: KHẮC KỶ VÔ VI & BẢN LĨNH TỰ CHỦ (CÁN MỐC 500 BÀI) (STT 481–500) │
-│  • Tâm bất biến, Memento Mori, Đại thành nhược khuyết, ngọn hải đăng   │
+    ┌───────────────────────────────┴───────────────────────────────┐
+    ▼                                                               ▼
+┌──────────────────────────────────────┐  ┌──────────────────────────────────────┐
+│ PHA 5: CHẾ TÁC LÔ 4 (THEMES 421–460) │  │ PHA 6: CHẾ TÁC LÔ 5 (THEMES 461–500) │
+│  • Tâm lý Tiền bạc & Tự do tài chính │  │  • Tự trắc ẩn, Ý nghĩa sống & Mốc 500│
+│  • Franklin, Veblen, Schopenhauer    │  │  • Lão Tử, Carl Jung, Frankl, Mốc 500│
+│  • 40 themes · 86 slides · Hậu kỳ    │  │  • 40 themes · 87 slides · Hậu kỳ    │
+└──────────────────┬───────────────────┘  └──────────────────┬───────────────────┘
+                   │                                         │
+                   └──────────────────┬──────────────────────┘
+                                      ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│ PHA 7: TÍCH HỢP BẢO TÀNG SỐNG, CẬP NHẬT GOOGLE SHEET & BÀN GIAO TOÀN DIỆN│
+│  • asset-catalog.json (500 themes) • Sheet Q: ĐÃ CÓ ẢNH • Astro Build │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 2. Tiêu Chuẩn Nén Chữ & Tránh Bẫy AI (Humanizer & Quality Gate)
+## 3. Danh Mục Nhiệm Vụ Chi Tiết (Detailed Task List)
 
-* **Trang 1 (Hook mở màn):** Cực ngắn, dưới **8–10 từ**, ngắt bằng dấu lửng (`......`) tạo khoảng trống tò mò (Curiosity Gap).
-* **Trang 2 & Trang 3 (Thân bài slide):** Nén chặt **15 – 22 từ** (1–2 câu ngắn). Đánh thẳng vào trọng tâm, không giải thích dài dòng.
-* **Single-Punch (1 trang):** Nhát kiếm đanh thép, **15 – 20 từ**, đọc 3 giây là nhớ mãi.
-* **Quy chuẩn cấm kỵ (Hard Gates):**
-  - Tuyệt đối KHÔNG dùng dạng hướng dẫn liệt kê: "bước 1, bước 2, bước 3".
-  - Tuyệt đối KHÔNG để lọt ký tự toán học LaTeX (`$`, `\rightarrow`, `ightarrow`).
-  - Khử 100% sáo ngữ AI: "không chỉ... mà còn...", "tấm bình phong", "hãy nhớ rằng", "chất xúc tác".
-
----
-
-## 3. Danh Mục Chi Tiết 100 Đề Tài (STT 401 -> 500)
-
-### Cụm 1: Tâm Lý Học Tiền Bạc & Năng Lực Tài Chính Tỉnh Thức (STT 401 – 420 · 20 bài)
-1. **401:** Tiền bạc là công cụ mua lại sự tự do, không phải chiếc cờ để khoe khoang sự giàu có giả tạo. *(Morgan Housel)*
-2. **402:** Người nghèo chi tiền để người khác nghĩ mình giàu; người giàu dùng tiền để mua lại quyền kiểm soát thời gian. *(Naval Ravikant)*
-3. **403:** Quẹt thẻ để xoa dịu nỗi buồn: Cảm xúc nhất thời, hóa đơn dai dẳng. *(Daniel Kahneman)*
-4. **404:** Tiền cho mượn là tiền mất; đòi lại được là may mắn, mất luôn tình nghĩa là lẽ thường. *(Benjamin Franklin)*
-5. **405:** Bẫy nâng cấp mức sống: Thu nhập tăng gấp đôi, nhưng sự tự do giảm đi một nửa. *(Morgan Housel)*
-6. **406:** Mua những thứ mình không cần bằng số tiền mình không có để gây ấn tượng với những kẻ mình không ưa. *(Will Rogers)*
-7. **407:** Kỷ luật tài chính không phải là tằn tiện khổ sở, mà là sự tôn trọng sâu sắc tương lai của chính mình. *(Seneca)*
-8. **408:** Bẫy 'giảm giá 50%': Bạn không tiết kiệm được nửa giá, bạn vừa mất đi số tiền còn lại. *(Amos Tversky)*
-9. **409:** Đừng đem toàn bộ tương lai của bạn đi đặt cược vào một lời hứa hẹn sinh lời vô căn cứ. *(Warren Buffett)*
-10. **410:** Tiền bạc giống như nước biển: Càng uống vì lòng tham, cổ họng càng cháy khát. *(Arthur Schopenhauer)*
-11. **411:** Tự do tài chính thực sự bắt đầu vào ngày bạn không còn quan tâm thiên hạ nghĩ gì về chiếc xe bạn đi. *(Epictetus)*
-12. **412:** Sự giàu có thực chất là những thứ bạn không nhìn thấy: Khoản tiền chưa tiêu, sự an tâm trong giấc ngủ. *(Morgan Housel)*
-13. **413:** Đầu tư tốt nhất không phải cổ phiếu hay bất động sản; đầu tư tốt nhất là nâng cấp năng lực kiếm tiền của bản thân. *(Benjamin Graham)*
-14. **414:** Đừng đánh đổi danh dự và giấc ngủ yên bình để lấy món lợi bất minh. *(Marcus Aurelius)*
-15. **415:** Nỗi sợ nghèo đói biến con người thành kẻ hèn nhát; hiểu biết tài chính cho con người lòng dũng cảm. *(Robert Kiyosaki)*
-16. **416:** Chiếc bẫy so sánh giàu nghèo trên mạng xã hội: Sân khấu chỉnh sửa vs Thực tế nợ nần. *(Leon Festinger)*
-17. **417:** Lãi kép của sự kiên nhẫn: Người giàu chậm rãi luôn sống lâu hơn kẻ muốn giàu xổi qua đêm. *(Charlie Munger)*
-18. **418:** Khi bạn không có quỹ dự phòng, mọi lời từ chối bất công tại nơi làm việc đều trở thành điều xa xỉ. *(Nassim Nicholas Taleb)*
-19. **419:** Hạnh phúc không tăng thêm khi chiếc ví dày hơn, nếu tâm hồn bạn vẫn là một hố đen không đáy. *(Erich Fromm)*
-20. **420:** Tiền bạc là người đầy tớ trung thành, nhưng là một ông chủ cực kỳ tàn nhẫn. *(Francis Bacon)*
-
-### Cụm 2: Thấu Thị Xã Hội & Cạm Bẫy Quyền Lực Đời Thực (STT 421 – 440 · 20 bài)
-21. **421:** Kẻ khen bạn trước mặt đám đông thường là kẻ đầu tiên đâm sau lưng khi bạn sảy chân. *(Niccolò Machiavelli)*
-22. **422:** Không có bữa trưa nào miễn phí; món quà quá hào phóng luôn đi kèm một cái giá giấu kín. *(Robert Greene)*
-23. **423:** Đừng bao giờ thể hiện mình quá thông minh trước mặt cấp trên háo danh. *(Robert Greene)*
-24. **424:** Cách nhìn thấu một kẻ xảo quyệt: Đừng nghe lời họ hứa hẹn, hãy nhìn những người từng tin họ nay ra sao. *(Arthur Schopenhauer)*
-25. **425:** Kẻ thích chia rẽ nội bộ thường xuất hiện dưới vai trò người bạn thân tâm sự chuyện kín. *(Baltasar Gracián)*
-26. **426:** Chốn công sở: Càng im lặng làm việc hiệu quả, bạn càng ít bị kéo vào các vòng xoáy thị phi. *(Lão Tử)*
-27. **427:** Khi ai đó đối xử quá tốt mà không có lý do rõ ràng, họ đang đặt cọc cho một yêu cầu tàn nhẫn sau này. *(Lỗ Tấn)*
-28. **428:** Kẻ hèn nhát thường mượn danh nghĩa tập thể để bắt nạt một cá nhân dũng cảm. *(Gustave Le Bon)*
-29. **429:** Bí quyết giữ an toàn: Đừng bao giờ để người khác nhìn thấy toàn bộ lá bài trong tay bạn. *(Sun Tzu - Tôn Tử)*
-30. **430:** Người khôn ngoan biết giấu sự sắc bén vào trong vỏ bọc khiêm nhường. *(Lão Tử)*
-31. **431:** Nhìn thấu trò 'rung cây dọa khỉ': Kẻ dọa nạt to tiếng nhất thường là kẻ đang run sợ nhất. *(Niccolò Machiavelli)*
-32. **432:** Đừng tin vào lời xin lỗi lặp lại lần thứ ba; đó là sự cố ý có tính toán. *(Carl Jung)*
-33. **433:** Kẻ hưởng lợi sau cùng từ cuộc tranh chấp thường là kẻ đã ngấm ngầm kích động nó. *(Hàn Phi Tử)*
-34. **434:** Thể diện chỉ quan trọng với kẻ rỗng tuếch; người có năng lực thật sự chỉ quan tâm đến thực chất. *(Arthur Schopenhauer)*
-35. **435:** Trong một bàn tiệc thị phi, kẻ rời đi sớm nhất thường là người thông minh nhất. *(Michel de Montaigne)*
-36. **436:** Sự im lặng đầy hiểu biết có sức công phá mạnh hơn ngàn lời thanh minh dài dòng. *(Seneca)*
-37. **437:** Khi đối phương cố tình chọc giận bạn, mục tiêu của họ là cướp đi sự tỉnh táo của bạn. *(Marcus Aurelius)*
-38. **438:** Đừng tìm kiếm sự công bằng từ kẻ đang nắm quyền định đoạt sự bất công. *(Jean-Jacques Rousseau)*
-39. **439:** Kẻ hay than vãn về sự bạc bẽo của cuộc đời thường là người đối xử tệ bạc nhất với người xung quanh. *(Alfred Adler)*
-40. **440:** Bản lĩnh nơi làm việc: Tập trung tạo ra giá trị độc bản không thể thay thế. *(Peter Thiel)*
-
-### Cụm 3: Ranh Giới Thép & Nghệ Thuật Ứng Xử Đỉnh Cao (STT 441 – 460 · 20 bài)
-41. **441:** Càng dễ dãi nhận lời, lời nói của bạn càng trở nên rẻ rúng trong mắt người khác. *(Nedra Glover Tawwab)*
-42. **442:** Ranh giới không phải là xây tường cô lập, ranh giới là xây chiếc cửa có khóa an toàn. *(Brené Brown)*
-43. **443:** Lịch sự với người lạ là phép tắc, nhưng kiên quyết từ chối người quen quá trớn là bản lĩnh. *(Arthur Schopenhauer)*
-44. **444:** Đừng giải thích lý do khi nói 'Không'; sự giải thích dài dòng là lời mời cho họ thương lượng. *(Nedra Glover Tawwab)*
-45. **445:** Cắt đứt một mối quan hệ độc hại không phải là thất bại; đó là chiến thắng lớn nhất của lòng tự trọng. *(Carl Rogers)*
-46. **446:** Không ai có thể làm bạn tổn thương nếu bạn không trao cho họ chiếc chìa khóa bước vào tâm trí. *(Eleanor Roosevelt)*
-47. **447:** Ranh giới tiền bạc giữa bạn bè: Rõ ràng ngay từ ly cà phê đến hợp đồng bạc tỷ. *(Benjamin Franklin)*
-48. **448:** Đối phó với kẻ thích hỏi chuyện đời tư: Một câu trả lời ngắn và ánh nhìn chuyển chủ đề. *(Harriet Lerner)*
-49. **449:** Dám từ chối những cuộc vui vô bổ để giữ trọn năng lượng cho mục tiêu cuộc đời. *(Seneca)*
-50. **450:** Khi bạn ngừng làm hài lòng người khác, bạn mới bắt đầu thực sự sống cuộc đời của mình. *(Alfred Adler)*
-51. **451:** Người biết tôn trọng bạn sẽ không bao giờ đẩy bạn vào thế khó xử trước đám đông. *(Erich Fromm)*
-52. **452:** Đừng gánh trách nhiệm cảm xúc cho sự bực dọc vô cớ của người khác. *(David D. Burns)*
-53. **453:** Giữ khoảng cách là sự tử tế cao nhất để các mối quan hệ không bị mài mòn. *(Arthur Schopenhauer)*
-54. **454:** Tha thứ trong im lặng và không bao giờ cho phép họ bước chân vào cuộc đời bạn thêm một lần nào nữa. *(Marcus Aurelius)*
-55. **455:** Người không dám làm mất lòng ai sẽ sớm trở thành kẻ bị tất cả mọi người coi thường. *(Niccolò Machiavelli)*
-56. **456:** Ranh giới gia đình: Yêu thương bằng cả trái tim nhưng giữ độc lập về tài chính và quyết định cá nhân. *(Carl Jung)*
-57. **457:** Đừng biến lòng tốt của bạn thành nghĩa vụ mặc định cho kẻ lười biếng. *(Jordan Peterson)*
-58. **458:** Nói lời khó nghe một lần thẳng thắn tốt hơn ngàn lần bằng mặt nhưng không bằng lòng. *(Khổng Tử)*
-59. **459:** Sự lạnh lùng đúng lúc là liều thuốc bảo quản tốt nhất cho lòng tự trọng của bạn. *(Friedrich Nietzsche)*
-60. **460:** Bạn không có nghĩa vụ phải giải cứu những người chỉ thích đắm chìm trong vai nạn nhân. *(Stephen Karpman)*
-
-### Cụm 4: Giải Mã Nội Tâm, Tự Trắc Ẩn & Chữa Lành Chiều Sâu (STT 461 – 480 · 20 bài)
-61. **461:** Vết thương thời thơ ấu không phải lỗi của bạn, nhưng chữa lành nó là trách nhiệm duy nhất của bạn hôm nay. *(Gabor Maté)*
-62. **462:** Cảm xúc tiêu cực không phải là kẻ thù; nó là tín hiệu báo động tâm hồn bạn đang quá tải. *(Carl Rogers)*
-63. **463:** Ngừng tự phán xét bản thân bằng thước đo thành công méo mó của người khác. *(Kristin Neff)*
-64. **464:** Bạn không cần phải luôn tỏ ra mạnh mẽ; dám thừa nhận mình mệt mỏi là bước đầu tiên để hồi sinh. *(Brené Brown)*
-65. **465:** Nỗi sợ bị bỏ rơi khiến bạn bám víu vào những mối quan hệ độc hại như kẻ chết đuối vớ cọng rơm. *(John Bowlby)*
-66. **466:** Đứa trẻ bên trong bạn không cần kẹo ngọt hay lời khen giả tạo; nó cần bạn lắng nghe và bảo vệ nó. *(Carl Jung)*
-67. **467:** Học cách làm bạn với sự cô đơn: Nơi duy nhất bạn có thể tìm thấy bản sắc nguyên bản của mình. *(Arthur Schopenhauer)*
-68. **468:** Đừng trừng phạt bản thân hôm nay vì những quyết định dại dột trong quá khứ khi bạn chưa đủ hiểu biết. *(Kristin Neff)*
-69. **469:** Nỗi ám ảnh về sự hoàn hảo thực chất là nỗi sợ bị từ chối được ngụy trang công phu. *(Alfred Adler)*
-70. **470:** Cho phép bản thân được nghỉ ngơi mà không cảm thấy tội lỗi. *(Viktor Frankl)*
-71. **471:** Thấu cảm với chính mình trước khi đòi hỏi sự thấu hiểu từ thế giới bên ngoài. *(Thích Nhất Hạnh)*
-72. **472:** Những điều bạn kìm nén không biến mất; chúng chìm vào vô thức và âm thầm điều khiển số phận bạn. *(Carl Jung)*
-73. **473:** Chữa lành là một con đường xoắn ốc gập ghềnh, không phải một đường thẳng tắp hoàn hảo. *(Bessel van der Kolk)*
-74. **474:** Nước mắt không phải là sự yếu đuối; nước mắt là sự thanh lọc cần thiết cho một trái tim kiên cường. *(Washington Irving)*
-75. **475:** Đừng tìm kiếm sự xoa dịu bên ngoài cho một khoảng trống chỉ có thể lấp đầy từ bên trong. *(Erich Fromm)*
-76. **476:** Chấp nhận sự bất toàn của bản thân là đỉnh cao của sự dũng cảm. *(Alfred Adler)*
-77. **477:** Nỗi đau là điều tất yếu, nhưng sự dằn vặt triền miên là một lựa chọn sai lầm. *(Haruki Murakami)*
-78. **478:** Mỗi lần bạn dám đối diện với nỗi sợ hãi, cái bóng của nó sẽ teo nhỏ lại một phần. *(Carl Jung)*
-79. **479:** Sự dịu dàng với chính mình là mảnh đất màu mỡ nhất cho sự trưởng thành. *(Kristin Neff)*
-80. **480:** Bạn xứng đáng được yêu thương vì chính sự tồn tại của mình, không cần phải chứng minh qua bất kỳ chiếc cúp nào. *(Carl Rogers)*
-
-### Cụm 5: Khắc Kỷ Vô Vi & Bản Lĩnh Tự Chủ Tối Thượng (Cán Mốc 500 Bài) (STT 481 – 500 · 20 bài)
-81. **481:** Tâm bất biến giữa dòng đời vạn biến: Sự bình thản là vũ khí hủy diệt mọi trò khiêu khích. *(Marcus Aurelius)*
-82. **482:** Chuyện không thể kiểm soát thì buông; chuyện trong tầm tay thì dốc toàn tâm toàn lực. *(Epictetus)*
-83. **483:** Nghịch cảnh lớn bao nhiêu, vinh quang của sự quật khởi rực rỡ bấy nhiêu. *(Seneca)*
-84. **484:** Người làm chủ được hơi thở và cảm xúc là người làm chủ được vận mệnh cả đời. *(Lão Tử)*
-85. **485:** Đừng than khóc về ngọn gió ngược; hãy học cách xoay cánh buồm để tiến về phía trước. *(Seneca)*
-86. **486:** Danh tiếng giống như chiếc bóng: Càng chạy theo càng vô vọng, cứ đứng thẳng dưới nắng nó tự khắc theo sau. *(Arthur Schopenhauer)*
-87. **487:** Kẻ mạnh thực sự không bao giờ cần phô trương cơ bắp hay tiếng gầm thét. *(Lão Tử)*
-88. **488:** Vấp ngã mười lần thì đứng dậy mười một lần; lòng kiên trì biến sỏi đá thành kim cương. *(Friedrich Nietzsche)*
-89. **489:** Đừng để những lời ca tụng làm mờ mắt, đừng để những tiếng la ó làm lung lay ý chí. *(Marcus Aurelius)*
-90. **490:** Sự tự do tối thượng: Khả năng lựa chọn thái độ của mình trước bất kỳ hoàn cảnh nghiệt ngã nào. *(Viktor Frankl)*
-91. **491:** Sống thuận theo tự nhiên: Đón nhận được mất như dòng chảy bốn mùa luân chuyển. *(Trang Tử)*
-92. **492:** Cái chết nhắc nhở chúng ta về giá trị vô giá của từng giây phút hiện tại (Memento Mori). *(Marcus Aurelius)*
-93. **493:** Trí tuệ tĩnh lặng: Khi tâm trí trong như mặt hồ phẳng lặng, toàn bộ thế gian đều phản chiếu rõ ràng. *(Lão Tử)*
-94. **494:** Người vượt qua được nỗi sợ hãi là người đã nắm trong tay chìa khóa của tự do vĩnh cửu. *(Epictetus)*
-95. **495:** Đừng sống như thể bạn còn mười ngàn năm phía trước; hãy sống như hôm nay là ngày cuối cùng để tỏa sáng. *(Marcus Aurelius)*
-96. **496:** Bản lĩnh Khắc kỷ: Không oán trời, không trách người, tự chịu trách nhiệm 100% cho cuộc đời mình. *(Seneca)*
-97. **497:** Sự vĩ đại của con người nằm ở khả năng chuyển hóa bi kịch thành chiến thắng của tinh thần. *(Friedrich Nietzsche)*
-98. **498:** Biết đủ là giàu có tột bậc; không màng danh lợi là tự do thênh thang. *(Lão Tử)*
-99. **499:** Càng đi sâu vào bóng tối của bản ngã, bạn càng tìm thấy ngọn lửa bất diệt của chân lý. *(Carl Jung & Spinoza)*
-100. **500:** [CỘT MỐC 500 BÀI] Đại thành nhược khuyết: Đi qua 500 triết ngôn để sống một đời tự do, thiện lương có nanh vuốt và kiêu hãnh giữa nhân gian. *(Lão Tử, Marcus Aurelius & Carl Jung)*
+### Phase 1: Nền Tảng Đặc Tả Mỹ Thuật & Manifest 431 Slide
+- **Task 1.1: Soạn Thảo Tài Liệu Đặc Tả Mỹ Thuật `docs/12_HIYU_ABYSS_OIL_PAINTING_SUITES_301_500_SPEC.md`**
+  - **Mô tả:** Thiết lập bộ nguyên tắc hội họa sơn dầu tươi sáng, ánh sáng tự nhiên, công thức prompt 9:16 độc lập cho từng slide, text safe zone 40% và tích hợp danh họa cho từng chủ đề.
+  - **Tiêu chuẩn:** Đủ 200 theme, mô tả chi tiết từng slide theo format của bài viết.
+  - **Verification:** Kiểm tra file tồn tại và đủ 200 themes.
+- **Task 1.2: Lập Trình Script Khởi Tạo Manifest `scripts/build_oil_spec_301_500.py`**
+  - **Mô tả:** Tự động đọc dữ liệu từ `scripts/posts_301_350.json`, `posts_351_400.json`, `posts_401_450.json`, `posts_451_500.json` để tạo file `scripts/oil_suites_301_500_manifest.json` gồm đúng 431 slide với prompt chuẩn.
+  - **Verification:** `python scripts/build_oil_spec_301_500.py` xuất ra 431 slides.
+- **Task 1.3: Lập Trình Bộ Kiểm Định Tự Động `scripts/audit_oil_spec_301_500.py`**
+  - **Mô tả:** Kiểm tra 100% prompt không chứa từ cấm AI (3D, CGI, neon, plastic, watermark), tỷ lệ 9:16, không trùng lặp mô tả, đủ vệt cọ toan vải.
+  - **Verification:** `python scripts/audit_oil_spec_301_500.py` đạt 0 Cảnh báo | 0 Lỗi (100% PASS).
+- **❖ Checkpoint 1:** Đặc tả mỹ thuật và Manifest 431 slide hoàn tất, sẵn sàng sản xuất.
 
 ---
 
-## 4. Lộ Trình Triển Khai Kỹ Thuật (Execution Roadmap)
+### Phase 2: Chế Tác Lô 1 (Themes 301–340 · 40 Themes · 86 Slides) — Lưu Đồ Tâm Lý & Ranh Giới
+- **Task 2.1: Chế Tác Slide Sơn Dầu Lô 1 (`assets/templates/multislides/theme_301..340/`)**
+  - **Chủ đề:** Nhận diện thao túng, Tam giác nạn nhân Karpman, Bẫy làm hài lòng, Thiết lập ranh giới thép.
+  - **Nghệ thuật cảm hứng:** Honoré Daumier (bàn tiệc châm biếm), Vilhelm Hammershøi (căn phòng tĩnh lặng, người quay lưng), John Singer Sargent (dáng đứng kiêu hãnh bước đi).
+  - **Quy mô:** 40 themes, 86 slide tranh sơn dầu độc lập.
+- **Task 2.2: Hậu Kỳ Khử Dấu Vết AI Hữu Cơ Lô 1 (`scripts/normalize_suites_301_340.py`)**
+  - **Mô tả:** Chuẩn hóa 9:16 (1080x1920), giảm -4% bão hòa về màu khoáng tự nhiên, phủ hạt Organic Canvas Grain, tăng sắc nét micro-contrast thớ toan.
+  - **Verification:** Kiểm tra 86 slide đạt 100% tỷ lệ và dung lượng chuẩn.
+- **❖ Checkpoint 2:** Hoàn tất 86 slide Lô 1 đạt chuẩn bảo tàng.
 
-1. **Lô 1 (STT 401 -> 450 · 50 bài):** Sản xuất và nạp dải ô `A402:Q451`. Tập trung toàn lực vào 20 bài Tâm lý Tiền bạc và 30 bài Thấu thị xã hội / Ranh giới thép.
-2. **Lô 2 (STT 451 -> 500 · 50 bài):** Sản xuất và nạp dải ô `A452:Q501`. Hoàn tất các bài Chữa lành nội tâm và Khắc kỷ vô vi, khép lại mốc 500 bài lịch sử.
-3. **Kiểm định chất lượng:** Chạy script audit tự động kiểm tra 100% số từ Hook, thân slide, 5 hashtags, 0 từ cấm trước khi đẩy lên Google Sheet.
+---
+
+### Phase 3: Chế Tác Lô 2 (Themes 341–380 · 40 Themes · 86 Slides) — Trí Tuệ Khắc Kỷ & Xung Đột
+- **Task 3.1: Chế Tác Slide Sơn Dầu Lô 2 (`assets/templates/multislides/theme_341..380/`)**
+  - **Chủ đề:** Khắc kỷ điềm tĩnh, Xử lý xung đột, Ranh giới cảm xúc, Ngưng phản ứng bốc đồng.
+  - **Chân dung & Nghệ thuật:** Marcus Aurelius (Delacroix), Seneca (Manuel Domínguez Sánchez), Caspar David Friedrich (biển sương mù, pháo đài bình minh), Claude Monet (ánh nắng ban mai trên dòng sông).
+  - **Quy mô:** 40 themes, 86 slide tranh sơn dầu độc lập.
+- **Task 3.2: Hậu Kỳ Khử Dấu Vết AI Hữu Cơ Lô 2 (`scripts/normalize_suites_341_380.py`)**
+  - **Verification:** Kiểm tra 86 slide đạt 100% tiêu chuẩn HYA-08.
+- **❖ Checkpoint 3:** Hoàn tất 86 slide Lô 2.
+
+---
+
+### Phase 4: Chế Tác Lô 3 (Themes 381–420 · 40 Themes · 86 Slides) — Triết Ngôn Nén Gọn & Thấu Thị
+- **Task 4.1: Chế Tác Slide Sơn Dầu Lô 3 (`assets/templates/multislides/theme_381..420/`)**
+  - **Chủ đề:** Độc lập tư duy, Bóc tách mặt nạ xã hội, Sức mạnh của sự im lặng, Nhát kiếm triết ngôn.
+  - **Chân dung & Nghệ thuật:** Friedrich Nietzsche (Munch phong cách hoàng hôn Alps), Epictetus (Baroque study với gậy gỗ), Machiavelli (Santi di Tito áo nhung đỏ), Rembrandt (chiaroscuro vàng hổ phách).
+  - **Quy mô:** 40 themes, 86 slide tranh sơn dầu độc lập.
+- **Task 4.2: Hậu Kỳ Khử Dấu Vết AI Hữu Cơ Lô 3 (`scripts/normalize_suites_381_420.py`)**
+  - **Verification:** Kiểm tra 86 slide đạt 100% tiêu chuẩn HYA-08.
+- **❖ Checkpoint 4:** Hoàn tất 86 slide Lô 3.
+
+---
+
+### Phase 5: Chế Tác Lô 4 (Themes 421–460 · 40 Themes · 86 Slides) — Tâm Lý Học Tiền Bạc & Tự Do
+- **Task 5.1: Chế Tác Slide Sơn Dầu Lô 4 (`assets/templates/multislides/theme_421..460/`)**
+  - **Chủ đề:** Bản chất của tiền, Tiêu dùng phô trương, Bẫy so sánh giàu nghèo, Nợ nần tâm lý và tự do đích thực.
+  - **Chân dung & Nghệ thuật:** Benjamin Franklin (Duplessis áo cổ lông), Thorstein Veblen (vũ hội thời kỳ Gilded Age từ góc tĩnh mịch), Thomas Cole (sự hưng thịnh và suy tàn), Camille Pissarro (chợ quê ấm áp).
+  - **Quy mô:** 40 themes, 86 slide tranh sơn dầu độc lập.
+- **Task 5.2: Hậu Kỳ Khử Dấu Vết AI Hữu Cơ Lô 4 (`scripts/normalize_suites_421_460.py`)**
+  - **Verification:** Kiểm tra 86 slide đạt 100% tiêu chuẩn HYA-08.
+- **❖ Checkpoint 5:** Hoàn tất 86 slide Lô 4.
+
+---
+
+### Phase 6: Chế Tác Lô 5 (Themes 461–500 · 40 Themes · 87 Slides) — Chữa Lành, Tự Trắc Ẩn & Cột Mốc 500
+- **Task 6.1: Chế Tác Slide Sơn Dầu Lô 5 (`assets/templates/multislides/theme_461..500/`)**
+  - **Chủ đề:** Ôm ấp đứa trẻ bên trong, Tự tha thứ, Sức bật nội tâm, Đại thành nhược khuyết & Khúc ca khải hoàn 500 bài.
+  - **Chân dung & Nghệ thuật:** Lão Tử (Trương Lộ cưỡi trâu qua ải Hàm Cốc giữa ban mai), Carl Jung (tháp đá Bollingen bên hồ), Viktor Frankl (bình minh Alps), Pierre-Auguste Renoir (vườn hoa mẫu đơn ngập nắng), Albert Bierstadt (đỉnh núi vinh quang rực rỡ).
+  - **Quy mô:** 40 themes, 87 slide tranh sơn dầu độc lập.
+- **Task 6.2: Hậu Kỳ Khử Dấu Vết AI Hữu Cơ Lô 5 (`scripts/normalize_suites_461_500.py`)**
+  - **Verification:** Kiểm tra 87 slide đạt 100% tiêu chuẩn HYA-08.
+- **❖ Checkpoint 6:** Hoàn tất trọn vẹn 431 slides tranh sơn dầu của cả 200 themes (301-500).
+
+---
+
+### Phase 7: Tích Hợp Bảo Tàng Sống, Cập Nhật Google Sheet & Build Toàn Diện
+- **Task 7.1: Mở Rộng `website/src/data/asset-catalog.json` Lên 500 Themes**
+  - **Mô tả:** Đăng ký 200 theme mới và đường dẫn 431 slide vào catalog để hệ thống Astro Living Museum đọc và hiển thị trực quan.
+  - **Verification:** `asset-catalog.json` chứa đủ 500 themes hợp lệ.
+- **Task 7.2: Cập Nhật Trạng Thái Ảnh Trên Google Sheet Pipeline (Hàng 302 -> 501)**
+  - **Mô tả:** Ghi chi tiết phôi ảnh vào Cột P (`Gợi Ý Phôi Ảnh`) và đổi Cột Q (`Trạng Thái` $\rightarrow$ `ĐÃ CÓ ẢNH`) cho toàn bộ 200 hàng.
+  - **Verification:** `gsheets read` kiểm tra hàng 302, 400, 501 hiển thị `ĐÃ CÓ ẢNH`.
+- **Task 7.3: Build Toàn Diện Website Astro & Chạy Bộ Test Tĩnh WCAG AA**
+  - **Mô tả:** `npm run build` trong `website` kiểm tra toàn bộ 500 bài viết và thư viện hình ảnh hiển thị mượt mà, không gãy liên kết.
+  - **Verification:** `node test/verify-build.js` đạt 100% PASS.
+- **Task 7.4: Đồng Bộ Toàn Bộ Mã Nguồn & Tài Nguyên Lên GitHub Remote**
+  - **Mô tả:** Commit và push toàn bộ hệ thống lên `origin/main`.
+- **❖ Checkpoint 7:** Nghiệm thu toàn diện cột mốc 500 bộ ảnh bảo tàng sống.
+
+---
+
+## 4. Quản Trị Rủi Ro & Giải Pháp Kỹ Thuật (Risks & Mitigations)
+
+| Rủi ro tiềm ẩn | Mức độ | Biện pháp kiểm soát chủ động |
+| :--- | :---: | :--- |
+| **Trùng lặp bố cục giữa 431 slide** | Cao | Phân bổ ma trận 50+ danh họa khác nhau trải dài từ Phục Hưng, Baroque, Khai Sáng, Lãng Mạn, Barbizon đến Ấn Tượng; luân chuyển góc nhìn (toàn cảnh thiên nhiên $\leftrightarrow$ chân dung cận cảnh $\leftrightarrow$ tĩnh vật triết lý). |
+| **Tì vết sáp nhựa của AI (AI Slop)** | Cao | Ép chặt công thức Master Prompt với từ khóa vật lý: `heavy impasto brushstrokes`, `tactile canvas weave`, `mineral oil pigments`. Bắt buộc chạy qua bộ lọc xử lý hình ảnh `normalize_oil_suites` (giảm bão hòa -4%, phủ hạt canvas grain, unsharp mask). |
+| **Diện mạo tác giả sai lệch thời đại** | Trung bình | Neo chặt vào các bức chân dung bảo tàng đã kiểm chứng (Delacroix, Lunteschütz, Munch, Duplessis, Santi di Tito); mô tả chính xác chi tiết phục trang (áo choàng La Mã, cravat ngà, cổ áo lông thú, áo nhung Phục Hưng). |
+| **Chữ bị chìm khi biên tập TikTok** | Trung bình | Quy định vùng an toàn chữ (*Text Safe Zone*): 40% diện tích ở trung tâm hoặc 1/3 phía dưới phải là mảng màu êm dịu, tương phản vừa phải để đặt chữ tiếng Việt sắc nét. |

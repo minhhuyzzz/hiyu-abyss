@@ -3,6 +3,7 @@
 import type { PublicQuote, TopicDefinition } from '../lib/types';
 import SectionHeader from './SectionHeader.astro';
 import ArtworkPlacard from './ArtworkPlacard.astro';
+import { getOptimizedThumb } from '../lib/image-optimizer';
 
 interface Props {
   featuredQuotes: PublicQuote[];
@@ -41,14 +42,20 @@ const secondaryQuotes = featuredQuotes.slice(1, 4);
       {leadQuote && (
         <article class="lg:col-span-7 flex flex-col gap-6 group">
           <div class="relative aspect-[16/10] sm:aspect-[16/9] w-full overflow-hidden bg-surface border border-border/80 shadow-xl">
-            <img
-              src={leadQuote.artInfo?.slides?.slide_1 || `/images/themes/${leadQuote.imageRef}/slide_1_establishing.jpg`}
-              alt={leadQuote.artInfo?.alt_vi || leadQuote.cleanTitle}
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              loading="lazy"
-              decoding="async"
-              onerror="this.onerror=null; this.src='/images/themes/theme_01/slide_1_establishing.jpg'"
-            />
+            {(() => {
+              const art = leadQuote.artInfo?.slides?.slide_1 || `/images/themes/${leadQuote.imageRef}/slide_1_establishing.jpg`;
+              const thumb = getOptimizedThumb(art, { width: 800, quality: 80, fit: 'cover' });
+              return (
+                <img
+                  src={thumb}
+                  alt={leadQuote.artInfo?.alt_vi || leadQuote.cleanTitle}
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
+                  onerror={`this.onerror=null; this.src='${art}';`}
+                />
+              );
+            })()}
           </div>
 
           <div class="flex flex-col gap-3">

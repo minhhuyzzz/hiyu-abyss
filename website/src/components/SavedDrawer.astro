@@ -1,21 +1,26 @@
 ---
 // SavedDrawer.astro - Contemplative Personal Saved Archive Drawer (Masterplan V3.1)
 import { getAllPublishedQuotes } from '../lib/content-publisher';
+import { getOptimizedThumb } from '../lib/image-optimizer';
 
 const allQuotes = getAllPublishedQuotes();
 const quotesMap = Object.fromEntries(
-  allQuotes.map((q) => [
-    q.id,
-    {
-      id: q.id,
-      slug: q.slug,
-      title: q.cleanTitle || q.title,
-      author: q.author,
-      content: q.content,
-      primaryTopicTitle: q.primaryTopicTitle,
-      imageRef: q.artInfo?.slides?.slide_1 || `/images/themes/${q.imageRef}/slide_1_establishing.jpg`,
-    },
-  ])
+  allQuotes.map((q) => {
+    const art = q.artInfo?.slides?.slide_1 || `/images/themes/${q.imageRef}/slide_1_establishing.jpg`;
+    return [
+      q.id,
+      {
+        id: q.id,
+        slug: q.slug,
+        title: q.cleanTitle || q.title,
+        author: q.author,
+        content: q.content,
+        primaryTopicTitle: q.primaryTopicTitle,
+        imageRef: art,
+        thumbRef: getOptimizedThumb(art, { width: 160, height: 160 }),
+      },
+    ];
+  })
 );
 ---
 
@@ -168,7 +173,7 @@ const quotesMap = Object.fromEntries(
           ${
             item.imageRef
               ? `<div class="w-14 h-14 aspect-square flex-shrink-0 overflow-hidden bg-surface border border-border/60 rounded-xs">
-                  <img src="${item.imageRef}" alt="${item.title}" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null; this.src='/images/themes/theme_01/slide_1_establishing.jpg'" />
+                  <img src="${item.thumbRef || item.imageRef}" alt="${item.title}" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null; this.src='${item.imageRef}';" />
                  </div>`
               : ''
           }

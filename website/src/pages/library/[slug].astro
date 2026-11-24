@@ -6,6 +6,7 @@ import ArtworkPlacard from '../../components/ArtworkPlacard.astro';
 import MuseumLightbox from '../../components/MuseumLightbox.astro';
 import LibraryComments from '../../components/library/LibraryComments';
 import { getAllPublishedQuotes } from '../../lib/content-publisher';
+import { getOptimizedThumb } from '../../lib/image-optimizer';
 import type { PublicQuote } from '../../lib/types';
 
 export function getStaticPaths() {
@@ -272,15 +273,16 @@ const isEcho = normTitle.includes(normContent.slice(0, 20)) || normContent.inclu
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           {relatedQuotes.map((rq) => {
             const rqArt = rq.artInfo?.slides?.slide_1 || `/images/themes/${rq.imageRef}/slide_1_establishing.jpg`;
+            const rqThumb = getOptimizedThumb(rqArt, { width: 400, height: 400 });
             return (
               <article class="p-4 border border-border/70 bg-surface/40 hover:border-accent transition-all duration-300 flex flex-col justify-between group rounded-sm">
                 <a href={`/library/${rq.slug}`} class="relative aspect-square overflow-hidden bg-surface block border border-border/40 mb-3.5">
                   <img
-                    src={rqArt}
+                    src={rqThumb}
                     alt={rq.cleanTitle}
                     class="w-full h-full object-cover filter brightness-[0.9] group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
-                    onerror="this.onerror=null; this.src='/images/themes/theme_01/slide_1_establishing.jpg'"
+                    onerror={`this.onerror=null; this.src='${rqArt}';`}
                   />
                   <span class="absolute top-2 left-2 px-2 py-0.5 text-[9px] font-mono tracking-wider uppercase bg-bg/90 text-accent border border-border/60">
                     {rq.id}

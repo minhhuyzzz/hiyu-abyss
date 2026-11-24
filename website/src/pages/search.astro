@@ -2,6 +2,7 @@
 // src/pages/search.astro - Instant Vietnamese Full-Text Search (Museum Editorial Architecture V3.1)
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllPublishedQuotes, getAllTopics } from '../lib/content-publisher';
+import { getOptimizedThumb } from '../lib/image-optimizer';
 
 const allQuotes = getAllPublishedQuotes();
 const allTopics = getAllTopics();
@@ -21,6 +22,7 @@ const searchIndex = allQuotes.map((q) => {
     quoteType: q.quoteType,
     quoteTypeLabel: q.quoteTypeLabel,
     imageRef: artSrc,
+    thumbRef: getOptimizedThumb(artSrc, { width: 240, height: 240 }),
   };
 });
 ---
@@ -352,13 +354,13 @@ const searchIndex = allQuotes.map((q) => {
           imgContainer.className = 'w-28 sm:w-36 h-28 sm:h-36 aspect-square flex-shrink-0 overflow-hidden bg-surface border border-border/60 rounded-xs';
 
           const img = document.createElement('img');
-          img.src = q.imageRef;
+          img.src = q.thumbRef || q.imageRef;
           img.alt = q.title || 'Artwork thumbnail';
           img.className = 'w-full h-full object-cover filter brightness-90 hover:scale-105 transition-all duration-500';
           img.loading = 'lazy';
           img.onerror = function() {
             this.onerror = null;
-            this.src = '/images/themes/theme_01/slide_1_establishing.jpg';
+            this.src = q.imageRef || '/images/themes/theme_01/slide_1_establishing.jpg';
           };
           imgContainer.appendChild(img);
           row.appendChild(imgContainer);

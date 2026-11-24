@@ -1,6 +1,7 @@
 ---
 // QuoteCard.astro - Double-Bezel Museum Plaque Card Architecture
 import type { PublicQuote } from '../lib/types';
+import { getOptimizedThumb } from '../lib/image-optimizer';
 
 interface Props {
   quote: PublicQuote;
@@ -8,6 +9,7 @@ interface Props {
 
 const { quote } = Astro.props;
 const artSrc = quote.artInfo?.slides?.slide_1 || `/images/themes/${quote.imageRef}/slide_1_establishing.jpg`;
+const thumbSrc = getOptimizedThumb(artSrc, { width: 400, height: 400 });
 ---
 
 <article
@@ -19,12 +21,12 @@ const artSrc = quote.artInfo?.slides?.slide_1 || `/images/themes/${quote.imageRe
     <!-- Card Header Artwork Thumbnail (Square 1:1 Gallery Aspect) -->
     <a href={`/library/${quote.slug}`} class="relative w-full aspect-square overflow-hidden bg-surface block">
       <img
-        src={artSrc}
+        src={thumbSrc}
         alt={quote.artInfo?.alt_vi || quote.cleanTitle}
         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter brightness-95 group-hover:brightness-100"
         loading="lazy"
         decoding="async"
-        onerror="this.onerror=null; this.src='/images/themes/theme_01/slide_1_establishing.jpg'"
+        onerror={`this.onerror=null; this.src='${artSrc}';`}
       />
       <div class="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent opacity-70"></div>
       

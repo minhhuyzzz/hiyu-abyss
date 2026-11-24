@@ -3,6 +3,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { AgoraService } from '../../lib/agora/service';
 import { getCloudflareEnv } from '../../lib/cloudflare-env';
+import { getOptimizedThumb } from '../../lib/image-optimizer';
 
 const service = new AgoraService(getCloudflareEnv(Astro.locals));
 const categories = await service.getCategories();
@@ -205,11 +206,11 @@ const spotlightThread = threads.find((t) => t.pinned) || threads[0];
             <div class="space-y-3">
               <div class="relative aspect-[16/10] overflow-hidden bg-surface rounded-sm border border-border/40">
                 <img
-                  src={cat.cover_art_ref}
+                  src={getOptimizedThumb(cat.cover_art_ref, { width: 480, height: 300 })}
                   alt={cat.title}
                   class="w-full h-full object-cover filter brightness-[0.88] group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
-                  onerror="this.onerror=null; this.src='/images/themes/theme_01/slide_1_establishing.jpg'"
+                  onerror={`this.onerror=null; this.src='${cat.cover_art_ref}';`}
                 />
                 <span class="absolute bottom-2 left-2 px-2.5 py-0.5 text-[10px] font-mono uppercase bg-bg/90 text-accent border border-border/60">
                   {cat.cover_art_title}

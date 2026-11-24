@@ -3,6 +3,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllPublishedQuotes } from '../lib/content-publisher';
 import { getAllAtlasNodes } from '../lib/atlas/loader';
+import { getOptimizedThumb } from '../lib/image-optimizer';
 
 const allQuotes = getAllPublishedQuotes();
 const allAtlasNodes = getAllAtlasNodes();
@@ -84,7 +85,17 @@ const allAtlasNodes = getAllAtlasNodes();
   </div>
 
   <script define:vars={{
-    quotesCatalog: allQuotes.map(q => ({ id: q.id, slug: q.slug, title: q.cleanTitle, content: q.content, author: q.author, image: q.artInfo?.slides?.slide_1 || `/images/themes/${q.imageRef}/slide_1_establishing.jpg` })),
+    quotesCatalog: allQuotes.map(q => {
+      const art = q.artInfo?.slides?.slide_1 || `/images/themes/${q.imageRef}/slide_1_establishing.jpg`;
+      return {
+        id: q.id,
+        slug: q.slug,
+        title: q.cleanTitle,
+        author: q.author,
+        image: art,
+        thumb: getOptimizedThumb(art, { width: 400, height: 400 }),
+      };
+    }),
     atlasNodesCatalog: allAtlasNodes.map(n => ({ id: n.id, slug: n.slug, label: n.label, summary: n.summary, kind: n.kind }))
   }}>
     const grid = document.getElementById('saved-quotes-grid');
@@ -128,7 +139,7 @@ const allAtlasNodes = getAllAtlasNodes();
           <article class="p-5 bg-surface/40 border border-border/70 hover:border-accent rounded-sm transition-all flex flex-col justify-between space-y-4 group">
             <div class="space-y-3">
               <a href="/library/${q.slug}" class="relative aspect-square overflow-hidden bg-surface rounded-sm border border-border/40 block">
-                <img src="${q.image}" alt="${q.title}" class="w-full h-full object-cover filter brightness-[0.9] group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null; this.src='/images/themes/theme_01/slide_1_establishing.jpg'" />
+                <img src="${q.thumb}" alt="${q.title}" class="w-full h-full object-cover filter brightness-[0.9] group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null; this.src='${q.image}';" />
                 <span class="absolute top-2 left-2 px-2 py-0.5 text-[9px] font-mono tracking-wider uppercase bg-bg/90 text-accent border border-border/60">
                   ${q.id}
                 </span>

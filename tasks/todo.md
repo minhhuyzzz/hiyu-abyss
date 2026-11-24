@@ -257,3 +257,31 @@
 - [x] 103 ảnh sơn dầu đã nạp thành công vào hệ thống.
 - [x] Google Sheet cập nhật trạng thái đồng bộ.
 - [x] Toàn bộ kho lưu trữ Git đã được đẩy an toàn lên GitHub.
+
+---
+
+# Danh Mục Nhiệm Vụ: 50 Bài Lưu Đồ Tâm Lý & Ranh Giới Đời Thực (STT 301 -> 350)
+
+## Phase 1: Lập Kế Hoạch & Xây Dựng Kịch Bản Lưu Đồ Tâm Lý
+- [x] **Task 1: Xây Dựng 50 Kịch Bản Lưu Đồ & Decision Trees (`scripts/build_50_flowchart_posts_301_350.py`)**
+  - **Mô tả:** Tạo 50 kịch bản chi tiết STT 301-350 tập trung vào các lưu đồ bóc tách thao túng, thiết lập ranh giới, phản ứng sang chấn và trí tuệ Khắc kỷ. Áp dụng skill `humanizer` khử sạch sáo ngữ AI.
+  - **Tiêu chí:** Đúng 50 bài, phân bổ linh hoạt (12 Single-Punch, 7 Carousel 2 trang, 25 Carousel 3 trang, 6 Carousel 4 trang).
+  - **Xác minh:** `python scripts/build_50_flowchart_posts_301_350.py` xuất ra `scripts/posts_301_350.json`.
+  - **Files:** `scripts/build_50_flowchart_posts_301_350.py`, `scripts/posts_301_350.json`
+
+## Phase 2: Kiểm Định Chất Lượng Biên Tập & Chuẩn SEO
+- [x] **Task 2: Kiểm Định Toàn Diện Chất Lượng & SEO (`scripts/audit_posts_301_350.py`)**
+  - **Mô tả:** Kiểm tra không trùng lặp tiêu đề, quy tắc Hook ngắn (< 10 từ kèm `...`), 5 hashtag chuẩn SEO 5 tầng, tác giả chuẩn xác và tuân thủ `humanizer`.
+  - **Tiêu chí:** 100% PASS (0 lỗi).
+  - **Xác minh:** `python scripts/audit_posts_301_350.py`
+
+## Phase 3: Nạp Google Sheet & Chuẩn Hóa Định Dạng
+- [x] **Task 3: Nạp 50 Bài & Đồng Bộ Định Dạng Google Sheet (`scripts/upload_and_polish_posts_301_350.py`)**
+  - **Mô tả:** Ghi 50 hàng vào dải `'Kế Hoạch Đăng Bài (TikTok Pipeline)'!A302:Q351`, áp dụng `wrapStrategy: WRAP`, font Roboto 9pt, căn giữa `MIDDLE`, và sao chép data validation cho cột Q.
+  - **Tiêu chí:** 50 hàng được nạp thành công, kiểm tra trực tiếp qua `scripts/verify_live_301_350.py`.
+  - **Files:** `scripts/upload_and_polish_posts_301_350.py`, `scripts/verify_live_301_350.py`
+
+## Phase 4: Đồng Bộ Git & Bàn Giao
+- [x] **Task 4: Commit & Push Hệ Thống Lên GitHub**
+  - **Mô tả:** Đẩy toàn bộ mã nguồn script, dữ liệu JSON và tài liệu kế hoạch lên GitHub `origin/main`.
+

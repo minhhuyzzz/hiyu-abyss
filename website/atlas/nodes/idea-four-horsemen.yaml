@@ -1,0 +1,22 @@
+id: idea-four-horsemen
+kind: idea
+status: PUBLISHED
+slug: bon-ky-si-xoi-mon-quan-he
+label: Bốn Kỵ Sĩ Xói Mòn Quan Hệ
+label_en: The Four Horsemen of Relationship Rupture
+summary: >-
+  Chỉ trích, khinh miệt, phòng thủ và cô lập — chiếc bẫy hủy hoại mọi kết nối
+  sâu sắc giữa hai người.
+topicCodes:
+  - COMMUNICATION
+  - AUTHENTIC_CONNECTION
+relatedContentIds:
+  - TXT-0201
+artworkId: theme_201
+visual:
+  region: region-solitude-and-communion
+  x: 740
+  'y': 780
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

@@ -1,0 +1,23 @@
+id: theme-self-compassion
+kind: theme
+status: PUBLISHED
+slug: self-compassion
+label: Tự Trắc Ẩn & Bao Dung
+label_en: SELF COMPASSION
+summary: >-
+  Chủ đề hạt nhân Tự Trắc Ẩn & Bao Dung trong kho lưu trữ Hiyu Abyss, kết nối
+  các tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - SELF_COMPASSION
+relatedContentIds:
+  - TXT-0251
+  - TXT-0252
+  - TXT-0253
+artworkId: theme_251
+visual:
+  region: region-suffering-and-purpose
+  x: 200
+  'y': 790
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument

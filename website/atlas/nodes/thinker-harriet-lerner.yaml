@@ -1,0 +1,25 @@
+id: thinker-harriet-lerner
+kind: thinker
+status: PUBLISHED
+slug: harriet-lerner
+label: Harriet Lerner
+label_en: Harriet Lerner
+summary: >-
+  Chuyên gia tâm lý học lâm sàng, tác giả "Vũ Điệu Của Sự Giận Dữ" (The Dance of
+  Anger). Nghệ thuật thiết lập ranh giới mà không rơi vào bẫy tội lỗi.
+topicCodes:
+  - BOUNDARIES
+  - MANIPULATION
+  - COMMUNICATION
+artworkId: theme_202
+sourceRefs:
+  - title: The Dance of Anger
+    author: Harriet Lerner
+    year: '1985'
+visual:
+  region: region-freedom-and-order
+  x: 850
+  'y': 480
+  priority: 9
+  glyph: ☥
+  cartoucheStyle: medallion

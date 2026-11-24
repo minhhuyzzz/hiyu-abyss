@@ -1,0 +1,22 @@
+id: quote-txt-0301
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0301
+label: 'Folio #0301: Kẻ nguy hiểm nhất là người luôn đóng vai kẻ bất hạnh.'
+label_en: 'Folio #0301'
+summary: >-
+  Khi bạn vừa kể một tin vui...... Họ lập tức thở dài, nhắc lại một bất công
+  trong đời họ để biến sự chú ý về phía mình. Bạn bỗng thấy mình có tội vì vừa
+  mỉm cười.
+topicCodes:
+  - MANIPULATION
+relatedContentIds:
+  - TXT-0301
+artworkId: theme_301
+visual:
+  region: region-power-and-machination
+  x: 515
+  'y': 845
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

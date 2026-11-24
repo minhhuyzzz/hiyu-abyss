@@ -1,0 +1,23 @@
+id: theme-communication
+kind: theme
+status: PUBLISHED
+slug: communication
+label: Giao Tiếp & Thấu Cảm
+label_en: COMMUNICATION
+summary: >-
+  Chủ đề hạt nhân Giao Tiếp & Thấu Cảm trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - COMMUNICATION
+relatedContentIds:
+  - TXT-0201
+  - TXT-0202
+  - TXT-0203
+artworkId: theme_201
+visual:
+  region: region-solitude-and-communion
+  x: 730
+  'y': 770
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument

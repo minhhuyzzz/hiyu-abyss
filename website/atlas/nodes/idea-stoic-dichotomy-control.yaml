@@ -1,0 +1,23 @@
+id: idea-stoic-dichotomy-control
+kind: idea
+status: PUBLISHED
+slug: phan-dinh-vong-tron-kiem-soat
+label: Phân Định Vòng Tròn Kiểm Soát
+label_en: The Dichotomy of Control & Inner Peace
+summary: >-
+  Đỉnh cao của sự an nhiên: buông bỏ hoàn toàn những điều không thuộc về ta và
+  tập trung trọn vẹn vào phản ứng nội tại.
+topicCodes:
+  - STOIC_SERENITY
+  - SERENITY
+relatedContentIds:
+  - TXT-0450
+  - TXT-0500
+artworkId: theme_500
+visual:
+  region: region-suffering-and-purpose
+  x: 230
+  'y': 710
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

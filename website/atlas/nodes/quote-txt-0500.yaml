@@ -1,0 +1,23 @@
+id: quote-txt-0500
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0500
+label: >-
+  Folio #0500: Đại thành nhược khuyết: Đi qua 500 triết ngôn để sống đời tự do
+  kiêu hãnh.
+label_en: 'Folio #0500'
+summary: >-
+  Đúc kết hành trình 500 bài viết của Hiyu Abyss...... Đi qua bóng tối để không
+  ngây thơ trước mưu mô, nhưng không để lòng mình chai sạn thành thù hận.
+topicCodes:
+  - MEANING
+relatedContentIds:
+  - TXT-0500
+artworkId: theme_500
+visual:
+  region: region-suffering-and-purpose
+  x: 275
+  'y': 735
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

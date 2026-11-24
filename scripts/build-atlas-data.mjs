@@ -162,6 +162,16 @@ const TOPIC_CONFIGS = [
   { code: 'CROWD', label: 'Tâm Lý Đám Đông', region: 'region-masks-and-authenticity', x: 170, y: 530, p: 7 },
 
   { code: 'PSYCHOLOGY', label: 'Tâm Lý Con Người', region: 'region-aesthetic-and-worldview', x: 480, y: 440, p: 10 },
+
+  // New Thematic Cores (Milestone 500 Expansion)
+  { code: 'MONEY_PSYCHOLOGY', label: 'Tâm Lý Học Tiền Bạc', region: 'region-freedom-and-order', x: 790, y: 460, p: 9 },
+  { code: 'COMMUNICATION', label: 'Giao Tiếp & Thấu Cảm', region: 'region-solitude-and-communion', x: 730, y: 770, p: 8 },
+  { code: 'EXPECTATION', label: 'Kỳ Vọng & Thất Vọng', region: 'region-human-condition', x: 260, y: 240, p: 7 },
+  { code: 'ATTRACTION', label: 'Sức Hút & Tâm Lý Tình Cảm', region: 'region-solitude-and-communion', x: 820, y: 740, p: 8 },
+  { code: 'SELF_COMPASSION', label: 'Tự Trắc Ẩn & Bao Dung', region: 'region-suffering-and-purpose', x: 200, y: 790, p: 8 },
+  { code: 'STOIC_SERENITY', label: 'Khắc Kỷ & Định Tâm', region: 'region-suffering-and-purpose', x: 240, y: 700, p: 9 },
+  { code: 'AUTHENTIC_CONNECTION', label: 'Gắn Kết Chân Thật', region: 'region-solitude-and-communion', x: 760, y: 810, p: 8 },
+  { code: 'MEANING_RESILIENCE', label: 'Lẽ Sống & Phục Hồi', region: 'region-suffering-and-purpose', x: 280, y: 740, p: 8 },
 ];
 
 for (const t of TOPIC_CONFIGS) {
@@ -440,6 +450,71 @@ const IDEAS = [
     y: 470,
     art: 'theme_08',
   },
+  {
+    id: 'idea-money-freedom',
+    slug: 'gia-tri-dich-thuc-cua-tien-bac',
+    label: 'Giá Trị Đích Thực Của Tiền Bạc',
+    label_en: 'True Wealth & Time Sovereignty',
+    summary: 'Giá trị cao nhất của tiền bạc là mua lại quyền kiểm soát thời gian và sự độc lập, không phải chiếc cờ phô trương thể diện.',
+    topics: ['MONEY_PSYCHOLOGY', 'FREEDOM'],
+    quotes: ['TXT-0401', 'TXT-0402'],
+    region: 'region-freedom-and-order',
+    x: 800,
+    y: 450,
+    art: 'theme_401',
+  },
+  {
+    id: 'idea-status-vs-wealth',
+    slug: 'tro-choi-dia-vi-va-tai-san',
+    label: 'Trò Chơi Địa Vị & Trò Chơi Tài Sản',
+    label_en: 'Status Games vs Wealth Games',
+    summary: 'Người nghèo chi tiền mua thể diện trước đám đông, người giàu chi tiền mua thời gian và sự tự do.',
+    topics: ['STATUS', 'MONEY_PSYCHOLOGY'],
+    quotes: ['TXT-0402'],
+    region: 'region-ego-and-illusion',
+    x: 660,
+    y: 230,
+    art: 'theme_402',
+  },
+  {
+    id: 'idea-passive-aggressive',
+    slug: 'don-tan-cong-thu-dong',
+    label: 'Đòn Tấn Công Thụ Động & Chiếc Bẫy Tội Lỗi',
+    label_en: 'Passive Aggression & Guilt Weaponization',
+    summary: 'Những câu nói thoái thác hay tự phong thánh thực chất là đòn trừng phạt ngầm gieo rắc mặc cảm tội lỗi cho đối phương.',
+    topics: ['COMMUNICATION', 'MANIPULATION'],
+    quotes: ['TXT-0203', 'TXT-0301'],
+    region: 'region-power-and-machination',
+    x: 510,
+    y: 840,
+    art: 'theme_301',
+  },
+  {
+    id: 'idea-four-horsemen',
+    slug: 'bon-ky-si-xoi-mon-quan-he',
+    label: 'Bốn Kỵ Sĩ Xói Mòn Quan Hệ',
+    label_en: 'The Four Horsemen of Relationship Rupture',
+    summary: 'Chỉ trích, khinh miệt, phòng thủ và cô lập — chiếc bẫy hủy hoại mọi kết nối sâu sắc giữa hai người.',
+    topics: ['COMMUNICATION', 'AUTHENTIC_CONNECTION'],
+    quotes: ['TXT-0201'],
+    region: 'region-solitude-and-communion',
+    x: 740,
+    y: 780,
+    art: 'theme_201',
+  },
+  {
+    id: 'idea-stoic-dichotomy-control',
+    slug: 'phan-dinh-vong-tron-kiem-soat',
+    label: 'Phân Định Vòng Tròn Kiểm Soát',
+    label_en: 'The Dichotomy of Control & Inner Peace',
+    summary: 'Đỉnh cao của sự an nhiên: buông bỏ hoàn toàn những điều không thuộc về ta và tập trung trọn vẹn vào phản ứng nội tại.',
+    topics: ['STOIC_SERENITY', 'SERENITY'],
+    quotes: ['TXT-0450', 'TXT-0500'],
+    region: 'region-suffering-and-purpose',
+    x: 230,
+    y: 710,
+    art: 'theme_500',
+  },
 ];
 
 for (const ide of IDEAS) {
@@ -596,6 +671,58 @@ const THINKERS = [
     y: 780,
     art: 'theme_04',
     sourceRefs: [{ title: 'Letters from a Stoic (Những Lá Thư Từ Một Nhà Khắc Kỷ)', author: 'Seneca', year: '65 AD' }],
+  },
+  {
+    id: 'thinker-morgan-housel',
+    slug: 'morgan-housel',
+    label: 'Morgan Housel',
+    label_en: 'Morgan Housel',
+    summary: 'Tác giả "Tâm Lý Học Về Tiền" (The Psychology of Money). Luận giải sự giàu có thực sự là quyền kiểm soát thời gian của chính mình.',
+    topics: ['MONEY_PSYCHOLOGY', 'FREEDOM', 'STATUS'],
+    region: 'region-freedom-and-order',
+    x: 780,
+    y: 470,
+    art: 'theme_401',
+    sourceRefs: [{ title: 'The Psychology of Money', author: 'Morgan Housel', year: '2020' }],
+  },
+  {
+    id: 'thinker-naval-ravikant',
+    slug: 'naval-ravikant',
+    label: 'Naval Ravikant',
+    label_en: 'Naval Ravikant',
+    summary: 'Nhà tư tưởng hiện đại về sự thịnh vượng và tự do nội tại. Bóc tách sự khác biệt giữa trò chơi địa vị (Status Games) và trò chơi tài sản (Wealth Games).',
+    topics: ['MONEY_PSYCHOLOGY', 'STATUS', 'FREEDOM'],
+    region: 'region-ego-and-illusion',
+    x: 670,
+    y: 240,
+    art: 'theme_402',
+    sourceRefs: [{ title: 'The Almanack of Naval Ravikant', author: 'Eric Jorgenson', year: '2020' }],
+  },
+  {
+    id: 'thinker-john-gottman',
+    slug: 'john-gottman',
+    label: 'John Gottman',
+    label_en: 'John Gottman',
+    summary: 'Chuyên gia tâm lý học hàng đầu thế giới về các mối quan hệ. Bóc trần "4 kỵ sĩ ngày tận thế" và những mô thức giao tiếp vi mô xói mòn hôn nhân.',
+    topics: ['COMMUNICATION', 'AUTHENTIC_CONNECTION', 'LOVE'],
+    region: 'region-solitude-and-communion',
+    x: 750,
+    y: 790,
+    art: 'theme_201',
+    sourceRefs: [{ title: 'The Seven Principles for Making Marriage Work', author: 'John Gottman', year: '1999' }],
+  },
+  {
+    id: 'thinker-harriet-lerner',
+    slug: 'harriet-lerner',
+    label: 'Harriet Lerner',
+    label_en: 'Harriet Lerner',
+    summary: 'Chuyên gia tâm lý học lâm sàng, tác giả "Vũ Điệu Của Sự Giận Dữ" (The Dance of Anger). Nghệ thuật thiết lập ranh giới mà không rơi vào bẫy tội lỗi.',
+    topics: ['BOUNDARIES', 'MANIPULATION', 'COMMUNICATION'],
+    region: 'region-freedom-and-order',
+    x: 850,
+    y: 480,
+    art: 'theme_202',
+    sourceRefs: [{ title: 'The Dance of Anger', author: 'Harriet Lerner', year: '1985' }],
   },
 ];
 
@@ -767,6 +894,13 @@ const QUOTE_NODES_CONFIG = [
   { id: 'quote-txt-0018', refId: 'TXT-0018', region: 'region-suffering-and-purpose', x: 245, y: 775 },
   { id: 'quote-txt-0019', refId: 'TXT-0019', region: 'region-masks-and-authenticity', x: 195, y: 495 },
   { id: 'quote-txt-0020', refId: 'TXT-0020', region: 'region-power-and-machination', x: 545, y: 845 },
+  // Milestone 301-500 Landmark Folios
+  { id: 'quote-txt-0301', refId: 'TXT-0301', region: 'region-power-and-machination', x: 515, y: 845 },
+  { id: 'quote-txt-0350', refId: 'TXT-0350', region: 'region-suffering-and-purpose', x: 265, y: 755 },
+  { id: 'quote-txt-0401', refId: 'TXT-0401', region: 'region-freedom-and-order', x: 805, y: 455 },
+  { id: 'quote-txt-0402', refId: 'TXT-0402', region: 'region-ego-and-illusion', x: 675, y: 225 },
+  { id: 'quote-txt-0450', refId: 'TXT-0450', region: 'region-freedom-and-order', x: 825, y: 435 },
+  { id: 'quote-txt-0500', refId: 'TXT-0500', region: 'region-suffering-and-purpose', x: 275, y: 735 },
 ];
 
 for (const qn of QUOTE_NODES_CONFIG) {
@@ -974,6 +1108,35 @@ addEdge('art-garden-delights', 'theme-mask', 'shares_question_with', 'Bóc trầ
 addEdge('art-astronomer-vermeer', 'idea-uncomfortable-truth', 'shares_question_with', 'Niềm say mê khoa học tìm kiếm quy luật thật của tự nhiên.', '', 0.85);
 addEdge('art-anatomy-lesson', 'theme-ego', 'shares_question_with', 'Bức chân dung tập thể phơi bày bản ngã muốn lưu danh hậu thế.', '', 0.85);
 
+// Expansion Edges: Milestone 500 Integration
+addEdge('theme-money-psychology', 'idea-money-freedom', 'explores', 'Tâm lý học tiền bạc khẳng định tự do thời gian là giá trị cao nhất của tài sản.', '', 0.95);
+addEdge('theme-money-psychology', 'idea-status-vs-wealth', 'shares_question_with', 'Phân biệt giữa sự giàu có thực sự và cuộc đua thể diện xã hội.', '', 0.9);
+addEdge('thinker-morgan-housel', 'idea-money-freedom', 'influenced_by', 'Morgan Housel chỉ ra rằng tiêu tiền để khoe khoang là cách nhanh nhất để nghèo đi.', '', 0.95);
+addEdge('thinker-morgan-housel', 'theme-money-psychology', 'influenced_by', 'Tác giả "Tâm Lý Học Về Tiền", định hình góc nhìn tài chính tỉnh thức.', '', 0.95);
+addEdge('thinker-naval-ravikant', 'idea-status-vs-wealth', 'influenced_by', 'Naval phân tích sâu sắc về sự đối lập giữa trò chơi địa vị và trò chơi tài sản.', '', 0.95);
+addEdge('thinker-naval-ravikant', 'theme-freedom', 'shares_question_with', 'Thịnh vượng đích thực là tự do thoát khỏi sự áp đặt của người khác.', '', 0.9);
+addEdge('quote-txt-0401', 'idea-money-freedom', 'explores', 'Tiền bạc là công cụ mua lại tự do, người thật sự giàu có sở hữu thời gian của mình.', '', 0.95);
+addEdge('quote-txt-0402', 'idea-status-vs-wealth', 'explores', 'Người nghèo chi tiền mua thể diện, người giàu chi tiền mua thời gian.', '', 0.95);
+
+addEdge('theme-communication', 'idea-passive-aggressive', 'explores', 'Giao tiếp lành mạnh đòi hỏi sự trung thực thay vì đòn tấn công thụ động.', '', 0.9);
+addEdge('theme-communication', 'idea-four-horsemen', 'explores', 'Nhận diện 4 kỵ sĩ xói mòn hôn nhân để xây dựng đối thoại thấu cảm.', '', 0.95);
+addEdge('thinker-john-gottman', 'idea-four-horsemen', 'influenced_by', 'Công trình nghiên cứu nổi tiếng của Gottman về sự đổ vỡ quan hệ.', '', 0.95);
+addEdge('thinker-john-gottman', 'theme-communication', 'influenced_by', 'Bậc thầy về giải phẫu tương tác vi mô giữa hai con người.', '', 0.95);
+addEdge('thinker-harriet-lerner', 'theme-boundaries', 'influenced_by', 'Lerner dạy cách giữ vững ranh giới cảm xúc mà không bộc phát hủy hoại.', '', 0.9);
+addEdge('thinker-harriet-lerner', 'idea-passive-aggressive', 'contrasts_with', 'Từ chối đóng vai nạn nhân hay kẻ phục tùng giả tạo.', '', 0.9);
+addEdge('quote-txt-0301', 'idea-passive-aggressive', 'explores', 'Vạch trần chiếc bẫy tự phong thánh và gieo rắc mặc cảm tội lỗi.', '', 0.95);
+
+addEdge('theme-stoic-serenity', 'idea-stoic-dichotomy-control', 'explores', 'Trọng tâm Khắc kỷ: chỉ tập trung vào điều ta có thể kiểm soát.', '', 0.95);
+addEdge('thinker-epictetus', 'idea-stoic-dichotomy-control', 'influenced_by', 'Epictetus đặt nền móng cho nguyên lý phân định quyền kiểm soát.', '', 0.95);
+addEdge('theme-self-compassion', 'theme-serenity', 'shares_question_with', 'Bao dung với sự bất toàn của chính mình là cội nguồn của an nhiên.', '', 0.9);
+addEdge('theme-meaning-resilience', 'theme-resilience', 'shares_question_with', 'Ý nghĩa sống tiếp thêm sức mạnh phục hồi sau thương đau.', '', 0.9);
+addEdge('quote-txt-0450', 'theme-freedom', 'explores', 'Ngừng làm hài lòng thế giới để bắt đầu sống cuộc đời tự do.', '', 0.95);
+addEdge('quote-txt-0500', 'idea-stoic-dichotomy-control', 'explores', 'Đại thành nhược khuyết: đi qua 500 triết ngôn để sống kiêu hãnh và bao dung.', '', 0.95);
+addEdge('quote-txt-0350', 'theme-meaning-resilience', 'explores', 'Đỉnh cao của bản lĩnh là sự thấu cảm đi kèm ranh giới thép.', '', 0.95);
+
+addEdge('theme-money-psychology', 'theme-freedom', 'shares_question_with', 'Tài chính tỉnh thức là bàn đạp hướng tới tự do hiện sinh trọn vẹn.', '', 0.9);
+addEdge('theme-communication', 'theme-authentic-connection', 'shares_question_with', 'Giao tiếp chân thật là nền móng của sự gắn kết không vụ lợi.', '', 0.9);
+
 console.log(`[build-atlas-data] Total Unique Explained Edges: ${edges.length}`);
 
 // 4. The 8 Curated Trails (Each with ≥ 6 Stops)
@@ -1178,6 +1341,30 @@ const trails = [
       'quote-txt-0008',
     ],
   },
+  {
+    id: 'trail-wealth-and-sovereignty',
+    slug: 'tai-chinh-tinh-thuc-va-tu-chu',
+    title: 'Tài Chính Tỉnh Thức & Tự Chủ',
+    title_en: 'Mindful Wealth & Sovereign Freedom',
+    subtitle: 'Giải phóng bản thân khỏi cái bẫy thể diện tiêu dùng để làm chủ thời gian đời mình.',
+    description: 'Hành trình cùng Morgan Housel, Naval Ravikant và Seneca khảo sát tâm lý học tiền bạc, phân biệt giữa khoe khoang địa vị và tự do chân thật.',
+    introPrompt: 'Tiền bạc đối với bạn là chiếc cờ phô trương hay là chiếc chìa khóa mở ra sự tự do?',
+    closingPrompt: 'Sự giàu có lớn nhất là khả năng sống theo cách của riêng mình mà không cần chứng minh với bất kỳ ai.',
+    themeCode: 'MONEY_PSYCHOLOGY',
+    estimatedMinutes: 8,
+    coverArtworkId: 'theme_401',
+    status: 'PUBLISHED',
+    orderedNodeIds: [
+      'theme-money-psychology',
+      'thinker-morgan-housel',
+      'idea-money-freedom',
+      'quote-txt-0401',
+      'thinker-naval-ravikant',
+      'idea-status-vs-wealth',
+      'quote-txt-0402',
+      'theme-freedom',
+    ],
+  },
 ];
 
 console.log(`[build-atlas-data] Total Curated Trails: ${trails.length}`);
@@ -1234,7 +1421,16 @@ const manifestData = {
   published_edge_ids: edges.map((e) => e.id),
   published_trail_ids: trails.map((t) => t.id),
 };
-fs.writeFileSync(path.join(atlasDir, 'atlas-manifest.yaml'), yaml.dump(manifestData), 'utf8');
+try {
+  fs.writeFileSync(path.join(atlasDir, 'atlas-manifest.yaml'), yaml.dump(manifestData), 'utf8');
+} catch (e) {
+  try {
+    fs.unlinkSync(path.join(atlasDir, 'atlas-manifest.yaml'));
+    fs.writeFileSync(path.join(atlasDir, 'atlas-manifest.yaml'), yaml.dump(manifestData), 'utf8');
+  } catch (err) {
+    console.warn('[build-atlas-data] Notice writing atlas-manifest.yaml:', err.message);
+  }
+}
 
 console.log(`[build-atlas-data] Successfully generated and verified:
 - ${regions.length} Regions

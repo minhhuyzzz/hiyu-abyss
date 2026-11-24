@@ -1,0 +1,24 @@
+id: quote-txt-0450
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0450
+label: >-
+  Folio #0450: Ngừng làm hài lòng thế giới, bạn mới thực sự bắt đầu sống cuộc
+  đời mình.
+label_en: 'Folio #0450'
+summary: >-
+  Đúc kết hành trình 450 bài của Hiyu Abyss...... Cả đời cố gắng làm vừa lòng
+  thiên hạ là con đường ngắn nhất dẫn bạn đến sự kiệt quệ và đánh mất chính
+  mình.
+topicCodes:
+  - FREEDOM
+relatedContentIds:
+  - TXT-0450
+artworkId: theme_450
+visual:
+  region: region-freedom-and-order
+  x: 825
+  'y': 435
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

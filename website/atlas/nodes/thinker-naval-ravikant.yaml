@@ -1,0 +1,25 @@
+id: thinker-naval-ravikant
+kind: thinker
+status: PUBLISHED
+slug: naval-ravikant
+label: Naval Ravikant
+label_en: Naval Ravikant
+summary: >-
+  Nhà tư tưởng hiện đại về sự thịnh vượng và tự do nội tại. Bóc tách sự khác
+  biệt giữa trò chơi địa vị (Status Games) và trò chơi tài sản (Wealth Games).
+topicCodes:
+  - MONEY_PSYCHOLOGY
+  - STATUS
+  - FREEDOM
+artworkId: theme_402
+sourceRefs:
+  - title: The Almanack of Naval Ravikant
+    author: Eric Jorgenson
+    year: '2020'
+visual:
+  region: region-ego-and-illusion
+  x: 670
+  'y': 240
+  priority: 9
+  glyph: ☥
+  cartoucheStyle: medallion

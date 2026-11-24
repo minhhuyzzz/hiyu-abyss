@@ -1,9 +1,9 @@
 version: 2.1.0
 stats:
   regionCount: 8
-  nodeCount: 86
-  edgeCount: 118
-  trailCount: 8
+  nodeCount: 109
+  edgeCount: 142
+  trailCount: 9
 published_region_ids:
   - region-human-condition
   - region-ego-and-illusion
@@ -43,6 +43,14 @@ published_node_ids:
   - theme-hypocrisy
   - theme-crowd
   - theme-psychology
+  - theme-money-psychology
+  - theme-communication
+  - theme-expectation
+  - theme-attraction
+  - theme-self-compassion
+  - theme-stoic-serenity
+  - theme-authentic-connection
+  - theme-meaning-resilience
   - idea-uncomfortable-truth
   - idea-confirmation-bias
   - idea-existential-angst
@@ -62,6 +70,11 @@ published_node_ids:
   - idea-social-persona
   - idea-herd-mentality
   - idea-museum-dialogue
+  - idea-money-freedom
+  - idea-status-vs-wealth
+  - idea-passive-aggressive
+  - idea-four-horsemen
+  - idea-stoic-dichotomy-control
   - thinker-marcus-aurelius
   - thinker-friedrich-nietzsche
   - thinker-carl-jung
@@ -72,6 +85,10 @@ published_node_ids:
   - thinker-michel-de-montaigne
   - thinker-epictetus
   - thinker-seneca
+  - thinker-morgan-housel
+  - thinker-naval-ravikant
+  - thinker-john-gottman
+  - thinker-harriet-lerner
   - art-school-of-athens
   - art-wanderer-fog
   - art-saturn-son
@@ -100,6 +117,12 @@ published_node_ids:
   - quote-txt-0018
   - quote-txt-0019
   - quote-txt-0020
+  - quote-txt-0301
+  - quote-txt-0350
+  - quote-txt-0401
+  - quote-txt-0402
+  - quote-txt-0450
+  - quote-txt-0500
 published_edge_ids:
   - edge-0001
   - edge-0002
@@ -219,6 +242,30 @@ published_edge_ids:
   - edge-0116
   - edge-0117
   - edge-0118
+  - edge-0119
+  - edge-0120
+  - edge-0121
+  - edge-0122
+  - edge-0123
+  - edge-0124
+  - edge-0125
+  - edge-0126
+  - edge-0127
+  - edge-0128
+  - edge-0129
+  - edge-0130
+  - edge-0131
+  - edge-0132
+  - edge-0133
+  - edge-0134
+  - edge-0135
+  - edge-0136
+  - edge-0137
+  - edge-0138
+  - edge-0139
+  - edge-0140
+  - edge-0141
+  - edge-0142
 published_trail_ids:
   - trail-truth-and-deception
   - trail-ego-and-recognition
@@ -228,3 +275,4 @@ published_trail_ids:
   - trail-suffering-and-purpose
   - trail-mask-and-authenticity
   - trail-aesthetics-and-worldview
+  - trail-wealth-and-sovereignty

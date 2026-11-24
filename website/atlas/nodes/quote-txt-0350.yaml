@@ -1,0 +1,22 @@
+id: quote-txt-0350
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0350
+label: 'Folio #0350: Đỉnh cao của bản lĩnh là sự thấu cảm đi kèm ranh giới thép.'
+label_en: 'Folio #0350'
+summary: >-
+  Đúc kết hành trình 350 bài viết của Hiyu Abyss...... Nhìn thấu bản chất người
+  đời để không còn thất vọng hay ảo tưởng. Hiểu rằng sự bất toàn của thế gian là
+  điều tất yếu giúp bạn không còn oán giận.
+topicCodes:
+  - MEANING
+relatedContentIds:
+  - TXT-0350
+artworkId: theme_350
+visual:
+  region: region-suffering-and-purpose
+  x: 265
+  'y': 755
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

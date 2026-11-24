@@ -1,0 +1,23 @@
+id: theme-stoic-serenity
+kind: theme
+status: PUBLISHED
+slug: stoic-serenity
+label: Khắc Kỷ & Định Tâm
+label_en: STOIC SERENITY
+summary: >-
+  Chủ đề hạt nhân Khắc Kỷ & Định Tâm trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - STOIC_SERENITY
+relatedContentIds:
+  - TXT-0264
+  - TXT-0265
+  - TXT-0266
+artworkId: theme_264
+visual:
+  region: region-suffering-and-purpose
+  x: 240
+  'y': 700
+  priority: 9
+  glyph: ◈
+  cartoucheStyle: monument

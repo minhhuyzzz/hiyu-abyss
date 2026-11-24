@@ -1,0 +1,22 @@
+id: idea-status-vs-wealth
+kind: idea
+status: PUBLISHED
+slug: tro-choi-dia-vi-va-tai-san
+label: Trò Chơi Địa Vị & Trò Chơi Tài Sản
+label_en: Status Games vs Wealth Games
+summary: >-
+  Người nghèo chi tiền mua thể diện trước đám đông, người giàu chi tiền mua thời
+  gian và sự tự do.
+topicCodes:
+  - STATUS
+  - MONEY_PSYCHOLOGY
+relatedContentIds:
+  - TXT-0402
+artworkId: theme_402
+visual:
+  region: region-ego-and-illusion
+  x: 660
+  'y': 230
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

@@ -1,0 +1,23 @@
+id: theme-money-psychology
+kind: theme
+status: PUBLISHED
+slug: money-psychology
+label: Tâm Lý Học Tiền Bạc
+label_en: MONEY PSYCHOLOGY
+summary: >-
+  Chủ đề hạt nhân Tâm Lý Học Tiền Bạc trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - MONEY_PSYCHOLOGY
+relatedContentIds:
+  - TXT-0401
+  - TXT-0402
+  - TXT-0403
+artworkId: theme_401
+visual:
+  region: region-freedom-and-order
+  x: 790
+  'y': 460
+  priority: 9
+  glyph: ◈
+  cartoucheStyle: monument

@@ -1,0 +1,23 @@
+id: theme-meaning-resilience
+kind: theme
+status: PUBLISHED
+slug: meaning-resilience
+label: Lẽ Sống & Phục Hồi
+label_en: MEANING RESILIENCE
+summary: >-
+  Chủ đề hạt nhân Lẽ Sống & Phục Hồi trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - MEANING_RESILIENCE
+relatedContentIds:
+  - TXT-0289
+  - TXT-0290
+  - TXT-0291
+artworkId: theme_289
+visual:
+  region: region-suffering-and-purpose
+  x: 280
+  'y': 740
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument

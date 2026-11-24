@@ -1,0 +1,23 @@
+id: idea-money-freedom
+kind: idea
+status: PUBLISHED
+slug: gia-tri-dich-thuc-cua-tien-bac
+label: Giá Trị Đích Thực Của Tiền Bạc
+label_en: True Wealth & Time Sovereignty
+summary: >-
+  Giá trị cao nhất của tiền bạc là mua lại quyền kiểm soát thời gian và sự độc
+  lập, không phải chiếc cờ phô trương thể diện.
+topicCodes:
+  - MONEY_PSYCHOLOGY
+  - FREEDOM
+relatedContentIds:
+  - TXT-0401
+  - TXT-0402
+artworkId: theme_401
+visual:
+  region: region-freedom-and-order
+  x: 800
+  'y': 450
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

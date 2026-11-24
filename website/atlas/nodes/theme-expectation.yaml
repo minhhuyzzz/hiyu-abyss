@@ -1,0 +1,23 @@
+id: theme-expectation
+kind: theme
+status: PUBLISHED
+slug: expectation
+label: Kỳ Vọng & Thất Vọng
+label_en: EXPECTATION
+summary: >-
+  Chủ đề hạt nhân Kỳ Vọng & Thất Vọng trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - EXPECTATION
+relatedContentIds:
+  - TXT-0227
+  - TXT-0228
+  - TXT-0229
+artworkId: theme_227
+visual:
+  region: region-human-condition
+  x: 260
+  'y': 240
+  priority: 7
+  glyph: ◈
+  cartoucheStyle: monument

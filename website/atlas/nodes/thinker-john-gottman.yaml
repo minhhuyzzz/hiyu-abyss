@@ -1,0 +1,25 @@
+id: thinker-john-gottman
+kind: thinker
+status: PUBLISHED
+slug: john-gottman
+label: John Gottman
+label_en: John Gottman
+summary: >-
+  Chuyên gia tâm lý học hàng đầu thế giới về các mối quan hệ. Bóc trần "4 kỵ sĩ
+  ngày tận thế" và những mô thức giao tiếp vi mô xói mòn hôn nhân.
+topicCodes:
+  - COMMUNICATION
+  - AUTHENTIC_CONNECTION
+  - LOVE
+artworkId: theme_201
+sourceRefs:
+  - title: The Seven Principles for Making Marriage Work
+    author: John Gottman
+    year: '1999'
+visual:
+  region: region-solitude-and-communion
+  x: 750
+  'y': 790
+  priority: 9
+  glyph: ☥
+  cartoucheStyle: medallion

@@ -1,0 +1,23 @@
+id: theme-authentic-connection
+kind: theme
+status: PUBLISHED
+slug: authentic-connection
+label: Gắn Kết Chân Thật
+label_en: AUTHENTIC CONNECTION
+summary: >-
+  Chủ đề hạt nhân Gắn Kết Chân Thật trong kho lưu trữ Hiyu Abyss, kết nối các
+  tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - AUTHENTIC_CONNECTION
+relatedContentIds:
+  - TXT-0276
+  - TXT-0277
+  - TXT-0278
+artworkId: theme_276
+visual:
+  region: region-solitude-and-communion
+  x: 760
+  'y': 810
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument

@@ -1,0 +1,23 @@
+id: idea-passive-aggressive
+kind: idea
+status: PUBLISHED
+slug: don-tan-cong-thu-dong
+label: Đòn Tấn Công Thụ Động & Chiếc Bẫy Tội Lỗi
+label_en: Passive Aggression & Guilt Weaponization
+summary: >-
+  Những câu nói thoái thác hay tự phong thánh thực chất là đòn trừng phạt ngầm
+  gieo rắc mặc cảm tội lỗi cho đối phương.
+topicCodes:
+  - COMMUNICATION
+  - MANIPULATION
+relatedContentIds:
+  - TXT-0203
+  - TXT-0301
+artworkId: theme_301
+visual:
+  region: region-power-and-machination
+  x: 510
+  'y': 840
+  priority: 8
+  glyph: ✦
+  cartoucheStyle: cartouche

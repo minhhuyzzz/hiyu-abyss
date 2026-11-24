@@ -1,0 +1,23 @@
+id: quote-txt-0402
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0402
+label: >-
+  Folio #0402: Người nghèo chi tiền mua thể diện, người giàu chi tiền mua thời
+  gian.
+label_en: 'Folio #0402'
+summary: >-
+  Người nghèo chi tiền để thiên hạ nghĩ mình giàu; người giàu dùng tiền để mua
+  lại quyền kiểm soát thời gian.
+topicCodes:
+  - MONEY_PSYCHOLOGY
+relatedContentIds:
+  - TXT-0402
+artworkId: theme_402
+visual:
+  region: region-ego-and-illusion
+  x: 675
+  'y': 225
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

@@ -1,0 +1,29 @@
+id: trail-wealth-and-sovereignty
+slug: tai-chinh-tinh-thuc-va-tu-chu
+title: Tài Chính Tỉnh Thức & Tự Chủ
+title_en: Mindful Wealth & Sovereign Freedom
+subtitle: >-
+  Giải phóng bản thân khỏi cái bẫy thể diện tiêu dùng để làm chủ thời gian đời
+  mình.
+description: >-
+  Hành trình cùng Morgan Housel, Naval Ravikant và Seneca khảo sát tâm lý học
+  tiền bạc, phân biệt giữa khoe khoang địa vị và tự do chân thật.
+introPrompt: >-
+  Tiền bạc đối với bạn là chiếc cờ phô trương hay là chiếc chìa khóa mở ra sự tự
+  do?
+closingPrompt: >-
+  Sự giàu có lớn nhất là khả năng sống theo cách của riêng mình mà không cần
+  chứng minh với bất kỳ ai.
+themeCode: MONEY_PSYCHOLOGY
+estimatedMinutes: 8
+coverArtworkId: theme_401
+status: PUBLISHED
+orderedNodeIds:
+  - theme-money-psychology
+  - thinker-morgan-housel
+  - idea-money-freedom
+  - quote-txt-0401
+  - thinker-naval-ravikant
+  - idea-status-vs-wealth
+  - quote-txt-0402
+  - theme-freedom

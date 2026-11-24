@@ -1,6 +1,6 @@
 {
   "version": "2.1.0",
-  "generatedAt": "2026-11-24T08:57:40.703Z",
+  "generatedAt": "2026-11-24T09:37:54.128Z",
   "regions": [
     {
       "id": "region-human-condition",
@@ -908,6 +908,214 @@
       }
     },
     {
+      "id": "theme-money-psychology",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "money-psychology",
+      "label": "Tâm Lý Học Tiền Bạc",
+      "label_en": "MONEY PSYCHOLOGY",
+      "summary": "Chủ đề hạt nhân Tâm Lý Học Tiền Bạc trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "MONEY_PSYCHOLOGY"
+      ],
+      "relatedContentIds": [
+        "TXT-0401",
+        "TXT-0402",
+        "TXT-0403"
+      ],
+      "artworkId": "theme_401",
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 790,
+        "y": 460,
+        "priority": 9,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-communication",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "communication",
+      "label": "Giao Tiếp & Thấu Cảm",
+      "label_en": "COMMUNICATION",
+      "summary": "Chủ đề hạt nhân Giao Tiếp & Thấu Cảm trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "COMMUNICATION"
+      ],
+      "relatedContentIds": [
+        "TXT-0201",
+        "TXT-0202",
+        "TXT-0203"
+      ],
+      "artworkId": "theme_201",
+      "visual": {
+        "region": "region-solitude-and-communion",
+        "x": 730,
+        "y": 770,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-expectation",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "expectation",
+      "label": "Kỳ Vọng & Thất Vọng",
+      "label_en": "EXPECTATION",
+      "summary": "Chủ đề hạt nhân Kỳ Vọng & Thất Vọng trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "EXPECTATION"
+      ],
+      "relatedContentIds": [
+        "TXT-0227",
+        "TXT-0228",
+        "TXT-0229"
+      ],
+      "artworkId": "theme_227",
+      "visual": {
+        "region": "region-human-condition",
+        "x": 260,
+        "y": 240,
+        "priority": 7,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-attraction",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "attraction",
+      "label": "Sức Hút & Tâm Lý Tình Cảm",
+      "label_en": "ATTRACTION",
+      "summary": "Chủ đề hạt nhân Sức Hút & Tâm Lý Tình Cảm trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "ATTRACTION"
+      ],
+      "relatedContentIds": [
+        "TXT-0239",
+        "TXT-0240",
+        "TXT-0241"
+      ],
+      "artworkId": "theme_239",
+      "visual": {
+        "region": "region-solitude-and-communion",
+        "x": 820,
+        "y": 740,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-self-compassion",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "self-compassion",
+      "label": "Tự Trắc Ẩn & Bao Dung",
+      "label_en": "SELF COMPASSION",
+      "summary": "Chủ đề hạt nhân Tự Trắc Ẩn & Bao Dung trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "SELF_COMPASSION"
+      ],
+      "relatedContentIds": [
+        "TXT-0251",
+        "TXT-0252",
+        "TXT-0253"
+      ],
+      "artworkId": "theme_251",
+      "visual": {
+        "region": "region-suffering-and-purpose",
+        "x": 200,
+        "y": 790,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-stoic-serenity",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "stoic-serenity",
+      "label": "Khắc Kỷ & Định Tâm",
+      "label_en": "STOIC SERENITY",
+      "summary": "Chủ đề hạt nhân Khắc Kỷ & Định Tâm trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "STOIC_SERENITY"
+      ],
+      "relatedContentIds": [
+        "TXT-0264",
+        "TXT-0265",
+        "TXT-0266"
+      ],
+      "artworkId": "theme_264",
+      "visual": {
+        "region": "region-suffering-and-purpose",
+        "x": 240,
+        "y": 700,
+        "priority": 9,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-authentic-connection",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "authentic-connection",
+      "label": "Gắn Kết Chân Thật",
+      "label_en": "AUTHENTIC CONNECTION",
+      "summary": "Chủ đề hạt nhân Gắn Kết Chân Thật trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "AUTHENTIC_CONNECTION"
+      ],
+      "relatedContentIds": [
+        "TXT-0276",
+        "TXT-0277",
+        "TXT-0278"
+      ],
+      "artworkId": "theme_276",
+      "visual": {
+        "region": "region-solitude-and-communion",
+        "x": 760,
+        "y": 810,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
+      "id": "theme-meaning-resilience",
+      "kind": "theme",
+      "status": "PUBLISHED",
+      "slug": "meaning-resilience",
+      "label": "Lẽ Sống & Phục Hồi",
+      "label_en": "MEANING RESILIENCE",
+      "summary": "Chủ đề hạt nhân Lẽ Sống & Phục Hồi trong kho lưu trữ Hiyu Abyss, kết nối các tác phẩm văn học và mỹ thuật bảo tàng.",
+      "topicCodes": [
+        "MEANING_RESILIENCE"
+      ],
+      "relatedContentIds": [
+        "TXT-0289",
+        "TXT-0290",
+        "TXT-0291"
+      ],
+      "artworkId": "theme_289",
+      "visual": {
+        "region": "region-suffering-and-purpose",
+        "x": 280,
+        "y": 740,
+        "priority": 8,
+        "glyph": "◈",
+        "cartoucheStyle": "monument"
+      }
+    },
+    {
       "id": "idea-uncomfortable-truth",
       "kind": "idea",
       "status": "PUBLISHED",
@@ -1386,6 +1594,134 @@
       }
     },
     {
+      "id": "idea-money-freedom",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "gia-tri-dich-thuc-cua-tien-bac",
+      "label": "Giá Trị Đích Thực Của Tiền Bạc",
+      "label_en": "True Wealth & Time Sovereignty",
+      "summary": "Giá trị cao nhất của tiền bạc là mua lại quyền kiểm soát thời gian và sự độc lập, không phải chiếc cờ phô trương thể diện.",
+      "topicCodes": [
+        "MONEY_PSYCHOLOGY",
+        "FREEDOM"
+      ],
+      "relatedContentIds": [
+        "TXT-0401",
+        "TXT-0402"
+      ],
+      "artworkId": "theme_401",
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 800,
+        "y": 450,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-status-vs-wealth",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "tro-choi-dia-vi-va-tai-san",
+      "label": "Trò Chơi Địa Vị & Trò Chơi Tài Sản",
+      "label_en": "Status Games vs Wealth Games",
+      "summary": "Người nghèo chi tiền mua thể diện trước đám đông, người giàu chi tiền mua thời gian và sự tự do.",
+      "topicCodes": [
+        "STATUS",
+        "MONEY_PSYCHOLOGY"
+      ],
+      "relatedContentIds": [
+        "TXT-0402"
+      ],
+      "artworkId": "theme_402",
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 660,
+        "y": 230,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-passive-aggressive",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "don-tan-cong-thu-dong",
+      "label": "Đòn Tấn Công Thụ Động & Chiếc Bẫy Tội Lỗi",
+      "label_en": "Passive Aggression & Guilt Weaponization",
+      "summary": "Những câu nói thoái thác hay tự phong thánh thực chất là đòn trừng phạt ngầm gieo rắc mặc cảm tội lỗi cho đối phương.",
+      "topicCodes": [
+        "COMMUNICATION",
+        "MANIPULATION"
+      ],
+      "relatedContentIds": [
+        "TXT-0203",
+        "TXT-0301"
+      ],
+      "artworkId": "theme_301",
+      "visual": {
+        "region": "region-power-and-machination",
+        "x": 510,
+        "y": 840,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-four-horsemen",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "bon-ky-si-xoi-mon-quan-he",
+      "label": "Bốn Kỵ Sĩ Xói Mòn Quan Hệ",
+      "label_en": "The Four Horsemen of Relationship Rupture",
+      "summary": "Chỉ trích, khinh miệt, phòng thủ và cô lập — chiếc bẫy hủy hoại mọi kết nối sâu sắc giữa hai người.",
+      "topicCodes": [
+        "COMMUNICATION",
+        "AUTHENTIC_CONNECTION"
+      ],
+      "relatedContentIds": [
+        "TXT-0201"
+      ],
+      "artworkId": "theme_201",
+      "visual": {
+        "region": "region-solitude-and-communion",
+        "x": 740,
+        "y": 780,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
+      "id": "idea-stoic-dichotomy-control",
+      "kind": "idea",
+      "status": "PUBLISHED",
+      "slug": "phan-dinh-vong-tron-kiem-soat",
+      "label": "Phân Định Vòng Tròn Kiểm Soát",
+      "label_en": "The Dichotomy of Control & Inner Peace",
+      "summary": "Đỉnh cao của sự an nhiên: buông bỏ hoàn toàn những điều không thuộc về ta và tập trung trọn vẹn vào phản ứng nội tại.",
+      "topicCodes": [
+        "STOIC_SERENITY",
+        "SERENITY"
+      ],
+      "relatedContentIds": [
+        "TXT-0450",
+        "TXT-0500"
+      ],
+      "artworkId": "theme_500",
+      "visual": {
+        "region": "region-suffering-and-purpose",
+        "x": 230,
+        "y": 710,
+        "priority": 8,
+        "glyph": "✦",
+        "cartoucheStyle": "cartouche"
+      }
+    },
+    {
       "id": "thinker-marcus-aurelius",
       "kind": "thinker",
       "status": "PUBLISHED",
@@ -1675,6 +2011,126 @@
         "region": "region-power-and-machination",
         "x": 450,
         "y": 780,
+        "priority": 9,
+        "glyph": "☥",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "thinker-morgan-housel",
+      "kind": "thinker",
+      "status": "PUBLISHED",
+      "slug": "morgan-housel",
+      "label": "Morgan Housel",
+      "label_en": "Morgan Housel",
+      "summary": "Tác giả \"Tâm Lý Học Về Tiền\" (The Psychology of Money). Luận giải sự giàu có thực sự là quyền kiểm soát thời gian của chính mình.",
+      "topicCodes": [
+        "MONEY_PSYCHOLOGY",
+        "FREEDOM",
+        "STATUS"
+      ],
+      "artworkId": "theme_401",
+      "sourceRefs": [
+        {
+          "title": "The Psychology of Money",
+          "author": "Morgan Housel",
+          "year": "2020"
+        }
+      ],
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 780,
+        "y": 470,
+        "priority": 9,
+        "glyph": "☥",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "thinker-naval-ravikant",
+      "kind": "thinker",
+      "status": "PUBLISHED",
+      "slug": "naval-ravikant",
+      "label": "Naval Ravikant",
+      "label_en": "Naval Ravikant",
+      "summary": "Nhà tư tưởng hiện đại về sự thịnh vượng và tự do nội tại. Bóc tách sự khác biệt giữa trò chơi địa vị (Status Games) và trò chơi tài sản (Wealth Games).",
+      "topicCodes": [
+        "MONEY_PSYCHOLOGY",
+        "STATUS",
+        "FREEDOM"
+      ],
+      "artworkId": "theme_402",
+      "sourceRefs": [
+        {
+          "title": "The Almanack of Naval Ravikant",
+          "author": "Eric Jorgenson",
+          "year": "2020"
+        }
+      ],
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 670,
+        "y": 240,
+        "priority": 9,
+        "glyph": "☥",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "thinker-john-gottman",
+      "kind": "thinker",
+      "status": "PUBLISHED",
+      "slug": "john-gottman",
+      "label": "John Gottman",
+      "label_en": "John Gottman",
+      "summary": "Chuyên gia tâm lý học hàng đầu thế giới về các mối quan hệ. Bóc trần \"4 kỵ sĩ ngày tận thế\" và những mô thức giao tiếp vi mô xói mòn hôn nhân.",
+      "topicCodes": [
+        "COMMUNICATION",
+        "AUTHENTIC_CONNECTION",
+        "LOVE"
+      ],
+      "artworkId": "theme_201",
+      "sourceRefs": [
+        {
+          "title": "The Seven Principles for Making Marriage Work",
+          "author": "John Gottman",
+          "year": "1999"
+        }
+      ],
+      "visual": {
+        "region": "region-solitude-and-communion",
+        "x": 750,
+        "y": 790,
+        "priority": 9,
+        "glyph": "☥",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "thinker-harriet-lerner",
+      "kind": "thinker",
+      "status": "PUBLISHED",
+      "slug": "harriet-lerner",
+      "label": "Harriet Lerner",
+      "label_en": "Harriet Lerner",
+      "summary": "Chuyên gia tâm lý học lâm sàng, tác giả \"Vũ Điệu Của Sự Giận Dữ\" (The Dance of Anger). Nghệ thuật thiết lập ranh giới mà không rơi vào bẫy tội lỗi.",
+      "topicCodes": [
+        "BOUNDARIES",
+        "MANIPULATION",
+        "COMMUNICATION"
+      ],
+      "artworkId": "theme_202",
+      "sourceRefs": [
+        {
+          "title": "The Dance of Anger",
+          "author": "Harriet Lerner",
+          "year": "1985"
+        }
+      ],
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 850,
+        "y": 480,
         "priority": 9,
         "glyph": "☥",
         "cartoucheStyle": "medallion"
@@ -2331,6 +2787,150 @@
         "region": "region-power-and-machination",
         "x": 545,
         "y": 845,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0301",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0301",
+      "label": "Folio #0301: Kẻ nguy hiểm nhất là người luôn đóng vai kẻ bất hạnh.",
+      "label_en": "Folio #0301",
+      "summary": "Khi bạn vừa kể một tin vui...... Họ lập tức thở dài, nhắc lại một bất công trong đời họ để biến sự chú ý về phía mình. Bạn bỗng thấy mình có tội vì vừa mỉm cười.",
+      "topicCodes": [
+        "MANIPULATION"
+      ],
+      "relatedContentIds": [
+        "TXT-0301"
+      ],
+      "artworkId": "theme_301",
+      "visual": {
+        "region": "region-power-and-machination",
+        "x": 515,
+        "y": 845,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0350",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0350",
+      "label": "Folio #0350: Đỉnh cao của bản lĩnh là sự thấu cảm đi kèm ranh giới thép.",
+      "label_en": "Folio #0350",
+      "summary": "Đúc kết hành trình 350 bài viết của Hiyu Abyss...... Nhìn thấu bản chất người đời để không còn thất vọng hay ảo tưởng. Hiểu rằng sự bất toàn của thế gian là điều tất yếu giúp bạn không còn oán giận.",
+      "topicCodes": [
+        "MEANING"
+      ],
+      "relatedContentIds": [
+        "TXT-0350"
+      ],
+      "artworkId": "theme_350",
+      "visual": {
+        "region": "region-suffering-and-purpose",
+        "x": 265,
+        "y": 755,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0401",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0401",
+      "label": "Folio #0401: Tiền bạc là công cụ mua lại sự tự do, không phải để khoe khoang.",
+      "label_en": "Folio #0401",
+      "summary": "Giá trị cao nhất của tiền bạc là gì?...... Không phải để mua xe sang khoe mẽ. Giá trị lớn nhất là mua lại quyền kiểm soát thời gian và sự độc lập.",
+      "topicCodes": [
+        "MONEY_PSYCHOLOGY"
+      ],
+      "relatedContentIds": [
+        "TXT-0401"
+      ],
+      "artworkId": "theme_401",
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 805,
+        "y": 455,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0402",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0402",
+      "label": "Folio #0402: Người nghèo chi tiền mua thể diện, người giàu chi tiền mua thời gian.",
+      "label_en": "Folio #0402",
+      "summary": "Người nghèo chi tiền để thiên hạ nghĩ mình giàu; người giàu dùng tiền để mua lại quyền kiểm soát thời gian.",
+      "topicCodes": [
+        "MONEY_PSYCHOLOGY"
+      ],
+      "relatedContentIds": [
+        "TXT-0402"
+      ],
+      "artworkId": "theme_402",
+      "visual": {
+        "region": "region-ego-and-illusion",
+        "x": 675,
+        "y": 225,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0450",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0450",
+      "label": "Folio #0450: Ngừng làm hài lòng thế giới, bạn mới thực sự bắt đầu sống cuộc đời mình.",
+      "label_en": "Folio #0450",
+      "summary": "Đúc kết hành trình 450 bài của Hiyu Abyss...... Cả đời cố gắng làm vừa lòng thiên hạ là con đường ngắn nhất dẫn bạn đến sự kiệt quệ và đánh mất chính mình.",
+      "topicCodes": [
+        "FREEDOM"
+      ],
+      "relatedContentIds": [
+        "TXT-0450"
+      ],
+      "artworkId": "theme_450",
+      "visual": {
+        "region": "region-freedom-and-order",
+        "x": 825,
+        "y": 435,
+        "priority": 6,
+        "glyph": "❧",
+        "cartoucheStyle": "medallion"
+      }
+    },
+    {
+      "id": "quote-txt-0500",
+      "kind": "quote",
+      "status": "PUBLISHED",
+      "slug": "folio-txt-0500",
+      "label": "Folio #0500: Đại thành nhược khuyết: Đi qua 500 triết ngôn để sống đời tự do kiêu hãnh.",
+      "label_en": "Folio #0500",
+      "summary": "Đúc kết hành trình 500 bài viết của Hiyu Abyss...... Đi qua bóng tối để không ngây thơ trước mưu mô, nhưng không để lòng mình chai sạn thành thù hận.",
+      "topicCodes": [
+        "MEANING"
+      ],
+      "relatedContentIds": [
+        "TXT-0500"
+      ],
+      "artworkId": "theme_500",
+      "visual": {
+        "region": "region-suffering-and-purpose",
+        "x": 275,
+        "y": 735,
         "priority": 6,
         "glyph": "❧",
         "cartoucheStyle": "medallion"
@@ -3517,6 +4117,246 @@
       "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
       "status": "PUBLISHED",
       "weight": 0.85
+    },
+    {
+      "id": "edge-0119",
+      "from": "theme-money-psychology",
+      "to": "idea-money-freedom",
+      "relation": "explores",
+      "why": "Tâm lý học tiền bạc khẳng định tự do thời gian là giá trị cao nhất của tài sản.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0120",
+      "from": "theme-money-psychology",
+      "to": "idea-status-vs-wealth",
+      "relation": "shares_question_with",
+      "why": "Phân biệt giữa sự giàu có thực sự và cuộc đua thể diện xã hội.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0121",
+      "from": "thinker-morgan-housel",
+      "to": "idea-money-freedom",
+      "relation": "influenced_by",
+      "why": "Morgan Housel chỉ ra rằng tiêu tiền để khoe khoang là cách nhanh nhất để nghèo đi.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0122",
+      "from": "thinker-morgan-housel",
+      "to": "theme-money-psychology",
+      "relation": "influenced_by",
+      "why": "Tác giả \"Tâm Lý Học Về Tiền\", định hình góc nhìn tài chính tỉnh thức.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0123",
+      "from": "thinker-naval-ravikant",
+      "to": "idea-status-vs-wealth",
+      "relation": "influenced_by",
+      "why": "Naval phân tích sâu sắc về sự đối lập giữa trò chơi địa vị và trò chơi tài sản.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0124",
+      "from": "thinker-naval-ravikant",
+      "to": "theme-freedom",
+      "relation": "shares_question_with",
+      "why": "Thịnh vượng đích thực là tự do thoát khỏi sự áp đặt của người khác.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0125",
+      "from": "quote-txt-0401",
+      "to": "idea-money-freedom",
+      "relation": "explores",
+      "why": "Tiền bạc là công cụ mua lại tự do, người thật sự giàu có sở hữu thời gian của mình.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0126",
+      "from": "quote-txt-0402",
+      "to": "idea-status-vs-wealth",
+      "relation": "explores",
+      "why": "Người nghèo chi tiền mua thể diện, người giàu chi tiền mua thời gian.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0127",
+      "from": "theme-communication",
+      "to": "idea-passive-aggressive",
+      "relation": "explores",
+      "why": "Giao tiếp lành mạnh đòi hỏi sự trung thực thay vì đòn tấn công thụ động.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0128",
+      "from": "theme-communication",
+      "to": "idea-four-horsemen",
+      "relation": "explores",
+      "why": "Nhận diện 4 kỵ sĩ xói mòn hôn nhân để xây dựng đối thoại thấu cảm.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0129",
+      "from": "thinker-john-gottman",
+      "to": "idea-four-horsemen",
+      "relation": "influenced_by",
+      "why": "Công trình nghiên cứu nổi tiếng của Gottman về sự đổ vỡ quan hệ.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0130",
+      "from": "thinker-john-gottman",
+      "to": "theme-communication",
+      "relation": "influenced_by",
+      "why": "Bậc thầy về giải phẫu tương tác vi mô giữa hai con người.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0131",
+      "from": "thinker-harriet-lerner",
+      "to": "theme-boundaries",
+      "relation": "influenced_by",
+      "why": "Lerner dạy cách giữ vững ranh giới cảm xúc mà không bộc phát hủy hoại.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0132",
+      "from": "thinker-harriet-lerner",
+      "to": "idea-passive-aggressive",
+      "relation": "contrasts_with",
+      "why": "Từ chối đóng vai nạn nhân hay kẻ phục tùng giả tạo.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0133",
+      "from": "quote-txt-0301",
+      "to": "idea-passive-aggressive",
+      "relation": "explores",
+      "why": "Vạch trần chiếc bẫy tự phong thánh và gieo rắc mặc cảm tội lỗi.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0134",
+      "from": "theme-stoic-serenity",
+      "to": "idea-stoic-dichotomy-control",
+      "relation": "explores",
+      "why": "Trọng tâm Khắc kỷ: chỉ tập trung vào điều ta có thể kiểm soát.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0135",
+      "from": "thinker-epictetus",
+      "to": "idea-stoic-dichotomy-control",
+      "relation": "influenced_by",
+      "why": "Epictetus đặt nền móng cho nguyên lý phân định quyền kiểm soát.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0136",
+      "from": "theme-self-compassion",
+      "to": "theme-serenity",
+      "relation": "shares_question_with",
+      "why": "Bao dung với sự bất toàn của chính mình là cội nguồn của an nhiên.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0137",
+      "from": "theme-meaning-resilience",
+      "to": "theme-resilience",
+      "relation": "shares_question_with",
+      "why": "Ý nghĩa sống tiếp thêm sức mạnh phục hồi sau thương đau.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0138",
+      "from": "quote-txt-0450",
+      "to": "theme-freedom",
+      "relation": "explores",
+      "why": "Ngừng làm hài lòng thế giới để bắt đầu sống cuộc đời tự do.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0139",
+      "from": "quote-txt-0500",
+      "to": "idea-stoic-dichotomy-control",
+      "relation": "explores",
+      "why": "Đại thành nhược khuyết: đi qua 500 triết ngôn để sống kiêu hãnh và bao dung.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0140",
+      "from": "quote-txt-0350",
+      "to": "theme-meaning-resilience",
+      "relation": "explores",
+      "why": "Đỉnh cao của bản lĩnh là sự thấu cảm đi kèm ranh giới thép.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.95
+    },
+    {
+      "id": "edge-0141",
+      "from": "theme-money-psychology",
+      "to": "theme-freedom",
+      "relation": "shares_question_with",
+      "why": "Tài chính tỉnh thức là bàn đạp hướng tới tự do hiện sinh trọn vẹn.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
+    },
+    {
+      "id": "edge-0142",
+      "from": "theme-communication",
+      "to": "theme-authentic-connection",
+      "relation": "shares_question_with",
+      "why": "Giao tiếp chân thật là nền móng của sự gắn kết không vụ lợi.",
+      "curatorNote": "Liên kết giám tuyển thuộc đồ thị tư tưởng Hiyu Abyss.",
+      "status": "PUBLISHED",
+      "weight": 0.9
     }
   ],
   "trails": [
@@ -3746,6 +4586,30 @@
         "theme-truth",
         "quote-txt-0001",
         "quote-txt-0008"
+      ]
+    },
+    {
+      "id": "trail-wealth-and-sovereignty",
+      "slug": "tai-chinh-tinh-thuc-va-tu-chu",
+      "title": "Tài Chính Tỉnh Thức & Tự Chủ",
+      "title_en": "Mindful Wealth & Sovereign Freedom",
+      "subtitle": "Giải phóng bản thân khỏi cái bẫy thể diện tiêu dùng để làm chủ thời gian đời mình.",
+      "description": "Hành trình cùng Morgan Housel, Naval Ravikant và Seneca khảo sát tâm lý học tiền bạc, phân biệt giữa khoe khoang địa vị và tự do chân thật.",
+      "introPrompt": "Tiền bạc đối với bạn là chiếc cờ phô trương hay là chiếc chìa khóa mở ra sự tự do?",
+      "closingPrompt": "Sự giàu có lớn nhất là khả năng sống theo cách của riêng mình mà không cần chứng minh với bất kỳ ai.",
+      "themeCode": "MONEY_PSYCHOLOGY",
+      "estimatedMinutes": 8,
+      "coverArtworkId": "theme_401",
+      "status": "PUBLISHED",
+      "orderedNodeIds": [
+        "theme-money-psychology",
+        "thinker-morgan-housel",
+        "idea-money-freedom",
+        "quote-txt-0401",
+        "thinker-naval-ravikant",
+        "idea-status-vs-wealth",
+        "quote-txt-0402",
+        "theme-freedom"
       ]
     }
   ]

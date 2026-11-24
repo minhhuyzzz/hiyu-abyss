@@ -1,0 +1,25 @@
+id: thinker-morgan-housel
+kind: thinker
+status: PUBLISHED
+slug: morgan-housel
+label: Morgan Housel
+label_en: Morgan Housel
+summary: >-
+  Tác giả "Tâm Lý Học Về Tiền" (The Psychology of Money). Luận giải sự giàu có
+  thực sự là quyền kiểm soát thời gian của chính mình.
+topicCodes:
+  - MONEY_PSYCHOLOGY
+  - FREEDOM
+  - STATUS
+artworkId: theme_401
+sourceRefs:
+  - title: The Psychology of Money
+    author: Morgan Housel
+    year: '2020'
+visual:
+  region: region-freedom-and-order
+  x: 780
+  'y': 470
+  priority: 9
+  glyph: ☥
+  cartoucheStyle: medallion

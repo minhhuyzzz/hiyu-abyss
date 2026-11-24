@@ -1,0 +1,21 @@
+id: quote-txt-0401
+kind: quote
+status: PUBLISHED
+slug: folio-txt-0401
+label: 'Folio #0401: Tiền bạc là công cụ mua lại sự tự do, không phải để khoe khoang.'
+label_en: 'Folio #0401'
+summary: >-
+  Giá trị cao nhất của tiền bạc là gì?...... Không phải để mua xe sang khoe mẽ.
+  Giá trị lớn nhất là mua lại quyền kiểm soát thời gian và sự độc lập.
+topicCodes:
+  - MONEY_PSYCHOLOGY
+relatedContentIds:
+  - TXT-0401
+artworkId: theme_401
+visual:
+  region: region-freedom-and-order
+  x: 805
+  'y': 455
+  priority: 6
+  glyph: ❧
+  cartoucheStyle: medallion

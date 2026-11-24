@@ -1,0 +1,23 @@
+id: theme-attraction
+kind: theme
+status: PUBLISHED
+slug: attraction
+label: Sức Hút & Tâm Lý Tình Cảm
+label_en: ATTRACTION
+summary: >-
+  Chủ đề hạt nhân Sức Hút & Tâm Lý Tình Cảm trong kho lưu trữ Hiyu Abyss, kết
+  nối các tác phẩm văn học và mỹ thuật bảo tàng.
+topicCodes:
+  - ATTRACTION
+relatedContentIds:
+  - TXT-0239
+  - TXT-0240
+  - TXT-0241
+artworkId: theme_239
+visual:
+  region: region-solitude-and-communion
+  x: 820
+  'y': 740
+  priority: 8
+  glyph: ◈
+  cartoucheStyle: monument
